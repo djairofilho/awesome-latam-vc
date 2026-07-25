@@ -1,0 +1,8 @@
+# Excel / CSV data files
+*.xlsx
+*.xls
+*.csv
+
+# OS
+Thumbs.db
+.DS_Store
