@@ -158,6 +158,16 @@ O índice foi otimizado para comparação rápida. Todos os perfis de fundos usa
 | [Wayra](funds/multi-country/wayra.md) | Multiestágio | Tecnologia estratégica | Brasil, Europa e América Latina |
 | [Worthit](funds/multi-country/worthit.md) | Pre-seed | SaaS B2B e IA | América Latina |
 
+## Recursos relacionados do ecossistema
+
+Estas organizações podem ajudar fundadores a acessar capital, mas não são
+fundos de VC e, por isso, permanecem fora das tabelas principais. Consulte o
+[escopo e os critérios de inclusão](ecosystem/README.md).
+
+- [Redes de investidores-anjo](ecosystem/angels.md)
+- [Crowdfunding de investimento e plataformas](ecosystem/crowdfunding.md)
+- [Programas governamentais](ecosystem/government-programs.md)
+
 ## Contribuindo
 
 Contribuicoes sao bem-vindas. Leia as [diretrizes de contribuicao](contributing.md) antes de enviar um pull request.

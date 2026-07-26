@@ -158,6 +158,16 @@ The index is optimized for quick comparison. All fund profiles use the enriched 
 | [Wayra](funds/multi-country/wayra.md) | Multi-stage | Strategic technology | Brazil, Europe, and Latin America |
 | [Worthit](funds/multi-country/worthit.md) | Pre-seed | B2B SaaS and AI | Latin America |
 
+## Related ecosystem resources
+
+These organizations can help founders access capital but are not VC funds, so
+they remain outside the main tables. See the
+[scope and inclusion criteria](ecosystem/README.md).
+
+- [Angel networks](ecosystem/angels.md)
+- [Equity crowdfunding and investment platforms](ecosystem/crowdfunding.md)
+- [Government programs](ecosystem/government-programs.md)
+
 ## Contributing
 
 Contributions are welcome. Please read the [contribution guidelines](contributing.md) before submitting a pull request.
