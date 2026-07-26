@@ -5,6 +5,7 @@ NXTP Ventures is an investment organization focused on B2B technology in Latin A
 ## Investment profile
 
 - **Website:** https://www.nxtp.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** B2B technology

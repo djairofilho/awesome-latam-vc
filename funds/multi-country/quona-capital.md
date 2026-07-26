@@ -5,6 +5,7 @@ Quona Capital is an investment organization focused on Fintech and financial inc
 ## Investment profile
 
 - **Website:** https://quona.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed, Series A, and Series B
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Fintech and financial inclusion

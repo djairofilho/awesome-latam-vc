@@ -5,6 +5,7 @@ Spectra Investimentos is an investment organization focused on Alternative inves
 ## Investment profile
 
 - **Website:** https://spectrainvest.com/
+- **Fund type:** Fund of funds
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Alternative investments, including venture capital

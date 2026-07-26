@@ -6,6 +6,7 @@ address social, economic, and environmental challenges in Latin America.
 ## Investment profile
 
 - **Website:** https://www.salkantay.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed, Seed, and Series A
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Impact technology

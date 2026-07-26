@@ -5,6 +5,7 @@ Axon Partners + Ventures EPM is an investment organization focused on Technology
 ## Investment profile
 
 - **Website:** https://www.epm.com.co/
+- **Fund type:** Corporate venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology and strategic innovation

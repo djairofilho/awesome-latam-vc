@@ -12,7 +12,28 @@ You will need a [GitHub account](https://github.com/join).
 2. Check that the fund qualifies as a Venture Capital firm investing in Latin America.
 3. Create a detail page under the appropriate `funds/` directory.
 4. Add the fund to the appropriate README section in alphabetical order.
-5. Use the normalized stage values below:
+5. Classify the fund by its primary investment type and geographic base.
+6. Use the normalized stage values below:
+
+Use one of these normalized fund types:
+
+- `Venture capital`
+- `Corporate venture capital`
+- `Co-investment fund`
+- `Fund of funds`
+- `Fund investor and direct investor`
+- `Venture studio`
+- `Venture builder and venture capital`
+- `Accelerator and venture capital`
+- `Angel investment network`
+- `Not publicly disclosed`
+
+Fund type and geography are separate classifications. Place a fund under the
+country where it is based, under `regional/` when it is based in Latin America
+and explicitly invests across the region, or under `multi-country/` when it is
+based outside Latin America and has a regional investment presence. Do not
+create geographic sections for investor types such as corporate venture capital
+or fund of funds.
 
 - `Pre-seed`
 - `Seed`
@@ -38,6 +59,7 @@ A short, factual description.
 ## Investment profile
 
 - **Website:** https://example.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Concise description of the declared sector or thesis
@@ -82,6 +104,8 @@ If a fund's information is outdated (website, name, focus), please submit a pull
   and application forms.
 - Provide accurate website and source links.
 - Keep descriptions concise and factual.
+- Classify fund type from current official sources. Do not infer it from the
+  previous directory, the fund's name, or portfolio composition.
 - Do not infer a fund's official thesis, check size, stage, or lead preference
   from third-party databases or portfolio composition.
 - Keep declared thesis information separate from observed portfolio patterns.

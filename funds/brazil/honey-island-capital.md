@@ -5,6 +5,7 @@ Honey Island Capital is an investment organization focused on Fintech and techno
 ## Investment profile
 
 - **Website:** https://honeyisland.capital/
+- **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Fintech and technology

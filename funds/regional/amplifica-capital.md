@@ -5,6 +5,7 @@ Amplifica Capital is an investment organization focused on Inclusion, digital ac
 ## Investment profile
 
 - **Website:** https://www.amplifica.capital/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed, Seed, and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Inclusion, digital access, and climate technology

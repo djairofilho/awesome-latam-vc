@@ -5,6 +5,7 @@ The Ark Fund is an investment organization listed in this directory; its current
 ## Investment profile
 
 - **Website:** Not publicly disclosed
+- **Fund type:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Not publicly disclosed

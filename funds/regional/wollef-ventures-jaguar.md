@@ -5,6 +5,7 @@ Wollef Ventures (ex-Jaguar) is an investment organization focused on Technology 
 ## Investment profile
 
 - **Website:** https://wollefvc.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

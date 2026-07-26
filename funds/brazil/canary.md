@@ -6,6 +6,7 @@ institutional investor in technology companies founded in Latin America.
 ## Investment profile
 
 - **Website:** https://www.canary.com.br/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed, Seed, and Series A
 - **Follow-on stages:** Yes, through pro rata or super pro rata participation
 - **Focus:** Sector agnostic

@@ -5,6 +5,7 @@ Polymath Ventures is an investment organization focused on Human-centered busine
 ## Investment profile
 
 - **Website:** https://www.polymathv.com/
+- **Fund type:** Venture studio
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Human-centered businesses

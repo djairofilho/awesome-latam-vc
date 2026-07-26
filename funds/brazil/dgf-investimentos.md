@@ -5,6 +5,7 @@ DGF Investimentos is an investment organization focused on High-growth technolog
 ## Investment profile
 
 - **Website:** https://www.dgf.com.br/
+- **Fund type:** Venture capital
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** High-growth technology companies

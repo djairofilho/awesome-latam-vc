@@ -5,6 +5,7 @@ QAPU Ventures is an investment organization listed in this directory; its curren
 ## Investment profile
 
 - **Website:** https://qapu.ventures/ (unavailable during verification)
+- **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Not publicly disclosed

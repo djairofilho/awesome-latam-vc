@@ -5,6 +5,7 @@ Iporanga Ventures is an investment organization focused on Software and technolo
 ## Investment profile
 
 - **Website:** https://www.ipo.ventures/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Software and technology

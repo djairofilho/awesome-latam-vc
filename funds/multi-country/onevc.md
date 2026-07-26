@@ -5,6 +5,7 @@ ONEVC is an investment organization focused on Technology in Latin America.
 ## Investment profile
 
 - **Website:** https://www.onevc.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

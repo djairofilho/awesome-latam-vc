@@ -5,6 +5,7 @@ Winnipeg Capital is an investment organization focused on Scalable technology co
 ## Investment profile
 
 - **Website:** https://www.winnipegcapital.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Scalable technology companies

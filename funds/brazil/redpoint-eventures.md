@@ -5,6 +5,7 @@ Redpoint eventures is an investment organization focused on Technology in Brazil
 ## Investment profile
 
 - **Website:** https://rpev.com.br/
+- **Fund type:** Venture capital
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

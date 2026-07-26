@@ -5,6 +5,7 @@ Hi Ventures (ex-ALLVP) is an investment organization focused on AI and technolog
 ## Investment profile
 
 - **Website:** https://www.hi.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** AI and technology

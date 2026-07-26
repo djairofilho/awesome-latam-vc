@@ -5,6 +5,7 @@ Kolab Ventures is an investment organization focused on AI, fintech, and cross-b
 ## Investment profile
 
 - **Website:** https://kolabventures.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** AI, fintech, and cross-border technology

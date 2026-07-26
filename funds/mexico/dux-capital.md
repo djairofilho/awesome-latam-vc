@@ -5,6 +5,7 @@ Dux Capital is an investment organization focused on Technology and underreprese
 ## Investment profile
 
 - **Website:** https://www.linkedin.com/company/duxcapital/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology and underrepresented founders

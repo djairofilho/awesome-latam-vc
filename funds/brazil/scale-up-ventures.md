@@ -5,6 +5,7 @@ Scale-Up Ventures is an investment organization focused on Endeavor network comp
 ## Investment profile
 
 - **Website:** https://endeavor.org.br/scale-up-ventures
+- **Fund type:** Co-investment fund
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Endeavor network companies

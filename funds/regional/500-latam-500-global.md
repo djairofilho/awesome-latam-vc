@@ -6,6 +6,7 @@ in Spanish-speaking Latin America.
 ## Investment profile
 
 - **Website:** https://500.co/latam
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Technology, sector agnostic
