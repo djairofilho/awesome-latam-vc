@@ -6,6 +6,7 @@ and financial-services innovation.
 ## Investment profile
 
 - **Website:** https://www.qedinvestors.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Yes
 - **Focus:** Fintech

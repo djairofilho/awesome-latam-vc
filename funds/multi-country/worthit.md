@@ -5,6 +5,7 @@ Worthit is an investment organization focused on B2B SaaS and AI in Latin Americ
 ## Investment profile
 
 - **Website:** https://www.worthit.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** B2B SaaS and AI

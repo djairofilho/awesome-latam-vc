@@ -5,6 +5,7 @@ Cometa (ex-Variv) is an investment organization focused on Technology in Spanish
 ## Investment profile
 
 - **Website:** https://www.cometa.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed, Seed, and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

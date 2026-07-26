@@ -5,6 +5,7 @@ Kayyak Ventures is an investment organization focused on Technology in Latin Ame
 ## Investment profile
 
 - **Website:** https://www.kayyakventures.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed, Series A, and Series B
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

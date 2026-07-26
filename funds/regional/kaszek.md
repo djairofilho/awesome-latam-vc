@@ -5,6 +5,7 @@ Kaszek is an investment organization focused on Technology in Latin America.
 ## Investment profile
 
 - **Website:** https://www.kaszek.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

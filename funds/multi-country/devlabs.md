@@ -5,6 +5,7 @@ devlabs is an investment organization focused on Globally scalable software in L
 ## Investment profile
 
 - **Website:** https://devlabs.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Globally scalable software

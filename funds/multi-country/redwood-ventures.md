@@ -5,6 +5,7 @@ Redwood Ventures is an investment organization focused on Technology, sector agn
 ## Investment profile
 
 - **Website:** https://www.redwoodcapital.partners/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology, sector agnostic

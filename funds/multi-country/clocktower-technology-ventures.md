@@ -5,6 +5,7 @@ Clocktower Technology Ventures is an investment organization focused on Financia
 ## Investment profile
 
 - **Website:** https://www.clocktowerventures.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Financial technology

@@ -5,6 +5,7 @@ Caravela Capital is an investment organization focused on Technology in Latin Am
 ## Investment profile
 
 - **Website:** https://caravela.capital/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

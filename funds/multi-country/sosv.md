@@ -5,6 +5,7 @@ SOSV is an investment organization focused on Deep tech, climate, and health in 
 ## Investment profile
 
 - **Website:** https://sosv.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Deep tech, climate, and health

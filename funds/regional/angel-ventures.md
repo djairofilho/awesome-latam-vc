@@ -5,6 +5,7 @@ Angel Ventures is an investment organization focused on Technology, sector agnos
 ## Investment profile
 
 - **Website:** https://www.angelventures.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology, sector agnostic

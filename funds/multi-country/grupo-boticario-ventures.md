@@ -5,6 +5,7 @@ Grupo Boticario Ventures is an investment organization focused on Beauty and ret
 ## Investment profile
 
 - **Website:** https://ventures.grupoboticario.com.br/
+- **Fund type:** Corporate venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Beauty and retail

@@ -5,6 +5,7 @@ Valor Capital Group is an investment organization focused on Technology in Unite
 ## Investment profile
 
 - **Website:** https://www.valorcapitalgroup.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

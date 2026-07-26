@@ -5,6 +5,7 @@ Mindset Ventures is an investment organization focused on B2B technology in Lati
 ## Investment profile
 
 - **Website:** https://mindset.ventures/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** B2B technology

@@ -5,6 +5,7 @@ Oria Capital is an investment organization focused on B2B software in Brazil.
 ## Investment profile
 
 - **Website:** https://www.oriacapital.com.br/
+- **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** B2B software

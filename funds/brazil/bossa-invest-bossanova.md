@@ -5,6 +5,7 @@ Bossa Invest (Bossanova) is an investment organization focused on B2B and B2B2C 
 ## Investment profile
 
 - **Website:** https://bossainvest.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** B2B and B2B2C technology

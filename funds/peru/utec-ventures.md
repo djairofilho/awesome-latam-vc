@@ -5,6 +5,7 @@ UTEC Ventures is an investment organization focused on Science, technology, and 
 ## Investment profile
 
 - **Website:** https://utecventures.com/
+- **Fund type:** Accelerator and venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Science, technology, and deep tech

@@ -5,6 +5,7 @@ Newtopia VC is an investment organization focused on Technology, sector agnostic
 ## Investment profile
 
 - **Website:** https://newtopia.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology, sector agnostic

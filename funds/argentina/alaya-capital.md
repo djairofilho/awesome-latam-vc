@@ -6,6 +6,7 @@ technology teams with regional and global growth ambitions.
 ## Investment profile
 
 - **Website:** https://alaya-capital.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Digital transformation

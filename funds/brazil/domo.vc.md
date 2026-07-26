@@ -5,6 +5,7 @@ DOMO.VC is an investment organization focused on Technology in Brazil.
 ## Investment profile
 
 - **Website:** https://domo.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

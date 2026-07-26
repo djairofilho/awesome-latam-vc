@@ -5,6 +5,7 @@ Endeavor Catalyst is an investment organization focused on Endeavor network comp
 ## Investment profile
 
 - **Website:** https://endeavor.org/catalyst/
+- **Fund type:** Co-investment fund
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Endeavor network companies

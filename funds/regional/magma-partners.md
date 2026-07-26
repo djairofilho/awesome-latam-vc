@@ -5,6 +5,7 @@ Magma Partners is an investment organization focused on Technology in Latin Amer
 ## Investment profile
 
 - **Website:** https://magmapartners.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed, Seed, and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

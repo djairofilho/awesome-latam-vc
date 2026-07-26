@@ -5,6 +5,7 @@ ACE Ventures is an investment organization focused on Technology in Brazil.
 ## Investment profile
 
 - **Website:** https://aceventures.com.br/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

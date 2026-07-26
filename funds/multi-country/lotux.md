@@ -5,6 +5,7 @@ Lotux is an investment organization focused on Fintech, insurtech, logistics, co
 ## Investment profile
 
 - **Website:** https://lotux.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Fintech, insurtech, logistics, commerce, education, and health
