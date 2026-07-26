@@ -1,5 +1,40 @@
 # QED Investors
 
-- **Website:** https://www.qedinvestors.com/companies
-- **Region:** Regional / Pan-Latin America
-- **Portfolio size:** 43 companies
+QED Investors is a global venture capital firm dedicated exclusively to fintech
+and financial-services innovation.
+
+## Investment profile
+
+- **Website:** https://www.qedinvestors.com/
+- **Stage at entry:** Multi-stage, from Pre-seed through Growth
+- **Follow-on stages:** Yes
+- **Focus:** Fintech and embedded finance
+- **Geography:** Global, including Latin America
+- **Initial check:** USD 3 million to USD 10 million for typical early-stage
+  investments; smaller pre-seed checks may be made through dedicated vehicles
+- **Investment role:** Not publicly disclosed as a general policy
+- **Business models:** Lending, payments, insurance, wealth management,
+  proptech, banking infrastructure, vertical SaaS, and embedded finance
+- **Portfolio size:** More than 250 companies globally
+- **Selected Latin American companies:** Addi, Bitso, Creditas, and Nubank
+- **Submit a startup:** https://www.qedinvestors.com/
+
+## Declared thesis
+
+QED invests only in businesses that solve problems in financial services. Its
+vehicles cover the company lifecycle from formation and pre-seed through growth,
+while its core early-stage strategy has historically centered on Series A.
+
+## Portfolio signals
+
+The local project dataset contains 43 Latin American companies associated with
+QED. Fintech is the dominant category, followed by proptech, B2B SaaS, logistics,
+and climate-related financial services. These are observed portfolio patterns.
+
+## Sources
+
+- [QED overview, FAQ, and pitch form](https://www.qedinvestors.com/)
+- [Official portfolio](https://www.qedinvestors.com/companies)
+- [Fontes by QED](https://www.qedinvestors.com/blog/learn-more-about-fontes)
+
+**Last verified:** 2026-07-25
