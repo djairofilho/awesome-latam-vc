@@ -170,6 +170,16 @@ El índice está optimizado para una comparación rápida. Todos los perfiles de
 | [TM3 Capital](funds/cvc/tm3-capital.md) | No divulgado públicamente | No divulgado públicamente | No divulgado públicamente |
 | [Velum Ventures](funds/cvc/velum-ventures.md) | Seed | Tecnología | Colombia y América Latina |
 
+## Recursos relacionados del ecosistema
+
+Estas organizaciones pueden ayudar a fundadores a acceder a capital, pero no
+son fondos de VC y, por eso, permanecen fuera de las tablas principales. Consulta
+el [alcance y los criterios de inclusión](ecosystem/README.md).
+
+- [Redes de inversionistas ángeles](ecosystem/angels.md)
+- [Crowdfunding de inversión y plataformas](ecosystem/crowdfunding.md)
+- [Programas gubernamentales](ecosystem/government-programs.md)
+
 ## Contribuyendo
 
 Las contribuciones son bienvenidas. Lee las [guias de contribucion](contributing.md) antes de enviar un pull request.
