@@ -8,8 +8,8 @@ research into startups targeting global markets.
 - **Website:** https://www.gridexponential.com/
 - **Stage at entry:** Pre-seed
 - **Follow-on stages:** Not publicly disclosed
-- **Focus:** Agri-food and land use, bioindustry, human health, and deep biotech
-- **Geography:** Latin America, with global market ambitions
+- **Focus:** Life sciences & biotech
+- **Geography:** Latin America to global markets
 - **Initial check:** Not publicly disclosed
 - **Investment role:** Hands-on company builder and initial investor
 - **Business models:** Science-based and deep-tech ventures

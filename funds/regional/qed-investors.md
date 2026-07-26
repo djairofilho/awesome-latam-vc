@@ -6,9 +6,9 @@ and financial-services innovation.
 ## Investment profile
 
 - **Website:** https://www.qedinvestors.com/
-- **Stage at entry:** Multi-stage, from Pre-seed through Growth
+- **Stage at entry:** Multi-stage
 - **Follow-on stages:** Yes
-- **Focus:** Fintech and embedded finance
+- **Focus:** Fintech
 - **Geography:** Global, including Latin America
 - **Initial check:** USD 3 million to USD 10 million for typical early-stage
   investments; smaller pre-seed checks may be made through dedicated vehicles

@@ -8,7 +8,7 @@ the intersection of food security and climate resilience.
 - **Website:** https://spventures.com.br/
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed
-- **Focus:** AgFoodTech and ClimateTech
+- **Focus:** AgFoodTech & ClimateTech
 - **Geography:** Latin America
 - **Initial check:** Not publicly disclosed
 - **Investment role:** Not publicly disclosed

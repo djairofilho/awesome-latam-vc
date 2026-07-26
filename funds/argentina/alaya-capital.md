@@ -8,8 +8,8 @@ technology teams with regional and global growth ambitions.
 - **Website:** https://alaya-capital.com/
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed
-- **Focus:** Digital transformation and digital consumer businesses
-- **Geography:** Latin American teams expanding regionally
+- **Focus:** Digital transformation
+- **Geography:** Latin America
 - **Initial check:** Not publicly disclosed
 - **Investment role:** Not publicly disclosed
 - **Business models:** B2B SaaS, fintech, data and analytics, Industry 4.0,

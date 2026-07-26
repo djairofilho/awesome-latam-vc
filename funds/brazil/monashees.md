@@ -8,8 +8,8 @@ American founders building companies for regional and global markets.
 - **Website:** https://www.monashees.com/
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed
-- **Focus:** Technology-driven companies, including AI-enabled businesses
-- **Geography:** Latin American founders building for regional and global markets
+- **Focus:** Technology
+- **Geography:** Latin America to global markets
 - **Initial check:** Not publicly disclosed
 - **Investment role:** Not publicly disclosed
 - **Business models:** Consumer, enterprise, SaaS, fintech, and other

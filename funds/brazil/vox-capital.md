@@ -9,8 +9,7 @@ outcomes.
 - **Website:** https://novo.voxcapital.com.br/
 - **Stage at entry:** Seed, Series A, and Series B
 - **Follow-on stages:** Growth co-investment opportunities may be available
-- **Focus:** Impact technology in health, education, financial inclusion,
-  sustainable agriculture, climate, energy transition, and smart cities
+- **Focus:** Impact technology
 - **Geography:** Brazil
 - **Initial check:** Not publicly disclosed
 - **Investment role:** Not publicly disclosed; the firm also structures

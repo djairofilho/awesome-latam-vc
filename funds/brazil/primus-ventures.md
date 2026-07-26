@@ -1,5 +1,32 @@
 # Primus Ventures
 
-- **Website:** https://www.primusvc.com.br/portf%C3%B3lio
-- **Region:** Brazil
-- **Portfolio size:** 14 companies
+Primus Ventures is an investment organization focused on B2B technology in Southern Brazil.
+
+## Investment profile
+
+- **Website:** https://sulventures.com.br/
+- **Stage at entry:** Pre-seed and Seed
+- **Follow-on stages:** Yes; up to R$10 million including follow-ons
+- **Focus:** B2B technology
+- **Geography:** Southern Brazil
+- **Initial check:** R$1 million to R$3 million
+- **Investment role:** Not publicly disclosed in the reviewed sources
+- **Business models:** B2B and software-enabled models; further constraints not publicly disclosed
+- **Portfolio size:** 14 companies captured in the local project dataset; this is not an official portfolio count
+- **Selected companies:** aLavadeira, Asaas, Checkplant, Exact Sales, Hariken
+- **Submit a startup:** Not publicly disclosed in the reviewed sources
+
+## Declared thesis
+
+The reviewed source presents Primus Ventures as investing in B2B technology across Southern Brazil, with entry at Pre-seed and Seed. Details not stated by the fund are marked as not publicly disclosed rather than inferred from portfolio composition.
+
+## Portfolio signals
+
+The local project dataset contains 14 companies associated with Primus Ventures. Its most frequent sector labels are Tecnologia e serviços digitais, and its most frequent company countries are Brazil. These are observations from an incomplete local collection, not the fund's declared mandate or official portfolio size.
+
+## Sources
+
+- [Fund website](https://www.primusvc.com.br/portf%C3%B3lio)
+- [Fund website](https://www.primusvc.com.br/)
+
+**Last verified:** 2026-07-26
