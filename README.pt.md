@@ -17,158 +17,158 @@ Uma lista curada de fundos de Venture Capital que investem na América Latina.
 
 ---
 
-O índice foi otimizado para comparação rápida. Os 10 perfis enriquecidos do piloto incluem estágio, foco e geografia verificados. `Pesquisa pendente` indica que o fundo ainda não foi revisado segundo o novo padrão; isso não significa que a informação não esteja disponível.
+O índice foi otimizado para comparação rápida. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
 
 ## Regional / Pan-América Latina
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
 | [500 LatAm (500 Global)](funds/regional/500-latam-500-global.md) | Pre-seed e Seed | Tecnologia, agnóstico a setores | América Latina hispânica |
-| [Actions Capital (ex-K50 Ventures)](funds/regional/actions-capital-k50-ventures.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [ALIVE Ventures](funds/regional/alive-ventures.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Amplifica Capital](funds/regional/amplifica-capital.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Angel Ventures](funds/regional/angel-ventures.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Avalancha Ventures](funds/regional/avalancha-ventures.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [B Venture Capital](funds/regional/b-venture-capital.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Caravela Capital](funds/regional/caravela-capital.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Cometa (ex-Variv)](funds/regional/cometa-variv.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Dalus Capital](funds/regional/dalus-capital.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Hi Ventures (ex-ALLVP)](funds/regional/hi-ventures-allvp.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [IGNIA](funds/regional/ignia.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Kalei Ventures](funds/regional/kalei-ventures.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Kaszek](funds/regional/kaszek.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Kayyak Ventures](funds/regional/kayyak-ventures.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Magma Partners](funds/regional/magma-partners.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [MAYA Capital](funds/regional/maya-capital.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Nazca](funds/regional/nazca.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Newtopia VC](funds/regional/newtopia-vc.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [NXTP Ventures](funds/regional/nxtp-ventures.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Picus Capital](funds/regional/picus-capital.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Polymath Ventures](funds/regional/polymath-ventures.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [QED Investors](funds/regional/qed-investors.md) | Multi-stage | Fintech | Global, incluindo América Latina |
-| [Salkantay Ventures](funds/regional/salkantay-ventures.md) | Pre-seed a Series A | Tecnologia de impacto | América Latina hispânica |
-| [SoftBank Latin America Fund](funds/regional/softbank-latin-america-fund.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Soma Capital](funds/regional/soma-capital.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
+| [Actions Capital (ex-K50 Ventures)](funds/regional/actions-capital-k50-ventures.md) | Pre-seed e Seed | Tecnologia | América Latina |
+| [ALIVE Ventures](funds/regional/alive-ventures.md) | Seed e Série A | Tecnologia de impacto e inclusão econômica | Colômbia, Peru e América Latina |
+| [Amplifica Capital](funds/regional/amplifica-capital.md) | Pre-seed, Seed e Série A | Inclusão, acesso digital e tecnologia climática | América Latina |
+| [Angel Ventures](funds/regional/angel-ventures.md) | Não divulgado publicamente | Tecnologia, agnóstico a setores | América Latina |
+| [Avalancha Ventures](funds/regional/avalancha-ventures.md) | Não divulgado publicamente | Tecnologia | América Latina |
+| [B Venture Capital](funds/regional/b-venture-capital.md) | Seed e Série A | Tecnologia | América Latina |
+| [Caravela Capital](funds/regional/caravela-capital.md) | Pre-seed e Seed | Tecnologia | América Latina |
+| [Cometa (ex-Variv)](funds/regional/cometa-variv.md) | Pre-seed, Seed e Série A | Tecnologia | América Latina hispânica |
+| [Dalus Capital](funds/regional/dalus-capital.md) | Não divulgado publicamente | Tecnologia | América Latina |
+| [Hi Ventures (ex-ALLVP)](funds/regional/hi-ventures-allvp.md) | Pre-seed e Seed | IA e tecnologia | América Latina |
+| [IGNIA](funds/regional/ignia.md) | Seed e Série A | Tecnologia e crescimento inclusivo | América Latina |
+| [Kalei Ventures](funds/regional/kalei-ventures.md) | Pre-seed e Seed | Tecnologia habilitada por IA | América Latina |
+| [Kaszek](funds/regional/kaszek.md) | Multiestágio | Tecnologia | América Latina |
+| [Kayyak Ventures](funds/regional/kayyak-ventures.md) | Seed, Série A e Série B | Tecnologia | América Latina |
+| [Magma Partners](funds/regional/magma-partners.md) | Pre-seed, Seed e Série A | Tecnologia | América Latina |
+| [MAYA Capital](funds/regional/maya-capital.md) | Pre-seed e Seed | Tecnologia | América Latina |
+| [Nazca](funds/regional/nazca.md) | Multiestágio | Tecnologia | América Latina |
+| [Newtopia VC](funds/regional/newtopia-vc.md) | Não divulgado publicamente | Tecnologia, agnóstico a setores | América Latina |
+| [NXTP Ventures](funds/regional/nxtp-ventures.md) | Seed e Série A | Tecnologia B2B | América Latina |
+| [Picus Capital](funds/regional/picus-capital.md) | Pre-seed, Seed e Série A | Tecnologia, agnóstico a setores | Global, incluindo a América Latina |
+| [Polymath Ventures](funds/regional/polymath-ventures.md) | Pre-seed e Seed | Negócios centrados nas pessoas | América Latina |
+| [QED Investors](funds/regional/qed-investors.md) | Multiestágio | Fintech | Global, incluindo a América Latina |
+| [Salkantay Ventures](funds/regional/salkantay-ventures.md) | Pre-seed, Seed e Série A | Tecnologia de impacto | América Latina hispânica |
+| [SoftBank Latin America Fund](funds/regional/softbank-latin-america-fund.md) | Growth | Tecnologia | América Latina |
+| [Soma Capital](funds/regional/soma-capital.md) | Seed | Tecnologia, agnóstico a setores | Global, incluindo a América Latina |
 | [SP Ventures](funds/regional/sp-ventures.md) | Não divulgado publicamente | AgFoodTech e ClimateTech | América Latina |
-| [The Yield Lab LATAM](funds/regional/the-yield-lab-latam.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
-| [Wollef Ventures (ex-Jaguar)](funds/regional/wollef-ventures-jaguar.md) | Pesquisa pendente | Pesquisa pendente | América Latina |
+| [The Yield Lab LATAM](funds/regional/the-yield-lab-latam.md) | Pre-seed e Seed | Tecnologia agroalimentar | América Latina |
+| [Wollef Ventures (ex-Jaguar)](funds/regional/wollef-ventures-jaguar.md) | Pre-seed e Seed | Tecnologia | América Latina |
 
 ## Argentina
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [Alaya Capital](funds/argentina/alaya-capital.md) | Seed e Series A | Transformação digital | América Latina |
+| [Alaya Capital](funds/argentina/alaya-capital.md) | Seed e Série A | Transformação digital | América Latina |
 
 ## Brasil
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [A.B.Seed Ventures](funds/brazil/a.b.seed-ventures.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [ACE Ventures](funds/brazil/ace-ventures.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Astella](funds/brazil/astella.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Canary](funds/brazil/canary.md) | Pre-seed a Series A | Agnóstico a setores | América Latina |
-| [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Darwin Startups](funds/brazil/darwin-startups.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [DGF Investimentos](funds/brazil/dgf-investimentos.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [DOMO.VC](funds/brazil/domo.vc.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Honey Island Capital](funds/brazil/honey-island-capital.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Indicator Capital](funds/brazil/indicator-capital.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Itau Ventures](funds/brazil/itau-ventures.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [KPTL](funds/brazil/kptl.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
+| [A.B.Seed Ventures](funds/brazil/a.b.seed-ventures.md) | Pre-seed e Seed | Software B2B | Brasil |
+| [ACE Ventures](funds/brazil/ace-ventures.md) | Seed e Série A | Tecnologia | Brasil |
+| [Astella](funds/brazil/astella.md) | Pre-seed, Seed e Série A | Tecnologia, agnóstico a setores | Brasil |
+| [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Pre-seed e Seed | Tecnologia B2B e B2B2C | Brasil |
+| [Canary](funds/brazil/canary.md) | Pre-seed, Seed e Série A | Agnóstico a setores | América Latina |
+| [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Growth | Tecnologia e empresas de alto crescimento | Brasil |
+| [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed e Seed | Startups de tecnologia | Brasil |
+| [DGF Investimentos](funds/brazil/dgf-investimentos.md) | Multiestágio | Empresas de tecnologia de alto crescimento | Brasil e América Latina |
+| [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed e Seed | Tecnologia | Brasil |
+| [Honey Island Capital](funds/brazil/honey-island-capital.md) | Não divulgado publicamente | Fintech e tecnologia | Brasil |
+| [Indicator Capital](funds/brazil/indicator-capital.md) | Pre-seed e Seed | Deep tech | América Latina |
+| [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed e Seed | Software e tecnologia | Brasil |
+| [Itau Ventures](funds/brazil/itau-ventures.md) | Não divulgado publicamente | Serviços financeiros e tecnologias adjacentes | Brasil e América Latina |
+| [KPTL](funds/brazil/kptl.md) | Multiestágio | Deep tech, saúde, bioeconomia e tecnologia | Brasil |
 | [Monashees](funds/brazil/monashees.md) | Não divulgado publicamente | Tecnologia | América Latina para o mundo |
-| [Oria Capital](funds/brazil/oria-capital.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Primus Ventures](funds/brazil/primus-ventures.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Redpoint eventures](funds/brazil/redpoint-eventures.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Scale-Up Ventures](funds/brazil/scale-up-ventures.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Spectra Investimentos](funds/brazil/spectra-investimentos.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Ventiur](funds/brazil/ventiur.md) | Pesquisa pendente | Pesquisa pendente | Brasil |
-| [Vox Capital](funds/brazil/vox-capital.md) | Seed a Series B | Tecnologia de impacto | Brasil |
+| [Oria Capital](funds/brazil/oria-capital.md) | Não divulgado publicamente | Software B2B | Brasil |
+| [Primus Ventures](funds/brazil/primus-ventures.md) | Pre-seed e Seed | Tecnologia B2B | Sul do Brasil |
+| [Redpoint eventures](funds/brazil/redpoint-eventures.md) | Multiestágio | Tecnologia | Brasil |
+| [Scale-Up Ventures](funds/brazil/scale-up-ventures.md) | Seed e Série A | Empresas da rede Endeavor | Brasil |
+| [Spectra Investimentos](funds/brazil/spectra-investimentos.md) | Multiestágio | Investimentos alternativos, incluindo venture capital | Brasil e América Latina |
+| [Ventiur](funds/brazil/ventiur.md) | Pre-seed e Seed | Startups de tecnologia | Brasil |
+| [Vox Capital](funds/brazil/vox-capital.md) | Seed, Série A e Série B | Tecnologia de impacto | Brasil |
 
 ## Chile
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [Fen Ventures](funds/chile/fen-ventures.md) | Pesquisa pendente | Pesquisa pendente | Chile |
-| [Genesis Ventures](funds/chile/genesis-ventures.md) | Pesquisa pendente | Pesquisa pendente | Chile |
-| [Manutara Ventures](funds/chile/manutara-ventures.md) | Pesquisa pendente | Pesquisa pendente | Chile |
+| [Fen Ventures](funds/chile/fen-ventures.md) | Pre-seed e Seed | Fintech, SaaS e sustentabilidade | América Latina hispânica |
+| [Genesis Ventures](funds/chile/genesis-ventures.md) | Multiestágio | Tecnologia, energia e imóveis | Chile e América Latina |
+| [Manutara Ventures](funds/chile/manutara-ventures.md) | Seed e Série A | Tecnologia | Chile e América Latina |
 
 ## Colômbia
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [Axon Partners + Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | Pesquisa pendente | Pesquisa pendente | Colômbia |
-| [QAPU Ventures](funds/colombia/qapu-ventures.md) | Pesquisa pendente | Pesquisa pendente | Colômbia |
+| [Axon Partners + Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | Não divulgado publicamente | Tecnologia e inovação estratégica | Colômbia e América Latina |
+| [QAPU Ventures](funds/colombia/qapu-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
 
 ## México
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [AngelHub VC](funds/mexico/angelhub-vc.md) | Pesquisa pendente | Pesquisa pendente | México |
-| [Capital Invent](funds/mexico/capital-invent.md) | Pesquisa pendente | Pesquisa pendente | México |
-| [Dux Capital](funds/mexico/dux-capital.md) | Pesquisa pendente | Pesquisa pendente | México |
+| [AngelHub VC](funds/mexico/angelhub-vc.md) | Pre-seed e Seed | Tecnologia, agnóstico a setores | México e América Latina |
+| [Capital Invent](funds/mexico/capital-invent.md) | Não divulgado publicamente | Marketplaces, e-commerce, fintech, mobile e SaaS | México |
+| [Dux Capital](funds/mexico/dux-capital.md) | Pre-seed e Seed | Tecnologia e fundadores sub-representados | México, América Latina e Estados Unidos |
 
 ## Peru
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [EMA Ventures](funds/peru/ema-ventures.md) | Pesquisa pendente | Pesquisa pendente | Peru |
-| [RPP Ventures](funds/peru/rpp-ventures.md) | Pesquisa pendente | Pesquisa pendente | Peru |
-| [UTEC Ventures](funds/peru/utec-ventures.md) | Pesquisa pendente | Pesquisa pendente | Peru |
-| [Winnipeg Capital](funds/peru/winnipeg-capital.md) | Pesquisa pendente | Pesquisa pendente | Peru |
-| [AVP Ventures](funds/peru/avp-ventures.md) | Pesquisa pendente | Pesquisa pendente | Peru |
+| [EMA Ventures](funds/peru/ema-ventures.md) | Pre-seed e Seed | Tecnologia e empresas lideradas por mulheres | América Latina hispânica |
+| [RPP Ventures](funds/peru/rpp-ventures.md) | Não divulgado publicamente | Mídia, conteúdo e tecnologia | Peru |
+| [UTEC Ventures](funds/peru/utec-ventures.md) | Pre-seed e Seed | Ciência, tecnologia e deep tech | Peru e América Latina |
+| [Winnipeg Capital](funds/peru/winnipeg-capital.md) | Não divulgado publicamente | Empresas de tecnologia escaláveis | América Latina |
+| [AVP Ventures](funds/peru/avp-ventures.md) | Seed | Tecnologia | Peru e América Latina |
 
 ## Multi-País & Global
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [ADN.VC](funds/multi-country/adn.vc.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Alexia Ventures](funds/multi-country/alexia-ventures.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Carao Ventures](funds/multi-country/carao-ventures.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [DILA Capital](funds/multi-country/dila-capital.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [devlabs](funds/multi-country/devlabs.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [FJ Labs](funds/multi-country/fj-labs.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
+| [ADN.VC](funds/multi-country/adn.vc.md) | Não divulgado publicamente | Tecnologia | América Central e América Latina |
+| [Alexia Ventures](funds/multi-country/alexia-ventures.md) | Seed e Série A | Software inteligente e IA aplicada | América Latina |
+| [Carao Ventures](funds/multi-country/carao-ventures.md) | Não divulgado publicamente | Tecnologia | América Central e América Latina |
+| [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | Não divulgado publicamente | Tecnologia financeira | Global, incluindo a América Latina |
+| [DILA Capital](funds/multi-country/dila-capital.md) | Seed e Série A | Tecnologia | América Latina hispânica e Estados Unidos |
+| [devlabs](funds/multi-country/devlabs.md) | Pre-seed e Seed | Software escalável globalmente | América Latina e Estados Unidos |
+| [FJ Labs](funds/multi-country/fj-labs.md) | Pre-seed e Seed | Marketplaces e efeitos de rede | Global |
+| [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Pre-seed e Seed | Tecnologia, agnóstico a setores | Global, incluindo a América Latina |
 | [GRIDX](funds/multi-country/gridx.md) | Pre-seed | Ciências da vida e biotecnologia | América Latina para o mundo |
-| [Grupo Boticario Ventures](funds/multi-country/grupo-boticario-ventures.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Igah Ventures (Patria)](funds/multi-country/igah-ventures-patria.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Impact Ventures PSM](funds/multi-country/impact-ventures-psm.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Infinite Capital](funds/multi-country/infinite-capital.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Invariantes Fund](funds/multi-country/invariantes-fund.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Kolab Ventures](funds/multi-country/kolab-ventures.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Krealo](funds/multi-country/krealo.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Kuiper](funds/multi-country/kuiper.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Latitud Ventures](funds/multi-country/latitud-ventures.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Lotux](funds/multi-country/lotux.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Mindset Ventures](funds/multi-country/mindset-ventures.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [New Ventures Capital](funds/multi-country/new-ventures-capital.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Norte Ventures](funds/multi-country/norte-ventures.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [ONEVC](funds/multi-country/onevc.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Pant3ra Venture Fund](funds/multi-country/pant3ra-venture-fund.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Quona Capital](funds/multi-country/quona-capital.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Redwood Ventures](funds/multi-country/redwood-ventures.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Shima Capital](funds/multi-country/shima-capital.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [SOSV](funds/multi-country/sosv.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [The Ark Fund](funds/multi-country/the-ark-fund.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Valor Capital Group](funds/multi-country/valor-capital-group.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
-| [Wayra](funds/multi-country/wayra.md) | Multi-stage | Tecnologia estratégica | Brasil, Europa e América Latina |
-| [Worthit](funds/multi-country/worthit.md) | Pesquisa pendente | Pesquisa pendente | Múltiplos países |
+| [Grupo Boticario Ventures](funds/multi-country/grupo-boticario-ventures.md) | Não divulgado publicamente | Beleza e varejo | Brasil e América Latina |
+| [Igah Ventures (Patria)](funds/multi-country/igah-ventures-patria.md) | Multiestágio | Empresas de alto crescimento | Brasil e América Latina |
+| [Impact Ventures PSM](funds/multi-country/impact-ventures-psm.md) | Seed e Série A | Empreendedorismo de impacto | México e América Latina |
+| [Infinite Capital](funds/multi-country/infinite-capital.md) | Pre-seed e Seed | Ciência e engenharia de fronteira | Global |
+| [Invariantes Fund](funds/multi-country/invariantes-fund.md) | Pre-seed e Seed | Tecnologia, agnóstico a setores | América Latina e Estados Unidos |
+| [Kolab Ventures](funds/multi-country/kolab-ventures.md) | Não divulgado publicamente | IA, fintech e tecnologia transfronteiriça | México e América Latina |
+| [Krealo](funds/multi-country/krealo.md) | Seed e Série A | Tecnologia financeira | América Latina |
+| [Kuiper](funds/multi-country/kuiper.md) | Não divulgado publicamente | Tecnologia | América Latina e Estados Unidos |
+| [Latitud Ventures](funds/multi-country/latitud-ventures.md) | Pre-seed e Seed | Tecnologia, agnóstico a setores | América Latina |
+| [Lotux](funds/multi-country/lotux.md) | Pre-seed | Fintech, insurtech, logística, comércio, educação e saúde | América Latina |
+| [Mindset Ventures](funds/multi-country/mindset-ventures.md) | Seed e Série A | Tecnologia B2B | América Latina e Estados Unidos |
+| [New Ventures Capital](funds/multi-country/new-ventures-capital.md) | Seed e Série A | Empreendedorismo de impacto | América Latina |
+| [Norte Ventures](funds/multi-country/norte-ventures.md) | Não divulgado publicamente | Tecnologia, agnóstico a setores | América Latina |
+| [ONEVC](funds/multi-country/onevc.md) | Seed | Tecnologia | América Latina |
+| [Pant3ra Venture Fund](funds/multi-country/pant3ra-venture-fund.md) | Pre-seed e Seed | Mobilidade, logística, e-commerce e fintech | México, Estados Unidos e América Latina |
+| [Quona Capital](funds/multi-country/quona-capital.md) | Seed, Série A e Série B | Fintech e inclusão financeira | Mercados emergentes, incluindo a América Latina |
+| [Redwood Ventures](funds/multi-country/redwood-ventures.md) | Seed e Série A | Tecnologia, agnóstico a setores | América Latina |
+| [Shima Capital](funds/multi-country/shima-capital.md) | Pre-seed e Seed | Web3 e blockchain | Global |
+| [SOSV](funds/multi-country/sosv.md) | Pre-seed e Seed | Deep tech, clima e saúde | Global, incluindo a América Latina |
+| [The Ark Fund](funds/multi-country/the-ark-fund.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
+| [Valor Capital Group](funds/multi-country/valor-capital-group.md) | Multiestágio | Tecnologia | Estados Unidos e Brasil, incluindo a América Latina |
+| [Wayra](funds/multi-country/wayra.md) | Multiestágio | Tecnologia estratégica | Brasil, Europa e América Latina |
+| [Worthit](funds/multi-country/worthit.md) | Pre-seed | SaaS B2B e IA | América Latina |
 
 ## Fund of Funds & Co-Investment
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [Endeavor Catalyst](funds/fof/endeavor-catalyst.md) | Pesquisa pendente | Pesquisa pendente | Pesquisa pendente |
-| [Veronorte](funds/fof/veronorte.md) | Pesquisa pendente | Pesquisa pendente | Pesquisa pendente |
+| [Endeavor Catalyst](funds/fof/endeavor-catalyst.md) | Multiestágio | Empresas da rede Endeavor | Global |
+| [Veronorte](funds/fof/veronorte.md) | Não divulgado publicamente | Inovação corporativa e fundos de venture capital | Colômbia e América Latina |
 
 ## Corporate VC
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [TM3 Capital](funds/cvc/tm3-capital.md) | Pesquisa pendente | Pesquisa pendente | Pesquisa pendente |
-| [Velum Ventures](funds/cvc/velum-ventures.md) | Pesquisa pendente | Pesquisa pendente | Pesquisa pendente |
+| [TM3 Capital](funds/cvc/tm3-capital.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
+| [Velum Ventures](funds/cvc/velum-ventures.md) | Seed | Tecnologia | Colômbia e América Latina |
 
 ## Contribuindo
 
