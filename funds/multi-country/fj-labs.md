@@ -5,6 +5,7 @@ FJ Labs is an investment organization focused on Marketplaces and network effect
 ## Investment profile
 
 - **Website:** https://www.fjlabs.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Marketplaces and network effects

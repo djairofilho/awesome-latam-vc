@@ -5,6 +5,7 @@ Global Founders Capital is an investment organization focused on Technology, sec
 ## Investment profile
 
 - **Website:** https://www.globalfounderscapital.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology, sector agnostic

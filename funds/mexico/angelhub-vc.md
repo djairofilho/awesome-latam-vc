@@ -5,6 +5,7 @@ AngelHub VC is an investment organization focused on Technology, sector agnostic
 ## Investment profile
 
 - **Website:** https://www.angelhub.mx/
+- **Fund type:** Angel investment network
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology, sector agnostic

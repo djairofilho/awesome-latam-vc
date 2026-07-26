@@ -5,6 +5,7 @@ SoftBank Latin America Fund is an investment organization focused on Technology 
 ## Investment profile
 
 - **Website:** https://www.latinamericafund.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Growth
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

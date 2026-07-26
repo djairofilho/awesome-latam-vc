@@ -5,6 +5,7 @@ KPTL is an investment organization focused on Deep tech, health, bioeconomy, and
 ## Investment profile
 
 - **Website:** https://www.kptl.com.br/
+- **Fund type:** Venture capital
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Deep tech, health, bioeconomy, and technology

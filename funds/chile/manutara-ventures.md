@@ -5,6 +5,7 @@ Manutara Ventures is an investment organization focused on Technology in Chile a
 ## Investment profile
 
 - **Website:** https://manutaraventures.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

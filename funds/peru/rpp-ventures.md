@@ -5,6 +5,7 @@ RPP Ventures is an investment organization focused on Media, content, and techno
 ## Investment profile
 
 - **Website:** https://grppventures.pe/
+- **Fund type:** Corporate venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Media, content, and technology

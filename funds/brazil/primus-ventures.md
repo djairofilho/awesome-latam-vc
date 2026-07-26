@@ -5,6 +5,7 @@ Primus Ventures is an investment organization focused on B2B technology in South
 ## Investment profile
 
 - **Website:** https://sulventures.com.br/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Yes; up to R$10 million including follow-ons
 - **Focus:** B2B technology

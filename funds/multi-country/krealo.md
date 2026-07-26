@@ -5,6 +5,7 @@ Krealo is an investment organization focused on Financial technology in Latin Am
 ## Investment profile
 
 - **Website:** https://www.krealo.pe/
+- **Fund type:** Corporate venture capital
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Financial technology

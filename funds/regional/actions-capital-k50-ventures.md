@@ -5,6 +5,7 @@ Actions Capital (ex-K50 Ventures) is an investment organization focused on Techn
 ## Investment profile
 
 - **Website:** https://www.actions.capital/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

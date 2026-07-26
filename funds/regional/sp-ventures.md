@@ -6,6 +6,7 @@ the intersection of food security and climate resilience.
 ## Investment profile
 
 - **Website:** https://spventures.com.br/
+- **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** AgFoodTech & ClimateTech

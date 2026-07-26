@@ -5,6 +5,7 @@ A.B.Seed Ventures is an investment organization focused on B2B software in Brazi
 ## Investment profile
 
 - **Website:** https://abseed.com.br/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** B2B software

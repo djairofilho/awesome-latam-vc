@@ -5,6 +5,7 @@ Impact Ventures PSM is an investment organization focused on Impact entrepreneur
 ## Investment profile
 
 - **Website:** https://ivpsm.org.mx/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Impact entrepreneurship

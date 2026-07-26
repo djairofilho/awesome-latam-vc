@@ -7,6 +7,7 @@ outcomes.
 ## Investment profile
 
 - **Website:** https://novo.voxcapital.com.br/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed, Series A, and Series B
 - **Follow-on stages:** Growth co-investment opportunities may be available
 - **Focus:** Impact technology

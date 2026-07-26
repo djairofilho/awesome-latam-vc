@@ -5,6 +5,7 @@ The Yield Lab LATAM is an investment organization focused on Agri-food technolog
 ## Investment profile
 
 - **Website:** https://theyieldlablatam.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Agri-food technology

@@ -5,6 +5,7 @@ Infinite Capital is an investment organization focused on Breakthrough science a
 ## Investment profile
 
 - **Website:** https://www.infinite.xyz/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Breakthrough science and engineering

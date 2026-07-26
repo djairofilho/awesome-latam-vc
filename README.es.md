@@ -4,22 +4,20 @@ Una lista curada de fondos de Venture Capital que invierten en América Latina.
 
 ## Contenido
 
-- [Regional / Pan-Latinoamérica](#regional--pan-latinoamérica)
+- [Pan-Latinoamérica (sede en la región)](#pan-latinoamérica-sede-en-la-región)
 - [Argentina](#argentina)
 - [Brasil](#brasil)
 - [Chile](#chile)
 - [Colombia](#colombia)
 - [México](#méxico)
 - [Perú](#perú)
-- [Multi-País & Global](#multi-país--global)
-- [Fund of Funds & Co-Investment](#fund-of-funds--co-investment)
-- [Corporate VC](#corporate-vc)
+- [Global con presencia en América Latina](#global-con-presencia-en-américa-latina)
 
 ---
 
 El índice está optimizado para una comparación rápida. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
 
-## Regional / Pan-Latinoamérica
+## Pan-Latinoamérica (sede en la región)
 
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
@@ -83,6 +81,7 @@ El índice está optimizado para una comparación rápida. Todos los perfiles de
 | [Redpoint eventures](funds/brazil/redpoint-eventures.md) | Multietapa | Tecnología | Brasil |
 | [Scale-Up Ventures](funds/brazil/scale-up-ventures.md) | Seed y Serie A | Empresas de la red Endeavor | Brasil |
 | [Spectra Investimentos](funds/brazil/spectra-investimentos.md) | Multietapa | Inversiones alternativas, incluido venture capital | Brasil y América Latina |
+| [TM3 Capital](funds/brazil/tm3-capital.md) | No divulgado públicamente | No divulgado públicamente | No divulgado públicamente |
 | [Ventiur](funds/brazil/ventiur.md) | Pre-seed y Seed | Startups tecnológicas | Brasil |
 | [Vox Capital](funds/brazil/vox-capital.md) | Seed, Serie A y Serie B | Tecnología de impacto | Brasil |
 
@@ -100,6 +99,8 @@ El índice está optimizado para una comparación rápida. Todos los perfiles de
 | --- | --- | --- | --- |
 | [Axon Partners + Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | No divulgado públicamente | Tecnología e innovación estratégica | Colombia y América Latina |
 | [QAPU Ventures](funds/colombia/qapu-ventures.md) | No divulgado públicamente | No divulgado públicamente | No divulgado públicamente |
+| [Velum Ventures](funds/colombia/velum-ventures.md) | Seed | Tecnología | Colombia y América Latina |
+| [Veronorte](funds/colombia/veronorte.md) | No divulgado públicamente | Innovación corporativa y fondos de venture capital | Colombia y América Latina |
 
 ## México
 
@@ -119,7 +120,7 @@ El índice está optimizado para una comparación rápida. Todos los perfiles de
 | [Winnipeg Capital](funds/peru/winnipeg-capital.md) | No divulgado públicamente | Empresas tecnológicas escalables | América Latina |
 | [AVP Ventures](funds/peru/avp-ventures.md) | Seed | Tecnología | Perú y América Latina |
 
-## Multi-País & Global
+## Global con presencia en América Latina
 
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
@@ -127,8 +128,9 @@ El índice está optimizado para una comparación rápida. Todos los perfiles de
 | [Alexia Ventures](funds/multi-country/alexia-ventures.md) | Seed y Serie A | Software inteligente e IA aplicada | América Latina |
 | [Carao Ventures](funds/multi-country/carao-ventures.md) | No divulgado públicamente | Tecnología | Centroamérica y América Latina |
 | [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | No divulgado públicamente | Tecnología financiera | Global, incluida América Latina |
-| [DILA Capital](funds/multi-country/dila-capital.md) | Seed y Serie A | Tecnología | América Latina hispanohablante y Estados Unidos |
 | [devlabs](funds/multi-country/devlabs.md) | Pre-seed y Seed | Software escalable globalmente | América Latina y Estados Unidos |
+| [DILA Capital](funds/multi-country/dila-capital.md) | Seed y Serie A | Tecnología | América Latina hispanohablante y Estados Unidos |
+| [Endeavor Catalyst](funds/multi-country/endeavor-catalyst.md) | Multietapa | Empresas de la red Endeavor | Global |
 | [FJ Labs](funds/multi-country/fj-labs.md) | Pre-seed y Seed | Marketplaces y efectos de red | Global |
 | [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Pre-seed y Seed | Tecnología, agnóstico a sectores | Global, incluida América Latina |
 | [GRIDX](funds/multi-country/gridx.md) | Pre-seed | Ciencias de la vida y biotecnología | América Latina al mundo |
@@ -155,20 +157,6 @@ El índice está optimizado para una comparación rápida. Todos los perfiles de
 | [Valor Capital Group](funds/multi-country/valor-capital-group.md) | Multietapa | Tecnología | Estados Unidos y Brasil, incluida América Latina |
 | [Wayra](funds/multi-country/wayra.md) | Multietapa | Tecnología estratégica | Brasil, Europa y América Latina |
 | [Worthit](funds/multi-country/worthit.md) | Pre-seed | SaaS B2B e IA | América Latina |
-
-## Fund of Funds & Co-Investment
-
-| Fondo | Etapa | Enfoque | Geografía |
-| --- | --- | --- | --- |
-| [Endeavor Catalyst](funds/fof/endeavor-catalyst.md) | Multietapa | Empresas de la red Endeavor | Global |
-| [Veronorte](funds/fof/veronorte.md) | No divulgado públicamente | Innovación corporativa y fondos de venture capital | Colombia y América Latina |
-
-## Corporate VC
-
-| Fondo | Etapa | Enfoque | Geografía |
-| --- | --- | --- | --- |
-| [TM3 Capital](funds/cvc/tm3-capital.md) | No divulgado públicamente | No divulgado públicamente | No divulgado públicamente |
-| [Velum Ventures](funds/cvc/velum-ventures.md) | Seed | Tecnología | Colombia y América Latina |
 
 ## Contribuyendo
 

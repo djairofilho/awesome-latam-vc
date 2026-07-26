@@ -5,6 +5,7 @@ Itau Ventures is an investment organization focused on Financial services and ad
 ## Investment profile
 
 - **Website:** https://www.itau.com.br/ventures
+- **Fund type:** Corporate venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Financial services and adjacent technologies

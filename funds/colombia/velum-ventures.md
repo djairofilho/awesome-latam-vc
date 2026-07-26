@@ -5,6 +5,7 @@ Velum Ventures is an investment organization focused on Technology in Colombia a
 ## Investment profile
 
 - **Website:** https://www.linkedin.com/company/velum-ventures/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

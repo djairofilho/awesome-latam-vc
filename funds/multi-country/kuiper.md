@@ -5,6 +5,7 @@ Kuiper is an investment organization focused on Technology in Latin America and 
 ## Investment profile
 
 - **Website:** https://www.kuipervc.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

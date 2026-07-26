@@ -5,6 +5,7 @@ Soma Capital is an investment organization focused on Technology, sector agnosti
 ## Investment profile
 
 - **Website:** https://somacap.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology, sector agnostic

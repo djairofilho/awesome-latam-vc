@@ -5,6 +5,7 @@ Pant3ra Venture Fund is an investment organization focused on Mobility, logistic
 ## Investment profile
 
 - **Website:** https://www.linkedin.com/company/pant3ra/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Mobility, logistics, e-commerce, and fintech

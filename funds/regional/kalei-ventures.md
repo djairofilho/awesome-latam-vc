@@ -5,6 +5,7 @@ Kalei Ventures is an investment organization focused on AI-enabled technology in
 ## Investment profile
 
 - **Website:** https://www.kaleiventures.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** AI-enabled technology

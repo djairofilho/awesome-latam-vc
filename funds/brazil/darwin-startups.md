@@ -5,6 +5,7 @@ Darwin Startups is an investment organization focused on Technology startups in 
 ## Investment profile
 
 - **Website:** https://www.darwinstartups.com/
+- **Fund type:** Accelerator and venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology startups

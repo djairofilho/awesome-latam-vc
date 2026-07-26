@@ -6,6 +6,7 @@ American founders building companies for regional and global markets.
 ## Investment profile
 
 - **Website:** https://www.monashees.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Technology

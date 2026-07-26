@@ -5,6 +5,7 @@ Ventiur is an investment organization focused on Technology startups in Brazil.
 ## Investment profile
 
 - **Website:** https://ventiur.net/
+- **Fund type:** Accelerator and venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology startups

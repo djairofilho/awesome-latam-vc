@@ -5,6 +5,7 @@ Alexia Ventures is an investment organization focused on Intelligent software an
 ## Investment profile
 
 - **Website:** https://www.alexia.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Intelligent software and applied AI

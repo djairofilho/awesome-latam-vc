@@ -5,6 +5,7 @@ Shima Capital is an investment organization focused on Web3 and blockchain in Gl
 ## Investment profile
 
 - **Website:** https://shima.capital/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Web3 and blockchain

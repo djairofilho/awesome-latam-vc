@@ -5,6 +5,7 @@ MAYA Capital is an investment organization focused on Technology in Latin Americ
 ## Investment profile
 
 - **Website:** https://www.maya.capital/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

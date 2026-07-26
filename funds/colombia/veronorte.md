@@ -5,6 +5,7 @@ Veronorte is an investment organization focused on Corporate innovation and vent
 ## Investment profile
 
 - **Website:** https://veronorte.com/
+- **Fund type:** Fund investor and direct investor
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Corporate innovation and venture funds

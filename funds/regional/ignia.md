@@ -5,6 +5,7 @@ IGNIA is an investment organization focused on Technology and inclusive growth i
 ## Investment profile
 
 - **Website:** https://www.ignia.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology and inclusive growth

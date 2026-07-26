@@ -5,6 +5,7 @@ Astella is an investment organization focused on Technology, sector agnostic in 
 ## Investment profile
 
 - **Website:** https://www.astella.com.br/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed, Seed, and Series A
 - **Follow-on stages:** Yes, through Series B
 - **Focus:** Technology, sector agnostic

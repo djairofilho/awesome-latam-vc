@@ -6,6 +6,7 @@ investing in startups that can generate strategic business with the group.
 ## Investment profile
 
 - **Website:** https://wayra.com/
+- **Fund type:** Corporate venture capital
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Strategic technology

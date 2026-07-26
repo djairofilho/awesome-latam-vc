@@ -5,6 +5,7 @@ Genesis Ventures is an investment organization focused on Technology, energy, an
 ## Investment profile
 
 - **Website:** https://genesisventures.vc/
+- **Fund type:** Venture capital
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology, energy, and real estate

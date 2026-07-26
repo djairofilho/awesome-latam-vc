@@ -5,6 +5,7 @@ Igah Ventures (Patria) is an investment organization focused on High-growth comp
 ## Investment profile
 
 - **Website:** https://www.patriaventure.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** High-growth companies

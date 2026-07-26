@@ -5,6 +5,7 @@ ALIVE Ventures is an investment organization focused on Impact technology and ec
 ## Investment profile
 
 - **Website:** https://www.alive-ventures.com/
+- **Fund type:** Venture capital
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Impact technology and economic inclusion

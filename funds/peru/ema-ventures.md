@@ -5,6 +5,7 @@ EMA Ventures is an investment organization focused on Technology and women-led c
 ## Investment profile
 
 - **Website:** https://www.linkedin.com/company/ema-ventures/
+- **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology and women-led companies
