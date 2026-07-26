@@ -8,7 +8,7 @@ in Spanish-speaking Latin America.
 - **Website:** https://500.co/latam
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed
-- **Focus:** Technology companies across sectors
+- **Focus:** Technology, sector agnostic
 - **Geography:** Spanish-speaking Latin America
 - **Initial check:** USD 300,000 under the current accelerator offer
 - **Investment role:** Direct investor through the 500 LatAm Accelerator

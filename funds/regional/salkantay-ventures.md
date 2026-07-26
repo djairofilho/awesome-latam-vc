@@ -8,7 +8,7 @@ address social, economic, and environmental challenges in Latin America.
 - **Website:** https://www.salkantay.vc/
 - **Stage at entry:** Pre-seed, Seed, and Series A
 - **Follow-on stages:** Not publicly disclosed
-- **Focus:** Human improvement, economic development, and a sustainable planet
+- **Focus:** Impact technology
 - **Geography:** Spanish-speaking Latin America
 - **Initial check:** Not publicly disclosed
 - **Investment role:** Strategic partner; lead or co-investment preference is

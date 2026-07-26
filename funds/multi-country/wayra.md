@@ -6,11 +6,10 @@ investing in startups that can generate strategic business with the group.
 ## Investment profile
 
 - **Website:** https://wayra.com/
-- **Stage at entry:** Multi-stage, from Seed through Growth
+- **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed
-- **Focus:** Technology companies with strategic fit for Telefónica
-- **Geography:** Primarily Spain, Germany, the United Kingdom, and Brazil, with
-  activity in other European and Latin American markets
+- **Focus:** Strategic technology
+- **Geography:** Brazil, Europe, and Latin America
 - **Initial check:** Not publicly disclosed for the general Wayra strategy
 - **Investment role:** Direct corporate investor and venture-client partner
 - **Business models:** B2B and B2C technology models that can integrate with
