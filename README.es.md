@@ -1,172 +1,174 @@
 # Awesome LatAm VC
 
-Una lista curada de fondos de Venture Capital que invierten en America Latina.
+Una lista curada de fondos de Venture Capital que invierten en América Latina.
 
 ## Contenido
 
-- [Regional / Pan-Latinoamerica](#regional--pan-latinoamerica)
+- [Regional / Pan-Latinoamérica](#regional--pan-latinoamérica)
 - [Argentina](#argentina)
 - [Brasil](#brasil)
 - [Chile](#chile)
 - [Colombia](#colombia)
-- [Mexico](#mexico)
-- [Peru](#peru)
-- [Multi-Pais & Global](#multi-pais--global)
+- [México](#méxico)
+- [Perú](#perú)
+- [Multi-País & Global](#multi-país--global)
 - [Fund of Funds & Co-Investment](#fund-of-funds--co-investment)
 - [Corporate VC](#corporate-vc)
 
 ---
 
-## Regional / Pan-Latinoamerica
+El índice está optimizado para una comparación rápida. Los 10 perfiles enriquecidos del piloto incluyen etapa, enfoque y geografía verificados. `Investigación pendiente` indica que el fondo aún no fue revisado con el nuevo estándar; no significa que la información no esté disponible.
 
-| Fondo | Sitio | Region | Portafolio |
+## Regional / Pan-Latinoamérica
+
+| Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
-| [500 LatAm (500 Global)](funds/regional/500-latam-500-global.md) | [500.co](https://500.co/portfolio?page=1&industry=all&region=Latin%20America&stage=all&country=all&bModel=all&batch=all&sort=alphabetically#companies-table) | Regional / Pan-Latinoamerica | 165 |
-| [Actions Capital (ex-K50 Ventures)](funds/regional/actions-capital-k50-ventures.md) | [www.actions.capital](https://www.actions.capital/) | Regional / Pan-Latinoamerica | 25 |
-| [ALIVE Ventures](funds/regional/alive-ventures.md) | [www.alive-ventures.com](https://www.alive-ventures.com/#Portfolio) | Regional / Pan-Latinoamerica | 17 |
-| [Amplifica Capital](funds/regional/amplifica-capital.md) | [www.amplifica.capital](https://www.amplifica.capital/en/portfolio) | Regional / Pan-Latinoamerica | 24 |
-| [Angel Ventures](funds/regional/angel-ventures.md) | [www.angelventures.vc](https://www.angelventures.vc/portfolio) | Regional / Pan-Latinoamerica | 56 |
-| [Avalancha Ventures](funds/regional/avalancha-ventures.md) | [avalancha.ventures](https://avalancha.ventures/portafolio/) | Regional / Pan-Latinoamerica | 27 |
-| [B Venture Capital](funds/regional/b-venture-capital.md) | [www.bventure.capital](https://www.bventure.capital/portfolio) | Regional / Pan-Latinoamerica | 45 |
-| [Caravela Capital](funds/regional/caravela-capital.md) | [caravela.capital](https://caravela.capital/) | Regional / Pan-Latinoamerica | 43 |
-| [Cometa (ex-Variv)](funds/regional/cometa-variv.md) | [www.cometa.vc](https://www.cometa.vc/partners/atani) | Regional / Pan-Latinoamerica | 28 |
-| [Dalus Capital](funds/regional/dalus-capital.md) | [www.daluscapital.com](https://www.daluscapital.com/portfolio) | Regional / Pan-Latinoamerica | 43 |
-| [Hi Ventures (ex-ALLVP)](funds/regional/hi-ventures-allvp.md) | [www.hi.vc](https://www.hi.vc/portfolio) | Regional / Pan-Latinoamerica | 50 |
-| [IGNIA](funds/regional/ignia.md) | [www.ignia.vc](https://www.ignia.vc/portfolio) | Regional / Pan-Latinoamerica | 50 |
-| [Kalei Ventures](funds/regional/kalei-ventures.md) | [www.kaleiventures.com](https://www.kaleiventures.com/#portfolio) | Regional / Pan-Latinoamerica | 25 |
-| [Kaszek](funds/regional/kaszek.md) | [www.kaszek.com](https://www.kaszek.com/companies/) | Regional / Pan-Latinoamerica | 125 |
-| [Kayyak Ventures](funds/regional/kayyak-ventures.md) | [www.kayyakventures.com](https://www.kayyakventures.com/portfolio) | Regional / Pan-Latinoamerica | 32 |
-| [Magma Partners](funds/regional/magma-partners.md) | [magmapartners.com](https://magmapartners.com/companies) | Regional / Pan-Latinoamerica | 116 |
-| [MAYA Capital](funds/regional/maya-capital.md) | [www.maya.capital](https://www.maya.capital/portfolio) | Regional / Pan-Latinoamerica | 45 |
-| [Nazca](funds/regional/nazca.md) | [nazca.vc](https://nazca.vc/) | Regional / Pan-Latinoamerica | 81 |
-| [Newtopia VC](funds/regional/newtopia-vc.md) | [newtopia.vc](https://newtopia.vc/portfolio) | Regional / Pan-Latinoamerica | 70 |
-| [NXTP Ventures](funds/regional/nxtp-ventures.md) | [www.nxtp.vc](https://www.nxtp.vc/portfolio) | Regional / Pan-Latinoamerica | 56 |
-| [Picus Capital](funds/regional/picus-capital.md) | [www.picuscap.com](https://www.picuscap.com/portfolio/?_countries=latin-america) | Regional / Pan-Latinoamerica | 23 |
-| [Polymath Ventures](funds/regional/polymath-ventures.md) | [www.polymathv.com](https://www.polymathv.com/portfolio) | Regional / Pan-Latinoamerica | 7 |
-| [QED Investors](funds/regional/qed-investors.md) | [www.qedinvestors.com](https://www.qedinvestors.com/companies) | Regional / Pan-Latinoamerica | 43 |
-| [Salkantay Ventures](funds/regional/salkantay-ventures.md) | [www.salkantay.vc](https://www.salkantay.vc/portfolio) | Regional / Pan-Latinoamerica | 23 |
-| [SoftBank Latin America Fund](funds/regional/softbank-latin-america-fund.md) | [www.latinamericafund.com](https://www.latinamericafund.com/portfolio/) | Regional / Pan-Latinoamerica | 63 |
-| [Soma Capital](funds/regional/soma-capital.md) | [somacap.com](https://somacap.com/portfolio?tab=all&region=LatAm) | Regional / Pan-Latinoamerica | 67 |
-| [SP Ventures](funds/regional/sp-ventures.md) | [spventures.com.br](https://spventures.com.br/portfolio/aegro/) | Regional / Pan-Latinoamerica | 37 |
-| [The Yield Lab LATAM](funds/regional/the-yield-lab-latam.md) | [theyieldlablatam.com](https://theyieldlablatam.com/companies/atech/) | Regional / Pan-Latinoamerica | 35 |
-| [Wollef Ventures (ex-Jaguar)](funds/regional/wollef-ventures-jaguar.md) | [wollefvc.com](https://wollefvc.com/companies) | Regional / Pan-Latinoamerica | 40 |
+| [500 LatAm (500 Global)](funds/regional/500-latam-500-global.md) | Pre-seed y Seed | Tecnología, agnóstico por sector | América Latina hispanohablante |
+| [Actions Capital (ex-K50 Ventures)](funds/regional/actions-capital-k50-ventures.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [ALIVE Ventures](funds/regional/alive-ventures.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Amplifica Capital](funds/regional/amplifica-capital.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Angel Ventures](funds/regional/angel-ventures.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Avalancha Ventures](funds/regional/avalancha-ventures.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [B Venture Capital](funds/regional/b-venture-capital.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Caravela Capital](funds/regional/caravela-capital.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Cometa (ex-Variv)](funds/regional/cometa-variv.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Dalus Capital](funds/regional/dalus-capital.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Hi Ventures (ex-ALLVP)](funds/regional/hi-ventures-allvp.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [IGNIA](funds/regional/ignia.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Kalei Ventures](funds/regional/kalei-ventures.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Kaszek](funds/regional/kaszek.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Kayyak Ventures](funds/regional/kayyak-ventures.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Magma Partners](funds/regional/magma-partners.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [MAYA Capital](funds/regional/maya-capital.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Nazca](funds/regional/nazca.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Newtopia VC](funds/regional/newtopia-vc.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [NXTP Ventures](funds/regional/nxtp-ventures.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Picus Capital](funds/regional/picus-capital.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Polymath Ventures](funds/regional/polymath-ventures.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [QED Investors](funds/regional/qed-investors.md) | Multi-stage | Fintech | Global, incluida América Latina |
+| [Salkantay Ventures](funds/regional/salkantay-ventures.md) | Pre-seed a Series A | Tecnología de impacto | América Latina hispanohablante |
+| [SoftBank Latin America Fund](funds/regional/softbank-latin-america-fund.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Soma Capital](funds/regional/soma-capital.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [SP Ventures](funds/regional/sp-ventures.md) | No divulgado públicamente | AgFoodTech y ClimateTech | América Latina |
+| [The Yield Lab LATAM](funds/regional/the-yield-lab-latam.md) | Investigación pendiente | Investigación pendiente | América Latina |
+| [Wollef Ventures (ex-Jaguar)](funds/regional/wollef-ventures-jaguar.md) | Investigación pendiente | Investigación pendiente | América Latina |
 
 ## Argentina
 
-| Fondo | Sitio | Region | Portafolio |
+| Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
-| [Alaya Capital](funds/argentina/alaya-capital.md) | [alaya-capital.com](https://alaya-capital.com/portfolio/) | Argentina | 53 |
+| [Alaya Capital](funds/argentina/alaya-capital.md) | Seed y Series A | Transformación digital | América Latina |
 
 ## Brasil
 
-| Fondo | Sitio | Region | Portafolio |
+| Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
-| [A.B.Seed Ventures](funds/brazil/a.b.seed-ventures.md) | [abseed.com.br](https://abseed.com.br/portfolio/) | Brasil | 7 |
-| [ACE Ventures](funds/brazil/ace-ventures.md) | [aceventures.com.br](https://aceventures.com.br/venture-capital/portfolio/) | Brasil | 72 |
-| [Astella](funds/brazil/astella.md) | [www.astella.com.br](https://www.astella.com.br/en/pt/portfolio) | Brasil | 53 |
-| [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | [bossainvest.com](https://bossainvest.com/quem-somos) | Brasil | 12 |
-| [Canary](funds/brazil/canary.md) | [www.canary.com.br](https://www.canary.com.br/portfolio/alice/) | Brasil | 12 |
-| [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | [crescera.com](https://crescera.com/en/portfolio-2/) | Brasil | 83 |
-| [Darwin Startups](funds/brazil/darwin-startups.md) | [www.darwinstartups.com](https://www.darwinstartups.com/portfolio) | Brasil | 77 |
-| [DGF Investimentos](funds/brazil/dgf-investimentos.md) | [www.dgf.com.br](https://www.dgf.com.br/portfolio) | Brasil | 59 |
-| [DOMO.VC](funds/brazil/domo.vc.md) | [domo.vc](https://domo.vc/portfolio-en/) | Brasil | 105 |
-| [Honey Island Capital](funds/brazil/honey-island-capital.md) | [honeyisland.capital](https://honeyisland.capital/portfolio/) | Brasil | 32 |
-| [Indicator Capital](funds/brazil/indicator-capital.md) | [indicator.capital](https://indicator.capital/portfolio) | Brasil | 29 |
-| [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | [www.ipo.ventures](https://www.ipo.ventures/companies/abstra) | Brasil | 31 |
-| [Itau Ventures](funds/brazil/itau-ventures.md) | []() | Brasil | 0 |
-| [KPTL](funds/brazil/kptl.md) | [www.kptl.com.br](https://www.kptl.com.br/portfolio/) | Brasil | 70 |
-| [Monashees](funds/brazil/monashees.md) | [www.monashees.com](https://www.monashees.com/portfolio) | Brasil | 115 |
-| [Oria Capital](funds/brazil/oria-capital.md) | [www.oriacapital.com.br](https://www.oriacapital.com.br/) | Brasil | 20 |
-| [Primus Ventures](funds/brazil/primus-ventures.md) | [www.primusvc.com.br](https://www.primusvc.com.br/portf%C3%B3lio) | Brasil | 14 |
-| [Redpoint eventures](funds/brazil/redpoint-eventures.md) | [rpev.com.br](https://rpev.com.br/portfolio) | Brasil | 54 |
-| [Scale-Up Ventures](funds/brazil/scale-up-ventures.md) | [endeavor.org.br](https://endeavor.org.br/scale-up-ventures) | Brasil | 5 |
-| [Spectra Investimentos](funds/brazil/spectra-investimentos.md) | [spectrainvest.com](https://spectrainvest.com) | Brasil | 7 |
-| [Ventiur](funds/brazil/ventiur.md) | [ventiur.net](https://ventiur.net/#portfolio) | Brasil | 79 |
-| [Vox Capital](funds/brazil/vox-capital.md) | [voxcapital.com.br](https://voxcapital.com.br/en/portfolio_en/) | Brasil | 39 |
+| [A.B.Seed Ventures](funds/brazil/a.b.seed-ventures.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [ACE Ventures](funds/brazil/ace-ventures.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Astella](funds/brazil/astella.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Canary](funds/brazil/canary.md) | Pre-seed a Series A | Agnóstico por sector | América Latina |
+| [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Darwin Startups](funds/brazil/darwin-startups.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [DGF Investimentos](funds/brazil/dgf-investimentos.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [DOMO.VC](funds/brazil/domo.vc.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Honey Island Capital](funds/brazil/honey-island-capital.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Indicator Capital](funds/brazil/indicator-capital.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Itau Ventures](funds/brazil/itau-ventures.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [KPTL](funds/brazil/kptl.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Monashees](funds/brazil/monashees.md) | No divulgado públicamente | Tecnología | América Latina al mundo |
+| [Oria Capital](funds/brazil/oria-capital.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Primus Ventures](funds/brazil/primus-ventures.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Redpoint eventures](funds/brazil/redpoint-eventures.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Scale-Up Ventures](funds/brazil/scale-up-ventures.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Spectra Investimentos](funds/brazil/spectra-investimentos.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Ventiur](funds/brazil/ventiur.md) | Investigación pendiente | Investigación pendiente | Brasil |
+| [Vox Capital](funds/brazil/vox-capital.md) | Seed a Series B | Tecnología de impacto | Brasil |
 
 ## Chile
 
-| Fondo | Sitio | Region | Portafolio |
+| Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
-| [Fen Ventures](funds/chile/fen-ventures.md) | [fenventures.com](https://fenventures.com/portfolio/admoai/) | Chile | 50 |
-| [Genesis Ventures](funds/chile/genesis-ventures.md) | [genesisventures.vc](https://genesisventures.vc/) | Chile | 12 |
-| [Manutara Ventures](funds/chile/manutara-ventures.md) | [manutaraventures.com](https://manutaraventures.com/companies) | Chile | 24 |
+| [Fen Ventures](funds/chile/fen-ventures.md) | Investigación pendiente | Investigación pendiente | Chile |
+| [Genesis Ventures](funds/chile/genesis-ventures.md) | Investigación pendiente | Investigación pendiente | Chile |
+| [Manutara Ventures](funds/chile/manutara-ventures.md) | Investigación pendiente | Investigación pendiente | Chile |
 
 ## Colombia
 
-| Fondo | Sitio | Region | Portafolio |
+| Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
-| [Axon Partners + Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | [www.epm.com.co](https://www.epm.com.co/content/dam/epm/institucional/sala-de-prensa-epm/noticias-y-novedades/noticias-y-novedades/batx-la-nueva-startup-que-ingresa-a-ventures-epm/VenturesEPM-PortafolioEmpresasInvertidas.pdf) | Colombia | 19 |
-| [QAPU Ventures](funds/colombia/qapu-ventures.md) | [qapu.ventures](https://qapu.ventures/) | Colombia | 9 |
+| [Axon Partners + Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | Investigación pendiente | Investigación pendiente | Colombia |
+| [QAPU Ventures](funds/colombia/qapu-ventures.md) | Investigación pendiente | Investigación pendiente | Colombia |
 
-## Mexico
+## México
 
-| Fondo | Sitio | Region | Portafolio |
+| Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
-| [AngelHub VC](funds/mexico/angelhub-vc.md) | [www.angelhub.mx](https://www.angelhub.mx/english) | Mexico | 14 |
-| [Capital Invent](funds/mexico/capital-invent.md) | [app.dealroom.co](https://app.dealroom.co/investors/capital_invent) | Mexico | 4 |
-| [Dux Capital](funds/mexico/dux-capital.md) | [www.linkedin.com](https://www.linkedin.com/company/duxcapital/) | Mexico | 6 |
+| [AngelHub VC](funds/mexico/angelhub-vc.md) | Investigación pendiente | Investigación pendiente | México |
+| [Capital Invent](funds/mexico/capital-invent.md) | Investigación pendiente | Investigación pendiente | México |
+| [Dux Capital](funds/mexico/dux-capital.md) | Investigación pendiente | Investigación pendiente | México |
 
-## Peru
+## Perú
 
-| Fondo | Sitio | Region | Portafolio |
+| Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
-| [EMA Ventures](funds/peru/ema-ventures.md) | [www.linkedin.com](https://www.linkedin.com/company/ema-ventures/) | Peru | 1 |
-| [RPP Ventures](funds/peru/rpp-ventures.md) | [grppventures.pe](https://grppventures.pe/) | Peru | 14 |
-| [UTEC Ventures](funds/peru/utec-ventures.md) | [utecventures.com](https://utecventures.com/portafolio) | Peru | 42 |
-| [Winnipeg Capital](funds/peru/winnipeg-capital.md) | [www.winnipegcapital.com](https://www.winnipegcapital.com/en/deals/wc-startup-fund-i/) | Peru | 4 |
-| [AVP Ventures](funds/peru/avp-ventures.md) | [avpventures.com](https://avpventures.com/portfolio/culqi/) | Peru | 17 |
+| [EMA Ventures](funds/peru/ema-ventures.md) | Investigación pendiente | Investigación pendiente | Perú |
+| [RPP Ventures](funds/peru/rpp-ventures.md) | Investigación pendiente | Investigación pendiente | Perú |
+| [UTEC Ventures](funds/peru/utec-ventures.md) | Investigación pendiente | Investigación pendiente | Perú |
+| [Winnipeg Capital](funds/peru/winnipeg-capital.md) | Investigación pendiente | Investigación pendiente | Perú |
+| [AVP Ventures](funds/peru/avp-ventures.md) | Investigación pendiente | Investigación pendiente | Perú |
 
-## Multi-Pais & Global
+## Multi-País & Global
 
-| Fondo | Sitio | Region | Portafolio |
+| Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
-| [ADN.VC](funds/multi-country/adn.vc.md) | [adn.vc](https://adn.vc/portafolio/) | Multi-Pais & Global | 11 |
-| [Alexia Ventures](funds/multi-country/alexia-ventures.md) | [www.alexia.vc](https://www.alexia.vc) | Multi-Pais & Global | 76 |
-| [Carao Ventures](funds/multi-country/carao-ventures.md) | [www.caraov.com](https://www.caraov.com/portfolio) | Multi-Pais & Global | 42 |
-| [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | [www.clocktowerventures.com](https://www.clocktowerventures.com/list-of-all-companies) | Multi-Pais & Global | 302 |
-| [DILA Capital](funds/multi-country/dila-capital.md) | [www.dilacapital.com](https://www.dilacapital.com/home) | Multi-Pais & Global | 43 |
-| [devlabs](funds/multi-country/devlabs.md) | [devlabs.vc](https://devlabs.vc/) | Multi-Pais & Global | 19 |
-| [FJ Labs](funds/multi-country/fj-labs.md) | [www.fjlabs.com](https://www.fjlabs.com/portfolio) | Multi-Pais & Global | 1321 |
-| [Global Founders Capital](funds/multi-country/global-founders-capital.md) | [latamlist.com](https://latamlist.com/energy-trader-bia-wraps-6-million-to-lower-energy-costs-for-businesses-in-colombia/) | Multi-Pais & Global | 5 |
-| [GRIDX](funds/multi-country/gridx.md) | [www.gridexponential.com](https://www.gridexponential.com/portfolio) | Multi-Pais & Global | 86 |
-| [Grupo Boticario Ventures](funds/multi-country/grupo-boticario-ventures.md) | []() | Multi-Pais & Global | 0 |
-| [Igah Ventures (Patria)](funds/multi-country/igah-ventures-patria.md) | [igahventures.com](https://igahventures.com/) | Multi-Pais & Global | 9 |
-| [Impact Ventures PSM](funds/multi-country/impact-ventures-psm.md) | [ivpsm.org.mx](https://ivpsm.org.mx/portafolio/) | Multi-Pais & Global | 39 |
-| [Infinite Capital](funds/multi-country/infinite-capital.md) | [www.infinite.xyz](https://www.infinite.xyz/portfolio) | Multi-Pais & Global | 25 |
-| [Invariantes Fund](funds/multi-country/invariantes-fund.md) | [www.invariantes.com](https://www.invariantes.com/portfolio_website) | Multi-Pais & Global | 96 |
-| [Kolab Ventures](funds/multi-country/kolab-ventures.md) | [kolabventures.com](https://kolabventures.com/portfolio) | Multi-Pais & Global | 4 |
-| [Krealo](funds/multi-country/krealo.md) | [www.krealo.pe](https://www.krealo.pe/portafolio) | Multi-Pais & Global | 14 |
-| [Kuiper](funds/multi-country/kuiper.md) | [www.kuipervc.com](https://www.kuipervc.com/portfolio) | Multi-Pais & Global | 25 |
-| [Latitud Ventures](funds/multi-country/latitud-ventures.md) | [latitud.com](https://latitud.com/portfolio) | Multi-Pais & Global | 6 |
-| [Lotux](funds/multi-country/lotux.md) | [lotux.vc](https://lotux.vc) | Multi-Pais & Global | 15 |
-| [Mindset Ventures](funds/multi-country/mindset-ventures.md) | [mindset.ventures](https://mindset.ventures/our-companies/) | Multi-Pais & Global | 66 |
-| [New Ventures Capital](funds/multi-country/new-ventures-capital.md) | [nvcapital.vc](https://nvcapital.vc/portfolio/) | Multi-Pais & Global | 16 |
-| [Norte Ventures](funds/multi-country/norte-ventures.md) | [www.norte.ventures](https://www.norte.ventures/portfolio) | Multi-Pais & Global | 117 |
-| [ONEVC](funds/multi-country/onevc.md) | [www.onevc.vc](https://www.onevc.vc/portfolio) | Multi-Pais & Global | 46 |
-| [Pant3ra Venture Fund](funds/multi-country/pant3ra-venture-fund.md) | [www.linkedin.com](https://www.linkedin.com/company/pant3ra/) | Multi-Pais & Global | 2 |
-| [Quona Capital](funds/multi-country/quona-capital.md) | [quona.com](https://quona.com/portfolio) | Multi-Pais & Global | 145 |
-| [Redwood Ventures](funds/multi-country/redwood-ventures.md) | [www.redwoodcapital.partners](https://www.redwoodcapital.partners/technology) | Multi-Pais & Global | 36 |
-| [Shima Capital](funds/multi-country/shima-capital.md) | [chainbroker.io](https://chainbroker.io/funds/shima-capital/) | Multi-Pais & Global | 6 |
-| [SOSV](funds/multi-country/sosv.md) | [sosv.com](https://sosv.com/portfolio) | Multi-Pais & Global | 30 |
-| [The Ark Fund](funds/multi-country/the-ark-fund.md) | [www.arkfund.co](https://www.arkfund.co) | Multi-Pais & Global | 20 |
-| [Valor Capital Group](funds/multi-country/valor-capital-group.md) | [www.valorcapitalgroup.com](https://www.valorcapitalgroup.com/companies) | Multi-Pais & Global | 121 |
-| [Wayra](funds/multi-country/wayra.md) | [wayra.com](https://wayra.com) | Multi-Pais & Global | 21 |
-| [Worthit](funds/multi-country/worthit.md) | [www.worthit.vc](https://www.worthit.vc/) | Multi-Pais & Global | 3 |
+| [ADN.VC](funds/multi-country/adn.vc.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Alexia Ventures](funds/multi-country/alexia-ventures.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Carao Ventures](funds/multi-country/carao-ventures.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [DILA Capital](funds/multi-country/dila-capital.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [devlabs](funds/multi-country/devlabs.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [FJ Labs](funds/multi-country/fj-labs.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [GRIDX](funds/multi-country/gridx.md) | Pre-seed | Ciencias de la vida y biotecnología | América Latina al mundo |
+| [Grupo Boticario Ventures](funds/multi-country/grupo-boticario-ventures.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Igah Ventures (Patria)](funds/multi-country/igah-ventures-patria.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Impact Ventures PSM](funds/multi-country/impact-ventures-psm.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Infinite Capital](funds/multi-country/infinite-capital.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Invariantes Fund](funds/multi-country/invariantes-fund.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Kolab Ventures](funds/multi-country/kolab-ventures.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Krealo](funds/multi-country/krealo.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Kuiper](funds/multi-country/kuiper.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Latitud Ventures](funds/multi-country/latitud-ventures.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Lotux](funds/multi-country/lotux.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Mindset Ventures](funds/multi-country/mindset-ventures.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [New Ventures Capital](funds/multi-country/new-ventures-capital.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Norte Ventures](funds/multi-country/norte-ventures.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [ONEVC](funds/multi-country/onevc.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Pant3ra Venture Fund](funds/multi-country/pant3ra-venture-fund.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Quona Capital](funds/multi-country/quona-capital.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Redwood Ventures](funds/multi-country/redwood-ventures.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Shima Capital](funds/multi-country/shima-capital.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [SOSV](funds/multi-country/sosv.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [The Ark Fund](funds/multi-country/the-ark-fund.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Valor Capital Group](funds/multi-country/valor-capital-group.md) | Investigación pendiente | Investigación pendiente | Varios países |
+| [Wayra](funds/multi-country/wayra.md) | Multi-stage | Tecnología estratégica | Brasil, Europa y América Latina |
+| [Worthit](funds/multi-country/worthit.md) | Investigación pendiente | Investigación pendiente | Varios países |
 
 ## Fund of Funds & Co-Investment
 
-| Fondo | Sitio | Region | Portafolio |
+| Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
-| [Endeavor Catalyst](funds/fof/endeavor-catalyst.md) | [endeavor.org](https://endeavor.org/catalyst/) | Fund of Funds & Co-Investment | 382 |
-| [Veronorte](funds/fof/veronorte.md) | [veronorte.com](https://veronorte.com/portfolio) | Fund of Funds & Co-Investment | 3 |
+| [Endeavor Catalyst](funds/fof/endeavor-catalyst.md) | Investigación pendiente | Investigación pendiente | Investigación pendiente |
+| [Veronorte](funds/fof/veronorte.md) | Investigación pendiente | Investigación pendiente | Investigación pendiente |
 
 ## Corporate VC
 
-| Fondo | Sitio | Region | Portafolio |
+| Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
-| [TM3 Capital](funds/cvc/tm3-capital.md) | [www.linkedin.com](https://www.linkedin.com/company/tm3-capital/) | Corporate VC | 22 |
-| [Velum Ventures](funds/cvc/velum-ventures.md) | [www.linkedin.com](https://www.linkedin.com/company/velum-ventures/) | Corporate VC | 14 |
+| [TM3 Capital](funds/cvc/tm3-capital.md) | Investigación pendiente | Investigación pendiente | Investigación pendiente |
+| [Velum Ventures](funds/cvc/velum-ventures.md) | Investigación pendiente | Investigación pendiente | Investigación pendiente |
 
 ## Contribuyendo
 
