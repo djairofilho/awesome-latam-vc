@@ -26,18 +26,18 @@
   "focuses": [
     "b2b_technology"
   ],
-  "official_website": "https://sulventures.com.br/",
+  "official_website": "https://www.primusvc.com.br/",
   "founder_route": null,
   "sources": [
     {
-      "title": "Fund website",
+      "title": "Primus and Sul Ventures portfolio and thesis",
       "url": "https://www.primusvc.com.br/portf%C3%B3lio",
-      "kind": "secondary"
+      "kind": "official_portfolio"
     },
     {
-      "title": "Fund website",
+      "title": "Primus Ventures official website",
       "url": "https://www.primusvc.com.br/",
-      "kind": "secondary"
+      "kind": "official_website"
     }
   ],
   "last_verified": "2026-07-26",
@@ -52,7 +52,7 @@ Primus Ventures is an investment organization focused on B2B technology in South
 
 ## Investment profile
 
-- **Website:** https://sulventures.com.br/
+- **Website:** https://www.primusvc.com.br/
 - **Fund type:** Venture capital
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Yes; up to R$10 million including follow-ons
@@ -75,7 +75,7 @@ The local project dataset contains 14 companies associated with Primus Ventures.
 
 ## Sources
 
-- [Fund website](https://www.primusvc.com.br/portf%C3%B3lio)
-- [Fund website](https://www.primusvc.com.br/)
+- [Primus and Sul Ventures portfolio and thesis](https://www.primusvc.com.br/portf%C3%B3lio)
+- [Primus Ventures official website](https://www.primusvc.com.br/)
 
 **Last verified:** 2026-07-26

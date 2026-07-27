@@ -2432,13 +2432,13 @@
       "founder_route": null,
       "id": "fund:capital-invent",
       "name": "Capital Invent",
-      "official_website": "https://capitalinvent.com/",
+      "official_website": null,
       "operator": null,
       "source_profile": "funds/mexico/capital-invent.md",
       "sources": [
         {
           "kind": "secondary",
-          "title": "Previously listed source; unavailable during verification",
+          "title": "Capital Invent — official LinkedIn company page",
           "url": "https://www.linkedin.com/company/capital-invent"
         }
       ],
@@ -5859,18 +5859,18 @@
       "founder_route": null,
       "id": "fund:primus-ventures",
       "name": "Primus Ventures",
-      "official_website": "https://sulventures.com.br/",
+      "official_website": "https://www.primusvc.com.br/",
       "operator": null,
       "source_profile": "funds/brazil/primus-ventures.md",
       "sources": [
         {
-          "kind": "secondary",
-          "title": "Fund website",
+          "kind": "official_portfolio",
+          "title": "Primus and Sul Ventures portfolio and thesis",
           "url": "https://www.primusvc.com.br/portf%C3%B3lio"
         },
         {
-          "kind": "secondary",
-          "title": "Fund website",
+          "kind": "official_website",
+          "title": "Primus Ventures official website",
           "url": "https://www.primusvc.com.br/"
         }
       ],
@@ -6915,8 +6915,8 @@
       "sources": [
         {
           "kind": "secondary",
-          "title": "Previously listed source; unavailable during verification",
-          "url": "https://www.arkfund.co/"
+          "title": "Arkangeles profile of The Ark Fund founder",
+          "url": "https://arkangeles.com/blog/transacciones-igual-a-credibilidad"
         }
       ],
       "stages": [
