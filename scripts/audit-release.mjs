@@ -132,6 +132,34 @@ export function auditBuiltSite(repositoryRoot, entities) {
   };
 }
 
+export function measurementReadiness(status) {
+  const providers = Object.entries(status.providers ?? {});
+  assert(providers.length === 2, "measurement status must contain two providers");
+  for (const [providerId, provider] of providers) {
+    assert(
+      provider.verification_status === "verified",
+      `${providerId} ownership is not verified`,
+    );
+    assert(
+      ["accepted", "processed"].includes(provider.sitemap_status),
+      `${providerId} sitemap is not accepted`,
+    );
+  }
+  assert(
+    Object.values(status.public_endpoints ?? {}).every((code) => code === 200),
+    "measurement public endpoints are not healthy",
+  );
+  return Object.fromEntries(
+    providers.map(([providerId, provider]) => [
+      providerId,
+      {
+        verification_status: provider.verification_status,
+        sitemap_status: provider.sitemap_status,
+      },
+    ]),
+  );
+}
+
 export function runReleaseAudit(repositoryRoot = ROOT) {
   const entityDocument = JSON.parse(
     readFileSync(join(repositoryRoot, "data", "entities.json"), "utf8"),
@@ -139,12 +167,27 @@ export function runReleaseAudit(repositoryRoot = ROOT) {
   assert(entityDocument.entities.length > 0, "entity export is empty");
   const translations = translationInventory(repositoryRoot, entityDocument.entities);
   const built = auditBuiltSite(repositoryRoot, entityDocument.entities);
+  const measurement = measurementReadiness(
+    JSON.parse(
+      readFileSync(
+        join(
+          repositoryRoot,
+          "research",
+          "seo-geo",
+          "measurement",
+          "provider-status.json",
+        ),
+        "utf8",
+      ),
+    ),
+  );
   return {
     schema_version: "1.0",
     audited_on: new Date().toISOString().slice(0, 10),
     entities: entityDocument.entities.length,
     translations,
     built,
+    measurement,
     critical_findings: 0,
     high_findings: 0,
   };

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  measurementReadiness,
   parseStructuredFrontmatter,
   translationInventory,
 } from "../scripts/audit-release.mjs";
@@ -71,4 +72,33 @@ test("release inventory rejects needs-review content", () => {
     );
   }
   assert.throws(() => translationInventory(root, [entity]), /not complete/u);
+});
+
+test("measurement gate requires verified ownership and accepted sitemaps", () => {
+  const ready = {
+    public_endpoints: { homepage: 200, sitemap: 200, robots: 200 },
+    providers: {
+      google_search_console: {
+        verification_status: "verified",
+        sitemap_status: "processed",
+      },
+      bing_webmaster_tools: {
+        verification_status: "verified",
+        sitemap_status: "accepted",
+      },
+    },
+  };
+  assert.deepEqual(measurementReadiness(ready), {
+    google_search_console: {
+      verification_status: "verified",
+      sitemap_status: "processed",
+    },
+    bing_webmaster_tools: {
+      verification_status: "verified",
+      sitemap_status: "accepted",
+    },
+  });
+  ready.providers.bing_webmaster_tools.verification_status =
+    "pending_authenticated_owner";
+  assert.throws(() => measurementReadiness(ready), /ownership is not verified/u);
 });
