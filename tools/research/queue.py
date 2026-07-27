@@ -1,4 +1,4 @@
-"""SQLite-backed task queue for Epic 16 research workers."""
+"""SQLite-backed task queue for parallel research workers."""
 
 from __future__ import annotations
 
@@ -127,6 +127,7 @@ def lease(
     *,
     seconds: int = 900,
     issue: int | None = None,
+    partition: str | None = None,
 ) -> dict[str, Any] | None:
     """Atomically claim the highest-priority available task."""
 
@@ -143,6 +144,9 @@ def lease(
         if issue is not None:
             query += " AND issue = ?"
             parameters.append(issue)
+        if partition is not None:
+            query += " AND partition_key = ?"
+            parameters.append(partition)
         query += " ORDER BY priority DESC, created_at, task_id LIMIT 1"
         candidate = connection.execute(query, parameters).fetchone()
         if candidate is None:
@@ -314,6 +318,7 @@ def build_parser() -> argparse.ArgumentParser:
     lease_parser.add_argument("worker")
     lease_parser.add_argument("--seconds", type=int, default=900)
     lease_parser.add_argument("--issue", type=int)
+    lease_parser.add_argument("--partition")
 
     complete_parser = commands.add_parser("complete", help="complete a leased task")
     complete_parser.add_argument("task_id")
@@ -364,7 +369,13 @@ def main(argv: list[str] | None = None) -> int:
     elif args.command == "lease":
         print(
             json.dumps(
-                lease(args.db, args.worker, seconds=args.seconds, issue=args.issue),
+                lease(
+                    args.db,
+                    args.worker,
+                    seconds=args.seconds,
+                    issue=args.issue,
+                    partition=args.partition,
+                ),
                 ensure_ascii=False,
             )
         )

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate fund profiles and the three translated README indexes."""
+"""Validate catalog profiles, research artifacts and translated indexes."""
 
 from __future__ import annotations
 
@@ -11,6 +11,21 @@ import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Sequence
+
+try:
+    from .accelerator_validation import (
+        is_accelerator_profile_path,
+        validate_accelerator_index,
+        validate_accelerator_profile,
+        validate_epic_62,
+    )
+except ImportError:  # Allow `python tools/research/validate.py`.
+    from accelerator_validation import (
+        is_accelerator_profile_path,
+        validate_accelerator_index,
+        validate_accelerator_profile,
+        validate_epic_62,
+    )
 
 
 README_NAMES = ("README.md", "README.pt.md", "README.es.md")
@@ -312,6 +327,28 @@ def validate_repository(root: Path, base_ref: str) -> list[str]:
     )
     for relative_path in changed_profiles:
         errors.extend(validate_profile(root / relative_path, relative_path))
+
+    added_accelerators = sorted(
+        path for path in added if is_accelerator_profile_path(path)
+    )
+    if len(added_accelerators) > 10:
+        errors.append(
+            f"o diff adiciona {len(added_accelerators)} aceleradoras; "
+            "o limite por PR é 10"
+        )
+
+    changed_accelerators = sorted(
+        path
+        for path in changed
+        if is_accelerator_profile_path(path) and (root / path).exists()
+    )
+    for relative_path in changed_accelerators:
+        errors.extend(
+            validate_accelerator_profile(root / relative_path, relative_path)
+        )
+
+    errors.extend(validate_accelerator_index(root))
+    errors.extend(validate_epic_62(root))
 
     # Source code intentionally contains the marker literals used by this check.
     # Scan authored/research content, not the validator implementation itself.
