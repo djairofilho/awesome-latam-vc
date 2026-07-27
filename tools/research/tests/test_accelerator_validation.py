@@ -21,6 +21,12 @@ from accelerator_validation import (  # noqa: E402
 
 
 class Epic62ArtifactTests(unittest.TestCase):
+    def _copy_epic(self, root: Path) -> Path:
+        epic = root / "research" / "epic-62"
+        source = REPOSITORY_ROOT / "research" / "epic-62"
+        shutil.copytree(source, epic)
+        return epic
+
     def test_repository_templates_and_example_validate(self) -> None:
         self.assertEqual([], validate_epic_62(REPOSITORY_ROOT))
 
@@ -43,6 +49,103 @@ class Epic62ArtifactTests(unittest.TestCase):
 
         self.assertTrue(
             any("official_evidence_ids" in error for error in errors),
+            errors,
+        )
+
+    def test_rejects_tampered_regional_artifact_hash(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            epic = self._copy_epic(root)
+            manifest_path = epic / "brazil" / "run-manifest.jsonl"
+            records = [
+                json.loads(line)
+                for line in manifest_path.read_text(encoding="utf-8").splitlines()
+            ]
+            records[0]["artifact_hashes"]["candidates.jsonl"] = "0" * 64
+            manifest_path.write_text(
+                "".join(
+                    json.dumps(record, ensure_ascii=False) + "\n"
+                    for record in records
+                ),
+                encoding="utf-8",
+            )
+
+            errors = validate_epic_62(root)
+
+        self.assertTrue(
+            any("hash divergente para candidates.jsonl" in error for error in errors),
+            errors,
+        )
+
+    def test_rejects_missing_field_level_evidence(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            epic = self._copy_epic(root)
+            evidence_path = epic / "brazil" / "evidence.jsonl"
+            records = [
+                json.loads(line)
+                for line in evidence_path.read_text(encoding="utf-8").splitlines()
+            ]
+            wow = next(
+                record
+                for record in records
+                if record["candidate_id"] == "accel-wow"
+            )
+            wow["claims"] = [
+                claim for claim in wow["claims"] if claim["field"] != "instrument"
+            ]
+            evidence_path.write_text(
+                "".join(
+                    json.dumps(record, ensure_ascii=False) + "\n"
+                    for record in records
+                ),
+                encoding="utf-8",
+            )
+
+            errors = validate_epic_62(root)
+
+        self.assertTrue(
+            any("accel-wow" in error and "instrument" in error for error in errors),
+            errors,
+        )
+
+    def test_rejects_incomplete_state_coverage(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            epic = self._copy_epic(root)
+            coverage_path = epic / "brazil" / "state-coverage.jsonl"
+            lines = coverage_path.read_text(encoding="utf-8").splitlines()
+            coverage_path.write_text("\n".join(lines[:-1]) + "\n", encoding="utf-8")
+
+            errors = validate_epic_62(root)
+
+        self.assertTrue(
+            any("cobertura estadual diverge das 27 UFs" in error for error in errors),
+            errors,
+        )
+
+    def test_rejects_shared_regional_shard_paths(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            epic = self._copy_epic(root)
+            manifest_path = epic / "brazil" / "run-manifest.jsonl"
+            records = [
+                json.loads(line)
+                for line in manifest_path.read_text(encoding="utf-8").splitlines()
+            ]
+            records[2]["shard_path"] = records[1]["shard_path"]
+            manifest_path.write_text(
+                "".join(
+                    json.dumps(record, ensure_ascii=False) + "\n"
+                    for record in records
+                ),
+                encoding="utf-8",
+            )
+
+            errors = validate_epic_62(root)
+
+        self.assertTrue(
+            any("tarefas compartilham shard_path" in error for error in errors),
             errors,
         )
 

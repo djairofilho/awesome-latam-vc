@@ -15,12 +15,14 @@ KIND_TO_FILENAME = {
     "coverage": "coverage-matrix.jsonl",
     "evidence": "evidence.jsonl",
     "manifest": "run-manifest.jsonl",
+    "state-coverage": "state-coverage.jsonl",
     "sources": "source-inventory.jsonl",
 }
 ID_FIELDS_BY_KIND = {
     "candidates": ("candidate_id", "network_id", "platform_id"),
     "coverage": ("coverage_id", "country"),
     "evidence": ("evidence_id",),
+    "state-coverage": ("state_coverage_id",),
     "sources": ("source_id",),
 }
 
@@ -129,7 +131,13 @@ def reduce_shards(root: Path, kind: str, destination: Path) -> int:
         raise ValueError(f"unknown shard kind: {kind}")
     filename = KIND_TO_FILENAME[kind]
     records_by_key: dict[str, dict[str, Any]] = {}
-    for path in sorted(root.glob(f"*/shards/*/{filename}")):
+    destination_parent = destination.resolve().parent
+    root_resolved = root.resolve()
+    if destination_parent != root_resolved and destination_parent.parent == root_resolved:
+        shard_glob = f"{destination_parent.name}/shards/*/{filename}"
+    else:
+        shard_glob = f"*/shards/*/{filename}"
+    for path in sorted(root.glob(shard_glob)):
         for record in read_jsonl(path):
             key = _record_key(kind, record)
             existing = records_by_key.get(key)
