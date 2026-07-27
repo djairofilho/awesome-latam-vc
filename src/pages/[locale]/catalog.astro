@@ -110,7 +110,7 @@ const structuredData = [
     <p>{labels.catalogIntro}</p>
   </header>
   {
-    locale === "pt-BR" && (
+    locale !== "en" && (
       <TranslationNotice
         message={labels.translationNotice}
         correctionLabel={labels.suggestCorrection}
