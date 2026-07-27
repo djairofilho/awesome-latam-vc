@@ -90,6 +90,27 @@ class QueueTests(unittest.TestCase):
         self.assertEqual([task["task_id"] for task in leased], ["only"])
         self.assertEqual(results.count(None), 1)
 
+    def test_leases_only_requested_partition(self) -> None:
+        enqueue(
+            self.database,
+            "andean",
+            "https://andean.example",
+            partition="andean",
+            priority=10,
+        )
+        enqueue(
+            self.database,
+            "brazil",
+            "https://brazil.example",
+            partition="brazil",
+            priority=1,
+        )
+
+        task = lease(self.database, "worker-brazil", partition="brazil")
+
+        self.assertEqual(task["task_id"], "brazil")
+        self.assertEqual(task["partition_key"], "brazil")
+
     def test_fails_and_requeues_expired_leases(self) -> None:
         enqueue(self.database, "failed", "https://failed.example")
         lease(self.database, "worker-1")
