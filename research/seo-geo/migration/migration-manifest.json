@@ -1,9 +1,9 @@
 {
   "artifact_hashes": {
-    "README.md": "842e088f0de5e0a8467bce3f27f519e90646ff1b5e637c00bf3adb6806f400ca",
-    "before-after.json": "08ed1a7467e3a474da13e4aa546032fd9383f9ca946389b35ec6b9e580d4ad0c",
-    "inventory.jsonl": "29adadedd78268d2063b670ced943f6ab2f9f4baa420769e00789e53ce13abef",
-    "mapping.jsonl": "fb377d2904dea4492ec20d2be35523e6dc4028ad79c2b38bb30b0d4b11bca4be"
+    "README.md": "b3e36fc6bd5011f1fd67555666cc29a35dfc3ee9ac225f9198d6b2d1534539ef",
+    "before-after.json": "c55950c091d44ae1a1497b9640e1aff46962d71c9077434a95bbca579c576bc0",
+    "inventory.jsonl": "e3d41826f0a17ea2ce42522d05c6dfa40c8eb1792154a5067f329abbd4672c39",
+    "mapping.jsonl": "c45432c5a9bb6639092480cee3faefbd1290b11aad368efe5e2a3515b93e4ed4"
   },
   "body_hash_mismatches": 0,
   "contract_hashes": {
@@ -13,7 +13,7 @@
   "cutoff_date": "2026-07-27",
   "entity_type_counts": {
     "accelerator": 26,
-    "angel_network": 5,
+    "angel_network": 11,
     "fund": 152,
     "funding_platform": 9,
     "public_program": 29
@@ -22,7 +22,7 @@
   "issue": 110,
   "locale": "en",
   "parent_epic": 107,
-  "profile_count": 221,
+  "profile_count": 227,
   "profile_hashes": {
     "ecosystem/accelerators/argentina/grid-transform.md": "bd12b8f8260f65c038e7437249d04aa548d15fcb4f83aa20c17336c048e28d26",
     "ecosystem/accelerators/brazil/ace-amazonia-impacto.md": "f3d8814b5e172ef6cbb72fae62ff6c2ad037e3600f45f6b0920923eb9a06530d",
@@ -50,10 +50,16 @@
     "ecosystem/accelerators/united-states/google-ai-cybersecurity-latam.md": "8026e39b96e2dff2072f1a5dc73d8f530a2928bdcfc48193a0ca0c80b372b13c",
     "ecosystem/accelerators/united-states/google-for-startups-brazil.md": "7715c1c903b1960fe7004df02342da56db785e36e4a6cc7173339a5c019702f6",
     "ecosystem/accelerators/united-states/y-combinator.md": "13fcb48fe6477593a11c3d2c0cceaa21cad40bec11f7def5544a56b414f8a411",
+    "ecosystem/angel-networks/argentina/business-angels-club.md": "d85648efe44faabdf1fe787bb3290ed3724e83dbf16ea7a3664e5255f7dc6e5e",
     "ecosystem/angel-networks/brazil/anjos-do-brasil.md": "9bc92f31244a6b0ec6b2ce8f5a0fc47a7e4b3bfa99b69028a6ecbf7a7da1c1b6",
     "ecosystem/angel-networks/brazil/br-angels.md": "198b2378907537a0f800340b5102611add145f5c8d2d3f5cbbdcc738ead4b6f3",
+    "ecosystem/angel-networks/brazil/curitiba-angels.md": "fa27b97ad1eae38d2122399cd23278e7ddec1aed47707eb519e20eb7594348d2",
     "ecosystem/angel-networks/brazil/gvangels.md": "5568f1a8c66d64021194cca4b00f3d78bee8f303a0adb17ef92645e613d741da",
+    "ecosystem/angel-networks/brazil/puc-angels.md": "540ef78b34f1ef38866750fe7d26fd2e34edf530f2b55da62b29987ccafb28a1",
     "ecosystem/angel-networks/brazil/urca-angels.md": "368a43de53b3f2c14a23211a5e502f564fb8bd31e331a73d956999d27430640d",
+    "ecosystem/angel-networks/chile/red-angeles-uc.md": "60820c3dee823f33b67c60e48a359213309ad3ef3a0099e1c354133f5645d053",
+    "ecosystem/angel-networks/dominican-republic/enlaces.md": "9d0373cd4b18cf56a5e3a1d443e5cb7efbb607681d9a8f08cb5cfd2f39f3ae27",
+    "ecosystem/angel-networks/jamaica/firstangels-caribbean.md": "f5cfd666fc894ccda31f47810bd0192932511933aaf7816232906c2e04a63ab7",
     "ecosystem/angel-networks/mexico/angelhub.md": "7c9fd0092914415fdbfcaa3867abecc72408bc29b6b2ea51f5c75ab001b492cf",
     "ecosystem/funding-platforms/brazil/captable.md": "3ad4d5c8bc6e31eaaf31b4af4a68ccec6043dccccb3a5053938314feda38ee8b",
     "ecosystem/funding-platforms/brazil/eqseed.md": "4e995599d6a9c43cff1399b885facdf24ac13013cb449ec9ae4126c629aa51cc",
@@ -247,8 +253,8 @@
     "funds/regional/xperiment-ventures.md": "e9d8b438f8946bfe63ca1399f777d58a7fc2d51745b2ca9a3248b97467bcb965"
   },
   "schema_version": "1.0",
-  "source_count": 465,
+  "source_count": 477,
   "status": "complete",
-  "unique_ids": 221,
-  "unique_slugs": 221
+  "unique_ids": 227,
+  "unique_slugs": 227
 }
