@@ -6,7 +6,7 @@ innovative businesses addressing social and environmental challenges.
 ## Investment profile
 
 - **Website:** https://intr3s.com.br/
-- **Fund type:** Impact investment manager
+- **Fund type:** Venture capital
 - **Direct startup investment:** Yes
 - **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Early stage

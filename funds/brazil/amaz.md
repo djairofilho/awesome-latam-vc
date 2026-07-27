@@ -6,7 +6,7 @@ positive outcomes for the Amazon forest and its communities.
 ## Investment profile
 
 - **Website:** https://amaz.org.br/
-- **Fund type:** Impact accelerator and investor
+- **Fund type:** Accelerator and venture capital
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes, through periodic public calls
 - **Stage at entry:** Not publicly disclosed

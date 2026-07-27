@@ -6,7 +6,7 @@ breakthrough drug research and development.
 ## Investment profile
 
 - **Website:** https://eurofarma.com/eurofarma-ventures
-- **Fund type:** Corporate venture capital fund
+- **Fund type:** Corporate venture capital
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Early discovery and development

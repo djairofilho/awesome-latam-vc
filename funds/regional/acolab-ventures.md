@@ -6,7 +6,7 @@ startups that can strengthen the steel value chain.
 ## Investment profile
 
 - **Website:** https://qas-brasil.arcelormittal.com.br/sustentabilidade-inovacao/inovacao/acolab
-- **Fund type:** Corporate venture capital vehicle
+- **Fund type:** Corporate venture capital
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Validated product and at least BRL 30,000 in monthly revenue

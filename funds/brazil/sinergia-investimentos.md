@@ -6,7 +6,7 @@ adaptable capital and strategic support for startups in the Amazon bioeconomy.
 ## Investment profile
 
 - **Website:** https://sinergiainvestimentos.jornadaamazonia.org.br/
-- **Fund type:** Corporate venture capital program
+- **Fund type:** Corporate venture capital
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes, through periodic program batches
 - **Stage at entry:** Pre-seed and Seed

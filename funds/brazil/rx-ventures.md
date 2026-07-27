@@ -6,7 +6,7 @@ startups shaping the future of fashion, retail, and lifestyle.
 ## Investment profile
 
 - **Website:** https://www.lojasrennersa.com.br/rx-ventures/
-- **Fund type:** Corporate venture capital vehicle
+- **Fund type:** Corporate venture capital
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Seed and Series A
