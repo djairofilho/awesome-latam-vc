@@ -115,6 +115,14 @@ class ConsolidationTests(unittest.TestCase):
         self.assertEqual(6, len(outgoing))
         self.assertTrue(all(row["canonical_destination"] for row in outgoing))
         self.assertEqual(3, len(incoming))
+        self.assertEqual(
+            {
+                "ang-angelinvestmentnetwork-com-co",
+                "ang-carib-export-com--caribbean-business-angel-network",
+                "ang-winverz-com",
+            },
+            {row["source_network_id"] for row in incoming},
+        )
         self.assertTrue(all(row["canonical_destination"] for row in incoming))
         self.assertTrue(all(row["adjudication"] for row in incoming))
         self.assertFalse(any(row["owner"] or row["next_action"] for row in incoming))

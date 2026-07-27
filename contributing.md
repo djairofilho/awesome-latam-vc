@@ -111,6 +111,54 @@ The README row must use this format:
 
 If a fund's information is outdated (website, name, focus), please submit a pull request with the correction.
 
+### Canonical metadata and translations
+
+New or migrated profiles use the
+[SEO/GEO metadata contract](research/seo-geo/contract/README.md). The Markdown
+file remains the auditable source; its front matter provides normalized data
+for the site, filters, structured data and exports.
+
+Use a JSON object between `---` delimiters. The complete schema, enums and
+examples are versioned in `research/seo-geo/contract/`.
+
+```markdown
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:example-fund:en",
+  "entity_id": "fund:example-fund",
+  "slug": "example-fund",
+  "name": "Example Fund",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical"
+}
+---
+```
+
+The schema requires additional geography, stage, focus, URL, source and
+verification fields; the shortened block above only illustrates identity.
+Copy a complete valid example rather than filling fields from memory.
+
+For translations:
+
+- keep the same `entity_id`, `slug`, name, aliases and normalized facts;
+- give each locale a unique `id`;
+- point `translation_of` to the exact English canonical profile ID;
+- localize the summary and Markdown prose;
+- do not translate proper names, brands, URLs, identifiers, source titles,
+  link destinations, code, numbers, values, currencies or dates;
+- do not use automatic or deploy-time translation;
+- use `needs_review` until a human review is complete.
+
+Validate the full localized entity together so equivalence checks can compare
+every translation with its canonical profile:
+
+```text
+python tools/seo_geo/validate_profiles.py path/to/localized/profile/directory
+```
+
 ### Quality standards
 
 - Only include funds that are active and investing in Latin America.
