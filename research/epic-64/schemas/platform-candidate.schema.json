@@ -262,7 +262,7 @@
     },
     "canonical_profile": {
       "type": ["string", "null"],
-      "pattern": "^ecosystem/funding-platforms/.+\\.md$"
+      "pattern": "^ecosystem/funding-platforms/(?:[a-z0-9][a-z0-9-]*/)*[a-z0-9][a-z0-9-]*\\.md$"
     },
     "owner": { "type": ["string", "null"], "minLength": 1 },
     "next_action": { "type": ["string", "null"], "minLength": 1 }
@@ -342,10 +342,10 @@
         "required": ["decision"]
       },
       "then": {
-        "anyOf": [
-          { "properties": { "owner": { "type": "string" } } },
-          { "properties": { "next_action": { "type": "string" } } }
-        ]
+        "properties": {
+          "owner": { "type": "string" },
+          "next_action": { "type": "string" }
+        }
       }
     }
   ]

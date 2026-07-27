@@ -117,6 +117,21 @@ class ContractValidationTests(unittest.TestCase):
         self.assertTrue(any("outro país" in error for error in errors), errors)
         self.assertTrue(any("outra categoria" in error for error in errors), errors)
 
+    def test_complete_coverage_requires_complete_inventory(self) -> None:
+        def mutate(bundle: dict[str, list[dict]]) -> None:
+            source = bundle["source-inventory.jsonl"][0]
+            source.update(
+                {
+                    "result": "partial",
+                    "reason": "Coleta incompleta.",
+                    "owner": "worker-example",
+                    "next_action": "Concluir a coleta.",
+                }
+            )
+
+        errors = self.validate_mutation(mutate)
+        self.assertTrue(any("inventário não concluído" in error for error in errors))
+
     def test_rejects_duplicate_nested_entity_ids(self) -> None:
         cases = (
             ("products", "product_id"),
@@ -176,6 +191,152 @@ class ContractValidationTests(unittest.TestCase):
 
         errors = self.validate_mutation(mutate)
         self.assertTrue(any("cache_key" in error for error in errors), errors)
+
+    def test_insufficient_evidence_requires_owner_and_next_action(self) -> None:
+        def mutate(bundle: dict[str, list[dict]]) -> None:
+            candidate = bundle["candidates.jsonl"][0]
+            candidate.update(
+                {
+                    "decision": "insufficient_evidence",
+                    "reason": "Falta comprovação.",
+                    "owner": "reviewer",
+                    "next_action": None,
+                }
+            )
+
+        errors = self.validate_mutation(mutate)
+        self.assertTrue(any("next_action" in error for error in errors), errors)
+
+    def test_duplicate_rejects_self_cycle_and_profile_traversal(self) -> None:
+        def self_reference(bundle: dict[str, list[dict]]) -> None:
+            candidate = bundle["candidates.jsonl"][0]
+            candidate.update(
+                {
+                    "decision": "duplicate",
+                    "reason": "Duplicata sintética.",
+                    "canonical_platform_id": candidate["platform_id"],
+                }
+            )
+
+        self_errors = self.validate_mutation(self_reference)
+        self.assertTrue(any("si mesma" in error for error in self_errors), self_errors)
+
+        def traversal(bundle: dict[str, list[dict]]) -> None:
+            candidate = bundle["candidates.jsonl"][0]
+            candidate.update(
+                {
+                    "decision": "duplicate",
+                    "reason": "Duplicata sintética.",
+                    "canonical_platform_id": None,
+                    "canonical_profile": "ecosystem/funding-platforms/../funds/x.md",
+                }
+            )
+
+        traversal_errors = self.validate_mutation(traversal)
+        self.assertTrue(
+            any("canonical_profile" in error for error in traversal_errors),
+            traversal_errors,
+        )
+
+    def test_duplicate_rejects_canonical_cycle(self) -> None:
+        def mutate(bundle: dict[str, list[dict]]) -> None:
+            original = bundle["candidates.jsonl"][0]
+            clone = copy.deepcopy(original)
+            replacements = {
+                "plat-exemplo": "plat-exemplo-dois",
+                "op-exemplo": "op-exemplo-dois",
+                "brand-exemplo": "brand-exemplo-dois",
+                "prod-exemplo-equity": "prod-exemplo-dois-equity",
+                "offer-exemplo-2025": "offer-exemplo-dois-2025",
+                "reg-exemplo": "reg-exemplo-dois",
+                "ev-exemplo-rota": "ev-exemplo-dois-rota",
+                "ev-exemplo-atividade": "ev-exemplo-dois-atividade",
+                "ev-exemplo-regulacao": "ev-exemplo-dois-regulacao",
+            }
+
+            def replace(value):
+                if isinstance(value, dict):
+                    return {key: replace(child) for key, child in value.items()}
+                if isinstance(value, list):
+                    return [replace(child) for child in value]
+                return replacements.get(value, value)
+
+            clone = replace(clone)
+            original.update(
+                {
+                    "decision": "duplicate",
+                    "reason": "Duplicata sintética.",
+                    "canonical_platform_id": clone["platform_id"],
+                }
+            )
+            clone.update(
+                {
+                    "decision": "duplicate",
+                    "reason": "Duplicata sintética.",
+                    "canonical_platform_id": original["platform_id"],
+                }
+            )
+            bundle["candidates.jsonl"].append(clone)
+            bundle["evidence.jsonl"].extend(
+                replace(copy.deepcopy(bundle["evidence.jsonl"]))
+            )
+
+        errors = self.validate_mutation(mutate)
+        self.assertTrue(any("ciclo de duplicatas" in error for error in errors), errors)
+
+    def test_active_task_requires_owner_and_next_action(self) -> None:
+        for status in ("leased", "extracted", "verified"):
+            with self.subTest(status=status):
+                def mutate(
+                    bundle: dict[str, list[dict]],
+                    status: str = status,
+                ) -> None:
+                    task = bundle["run-manifest.jsonl"][1]
+                    task.update(
+                        {"status": status, "owner": None, "next_action": None}
+                    )
+
+                errors = self.validate_mutation(mutate)
+                self.assertTrue(any("owner" in error for error in errors), errors)
+                self.assertTrue(any("next_action" in error for error in errors), errors)
+
+    def test_complete_run_rejects_active_task(self) -> None:
+        def mutate(bundle: dict[str, list[dict]]) -> None:
+            task = bundle["run-manifest.jsonl"][1]
+            task.update(
+                {
+                    "status": "verified",
+                    "owner": "worker-example",
+                    "next_action": "Consolidar o shard.",
+                }
+            )
+
+        errors = self.validate_mutation(mutate)
+        self.assertTrue(any("run complete contém tarefa ativa" in error for error in errors))
+
+    def test_task_requires_safe_owned_shard(self) -> None:
+        def traversal(bundle: dict[str, list[dict]]) -> None:
+            bundle["run-manifest.jsonl"][1]["shard_path"] = (
+                "research/epic-64/brazil/shards/../shared"
+            )
+
+        traversal_errors = self.validate_mutation(traversal)
+        self.assertTrue(any("shard_path" in error for error in traversal_errors))
+
+        def ownership(bundle: dict[str, list[dict]]) -> None:
+            run = bundle["run-manifest.jsonl"][0]
+            first = bundle["run-manifest.jsonl"][1]
+            second = copy.deepcopy(first)
+            second["task_id"] = "task-exemplo-dois"
+            second["worker_id"] = "worker-other"
+            run["task_count"] = 2
+            bundle["run-manifest.jsonl"].append(second)
+
+        ownership_errors = self.validate_mutation(ownership)
+        self.assertTrue(
+            any("mais de um worker" in error for error in ownership_errors),
+            ownership_errors,
+        )
 
     def test_blocked_task_requires_owner_reason_and_next_action(self) -> None:
         def mutate(bundle: dict[str, list[dict]]) -> None:

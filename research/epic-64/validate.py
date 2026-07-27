@@ -326,6 +326,8 @@ def validate_candidate_invariants(
         decision = candidate.get("decision")
         if decision == "duplicate":
             target = candidate.get("canonical_platform_id")
+            if target == platform_id:
+                errors.append(f"{label}: duplicata não pode apontar para si mesma")
             if target and target not in platforms:
                 errors.append(f"{label}: plataforma canônica órfã: {target}")
 
@@ -392,6 +394,26 @@ def validate_candidate_invariants(
             errors.append(f"{label}: plataforma órfã: {evidence.get('platform_id')}")
         if evidence.get("subject_id") not in entity_ids:
             errors.append(f"{label}: sujeito órfão: {evidence.get('subject_id')}")
+
+    duplicate_targets = {
+        candidate["platform_id"]: candidate["canonical_platform_id"]
+        for candidate in candidates
+        if candidate.get("decision") == "duplicate"
+        and isinstance(candidate.get("platform_id"), str)
+        and isinstance(candidate.get("canonical_platform_id"), str)
+    }
+    for origin in sorted(duplicate_targets):
+        visited: set[str] = set()
+        current = origin
+        while current in duplicate_targets:
+            if current in visited:
+                errors.append(
+                    f"{dataset / 'candidates.jsonl'}: ciclo de duplicatas canônicas "
+                    f"envolvendo {origin}"
+                )
+                break
+            visited.add(current)
+            current = duplicate_targets[current]
 
 
 def validate_dates(
@@ -496,6 +518,10 @@ def validate_coverage(
                 errors.append(
                     f"{label}: fonte concluída {source_id} pertence a outra categoria"
                 )
+            if inventory_record.get("result") != "complete":
+                errors.append(
+                    f"{label}: fonte concluída {source_id} tem inventário não concluído"
+                )
     if expected_countries is not None and countries != expected_countries:
         errors.append(
             f"{dataset / 'coverage-matrix.jsonl'}: países divergentes; "
@@ -523,6 +549,8 @@ def validate_manifest(
             f"{dataset / 'run-manifest.jsonl'}: task_count difere das tarefas"
         )
     task_ids: set[str] = set()
+    shard_owners: dict[str, str] = {}
+    worker_shards: dict[str, str] = {}
     for task in tasks:
         if task.get("run_id") != run.get("run_id"):
             errors.append(
@@ -534,6 +562,40 @@ def validate_manifest(
                 f"{dataset / 'run-manifest.jsonl'}: task_id duplicado: {task_id}"
             )
         task_ids.add(task_id)
+        worker_id = task.get("worker_id")
+        shard_path = task.get("shard_path")
+        expected_path = (
+            f"research/epic-64/{task.get('partition')}/shards/{worker_id}"
+        )
+        if shard_path != expected_path:
+            errors.append(
+                f"{dataset / 'run-manifest.jsonl'}: shard_path da tarefa "
+                f"{task_id} não corresponde à partição e ao worker"
+            )
+        existing_owner = shard_owners.get(shard_path)
+        if existing_owner is not None and existing_owner != worker_id:
+            errors.append(
+                f"{dataset / 'run-manifest.jsonl'}: shard {shard_path} possui "
+                "mais de um worker"
+            )
+        if isinstance(shard_path, str) and isinstance(worker_id, str):
+            shard_owners[shard_path] = worker_id
+        existing_shard = worker_shards.get(worker_id)
+        if existing_shard is not None and existing_shard != shard_path:
+            errors.append(
+                f"{dataset / 'run-manifest.jsonl'}: worker {worker_id} possui "
+                "mais de um shard"
+            )
+        if isinstance(worker_id, str) and isinstance(shard_path, str):
+            worker_shards[worker_id] = shard_path
+        if run.get("status") == "complete" and task.get("status") not in {
+            "done",
+            "blocked",
+        }:
+            errors.append(
+                f"{dataset / 'run-manifest.jsonl'}: run complete contém tarefa "
+                f"ativa: {task_id}"
+            )
 
 
 def validate_dataset(

@@ -86,7 +86,7 @@ Os status são `discovered`, `researching`, `decided` e `published`.
 - `other_category`.
 
 Toda decisão diferente de `eligible` exige motivo. Evidência insuficiente exige
-responsável ou próxima ação. Nenhum candidato pode chegar ao freeze como
+responsável e próxima ação. Nenhum candidato pode chegar ao freeze como
 indeciso.
 
 ## Evidência
@@ -161,7 +161,9 @@ demonstra que uma oferta encerrada permanece subordinada à plataforma.
 ## Execução paralela
 
 O coordenador cria uma execução e particiona tarefas por região, domínio e
-worker. Cada worker escreve somente no próprio diretório:
+worker. Cada tarefa declara `worker_id` e `shard_path`. Um worker possui um
+único shard, e um shard não pode pertencer a workers diferentes. Cada worker
+escreve somente no próprio diretório:
 
 ```text
 research/epic-64/<região>/shards/<worker-id>/
@@ -183,6 +185,8 @@ O manifesto fixa estas regras:
 
 Uma tarefa bloqueada exige motivo, responsável e próxima ação. Conteúdo
 inacessível vira pendência manual, não tentativa de evasão.
+Tarefas `leased`, `extracted` e `verified` também exigem responsável e próxima
+ação. Uma execução `complete` contém somente tarefas `done` ou `blocked`.
 
 ## Invariantes de fechamento
 
@@ -196,8 +200,10 @@ O validador verifica JSON Schema e também:
 - oferta permanentemente inelegível como perfil;
 - quatro tipos de fonte por país;
 - fontes concluídas presentes no inventário;
+- fontes concluídas com inventário também concluído;
 - país e categoria das fontes concluídas iguais aos da célula de cobertura;
 - `task_count`, `run_id` e IDs de tarefa consistentes;
+- ownership exclusivo e caminhos seguros de shard;
 - ausência do campo `direct_investment`.
 
 Antes do freeze, o revisor também deve confirmar zero duplicatas conhecidas,
