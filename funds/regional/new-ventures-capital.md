@@ -6,6 +6,8 @@ New Ventures Capital is an investment organization focused on Impact entrepreneu
 
 - **Website:** https://nvcapital.vc/
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Impact entrepreneurship

@@ -6,6 +6,8 @@ AVP Ventures is an investment organization focused on Technology in Peru and Lat
 
 - **Website:** https://avpventures.com/
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

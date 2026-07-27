@@ -34,6 +34,5 @@ The local project dataset contains 14 companies associated with Krealo. Its most
 
 - [Investment thesis, portfolio count, and pitch route](https://www.krealo.pe/)
 - [Portfolio](https://www.krealo.pe/portafolio)
-- [Credicorp corporate filing describing Krealo's investment model](https://inversionistas.grupocredicorp.com/static-files/737be5e1-5cfe-4cc9-9a83-13825ab1f445)
 
 **Last verified:** 2026-07-26

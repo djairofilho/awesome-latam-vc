@@ -7,6 +7,8 @@ institutional investor in technology companies founded in Latin America.
 
 - **Website:** https://www.canary.com.br/
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Pre-seed, Seed, and Series A
 - **Follow-on stages:** Yes, through pro rata or super pro rata participation
 - **Focus:** Sector agnostic
@@ -17,7 +19,7 @@ institutional investor in technology companies founded in Latin America.
   companies capable of exponential growth
 - **Portfolio size:** Not publicly disclosed on the current website
 - **Selected companies:** Alice, Buser, Cobre, Gupy, and Pier
-- **Contact:** info@canary.com.br
+- **Submit a startup:** info@canary.com.br
 
 ## Declared thesis
 

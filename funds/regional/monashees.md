@@ -7,6 +7,8 @@ American founders building companies for regional and global markets.
 
 - **Website:** https://www.monashees.com/
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Technology
@@ -17,7 +19,7 @@ American founders building companies for regional and global markets.
   technology-enabled models represented in the portfolio
 - **Portfolio size:** Not publicly disclosed on the current website
 - **Selected companies:** Addi, Flash, Nomad, Tractian, and Ualá
-- **Contact:** https://www.monashees.com/contact
+- **Submit a startup:** https://www.monashees.com/contact
 
 ## Declared thesis
 

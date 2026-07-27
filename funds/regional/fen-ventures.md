@@ -6,6 +6,8 @@ Fen Ventures is an investment organization focused on Fintech, SaaS, and sustain
 
 - **Website:** https://fenventures.com/
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Yes; the fund states that it reserves capital for follow-on rounds
 - **Focus:** Fintech, SaaS, and sustainability

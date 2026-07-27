@@ -6,6 +6,8 @@ Carao Ventures is an investment organization focused on Technology in Central Am
 
 - **Website:** https://www.caraov.com/
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology

@@ -4,8 +4,10 @@ EMA Ventures is an investment organization focused on Technology and women-led c
 
 ## Investment profile
 
-- **Website:** https://www.linkedin.com/company/ema-ventures/
+- **Website:** https://ema.ventures/
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology and women-led companies
@@ -15,7 +17,7 @@ EMA Ventures is an investment organization focused on Technology and women-led c
 - **Business models:** Technology-enabled companies; specific B2B/B2C constraints not publicly disclosed
 - **Portfolio size:** 1 companies captured in the local project dataset; this is not an official portfolio count
 - **Selected companies:** MAQU
-- **Submit a startup:** Not publicly disclosed in the reviewed sources
+- **Submit a startup:** https://ema.ventures/get-funded/
 
 ## Declared thesis
 
@@ -27,6 +29,7 @@ The local project dataset contains 1 companies associated with EMA Ventures. Its
 
 ## Sources
 
-- [Secondary profile](https://www.linkedin.com/company/ema-ventures/)
+- [Official thesis and team](https://ema.ventures/)
+- [Official founder application](https://ema.ventures/get-funded/)
 
-**Last verified:** 2026-07-26
+**Last verified:** 2026-07-27
