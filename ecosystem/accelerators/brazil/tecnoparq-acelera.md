@@ -1,3 +1,47 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:tecnoparq-acelera:en",
+  "entity_id": "accelerator:tecnoparq-acelera",
+  "slug": "tecnoparq-acelera",
+  "name": "tecnoPARQ Acelera",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "tecnoPARQ Acelera is a structured acceleration program operated by tecnoPARQ / CENTEV-UFV.",
+  "aliases": [
+    "tecnoPARQ Acelera 2026"
+  ],
+  "operator": "tecnoPARQ / CENTEV-UFV",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://centev.ufv.br/servico/tecnoparq-acelera/",
+  "founder_route": "https://centev.ufv.br/servico/tecnoparq-acelera/",
+  "sources": [
+    {
+      "title": "tecnoPARQ Acelera, 8ª edição 2026",
+      "url": "https://centev.ufv.br/servico/tecnoparq-acelera/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "tecnoPARQ Acelera"
+  ]
+}
+---
 # tecnoPARQ Acelera
 
 - **Website:** https://centev.ufv.br/servico/tecnoparq-acelera/

@@ -1,9 +1,9 @@
 {
   "artifact_hashes": {
-    "README.md": "3270bc0556d115bf8a53c4809d2989e3ce179efa7ce9e6280f490816b0e50097",
-    "before-after.json": "251aeefe17b3ada08373265bcd31bbac2179204fff396ddca802c59c12b760b1",
-    "inventory.jsonl": "462381a982a810cffc24f4a5f78672697087912cec1cafa728b36775b392b8d1",
-    "mapping.jsonl": "0123d636158f018c221bbda1e654f29b97f4873d9a3a99ae77221c6abeeac4f4"
+    "README.md": "842e088f0de5e0a8467bce3f27f519e90646ff1b5e637c00bf3adb6806f400ca",
+    "before-after.json": "08ed1a7467e3a474da13e4aa546032fd9383f9ca946389b35ec6b9e580d4ad0c",
+    "inventory.jsonl": "29adadedd78268d2063b670ced943f6ab2f9f4baa420769e00789e53ce13abef",
+    "mapping.jsonl": "fb377d2904dea4492ec20d2be35523e6dc4028ad79c2b38bb30b0d4b11bca4be"
   },
   "body_hash_mismatches": 0,
   "contract_hashes": {
@@ -12,7 +12,7 @@
   },
   "cutoff_date": "2026-07-27",
   "entity_type_counts": {
-    "accelerator": 10,
+    "accelerator": 26,
     "angel_network": 5,
     "fund": 152,
     "funding_platform": 9,
@@ -22,18 +22,34 @@
   "issue": 110,
   "locale": "en",
   "parent_epic": 107,
-  "profile_count": 205,
+  "profile_count": 221,
   "profile_hashes": {
+    "ecosystem/accelerators/argentina/grid-transform.md": "bd12b8f8260f65c038e7437249d04aa548d15fcb4f83aa20c17336c048e28d26",
     "ecosystem/accelerators/brazil/ace-amazonia-impacto.md": "f3d8814b5e172ef6cbb72fae62ff6c2ad037e3600f45f6b0920923eb9a06530d",
     "ecosystem/accelerators/brazil/ace-funses1-digital.md": "c89d5fa3fdb70be3bcea27ba75152c29580bdabed00d0d394eb2da994d79b801",
     "ecosystem/accelerators/brazil/capital-empreendedor-rj.md": "9f9c26dc3695090eefbe4e099eeb4f23ffc2ec7249cb0e881dbb54ad7a479677",
     "ecosystem/accelerators/brazil/darwin-scale.md": "7f6f7f367d094c76c107afe2bbb191d890c086c3d48b025388d2a80407750de0",
+    "ecosystem/accelerators/brazil/gb-ventures.md": "228b65095111a0f530b8b29703f49a82aa1bfa8095558c8a2257e5c7223cc5fb",
+    "ecosystem/accelerators/brazil/inovativa-brasil.md": "cb40d0c6627253aee7fd958bc8338c7bcfdf21546ad19cb9b422ef9574064bd8",
+    "ecosystem/accelerators/brazil/tecnoparq-acelera.md": "b9252fd6b2073a4e6088e1914249ee7e23ce276a33a7007a54b4b5222345d051",
+    "ecosystem/accelerators/brazil/ventiur-acelera-impacto.md": "92ed0b006d23f8840010ebfa1cb95149a3164afa6c5429196f98659f78b6e42d",
+    "ecosystem/accelerators/brazil/wow.md": "0fd675d8cd765ed081136c9128de6c97cd95a86485cdada1a26df11ee315acb0",
+    "ecosystem/accelerators/chile/ganesha-go-europe.md": "0baa7426cad25218afdce1635cb5fe3b93fc78c12de7a67be3abd87980f1f309",
+    "ecosystem/accelerators/chile/magical.md": "fc80a6250979e10539d27879bee9937662d7d15069b7ed1dee72ea9158efc348",
     "ecosystem/accelerators/colombia/innovalab.md": "c4fe1f2244ce7c0097dfb7202beca6419da7c9522c579c883254f554a37d59f2",
     "ecosystem/accelerators/dominican-republic/boost.md": "30b42c054b398a11ea4b8eedd2f82335052beaab33e06647e5d12bcf5c10d83e",
+    "ecosystem/accelerators/mexico/500-latam.md": "fd81d3f525991195fe36e9f098f223f3896030eceac428e76f51ffe6fc5bfee9",
     "ecosystem/accelerators/peru/utec.md": "faac301ff003737c4e82de68571248c810f93226261ee90f7943d7b2498fc217",
+    "ecosystem/accelerators/puerto-rico/parallel18.md": "6733db55d5984f0529850bfa0d95448f4c20ff3e94a10d76ad529bd0e9f6a0e9",
+    "ecosystem/accelerators/switzerland/seedstars-lif-caf-rural-tech.md": "b1de4e170769fd84517bc432bc01989dbec80df73f5c6a4c5d1d033a31a86cf1",
     "ecosystem/accelerators/united-states/500-global-flagship.md": "2e7212009c86b574c5fe850ac7302488591042a69d541261fb11c184860cd5be",
     "ecosystem/accelerators/united-states/alchemist-flagship.md": "2f5f088050b98a2c9c5419f08e13013029fad438066fce5d4c598e1be7ea70c7",
     "ecosystem/accelerators/united-states/aws-generative-ai.md": "6abdf02d0db100dbf20ddd7ca66e55d304577ab35ed1f557a2d7dba69b3d4f6d",
+    "ecosystem/accelerators/united-states/berkeley-skydeck.md": "710c155ebf4fa69a83f8b796c3cf1741f95c8c102c93eac5fc9ffd6784ce5d31",
+    "ecosystem/accelerators/united-states/founder-institute-latam.md": "dff6f72a0eb6e4eac97c22d67cd628f0d82d106dc5f0ee6445202b423a6677ee",
+    "ecosystem/accelerators/united-states/google-ai-cybersecurity-latam.md": "8026e39b96e2dff2072f1a5dc73d8f530a2928bdcfc48193a0ca0c80b372b13c",
+    "ecosystem/accelerators/united-states/google-for-startups-brazil.md": "7715c1c903b1960fe7004df02342da56db785e36e4a6cc7173339a5c019702f6",
+    "ecosystem/accelerators/united-states/y-combinator.md": "13fcb48fe6477593a11c3d2c0cceaa21cad40bec11f7def5544a56b414f8a411",
     "ecosystem/angel-networks/brazil/anjos-do-brasil.md": "9bc92f31244a6b0ec6b2ce8f5a0fc47a7e4b3bfa99b69028a6ecbf7a7da1c1b6",
     "ecosystem/angel-networks/brazil/br-angels.md": "198b2378907537a0f800340b5102611add145f5c8d2d3f5cbbdcc738ead4b6f3",
     "ecosystem/angel-networks/brazil/gvangels.md": "5568f1a8c66d64021194cca4b00f3d78bee8f303a0adb17ef92645e613d741da",
@@ -231,8 +247,8 @@
     "funds/regional/xperiment-ventures.md": "e9d8b438f8946bfe63ca1399f777d58a7fc2d51745b2ca9a3248b97467bcb965"
   },
   "schema_version": "1.0",
-  "source_count": 447,
+  "source_count": 465,
   "status": "complete",
-  "unique_ids": 205,
-  "unique_slugs": 205
+  "unique_ids": 221,
+  "unique_slugs": 221
 }

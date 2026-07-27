@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:grid-transform:en",
+  "entity_id": "accelerator:grid-transform",
+  "slug": "grid-transform",
+  "name": "GRIDX Transform",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "GRIDX Transform is a structured acceleration program operated by GRIDX.",
+  "aliases": [],
+  "operator": "GRIDX",
+  "base_geography": {
+    "kind": "country",
+    "code": "AR"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://www.gridexponential.com/es/aplicar-como-emprendedor",
+  "founder_route": "https://www.gridexponential.com/es/aplicar-como-emprendedor",
+  "sources": [
+    {
+      "title": "GRIDX Transform",
+      "url": "https://www.gridexponential.com/es/aplicar-como-emprendedor",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "GRIDX Transform"
+  ]
+}
+---
 # GRIDX Transform
 
 - **Website:** https://www.gridexponential.com/es/aplicar-como-emprendedor

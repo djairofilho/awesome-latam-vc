@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:y-combinator:en",
+  "entity_id": "accelerator:y-combinator",
+  "slug": "y-combinator",
+  "name": "Y Combinator Fall 2026",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Y Combinator Fall 2026 is a structured acceleration program operated by Y Combinator.",
+  "aliases": [],
+  "operator": "Y Combinator",
+  "base_geography": {
+    "kind": "country",
+    "code": "US"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "growth"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://www.ycombinator.com/apply",
+  "founder_route": "https://www.ycombinator.com/apply",
+  "sources": [
+    {
+      "title": "Y Combinator Fall 2026",
+      "url": "https://www.ycombinator.com/apply",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Y Combinator Fall 2026"
+  ]
+}
+---
 # Y Combinator Fall 2026
 
 - **Website:** https://www.ycombinator.com/apply

@@ -1,3 +1,47 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:ventiur-acelera-impacto:en",
+  "entity_id": "accelerator:ventiur-acelera-impacto",
+  "slug": "ventiur-acelera-impacto",
+  "name": "Acelera Impacto",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Acelera Impacto is a structured acceleration program operated by Ventiur.",
+  "aliases": [
+    "Ventiur Acelera Impacto"
+  ],
+  "operator": "Ventiur",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://conteudo.ventiur.net/acelera-impacto",
+  "founder_route": "https://conteudo.ventiur.net/acelera-impacto",
+  "sources": [
+    {
+      "title": "Acelera Impacto",
+      "url": "https://conteudo.ventiur.net/acelera-impacto",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Acelera Impacto"
+  ]
+}
+---
 # Acelera Impacto
 
 - **Website:** https://conteudo.ventiur.net/acelera-impacto

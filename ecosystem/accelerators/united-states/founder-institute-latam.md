@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:founder-institute-latam:en",
+  "entity_id": "accelerator:founder-institute-latam",
+  "slug": "founder-institute-latam",
+  "name": "Founder Institute LatAm Fall 2026",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Founder Institute LatAm Fall 2026 is a structured acceleration program operated by Founder Institute.",
+  "aliases": [],
+  "operator": "Founder Institute",
+  "base_geography": {
+    "kind": "country",
+    "code": "US"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://fi.co/core/14694",
+  "founder_route": "https://fi.co/core/14694",
+  "sources": [
+    {
+      "title": "Founder Institute LatAm Fall 2026",
+      "url": "https://fi.co/core/14694",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Founder Institute LatAm Fall 2026"
+  ]
+}
+---
 # Founder Institute LatAm Fall 2026
 
 - **Website:** https://fi.co/core/14694

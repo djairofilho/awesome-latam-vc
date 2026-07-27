@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:inovativa-brasil:en",
+  "entity_id": "accelerator:inovativa-brasil",
+  "slug": "inovativa-brasil",
+  "name": "InovAtiva Brasil",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "InovAtiva Brasil is a structured acceleration program operated by InovAtiva.",
+  "aliases": [
+    "InovAtiva"
+  ],
+  "operator": "InovAtiva",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://www.inovativa.online/inovativa-brasil/",
+  "founder_route": "https://www.inovativa.online/inovativa-brasil/",
+  "sources": [
+    {
+      "title": "InovAtiva Brasil",
+      "url": "https://www.inovativa.online/inovativa-brasil/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Quem pode se inscrever nos programas InovAtiva",
+      "url": "https://www.gov.br/mdic/pt-br/acesso-a-informacao/perguntas-frequentes-faq/secretaria-de-desenvolvimento-industrial-inovacao-comercio-e-servicos/quem-pode-se-inscrever-e",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "InovAtiva Brasil"
+  ]
+}
+---
 # InovAtiva Brasil
 
 - **Website:** https://www.inovativa.online/inovativa-brasil/
