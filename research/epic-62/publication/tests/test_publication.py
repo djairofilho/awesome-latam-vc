@@ -163,7 +163,12 @@ class PublicationTests(unittest.TestCase):
 
     def test_multilingual_catalog_links_resolve(self) -> None:
         expected_target = "ecosystem/accelerators/README.md"
-        for relative in ("README.md", "README.es.md", "ecosystem/README.md"):
+        for relative in (
+            "README.md",
+            "README.pt.md",
+            "README.es.md",
+            "ecosystem/README.md",
+        ):
             path = ROOT / relative
             text = path.read_text(encoding="utf-8")
             targets = re.findall(r"!?\[[^\]]*\]\(([^)#]+)", text)

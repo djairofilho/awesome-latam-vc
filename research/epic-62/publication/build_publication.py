@@ -452,6 +452,7 @@ def main() -> None:
             "ecosystem/accelerators/README.md",
             "ecosystem/README.md",
             "README.md",
+            "README.pt.md",
             "README.es.md",
         ],
     }
