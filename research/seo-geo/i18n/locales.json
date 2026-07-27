@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "issue": 112,
+  "site_origin": "https://djairofilho.github.io",
+  "site_base": "/awesome-latam-vc",
+  "canonical_locale": "en",
+  "x_default_path": "/",
+  "locales": {
+    "en": {
+      "route_segment": "en",
+      "html_lang": "en",
+      "content_root": null,
+      "label": "English"
+    },
+    "pt-BR": {
+      "route_segment": "pt-br",
+      "html_lang": "pt-BR",
+      "content_root": "translations/pt-BR",
+      "label": "Português (Brasil)"
+    },
+    "es": {
+      "route_segment": "es",
+      "html_lang": "es",
+      "content_root": "translations/es",
+      "label": "Español"
+    }
+  },
+  "migration_fallback": {
+    "locale": "en",
+    "indexable": false,
+    "emit_unavailable_hreflang": false
+  },
+  "release": {
+    "required_locales": [
+      "en",
+      "pt-BR",
+      "es"
+    ],
+    "accepted_translation_statuses": {
+      "en": [
+        "canonical"
+      ],
+      "pt-BR": [
+        "complete"
+      ],
+      "es": [
+        "complete"
+      ]
+    }
+  }
+}

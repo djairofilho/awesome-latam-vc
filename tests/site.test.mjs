@@ -1,6 +1,12 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
+import {
+  hreflangUrls,
+  localizedRoute,
+  localeConfig,
+  switchLocalizedRoute,
+} from "../src/lib/i18n.mjs";
 import { canonicalUrl, withBase } from "../src/lib/paths.mjs";
 
 test("base-path helpers preserve the GitHub Pages subdirectory", () => {
@@ -12,7 +18,50 @@ test("base-path helpers preserve the GitHub Pages subdirectory", () => {
   );
 });
 
-test("the content layer reads canonical profiles without moving them", () => {
+test("locale routes preserve suffixes, canonicals and the Pages base", () => {
+  assert.equal(
+    localizedRoute("pt-BR", "/catalog/500-latam/"),
+    "/pt-br/catalog/500-latam/",
+  );
+  assert.equal(
+    switchLocalizedRoute("/pt-br/catalog/500-latam/", "es"),
+    "/es/catalog/500-latam/",
+  );
+  assert.equal(
+    canonicalUrl(localizedRoute("es", "/catalog/")),
+    "https://djairofilho.github.io/awesome-latam-vc/es/catalog/",
+  );
+  assert.equal(localeConfig.site_base, "/awesome-latam-vc");
+});
+
+test("hreflang only advertises available variants and uses x-default safely", () => {
+  assert.deepEqual(
+    hreflangUrls("/catalog/example/", ["en", "pt-BR"]),
+    {
+      en: "https://djairofilho.github.io/awesome-latam-vc/en/catalog/example/",
+      "pt-BR":
+        "https://djairofilho.github.io/awesome-latam-vc/pt-br/catalog/example/",
+      "x-default":
+        "https://djairofilho.github.io/awesome-latam-vc/en/catalog/example/",
+    },
+  );
+  assert.equal(
+    hreflangUrls("/")["x-default"],
+    "https://djairofilho.github.io/awesome-latam-vc/",
+  );
+});
+
+test("interface labels are stored separately from profile content", () => {
+  const catalog = readFileSync("src/i18n/ui.ts", "utf8");
+  for (const locale of ["en", "pt-BR", "es"]) {
+    assert.match(catalog, new RegExp(`(?:^|\\s)["']?${locale}["']?\\s*:`));
+  }
+  for (const phrase of ["Escolher idioma", "Elegir idioma", "Choose language"]) {
+    assert.match(catalog, new RegExp(phrase));
+  }
+});
+
+test("the content layer reads canonical profiles and mirrored translations", () => {
   const config = readFileSync("src/content.config.ts", "utf8");
   const contract = JSON.parse(
     readFileSync("research/seo-geo/contract/profile.schema.json", "utf8"),
@@ -23,12 +72,18 @@ test("the content layer reads canonical profiles without moving them", () => {
     "ecosystem/angel-networks/**/*.md",
     "ecosystem/funding-platforms/**/*.md",
     "ecosystem/public-programs/**/*.md",
+    "translations/pt-BR/funds/**/*.md",
+    "translations/pt-BR/ecosystem/accelerators/**/*.md",
+    "translations/es/funds/**/*.md",
+    "translations/es/ecosystem/accelerators/**/*.md",
   ]) {
     assert.match(config, new RegExp(source.replaceAll("*", "\\*")));
   }
   for (const field of contract.required) {
     assert.match(config, new RegExp(`\\b${field}:`), `missing ${field}`);
   }
+  const catalog = readFileSync("src/lib/catalog.ts", "utf8");
+  assert.match(catalog, /variants\.get\(locale\) \?\? variants\.get\("en"\)/);
 });
 
 test("pull requests validate without deployment", () => {

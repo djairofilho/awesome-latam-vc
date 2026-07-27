@@ -16,6 +16,22 @@ Astro serves the project with the production base path
 `/awesome-latam-vc/`. Internal links must use the shared base-path helper
 instead of hard-coded root-relative URLs.
 
+## Locale routes
+
+The language-neutral root `/` is an `x-default` language chooser. It never
+redirects based on browser language. Published interfaces live at `/en/`,
+`/pt-br/` and `/es/`; switching language preserves the route suffix and entity.
+
+Canonical profiles remain in `funds/` and `ecosystem/`. Portuguese and Spanish
+translations mirror those paths below `translations/pt-BR/` and
+`translations/es/`. During migration, a missing translation falls back to the
+English profile; the i18n validator reports it as a warning. Release validation
+requires every profile in all three locales.
+
+Every localized page must set its matching HTML `lang`, canonical URL and
+available `hreflang` alternatives. A fallback profile must be `noindex`, use
+the English canonical and omit unavailable locale alternatives.
+
 ## Validation
 
 ```text
