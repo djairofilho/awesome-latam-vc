@@ -15,7 +15,7 @@ Uma lista curada de fundos de Venture Capital que investem na América Latina.
 
 ---
 
-O índice foi otimizado para comparação rápida. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
+O índice foi otimizado para comparação rápida e atualmente reúne 116 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
 
 ## Pan-América Latina (sede na região)
 
@@ -63,6 +63,8 @@ O índice foi otimizado para comparação rápida. Todos os perfis de fundos usa
 | --- | --- | --- | --- |
 | [A.B.Seed Ventures](funds/brazil/a.b.seed-ventures.md) | Pre-seed e Seed | Software B2B | Brasil |
 | [ACE Ventures](funds/brazil/ace-ventures.md) | Seed e Série A | Tecnologia | Brasil |
+| [Ahead Ventures](funds/brazil/ahead-ventures.md) | Seed e Série A | Teses estratégicas corporativas | Brasil |
+| [Arapy](funds/brazil/arapy.md) | Não divulgado publicamente | Impacto alinhado aos Objetivos de Desenvolvimento Sustentável da ONU | Brasil |
 | [Astella](funds/brazil/astella.md) | Pre-seed, Seed e Série A | Tecnologia, agnóstico a setores | Brasil |
 | [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Pre-seed e Seed | Tecnologia B2B e B2B2C | Brasil |
 | [Canary](funds/brazil/canary.md) | Pre-seed, Seed e Série A | Agnóstico a setores | América Latina |
@@ -71,17 +73,22 @@ O índice foi otimizado para comparação rápida. Todos os perfis de fundos usa
 | [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed e Seed | Startups de tecnologia | Brasil |
 | [DGF Investimentos](funds/brazil/dgf-investimentos.md) | Multiestágio | Empresas de tecnologia de alto crescimento | Brasil e América Latina |
 | [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed e Seed | Tecnologia | Brasil |
+| [FIP Nordeste Capital Semente](funds/brazil/fip-nordeste-capital-semente.md) | Pre-seed e Seed | Startups regionais de tecnologia | Nordeste do Brasil, norte de Minas Gerais e Espírito Santo |
+| [Fundepar](funds/brazil/fundepar.md) | Não divulgado publicamente | Tecnologia, inovação de base científica e impacto | Brasil |
 | [Fundo inovabra I](funds/brazil/fundo-inovabra-i.md) | Séries A e B | Tecnologia nos setores financeiro e não financeiro | Global |
 | [Gerdau Next Ventures](funds/brazil/gerdau-next-ventures.md) | Não divulgado publicamente | Construção, mobilidade, sustentabilidade e tecnologia | Não divulgado publicamente |
 | [Honey Island Capital](funds/brazil/honey-island-capital.md) | Não divulgado publicamente | Fintech e tecnologia | Brasil |
 | [Indicator Capital](funds/brazil/indicator-capital.md) | Pre-seed e Seed | Deep tech | América Latina |
+| [Invest Tech](funds/brazil/invest-tech.md) | Seed | Empresas B2B habilitadas por tecnologia | Brasil |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed e Seed | Software e tecnologia | Brasil |
 | [Itaú Ventures](funds/brazil/itau-ventures.md) | Não divulgado publicamente | Serviços financeiros e tecnologias adjacentes | Brasil e América Latina |
 | [KPTL](funds/brazil/kptl.md) | Multiestágio | Deep tech, saúde, bioeconomia e tecnologia | Brasil |
 | [Monashees](funds/brazil/monashees.md) | Não divulgado publicamente | Tecnologia | América Latina para o mundo |
+| [MSW Capital](funds/brazil/msw-capital.md) | Seed | Tecnologia alinhada à inovação corporativa | Brasil |
 | [Oria Capital](funds/brazil/oria-capital.md) | Não divulgado publicamente | Software B2B | Brasil |
 | [Panvel Ventures](funds/brazil/panvel-ventures.md) | Não divulgado publicamente | Saúde e bem-estar, experiência do cliente e inteligência operacional | Não divulgado publicamente |
 | [Primus Ventures](funds/brazil/primus-ventures.md) | Pre-seed e Seed | Tecnologia B2B | Sul do Brasil |
+| [Raio Capital](funds/brazil/raio-capital.md) | Não divulgado publicamente | Eficiência em cadeias de valor habilitada por tecnologia | Brasil |
 | [Randon Ventures (RV)](funds/brazil/randon-ventures-rv.md) | Growth | Soluções financeiras e negócios estratégicos | Brasil |
 | [RD Saúde Ventures](funds/brazil/rd-saude-ventures.md) | Não divulgado publicamente | Saúde, bem-estar e varejo farmacêutico | Brasil |
 | [Redpoint eventures](funds/brazil/redpoint-eventures.md) | Multiestágio | Tecnologia | Brasil |
@@ -89,6 +96,7 @@ O índice foi otimizado para comparação rápida. Todos os perfis de fundos usa
 | [SLC Ventures](funds/brazil/slc-ventures.md) | Não divulgado publicamente | Tecnologia para o agronegócio e agricultura sustentável | Não divulgado publicamente |
 | [Spectra Investimentos](funds/brazil/spectra-investimentos.md) | Multiestágio | Investimentos alternativos, incluindo venture capital | Brasil e América Latina |
 | [TM3 Capital](funds/brazil/tm3-capital.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
+| [Triaxis Capital](funds/brazil/triaxis-capital.md) | Não divulgado publicamente | Empresas inovadoras de tecnologia | Brasil |
 | [Ventiur](funds/brazil/ventiur.md) | Pre-seed e Seed | Startups de tecnologia | Brasil |
 | [Vivo Ventures](funds/brazil/vivo-ventures.md) | Série A, Série B e Growth | Educação, energia, saúde, serviços financeiros, casa inteligente e entretenimento | Brasil |
 | [Vox Capital](funds/brazil/vox-capital.md) | Seed, Série A e Série B | Tecnologia de impacto | Brasil |
