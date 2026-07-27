@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-65/schemas/agency.schema.json",
+  "title": "Agência pública da epic 65",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "agency_id",
+    "name",
+    "aliases",
+    "country",
+    "geography",
+    "official_site",
+    "route_url",
+    "program_ids",
+    "official_evidence_ids",
+    "research_status",
+    "decision",
+    "canonical_agency_id",
+    "canonical_profile",
+    "reason",
+    "owner",
+    "next_action"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "agency_id": {
+      "type": "string",
+      "pattern": "^agency-[a-z0-9][a-z0-9-]*$"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "country": { "type": "string", "minLength": 2 },
+    "geography": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 2 },
+      "uniqueItems": true
+    },
+    "official_site": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "route_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "program_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^program-[a-z0-9][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    },
+    "official_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^evidence-[a-z0-9][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    },
+    "research_status": {
+      "enum": ["descoberta", "em pesquisa", "decidida", "publicada"]
+    },
+    "decision": {
+      "type": ["string", "null"],
+      "enum": [
+        "elegível",
+        "duplicada",
+        "inativa",
+        "evidência insuficiente",
+        "excluída",
+        null
+      ]
+    },
+    "canonical_agency_id": {
+      "type": ["string", "null"],
+      "pattern": "^agency-[a-z0-9][a-z0-9-]*$"
+    },
+    "canonical_profile": {
+      "type": ["string", "null"],
+      "pattern": "^ecosystem/public-programs/.+\\.md$"
+    },
+    "reason": { "type": ["string", "null"], "minLength": 1 },
+    "owner": { "type": ["string", "null"], "minLength": 1 },
+    "next_action": { "type": ["string", "null"], "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "research_status": { "enum": ["descoberta", "em pesquisa"] }
+        }
+      },
+      "then": { "properties": { "decision": { "type": "null" } } }
+    },
+    {
+      "if": {
+        "properties": {
+          "research_status": { "enum": ["decidida", "publicada"] }
+        }
+      },
+      "then": { "properties": { "decision": { "type": "string" } } }
+    },
+    {
+      "if": { "properties": { "decision": { "const": "elegível" } } },
+      "then": {
+        "properties": {
+          "official_site": { "type": "string" },
+          "route_url": { "type": "string" },
+          "program_ids": { "minItems": 1 },
+          "official_evidence_ids": { "minItems": 1 }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "decision": { "const": "duplicada" } } },
+      "then": {
+        "anyOf": [
+          { "properties": { "canonical_agency_id": { "type": "string" } } },
+          { "properties": { "canonical_profile": { "type": "string" } } }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "enum": [
+              "duplicada",
+              "inativa",
+              "evidência insuficiente",
+              "excluída"
+            ]
+          }
+        }
+      },
+      "then": { "properties": { "reason": { "type": "string" } } }
+    }
+  ]
+}
