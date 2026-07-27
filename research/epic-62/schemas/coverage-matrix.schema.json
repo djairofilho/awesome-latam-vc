@@ -40,6 +40,16 @@
         "other"
       ]
     },
+    "source_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^src-accel-[a-z0-9][a-z0-9-]*$"
+      }
+    },
+    "original_planned_sources": { "type": "integer", "minimum": 0 },
+    "planning_errata": { "type": ["string", "null"], "minLength": 1 },
     "planned_sources": { "type": "integer", "minimum": 0 },
     "completed_sources": { "type": "integer", "minimum": 0 },
     "status": { "enum": ["planned", "complete", "partial", "unavailable"] },
