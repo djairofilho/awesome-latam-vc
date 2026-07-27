@@ -105,6 +105,32 @@ class ShardTests(unittest.TestCase):
                 self.root / "candidates.jsonl",
             )
 
+    def test_reduces_only_destination_partition(self) -> None:
+        write_shard(
+            self.root,
+            "brazil",
+            "worker-1",
+            "candidates",
+            [self.candidate("accel-br", "Brazil")],
+        )
+        write_shard(
+            self.root,
+            "mexico-cac",
+            "worker-2",
+            "candidates",
+            [self.candidate("accel-mx", "Mexico")],
+        )
+
+        destination = self.root / "brazil" / "candidates.jsonl"
+        count = reduce_shards(self.root, "candidates", destination)
+
+        self.assertEqual(1, count)
+        records = [
+            json.loads(line)
+            for line in destination.read_text(encoding="utf-8").splitlines()
+        ]
+        self.assertEqual(["accel-br"], [record["candidate_id"] for record in records])
+
     def test_supports_epic_64_platform_and_country_keys(self) -> None:
         candidate_path = write_shard(
             self.root,
@@ -165,3 +191,29 @@ class ShardTests(unittest.TestCase):
             for line in destination.read_text(encoding="utf-8").splitlines()
         ]
         self.assertEqual("ang-angelhub-mx", records[0]["network_id"])
+
+    def test_supports_accelerator_state_coverage(self) -> None:
+        record = {
+            "state_coverage_id": "state-coverage-accel-br-ac",
+            "subdivision_code": "AC",
+        }
+        write_shard(
+            self.root,
+            "brazil",
+            "worker-state",
+            "state-coverage",
+            [record],
+        )
+        destination = self.root / "brazil" / "state-coverage.jsonl"
+
+        count = reduce_shards(self.root, "state-coverage", destination)
+
+        self.assertEqual(1, count)
+        records = [
+            json.loads(line)
+            for line in destination.read_text(encoding="utf-8").splitlines()
+        ]
+        self.assertEqual(
+            "state-coverage-accel-br-ac",
+            records[0]["state_coverage_id"],
+        )
