@@ -1,0 +1,130 @@
+{
+  "after_counts": {
+    "candidates": 44,
+    "coverage_rows": 42,
+    "evidence": 57,
+    "publication_queue": 11,
+    "sources": 61
+  },
+  "before_counts": {
+    "issue-81": {
+      "candidates.jsonl": 5,
+      "coverage-matrix.jsonl": 4,
+      "evidence.jsonl": 10,
+      "run-manifest.jsonl": 7,
+      "source-inventory.jsonl": 7
+    },
+    "issue-82": {
+      "candidates.jsonl": 10,
+      "coverage-matrix.jsonl": 7,
+      "evidence.jsonl": 11,
+      "run-manifest.jsonl": 14,
+      "source-inventory.jsonl": 12
+    },
+    "issue-83": {
+      "candidates.jsonl": 12,
+      "coverage-matrix.jsonl": 11,
+      "evidence.jsonl": 15,
+      "run-manifest.jsonl": 11,
+      "source-inventory.jsonl": 14
+    },
+    "issue-84": {
+      "candidates.jsonl": 6,
+      "coverage-matrix.jsonl": 10,
+      "evidence.jsonl": 7,
+      "run-manifest.jsonl": 7,
+      "source-inventory.jsonl": 12
+    },
+    "issue-85": {
+      "candidates.jsonl": 11,
+      "coverage-matrix.jsonl": 10,
+      "evidence.jsonl": 14,
+      "run-manifest.jsonl": 6,
+      "source-inventory.jsonl": 16
+    }
+  },
+  "before_occurrences": 44,
+  "cutoff_date": "2026-07-27",
+  "decision_counts": {
+    "duplicado": 2,
+    "elegível": 11,
+    "encaminhado-para-aceleradoras": 2,
+    "encaminhado-para-funds": 4,
+    "encaminhado-para-plataformas": 5,
+    "encaminhado-para-programas-públicos": 1,
+    "evidência-insuficiente": 16,
+    "excluído": 1,
+    "inativo": 2
+  },
+  "drift_status": "verified-by-idempotency-test",
+  "final_eligible_count": 11,
+  "incoming_baseline_profiles": 5,
+  "incoming_cross_epic_transfers": 0,
+  "independent_review_status": "complete",
+  "independent_reviewer": "independent-reviewer-final-issue-86",
+  "input_hashes": {
+    "research/epic-63/issue-81/candidates.jsonl": "c973658197a59b7518a7445783292ca2db7f3404f5ea6dc7bd3a688751dc03d0",
+    "research/epic-63/issue-81/coverage-matrix.jsonl": "542abdeb8b81aa1b46cc219771098e273357e2f7559a07dd8fc5ce5b6839ef53",
+    "research/epic-63/issue-81/evidence.jsonl": "3dc8e0cff8670ef7e58aa44b2aca60fbb034592fd65013d170acb68692c050e7",
+    "research/epic-63/issue-81/run-manifest.jsonl": "72d2d9bc93cc0ecb7b525f7d60ea6b0608e05deeae57d02a1466a56e01e79a0c",
+    "research/epic-63/issue-81/source-inventory.jsonl": "12d7798b7eae74f9e93acd7a01fd0b8f0eaa4daab0f7426db84cdb432eccc35e",
+    "research/epic-63/issue-82/candidates.jsonl": "f045a1539e7fb0c99302b23fa8e2344dd255e35a679eab9bd0530f1892b437ce",
+    "research/epic-63/issue-82/coverage-matrix.jsonl": "fec7e901d58335f3cb8d476f0dc00f8eafba86d5cf5bb79f57395bd8a1d8a821",
+    "research/epic-63/issue-82/evidence.jsonl": "af3f19e1661ace96d21cd85afa10ab3c107fb623577214bfa49a58af5a280455",
+    "research/epic-63/issue-82/run-manifest.jsonl": "f02763eb47f14acaf94d4c3c13cda5d226e19c5ded08ad16713af8c3f107c057",
+    "research/epic-63/issue-82/source-inventory.jsonl": "8a646feb72888544114b8e7cf689f17eb323497de88546db2c6851952648ca2a",
+    "research/epic-63/issue-84/candidates.jsonl": "21cc78431ac553aa47840043529de18422c49424b2bcf49c50570830466e21ec",
+    "research/epic-63/issue-84/coverage-matrix.jsonl": "d14b16b0968aedc7c539d79b8864a9a7e927e506de201bd44456a27361bf2568",
+    "research/epic-63/issue-84/evidence.jsonl": "a0ee7c06d2091b06abfc052d1f6c0b3a2e7b8543c207eafdcb79da1578fb9e67",
+    "research/epic-63/issue-84/run-manifest.jsonl": "5e70ac8fdc33c29ec409893c9c5ed27032a23489d7412467aa174bfb13907926",
+    "research/epic-63/issue-84/source-inventory.jsonl": "a480b07f6b68220f0240d4ad92e19b8fda7cb9ff3b87ac5cb5cbc029657da107",
+    "research/epic-63/mexico-cac/candidates.jsonl": "aab0446ccf726210ad607c017af09d4ee997b14088a69d40145d438639c3dbd2",
+    "research/epic-63/mexico-cac/coverage-matrix.jsonl": "bb5cd0adf8ef85585e90c68e8910b482991ff1310e6bb76730fc73ee72e9d1e1",
+    "research/epic-63/mexico-cac/evidence.jsonl": "3943dda10ffe5703c28a47f0ddfdc19f72c03958345f2a47d8f20a202f786113",
+    "research/epic-63/mexico-cac/run-manifest.jsonl": "9c5d595163a491d6ed8b5193a03972857544283a71ee6e8cbacb0e0d7f7a977f",
+    "research/epic-63/mexico-cac/source-inventory.jsonl": "68aa0f2e31f2710d00ce97b40417862f89512904612d05fd935514e5fa45723e",
+    "research/epic-63/southern-cone/candidates.jsonl": "197062ac690a31a14cc0929eae137882f2e66bcb4fab90dd69fc94f11eb4949d",
+    "research/epic-63/southern-cone/coverage-matrix.jsonl": "a4299adec83ce21ec465d64ae38e304fc3fe847da9e643c3239e9471460670f9",
+    "research/epic-63/southern-cone/evidence.jsonl": "830440fb56f3f286289b39f4afbaecafa237b88e7d92abcee59d47f5518dc75d",
+    "research/epic-63/southern-cone/run-manifest.jsonl": "9ee3e2229f7a1e9ffa88951569df3aaafed1b7eb3885380cfc32abf572732dea",
+    "research/epic-63/southern-cone/source-inventory.jsonl": "04e8323c77ea794c58cc577ce3d58aecac4152dd813a4c78b7cd232b4fb29903"
+  },
+  "issue": 86,
+  "known_duplicate_resolutions": 2,
+  "merged_duplicate_occurrences": 0,
+  "original_eligible_count": 12,
+  "outgoing_category_resolutions": 12,
+  "output_hashes": {
+    "INDEPENDENT_REVIEW.md": "037411ebeee03fd7921568a0e29118d3bd8306f5691d0ad55e7b0004386c03b8",
+    "README.md": "b3b207f31118a56e50c31603c16043598de980c25dbdd00475821c8308c48e3e",
+    "candidates.jsonl": "e6bffe81f90ae36649dd5f0bee3148e53d76a070a9e809362e419f64a317e12b",
+    "category-resolutions.json": "59ee33dc1a7754899e9749c5df825243fd7c351d0290ddf7131a47f5eae9b204",
+    "coverage-matrix.jsonl": "0f0a302c33d4ad9ac7651e5393888e0f5ff48a6692cd31e0391cfa456456532d",
+    "evidence.jsonl": "5373fa48e1985ce2dbbd6e78a48e539fea0609fe668b7d1b6a11131cf4f4efaf",
+    "identity-resolutions.json": "405ea5ca82b0c3f387f4e681d3b9ac62420b3b8a4047730f1725af10d2cb4d63",
+    "independent-review.jsonl": "a47bb7f86048dde4914ab4d2dff7474cb668466e3f26be86be07c5bc25fafb62",
+    "provenance.jsonl": "fddd84646646ebce7eb83c7efe23649810318c0cefde2b3baf480562388cdc87",
+    "publication-queue.jsonl": "1d372fd37a61cf26c1f3cee75df0485c9f3e4277e0b90b5d255d206cccc354cd",
+    "review-divergences.json": "b979228bb00882112a02f0ce63bcb4f2c99a50212a89b04c282e0b987ce59c1d",
+    "run-manifest.jsonl": "aeceb00319d3d6fe41ca35c0b94d9edc11d9caa369e4da55a68be306d5ce8483",
+    "source-inventory.jsonl": "f2b3695e4f42a76689eb118290bdb72c87035303a63c09c30cf2bd01bd2ba031"
+  },
+  "publication_queue_count": 11,
+  "resolved_high_divergences": 1,
+  "review_count": 42,
+  "review_divergence_count": 2,
+  "review_scope": {
+    "mandatory": 41,
+    "remaining_population": 3,
+    "sample_algorithm": "sha256(network_id), ordem crescente, ceil(20%)",
+    "sample_rate": 0.2,
+    "sample_size": 1,
+    "sampled_network_ids": [
+      "ang-venecapital-org"
+    ]
+  },
+  "reviewed_on": "2026-07-27",
+  "schema_version": "1.0",
+  "status": "frozen",
+  "unresolved_high_divergences": 0
+}
