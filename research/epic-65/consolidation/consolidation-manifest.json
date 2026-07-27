@@ -1,0 +1,97 @@
+{
+  "after_counts": {
+    "agencies": 27,
+    "calls": 21,
+    "coverage_rows": 55,
+    "evidence": 90,
+    "programs": 39,
+    "tasks": 55
+  },
+  "before_counts": {
+    "andean": {
+      "agencies.jsonl": 8,
+      "calls.jsonl": 4,
+      "coverage-matrix.jsonl": 25,
+      "evidence.jsonl": 21,
+      "programs.jsonl": 8
+    },
+    "brazil": {
+      "agencies.jsonl": 5,
+      "calls.jsonl": 5,
+      "coverage-matrix.jsonl": 5,
+      "evidence.jsonl": 19,
+      "programs.jsonl": 9
+    },
+    "mexico": {
+      "agencies.jsonl": 5,
+      "calls.jsonl": 5,
+      "coverage-matrix.jsonl": 5,
+      "evidence.jsonl": 22,
+      "programs.jsonl": 10
+    },
+    "southern-cone": {
+      "agencies.jsonl": 9,
+      "calls.jsonl": 7,
+      "coverage-matrix.jsonl": 20,
+      "evidence.jsonl": 28,
+      "programs.jsonl": 12
+    }
+  },
+  "cutoff_date": "2026-07-27",
+  "decision_counts": {
+    "agencies": {
+      "elegível": 12,
+      "evidência insuficiente": 5,
+      "excluída": 7,
+      "inativa": 3
+    },
+    "programs": {
+      "elegível": 15,
+      "evidência insuficiente": 5,
+      "excluído": 14,
+      "inativo": 5
+    }
+  },
+  "incoming_transfers": 13,
+  "independent_review_status": "pending",
+  "input_hashes": {
+    "research/epic-65/andean/agencies.jsonl": "3faaaf83e76b1784a1b7e9b35817ff146fd169fadf188bfdf35efbde01c2ffbe",
+    "research/epic-65/andean/calls.jsonl": "efc9f40b46f4ddad650d4c07d7542b24163200367afc2eddebdd324bfe340b9a",
+    "research/epic-65/andean/coverage-matrix.jsonl": "7eede90db1967015930b5c4755ee38ab05f328129c49fb9033121b7fff9c24ef",
+    "research/epic-65/andean/evidence.jsonl": "3dd78c0e925af180cd4a0ad8cbd5c8b10187b1b3b854a772533d7a3d7521903c",
+    "research/epic-65/andean/programs.jsonl": "712d85a84e64db8ee62b154e49b53a72e5dcd328adcf7841849ed76b64a374f6",
+    "research/epic-65/andean/run-manifest.jsonl": "a97c52056a9fab055f2c92f5d2d9bc21dc4251d10bf0826220d51116caa41ee7",
+    "research/epic-65/brazil/agencies.jsonl": "5c63a26dbb4e27540a63646bdb7cb9e5869532f776f7837858dc475970207091",
+    "research/epic-65/brazil/calls.jsonl": "b8a397266682b60e288aa7212093769b96cc4b665cf5f2bb69106f996f89984d",
+    "research/epic-65/brazil/coverage-matrix.jsonl": "ec89b0d182b3b445ba3f0e92b49b8190ef50e94414f9efee28763c6e9a7aaab0",
+    "research/epic-65/brazil/evidence.jsonl": "505df54fe2ada2e35dce6731febd8675243ca1f52a8ddaf20bf2b6887b2750bb",
+    "research/epic-65/brazil/programs.jsonl": "469c5cd8ad26a6c34498ea645eb222cc393639d3b5f2cd0c06dd994cb6b71c5b",
+    "research/epic-65/brazil/run-manifest.jsonl": "17efdf48c2cbb894f9039ad1a50eefb81bbb3f599981e3a78258c6c8b2dcffa8",
+    "research/epic-65/mexico/agencies.jsonl": "14e59fcfe2867f8390bfefa2ebbce6f0feeb6a1d92d5b760a9a2e70245360919",
+    "research/epic-65/mexico/calls.jsonl": "b6c13b924170c95726724202a7589392b4cb50bf40760c15f8887aab1cbb0dcf",
+    "research/epic-65/mexico/coverage-matrix.jsonl": "a2dc2a375ad897ed3804ab97a18f68d523170b3c5a08d86d83eb2f4fa120b213",
+    "research/epic-65/mexico/evidence.jsonl": "06a48efa85a5bfe64c5c7959b190a8c3aa75fba5736b750a1bd675fa4553809f",
+    "research/epic-65/mexico/programs.jsonl": "df074e4ae72cea31af0b68471d72187172a69e2e03eb8636232ace2e5287bee1",
+    "research/epic-65/mexico/run-manifest.jsonl": "cf677ade3b346c06d34c960197ad90bec2ab34b9aedf9482f86ee0926f3197e2",
+    "research/epic-65/southern-cone/agencies.jsonl": "a62fdcc7ebe8152cecaf195082de212d2d19c53f8f86c90d8e066912ac7aea64",
+    "research/epic-65/southern-cone/calls.jsonl": "c425b7b8ef189979678488e46343de0c9bed5cb58874c05bff83d515befa4146",
+    "research/epic-65/southern-cone/coverage-matrix.jsonl": "9f53a2331fe95e6c75cbab91e3abb2d8a65eb34b09ae2a83b389328efccf86c8",
+    "research/epic-65/southern-cone/evidence.jsonl": "63054608d4fbc1e85a7c335ce0403d0911e676beb16a93f76d076cb878f08941",
+    "research/epic-65/southern-cone/programs.jsonl": "7dfe1a913873de21dbc957991f0a66e0a6fb25ae55afa89e6471704bf522df8b",
+    "research/epic-65/southern-cone/run-manifest.jsonl": "c03769e92233e8096a605753455ba6cfdee8eb2a0f75af71ed9521e5f84be5b8"
+  },
+  "issue": 102,
+  "materialized_incoming_transfers": 2,
+  "outgoing_category_resolutions": 5,
+  "output_hashes": {
+    "agencies.jsonl": "7089a2abde1fe3d75860c1533abf036979aa84a58ed52bc740e56c84f74c81ac",
+    "calls.jsonl": "0af5579f7b9cf8e5fcbc30eec2dcdf7ba4c8b03aae5fdc503ff30411bae4bb6a",
+    "category-resolutions.json": "b42ff745109fc95eed5c0f388fc339952cc7ced32558d1dbc56ef7104e16b0aa",
+    "coverage-matrix.jsonl": "d76b1c10255555ce10d14edfc47ac3c857815580cf4201d891fa01ede22d6483",
+    "evidence.jsonl": "84f130ba7c3d8e24cdd48e4cffb1e070b2239c8d5222f422d9eef08afc432271",
+    "programs.jsonl": "25ed71ec5d1ecbcf02ee1f707aadd50eab7e011ee0fccd6f0ff55f8b53f78a4c",
+    "run-manifest.jsonl": "75940f99777d4be7ab7d03d37bf24e9933f3f5c9c608c554b8167b6c0cc0e2ae"
+  },
+  "schema_version": "1.0",
+  "status": "provisional"
+}
