@@ -17,7 +17,7 @@ test("indexable route inventory includes profiles and curated landings", () => {
   assert.ok(paths.includes("/es/countries/br/"));
   assert.ok(paths.includes("/en/about/methodology/"));
   assert.ok(paths.includes("/pt-br/about/methodology/"));
-  assert.ok(!paths.includes("/es/about/methodology/"));
+  assert.ok(paths.includes("/es/about/methodology/"));
   for (const path of indexablePaths()) {
     assert.doesNotMatch(path, /[?#]/);
   }
@@ -66,7 +66,7 @@ test("sitemap includes available editorial translations without inventing others
     sitemap,
     /hreflang="pt-BR" href="[^"]*\/pt-br\/about\/methodology\/"/,
   );
-  assert.doesNotMatch(
+  assert.match(
     sitemap,
     /hreflang="es" href="[^"]*\/es\/about\/methodology\/"/,
   );
