@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "entity_types": [
+    "fund",
+    "accelerator",
+    "angel_network",
+    "funding_platform",
+    "public_program"
+  ],
+  "locales": [
+    "en",
+    "pt-BR",
+    "es"
+  ],
+  "translation_statuses": [
+    "canonical",
+    "complete",
+    "needs_review"
+  ],
+  "geography_kinds": [
+    "country",
+    "region",
+    "global"
+  ],
+  "region_codes": [
+    "LATAM",
+    "CARIBBEAN",
+    "GLOBAL"
+  ],
+  "stages": [
+    "angel",
+    "pre_seed",
+    "seed",
+    "series_a",
+    "series_b",
+    "growth",
+    "multi_stage",
+    "not_disclosed",
+    "not_applicable"
+  ],
+  "source_kinds": [
+    "official_website",
+    "official_thesis",
+    "official_portfolio",
+    "official_application",
+    "official_program",
+    "official_regulator",
+    "official_activity",
+    "secondary"
+  ],
+  "protected_front_matter_fields": [
+    "entity_id",
+    "slug",
+    "name",
+    "entity_type",
+    "aliases",
+    "operator",
+    "base_geography",
+    "countries_covered",
+    "stages",
+    "focuses",
+    "official_website",
+    "founder_route",
+    "sources",
+    "last_verified",
+    "protected_terms"
+  ],
+  "localized_front_matter_fields": [
+    "summary"
+  ],
+  "protected_body_tokens": [
+    "markdown_link_destinations",
+    "autolink_urls",
+    "inline_code",
+    "fenced_code",
+    "iso_dates",
+    "numbers",
+    "currency_codes",
+    "currency_symbols"
+  ]
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "duplicate_profile_id",
+    "description": "Two documents reuse the same localized profile ID.",
+    "base_examples": [
+      "valid/funding-platform-captable.en.md",
+      "valid/funding-platform-captable.en.md"
+    ],
+    "mutation": null,
+    "expected_error": "duplicate profile id"
+  },
+  {
+    "id": "invalid_slug",
+    "description": "A slug contains spaces and uppercase characters.",
+    "base_examples": [
+      "valid/funding-platform-captable.en.md"
+    ],
+    "mutation": {
+      "profile_index": 0,
+      "metadata_field": "slug",
+      "value": "Invalid Slug"
+    },
+    "expected_error": "does not match"
+  },
+  {
+    "id": "unknown_entity_type",
+    "description": "An entity uses a type outside the closed enum.",
+    "base_examples": [
+      "valid/funding-platform-captable.en.md"
+    ],
+    "mutation": {
+      "profile_index": 0,
+      "metadata_field": "entity_type",
+      "value": "venture_studio"
+    },
+    "expected_error": "is not one of"
+  },
+  {
+    "id": "orphan_translation",
+    "description": "A translation is validated without its canonical English profile.",
+    "base_examples": [
+      "valid/fund-500-latam.pt-BR.md"
+    ],
+    "mutation": null,
+    "expected_error": "expected exactly one English canonical profile"
+  },
+  {
+    "id": "protected_field_changed",
+    "description": "A localized profile changes the official URL.",
+    "base_examples": [
+      "valid/fund-500-latam.en.md",
+      "valid/fund-500-latam.pt-BR.md"
+    ],
+    "mutation": {
+      "profile_index": 1,
+      "metadata_field": "official_website",
+      "value": "https://example.com/"
+    },
+    "expected_error": "protected field differs"
+  },
+  {
+    "id": "protected_body_number_changed",
+    "description": "A translation changes a disclosed amount in its body.",
+    "base_examples": [
+      "valid/fund-500-latam.en.md",
+      "valid/fund-500-latam.pt-BR.md"
+    ],
+    "mutation": {
+      "profile_index": 1,
+      "body_replace": {
+        "from": "USD 300,000",
+        "to": "USD 400,000"
+      }
+    },
+    "expected_error": "protected body tokens differ"
+  }
+]
