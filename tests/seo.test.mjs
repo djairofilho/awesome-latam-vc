@@ -12,7 +12,7 @@ test("indexable route inventory includes profiles and curated landings", () => {
   const paths = indexablePaths();
   assert.ok(paths.includes("/en/profiles/kaszek/"));
   assert.ok(paths.includes("/pt-br/profiles/kaszek/"));
-  assert.ok(!paths.includes("/es/profiles/kaszek/"));
+  assert.ok(paths.includes("/es/profiles/kaszek/"));
   assert.ok(paths.includes("/pt-br/categories/fund/"));
   assert.ok(paths.includes("/es/countries/br/"));
   assert.ok(paths.includes("/en/about/methodology/"));
