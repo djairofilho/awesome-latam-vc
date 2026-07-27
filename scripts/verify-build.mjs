@@ -352,26 +352,28 @@ assert(
 );
 const sampleSlug = profileSlug(entityDocument.entities[0]);
 const englishProfile = routeHtml("en", "profiles", sampleSlug);
-const portugueseFallbackProfile = routeHtml(
-  "pt-br",
-  "profiles",
-  sampleSlug,
-);
 assert(
   englishProfile.includes("data-pagefind-body") &&
     !englishProfile.includes('name="robots" content="noindex'),
   "canonical English profiles must be indexable by Pagefind and robots",
 );
-assert(
-  !portugueseFallbackProfile.includes("data-pagefind-body") &&
-    portugueseFallbackProfile.includes(
-      'name="robots" content="noindex, nofollow"',
-    ) &&
-    portugueseFallbackProfile.includes(
-      `rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/en/profiles/${sampleSlug}/"`,
+for (const locale of ["pt-br", "es"]) {
+  const localizedProfile = routeHtml(locale, "profiles", sampleSlug);
+  const isReviewedTranslation = localizedProfile.includes("data-pagefind-body");
+  const expectedCanonicalLocale = isReviewedTranslation ? locale : "en";
+  assert(
+    isReviewedTranslation
+      ? !localizedProfile.includes('name="robots" content="noindex')
+      : localizedProfile.includes('name="robots" content="noindex, nofollow"'),
+    `${locale} profile must match the indexing state of its reviewed translation`,
+  );
+  assert(
+    localizedProfile.includes(
+      `rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/${expectedCanonicalLocale}/profiles/${sampleSlug}/"`,
     ),
-  "untranslated profile fallbacks must remain outside search and canonicalize to English",
-);
+    `${locale} profile must canonicalize according to its translation state`,
+  );
+}
 assert(
   profilePages.length === sourceProfileCount * Object.keys(localeRoutes).length,
   "every canonical profile must have a navigable route in every locale",

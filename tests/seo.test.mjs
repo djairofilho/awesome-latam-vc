@@ -15,7 +15,6 @@ test("indexable route inventory includes profiles and curated landings", () => {
   assert.ok(paths.includes("/es/countries/br/"));
   assert.ok(paths.includes("/en/about/methodology/"));
   assert.ok(!paths.includes("/pt-br/about/methodology/"));
-  assert.ok(!paths.includes("/pt-br/profiles/kaszek/"));
   for (const path of indexablePaths()) {
     assert.doesNotMatch(path, /[?#]/);
   }
