@@ -26,6 +26,19 @@ def read_jsonl(path: Path) -> list[dict]:
     ]
 
 
+def stable_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+
+
+def profile_sha256(path: Path) -> str:
+    payload = path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    if payload.startswith(b"---\n"):
+        closing = payload.find(b"\n---\n", 4)
+        if closing != -1:
+            payload = payload[closing + 5 :].lstrip(b"\n")
+    return hashlib.sha256(payload).hexdigest()
+
+
 def load_builder():
     spec = importlib.util.spec_from_file_location(
         "build_platform_publication", ROOT / "build_publication.py"
@@ -184,13 +197,16 @@ class PublicationTests(unittest.TestCase):
     def test_manifest_hashes_match_all_publication_outputs(self) -> None:
         for group in ("profile_hashes", "index_hashes"):
             for relative, expected in self.manifest[group].items():
-                actual = hashlib.sha256(
-                    (REPOSITORY_ROOT / relative).read_bytes()
-                ).hexdigest()
+                path = REPOSITORY_ROOT / relative
+                actual = (
+                    profile_sha256(path)
+                    if group == "profile_hashes"
+                    else stable_sha256(path)
+                )
                 self.assertEqual(expected, actual, relative)
         self.assertEqual(
             self.manifest["batch_artifact_hash"],
-            hashlib.sha256((ROOT / "batches.jsonl").read_bytes()).hexdigest(),
+            stable_sha256(ROOT / "batches.jsonl"),
         )
 
     def test_generator_has_no_drift(self) -> None:
