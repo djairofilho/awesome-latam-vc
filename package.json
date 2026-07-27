@@ -15,6 +15,7 @@
     "test": "node --test tests/*.test.mjs",
     "a11y": "html-validate \"dist/**/*.html\"",
     "seo-audit": "node scripts/verify-seo.mjs",
+    "audit:external-links": "node scripts/audit-external-links.mjs",
     "smoke": "node scripts/smoke-site.mjs",
     "smoke:production": "node scripts/smoke-production.mjs",
     "audit:release": "node scripts/audit-release.mjs",
