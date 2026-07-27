@@ -141,3 +141,27 @@ class ShardTests(unittest.TestCase):
     def test_rejects_unsafe_path_segments(self) -> None:
         with self.assertRaisesRegex(ValueError, "partition"):
             shard_path(self.root, "../outside", "worker-1", "candidates")
+
+    def test_supports_epic_63_network_ids(self) -> None:
+        write_shard(
+            self.root,
+            "issue-81",
+            "worker-angelhub",
+            "candidates",
+            [
+                {
+                    "network_id": "ang-angelhub-mx",
+                    "name": "AngelHub",
+                }
+            ],
+        )
+        destination = self.root / "issue-81" / "candidates.jsonl"
+
+        count = reduce_shards(self.root, "candidates", destination)
+
+        self.assertEqual(1, count)
+        records = [
+            json.loads(line)
+            for line in destination.read_text(encoding="utf-8").splitlines()
+        ]
+        self.assertEqual("ang-angelhub-mx", records[0]["network_id"])
