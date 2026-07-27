@@ -29,11 +29,11 @@
     "mobile",
     "saas"
   ],
-  "official_website": "https://capitalinvent.com/",
+  "official_website": null,
   "founder_route": null,
   "sources": [
     {
-      "title": "Previously listed source; unavailable during verification",
+      "title": "Capital Invent — official LinkedIn company page",
       "url": "https://www.linkedin.com/company/capital-invent",
       "kind": "secondary"
     }
@@ -50,8 +50,10 @@ Capital Invent es una organización de inversión centrada en marketplaces, come
 
 ## Perfil de inversión
 
-- **Sitio web:** https://capitalinvent.com/
+- **Sitio web:** No se divulga públicamente
 - **Tipo de fondo:** Capital de riesgo
+- **Inversión directa en startups:** Sí
+- **Abierto a fundadores externos:** No se divulga públicamente en las fuentes revisadas
 - **Etapa de entrada:** No se divulga públicamente
 - **Etapas posteriores:** No se divulga públicamente en las fuentes revisadas
 - **Enfoque:** Mercados, comercio electrónico, fintech, móvil y SaaS
@@ -73,6 +75,6 @@ El conjunto de datos del proyecto local contiene 4 compañías asociadas con Cap
 
 ## Fuentes
 
-- [Previously listed source; unavailable during verification](https://www.linkedin.com/company/capital-invent)
+- [Capital Invent — official LinkedIn company page](https://www.linkedin.com/company/capital-invent)
 
 **Última verificación:** 2026-07-26

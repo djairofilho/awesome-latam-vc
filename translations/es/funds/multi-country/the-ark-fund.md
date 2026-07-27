@@ -29,8 +29,8 @@
   "founder_route": null,
   "sources": [
     {
-      "title": "Previously listed source; unavailable during verification",
-      "url": "https://www.arkfund.co/",
+      "title": "Arkangeles profile of The Ark Fund founder",
+      "url": "https://arkangeles.com/blog/transacciones-igual-a-credibilidad",
       "kind": "secondary"
     }
   ],
@@ -71,6 +71,6 @@ El conjunto de datos del proyecto local contiene 20 empresas asociadas con The A
 
 ## Fuentes
 
-- [Previously listed source; unavailable during verification](https://www.arkfund.co/)
+- [Arkangeles profile of The Ark Fund founder](https://arkangeles.com/blog/transacciones-igual-a-credibilidad)
 
 **Última verificación:** 2026-07-26
