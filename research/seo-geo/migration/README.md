@@ -5,9 +5,9 @@ profile present at the execution cutoff.
 
 ## Before / after
 
-- profiles: 195 before, 195 after;
-- profiles with front matter: 0 before, 195 after;
-- visible sources: 436 before and after;
+- profiles: 205 before, 205 after;
+- profiles with front matter: 0 before, 205 after;
+- visible sources: 447 before and after;
 - Markdown body hash mismatches: 0.
 
 Missing or non-normalizable values remain explicit in `mapping.jsonl`; no

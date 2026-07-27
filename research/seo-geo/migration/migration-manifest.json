@@ -1,9 +1,9 @@
 {
   "artifact_hashes": {
-    "README.md": "99e2ecc3d7825336098f69ca349d265fa5950301179680f62829ea4e0c030cef",
-    "before-after.json": "cf4bb974dde8c70b5bdec53d74ad469d83108c9a2670767a926af4a106216bb9",
-    "inventory.jsonl": "66231665bb9b465140ccdd67995bac498f5a4707911b07e9243a1e816e84b3c9",
-    "mapping.jsonl": "6da5bf1e36d169f56da6fb4e232afbd79a515178bf906d497aa4cea333f2468f"
+    "README.md": "3270bc0556d115bf8a53c4809d2989e3ce179efa7ce9e6280f490816b0e50097",
+    "before-after.json": "251aeefe17b3ada08373265bcd31bbac2179204fff396ddca802c59c12b760b1",
+    "inventory.jsonl": "462381a982a810cffc24f4a5f78672697087912cec1cafa728b36775b392b8d1",
+    "mapping.jsonl": "0123d636158f018c221bbda1e654f29b97f4873d9a3a99ae77221c6abeeac4f4"
   },
   "body_hash_mismatches": 0,
   "contract_hashes": {
@@ -12,6 +12,7 @@
   },
   "cutoff_date": "2026-07-27",
   "entity_type_counts": {
+    "accelerator": 10,
     "angel_network": 5,
     "fund": 152,
     "funding_platform": 9,
@@ -21,8 +22,18 @@
   "issue": 110,
   "locale": "en",
   "parent_epic": 107,
-  "profile_count": 195,
+  "profile_count": 205,
   "profile_hashes": {
+    "ecosystem/accelerators/brazil/ace-amazonia-impacto.md": "f3d8814b5e172ef6cbb72fae62ff6c2ad037e3600f45f6b0920923eb9a06530d",
+    "ecosystem/accelerators/brazil/ace-funses1-digital.md": "c89d5fa3fdb70be3bcea27ba75152c29580bdabed00d0d394eb2da994d79b801",
+    "ecosystem/accelerators/brazil/capital-empreendedor-rj.md": "9f9c26dc3695090eefbe4e099eeb4f23ffc2ec7249cb0e881dbb54ad7a479677",
+    "ecosystem/accelerators/brazil/darwin-scale.md": "7f6f7f367d094c76c107afe2bbb191d890c086c3d48b025388d2a80407750de0",
+    "ecosystem/accelerators/colombia/innovalab.md": "c4fe1f2244ce7c0097dfb7202beca6419da7c9522c579c883254f554a37d59f2",
+    "ecosystem/accelerators/dominican-republic/boost.md": "30b42c054b398a11ea4b8eedd2f82335052beaab33e06647e5d12bcf5c10d83e",
+    "ecosystem/accelerators/peru/utec.md": "faac301ff003737c4e82de68571248c810f93226261ee90f7943d7b2498fc217",
+    "ecosystem/accelerators/united-states/500-global-flagship.md": "2e7212009c86b574c5fe850ac7302488591042a69d541261fb11c184860cd5be",
+    "ecosystem/accelerators/united-states/alchemist-flagship.md": "2f5f088050b98a2c9c5419f08e13013029fad438066fce5d4c598e1be7ea70c7",
+    "ecosystem/accelerators/united-states/aws-generative-ai.md": "6abdf02d0db100dbf20ddd7ca66e55d304577ab35ed1f557a2d7dba69b3d4f6d",
     "ecosystem/angel-networks/brazil/anjos-do-brasil.md": "9bc92f31244a6b0ec6b2ce8f5a0fc47a7e4b3bfa99b69028a6ecbf7a7da1c1b6",
     "ecosystem/angel-networks/brazil/br-angels.md": "198b2378907537a0f800340b5102611add145f5c8d2d3f5cbbdcc738ead4b6f3",
     "ecosystem/angel-networks/brazil/gvangels.md": "5568f1a8c66d64021194cca4b00f3d78bee8f303a0adb17ef92645e613d741da",
@@ -220,8 +231,8 @@
     "funds/regional/xperiment-ventures.md": "e9d8b438f8946bfe63ca1399f777d58a7fc2d51745b2ca9a3248b97467bcb965"
   },
   "schema_version": "1.0",
-  "source_count": 436,
+  "source_count": 447,
   "status": "complete",
-  "unique_ids": 195,
-  "unique_slugs": 195
+  "unique_ids": 205,
+  "unique_slugs": 205
 }

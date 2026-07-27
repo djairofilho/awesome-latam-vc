@@ -1,3 +1,47 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:ace-amazonia-impacto:en",
+  "entity_id": "accelerator:ace-amazonia-impacto",
+  "slug": "ace-amazonia-impacto",
+  "name": "Programa de Aceleração de Startups de Impacto na Amazônia",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Programa de Aceleração de Startups de Impacto na Amazônia is a structured acceleration program operated by ACE Ventures.",
+  "aliases": [
+    "Coalizão pelo Impacto Amazônia"
+  ],
+  "operator": "ACE Ventures",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://aceventures.com.br/coalizao-pelo-impacto/",
+  "founder_route": "https://aceventures.com.br/coalizao-pelo-impacto/",
+  "sources": [
+    {
+      "title": "Programa de Aceleração de Startups de Impacto na Amazônia",
+      "url": "https://aceventures.com.br/coalizao-pelo-impacto/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Programa de Aceleração de Startups de Impacto na Amazônia"
+  ]
+}
+---
 # Programa de Aceleração de Startups de Impacto na Amazônia
 
 - **Website:** https://aceventures.com.br/coalizao-pelo-impacto/

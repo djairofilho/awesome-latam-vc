@@ -1,3 +1,47 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:capital-empreendedor-rj:en",
+  "entity_id": "accelerator:capital-empreendedor-rj",
+  "slug": "capital-empreendedor-rj",
+  "name": "Capital Empreendedor RJ",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Capital Empreendedor RJ is a structured acceleration program operated by Sebrae Rio de Janeiro.",
+  "aliases": [
+    "Sebrae Capital Empreendedor"
+  ],
+  "operator": "Sebrae Rio de Janeiro",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://sites.rj.sebrae.com.br/clickfinancas/capital-empreendedor%E2%80%8B",
+  "founder_route": "https://sites.rj.sebrae.com.br/clickfinancas/capital-empreendedor%E2%80%8B",
+  "sources": [
+    {
+      "title": "Capital Empreendedor",
+      "url": "https://sites.rj.sebrae.com.br/clickfinancas/capital-empreendedor%E2%80%8B",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Capital Empreendedor RJ"
+  ]
+}
+---
 # Capital Empreendedor RJ
 
 - **Website:** https://sites.rj.sebrae.com.br/clickfinancas/capital-empreendedor%E2%80%8B

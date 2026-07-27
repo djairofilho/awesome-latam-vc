@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:aws-generative-ai:en",
+  "entity_id": "accelerator:aws-generative-ai",
+  "slug": "aws-generative-ai",
+  "name": "AWS Generative AI Accelerator",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "AWS Generative AI Accelerator is a structured acceleration program operated by Amazon Web Services.",
+  "aliases": [],
+  "operator": "Amazon Web Services",
+  "base_geography": {
+    "kind": "country",
+    "code": "US"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "LATAM"
+  ],
+  "stages": [
+    "seed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://aws.amazon.com/aws-startups/learn/the-2025-aws-generative-ai-accelerator-40-startups-shooting-for-the-stars/?lang=en-US",
+  "founder_route": "https://aws.amazon.com/aws-startups/learn/the-2025-aws-generative-ai-accelerator-40-startups-shooting-for-the-stars/?lang=en-US",
+  "sources": [
+    {
+      "title": "AWS Generative AI Accelerator",
+      "url": "https://aws.amazon.com/aws-startups/learn/the-2025-aws-generative-ai-accelerator-40-startups-shooting-for-the-stars/?lang=en-US",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "AWS Generative AI Accelerator"
+  ]
+}
+---
 # AWS Generative AI Accelerator
 
 - **Website:** https://aws.amazon.com/aws-startups/learn/the-2025-aws-generative-ai-accelerator-40-startups-shooting-for-the-stars/?lang=en-US
