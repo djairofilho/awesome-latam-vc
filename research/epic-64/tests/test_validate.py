@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 import sys
 import tempfile
@@ -44,6 +45,41 @@ class ContractValidationTests(unittest.TestCase):
 
     def test_contract_templates_matrix_and_example_validate(self) -> None:
         self.assertEqual([], validate.validate_contract())
+
+    def test_completed_audit_rejects_tampered_artifact_hash(self) -> None:
+        bundle = load_bundle()
+        with tempfile.TemporaryDirectory() as directory:
+            dataset = Path(directory)
+            write_bundle(dataset, bundle)
+            run = bundle["run-manifest.jsonl"][0]
+            run["hash_algorithm"] = "sha256"
+            run["artifact_hashes"] = {
+                filename: hashlib.sha256(
+                    (dataset / filename)
+                    .read_text(encoding="utf-8")
+                    .replace("\r\n", "\n")
+                    .encode("utf-8")
+                ).hexdigest()
+                for filename in validate.HASHED_ARTIFACTS
+            }
+            write_bundle(dataset, bundle)
+            candidates = dataset / "candidates.jsonl"
+            lines = candidates.read_text(encoding="utf-8").splitlines()
+            record = json.loads(lines[0])
+            record["brand"]["name"] = f"{record['brand']['name']} alterada"
+            lines[0] = json.dumps(
+                record,
+                ensure_ascii=False,
+                separators=(",", ":"),
+            )
+            candidates.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+            errors = validate.validate_dataset(dataset)
+
+        self.assertTrue(
+            any("hash divergente para candidates.jsonl" in error for error in errors),
+            errors,
+        )
 
     def test_eligible_platform_does_not_require_direct_investment(self) -> None:
         candidate = load_bundle()["candidates.jsonl"][0]
