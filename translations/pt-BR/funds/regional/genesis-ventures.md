@@ -9,7 +9,7 @@
   "locale": "pt-BR",
   "translation_of": "fund:genesis-ventures:en",
   "translation_status": "complete",
-  "summary": "Genesis Ventures é uma organização de investimento focada em tecnologia, energia e imóveis no Chile e América Latina.",
+  "summary": "Genesis Ventures é uma organização de investimento focada em tecnologia, energia e imóveis no Chile e na América Latina.",
   "aliases": [],
   "operator": null,
   "base_geography": {
@@ -60,7 +60,7 @@
 ---
 # Genesis Ventures
 
-Genesis Ventures é uma organização de investimento focada em tecnologia, energia e imóveis no Chile e América Latina.
+Genesis Ventures é uma organização de investimento focada em tecnologia, energia e imóveis no Chile e na América Latina.
 
 ## Perfil de investimento
 
@@ -81,7 +81,7 @@ Genesis Ventures é uma organização de investimento focada em tecnologia, ener
 
 ## Tese declarada
 
-A fonte revisada apresenta o Genesis Ventures como investindo em tecnologia, energia e imóveis em todo o Chile e América Latina, com entrada em Múltiplos estágios. Os detalhes não indicados pelo fundo são marcados como não divulgados publicamente, em vez de inferidos da composição da carteira.
+A fonte revisada apresenta o Genesis Ventures como investindo em tecnologia, energia e imóveis no Chile e em toda a América Latina, com entrada em múltiplos estágios. Os detalhes não indicados pelo fundo são marcados como não divulgados publicamente, em vez de inferidos da composição da carteira.
 
 ## Sinais do portfólio
 
