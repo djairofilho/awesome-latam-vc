@@ -29,7 +29,6 @@ executada nem cobertura.
 Foram registrados seis candidatos:
 
 - três `elegível`;
-- dois `evidência insuficiente`;
 - três `evidência insuficiente`, incluindo uma colisão de identidade com o
   baseline.
 
