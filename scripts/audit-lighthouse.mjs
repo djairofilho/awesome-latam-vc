@@ -65,9 +65,13 @@ function safeName(path) {
 
 mkdirSync(OUTPUT, { recursive: true });
 const preview = spawn(
-  process.platform === "win32" ? "npm.cmd" : "npm",
+  "npm",
   ["run", "preview", "--", "--host", "127.0.0.1", "--port", "4321"],
-  { cwd: ROOT, stdio: "ignore" },
+  {
+    cwd: ROOT,
+    shell: process.platform === "win32",
+    stdio: "ignore",
+  },
 );
 
 try {
