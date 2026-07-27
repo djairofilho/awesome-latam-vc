@@ -230,6 +230,45 @@ O tooling da issue #69 deve materializar, no mínimo:
 Campos não aplicáveis usam `null`. Campos factuais não divulgados usam o
 vocabulário explícito definido pelo schema, em vez de valores inventados.
 
+## Artefatos executáveis
+
+O contrato é materializado em:
+
+- [schemas](schemas), em JSON Schema Draft 2020-12;
+- [templates](templates), para iniciar inventários e coletas;
+- [examples](examples), com um conjunto sintético completo e validado.
+
+Cada diretório de execução usa os mesmos nomes:
+
+```text
+candidates.jsonl
+coverage-matrix.jsonl
+evidence.jsonl
+run-manifest.jsonl
+source-inventory.jsonl
+```
+
+O validador verifica schemas, cada linha JSONL e invariantes entre arquivos:
+IDs únicos, referências existentes, manifesto consistente, cobertura coerente
+e evidência oficial mínima para elegíveis.
+
+Workers gravam shards isolados com:
+
+```text
+python tools/research/shards.py write \
+  research/epic-62 brazil worker-1 candidates input.jsonl
+```
+
+O coordenador produz o arquivo canônico em ordem determinística:
+
+```text
+python tools/research/shards.py reduce \
+  research/epic-62 candidates research/epic-62/candidates.jsonl
+```
+
+Uma divergência entre registros com o mesmo ID interrompe a redução. Registros
+idênticos são idempotentes.
+
 ## Fluxo e ownership
 
 1. O coordenador aprova matriz de cobertura, inventário e manifesto.
