@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+from hashlib import sha256
 from collections import defaultdict
 from datetime import date
 from pathlib import Path
@@ -18,6 +19,7 @@ SCHEMA_BY_FILENAME = {
     "coverage-matrix.jsonl": "coverage-matrix.schema.json",
     "evidence.jsonl": "evidence.schema.json",
     "run-manifest.jsonl": "run-manifest-record.schema.json",
+    "state-coverage.jsonl": "state-coverage.schema.json",
     "source-inventory.jsonl": "source-inventory.schema.json",
 }
 REQUIRED_EVIDENCE_FOR_ELIGIBLE = {
@@ -26,6 +28,21 @@ REQUIRED_EVIDENCE_FOR_ELIGIBLE = {
     "external_access",
     "latam_access",
 }
+FIELD_TO_EVIDENCE_CLAIM = {
+    "program_format": "format",
+    "duration": "duration",
+    "stage": "stage",
+    "capital_offered": "capital",
+    "instrument": "instrument",
+    "equity": "equity",
+}
+HASHED_ARTIFACTS = (
+    "candidates.jsonl",
+    "coverage-matrix.jsonl",
+    "evidence.jsonl",
+    "source-inventory.jsonl",
+    "state-coverage.jsonl",
+)
 REQUIRED_ACCELERATOR_FIELDS = (
     "Website",
     "Operator",
@@ -156,6 +173,7 @@ def _unique_ids(
 def _validate_manifest(
     display_dir: str,
     records: list[dict[str, Any]],
+    directory: Path,
 ) -> list[str]:
     if not records:
         return []
@@ -173,11 +191,51 @@ def _validate_manifest(
             f"{display_dir}: task_count={run.get('task_count')} difere de {len(tasks)} tarefas"
         )
     run_id = run.get("run_id")
+    declares_shards = any(isinstance(task.get("shard_path"), str) for task in tasks)
+    shard_paths: list[str] = []
     for task in tasks:
         if task.get("run_id") != run_id:
             errors.append(
                 f"{display_dir}: tarefa {task.get('task_id')} usa run_id divergente"
             )
+        shard_path = task.get("shard_path")
+        if declares_shards and not isinstance(shard_path, str):
+            errors.append(
+                f"{display_dir}: tarefa {task.get('task_id')} não declara shard_path"
+            )
+        elif isinstance(shard_path, str):
+            shard_paths.append(shard_path)
+    if len(shard_paths) != len(set(shard_paths)):
+        errors.append(f"{display_dir}: tarefas compartilham shard_path")
+
+    declares_hashes = (
+        run.get("hash_algorithm") is not None
+        or run.get("artifact_hashes") is not None
+    )
+    if declares_hashes and run.get("status") == "completed":
+        if run.get("hash_algorithm") != "sha256":
+            errors.append(f"{display_dir}: execução concluída não declara sha256")
+        hashes = run.get("artifact_hashes")
+        if not isinstance(hashes, dict):
+            errors.append(
+                f"{display_dir}: execução concluída não declara artifact_hashes"
+            )
+        else:
+            for filename in HASHED_ARTIFACTS:
+                path = directory / filename
+                if not path.exists():
+                    errors.append(
+                        f"{display_dir}: artefato congelado ausente: {filename}"
+                    )
+                    continue
+                normalized = path.read_text(encoding="utf-8").replace(
+                    "\r\n", "\n"
+                ).encode("utf-8")
+                actual = sha256(normalized).hexdigest()
+                if hashes.get(filename) != actual:
+                    errors.append(
+                        f"{display_dir}: hash divergente para {filename}"
+                    )
     return errors
 
 
@@ -193,13 +251,21 @@ def _validate_artifact_set(
     sources = grouped.get("source-inventory.jsonl", [])
     coverage = grouped.get("coverage-matrix.jsonl", [])
     manifests = grouped.get("run-manifest.jsonl", [])
+    state_coverage = grouped.get("state-coverage.jsonl", [])
+    completed_audited_run = any(
+        record.get("record_type") == "run"
+        and record.get("status") == "completed"
+        and isinstance(record.get("artifact_hashes"), dict)
+        for record in manifests
+    )
 
     errors.extend(_unique_ids(display_dir, candidates, "candidate_id"))
     errors.extend(_unique_ids(display_dir, evidence, "evidence_id"))
     errors.extend(_unique_ids(display_dir, sources, "source_id"))
     errors.extend(_unique_ids(display_dir, coverage, "coverage_id"))
     errors.extend(_unique_ids(display_dir, manifests, "task_id"))
-    errors.extend(_validate_manifest(display_dir, manifests))
+    errors.extend(_unique_ids(display_dir, state_coverage, "state_coverage_id"))
+    errors.extend(_validate_manifest(display_dir, manifests, directory))
 
     candidate_ids = {
         record["candidate_id"]
@@ -240,6 +306,31 @@ def _validate_artifact_set(
                     f"inexistente: {evidence_id}"
                 )
 
+        if completed_audited_run:
+            confirmed_claims: set[str] = set()
+            undisclosed_claims: set[str] = set()
+            for evidence_id in record.get("official_evidence_ids", []):
+                item = evidence_by_id.get(evidence_id)
+                if not item or item.get("source_type") != "official":
+                    continue
+                for claim in item.get("claims", []):
+                    if claim.get("finding") == "confirmed":
+                        confirmed_claims.add(claim.get("field"))
+                    elif claim.get("finding") == "not_publicly_disclosed":
+                        undisclosed_claims.add(claim.get("field"))
+            for candidate_field, claim_field in FIELD_TO_EVIDENCE_CLAIM.items():
+                value = record.get(candidate_field)
+                expected = (
+                    undisclosed_claims
+                    if value == "not_publicly_disclosed"
+                    else confirmed_claims
+                )
+                if value is not None and claim_field not in expected:
+                    errors.append(
+                        f"{display_dir}: candidato {candidate_id} não possui "
+                        f"evidência coerente para {candidate_field}"
+                    )
+
         if record.get("decision") != "elegível":
             continue
         confirmed_official_claims: set[str] = set()
@@ -272,6 +363,53 @@ def _validate_artifact_set(
                 f"{display_dir}: cobertura {record.get('coverage_id')} marcada complete "
                 "sem concluir todas as fontes"
             )
+        linked_sources = record.get("source_ids")
+        if isinstance(linked_sources, list):
+            if len(linked_sources) != completed:
+                errors.append(
+                    f"{display_dir}: cobertura {record.get('coverage_id')} "
+                    "diverge de source_ids"
+                )
+            for source_id in linked_sources:
+                if source_id not in source_ids:
+                    errors.append(
+                        f"{display_dir}: cobertura {record.get('coverage_id')} "
+                        f"referencia fonte inexistente: {source_id}"
+                    )
+        original = record.get("original_planned_sources")
+        errata = record.get("planning_errata")
+        if isinstance(original, int) and original != planned and not errata:
+            errors.append(
+                f"{display_dir}: cobertura {record.get('coverage_id')} alterou "
+                "o plano sem planning_errata"
+            )
+
+    expected_subdivisions = {
+        "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO",
+        "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI",
+        "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO",
+    }
+    if state_coverage:
+        found = {record.get("subdivision_code") for record in state_coverage}
+        if found != expected_subdivisions:
+            errors.append(
+                f"{display_dir}: cobertura estadual diverge das 27 UFs"
+            )
+        for record in state_coverage:
+            for source_id in record.get("source_ids", []):
+                if source_id not in source_ids:
+                    errors.append(
+                        f"{display_dir}: cobertura estadual "
+                        f"{record.get('state_coverage_id')} referencia fonte "
+                        f"inexistente: {source_id}"
+                    )
+            for candidate_id in record.get("candidate_ids", []):
+                if candidate_id not in candidate_ids:
+                    errors.append(
+                        f"{display_dir}: cobertura estadual "
+                        f"{record.get('state_coverage_id')} referencia candidato "
+                        f"inexistente: {candidate_id}"
+                    )
 
     for record in evidence:
         published_on = record.get("published_on")
@@ -307,7 +445,9 @@ def validate_epic_62(root: Path) -> list[str]:
         validator = validators.get(schema_name)
         if validator is not None:
             errors.extend(_validate_records(root, path, records, validator))
-        grouped_by_directory[path.parent][path.name] = records
+        relative_parts = path.relative_to(epic_root).parts
+        if "shards" not in relative_parts:
+            grouped_by_directory[path.parent][path.name] = records
     for directory, grouped in sorted(grouped_by_directory.items()):
         errors.extend(_validate_artifact_set(root, directory, grouped))
     return sorted(set(errors))
