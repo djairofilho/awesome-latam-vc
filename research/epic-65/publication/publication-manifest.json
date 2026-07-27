@@ -1,0 +1,76 @@
+{
+  "agency_profiles": 12,
+  "batch_count": 3,
+  "batches": [
+    {
+      "batch_hash": "5784c0682655b738feefb43b0ec864168d4013c1efa0b7d8704b68dad4046875",
+      "batch_id": "public-programs-01",
+      "branch": "agent/issue-103-public-programs-batch-01",
+      "issue_number": 145,
+      "profile_count": 10
+    },
+    {
+      "batch_hash": "90a01b9ed5adf3211cfbe3c2fd75688e352135f507d97c1725a4ae3cc5473522",
+      "batch_id": "public-programs-02",
+      "branch": "agent/issue-103-public-programs-batch-02",
+      "issue_number": 146,
+      "profile_count": 10
+    },
+    {
+      "batch_hash": "f2c3edfa9bbcffd0bf33593a80063a29d310854abf8a53def43250b78d7ec40d",
+      "batch_id": "public-programs-03",
+      "branch": "agent/issue-103-public-programs-batch-03",
+      "issue_number": 147,
+      "profile_count": 9
+    }
+  ],
+  "call_profiles": 0,
+  "cutoff_date": "2026-07-27",
+  "index_hash": "48297e0f95803796596f30630428fbeed593c494136430b9823e425c332efc45",
+  "issue": 103,
+  "notes": "A disponibilidade, os valores e as datas de chamadas permanecem restritos aos snapshots vinculados. Nenhuma chamada recebeu perfil.",
+  "profile_count": 29,
+  "profile_hashes": {
+    "ecosystem/public-programs/bolivia/agroinnovatec.md": "4d89581f11336b1c25a7c299e18b8c13ac003458653ca5528aaf383eeac75227",
+    "ecosystem/public-programs/bolivia/bdp-bolivia.md": "7530cef9597b6a81aedbd8be141cbb2770c9c3e3e11f456529701d58f8319568",
+    "ecosystem/public-programs/bolivia/bdp-fondo-startup.md": "5eab46093fea3d1c81806277e74f9dda639f988c67ff3049b1f0fb51f75ead0f",
+    "ecosystem/public-programs/brazil/bndes-fundo-clima-servicos-inovacao-verdes.md": "3e47b963ee93711e3eaf98736871fd56e1aacb6433b2fe6f25833efa1544aff5",
+    "ecosystem/public-programs/brazil/bndes-garagem.md": "c37a17fe9bb2620dead6f67773bdeb0ca6730a9ae2553b9a39b95af3c4c42c68",
+    "ecosystem/public-programs/brazil/bndes.md": "51cdbf856b31e662c7f1a48682e2496694027215bc05a9cc0bd2a452d316c3fa",
+    "ecosystem/public-programs/brazil/brde-labs-rs.md": "625ead3629b2814057edce47bf0c5ec55dfc26662fcf33ac1a52dbd863e8b73c",
+    "ecosystem/public-programs/brazil/brde.md": "7f61a458420b24fce33547808e3bc4b0e37d140414f1326cded5e3f15629a270",
+    "ecosystem/public-programs/brazil/fapesp-pipe.md": "119cdd7874f139fbe8e7160a3ddd822b0b4123c829c78087c01f38cf6fbbbfda",
+    "ecosystem/public-programs/brazil/fapesp.md": "7a2b01d2e6e325e6b093408aa2205b8175f46e4e5b2791c0f6cd53fadf8d00cc",
+    "ecosystem/public-programs/brazil/finep-mulheres-inovadoras.md": "64d94caed55f59bd7196651d62b9eed5f5f953ef87eec8ada5f232541f9deb8c",
+    "ecosystem/public-programs/brazil/finep.md": "4da581bf2701740620d6214821e822ae5ef115c80c72c4bb59665e33b8cb959a",
+    "ecosystem/public-programs/brazil/sebrae.md": "f77399926d5f64d354a0f2132ddc7e00db9d656a188c7170af49bd2d58b79861",
+    "ecosystem/public-programs/brazil/sebraetec-negocios-inovadores.md": "872c531263d34627276036fe58b630adf5f6b889b933691c4350209730448b80",
+    "ecosystem/public-programs/chile/corfo-semilla-inicia-mujeres.md": "060a529e19d8288e3d991d434d797ce3bb7aef8e93bf77b845018e6b6f26a83d",
+    "ecosystem/public-programs/chile/corfo.md": "93bda2ccdad513a49cb009e27900274503c645ca2f7682d697e44fa62dcb625e",
+    "ecosystem/public-programs/chile/start-up-chile.md": "19470522561984bfce63d2293777dcc7054c8d65756db5a0ba1a2af7d72c5a98",
+    "ecosystem/public-programs/ecuador/conquito-fonquito.md": "95539ad1a53b7f43624994eb1d64adecf8246c2e4dbe322e077308c3eee721fe",
+    "ecosystem/public-programs/ecuador/conquito.md": "9437dd671e6620eaafbfee1be16c7c58fe79d5914e059a8221352988a72ab31e",
+    "ecosystem/public-programs/mexico/secihti-desarrollo-tecnologico-innovacion.md": "eb8c17ac917b19d3da7e823da85f45f5bf188cffb482d42f52a153c47efe9fc0",
+    "ecosystem/public-programs/mexico/secihti.md": "2324d20d9c0dc185a8b22754a3ef6c9180fb1953f8114290259640479cd9ab53",
+    "ecosystem/public-programs/peru/proinnovate-startup-peru.md": "11800703241aecdf34126054f03cf7562542730ed7fef88f8d1313a253ab8259",
+    "ecosystem/public-programs/peru/proinnovate.md": "f919e0ef54557a928719733ea8897f66fc5286c27008acc6f6b11bab5b448c25",
+    "ecosystem/public-programs/uruguay/ande.md": "c52c21551412beb64b9ae0b0dcfe42dd4b3ddf141bc6eb90571e377df63f3d12",
+    "ecosystem/public-programs/uruguay/anii-coinversion-startups.md": "63ea670f636cf674236ccba68a66079d4f2eaaffe5bc9f46c114cf037b4c4678",
+    "ecosystem/public-programs/uruguay/anii-emprendimientos-innovadores.md": "bf9efd3d23263ab944b85c6ae7f57d6746be4c5d7bef6b9b6d445641fea1ee99",
+    "ecosystem/public-programs/uruguay/anii-validacion-ideas.md": "f7209a33ab05b0832d4505a002cfa793e79ff9c9e0c7bdd8a4c7637272e09749",
+    "ecosystem/public-programs/uruguay/anii.md": "4579ed4d1394608e67b7d265fffcc006b525c6d13905ab791b6af91d00419423",
+    "ecosystem/public-programs/uruguay/semilla-ande-2026.md": "a0cf09bf7e04c473b66eb6ef43c840fa2e1610867e7f7b761e94d601ee8cc4ff"
+  },
+  "profile_queue_hash": "d032b63c0f964870c2e8a8b774e14f65679db401bc55ba77cefaba3bba5e1ab9",
+  "program_profiles": 17,
+  "schema_version": "1.0",
+  "source_hashes": {
+    "agencies.jsonl": "2d1c3ee28d0fe19ac85726a8763cccd4753e35ed50cbf583f39aba4397eb2f97",
+    "calls.jsonl": "0af5579f7b9cf8e5fcbc30eec2dcdf7ba4c8b03aae5fdc503ff30411bae4bb6a",
+    "consolidation-manifest.json": "7620a46f7e4534ac27ba692458cf14307f053ed33bc0a20e51e3a715769b36f3",
+    "evidence.jsonl": "552d3da6841591635042666191a070e037d3a746f0fe27973826e149d282d046",
+    "independent-review.jsonl": "b7bf22b337f5e41fde35ceb7ab17c488acb2ba1788a508a2abbc858bd2b8a876",
+    "programs.jsonl": "f310197af572e6e7db6c2c9ab49ce4b8ec51a3c1f61410822298482e893e880e"
+  },
+  "status": "complete"
+}
