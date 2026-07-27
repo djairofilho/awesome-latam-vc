@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../lib/paths.mjs";
+---
+
+<BaseLayout
+  title="Page not found · Awesome LatAm VC"
+  description="The requested Awesome LatAm VC page could not be found."
+  canonicalPath="/404/"
+  noindex
+>
+  <section class="not-found">
+    <p class="eyebrow">404 · Route not found</p>
+    <h1>This path is not in the catalog.</h1>
+    <p>
+      The source may have moved, or this route may belong to a later localized
+      release.
+    </p>
+    <a class="button button-primary" href={withBase("/")}>Return to overview</a>
+  </section>
+</BaseLayout>

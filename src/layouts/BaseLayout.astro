@@ -1,0 +1,62 @@
+---
+import "@fontsource-variable/archivo";
+import "@fontsource-variable/public-sans";
+import "../styles/global.css";
+import { canonicalUrl, withBase } from "../lib/paths.mjs";
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonicalPath = Astro.url.pathname,
+  noindex = false,
+} = Astro.props;
+const preview = import.meta.env.PUBLIC_SITE_ENV === "preview";
+const canonical = canonicalUrl(canonicalPath);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    {(preview || noindex) && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonical} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href={withBase("/")} aria-label="Awesome LatAm VC home">
+        <span aria-hidden="true">A</span>
+        <strong>Awesome LatAm VC</strong>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href={withBase("/")}>Overview</a>
+        <a href={withBase("/catalog/")}>Catalog</a>
+        <a
+          href="https://github.com/djairofilho/awesome-latam-vc"
+          rel="external"
+        >GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="main-content">
+      <slot />
+    </main>
+    <footer>
+      <p>
+        Open data, official sources and an auditable history on
+        <a href="https://github.com/djairofilho/awesome-latam-vc">GitHub</a>.
+      </p>
+      <p>Built as static HTML. No runtime server.</p>
+    </footer>
+  </body>
+</html>

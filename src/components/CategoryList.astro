@@ -1,0 +1,27 @@
+---
+import type { Category } from "../lib/catalog";
+import { categoryLabels } from "../lib/catalog";
+import { withBase } from "../lib/paths.mjs";
+
+interface Props {
+  counts: Record<Category, number>;
+}
+
+const { counts } = Astro.props;
+---
+
+<ul class="category-list" aria-label="Catalog categories">
+  {
+    Object.entries(categoryLabels).map(([category, label], index) => (
+      <li>
+        <a href={`${withBase("/catalog/")}#${category}`}>
+          <span class="category-number" aria-hidden="true">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+          <span>{label}</span>
+          <strong>{counts[category as Category]}</strong>
+        </a>
+      </li>
+    ))
+  }
+</ul>

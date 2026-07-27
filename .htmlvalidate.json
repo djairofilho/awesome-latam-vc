@@ -1,0 +1,7 @@
+{
+  "extends": ["html-validate:recommended", "html-validate:document"],
+  "rules": {
+    "long-title": ["error", { "maxlength": 70 }],
+    "require-sri": "off"
+  }
+}
