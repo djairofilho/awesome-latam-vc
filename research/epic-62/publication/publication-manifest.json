@@ -42,7 +42,7 @@
     "ecosystem/accelerators/united-states/google-ai-cybersecurity-latam.md": "f082166d80a13e0febc8daaa12bbf21fe078672926b931bb5ef48b45ac049cdd",
     "ecosystem/accelerators/united-states/google-for-startups-brazil.md": "3dcee5ff519c321b3645346bff06b4e1a223ee4dbe76d35bd3f522ad33d61266",
     "ecosystem/accelerators/united-states/y-combinator.md": "9ceae665a7ed5a4dd9d1eecbc3611886c09f2160dd3136fbd2b95b7133104e14",
-    "research/epic-62/publication/frozen-batches.json": "53dfa311acb76a7264fb2e65a376e1afb3f7189a0731aa0564c4caa615ca0a60"
+    "research/epic-62/publication/frozen-batches.json": "1b0e6d3b93c6eb7fe670d298adf5ff24973555178ed2b8f81452b9c14982e99c"
   },
   "profiles": [
     {
@@ -367,6 +367,6 @@
   ],
   "profiles_created": 26,
   "schema_version": "1.0",
-  "source_manifest_sha256": "52da16cfc931aa3c1a1304dbee575a7b805e0db03ca2f96a75e5f4c79604adc2",
+  "source_manifest_sha256": "846d110b11bcfde8b5080d97781a3b848d5e4b9933e8beb7eb2d2254d678435e",
   "status": "completed"
 }

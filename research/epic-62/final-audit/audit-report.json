@@ -1,0 +1,89 @@
+{
+  "checks": {
+    "all_candidates_decided": true,
+    "all_frozen_hashes_match": true,
+    "batch_paths_match_profiles": true,
+    "batches_cover_publishable_once": true,
+    "candidate_ids_unique": true,
+    "coverage_closed": true,
+    "cross_category_routes_resolved": true,
+    "index_exact_and_unbroken": true,
+    "mandatory_review_complete": true,
+    "no_open_divergence": true,
+    "no_open_high_divergence": true,
+    "no_silent_cross_catalog_duplicate": true,
+    "profile_evidence_resolves": true,
+    "profile_files_exact": true,
+    "publishable_equals_profiles": true,
+    "review_complete": true,
+    "tasks_closed": true,
+    "utf8_clean": true
+  },
+  "cutoff_date": "2026-07-27",
+  "failures": {
+    "consolidation_input_hashes": [],
+    "consolidation_output_hashes": [],
+    "encoding": [],
+    "missing_profile_evidence": [],
+    "mojibake": [],
+    "publication_output_hashes": [],
+    "review_output_hashes": [],
+    "review_source_hashes": [],
+    "source_manifest": [],
+    "unresolved_divergences": [],
+    "unresolved_high_divergences": []
+  },
+  "issue": 79,
+  "limitations": [
+    "A auditoria comprova o snapshot de 2026-07-27; mudanças externas posteriores exigem nova coleta.",
+    "Oito registros de cobertura permanecem parciais, todos com motivo, responsável e próxima ação.",
+    "Seis tarefas permanecem bloqueadas por indisponibilidade de fonte oficial, sem impedir uma decisão explícita para cada candidato.",
+    "Destinos de backlog em outros catálogos são rotas registradas, não perfis materializados por esta epic."
+  ],
+  "metrics": {
+    "batch_sizes": [
+      10,
+      10,
+      6
+    ],
+    "batches": 3,
+    "canonical_candidates": 78,
+    "coverage_countries": 25,
+    "coverage_records": 37,
+    "coverage_statuses": {
+      "complete": 29,
+      "partial": 8
+    },
+    "cross_catalog_relationships": 55,
+    "decision_counts": {
+      "elegível": 25,
+      "encaminhado-para-funds": 3,
+      "encaminhado-para-outra-epic": 13,
+      "evidência-insuficiente": 19,
+      "excluído": 17,
+      "inativo": 1
+    },
+    "documented_blocked_tasks": 6,
+    "documented_partial_coverage": 8,
+    "input_occurrences": 80,
+    "merged_duplicate_occurrences": 2,
+    "profiles": 26,
+    "publishable_candidates": 26,
+    "resolved_divergences": 3,
+    "reviewed_candidates": 52,
+    "task_statuses": {
+      "blocked": 6,
+      "done": 74
+    },
+    "tasks": 80
+  },
+  "parent_epic": 62,
+  "schema_version": "1.0",
+  "severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "low": 0,
+    "medium": 0
+  },
+  "status": "passed"
+}

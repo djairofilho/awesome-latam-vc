@@ -1,0 +1,181 @@
+{
+  "checks": [
+    {
+      "check_id": "schemas-and-contract",
+      "checked_records": 304,
+      "details": "Os seis schemas e as invariantes do contrato validam o bundle consolidado.",
+      "status": "passed"
+    },
+    {
+      "check_id": "frozen-publication",
+      "checked_records": 29,
+      "details": "A fila congelada, os lotes, perfis e hashes da #103 reconciliam.",
+      "status": "passed"
+    },
+    {
+      "check_id": "entity-destinations",
+      "checked_records": 95,
+      "details": "As 29 agências, 45 programas e 21 chamadas têm destino terminal.",
+      "status": "passed"
+    },
+    {
+      "check_id": "relationships",
+      "checked_records": 95,
+      "details": "Relações agência → programa → chamada fecham nos dois sentidos.",
+      "status": "passed"
+    },
+    {
+      "check_id": "coverage-and-tasks",
+      "checked_records": 110,
+      "details": "As 55 células correspondem às tarefas; 25 lacunas estão justificadas.",
+      "status": "passed"
+    },
+    {
+      "check_id": "category-transfers",
+      "checked_records": 18,
+      "details": "As 13 entradas e 5 saídas têm adjudicação e destino canônico.",
+      "status": "passed"
+    },
+    {
+      "check_id": "official-links",
+      "checked_records": 98,
+      "details": "As 98 evidências são oficiais, têm URL HTTP(S) e vínculo bidirecional.",
+      "status": "passed"
+    },
+    {
+      "check_id": "declared-hashes",
+      "checked_records": 73,
+      "details": "Todos os hashes declarados da coleta à publicação reconciliam.",
+      "status": "passed"
+    },
+    {
+      "check_id": "profiles-and-indexes",
+      "checked_records": 32,
+      "details": "Os 29 perfis aparecem uma vez no índice e nos três índices multilíngues.",
+      "status": "passed"
+    },
+    {
+      "check_id": "deterministic-ordering",
+      "checked_records": 248,
+      "details": "JSONL, fila, lotes e índice seguem chaves determinísticas.",
+      "status": "passed"
+    },
+    {
+      "check_id": "corfo-and-boundaries",
+      "checked_records": 10,
+      "details": "CORFO, Start-Up Chile, rebaixamentos e cinco fronteiras foram revalidados.",
+      "status": "passed"
+    },
+    {
+      "check_id": "utf8-and-mojibake",
+      "checked_records": 156,
+      "details": "Todos os artefatos textuais da epic e da categoria usam UTF-8 íntegro.",
+      "status": "passed"
+    },
+    {
+      "check_id": "independent-review",
+      "checked_records": 58,
+      "details": "Os 58 itens da revisão independente estão resolvidos, sem risco alto aberto.",
+      "status": "passed"
+    }
+  ],
+  "cutoff_date": "2026-07-27",
+  "epic": 65,
+  "findings": [],
+  "input_hashes": {
+    "ecosystem/public-programs/README.md": "48297e0f95803796596f30630428fbeed593c494136430b9823e425c332efc45",
+    "ecosystem/public-programs/bolivia/agroinnovatec.md": "4d89581f11336b1c25a7c299e18b8c13ac003458653ca5528aaf383eeac75227",
+    "ecosystem/public-programs/bolivia/bdp-bolivia.md": "7530cef9597b6a81aedbd8be141cbb2770c9c3e3e11f456529701d58f8319568",
+    "ecosystem/public-programs/bolivia/bdp-fondo-startup.md": "5eab46093fea3d1c81806277e74f9dda639f988c67ff3049b1f0fb51f75ead0f",
+    "ecosystem/public-programs/brazil/bndes-fundo-clima-servicos-inovacao-verdes.md": "3e47b963ee93711e3eaf98736871fd56e1aacb6433b2fe6f25833efa1544aff5",
+    "ecosystem/public-programs/brazil/bndes-garagem.md": "c37a17fe9bb2620dead6f67773bdeb0ca6730a9ae2553b9a39b95af3c4c42c68",
+    "ecosystem/public-programs/brazil/bndes.md": "51cdbf856b31e662c7f1a48682e2496694027215bc05a9cc0bd2a452d316c3fa",
+    "ecosystem/public-programs/brazil/brde-labs-rs.md": "625ead3629b2814057edce47bf0c5ec55dfc26662fcf33ac1a52dbd863e8b73c",
+    "ecosystem/public-programs/brazil/brde.md": "7f61a458420b24fce33547808e3bc4b0e37d140414f1326cded5e3f15629a270",
+    "ecosystem/public-programs/brazil/fapesp-pipe.md": "119cdd7874f139fbe8e7160a3ddd822b0b4123c829c78087c01f38cf6fbbbfda",
+    "ecosystem/public-programs/brazil/fapesp.md": "7a2b01d2e6e325e6b093408aa2205b8175f46e4e5b2791c0f6cd53fadf8d00cc",
+    "ecosystem/public-programs/brazil/finep-mulheres-inovadoras.md": "64d94caed55f59bd7196651d62b9eed5f5f953ef87eec8ada5f232541f9deb8c",
+    "ecosystem/public-programs/brazil/finep.md": "4da581bf2701740620d6214821e822ae5ef115c80c72c4bb59665e33b8cb959a",
+    "ecosystem/public-programs/brazil/sebrae.md": "f77399926d5f64d354a0f2132ddc7e00db9d656a188c7170af49bd2d58b79861",
+    "ecosystem/public-programs/brazil/sebraetec-negocios-inovadores.md": "872c531263d34627276036fe58b630adf5f6b889b933691c4350209730448b80",
+    "ecosystem/public-programs/chile/corfo-semilla-inicia-mujeres.md": "060a529e19d8288e3d991d434d797ce3bb7aef8e93bf77b845018e6b6f26a83d",
+    "ecosystem/public-programs/chile/corfo.md": "93bda2ccdad513a49cb009e27900274503c645ca2f7682d697e44fa62dcb625e",
+    "ecosystem/public-programs/chile/start-up-chile.md": "19470522561984bfce63d2293777dcc7054c8d65756db5a0ba1a2af7d72c5a98",
+    "ecosystem/public-programs/ecuador/conquito-fonquito.md": "95539ad1a53b7f43624994eb1d64adecf8246c2e4dbe322e077308c3eee721fe",
+    "ecosystem/public-programs/ecuador/conquito.md": "9437dd671e6620eaafbfee1be16c7c58fe79d5914e059a8221352988a72ab31e",
+    "ecosystem/public-programs/mexico/secihti-desarrollo-tecnologico-innovacion.md": "eb8c17ac917b19d3da7e823da85f45f5bf188cffb482d42f52a153c47efe9fc0",
+    "ecosystem/public-programs/mexico/secihti.md": "2324d20d9c0dc185a8b22754a3ef6c9180fb1953f8114290259640479cd9ab53",
+    "ecosystem/public-programs/peru/proinnovate-startup-peru.md": "11800703241aecdf34126054f03cf7562542730ed7fef88f8d1313a253ab8259",
+    "ecosystem/public-programs/peru/proinnovate.md": "f919e0ef54557a928719733ea8897f66fc5286c27008acc6f6b11bab5b448c25",
+    "ecosystem/public-programs/uruguay/ande.md": "c52c21551412beb64b9ae0b0dcfe42dd4b3ddf141bc6eb90571e377df63f3d12",
+    "ecosystem/public-programs/uruguay/anii-coinversion-startups.md": "63ea670f636cf674236ccba68a66079d4f2eaaffe5bc9f46c114cf037b4c4678",
+    "ecosystem/public-programs/uruguay/anii-emprendimientos-innovadores.md": "bf9efd3d23263ab944b85c6ae7f57d6746be4c5d7bef6b9b6d445641fea1ee99",
+    "ecosystem/public-programs/uruguay/anii-validacion-ideas.md": "f7209a33ab05b0832d4505a002cfa793e79ff9c9e0c7bdd8a4c7637272e09749",
+    "ecosystem/public-programs/uruguay/anii.md": "4579ed4d1394608e67b7d265fffcc006b525c6d13905ab791b6af91d00419423",
+    "ecosystem/public-programs/uruguay/semilla-ande-2026.md": "a0cf09bf7e04c473b66eb6ef43c840fa2e1610867e7f7b761e94d601ee8cc4ff",
+    "research/epic-65/consolidation/agencies.jsonl": "2d1c3ee28d0fe19ac85726a8763cccd4753e35ed50cbf583f39aba4397eb2f97",
+    "research/epic-65/consolidation/calls.jsonl": "0af5579f7b9cf8e5fcbc30eec2dcdf7ba4c8b03aae5fdc503ff30411bae4bb6a",
+    "research/epic-65/consolidation/category-resolutions.json": "12b2caf3992d72d50ba351ab66d455d0a2770d0bcaa6ad6857a2f7d757739fb8",
+    "research/epic-65/consolidation/consolidation-manifest.json": "7620a46f7e4534ac27ba692458cf14307f053ed33bc0a20e51e3a715769b36f3",
+    "research/epic-65/consolidation/coverage-matrix.jsonl": "d76b1c10255555ce10d14edfc47ac3c857815580cf4201d891fa01ede22d6483",
+    "research/epic-65/consolidation/evidence.jsonl": "552d3da6841591635042666191a070e037d3a746f0fe27973826e149d282d046",
+    "research/epic-65/consolidation/independent-review.jsonl": "b7bf22b337f5e41fde35ceb7ab17c488acb2ba1788a508a2abbc858bd2b8a876",
+    "research/epic-65/consolidation/programs.jsonl": "f310197af572e6e7db6c2c9ab49ce4b8ec51a3c1f61410822298482e893e880e",
+    "research/epic-65/consolidation/run-manifest.jsonl": "75940f99777d4be7ab7d03d37bf24e9933f3f5c9c608c554b8167b6c0cc0e2ae",
+    "research/epic-65/publication/publication-manifest.json": "42f98cbece25e80a8d0701a39598fecec123e193312a5d15d5fa0f1eec64da3f",
+    "research/epic-65/publication/publication-plan.json": "48eda8e562dc7ecdbc3d2b5f7da5c9b18dbdb22afdf67102a829383921527a0a",
+    "research/epic-65/schemas/agency.schema.json": "dea696abdb956d13cbf5a5ce55616c8017acb0ca1a84a6b6da9c024a0a6f62f1",
+    "research/epic-65/schemas/call.schema.json": "70995ee61051dc2212703489c16e4dd741eea16edd1b73d66193e4182a779cdd",
+    "research/epic-65/schemas/coverage.schema.json": "5f1d48526a6446dd5e26ba9278a32ebdae892870fd46d31e890cca247ece0faf",
+    "research/epic-65/schemas/evidence.schema.json": "4ccd562f2ad9a90ccc2386dd13548e08ea82b83cda22317a0ff979f1e8e21386",
+    "research/epic-65/schemas/program.schema.json": "5733b96256537a4eaf1fdb637a5463afa7736f130a224cd4a6acde57e20667b7",
+    "research/epic-65/schemas/run-manifest.schema.json": "b4f1e7dd452f9ac4812f8401ff88fa4722a3abd4b217bd9847af86feccf04b37"
+  },
+  "issue": 104,
+  "limitations": [
+    "A auditoria de links é estrutural e determinística: valida fonte oficial, URL HTTP(S), sujeito e vínculo com perfis. Disponibilidade HTTP ao vivo não bloqueia o CI; a coleta registra accessed_on em 2026-07-27.",
+    "Decisões com evidência insuficiente permanecem fora do catálogo e só mudam mediante nova fonte oficial e nova revisão."
+  ],
+  "metrics": {
+    "agencies": 29,
+    "agency_decisions": {
+      "elegível": 12,
+      "evidência insuficiente": 8,
+      "excluída": 6,
+      "inativa": 3
+    },
+    "agency_profiles": 12,
+    "call_profiles": 0,
+    "call_statuses": {
+      "aberta": 8,
+      "fechada": 12,
+      "não confirmada": 1
+    },
+    "calls": 21,
+    "coverage_rows": 55,
+    "critical_findings": 0,
+    "declared_hashes_checked": 73,
+    "eligible_profiles": 29,
+    "entities_with_destination": 95,
+    "evidence": 98,
+    "high_findings": 0,
+    "incoming_transfers": 13,
+    "independent_review_items": 58,
+    "materialized_incoming_transfers": 8,
+    "official_evidence": 98,
+    "outgoing_category_resolutions": 5,
+    "program_decisions": {
+      "elegível": 17,
+      "evidência insuficiente": 9,
+      "excluído": 14,
+      "inativo": 5
+    },
+    "program_profiles": 17,
+    "programs": 45,
+    "published_profiles": 29,
+    "tasks": 55,
+    "unique_official_urls": 69
+  },
+  "schema_version": "1.0",
+  "status": "passed"
+}
