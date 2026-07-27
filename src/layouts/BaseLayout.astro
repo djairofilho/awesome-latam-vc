@@ -10,12 +10,17 @@ import {
   localizedHref,
 } from "../lib/i18n.mjs";
 import { canonicalUrl, withBase } from "../lib/paths.mjs";
+import {
+  SITEMAP_PATH,
+  socialLocale,
+  socialLocaleAlternates,
+} from "../lib/seo.mjs";
 import { serializeJsonLd } from "../lib/structured-data.mjs";
 
 interface Props {
   title: string;
   description: string;
-  canonicalPath?: string;
+  canonicalPath?: string | null;
   locale?: Locale;
   routeSuffix?: string;
   emitAlternates?: boolean;
@@ -34,7 +39,7 @@ const {
   structuredData = [],
 } = Astro.props;
 const preview = import.meta.env.PUBLIC_SITE_ENV === "preview";
-const canonical = canonicalUrl(canonicalPath);
+const canonical = canonicalPath === null ? undefined : canonicalUrl(canonicalPath);
 const labels = strings(locale ?? "en");
 const alternates: Record<string, string> = emitAlternates
   ? hreflangUrls(routeSuffix)
@@ -46,6 +51,8 @@ const catalogHref = locale
 const jsonLd = structuredData.length
   ? serializeJsonLd(structuredData)
   : undefined;
+const openGraphLocale = socialLocale(locale ?? "en");
+const openGraphLocaleAlternates = socialLocaleAlternates(locale ?? "en");
 ---
 
 <!doctype html>
@@ -55,12 +62,31 @@ const jsonLd = structuredData.length
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     {(preview || noindex) && <meta name="robots" content="noindex, nofollow" />}
-    <link rel="canonical" href={canonical} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <link
+      rel="sitemap"
+      type="application/xml"
+      href={canonicalUrl(SITEMAP_PATH)}
+    />
     {
       Object.entries(alternates).map(([hreflang, href]) => (
         <link rel="alternate" hreflang={hreflang} href={href} />
       ))
     }
+    <meta property="og:site_name" content="Awesome LatAm VC" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <meta property="og:locale" content={openGraphLocale} />
+    {
+      openGraphLocaleAlternates.map((alternate) => (
+        <meta property="og:locale:alternate" content={alternate} />
+      ))
+    }
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
     <meta name="generator" content={Astro.generator} />
     {
       jsonLd && (

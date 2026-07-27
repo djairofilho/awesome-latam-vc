@@ -1,22 +1,40 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { withBase } from "../lib/paths.mjs";
+import {
+  localeDetails,
+  locales,
+  localizedHref,
+} from "../lib/i18n.mjs";
 ---
 
 <BaseLayout
   title="Page not found · Awesome LatAm VC"
   description="The requested Awesome LatAm VC page could not be found."
-  canonicalPath="/404/"
+  canonicalPath={null}
   emitAlternates={false}
   noindex
 >
   <section class="not-found">
-    <p class="eyebrow">404 · Route not found</p>
+    <p class="eyebrow">404 · Route not found · Rota não encontrada</p>
     <h1>This path is not in the catalog.</h1>
     <p>
-      The source may have moved, or this route may belong to a later localized
-      release.
+      The address may be invalid or an old slug. Choose a language to return to
+      the current catalog. Escolha um idioma para voltar ao catálogo atual.
     </p>
-    <a class="button button-primary" href={withBase("/")}>Return to overview</a>
+    <ul class="not-found-actions">
+      {
+        locales.map((locale) => (
+          <li>
+            <a
+              class="button"
+              href={localizedHref(locale, "/catalog/")}
+              lang={localeDetails(locale).html_lang}
+            >
+              {localeDetails(locale).label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </section>
 </BaseLayout>
