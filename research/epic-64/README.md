@@ -173,6 +173,19 @@ Não há append concorrente em arquivos compartilhados. O reducer é o único
 escritor dos artefatos regionais consolidados. Tarefas e reduções devem ser
 idempotentes e reentrantes.
 
+O destino regional define o escopo do reducer. Por exemplo:
+
+```text
+python tools/research/shards.py reduce \
+  research/epic-64 evidence research/epic-64/mexico-cac/evidence.jsonl
+```
+
+Uma execução concluída pode congelar `hash_algorithm: sha256` e
+`artifact_hashes` para os quatro artefatos não circulares: candidatos,
+evidências, inventário de fontes e matriz de cobertura. O validador recalcula
+os hashes com finais de linha normalizados em LF. O manifesto não inclui o
+próprio hash.
+
 O manifesto fixa estas regras:
 
 - respeitar `robots.txt` e termos de uso;

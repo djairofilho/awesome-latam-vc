@@ -8,6 +8,7 @@ import json
 import sys
 from calendar import monthrange
 from datetime import date
+from hashlib import sha256
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -51,6 +52,12 @@ LATAM_COUNTRIES = {
     "UY",
     "VE",
 }
+HASHED_ARTIFACTS = (
+    "candidates.jsonl",
+    "coverage-matrix.jsonl",
+    "evidence.jsonl",
+    "source-inventory.jsonl",
+)
 OFFICIAL_TYPES = {
     "official_platform",
     "official_operator",
@@ -544,6 +551,35 @@ def validate_manifest(
         )
         return
     run = runs[0]
+    declares_hashes = (
+        run.get("hash_algorithm") is not None
+        or run.get("artifact_hashes") is not None
+    )
+    if declares_hashes and run.get("status") == "complete":
+        hashes = run.get("artifact_hashes")
+        if run.get("hash_algorithm") != "sha256" or not isinstance(hashes, dict):
+            errors.append(
+                f"{dataset / 'run-manifest.jsonl'}: execução com hashes deve "
+                "declarar sha256 e artifact_hashes"
+            )
+        else:
+            for filename in HASHED_ARTIFACTS:
+                artifact = dataset / filename
+                if not artifact.exists():
+                    errors.append(
+                        f"{dataset / 'run-manifest.jsonl'}: artefato ausente "
+                        f"para hash: {filename}"
+                    )
+                    continue
+                normalized = artifact.read_text(encoding="utf-8").replace(
+                    "\r\n", "\n"
+                ).encode("utf-8")
+                actual = sha256(normalized).hexdigest()
+                if hashes.get(filename) != actual:
+                    errors.append(
+                        f"{dataset / 'run-manifest.jsonl'}: hash divergente "
+                        f"para {filename}"
+                    )
     if run.get("task_count") != len(tasks):
         errors.append(
             f"{dataset / 'run-manifest.jsonl'}: task_count difere das tarefas"
