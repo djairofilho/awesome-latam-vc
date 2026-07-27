@@ -6,6 +6,11 @@ import {
   categoryLabels,
   type Category,
 } from "../lib/catalog";
+import {
+  breadcrumbListJsonLd,
+  datasetJsonLd,
+  organizationJsonLd,
+} from "../lib/structured-data.mjs";
 
 const profiles = (await getCollection("profiles"))
   .map(catalogItem)
@@ -15,12 +20,21 @@ const grouped = Object.keys(categoryLabels).map((category) => ({
   label: categoryLabels[category as Category],
   profiles: profiles.filter((profile) => profile.category === category),
 }));
+const structuredData = [
+  datasetJsonLd(profiles.length),
+  breadcrumbListJsonLd([
+    { name: "Overview", path: "/" },
+    { name: "Catalog", path: "/catalog/" },
+  ]),
+  ...profiles.map(organizationJsonLd).filter(Boolean),
+];
 ---
 
 <BaseLayout
   title="Catalog · Awesome LatAm VC"
   description="Browse the canonical Awesome LatAm VC funding catalog by entity type."
   canonicalPath="/catalog/"
+  structuredData={structuredData}
 >
   <header class="page-intro">
     <p class="eyebrow">Canonical catalog</p>

@@ -3,12 +3,14 @@ import "@fontsource-variable/archivo";
 import "@fontsource-variable/public-sans";
 import "../styles/global.css";
 import { canonicalUrl, withBase } from "../lib/paths.mjs";
+import { serializeJsonLd } from "../lib/structured-data.mjs";
 
 interface Props {
   title: string;
   description: string;
   canonicalPath?: string;
   noindex?: boolean;
+  structuredData?: Array<Record<string, unknown> | null>;
 }
 
 const {
@@ -16,9 +18,13 @@ const {
   description,
   canonicalPath = Astro.url.pathname,
   noindex = false,
+  structuredData = [],
 } = Astro.props;
 const preview = import.meta.env.PUBLIC_SITE_ENV === "preview";
 const canonical = canonicalUrl(canonicalPath);
+const jsonLd = structuredData.length
+  ? serializeJsonLd(structuredData)
+  : undefined;
 ---
 
 <!doctype html>
@@ -30,6 +36,15 @@ const canonical = canonicalUrl(canonicalPath);
     {(preview || noindex) && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
     <meta name="generator" content={Astro.generator} />
+    {
+      jsonLd && (
+        <script
+          is:inline
+          type="application/ld+json"
+          set:html={jsonLd}
+        />
+      )
+    }
     <title>{title}</title>
   </head>
   <body>

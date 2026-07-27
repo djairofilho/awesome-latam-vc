@@ -5,6 +5,7 @@ on:
     paths:
       - "funds/**"
       - "ecosystem/**"
+      - "data/**"
       - "research/epic-*/**"
       - "research/seo-geo/**"
       - "tools/research/**"
@@ -20,6 +21,7 @@ on:
     paths:
       - "funds/**"
       - "ecosystem/**"
+      - "data/**"
       - "research/epic-*/**"
       - "research/seo-geo/**"
       - "tools/research/**"
