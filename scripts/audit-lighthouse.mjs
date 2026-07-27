@@ -1,5 +1,5 @@
 import { spawn } from "node:child_process";
-import { mkdirSync, readFileSync } from "node:fs";
+import { mkdirSync, readFileSync, rmSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -44,16 +44,23 @@ function run(command, args, options = {}) {
   return new Promise((resolvePromise, reject) => {
     const child = spawn(command, args, {
       cwd: ROOT,
-      shell: process.platform === "win32",
-      stdio: "inherit",
+      stdio: ["ignore", "ignore", "pipe"],
       ...options,
+    });
+    let stderr = "";
+    child.stderr?.on("data", (chunk) => {
+      stderr += chunk;
     });
     child.once("error", reject);
     child.once("exit", (code) => {
       if (code === 0) {
         resolvePromise();
       } else {
-        reject(new Error(`${command} exited with ${code}`));
+        reject(
+          new Error(
+            `${command} exited with ${code}${stderr ? `:\n${stderr.trim()}` : ""}`,
+          ),
+        );
       }
     });
   });
@@ -79,19 +86,29 @@ try {
   const results = [];
   for (const path of REPRESENTATIVE_PATHS) {
     const output = join(OUTPUT, `${safeName(path)}.json`);
-    await run(
-      process.execPath,
-      [
-        "node_modules/lighthouse/cli/index.js",
-        `${BASE_URL}${path}`,
-        "--quiet",
-        "--output=json",
-        `--output-path=${output}`,
-        "--only-categories=performance,accessibility,best-practices,seo",
-        "--chrome-flags=--headless --no-sandbox --disable-dev-shm-usage",
-      ],
-      { stdio: "ignore" },
-    );
+    rmSync(output, { force: true });
+    try {
+      await run(
+        process.execPath,
+        [
+          "node_modules/lighthouse/cli/index.js",
+          `${BASE_URL}${path}`,
+          "--quiet",
+          "--output=json",
+          `--output-path=${output}`,
+          "--only-categories=performance,accessibility,best-practices,seo",
+          "--chrome-flags=--headless --no-sandbox --disable-dev-shm-usage",
+        ],
+      );
+    } catch (error) {
+      const windowsCleanupFailure =
+        process.platform === "win32" &&
+        error instanceof Error &&
+        /EBUSY:[\s\S]+\\Temp\\lighthouse\./u.test(error.message);
+      if (!windowsCleanupFailure) {
+        throw error;
+      }
+    }
     const report = JSON.parse(readFileSync(output, "utf8"));
     const scores = Object.fromEntries(
       Object.keys(THRESHOLDS).map((category) => [
