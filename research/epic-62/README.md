@@ -247,11 +247,19 @@ coverage-matrix.jsonl
 evidence.jsonl
 run-manifest.jsonl
 source-inventory.jsonl
+state-coverage.jsonl
 ```
 
 O validador verifica schemas, cada linha JSONL e invariantes entre arquivos:
 IDs únicos, referências existentes, manifesto consistente, cobertura coerente
 e evidência oficial mínima para elegíveis.
+
+Auditorias nacionais que precisam demonstrar lacunas subnacionais usam
+`state-coverage.jsonl`. Cada registro liga uma subdivisão a fontes e candidatos
+existentes e distingue percurso direto, cobertura apenas nacional e lacuna.
+Quando uma contagem planejada precisa ser corrigida, a matriz preserva o
+baseline em `original_planned_sources` e explica a mudança em
+`planning_errata`.
 
 Workers gravam shards isolados com:
 
@@ -264,11 +272,13 @@ O coordenador produz o arquivo canônico em ordem determinística:
 
 ```text
 python tools/research/shards.py reduce \
-  research/epic-62 candidates research/epic-62/candidates.jsonl
+  research/epic-62 candidates research/epic-62/brazil/candidates.jsonl
 ```
 
-Uma divergência entre registros com o mesmo ID interrompe a redução. Registros
-idênticos são idempotentes.
+O diretório regional do destino define o escopo da redução e impede a mistura
+de shards de outras regiões. Um destino diretamente na raiz mantém a agregação
+multirregional legada. Uma divergência entre registros com o mesmo ID interrompe
+a redução. Registros idênticos são idempotentes.
 
 ## Fluxo e ownership
 
@@ -279,7 +289,9 @@ idênticos são idempotentes.
 5. Um consolidador reduz shards em ordem determinística.
 6. Um revisor independente avalia todos os elegíveis, encaminhados e híbridos,
    além de uma amostra determinística das exclusões.
-7. O manifesto é congelado com data e hash.
+7. O manifesto é congelado com data e hashes SHA-256 dos cinco artefatos
+   canônicos não circulares: candidatos, matriz, evidências, fontes e cobertura
+   estadual.
 8. Publishers recebem somente IDs congelados.
 
 Cada worker escreve em shard próprio. Nenhum worker altera diretamente arquivos
@@ -340,7 +352,7 @@ Antes da publicação:
 - não existem IDs órfãos, decisões nulas ou duplicados sem destino;
 - todos os elegíveis têm fonte oficial para programa, atividade e acesso;
 - a revisão independente foi concluída;
-- o manifesto foi congelado com data e hash.
+- o manifesto foi congelado com data e hashes SHA-256 dos artefatos canônicos;
 
 Antes do fechamento:
 
