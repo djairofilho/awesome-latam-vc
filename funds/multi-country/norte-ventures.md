@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:norte-ventures:en",
+  "entity_id": "fund:norte-ventures",
+  "slug": "norte-ventures",
+  "name": "Norte Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Norte Ventures is an investment organization focused on Technology, sector agnostic in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://www.norte.ventures/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.norte.ventures/portfolio",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Norte Ventures"
+  ]
+}
+---
 # Norte Ventures
 
 Norte Ventures is an investment organization focused on Technology, sector agnostic in Latin America.

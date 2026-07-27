@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:impact-ventures-psm:en",
+  "entity_id": "fund:impact-ventures-psm",
+  "slug": "impact-ventures-psm",
+  "name": "Impact Ventures PSM",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Impact Ventures PSM is an investment organization focused on Impact entrepreneurship in Mexico and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM",
+    "MX"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "impact_entrepreneurship"
+  ],
+  "official_website": "https://ivpsm.org.mx/",
+  "founder_route": "https://ivpsm.org.mx/contactanos/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://ivpsm.org.mx/portafolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://ivpsm.org.mx/contactanos/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Impact Ventures PSM"
+  ]
+}
+---
 # Impact Ventures PSM
 
 Impact Ventures PSM is an investment organization focused on Impact entrepreneurship in Mexico and Latin America.

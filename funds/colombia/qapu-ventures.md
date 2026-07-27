@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:qapu-ventures:en",
+  "entity_id": "fund:qapu-ventures",
+  "slug": "qapu-ventures",
+  "name": "QAPU Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "QAPU Ventures is an investment organization listed in this directory; its current investment mandate could not be verified.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "CO"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://qapu.ventures/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Previously listed source; unavailable during verification",
+      "url": "https://qapu.ventures/",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "QAPU Ventures"
+  ]
+}
+---
 # QAPU Ventures
 
 QAPU Ventures is an investment organization listed in this directory; its current investment mandate could not be verified.

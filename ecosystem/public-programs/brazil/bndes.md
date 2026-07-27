@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:bndes:en",
+  "entity_id": "public_program:bndes",
+  "slug": "bndes",
+  "name": "Banco Nacional de Desenvolvimento Econômico e Social",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "O BNDES identifica startups de inovação climática entre os clientes e oferece rota oficial de solicitação de financiamento.",
+  "aliases": [
+    "BNDES"
+  ],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://www.bndes.gov.br/",
+  "founder_route": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/fundo-clima/servicos-inovacao-verdes",
+  "sources": [
+    {
+      "title": "Fundo Clima - Serviços e inovação verdes",
+      "url": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/fundo-clima/servicos-inovacao-verdes",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Banco Nacional de Desenvolvimento Econômico e Social"
+  ]
+}
+---
 # Banco Nacional de Desenvolvimento Econômico e Social
 
 - **Entity ID:** `agency-bndes`

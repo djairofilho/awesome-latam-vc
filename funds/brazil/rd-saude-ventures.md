@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:rd-saude-ventures:en",
+  "entity_id": "fund:rd-saude-ventures",
+  "slug": "rd-saude-ventures",
+  "name": "RD Saúde Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "RD Saúde Ventures is RD Saúde's corporate innovation and venture investment program for healthcare, wellbeing, and pharmacy retail.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "health",
+    "wellbeing",
+    "pharmacy_retail",
+    "customer_experience"
+  ],
+  "official_website": "https://rdsaude.com.br/rdsaudeventures/",
+  "founder_route": "https://rdsaude.com.br/rdsaudeventures/",
+  "sources": [
+    {
+      "title": "RD Saúde Ventures",
+      "url": "https://rdsaude.com.br/rdsaudeventures/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "RD Saúde Ventures"
+  ]
+}
+---
 # RD Saúde Ventures
 
 RD Saúde Ventures is RD Saúde's corporate innovation and venture investment

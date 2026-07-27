@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:velum-ventures:en",
+  "entity_id": "fund:velum-ventures",
+  "slug": "velum-ventures",
+  "name": "Velum Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Velum Ventures is an investment organization focused on Technology in Colombia and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "CO",
+    "LATAM"
+  ],
+  "stages": [
+    "seed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.linkedin.com/company/velum-ventures/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Secondary profile",
+      "url": "https://www.linkedin.com/company/velum-ventures/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Velum Ventures"
+  ]
+}
+---
 # Velum Ventures
 
 Velum Ventures is an investment organization focused on Technology in Colombia and Latin America.

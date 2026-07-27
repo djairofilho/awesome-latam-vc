@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:iporanga-ventures:en",
+  "entity_id": "fund:iporanga-ventures",
+  "slug": "iporanga-ventures",
+  "name": "Iporanga Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Iporanga Ventures is an investment organization focused on Software and technology in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "software",
+    "technology"
+  ],
+  "official_website": "https://www.ipo.ventures/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.ipo.ventures/companies/abstra",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://www.ipo.ventures/companies",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Iporanga Ventures"
+  ]
+}
+---
 # Iporanga Ventures
 
 Iporanga Ventures is an investment organization focused on Software and technology in Brazil.

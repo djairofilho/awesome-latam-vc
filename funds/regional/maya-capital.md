@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:maya-capital:en",
+  "entity_id": "fund:maya-capital",
+  "slug": "maya-capital",
+  "name": "MAYA Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "MAYA Capital is an investment organization focused on Technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.maya.capital/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.maya.capital/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://www.maya.capital/about-us",
+      "kind": "official_thesis"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "MAYA Capital"
+  ]
+}
+---
 # MAYA Capital
 
 MAYA Capital is an investment organization focused on Technology in Latin America.

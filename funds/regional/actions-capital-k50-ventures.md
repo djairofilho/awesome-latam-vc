@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:actions-capital-k50-ventures:en",
+  "entity_id": "fund:actions-capital-k50-ventures",
+  "slug": "actions-capital-k50-ventures",
+  "name": "Actions Capital (ex-K50 Ventures)",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Actions Capital (ex-K50 Ventures) is an investment organization focused on Technology in Latin America.",
+  "aliases": [
+    "K50 Ventures"
+  ],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.actions.capital/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://www.actions.capital/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Actions Capital (ex-K50 Ventures)"
+  ]
+}
+---
 # Actions Capital (ex-K50 Ventures)
 
 Actions Capital (ex-K50 Ventures) is an investment organization focused on Technology in Latin America.

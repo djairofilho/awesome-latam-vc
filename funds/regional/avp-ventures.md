@@ -1,3 +1,61 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:avp-ventures:en",
+  "entity_id": "fund:avp-ventures",
+  "slug": "avp-ventures",
+  "name": "AVP Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "AVP Ventures is an investment organization focused on Technology in Peru and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM",
+    "PE"
+  ],
+  "stages": [
+    "seed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://avpventures.com/",
+  "founder_route": "https://avpventures.com/contact/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://avpventures.com/portfolio/culqi/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://avpventures.com/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://avpventures.com/contact/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://avpventures.com/stories/2023-letter-to-investors/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "AVP Ventures"
+  ]
+}
+---
 # AVP Ventures
 
 AVP Ventures is an investment organization focused on Technology in Peru and Latin America.

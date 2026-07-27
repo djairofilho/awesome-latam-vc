@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:babasu-ventures:en",
+  "entity_id": "fund:babasu-ventures",
+  "slug": "babasu-ventures",
+  "name": "Babasú Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Babasú Ventures invests in early-stage startups across emerging South American ecosystems.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "BO",
+    "EC",
+    "PE",
+    "PY",
+    "UY"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://babasuventures.com/",
+  "founder_route": "https://babasuventures.com/",
+  "sources": [
+    {
+      "title": "Babasú Ventures",
+      "url": "https://babasuventures.com/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Babasú Ventures"
+  ]
+}
+---
 # Babasú Ventures
 
 Babasú Ventures invests in early-stage startups across emerging South American

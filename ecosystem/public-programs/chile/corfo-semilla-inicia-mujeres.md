@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:corfo-semilla-inicia-mujeres:en",
+  "entity_id": "public_program:corfo-semilla-inicia-mujeres",
+  "slug": "corfo-semilla-inicia-mujeres",
+  "name": "Semilla Inicia para Empresas Lideradas por Mujeres",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "A página lista edições anuais de 2021 a 2025 e cofinanciamento não reembolsável de até CLP 17 milhões.",
+  "aliases": [],
+  "operator": "[Corporación de Fomento de la Producción](corfo.md) (`agency-corfo`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "CL"
+  },
+  "countries_covered": [
+    "CL"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://www.corfo.cl/sites/cpp/movil/semilla-inicia-mujer",
+  "founder_route": "https://www.corfo.cl/sites/cpp/movil/semilla-inicia-mujer",
+  "sources": [
+    {
+      "title": "Semilla Inicia para Empresas Lideradas por Mujeres",
+      "url": "https://www.corfo.cl/sites/cpp/movil/semilla-inicia-mujer",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Semilla Inicia para Empresas Lideradas por Mujeres"
+  ]
+}
+---
 # Semilla Inicia para Empresas Lideradas por Mujeres
 
 - **Entity ID:** `program-corfo-semilla-inicia-mujeres`

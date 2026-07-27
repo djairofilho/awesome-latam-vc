@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:ande:en",
+  "entity_id": "public_program:ande",
+  "slug": "ande",
+  "name": "Agencia Nacional de Desarrollo",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "A ANDE opera o instrumento de capital semente por instituições parceiras.",
+  "aliases": [
+    "ANDE"
+  ],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "UY"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://www.ande.org.uy/",
+  "founder_route": "https://www.ande.org.uy/convocatorias/item/semilla-ande-2026.html",
+  "sources": [
+    {
+      "title": "Semilla ANDE 2026",
+      "url": "https://www.ande.org.uy/convocatorias/item/semilla-ande-2026.html",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Agencia Nacional de Desarrollo"
+  ]
+}
+---
 # Agencia Nacional de Desarrollo
 
 - **Entity ID:** `agency-ande`

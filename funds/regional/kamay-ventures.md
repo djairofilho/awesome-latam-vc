@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:kamay-ventures:en",
+  "entity_id": "fund:kamay-ventures",
+  "slug": "kamay-ventures",
+  "name": "Kamay Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Kamay Ventures is an Argentina-based multi-corporate venture capital fund investing in startups that transform the consumer-goods value chain in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "technology_for_the_consumer_goods_value_chain"
+  ],
+  "official_website": "https://kamayventures.com/",
+  "founder_route": "https://kamayventures.com/",
+  "sources": [
+    {
+      "title": "Investment thesis, portfolio, and application",
+      "url": "https://kamayventures.com/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Kamay Ventures"
+  ]
+}
+---
 # Kamay Ventures
 
 Kamay Ventures is an Argentina-based multi-corporate venture capital fund investing in startups that transform the consumer-goods value chain in Latin America.

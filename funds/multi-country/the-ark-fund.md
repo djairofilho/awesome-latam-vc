@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:the-ark-fund:en",
+  "entity_id": "fund:the-ark-fund",
+  "slug": "the-ark-fund",
+  "name": "The Ark Fund",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "The Ark Fund is an investment organization listed in this directory; its current investment mandate could not be verified.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": null,
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Previously listed source; unavailable during verification",
+      "url": "https://www.arkfund.co/",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "The Ark Fund"
+  ]
+}
+---
 # The Ark Fund
 
 The Ark Fund is an investment organization listed in this directory; its current investment mandate could not be verified.

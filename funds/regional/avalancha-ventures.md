@@ -1,3 +1,50 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:avalancha-ventures:en",
+  "entity_id": "fund:avalancha-ventures",
+  "slug": "avalancha-ventures",
+  "name": "Avalancha Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Avalancha Ventures is an investment organization focused on Technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://avalancha.ventures/",
+  "founder_route": "https://avalancha.ventures/contacto/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://avalancha.ventures/portafolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://avalancha.ventures/contacto/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Avalancha Ventures"
+  ]
+}
+---
 # Avalancha Ventures
 
 Avalancha Ventures is an investment organization focused on Technology in Latin America.

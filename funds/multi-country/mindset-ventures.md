@@ -1,3 +1,62 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:mindset-ventures:en",
+  "entity_id": "fund:mindset-ventures",
+  "slug": "mindset-ventures",
+  "name": "Mindset Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Mindset Ventures is an investment organization focused on B2B technology in Latin America and the United States.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM",
+    "US"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "b2b_technology"
+  ],
+  "official_website": "https://mindset.ventures/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://mindset.ventures/our-companies/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://mindset.ventures/portfolio/alta/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://mindset.ventures/portfolio/lasso-security/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://mindset.ventures/portfolio/zenyard/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Mindset Ventures"
+  ]
+}
+---
 # Mindset Ventures
 
 Mindset Ventures is an investment organization focused on B2B technology in Latin America and the United States.

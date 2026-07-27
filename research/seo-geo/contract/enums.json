@@ -25,7 +25,8 @@
   "region_codes": [
     "LATAM",
     "CARIBBEAN",
-    "GLOBAL"
+    "GLOBAL",
+    "NOT_DISCLOSED"
   ],
   "stages": [
     "angel",

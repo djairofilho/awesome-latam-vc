@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:onevc:en",
+  "entity_id": "fund:onevc",
+  "slug": "onevc",
+  "name": "ONEVC",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "ONEVC is an investment organization focused on Technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.onevc.vc/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Previously listed source; unavailable during verification",
+      "url": "https://www.onevc.vc/",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "ONEVC"
+  ]
+}
+---
 # ONEVC
 
 ONEVC is an investment organization focused on Technology in Latin America.

@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:buentrip-ventures:en",
+  "entity_id": "fund:buentrip-ventures",
+  "slug": "buentrip-ventures",
+  "name": "BuenTrip Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "BuenTrip Ventures invests in software founders transforming Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "b2b_software",
+    "digital_transformation"
+  ],
+  "official_website": "https://www.buentrip.vc/",
+  "founder_route": "https://www.buentrip.vc/",
+  "sources": [
+    {
+      "title": "BuenTrip Ventures",
+      "url": "https://www.buentrip.vc/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "BuenTrip Ventures"
+  ]
+}
+---
 # BuenTrip Ventures
 
 BuenTrip Ventures invests in software founders transforming Latin America.

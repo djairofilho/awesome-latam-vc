@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:anii-emprendimientos-innovadores:en",
+  "entity_id": "public_program:anii-emprendimientos-innovadores",
+  "slug": "anii-emprendimientos-innovadores",
+  "name": "Apoyo a Emprendimientos Innovadores",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "ANR de até 80% e UYU 3 milhões para empreendedores e empresas jovens inovadoras.",
+  "aliases": [],
+  "operator": "[Agencia Nacional de Investigación e Innovación](anii.md) (`agency-anii`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "UY"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://anii.org.uy/apoyos/emprendimientos/49/apoyo-a-emprendimientos-innovadores/",
+  "founder_route": "https://anii.org.uy/apoyos/emprendimientos/49/apoyo-a-emprendimientos-innovadores/",
+  "sources": [
+    {
+      "title": "Apoyo a Emprendimientos Innovadores",
+      "url": "https://anii.org.uy/apoyos/emprendimientos/49/apoyo-a-emprendimientos-innovadores/",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Apoyo a Emprendimientos Innovadores"
+  ]
+}
+---
 # Apoyo a Emprendimientos Innovadores
 
 - **Entity ID:** `program-anii-emprendimientos-innovadores`

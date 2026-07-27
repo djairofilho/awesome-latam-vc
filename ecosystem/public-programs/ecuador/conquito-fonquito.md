@@ -1,3 +1,53 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:conquito-fonquito:en",
+  "entity_id": "public_program:conquito-fonquito",
+  "slug": "conquito-fonquito",
+  "name": "FonQuito",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "A página mantém o processo 2026 em execução após o fechamento das inscrições, prevê seleção em julho e agosto e desembolso a partir de setembro; o nome e a edição anual confirmam a rota recorrente.",
+  "aliases": [
+    "Fondo de Emprendimiento de la Ciudad"
+  ],
+  "operator": "[Corporación de Promoción Económica ConQuito](conquito.md) (`agency-conquito`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "EC"
+  },
+  "countries_covered": [
+    "EC"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://www.conquito.org.ec/fonquito-2026/",
+  "founder_route": "https://www.conquito.org.ec/fonquito-2026/",
+  "sources": [
+    {
+      "title": "FonQuito 2026",
+      "url": "https://www.conquito.org.ec/fonquito-2026/",
+      "kind": "official_program"
+    },
+    {
+      "title": "FonQuito amplía plazo de postulación para capital semilla",
+      "url": "https://www.quitoinforma.gob.ec/2025/05/19/atencion-emprendedores-fonquito-amplia-plazo-de-postulacion-para-capital-semilla/",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "FonQuito"
+  ]
+}
+---
 # FonQuito
 
 - **Entity ID:** `program-conquito-fonquito`

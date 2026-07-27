@@ -27,6 +27,27 @@ def read_jsonl(path: Path) -> list[dict]:
     ]
 
 
+def stable_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+
+
+def profile_sha256(path: Path) -> str:
+    payload = path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    lines = payload.splitlines(keepends=True)
+    if lines and lines[0].strip() == b"---":
+        closing_index = next(
+            (
+                index
+                for index, line in enumerate(lines[1:], start=1)
+                if line.strip() == b"---"
+            ),
+            None,
+        )
+        if closing_index is not None:
+            payload = b"".join(lines[closing_index + 1 :]).lstrip(b"\n")
+    return hashlib.sha256(payload).hexdigest()
+
+
 def load_builder():
     spec = importlib.util.spec_from_file_location(
         "build_angel_publication", ROOT / "build_publication.py"
@@ -181,14 +202,20 @@ class AngelPublicationTests(unittest.TestCase):
             "index_hashes",
         ):
             for relative, expected in self.manifest[group].items():
+                path = REPOSITORY_ROOT / relative
+                actual = (
+                    profile_sha256(path)
+                    if group in {"profile_hashes", "preserved_profile_hashes"}
+                    else stable_sha256(path)
+                )
                 self.assertEqual(
                     expected,
-                    hashlib.sha256((REPOSITORY_ROOT / relative).read_bytes()).hexdigest(),
+                    actual,
                     relative,
                 )
         self.assertEqual(
             self.manifest["batch_artifact_hash"],
-            hashlib.sha256((ROOT / "batches.jsonl").read_bytes()).hexdigest(),
+            stable_sha256(ROOT / "batches.jsonl"),
         )
         for name, expected in self.manifest["source_hashes"].items():
             payload = (CONSOLIDATION / name).read_bytes().replace(b"\r\n", b"\n")

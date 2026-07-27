@@ -1,3 +1,50 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:acolab-ventures:en",
+  "entity_id": "fund:acolab-ventures",
+  "slug": "acolab-ventures",
+  "name": "Açolab Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Açolab Ventures is ArcelorMittal Brasil's corporate venture capital vehicle for startups that can strengthen the steel value chain.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "steel",
+    "construction",
+    "industrial_productivity",
+    "logistics",
+    "digitalization",
+    "sustainability"
+  ],
+  "official_website": "https://brasil.arcelormittal.com/sustentabilidade-inovacao/inovacao/acolab",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Açolab and Açolab Ventures",
+      "url": "https://brasil.arcelormittal.com/sustentabilidade-inovacao/inovacao/acolab",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Açolab Ventures"
+  ]
+}
+---
 # Açolab Ventures
 
 Açolab Ventures is ArcelorMittal Brasil's corporate venture capital vehicle for

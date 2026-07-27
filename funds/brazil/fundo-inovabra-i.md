@@ -1,3 +1,47 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:fundo-inovabra-i:en",
+  "entity_id": "fund:fundo-inovabra-i",
+  "slug": "fundo-inovabra-i",
+  "name": "Fundo inovabra I",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Fundo inovabra I is a proprietary corporate venture capital vehicle of Bradesco, operated within the bank's inovabra ventures investment platform.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "series_a",
+    "series_b"
+  ],
+  "focuses": [
+    "technology_across_financial",
+    "non_financial_sectors"
+  ],
+  "official_website": "https://www.inovabra.com.br/content/inovabra/startups.html",
+  "founder_route": "https://www.inovabra.com.br/content/inovabra/startups.html",
+  "sources": [
+    {
+      "title": "inovabra ventures and Fundo inovabra I",
+      "url": "https://www.inovabra.com.br/content/inovabra/startups.html",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Fundo inovabra I"
+  ]
+}
+---
 # Fundo inovabra I
 
 Fundo inovabra I is a proprietary corporate venture capital vehicle of

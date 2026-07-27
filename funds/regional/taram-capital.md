@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:taram-capital:en",
+  "entity_id": "fund:taram-capital",
+  "slug": "taram-capital",
+  "name": "Taram Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Taram Capital is a Chile-based venture capital fund investing in B2B and AI-first SaaS startups across Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "CL",
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "ai_first_b2b_software",
+    "infrastructure_for_traditional_industries"
+  ],
+  "official_website": "https://www.taramcapital.com/",
+  "founder_route": "https://www.taramcapital.com/",
+  "sources": [
+    {
+      "title": "Taram Capital thesis, portfolio, FAQ, and application",
+      "url": "https://www.taramcapital.com/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Taram Capital"
+  ]
+}
+---
 # Taram Capital
 
 Taram Capital is a Chile-based venture capital fund investing in B2B and AI-first SaaS startups across Latin America.

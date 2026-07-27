@@ -59,14 +59,36 @@ def equivalent_text_hashes(path: Path) -> set[str]:
     }
 
 
+def equivalent_profile_hashes(path: Path) -> set[str]:
+    payload = path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    if payload.startswith(b"---\n"):
+        closing = payload.find(b"\n---\n", 4)
+        if closing != -1:
+            payload = payload[closing + 5 :].lstrip(b"\n")
+    crlf = payload.replace(b"\n", b"\r\n")
+    return {
+        hashlib.sha256(payload).hexdigest(),
+        hashlib.sha256(crlf).hexdigest(),
+    }
+
+
 def check_hashes(
-    mapping: dict[str, str], base: Path, normalize: bool = False
+    mapping: dict[str, str],
+    base: Path,
+    normalize: bool = False,
+    *,
+    body_only: bool = False,
 ) -> list[str]:
     return sorted(
         relative
         for relative, expected in mapping.items()
         if not (base / relative).is_file()
-        or expected not in equivalent_text_hashes(base / relative)
+        or expected
+        not in (
+            equivalent_profile_hashes(base / relative)
+            if body_only
+            else equivalent_text_hashes(base / relative)
+        )
     )
 
 
@@ -246,6 +268,7 @@ def build_report() -> dict:
             **publication_manifest["preserved_profile_hashes"],
         },
         ROOT,
+        body_only=True,
     )
     publication_index_failures = check_hashes(
         publication_manifest["index_hashes"], ROOT

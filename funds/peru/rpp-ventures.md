@@ -1,3 +1,50 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:rpp-ventures:en",
+  "entity_id": "fund:rpp-ventures",
+  "slug": "rpp-ventures",
+  "name": "GRPP Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "GRPP Ventures is Grupo RPP's corporate venture capital arm.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "PE"
+  },
+  "countries_covered": [
+    "PE"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "scalable_technology"
+  ],
+  "official_website": "https://grppventures.pe/",
+  "founder_route": "https://forms.gle/WUpqnhXSrQ6kaLLe9",
+  "sources": [
+    {
+      "title": "Investment model, criteria, portfolio, and application route",
+      "url": "https://grppventures.pe/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Grupo RPP report on a direct startup investment",
+      "url": "https://rpp.pe/economia/economia/rpp-ventures-invertira-en-megabite-la-primera-cadena-de-restaurantes-digital-de-latinoamerica-noticia-1501618",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "GRPP Ventures"
+  ]
+}
+---
 # GRPP Ventures
 
 GRPP Ventures is Grupo RPP's corporate venture capital arm. It invests media

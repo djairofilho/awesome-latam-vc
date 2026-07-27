@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "angel_network:red-angeles-uc:en",
+  "entity_id": "angel_network:red-angeles-uc",
+  "slug": "red-angeles-uc",
+  "name": "Red Ángeles do Centro de Innovación UC",
+  "entity_type": "angel_network",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "The network accepts external founder submissions through its official route.",
+  "aliases": [
+    "Red Ángeles UC"
+  ],
+  "operator": "Red Ángeles do Centro de Innovación UC",
+  "base_geography": {
+    "kind": "country",
+    "code": "CL"
+  },
+  "countries_covered": [
+    "CL"
+  ],
+  "stages": [
+    "angel"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://centrodeinnovacion.uc.cl/red-angeles/",
+  "founder_route": "https://centrodeinnovacion.uc.cl/red-angeles/",
+  "sources": [
+    {
+      "title": "Red Ángeles — Centro de Innovación UC",
+      "url": "https://centrodeinnovacion.uc.cl/red-angeles/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Red Ángeles abre convocatória para investidores e startups — Centro de Innovación UC",
+      "url": "https://centrodeinnovacion.uc.cl/noticias/red-angeles-del-centro-de-innovacion-uc-abre-convocatoria-para-inversionistas-y-startups/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Red Ángeles do Centro de Innovación UC"
+  ]
+}
+---
 # Red Ángeles do Centro de Innovación UC
 
 <!-- angel-network-id: ang-centrodeinnovacion-uc-cl--red-angeles -->

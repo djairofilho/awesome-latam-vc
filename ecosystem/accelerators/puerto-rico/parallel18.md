@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:parallel18:en",
+  "entity_id": "accelerator:parallel18",
+  "slug": "parallel18",
+  "name": "P18",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "P18 is a structured acceleration program operated by Parallel18.",
+  "aliases": [],
+  "operator": "Parallel18",
+  "base_geography": {
+    "kind": "country",
+    "code": "PR"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "PR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://parallel18.com/p18/",
+  "founder_route": "https://parallel18.com/p18/",
+  "sources": [
+    {
+      "title": "P18",
+      "url": "https://parallel18.com/p18/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "P18"
+  ]
+}
+---
 # P18
 
 - **Website:** https://parallel18.com/p18/

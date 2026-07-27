@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:wow:en",
+  "entity_id": "accelerator:wow",
+  "slug": "wow",
+  "name": "WOW Acceleration Program",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "WOW Acceleration Program is a structured acceleration program operated by WOW.",
+  "aliases": [
+    "WOW Aceleradora",
+    "WOW Batch 35"
+  ],
+  "operator": "WOW",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://www.wow.ac/",
+  "founder_route": "https://www.wow.ac/como-funciona",
+  "sources": [
+    {
+      "title": "Como funciona a aceleração",
+      "url": "https://www.wow.ac/como-funciona",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "WOW Acceleration Program"
+  ]
+}
+---
 # WOW Acceleration Program
 
 - **Website:** https://www.wow.ac/

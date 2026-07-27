@@ -1,3 +1,61 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:wayra:en",
+  "entity_id": "fund:wayra",
+  "slug": "wayra",
+  "name": "Wayra",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Wayra is Telefónica's corporate venture capital and open-innovation platform, investing in startups that can generate strategic business with the group.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "BR",
+    "LATAM"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "strategic_technology"
+  ],
+  "official_website": "https://wayra.com/",
+  "founder_route": "https://wayra.com/investment",
+  "sources": [
+    {
+      "title": "About Wayra",
+      "url": "https://wayra.com/about-us",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Wayra investment strategy and startup submission",
+      "url": "https://wayra.com/investment",
+      "kind": "official_application"
+    },
+    {
+      "title": "Vivo Ventures",
+      "url": "https://wayra.com/vivo-ventures",
+      "kind": "official_website"
+    },
+    {
+      "title": "Íope Ventures",
+      "url": "https://wayra.com/iope-ventures",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-25",
+  "protected_terms": [
+    "Wayra"
+  ]
+}
+---
 # Wayra
 
 Wayra is Telefónica's corporate venture capital and open-innovation platform,

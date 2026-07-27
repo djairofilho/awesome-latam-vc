@@ -1,3 +1,57 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "angel_network:br-angels:en",
+  "entity_id": "angel_network:br-angels",
+  "slug": "br-angels",
+  "name": "BR Angels",
+  "entity_type": "angel_network",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "BR Angels receives startup applications and uses screening, evaluation groups, committees, and recurring pitch events.",
+  "aliases": [],
+  "operator": "BR Angels",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR",
+    "GLOBAL",
+    "LATAM"
+  ],
+  "stages": [
+    "angel"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://www.brangels.global/",
+  "founder_route": "https://app.pipefy.com/public/form/sevD52HK",
+  "sources": [
+    {
+      "title": "BR Angels startup journey and application",
+      "url": "https://startup.brangels.com.br/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official startup application",
+      "url": "https://app.pipefy.com/public/form/sevD52HK",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official November 2025 investment activity",
+      "url": "https://brangels.global/greentable-nova-investida-brangels/",
+      "kind": "official_activity"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "BR Angels"
+  ]
+}
+---
 # BR Angels
 
 - **Type:** Private angel-investment network

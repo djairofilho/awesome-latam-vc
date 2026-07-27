@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:raio-capital:en",
+  "entity_id": "fund:raio-capital",
+  "slug": "raio-capital",
+  "name": "Raio Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Raio Capital is a Brazilian venture capital firm investing in early-stage technology companies that improve fundamental value chains.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology_enabled_efficiency_in_fundamental_value_chains"
+  ],
+  "official_website": "https://raio.vc/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Raio Capital website, track record, and contact",
+      "url": "https://raio.vc/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Raio Capital"
+  ]
+}
+---
 # Raio Capital
 
 Raio Capital is a Brazilian venture capital firm investing in early-stage

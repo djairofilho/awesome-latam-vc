@@ -1,3 +1,59 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:utec-ventures:en",
+  "entity_id": "fund:utec-ventures",
+  "slug": "utec-ventures",
+  "name": "UTEC Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "UTEC Ventures is an investment organization focused on Science, technology, and deep tech in Peru and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM",
+    "PE"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "science",
+    "technology",
+    "deep_tech"
+  ],
+  "official_website": "https://utecventures.com/",
+  "founder_route": "https://utecventures.com/startups/aceleradora-uv",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://utecventures.com/portafolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Official website and investment count",
+      "url": "https://utecventures.com/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Accelerator and founder application route",
+      "url": "https://utecventures.com/startups/aceleradora-uv",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "UTEC Ventures"
+  ]
+}
+---
 # UTEC Ventures
 
 UTEC Ventures is an investment organization focused on Science, technology, and deep tech in Peru and Latin America.

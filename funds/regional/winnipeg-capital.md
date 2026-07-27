@@ -1,3 +1,60 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:winnipeg-capital:en",
+  "entity_id": "fund:winnipeg-capital",
+  "slug": "winnipeg-capital",
+  "name": "Winnipeg Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Winnipeg Capital is an investment organization focused on Scalable technology companies in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "scalable_technology_companies"
+  ],
+  "official_website": "https://www.winnipegcapital.com/",
+  "founder_route": "https://www.winnipegcapital.com/en/contact/",
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://www.winnipegcapital.com/en/deals/wc-startup-fund-i/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.winnipegcapital.com/deals/wcstartup-detail/",
+      "kind": "official_website"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://www.winnipegcapital.com/en/about-us/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://www.winnipegcapital.com/en/contact/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Winnipeg Capital"
+  ]
+}
+---
 # Winnipeg Capital
 
 Winnipeg Capital is an investment organization focused on Scalable technology companies in Latin America.

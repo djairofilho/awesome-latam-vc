@@ -1,3 +1,53 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:wollef-ventures-jaguar:en",
+  "entity_id": "fund:wollef-ventures-jaguar",
+  "slug": "wollef-ventures-jaguar",
+  "name": "Wollef Ventures (ex-Jaguar)",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Wollef Ventures (ex-Jaguar) is an investment organization focused on Technology in Latin America.",
+  "aliases": [
+    "Jaguar"
+  ],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://wollefvc.com/",
+  "founder_route": "https://wollefvc.com/contact",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://wollefvc.com/companies",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://wollefvc.com/contact",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Wollef Ventures (ex-Jaguar)"
+  ]
+}
+---
 # Wollef Ventures (ex-Jaguar)
 
 Wollef Ventures (ex-Jaguar) is an investment organization focused on Technology in Latin America.

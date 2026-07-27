@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:kalei-ventures:en",
+  "entity_id": "fund:kalei-ventures",
+  "slug": "kalei-ventures",
+  "name": "Kalei Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Kalei Ventures is an investment organization focused on AI-enabled technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "ai_enabled_technology"
+  ],
+  "official_website": "https://www.kaleiventures.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.kaleiventures.com/#portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.kaleiventures.com/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Kalei Ventures"
+  ]
+}
+---
 # Kalei Ventures
 
 Kalei Ventures is an investment organization focused on AI-enabled technology in Latin America.

@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:ewa-capital:en",
+  "entity_id": "fund:ewa-capital",
+  "slug": "ewa-capital",
+  "name": "EWA Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "EWA Capital invests in early-stage technology companies with a gender-smart approach.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "scalable_technology",
+    "inclusion",
+    "gender_equity"
+  ],
+  "official_website": "https://ewa.capital/",
+  "founder_route": "https://ewa.capital/",
+  "sources": [
+    {
+      "title": "EWA Capital",
+      "url": "https://ewa.capital/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "EWA Capital"
+  ]
+}
+---
 # EWA Capital
 
 EWA Capital invests in early-stage technology companies with a gender-smart

@@ -1,3 +1,57 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:kayyak-ventures:en",
+  "entity_id": "fund:kayyak-ventures",
+  "slug": "kayyak-ventures",
+  "name": "Kayyak Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Kayyak Ventures is an investment organization focused on Technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a",
+    "series_b"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.kayyakventures.com/",
+  "founder_route": "https://www.kayyakventures.com/contact",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.kayyakventures.com/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.kayyakventures.com/home",
+      "kind": "official_website"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://www.kayyakventures.com/contact",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Kayyak Ventures"
+  ]
+}
+---
 # Kayyak Ventures
 
 Kayyak Ventures is an investment organization focused on Technology in Latin America.

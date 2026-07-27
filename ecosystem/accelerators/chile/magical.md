@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:magical:en",
+  "entity_id": "accelerator:magical",
+  "slug": "magical",
+  "name": "Magical Accelerator",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Magical Accelerator is a structured acceleration program operated by Magical Startups.",
+  "aliases": [],
+  "operator": "Magical Startups",
+  "base_geography": {
+    "kind": "country",
+    "code": "CL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://magicalstartups.com/accelerator/",
+  "founder_route": "https://magicalstartups.com/accelerator/",
+  "sources": [
+    {
+      "title": "Magical Accelerator",
+      "url": "https://magicalstartups.com/accelerator/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Magical Accelerator"
+  ]
+}
+---
 # Magical Accelerator
 
 - **Website:** https://magicalstartups.com/accelerator/

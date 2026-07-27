@@ -31,18 +31,28 @@ def read_jsonl(path: Path) -> list[dict]:
     ]
 
 
-def sha256(path: Path) -> str:
+def sha256(path: Path, *, body_only: bool = False) -> str:
     payload = path.read_bytes()
     if path.suffix in TEXT_SUFFIXES:
-        payload = payload.replace(b"\r\n", b"\n")
+        payload = payload.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    if body_only and payload.startswith(b"---\n"):
+        closing = payload.find(b"\n---\n", 4)
+        if closing != -1:
+            payload = payload[closing + 5 :].lstrip(b"\n")
     return hashlib.sha256(payload).hexdigest()
 
 
-def check_hashes(mapping: dict[str, str], base: Path) -> list[str]:
+def check_hashes(
+    mapping: dict[str, str],
+    base: Path,
+    *,
+    body_only: bool = False,
+) -> list[str]:
     return sorted(
         relative
         for relative, expected in mapping.items()
-        if not (base / relative).is_file() or sha256(base / relative) != expected
+        if not (base / relative).is_file()
+        or sha256(base / relative, body_only=body_only) != expected
     )
 
 
@@ -102,7 +112,9 @@ def build_report() -> dict:
         publication_manifest["source_hashes"], CONSOLIDATION
     )
     publication_profile_failures = check_hashes(
-        publication_manifest["profile_hashes"], ROOT
+        publication_manifest["profile_hashes"],
+        ROOT,
+        body_only=True,
     )
     publication_index_failures = check_hashes(
         publication_manifest["index_hashes"], ROOT

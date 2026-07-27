@@ -1,3 +1,47 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:latitud-ventures:en",
+  "entity_id": "fund:latitud-ventures",
+  "slug": "latitud-ventures",
+  "name": "Latitud Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Latitud Ventures is an investment organization focused on Technology, sector agnostic in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://latitud.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://latitud.com/portfolio",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Latitud Ventures"
+  ]
+}
+---
 # Latitud Ventures
 
 Latitud Ventures is an investment organization focused on Technology, sector agnostic in Latin America.

@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:invexor-venture-partners:en",
+  "entity_id": "fund:invexor-venture-partners",
+  "slug": "invexor-venture-partners",
+  "name": "Invexor Venture Partners",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Invexor Venture Partners is a Chile-based venture capital manager investing in early-stage technology startups.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "CL"
+  },
+  "countries_covered": [
+    "CL",
+    "US"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "innovative_technology_startups"
+  ],
+  "official_website": "https://www.invexor.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Invexor investment process and fund metrics",
+      "url": "https://www.invexor.com/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Invexor Venture Partners"
+  ]
+}
+---
 # Invexor Venture Partners
 
 Invexor Venture Partners is a Chile-based venture capital manager investing in early-stage technology startups.

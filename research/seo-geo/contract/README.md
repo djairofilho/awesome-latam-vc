@@ -64,9 +64,19 @@ Entity types are closed to:
 - `public_program`.
 
 Stages, locales, source kinds and geography kinds are defined in `enums.json`.
-Countries use ISO 3166-1 alpha-2 codes. `LATAM`, `CARIBBEAN` and `GLOBAL` are
-the only region sentinels. Focus values use lowercase `snake_case`; they are
-normalized filter keys and never replace the factual wording in the body.
+Countries use ISO 3166-1 alpha-2 codes. `LATAM`, `CARIBBEAN`, `GLOBAL` and
+`NOT_DISCLOSED` are the only region sentinels. `NOT_DISCLOSED` records an
+explicitly absent coverage claim and never substitutes an inferred country.
+`official_website` may be `null` only when the canonical profile explicitly
+states that no website was publicly disclosed. Focus values use lowercase
+`snake_case`; they are normalized filter keys and never replace the factual
+wording in the body.
+
+`sources` preserves source occurrences in the canonical body, including an
+exact repeated occurrence when the visible source list itself contains one.
+Catalog validation requires titles, URLs, order and repetition to correspond
+exactly; generators must not introduce a duplicate that is absent from the
+body.
 
 ## Translation rules
 

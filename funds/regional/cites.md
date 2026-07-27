@@ -1,3 +1,58 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:cites:en",
+  "entity_id": "fund:cites",
+  "slug": "cites",
+  "name": "CITES",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "CITES is an Argentina-based deep-tech company builder and investment manager backing science-based ventures from idea through Series A.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "AR",
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "science_based_deep_tech"
+  ],
+  "official_website": "https://cites-gss.com/",
+  "founder_route": "https://cites-gss.com/",
+  "sources": [
+    {
+      "title": "Investment model and portfolio",
+      "url": "https://cites-gss.com/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official portfolio",
+      "url": "https://cites-gss.com/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "CITES 2024-2025 report",
+      "url": "https://cites-gss.com/app/uploads/2026/01/Reporte-ASG-CITES-2024-2025.pdf",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "CITES"
+  ]
+}
+---
 # CITES
 
 CITES is an Argentina-based deep-tech company builder and investment manager backing science-based ventures from idea through Series A.

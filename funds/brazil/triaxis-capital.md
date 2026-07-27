@@ -1,3 +1,50 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:triaxis-capital:en",
+  "entity_id": "fund:triaxis-capital",
+  "slug": "triaxis-capital",
+  "name": "Triaxis Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Triaxis Capital is a Brazilian venture capital manager investing in technology-based companies through dedicated investment vehicles.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "innovative_technology_based_companies"
+  ],
+  "official_website": "https://www.triaxiscapital.com/",
+  "founder_route": "https://www.triaxiscapital.com/#contato",
+  "sources": [
+    {
+      "title": "Triaxis Capital website, thesis, and portfolio",
+      "url": "https://www.triaxiscapital.com/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "FIP Nordeste Capital Semente website",
+      "url": "https://www.fipnordeste.com/",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Triaxis Capital"
+  ]
+}
+---
 # Triaxis Capital
 
 Triaxis Capital is a Brazilian venture capital manager investing in

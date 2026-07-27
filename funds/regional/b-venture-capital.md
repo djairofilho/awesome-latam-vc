@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:b-venture-capital:en",
+  "entity_id": "fund:b-venture-capital",
+  "slug": "b-venture-capital",
+  "name": "B Venture Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "B Venture Capital is an investment organization focused on Technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.bventure.capital/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.bventure.capital/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.bventure.capital/tesis",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "B Venture Capital"
+  ]
+}
+---
 # B Venture Capital
 
 B Venture Capital is an investment organization focused on Technology in Latin America.

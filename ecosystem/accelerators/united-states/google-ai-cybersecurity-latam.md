@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:google-ai-cybersecurity-latam:en",
+  "entity_id": "accelerator:google-ai-cybersecurity-latam",
+  "slug": "google-ai-cybersecurity-latam",
+  "name": "Google for Startups Accelerator: AI for Cybersecurity Latin America",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Google for Startups Accelerator: AI for Cybersecurity Latin America is a structured acceleration program operated by Google for Startups.",
+  "aliases": [],
+  "operator": "Google for Startups",
+  "base_geography": {
+    "kind": "country",
+    "code": "US"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://blog.google/company-news/outreach-and-initiatives/entrepreneurs/google-for-startups-ai-for-cybersecurity-cohort/",
+  "founder_route": "https://blog.google/company-news/outreach-and-initiatives/entrepreneurs/google-for-startups-ai-for-cybersecurity-cohort/",
+  "sources": [
+    {
+      "title": "Google for Startups Accelerator: AI for Cybersecurity Latin America",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/entrepreneurs/google-for-startups-ai-for-cybersecurity-cohort/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Google for Startups Accelerator: AI for Cybersecurity Latin America"
+  ]
+}
+---
 # Google for Startups Accelerator: AI for Cybersecurity Latin America
 
 - **Website:** https://blog.google/company-news/outreach-and-initiatives/entrepreneurs/google-for-startups-ai-for-cybersecurity-cohort/

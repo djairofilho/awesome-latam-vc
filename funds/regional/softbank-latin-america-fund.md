@@ -1,3 +1,60 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:softbank-latin-america-fund:en",
+  "entity_id": "fund:softbank-latin-america-fund",
+  "slug": "softbank-latin-america-fund",
+  "name": "SoftBank Latin America Fund",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "SoftBank Latin America Fund is an investment organization focused on Technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "growth"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.latinamericafund.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.latinamericafund.com/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://www.latinamericafund.com/about/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://www.latinamericafund.com/es/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://www.latinamericafund.com/pt/portfolio/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "SoftBank Latin America Fund"
+  ]
+}
+---
 # SoftBank Latin America Fund
 
 SoftBank Latin America Fund is an investment organization focused on Technology in Latin America.

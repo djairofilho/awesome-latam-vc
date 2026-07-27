@@ -66,6 +66,12 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def stable_sha256(path: Path) -> str:
+    return hashlib.sha256(
+        path.read_bytes().replace(b"\r\n", b"\n")
+    ).hexdigest()
+
+
 def adjudicate() -> None:
     candidates = read_jsonl(ROOT / "candidates.jsonl")
     evidence = read_jsonl(ROOT / "evidence.jsonl")
@@ -468,7 +474,7 @@ def write_sha256sums() -> None:
         "source-inventory.jsonl",
     )
     (ROOT / "sha256sums.txt").write_text(
-        "".join(f"{sha256(ROOT / name)}  {name}\n" for name in names),
+        "".join(f"{stable_sha256(ROOT / name)}  {name}\n" for name in names),
         encoding="utf-8",
         newline="\n",
     )

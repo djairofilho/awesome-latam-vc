@@ -1,3 +1,57 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:gridx:en",
+  "entity_id": "fund:gridx",
+  "slug": "gridx",
+  "name": "GRIDX",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "GRIDX is a company-building venture fund that turns Latin American bioscience research into startups targeting global markets.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed"
+  ],
+  "focuses": [
+    "life_sciences",
+    "biotech"
+  ],
+  "official_website": "https://www.gridexponential.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "GRIDX investment thesis",
+      "url": "https://www.gridexponential.com/investment-thesis",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "How GRIDX works",
+      "url": "https://www.gridexponential.com/how-it-works",
+      "kind": "official_website"
+    },
+    {
+      "title": "Official portfolio",
+      "url": "https://www.gridexponential.com/portfolio",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-25",
+  "protected_terms": [
+    "GRIDX"
+  ]
+}
+---
 # GRIDX
 
 GRIDX is a company-building venture fund that turns Latin American bioscience

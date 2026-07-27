@@ -1,3 +1,56 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:alaya-capital:en",
+  "entity_id": "fund:alaya-capital",
+  "slug": "alaya-capital",
+  "name": "Alaya Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Alaya Capital is an early-stage venture capital firm investing in Latin American technology teams with regional and global growth ambitions.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "digital_transformation"
+  ],
+  "official_website": "https://alaya-capital.com/",
+  "founder_route": "https://alaya-capital.com/apply-old/",
+  "sources": [
+    {
+      "title": "Alaya investment thesis and application",
+      "url": "https://alaya-capital.com/apply-old/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official portfolio",
+      "url": "https://alaya-capital.com/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Alaya website",
+      "url": "https://alaya-capital.com/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-25",
+  "protected_terms": [
+    "Alaya Capital"
+  ]
+}
+---
 # Alaya Capital
 
 Alaya Capital is an early-stage venture capital firm investing in Latin American

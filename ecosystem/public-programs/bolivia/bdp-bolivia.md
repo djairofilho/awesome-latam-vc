@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:bdp-bolivia:en",
+  "entity_id": "public_program:bdp-bolivia",
+  "slug": "bdp-bolivia",
+  "name": "Banco de Desarrollo Productivo",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "O BDP administra uma rota financeira oficial destinada expressamente a startups bolivianas.",
+  "aliases": [
+    "BDP-SAM"
+  ],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BO"
+  },
+  "countries_covered": [
+    "BO"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://www.bdp.com.bo/",
+  "founder_route": "https://www.bdp.com.bo/fondo-startup/",
+  "sources": [
+    {
+      "title": "Fondo Startup",
+      "url": "https://www.bdp.com.bo/fondo-startup/",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Banco de Desarrollo Productivo"
+  ]
+}
+---
 # Banco de Desarrollo Productivo
 
 - **Entity ID:** `agency-bdp-bolivia`

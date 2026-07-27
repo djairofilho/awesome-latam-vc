@@ -1,3 +1,50 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "funding_platform:a2censo:en",
+  "entity_id": "funding_platform:a2censo",
+  "slug": "a2censo",
+  "name": "a2censo",
+  "entity_type": "funding_platform",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "The platform provides a structured route for founders using these instruments: equity crowdfunding, debt crowdfunding.",
+  "aliases": [],
+  "operator": "Bolsa de Valores de Colombia S.A. (`op-a2censo`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "CO"
+  },
+  "countries_covered": [
+    "CO"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://a2censo.com/",
+  "founder_route": "https://www.bvc.com.co/financia-tu-empresa-en-a2censo",
+  "sources": [
+    {
+      "title": "Birrería Macha lanza campaña de acciones en a2censo — Bolsa de Valores de Colombia",
+      "url": "https://www.bvc.com.co/noticias/birreria-macha-lanza-campana-de-acciones-en-a2censo-para-impulsar-su-expansion-en-bogota-cmnqby2jg123l07isojj7h60l",
+      "kind": "secondary"
+    },
+    {
+      "title": "Resoluciones 2025 — Superintendencia Financiera de Colombia",
+      "url": "https://www.superfinanciera.gov.co/publicaciones/10115461/resoluciones-2025/",
+      "kind": "official_regulator"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "a2censo"
+  ]
+}
+---
 # a2censo
 
 <!-- platform-id: plat-a2censo -->

@@ -1,3 +1,55 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:cmpc-ventures:en",
+  "entity_id": "fund:cmpc-ventures",
+  "slug": "cmpc-ventures",
+  "name": "CMPC Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "CMPC Ventures is the corporate venture capital program of Chile-based forestry and materials company CMPC.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "CL"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "sustainable_packaging",
+    "construction",
+    "wood_applications",
+    "biomaterials",
+    "digital_solutions",
+    "circular_business_models"
+  ],
+  "official_website": "https://www.cmpc.com/innovacion/cmpc-ventures/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "CMPC Ventures thesis and portfolio",
+      "url": "https://www.cmpc.com/innovacion/cmpc-ventures/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "CMPC Ventures investment in Rubi",
+      "url": "https://www.cmpc.com/cmpc-ventures-invierte-en-revolucionaria-empresa-de-manufactura-sostenible/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "CMPC Ventures"
+  ]
+}
+---
 # CMPC Ventures
 
 CMPC Ventures is the corporate venture capital program of Chile-based forestry and materials company CMPC.

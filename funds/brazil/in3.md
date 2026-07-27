@@ -1,3 +1,61 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:in3:en",
+  "entity_id": "fund:in3",
+  "slug": "in3",
+  "name": "IN3",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "IN3 is a Brazilian impact investment manager connecting investors with innovative businesses addressing social and environmental challenges.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "social",
+    "environmental_impact"
+  ],
+  "official_website": "https://intr3s.com.br/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "IN3",
+      "url": "https://intr3s.com.br/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Investment thesis and geography",
+      "url": "https://intr3s.com.br/nossa-atuacao",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Official investments",
+      "url": "https://intr3s.com.br/investidas",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Official IN3 LinkedIn channel",
+      "url": "https://www.linkedin.com/company/in3citi.com/",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "IN3"
+  ]
+}
+---
 # IN3
 
 IN3 is a Brazilian impact investment manager connecting investors with

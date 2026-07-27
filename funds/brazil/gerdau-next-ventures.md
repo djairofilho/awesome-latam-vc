@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:gerdau-next-ventures:en",
+  "entity_id": "fund:gerdau-next-ventures",
+  "slug": "gerdau-next-ventures",
+  "name": "Gerdau Next Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Gerdau Next Ventures is Gerdau Next's corporate venture capital and startup acceleration initiative for developing businesses adjacent to Gerdau.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "construction",
+    "mobility",
+    "sustainability",
+    "technology"
+  ],
+  "official_website": "https://www2.gerdau.com.br/wp-content/uploads/sites/2/2025/05/sobre_gerdaunext.pdf",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Official Gerdau Next presentation",
+      "url": "https://www2.gerdau.com.br/wp-content/uploads/sites/2/2025/05/sobre_gerdaunext.pdf",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Gerdau Next Ventures"
+  ]
+}
+---
 # Gerdau Next Ventures
 
 Gerdau Next Ventures is Gerdau Next's corporate venture capital and startup

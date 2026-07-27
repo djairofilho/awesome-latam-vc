@@ -1,3 +1,63 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:adn-vc:en",
+  "entity_id": "fund:adn-vc",
+  "slug": "adn-vc",
+  "name": "ADN.VC",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "ADN.VC is a United States-based venture capital firm investing in early-stage fintech and proptech startups across Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "AR",
+    "CL",
+    "CO",
+    "LATAM",
+    "MX",
+    "PE"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "fintech",
+    "proptech",
+    "contech"
+  ],
+  "official_website": "https://adn.vc/",
+  "founder_route": "https://adn.vc/",
+  "sources": [
+    {
+      "title": "Investment thesis and pitch channel",
+      "url": "https://adn.vc/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official portfolio",
+      "url": "https://adn.vc/portafolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fund I overview",
+      "url": "https://adn.vc/%F0%9F%A7%AC-adn-vc-newsletter-015/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "ADN.VC"
+  ]
+}
+---
 # ADN.VC
 
 ADN.VC is a United States-based venture capital firm investing in early-stage fintech and proptech startups across Latin America.

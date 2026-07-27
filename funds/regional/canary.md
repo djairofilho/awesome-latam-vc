@@ -1,3 +1,62 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:canary:en",
+  "entity_id": "fund:canary",
+  "slug": "canary",
+  "name": "Canary",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Canary is an operator-led venture capital firm focused on becoming the first institutional investor in technology companies founded in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "sector_agnostic"
+  ],
+  "official_website": "https://www.canary.com.br/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "About Canary",
+      "url": "https://www.canary.com.br/about-us/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Canary investment FAQ",
+      "url": "https://old.canary.com.br/faq/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Canary manifesto",
+      "url": "https://old.canary.com.br/manifest/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Current portfolio page",
+      "url": "https://www.canary.com.br/portfolio/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-25",
+  "protected_terms": [
+    "Canary"
+  ]
+}
+---
 # Canary
 
 Canary is an operator-led venture capital firm focused on becoming the first

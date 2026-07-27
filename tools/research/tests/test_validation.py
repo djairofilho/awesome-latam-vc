@@ -15,6 +15,7 @@ from validate import (  # noqa: E402
     fund_profile_paths,
     git_changed_paths,
     is_fund_profile_path,
+    profile_body_changed,
     ordering_inversions,
     parse_index,
     validate_internal_links,
@@ -79,6 +80,65 @@ class GitChangedPathTests(unittest.TestCase):
 
 
 class ProfileValidationTests(unittest.TestCase):
+    def test_front_matter_only_migration_does_not_count_as_body_change(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            profile = root / "funds" / "brazil" / "fund.md"
+            profile.parent.mkdir(parents=True)
+            profile.write_text("# Fund\n\nLegacy body.\n", encoding="utf-8")
+            subprocess.run(
+                ["git", "init"],
+                cwd=root,
+                check=True,
+                capture_output=True,
+            )
+            subprocess.run(
+                ["git", "add", "funds/brazil/fund.md"],
+                cwd=root,
+                check=True,
+                capture_output=True,
+            )
+            subprocess.run(
+                [
+                    "git",
+                    "-c",
+                    "user.name=Test",
+                    "-c",
+                    "user.email=test@example.com",
+                    "commit",
+                    "-m",
+                    "base",
+                ],
+                cwd=root,
+                check=True,
+                capture_output=True,
+            )
+            profile.write_text(
+                '---\n{"schema_version": "1.0"}\n---\n'
+                "# Fund\n\nLegacy body.\n",
+                encoding="utf-8",
+            )
+            self.assertFalse(
+                profile_body_changed(
+                    root,
+                    "HEAD",
+                    "funds/brazil/fund.md",
+                )
+            )
+
+            profile.write_text(
+                '---\n{"schema_version": "1.0"}\n---\n'
+                "# Fund\n\nChanged body.\n",
+                encoding="utf-8",
+            )
+            self.assertTrue(
+                profile_body_changed(
+                    root,
+                    "HEAD",
+                    "funds/brazil/fund.md",
+                )
+            )
+
     def test_distinguishes_fund_profiles_from_directory_readme(self) -> None:
         self.assertTrue(is_fund_profile_path("funds/brazil/fund.md"))
         self.assertFalse(is_fund_profile_path("funds/README.md"))

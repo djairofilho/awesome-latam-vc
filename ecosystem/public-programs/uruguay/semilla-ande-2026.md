@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:semilla-ande-2026:en",
+  "entity_id": "public_program:semilla-ande-2026",
+  "slug": "semilla-ande-2026",
+  "name": "Semilla ANDE 2026",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "ANR de até UYU 1 milhão, execução de 12 meses e ventanilla com cortes periódicos.",
+  "aliases": [],
+  "operator": "[Agencia Nacional de Desarrollo](ande.md) (`agency-ande`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "UY"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://www.ande.org.uy/convocatorias/item/semilla-ande-2026.html",
+  "founder_route": "https://www.ande.org.uy/convocatorias/item/semilla-ande-2026.html",
+  "sources": [
+    {
+      "title": "Semilla ANDE 2026",
+      "url": "https://www.ande.org.uy/convocatorias/item/semilla-ande-2026.html",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Semilla ANDE 2026"
+  ]
+}
+---
 # Semilla ANDE 2026
 
 - **Entity ID:** `program-semilla-ande-2026`

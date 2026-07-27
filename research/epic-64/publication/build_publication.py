@@ -98,6 +98,39 @@ def sha256(payload: bytes) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
+def split_front_matter(payload: bytes) -> tuple[bytes, bytes]:
+    normalized = payload.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    lines = normalized.splitlines(keepends=True)
+    if not lines or lines[0].strip() != b"---":
+        return b"", normalized
+    closing_index = next(
+        (
+            index
+            for index, line in enumerate(lines[1:], start=1)
+            if line.strip() == b"---"
+        ),
+        None,
+    )
+    if closing_index is None:
+        return b"", normalized
+    return (
+        b"".join(lines[: closing_index + 1]),
+        b"".join(lines[closing_index + 1 :]).lstrip(b"\n"),
+    )
+
+
+def profile_payload(path: Path, body: bytes) -> bytes:
+    front_matter = b""
+    if path.is_file():
+        front_matter, _existing_body = split_front_matter(path.read_bytes())
+    return front_matter + body.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
+def profile_sha256(payload: bytes) -> str:
+    _front_matter, body = split_front_matter(payload)
+    return sha256(body)
+
+
 def load_frozen_queue() -> tuple[
     list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]
 ]:
@@ -340,7 +373,11 @@ def build_outputs() -> dict[Path, bytes]:
     outputs: dict[Path, bytes] = {}
     for candidate in eligible:
         relative = Path(PROFILE_PATHS[candidate["platform_id"]])
-        outputs[REPOSITORY_ROOT / relative] = profile_bytes(candidate, evidence_by_id)
+        path = REPOSITORY_ROOT / relative
+        outputs[path] = profile_payload(
+            path,
+            profile_bytes(candidate, evidence_by_id),
+        )
     outputs[PUBLICATION_ROOT / "README.md"] = index_bytes(eligible, "en")
     outputs[PUBLICATION_ROOT / "README.pt.md"] = index_bytes(eligible, "pt")
     outputs[PUBLICATION_ROOT / "README.es.md"] = index_bytes(eligible, "es")
@@ -386,7 +423,7 @@ def build_outputs() -> dict[Path, bytes]:
     outputs[HERE / "batches.jsonl"] = batches_payload
 
     profile_hashes = {
-        path.relative_to(REPOSITORY_ROOT).as_posix(): sha256(payload)
+        path.relative_to(REPOSITORY_ROOT).as_posix(): profile_sha256(payload)
         for path, payload in outputs.items()
         if path.suffix == ".md" and "funding-platforms" in path.parts
         and path.name not in {"README.md", "README.pt.md", "README.es.md"}
@@ -479,7 +516,13 @@ def main() -> int:
     drift = []
     for path, payload in outputs.items():
         if args.check:
-            if not path.is_file() or path.read_bytes() != payload:
+            current = (
+                path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+                if path.is_file()
+                else None
+            )
+            expected = payload.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+            if current != expected:
                 drift.append(path.relative_to(REPOSITORY_ROOT).as_posix())
         else:
             path.parent.mkdir(parents=True, exist_ok=True)

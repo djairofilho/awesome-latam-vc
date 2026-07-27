@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:morro-ventures:en",
+  "entity_id": "fund:morro-ventures",
+  "slug": "morro-ventures",
+  "name": "Morro Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Morro Ventures is a Puerto Rico-based early-stage investor serving the Caribbean and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "CARIBBEAN",
+    "LATAM",
+    "PR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology_companies_serving_caribbean_markets"
+  ],
+  "official_website": "https://morroventures.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Morro Ventures",
+      "url": "https://morroventures.com/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Morro Ventures Caribbean Fund",
+      "url": "https://morroventures.com/morro-fund-ii/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Morro Ventures"
+  ]
+}
+---
 # Morro Ventures
 
 Morro Ventures is a Puerto Rico-based early-stage investor serving the

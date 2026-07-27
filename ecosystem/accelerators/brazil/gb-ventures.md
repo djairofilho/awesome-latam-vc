@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:gb-ventures:en",
+  "entity_id": "accelerator:gb-ventures",
+  "slug": "gb-ventures",
+  "name": "Programa de Aceleração GB Ventures",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Programa de Aceleração GB Ventures is a structured acceleration program operated by Grupo Boticário.",
+  "aliases": [
+    "Aceleração Grupo Boticário",
+    "GB Ventures 6ª edição"
+  ],
+  "operator": "Grupo Boticário",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://ventures.grupoboticario.com.br/aceleracao",
+  "founder_route": "https://ventures.grupoboticario.com.br/aceleracao",
+  "sources": [
+    {
+      "title": "Selecionadas Programa Aceleração",
+      "url": "https://ventures.grupoboticario.com.br/novidades/startupsselecionadas2026",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Programa de Aceleração GB Ventures"
+  ]
+}
+---
 # Programa de Aceleração GB Ventures
 
 - **Website:** https://ventures.grupoboticario.com.br/aceleracao

@@ -1,3 +1,55 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "funding_platform:eqseed:en",
+  "entity_id": "funding_platform:eqseed",
+  "slug": "eqseed",
+  "name": "EqSeed",
+  "entity_type": "funding_platform",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "The platform provides a structured route for founders using these instruments: convertible instruments.",
+  "aliases": [],
+  "operator": "EqSeed S.A. (`op-eqseed`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://eqseed.com/",
+  "founder_route": "https://eqseed.com/captar",
+  "sources": [
+    {
+      "title": "Cadastro de plataformas de crowdfunding — Comissão de Valores Mobiliários",
+      "url": "https://dados.cvm.gov.br/dados/CROWDFUNDING/CAD/DADOS/cad_crowdfunding.zip",
+      "kind": "official_regulator"
+    },
+    {
+      "title": "Captar Investimentos com a EqSeed — EqSeed",
+      "url": "https://eqseed.com/captar",
+      "kind": "official_application"
+    },
+    {
+      "title": "Investir - EqSeed — EqSeed",
+      "url": "https://eqseed.com/investir",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "EqSeed"
+  ]
+}
+---
 # EqSeed
 
 <!-- platform-id: plat-eqseed -->

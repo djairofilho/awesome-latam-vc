@@ -1,3 +1,61 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:indicator-capital:en",
+  "entity_id": "fund:indicator-capital",
+  "slug": "indicator-capital",
+  "name": "Indicator Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Indicator Capital is an investment organization focused on Deep tech in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "deep_tech"
+  ],
+  "official_website": "https://indicator.capital/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://indicator.capital/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://indicator.capital/thesis",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://indicator.capital/about",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://indicator.capital/start",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Indicator Capital"
+  ]
+}
+---
 # Indicator Capital
 
 Indicator Capital is an investment organization focused on Deep tech in Latin America.

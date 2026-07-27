@@ -1,3 +1,61 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:polymath-ventures:en",
+  "entity_id": "fund:polymath-ventures",
+  "slug": "polymath-ventures",
+  "name": "Polymath Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Polymath Ventures combines a venture studio, a venture capital fund, and private credit for companies serving Latin America's emerging middle class.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "human_centered_businesses"
+  ],
+  "official_website": "https://www.polymathv.com/",
+  "founder_route": "https://www.polymathv.com/contact-us",
+  "sources": [
+    {
+      "title": "Current venture studio and VC model",
+      "url": "https://www.polymathv.com/",
+      "kind": "official_website"
+    },
+    {
+      "title": "External Seed fund and direct-investment history",
+      "url": "https://next.polymathv.com/about-us",
+      "kind": "secondary"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://www.polymathv.com/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact page",
+      "url": "https://www.polymathv.com/contact-us",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Polymath Ventures"
+  ]
+}
+---
 # Polymath Ventures
 
 Polymath Ventures combines a venture studio, a venture capital fund, and private

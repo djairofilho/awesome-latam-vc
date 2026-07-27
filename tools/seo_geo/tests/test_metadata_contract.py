@@ -126,6 +126,33 @@ class MetadataContractTests(unittest.TestCase):
     def test_cli_validator_accepts_valid_directory(self) -> None:
         self.assertEqual(VALIDATE.validate_paths([VALID_EXAMPLES]), [])
 
+    def test_catalog_discovery_excludes_directory_indexes(self) -> None:
+        paths = VALIDATE.catalog_profile_paths()
+        self.assertTrue(paths)
+        self.assertTrue(all(not path.name.startswith("README") for path in paths))
+        self.assertTrue(
+            all(
+                "funds" in path.parts or "ecosystem" in path.parts
+                for path in paths
+            )
+        )
+
+    def test_null_website_requires_visible_non_disclosure(self) -> None:
+        source = next(
+            profile
+            for profile in self.valid_profiles
+            if profile.metadata["entity_type"] == "funding_platform"
+        )
+        metadata = copy.deepcopy(source.metadata)
+        metadata["official_website"] = None
+        profile = VALIDATE.Profile(
+            path=source.path,
+            metadata=metadata,
+            body=source.body,
+        )
+        errors = VALIDATE.validate_catalog_correspondence(profile)
+        self.assertIn("null official_website", "\n".join(errors))
+
 
 if __name__ == "__main__":
     unittest.main()

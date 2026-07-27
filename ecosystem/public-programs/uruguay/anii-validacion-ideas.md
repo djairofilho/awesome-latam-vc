@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:anii-validacion-ideas:en",
+  "entity_id": "public_program:anii-validacion-ideas",
+  "slug": "anii-validacion-ideas",
+  "name": "Validación de Ideas de Negocios",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Ventanilla permanente para validar ideias de negócio inovadoras.",
+  "aliases": [],
+  "operator": "[Agencia Nacional de Investigación e Innovación](anii.md) (`agency-anii`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "UY"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://anii.org.uy/apoyos/emprendimientos/51/validacion-de-ideas-de-negocios/",
+  "founder_route": "https://anii.org.uy/apoyos/emprendimientos/51/validacion-de-ideas-de-negocios/",
+  "sources": [
+    {
+      "title": "Validación de Ideas de Negocios",
+      "url": "https://anii.org.uy/apoyos/emprendimientos/51/validacion-de-ideas-de-negocios/",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Validación de Ideas de Negocios"
+  ]
+}
+---
 # Validación de Ideas de Negocios
 
 - **Entity ID:** `program-anii-validacion-ideas`

@@ -1,3 +1,50 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "angel_network:urca-angels:en",
+  "entity_id": "angel_network:urca-angels",
+  "slug": "urca-angels",
+  "name": "Urca Angels",
+  "entity_type": "angel_network",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "`contact@urcaangels.com`",
+  "aliases": [],
+  "operator": "Urca Angels",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "angel"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://www.urcaangels.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Urca Angels overview, criteria, portfolio, and pitch process",
+      "url": "https://www.urcaangels.com/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official April 2025 investment activity",
+      "url": "https://pt.linkedin.com/posts/urcaangels_coalize-de-solu%C3%A7%C3%B5es-para-gest%C3%A3o-de-rh-e-activity-7322380522268123137-9Up6",
+      "kind": "official_activity"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Urca Angels"
+  ]
+}
+---
 # Urca Angels
 
 - **Type:** Alumni-oriented angel-investment network

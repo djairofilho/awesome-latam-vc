@@ -1,3 +1,68 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:amaz:en",
+  "entity_id": "fund:amaz",
+  "slug": "amaz",
+  "name": "AMAZ",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "AMAZ is an impact accelerator and investor dedicated to businesses that create positive outcomes for the Amazon forest and its communities.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "amazon_bioeconomy",
+    "forest_conservation",
+    "climate",
+    "local_income_generation"
+  ],
+  "official_website": "https://amaz.org.br/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "AMAZ homepage and current portfolio highlights",
+      "url": "https://amaz.org.br/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Official portfolio",
+      "url": "https://amaz.org.br/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "2025 business call and investment terms",
+      "url": "https://amaz.org.br/2025/02/26/amaz-abre-inscricoes-para-a-chamada-de-negocios-2025-e-celebra-cinco-anos-de-impacto-na-amazonia/",
+      "kind": "official_website"
+    },
+    {
+      "title": "AmidoMato investment and first-fund close",
+      "url": "https://amaz.org.br/2026/07/01/amidomato-entra-para-o-portfolio-da-amaz-com-solucao-inovadora-para-a-cadeia-do-babacu/",
+      "kind": "official_website"
+    },
+    {
+      "title": "AMAZ structure and recent activity",
+      "url": "https://amaz.org.br/2026/07/07/amaz-destaca-financiamento-e-apoio-integrado-a-sociobioeconomia-na-semana-do-clima-da-amazonia/",
+      "kind": "official_activity"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "AMAZ"
+  ]
+}
+---
 # AMAZ
 
 AMAZ is an impact accelerator and investor dedicated to businesses that create

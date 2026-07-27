@@ -1,3 +1,50 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "funding_platform:play-business:en",
+  "entity_id": "funding_platform:play-business",
+  "slug": "play-business",
+  "name": "Play Business",
+  "entity_type": "funding_platform",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "The platform provides a structured route for founders using these instruments: revenue share.",
+  "aliases": [],
+  "operator": "Play Business, S.A.P.I. de C.V., Institución de Financiamiento Colectivo (`op-play-business`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "MX"
+  },
+  "countries_covered": [
+    "MX"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://playbusiness.mx/",
+  "founder_route": "https://playbusiness.mx/paginas/makers_landing",
+  "sources": [
+    {
+      "title": "Makers — Play Business — Play Business",
+      "url": "https://playbusiness.mx/paginas/makers_landing",
+      "kind": "official_application"
+    },
+    {
+      "title": "Instituciones de Financiamiento Colectivo — Comisión Nacional Bancaria y de Valores",
+      "url": "https://www.cnbv.gob.mx/Entidades-Autorizadas/Paginas/FinanciamientoColectivo.aspx",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Play Business"
+  ]
+}
+---
 # Play Business
 
 <!-- platform-id: plat-play-business -->

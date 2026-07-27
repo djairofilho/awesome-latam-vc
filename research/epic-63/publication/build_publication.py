@@ -101,6 +101,43 @@ def sha256(payload: bytes) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
+def split_front_matter(payload: bytes) -> tuple[bytes, bytes]:
+    normalized = payload.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    lines = normalized.splitlines(keepends=True)
+    if not lines or lines[0].strip() != b"---":
+        return b"", normalized
+    closing_index = next(
+        (
+            index
+            for index, line in enumerate(lines[1:], start=1)
+            if line.strip() == b"---"
+        ),
+        None,
+    )
+    if closing_index is None:
+        return b"", normalized
+    return (
+        b"".join(lines[: closing_index + 1]),
+        b"".join(lines[closing_index + 1 :]).lstrip(b"\n"),
+    )
+
+
+def profile_bytes_with_front_matter(path: Path, body: bytes) -> bytes:
+    front_matter = b""
+    if path.is_file():
+        front_matter, _existing_body = split_front_matter(path.read_bytes())
+    return front_matter + body.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
+def profile_sha256(payload: bytes) -> str:
+    _front_matter, body = split_front_matter(payload)
+    return sha256(body)
+
+
+def stable_payload(payload: bytes) -> bytes:
+    return payload.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
 def json_bytes(value: Any) -> bytes:
     return (
         json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2) + "\n"
@@ -282,8 +319,9 @@ def build_outputs() -> dict[Path, bytes]:
     outputs: dict[Path, bytes] = {}
     for row in pending_rows:
         candidate = candidate_by_id[row["network_id"]]
-        outputs[REPOSITORY_ROOT / row["canonical_profile"]] = profile_bytes(
-            candidate, evidence_by_id
+        path = REPOSITORY_ROOT / row["canonical_profile"]
+        outputs[path] = profile_bytes_with_front_matter(
+            path, profile_bytes(candidate, evidence_by_id)
         )
     for language, filename in (
         ("en", "README.md"),
@@ -323,14 +361,14 @@ def build_outputs() -> dict[Path, bytes]:
     outputs[HERE / "batches.jsonl"] = batch_payload
 
     profile_hashes = {
-        path.relative_to(REPOSITORY_ROOT).as_posix(): sha256(payload)
+        path.relative_to(REPOSITORY_ROOT).as_posix(): profile_sha256(payload)
         for path, payload in outputs.items()
         if path.suffix == ".md"
         and path.name not in {"README.md", "README.pt.md", "README.es.md"}
         and "angel-networks" in path.parts
     }
     preserved_hashes = {
-        row["canonical_profile"]: sha256(
+        row["canonical_profile"]: profile_sha256(
             (REPOSITORY_ROOT / row["canonical_profile"]).read_bytes()
         )
         for row in preserved_rows
@@ -426,7 +464,10 @@ def main() -> int:
     drift = []
     for path, payload in outputs.items():
         if args.check:
-            if not path.is_file() or path.read_bytes() != payload:
+            if (
+                not path.is_file()
+                or stable_payload(path.read_bytes()) != stable_payload(payload)
+            ):
                 drift.append(path.relative_to(REPOSITORY_ROOT).as_posix())
         else:
             path.parent.mkdir(parents=True, exist_ok=True)

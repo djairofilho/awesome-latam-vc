@@ -1,3 +1,64 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:picus-capital:en",
+  "entity_id": "fund:picus-capital",
+  "slug": "picus-capital",
+  "name": "Picus Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Picus Capital is an investment organization focused on Technology, sector agnostic in Global, including Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://www.picuscap.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.picuscap.com/portfolio/?_countries=latin-america",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.picuscap.com/pre-seed-investing/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.picuscap.com/seed-series-a-investing/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://www.picuscap.com/news_category/portfolio-news/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Picus Capital"
+  ]
+}
+---
 # Picus Capital
 
 Picus Capital is an investment organization focused on Technology, sector agnostic in Global, including Latin America.

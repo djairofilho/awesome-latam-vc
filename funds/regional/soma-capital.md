@@ -1,3 +1,57 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:soma-capital:en",
+  "entity_id": "fund:soma-capital",
+  "slug": "soma-capital",
+  "name": "Soma Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Soma Capital is an investment organization focused on Technology, sector agnostic in Global, including Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "LATAM"
+  ],
+  "stages": [
+    "seed"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://somacap.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://somacap.com/portfolio?tab=all&region=LatAm",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://somacap.com/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://somacap.com/about",
+      "kind": "official_thesis"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Soma Capital"
+  ]
+}
+---
 # Soma Capital
 
 Soma Capital is an investment organization focused on Technology, sector agnostic in Global, including Latin America.

@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:innovalab:en",
+  "entity_id": "accelerator:innovalab",
+  "slug": "innovalab",
+  "name": "Aceleradora InnovaLab Mujeres Tech",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Aceleradora InnovaLab Mujeres Tech is a structured acceleration program operated by Cámara de Comercio de Bogotá.",
+  "aliases": [],
+  "operator": "Cámara de Comercio de Bogotá",
+  "base_geography": {
+    "kind": "country",
+    "code": "CO"
+  },
+  "countries_covered": [
+    "CO"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://www.ccb.org.co/es/servicios/haz-crecer-tu-empresa/innovacion-empresarial/aceleradora-innovalab",
+  "founder_route": "https://www.ccb.org.co/es/servicios/haz-crecer-tu-empresa/innovacion-empresarial/aceleradora-innovalab",
+  "sources": [
+    {
+      "title": "Aceleradora InnovaLab Mujeres Tech",
+      "url": "https://www.ccb.org.co/es/servicios/haz-crecer-tu-empresa/innovacion-empresarial/aceleradora-innovalab",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Aceleradora InnovaLab Mujeres Tech"
+  ]
+}
+---
 # Aceleradora InnovaLab Mujeres Tech
 
 - **Website:** https://www.ccb.org.co/es/servicios/haz-crecer-tu-empresa/innovacion-empresarial/aceleradora-innovalab

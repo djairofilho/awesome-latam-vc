@@ -1,3 +1,58 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:quona-capital:en",
+  "entity_id": "fund:quona-capital",
+  "slug": "quona-capital",
+  "name": "Quona Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Quona Capital is an investment organization focused on Fintech and financial inclusion in Emerging markets, including Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a",
+    "series_b"
+  ],
+  "focuses": [
+    "fintech",
+    "financial_inclusion"
+  ],
+  "official_website": "https://quona.com/",
+  "founder_route": "https://quona.com/contact/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://quona.com/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://quona.com/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://quona.com/contact/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Quona Capital"
+  ]
+}
+---
 # Quona Capital
 
 Quona Capital is an investment organization focused on Fintech and financial inclusion in Emerging markets, including Latin America.

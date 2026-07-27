@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:parallel18-ventures:en",
+  "entity_id": "fund:parallel18-ventures",
+  "slug": "parallel18-ventures",
+  "name": "Parallel18 Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Parallel18 Ventures is the investment platform within Parallel18 for startups scaling through Puerto Rico.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "PR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology_driven_startups_with_global_scaling_potential"
+  ],
+  "official_website": "https://parallel18.com/ventures/",
+  "founder_route": "https://parallel18.com/ventures/",
+  "sources": [
+    {
+      "title": "Parallel18 Ventures",
+      "url": "https://parallel18.com/ventures/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Parallel18 Ventures"
+  ]
+}
+---
 # Parallel18 Ventures
 
 Parallel18 Ventures is the investment platform within Parallel18 for startups

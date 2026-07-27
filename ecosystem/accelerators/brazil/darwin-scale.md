@@ -1,3 +1,47 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:darwin-scale:en",
+  "entity_id": "accelerator:darwin-scale",
+  "slug": "darwin-scale",
+  "name": "Darwin Scale",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Darwin Scale is a structured acceleration program operated by Darwin Startups.",
+  "aliases": [
+    "Darwin Startups"
+  ],
+  "operator": "Darwin Startups",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://www.darwinstartups.com/darwinscale",
+  "founder_route": "https://www.darwinstartups.com/darwinscale",
+  "sources": [
+    {
+      "title": "Darwin Scale",
+      "url": "https://www.darwinstartups.com/darwinscale",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Darwin Scale"
+  ]
+}
+---
 # Darwin Scale
 
 - **Website:** https://www.darwinstartups.com/darwinscale

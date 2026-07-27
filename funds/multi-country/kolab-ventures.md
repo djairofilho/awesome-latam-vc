@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:kolab-ventures:en",
+  "entity_id": "fund:kolab-ventures",
+  "slug": "kolab-ventures",
+  "name": "Kolab Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Kolab Ventures is an investment organization focused on AI, fintech, and cross-border technology in Mexico and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM",
+    "MX"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "ai",
+    "fintech",
+    "cross_border_technology"
+  ],
+  "official_website": "https://kolabventures.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://kolabventures.com/portfolio",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Kolab Ventures"
+  ]
+}
+---
 # Kolab Ventures
 
 Kolab Ventures is an investment organization focused on AI, fintech, and cross-border technology in Mexico and Latin America.

@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:nxtp-ventures:en",
+  "entity_id": "fund:nxtp-ventures",
+  "slug": "nxtp-ventures",
+  "name": "NXTP Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "NXTP Ventures is an investment organization focused on B2B technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "b2b_technology"
+  ],
+  "official_website": "https://www.nxtp.vc/",
+  "founder_route": "https://www.nxtp.vc/contact",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.nxtp.vc/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://www.nxtp.vc/contact",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "NXTP Ventures"
+  ]
+}
+---
 # NXTP Ventures
 
 NXTP Ventures is an investment organization focused on B2B technology in Latin America.

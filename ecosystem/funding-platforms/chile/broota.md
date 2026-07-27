@@ -1,3 +1,55 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "funding_platform:broota:en",
+  "entity_id": "funding_platform:broota",
+  "slug": "broota",
+  "name": "Broota",
+  "entity_type": "funding_platform",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "The platform provides a structured route for founders using these instruments: equity crowdfunding, convertible instruments.",
+  "aliases": [],
+  "operator": "BROOTA PFC SpA (`op-broota`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "CL"
+  },
+  "countries_covered": [
+    "CL"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://inversion.broota.com/",
+  "founder_route": "https://inversion.broota.com/levantar-capital/",
+  "sources": [
+    {
+      "title": "Preguntas frecuentes — Broota",
+      "url": "https://inversion.broota.com/preguntas-frecuentes/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Levantar capital — Broota",
+      "url": "https://inversion.broota.com/levantar-capital/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Blanco — Broota",
+      "url": "https://inversion.broota.com/campaign/blanco/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Broota"
+  ]
+}
+---
 # Broota
 
 <!-- platform-id: plat-broota -->
