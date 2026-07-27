@@ -2,7 +2,8 @@
 
 This directory covers organizations that can help founders access capital but
 are not venture capital funds. They are intentionally kept outside the main fund
-tables and do not count toward the project's total of 101 VC profiles.
+tables and do not count toward the project's total of 100 direct-investor
+profiles.
 
 ## Categories
 
@@ -25,5 +26,10 @@ An entry must:
 Descriptions must distinguish the organization from the investors, vehicles, or
 public programs available through it. Do not infer investment terms or present
 an observed pattern as an official mandate.
+
+Angel clubs and networks belong here even when their members invest directly.
+The main fund index is reserved for organizations that deploy capital through a
+recurring institutional, corporate, co-investment, accelerator, or studio
+investment program.
 
 This directory is a curated starting point, not an exhaustive directory.
