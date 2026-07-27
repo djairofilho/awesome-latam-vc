@@ -25,7 +25,7 @@ Publicar o lote determinístico 2 de programas públicos.
 
 ## Aceite
 
-- [ ] Publicar somente os dez IDs listados.
-- [ ] Preservar agência, benefício, atividade e fontes oficiais.
-- [ ] Não generalizar disponibilidade, valores ou datas.
-- [ ] Passar o verificador da publicação e a validação central.
+- [x] Publicar somente os dez IDs listados.
+- [x] Preservar agência, benefício, atividade e fontes oficiais.
+- [x] Não generalizar disponibilidade, valores ou datas.
+- [x] Passar o verificador da publicação e a validação central.

@@ -25,7 +25,7 @@ Publicar o lote determinístico 1 de programas públicos.
 
 ## Aceite
 
-- [ ] Publicar somente os dez IDs listados.
-- [ ] Preservar aliases, programas vinculados e fontes oficiais.
-- [ ] Não publicar chamadas como perfis.
-- [ ] Passar o verificador da publicação e a validação central.
+- [x] Publicar somente os dez IDs listados.
+- [x] Preservar aliases, programas vinculados e fontes oficiais.
+- [x] Não publicar chamadas como perfis.
+- [x] Passar o verificador da publicação e a validação central.

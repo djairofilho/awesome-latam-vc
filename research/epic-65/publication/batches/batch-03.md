@@ -24,7 +24,7 @@ Publicar o lote determinístico 3 de programas públicos.
 
 ## Aceite
 
-- [ ] Publicar somente os nove IDs listados.
-- [ ] Preservar agência, benefício, atividade, chamadas e fontes oficiais.
-- [ ] Não apresentar chamada fechada ou futura como aberta.
-- [ ] Passar o verificador da publicação e a validação central.
+- [x] Publicar somente os nove IDs listados.
+- [x] Preservar agência, benefício, atividade, chamadas e fontes oficiais.
+- [x] Não apresentar chamada fechada ou futura como aberta.
+- [x] Passar o verificador da publicação e a validação central.
