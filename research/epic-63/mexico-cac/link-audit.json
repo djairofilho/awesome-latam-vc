@@ -1,0 +1,146 @@
+[
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "barrilete.vc",
+    "url": "https://www.barrilete.vc/",
+    "status": 200,
+    "final_url": "https://www.barrilete.vc/",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "beltraide.bz",
+    "url": "https://beltraide.bz/",
+    "status": 200,
+    "final_url": "https://beltraide.bz/",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "carib-export.com",
+    "url": "https://content.carib-export.com/resources/funding/angel-investing/caribbean-business-angel-network/",
+    "status": null,
+    "final_url": null,
+    "result": "network-error",
+    "error": "fetch failed"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "ccsn.org.ni",
+    "url": "https://www.ccsn.org.ni/",
+    "status": null,
+    "final_url": null,
+    "result": "network-error",
+    "error": "fetch failed"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "ciudaddelsaber.org",
+    "url": "https://ciudaddelsaber.org/historia",
+    "status": 200,
+    "final_url": "https://ciudaddelsaber.org/historia",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "costaricaangels.com",
+    "url": "https://costaricaangels.com/",
+    "status": null,
+    "final_url": null,
+    "result": "network-error",
+    "error": "fetch failed"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "enlaces.org.do",
+    "url": "https://enlaces.org.do/preguntas-frecuentes/",
+    "status": 200,
+    "final_url": "https://enlaces.org.do/preguntas-frecuentes/",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "firstangelscaribbean.com",
+    "url": "https://firstangelscaribbean.com/investor-faq/",
+    "status": 200,
+    "final_url": "https://firstangelscaribbean.com/investor-faq/",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "hondurasdigitalchallenge.com",
+    "url": "https://hondurasdigitalchallenge.com/",
+    "status": 200,
+    "final_url": "https://hondurasdigitalchallenge.com/",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "innovacion.gob.sv",
+    "url": "https://www.innovacion.gob.sv/",
+    "status": 200,
+    "final_url": "https://www.innovacion.gob.sv/",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "linkedin.com",
+    "url": "https://www.linkedin.com/company/costa-rica-angels",
+    "status": 200,
+    "final_url": "https://www.linkedin.com/company/costa-rica-angels",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "parquetec.org",
+    "url": "https://www.parquetec.org/general-7",
+    "status": 200,
+    "final_url": "https://www.parquetec.org/general-7",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "trigen.ventures",
+    "url": "https://www.trigen.ventures/",
+    "status": 200,
+    "final_url": "https://www.trigen.ventures/",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "ventureclublatam.com",
+    "url": "https://ventureclublatam.com/",
+    "status": 200,
+    "final_url": "https://ventureclublatam.com/",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "win.gt",
+    "url": "https://win.gt/",
+    "status": 200,
+    "final_url": "https://win.gt/",
+    "result": "ok",
+    "error": null
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "winverz.com",
+    "url": "https://winverz.com/",
+    "status": 200,
+    "final_url": "https://winverz.com/",
+    "result": "ok",
+    "error": null
+  }
+]
