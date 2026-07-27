@@ -58,9 +58,10 @@ respostas 401, 403, 405 e 429 são bloqueios alcançáveis; 404 e outros erros H
 quebram o gate; timeout, DNS e cadeia TLS inválida ficam como não verificáveis,
 pois não demonstram sozinhos que o conteúdo deixou de existir.
 
-Na auditoria ao vivo, 36 dos 39 links responderam HTTP 200. O portal argentino
-de chamadas expirou por timeout e os dois links do MIEM não puderam ser
-verificados pela cadeia TLS local. Não houve link HTTP quebrado.
+Na auditoria final ao vivo, 36 dos 39 links responderam HTTP 200. O portal
+argentino de chamadas respondeu 403, bloqueado mas alcançável, e os dois links
+do MIEM não puderam ser verificados pela cadeia TLS local. Não houve link HTTP
+quebado.
 
 Esta issue não cria nem publica perfis. Todos os campos `canonical_profile`
 permanecem nulos.
