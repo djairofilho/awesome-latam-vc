@@ -26,7 +26,7 @@ test("directory component exposes keyboard and assistive-technology states", () 
   assert.match(component, /type="search"/);
   assert.match(component, /type="checkbox"/);
   assert.match(component, /type="reset"/);
-  assert.match(component, /role="status"/);
+  assert.match(component, /type="submit"/);
   assert.match(component, /aria-live="polite"/);
   assert.match(component, /aria-atomic="true"/);
   assert.match(component, /aria-busy="false"/);

@@ -1,6 +1,11 @@
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import {
+  existsSync,
+  readdirSync,
+  readFileSync,
+  statSync,
+} from "node:fs";
 import { join, relative } from "node:path";
 
 const root = process.cwd();
@@ -136,6 +141,24 @@ const sourceProfileCount = profileRoots
 const entityDocument = JSON.parse(
   readFileSync(join(root, "data", "entities.json"), "utf8"),
 );
+const profileSlug = (entity) =>
+  entity.source_profile.split("/").at(-1).replace(/\.md$/, "");
+const profilePages = files(dist)
+  .filter((path) => /[\\/]profiles[\\/].+[\\/]index\.html$/.test(path))
+  .map((path) => ({
+    path,
+    html: readFileSync(path, "utf8"),
+  }));
+const indexedProfileCounts = Object.fromEntries(
+  profilePages
+    .filter(({ html }) => html.includes("data-pagefind-body"))
+    .reduce((counts, { html }) => {
+      const language = html.match(/<html lang="([^"]+)"/)?.[1].toLowerCase();
+      assert(language, "an indexed profile page has no document language");
+      counts.set(language, (counts.get(language) ?? 0) + 1);
+      return counts;
+    }, new Map()),
+);
 const websiteGraph = jsonLd(productionHtml);
 const catalogGraph = jsonLd(catalogHtml);
 const catalogTypes = catalogGraph["@graph"].map((node) => node["@type"]);
@@ -224,11 +247,82 @@ assert(
   "site profile count and structured export count differ",
 );
 assert(
-  ["en", "es", "pt-br"].every(
-    (locale) => pagefindEntry.languages?.[locale]?.hash,
-  ),
-  "Pagefind must emit separate indexes for EN, PT-BR, and ES",
+  JSON.stringify(Object.keys(pagefindEntry.languages).sort()) ===
+    JSON.stringify(Object.keys(indexedProfileCounts).sort()),
+  "Pagefind languages must match the locales with reviewed profile bodies",
 );
+for (const [language, count] of Object.entries(indexedProfileCounts)) {
+  assert(
+    pagefindEntry.languages[language]?.hash &&
+      pagefindEntry.languages[language]?.page_count === count,
+    `${language} Pagefind index does not match its reviewed profile pages`,
+  );
+}
+assert(
+  pagefindEntry.languages.en?.page_count === sourceProfileCount,
+  "the canonical English Pagefind index must contain every profile",
+);
+const sampleSlug = profileSlug(entityDocument.entities[0]);
+const englishProfile = routeHtml("en", "profiles", sampleSlug);
+const portugueseFallbackProfile = routeHtml(
+  "pt-br",
+  "profiles",
+  sampleSlug,
+);
+assert(
+  englishProfile.includes("data-pagefind-body") &&
+    !englishProfile.includes('name="robots" content="noindex'),
+  "canonical English profiles must be indexable by Pagefind and robots",
+);
+assert(
+  !portugueseFallbackProfile.includes("data-pagefind-body") &&
+    portugueseFallbackProfile.includes(
+      'name="robots" content="noindex, nofollow"',
+    ) &&
+    portugueseFallbackProfile.includes(
+      `rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/en/profiles/${sampleSlug}/"`,
+    ),
+  "untranslated profile fallbacks must remain outside search and canonicalize to English",
+);
+assert(
+  profilePages.length === sourceProfileCount * Object.keys(localeRoutes).length,
+  "every canonical profile must have a navigable route in every locale",
+);
+const expectedCountries = new Set(
+  entityDocument.entities
+    .flatMap((entity) => [
+      entity.base_geography?.code,
+      ...(entity.countries_covered ?? []),
+    ])
+    .filter((code) => /^[A-Z]{2}$/.test(code)),
+);
+for (const segment of Object.values(localeRoutes)) {
+  for (const country of expectedCountries) {
+    assert(
+      existsSync(
+        join(dist, segment, "countries", country.toLowerCase(), "index.html"),
+      ),
+      `${segment} is missing the non-empty ${country} country landing`,
+    );
+  }
+  for (const category of [
+    "fund",
+    "accelerator",
+    "angel_network",
+    "funding_platform",
+    "public_program",
+  ]) {
+    assert(
+      existsSync(join(dist, segment, "categories", category, "index.html")),
+      `${segment} is missing the non-empty ${category} category landing`,
+    );
+  }
+  assert(
+    !existsSync(join(dist, segment, "stages")) &&
+      !existsSync(join(dist, segment, "focuses")),
+    `${segment} emitted stage or focus landings without editorial introductions`,
+  );
+}
 assert(
   JSON.stringify(websiteGraph["@graph"].map((node) => node["@type"])) ===
     JSON.stringify(["WebSite"]),
