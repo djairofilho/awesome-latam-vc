@@ -8,6 +8,7 @@ import {
   type Category,
 } from "../lib/catalog";
 import { withBase } from "../lib/paths.mjs";
+import { webSiteJsonLd } from "../lib/structured-data.mjs";
 
 const profiles = (await getCollection("profiles")).map(catalogItem);
 const counts = Object.fromEntries(
@@ -23,6 +24,7 @@ const countries = new Set(profiles.map((profile) => profile.country));
   title="Awesome LatAm VC · The open funding directory"
   description="An open, source-backed directory of venture funds and startup funding programs across Latin America."
   canonicalPath="/"
+  structuredData={[webSiteJsonLd()]}
 >
   <section class="hero">
     <div class="hero-copy">

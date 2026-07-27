@@ -5,6 +5,7 @@ on:
     paths:
       - "funds/**"
       - "ecosystem/**"
+      - "data/**"
       - "src/**"
       - "public/**"
       - "scripts/**"
