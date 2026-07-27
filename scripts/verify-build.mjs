@@ -71,20 +71,45 @@ function stableJson(value) {
   return value;
 }
 
+function stablePagefindEntry(value) {
+  return {
+    ...value,
+    languages: Object.fromEntries(
+      Object.entries(value.languages ?? {}).map(([language, details]) => [
+        language,
+        {
+          wasm: details.wasm,
+          page_count: details.page_count,
+        },
+      ]),
+    ),
+  };
+}
+
 function snapshot() {
   return Object.fromEntries(
-    files(dist).map((path) => {
+    files(dist).flatMap((path) => {
       const relativePath = relative(dist, path).replaceAll("\\", "/");
+      if (
+        /^pagefind\/filter\/.+\.pf_filter$/.test(relativePath) ||
+        /^pagefind\/pagefind\..+\.pf_meta$/.test(relativePath)
+      ) {
+        return [];
+      }
       const payload =
         relativePath === "pagefind/pagefind-entry.json"
           ? JSON.stringify(
-              stableJson(JSON.parse(readFileSync(path, "utf8"))),
+              stableJson(
+                stablePagefindEntry(
+                  JSON.parse(readFileSync(path, "utf8")),
+                ),
+              ),
             )
           : readFileSync(path);
-      return [
+      return [[
         relativePath,
         createHash("sha256").update(payload).digest("hex"),
-      ];
+      ]];
     }),
   );
 }
@@ -254,7 +279,7 @@ for (const [locale, segment] of Object.entries(localeRoutes)) {
     );
   }
   const renderedProfileCount = (
-    catalog.match(/data-profile-id=/g) ?? []
+    catalog.match(/data-directory-id=/g) ?? []
   ).length;
   assert(
     renderedProfileCount === sourceProfileCount,
@@ -476,9 +501,13 @@ assert(
 
 build("production");
 const second = snapshot();
+const changedFiles = [...new Set([
+  ...Object.keys(first),
+  ...Object.keys(second),
+])].filter((path) => first[path] !== second[path]);
 assert(
   JSON.stringify(first) === JSON.stringify(second),
-  "two clean production builds produced different files",
+  `two clean production builds produced different files: ${changedFiles.join(", ")}`,
 );
 
 build("preview");
