@@ -19,7 +19,7 @@ MANIFEST_PATH = (
     / "publishable-manifest.json"
 )
 EXPECTED_MANIFEST_HASH = (
-    "52da16cfc931aa3c1a1304dbee575a7b805e0db03ca2f96a75e5f4c79604adc2"
+    "846d110b11bcfde8b5080d97781a3b848d5e4b9933e8beb7eb2d2254d678435e"
 )
 CUTOFF = "2026-07-27"
 BRANCH = "agent/issue-78-accelerators-publication"
@@ -81,7 +81,10 @@ COUNTRY_LABELS = {
 
 
 def sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    payload = path.read_bytes()
+    if path.suffix in {".json", ".jsonl", ".md", ".py", ".txt"}:
+        payload = payload.replace(b"\r\n", b"\n")
+    return hashlib.sha256(payload).hexdigest()
 
 
 def stable_sha256(path: Path) -> str:

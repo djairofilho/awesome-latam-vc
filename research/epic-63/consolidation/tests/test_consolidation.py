@@ -202,9 +202,21 @@ class AngelConsolidationTests(unittest.TestCase):
             Counter({"pending-publication": 6, "already-published": 5}),
             Counter(item["publication_status"] for item in self.queue),
         )
+        publication_batches = ROOT.parent / "publication" / "batches.jsonl"
+        published_by_issue_87 = (
+            {
+                profile["network_id"]
+                for batch in read_jsonl(publication_batches)
+                for profile in batch["profiles"]
+            }
+            if publication_batches.is_file()
+            else set()
+        )
         for item in self.queue:
             path = REPOSITORY / item["canonical_profile"]
             if item["publication_status"] == "already-published":
+                self.assertTrue(path.is_file())
+            elif item["network_id"] in published_by_issue_87:
                 self.assertTrue(path.is_file())
             else:
                 self.assertFalse(path.exists())
