@@ -1,20 +1,21 @@
 ---
 import type { Category } from "../lib/catalog";
-import { categoryLabels } from "../lib/catalog";
-import { withBase } from "../lib/paths.mjs";
 
 interface Props {
   counts: Record<Category, number>;
+  labels: Record<Category, string>;
+  catalogHref: string;
+  ariaLabel: string;
 }
 
-const { counts } = Astro.props;
+const { counts, labels, catalogHref, ariaLabel } = Astro.props;
 ---
 
-<ul class="category-list" aria-label="Catalog categories">
+<ul class="category-list" aria-label={ariaLabel}>
   {
-    Object.entries(categoryLabels).map(([category, label], index) => (
+    Object.entries(labels).map(([category, label], index) => (
       <li>
-        <a href={`${withBase("/catalog/")}#${category}`}>
+        <a href={`${catalogHref}#${category}`}>
           <span class="category-number" aria-hidden="true">
             {String(index + 1).padStart(2, "0")}
           </span>
