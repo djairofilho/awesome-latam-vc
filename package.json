@@ -16,6 +16,7 @@
     "a11y": "html-validate \"dist/**/*.html\"",
     "seo-audit": "node scripts/verify-seo.mjs",
     "smoke": "node scripts/smoke-site.mjs",
+    "smoke:production": "node scripts/smoke-production.mjs",
     "audit:release": "node scripts/audit-release.mjs",
     "audit:lighthouse": "node scripts/audit-lighthouse.mjs",
     "verify-build": "node scripts/verify-build.mjs",
