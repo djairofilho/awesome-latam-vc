@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "issue": 108,
+  "cutoff_date": "2026-07-27",
+  "query_count": 30,
+  "queries_per_locale": {
+    "en": 10,
+    "pt-BR": 10,
+    "es": 10
+  },
+  "measurement": {
+    "mechanism": "web_search_sample",
+    "provider": "OpenAI web search",
+    "location": null,
+    "location_reason": "The search mechanism did not expose a configurable or reported location.",
+    "rank_tracking": false,
+    "generative_answers_measured": false
+  },
+  "project_url_observed_count": 0,
+  "limitations": [
+    "The returned results are a sample and not a complete search index.",
+    "Absence from a sampled query does not prove that a URL is not indexed.",
+    "Result order and availability can vary by time, location, language, account and provider.",
+    "Generative results are non-deterministic and were not measured in this web-search run.",
+    "Internal readiness targets are not traffic, ranking or citation forecasts."
+  ],
+  "repeat": {
+    "required_inputs": [
+      "queries.jsonl",
+      "repository-state.json",
+      "kpis.jsonl"
+    ],
+    "instructions": [
+      "Preserve query text, locale and intent.",
+      "Run every query through the declared mechanism.",
+      "Record provider, effective location when available, UTC date, result state and observed project URL.",
+      "Store a representative non-project URL only when results are returned.",
+      "Append a new versioned run; do not overwrite prior observations.",
+      "Validate the bundle with python research/seo-geo/baseline/validate.py."
+    ]
+  }
+}

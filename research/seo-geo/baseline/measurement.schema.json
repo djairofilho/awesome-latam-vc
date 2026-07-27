@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/seo-geo/baseline/measurement.schema.json",
+  "title": "SEO/GEO query measurement",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "query",
+    "language",
+    "locale",
+    "intent",
+    "country",
+    "stage",
+    "sector",
+    "organization_type",
+    "mechanism",
+    "provider",
+    "location",
+    "measured_on",
+    "result_state",
+    "project_url_found",
+    "observed_url",
+    "limitations"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(en|pt-BR|es)-[0-9]{2}$"
+    },
+    "query": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language": {
+      "enum": [
+        "en",
+        "pt-BR",
+        "es"
+      ]
+    },
+    "locale": {
+      "enum": [
+        "en",
+        "pt-BR",
+        "es"
+      ]
+    },
+    "intent": {
+      "enum": [
+        "broad_discovery",
+        "country",
+        "stage",
+        "sector",
+        "organization_type",
+        "project_name"
+      ]
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stage": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sector": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "organization_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mechanism": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "measured_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "result_state": {
+      "enum": [
+        "results_returned_project_not_observed",
+        "no_matching_project_result_observed",
+        "project_result_observed",
+        "measurement_failed"
+      ]
+    },
+    "project_url_found": {
+      "type": "boolean"
+    },
+    "observed_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
