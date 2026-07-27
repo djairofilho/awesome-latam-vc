@@ -18,7 +18,6 @@ KIND_TO_FILENAME = {
     "sources": "source-inventory.jsonl",
 }
 ID_FIELD_BY_KIND = {
-    "candidates": "candidate_id",
     "coverage": "coverage_id",
     "evidence": "evidence_id",
     "sources": "source_id",
@@ -50,6 +49,14 @@ def _record_key(kind: str, record: dict[str, Any]) -> str:
     if kind == "manifest":
         record_type = record.get("record_type")
         field = "run_id" if record_type == "run" else "task_id"
+    elif kind == "candidates":
+        for candidate_field in ("candidate_id", "network_id"):
+            value = record.get(candidate_field)
+            if isinstance(value, str) and value:
+                return f"{kind}:{value}"
+        raise ValueError(
+            "candidates record is missing string key candidate_id or network_id"
+        )
     else:
         field = ID_FIELD_BY_KIND[kind]
     value = record.get(field)
