@@ -6,20 +6,25 @@ Krealo is an investment organization focused on Financial technology in Latin Am
 
 - **Website:** https://www.krealo.pe/
 - **Fund type:** Corporate venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Financial technology
 - **Geography:** Latin America
 - **Initial check:** Not publicly disclosed in the reviewed sources
-- **Investment role:** Not publicly disclosed in the reviewed sources
-- **Business models:** Technology-enabled companies; specific B2B/B2C constraints not publicly disclosed
-- **Portfolio size:** 14 companies captured in the local project dataset; this is not an official portfolio count
+- **Investment role:** Minority or controlling investor, depending on the opportunity
+- **Business models:** Financial services, insurance, health, financial infrastructure, and connected-commerce technology
+- **Portfolio size:** 16 startups, according to the official website
 - **Selected companies:** Akua, Aviva, Culqi, Datamart, Finerio Connect
-- **Submit a startup:** Not publicly disclosed in the reviewed sources
+- **Submit a startup:** [Share a pitch](https://www.krealo.pe/)
 
 ## Declared thesis
 
-The reviewed source presents Krealo as investing in Financial technology across Latin America, with entry at Seed and Series A. Details not stated by the fund are marked as not publicly disclosed rather than inferred from portfolio composition.
+Krealo is Credicorp's corporate venture capital arm. It invests in and supports
+founders transforming financial services in Latin America, with an emphasis on
+regional ambition and opportunities that complement Credicorp's current or
+future business lines.
 
 ## Portfolio signals
 
@@ -27,7 +32,8 @@ The local project dataset contains 14 companies associated with Krealo. Its most
 
 ## Sources
 
+- [Investment thesis, portfolio count, and pitch route](https://www.krealo.pe/)
 - [Portfolio](https://www.krealo.pe/portafolio)
-- [Fund website](https://www.krealo.pe/nosotros)
+- [Credicorp corporate filing describing Krealo's investment model](https://inversionistas.grupocredicorp.com/static-files/737be5e1-5cfe-4cc9-9a83-13825ab1f445)
 
 **Last verified:** 2026-07-26

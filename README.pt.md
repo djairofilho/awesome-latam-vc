@@ -73,7 +73,7 @@ O índice foi otimizado para comparação rápida. Todos os perfis de fundos usa
 | [Honey Island Capital](funds/brazil/honey-island-capital.md) | Não divulgado publicamente | Fintech e tecnologia | Brasil |
 | [Indicator Capital](funds/brazil/indicator-capital.md) | Pre-seed e Seed | Deep tech | América Latina |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed e Seed | Software e tecnologia | Brasil |
-| [Itau Ventures](funds/brazil/itau-ventures.md) | Não divulgado publicamente | Serviços financeiros e tecnologias adjacentes | Brasil e América Latina |
+| [Itaú Ventures](funds/brazil/itau-ventures.md) | Não divulgado publicamente | Serviços financeiros e tecnologias adjacentes | Brasil e América Latina |
 | [KPTL](funds/brazil/kptl.md) | Multiestágio | Deep tech, saúde, bioeconomia e tecnologia | Brasil |
 | [Monashees](funds/brazil/monashees.md) | Não divulgado publicamente | Tecnologia | América Latina para o mundo |
 | [Oria Capital](funds/brazil/oria-capital.md) | Não divulgado publicamente | Software B2B | Brasil |
@@ -97,10 +97,10 @@ O índice foi otimizado para comparação rápida. Todos os perfis de fundos usa
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [Axon Partners + Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | Não divulgado publicamente | Tecnologia e inovação estratégica | Colômbia e América Latina |
+| [Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | Não divulgado publicamente | Tecnologia para serviços públicos | Colômbia e América Latina |
 | [QAPU Ventures](funds/colombia/qapu-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
 | [Velum Ventures](funds/colombia/velum-ventures.md) | Seed | Tecnologia | Colômbia e América Latina |
-| [Veronorte](funds/colombia/veronorte.md) | Não divulgado publicamente | Inovação corporativa e fundos de venture capital | Colômbia e América Latina |
+| [Veronorte](funds/colombia/veronorte.md) | Multiestágio | Sustentabilidade e bem-estar | América Latina |
 
 ## México
 
@@ -114,7 +114,7 @@ O índice foi otimizado para comparação rápida. Todos os perfis de fundos usa
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
 | [EMA Ventures](funds/peru/ema-ventures.md) | Pre-seed e Seed | Tecnologia e empresas lideradas por mulheres | América Latina hispânica |
-| [RPP Ventures](funds/peru/rpp-ventures.md) | Não divulgado publicamente | Mídia, conteúdo e tecnologia | Peru |
+| [GRPP Ventures](funds/peru/rpp-ventures.md) | Não divulgado publicamente | Tecnologia escalável | Peru |
 | [UTEC Ventures](funds/peru/utec-ventures.md) | Pre-seed e Seed | Ciência, tecnologia e deep tech | Peru e América Latina |
 | [Winnipeg Capital](funds/peru/winnipeg-capital.md) | Não divulgado publicamente | Empresas de tecnologia escaláveis | América Latina |
 | [AVP Ventures](funds/peru/avp-ventures.md) | Seed | Tecnologia | Peru e América Latina |
@@ -133,7 +133,7 @@ O índice foi otimizado para comparação rápida. Todos os perfis de fundos usa
 | [FJ Labs](funds/multi-country/fj-labs.md) | Pre-seed e Seed | Marketplaces e efeitos de rede | Global |
 | [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Pre-seed e Seed | Tecnologia, agnóstico a setores | Global, incluindo a América Latina |
 | [GRIDX](funds/multi-country/gridx.md) | Pre-seed | Ciências da vida e biotecnologia | América Latina para o mundo |
-| [Grupo Boticario Ventures](funds/multi-country/grupo-boticario-ventures.md) | Não divulgado publicamente | Beleza e varejo | Brasil e América Latina |
+| [Grupo Boticário Ventures](funds/multi-country/grupo-boticario-ventures.md) | Seed e Série A | Beleza e varejo | Brasil e global |
 | [Igah Ventures (Patria)](funds/multi-country/igah-ventures-patria.md) | Multiestágio | Empresas de alto crescimento | Brasil e América Latina |
 | [Impact Ventures PSM](funds/multi-country/impact-ventures-psm.md) | Seed e Série A | Empreendedorismo de impacto | México e América Latina |
 | [Infinite Capital](funds/multi-country/infinite-capital.md) | Pre-seed e Seed | Ciência e engenharia de fronteira | Global |

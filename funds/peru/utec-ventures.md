@@ -6,6 +6,8 @@ UTEC Ventures is an investment organization focused on Science, technology, and 
 
 - **Website:** https://utecventures.com/
 - **Fund type:** Accelerator and venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Science, technology, and deep tech
@@ -13,13 +15,15 @@ UTEC Ventures is an investment organization focused on Science, technology, and 
 - **Initial check:** Not publicly disclosed in the reviewed sources
 - **Investment role:** Not publicly disclosed in the reviewed sources
 - **Business models:** Deep tech and science- or engineering-led companies
-- **Portfolio size:** 42 companies captured in the local project dataset; this is not an official portfolio count
+- **Portfolio size:** More than 46 startups invested, according to the official website
 - **Selected companies:** Agros, Bildin, Coderhouse, Compadre, Cuentología
-- **Submit a startup:** Not publicly disclosed in the reviewed sources
+- **Submit a startup:** [UTEC Ventures accelerator](https://utecventures.com/startups/aceleradora-uv)
 
 ## Declared thesis
 
-The reviewed source presents UTEC Ventures as investing in Science, technology, and deep tech across Peru and Latin America, with entry at Pre-seed and Seed. Details not stated by the fund are marked as not publicly disclosed rather than inferred from portfolio composition.
+UTEC Ventures presents itself as the first investor in technology companies
+built by first-time founders in Latin America. Its public accelerator page is
+the route for founders seeking investment and support.
 
 ## Portfolio signals
 
@@ -28,8 +32,7 @@ The local project dataset contains 42 companies associated with UTEC Ventures. I
 ## Sources
 
 - [Portfolio](https://utecventures.com/portafolio)
-- [Fund website](https://utecventures.com/startups/femlab)
-- [Fund website](https://utecventures.com/startups/la-mezcladora)
-- [Fund website](https://utecventures.com/startups/aceleradora-cimientos)
+- [Official website and investment count](https://utecventures.com/)
+- [Accelerator and founder application route](https://utecventures.com/startups/aceleradora-uv)
 
 **Last verified:** 2026-07-26

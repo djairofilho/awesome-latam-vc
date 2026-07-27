@@ -7,6 +7,8 @@ research into startups targeting global markets.
 
 - **Website:** https://www.gridexponential.com/
 - **Fund type:** Venture builder and venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Pre-seed
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Life sciences & biotech

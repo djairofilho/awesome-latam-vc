@@ -6,6 +6,8 @@ Darwin Startups is an investment organization focused on Technology startups in 
 
 - **Website:** https://www.darwinstartups.com/
 - **Fund type:** Accelerator and venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology startups
@@ -13,13 +15,16 @@ Darwin Startups is an investment organization focused on Technology startups in 
 - **Initial check:** Not publicly disclosed in the reviewed sources
 - **Investment role:** Not publicly disclosed in the reviewed sources
 - **Business models:** Technology-enabled companies; specific B2B/B2C constraints not publicly disclosed
-- **Portfolio size:** 77 companies captured in the local project dataset; this is not an official portfolio count
+- **Portfolio size:** 100 startups invested, according to the official website
 - **Selected companies:** 1ss Bank, 4MDG, Alto Qi, Avanter, Beaver
-- **Submit a startup:** [Contact or application page](https://www.darwinstartups.com/contato)
+- **Submit a startup:** [Darwin startup community and active programs](https://www.darwinstartups.com/startups)
 
 ## Declared thesis
 
-The reviewed source presents Darwin Startups as investing in Technology startups across Brazil, with entry at Pre-seed and Seed. Details not stated by the fund are marked as not publicly disclosed rather than inferred from portfolio composition.
+Darwin Startups describes itself as a national accelerator focused on
+acceleration, investment, and entrepreneur development. Its startup page
+reports investment-backed acceleration cohorts and provides a public route for
+startups to join its community and active programs.
 
 ## Portfolio signals
 
@@ -28,7 +33,8 @@ The local project dataset contains 77 companies associated with Darwin Startups.
 ## Sources
 
 - [Portfolio](https://www.darwinstartups.com/portfolio)
-- [Fund website](https://www.darwinstartups.com/startups)
+- [Programs for startups and official investment count](https://www.darwinstartups.com/startups)
+- [Program and application terms](https://www.darwinstartups.com/ds-termos-de-uso)
 - [Contact or application page](https://www.darwinstartups.com/contato)
 
 **Last verified:** 2026-07-26

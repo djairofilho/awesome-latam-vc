@@ -6,20 +6,24 @@ Ventiur is an investment organization focused on Technology startups in Brazil.
 
 - **Website:** https://ventiur.net/
 - **Fund type:** Accelerator and venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Technology startups
 - **Geography:** Brazil
 - **Initial check:** Not publicly disclosed in the reviewed sources
-- **Investment role:** Not publicly disclosed in the reviewed sources
+- **Investment role:** Investor through vehicles structured or managed by Ventiur, sometimes with corporate venture partners
 - **Business models:** Technology-enabled companies; specific B2B/B2C constraints not publicly disclosed
 - **Portfolio size:** 79 companies captured in the local project dataset; this is not an official portfolio count
 - **Selected companies:** Agrointeli, AgroPago, Allexo, Alloy, Armatore
-- **Submit a startup:** Not publicly disclosed in the reviewed sources
+- **Submit a startup:** [Startup investment route](https://ventiur.net/)
 
 ## Declared thesis
 
-The reviewed source presents Ventiur as investing in Technology startups across Brazil, with entry at Pre-seed and Seed. Details not stated by the fund are marked as not publicly disclosed rather than inferred from portfolio composition.
+Ventiur states that it accelerates and invests in startups. Startup
+applications may be analyzed for investment by vehicles structured or managed
+by Ventiur, including opportunities involving its corporate venture partners.
 
 ## Portfolio signals
 
@@ -28,6 +32,7 @@ The local project dataset contains 79 companies associated with Ventiur. Its mos
 ## Sources
 
 - [Portfolio](https://ventiur.net/#portfolio)
-- [Fund website](https://ventiur.net/)
+- [Investment thesis and startup route](https://ventiur.net/)
+- [Terms for startup applications](https://ventiur.net/termosdeuso)
 
 **Last verified:** 2026-07-26
