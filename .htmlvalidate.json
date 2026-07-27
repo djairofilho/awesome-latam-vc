@@ -1,7 +1,14 @@
 {
   "extends": ["html-validate:recommended", "html-validate:document"],
   "rules": {
+    "form-dup-name": [
+      "error",
+      {
+        "shared": ["radio", "checkbox", "button", "reset", "submit"]
+      }
+    ],
     "long-title": ["error", { "maxlength": 70 }],
-    "require-sri": "off"
+    "require-sri": "off",
+    "valid-id": ["error", { "relaxed": true }]
   }
 }

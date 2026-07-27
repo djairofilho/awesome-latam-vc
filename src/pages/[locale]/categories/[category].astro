@@ -1,0 +1,80 @@
+---
+import { getCollection } from "astro:content";
+import ProfileLinkList from "../../../components/ProfileLinkList.astro";
+import type { Locale } from "../../../i18n/ui";
+import { strings } from "../../../i18n/ui";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import {
+  categories,
+  localizedCatalogItems,
+  type Category,
+} from "../../../lib/catalog";
+import {
+  categoryRouteSuffix,
+  directoryRecordForProfile,
+} from "../../../lib/directory-routes.mjs";
+import {
+  localeDetails,
+  locales,
+  localizedRoute,
+} from "../../../lib/i18n.mjs";
+import { breadcrumbListJsonLd } from "../../../lib/structured-data.mjs";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("profiles");
+  return (locales as Locale[]).flatMap((locale) => {
+    const profiles = localizedCatalogItems(entries, locale);
+    return categories.flatMap((category) => {
+      const matching = profiles.filter(
+        (profile) => profile.category === category,
+      );
+      return matching.length
+        ? [{
+            params: {
+              locale: localeDetails(locale).route_segment,
+              category,
+            },
+            props: { locale, category, profiles: matching },
+          }]
+        : [];
+    });
+  });
+}
+
+interface Props {
+  locale: Locale;
+  category: Category;
+  profiles: ReturnType<typeof localizedCatalogItems>;
+}
+
+const { locale, category, profiles } = Astro.props as Props;
+const labels = strings(locale);
+const label = labels.categoryLabels[category];
+const routeSuffix = categoryRouteSuffix(category);
+const route = localizedRoute(locale, routeSuffix);
+const records = profiles
+  .map((profile) => directoryRecordForProfile(profile, locale))
+  .sort((left, right) => left.name.localeCompare(right.name, locale));
+---
+
+<BaseLayout
+  title={labels.categoryLandingTitle(label)}
+  description={labels.categoryLandingDescription(label)}
+  canonicalPath={route}
+  routeSuffix={routeSuffix}
+  locale={locale}
+  structuredData={[
+    breadcrumbListJsonLd([
+      { name: labels.home, path: localizedRoute(locale, "/") },
+      { name: labels.catalog, path: localizedRoute(locale, "/catalog/") },
+      { name: label, path: route },
+    ]),
+  ]}
+>
+  <header class="page-intro landing-intro">
+    <p class="eyebrow">{labels.browseCategories}</p>
+    <h1>{label}</h1>
+    <p>{labels.resultCount.replace("{count}", String(records.length))}</p>
+  </header>
+  <ProfileLinkList profiles={records} />
+</BaseLayout>

@@ -32,6 +32,10 @@ class DirectoryExplorer extends HTMLElement {
     this.pagefindPromise = null;
 
     this.restoreState();
+    this.form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      this.update();
+    });
     this.form.addEventListener("input", () => this.update());
     this.form.addEventListener("change", () => this.update());
     this.form.addEventListener("reset", () => {
@@ -110,6 +114,11 @@ class DirectoryExplorer extends HTMLElement {
     );
     const localIds = new Set(local.map(({ id }) => id));
     this.showRecords(localIds);
+    if (!state.query) {
+      this.results.setAttribute("aria-busy", "false");
+      this.announce(localIds.size);
+      return;
+    }
     this.results.setAttribute("aria-busy", "true");
     this.status.textContent = this.dataset.loadingMessage;
 

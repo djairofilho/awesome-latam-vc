@@ -1,0 +1,27 @@
+---
+interface Profile {
+  id: string;
+  name: string;
+  summary?: string;
+  href: string;
+}
+
+interface Props {
+  profiles: Profile[];
+}
+
+const { profiles } = Astro.props;
+---
+
+<ul class="profile-link-list">
+  {
+    profiles.map((profile) => (
+      <li data-profile-id={profile.id}>
+        <a href={profile.href}>
+          <strong>{profile.name}</strong>
+          {profile.summary && <span>{profile.summary}</span>}
+        </a>
+      </li>
+    ))
+  }
+</ul>

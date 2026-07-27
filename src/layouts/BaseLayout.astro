@@ -19,6 +19,7 @@ interface Props {
   locale?: Locale;
   routeSuffix?: string;
   emitAlternates?: boolean;
+  availableLocales?: Locale[];
   noindex?: boolean;
   structuredData?: Array<Record<string, unknown> | null>;
 }
@@ -30,6 +31,7 @@ const {
   locale,
   routeSuffix = "/",
   emitAlternates = true,
+  availableLocales,
   noindex = false,
   structuredData = [],
 } = Astro.props;
@@ -37,7 +39,7 @@ const preview = import.meta.env.PUBLIC_SITE_ENV === "preview";
 const canonical = canonicalUrl(canonicalPath);
 const labels = strings(locale ?? "en");
 const alternates: Record<string, string> = emitAlternates
-  ? hreflangUrls(routeSuffix)
+  ? hreflangUrls(routeSuffix, availableLocales)
   : {};
 const homeHref = locale ? localizedHref(locale, "/") : withBase("/");
 const catalogHref = locale

@@ -1,0 +1,143 @@
+---
+import { getCollection, render } from "astro:content";
+import ProfileIndexMetadata from "../../../components/ProfileIndexMetadata.astro";
+import type { Locale } from "../../../i18n/ui";
+import { strings } from "../../../i18n/ui";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { localizedCatalogItems } from "../../../lib/catalog";
+import {
+  profileHistoryUrl,
+  profileRouteSuffix,
+} from "../../../lib/directory-routes.mjs";
+import {
+  localeDetails,
+  locales,
+  localizedHref,
+  localizedRoute,
+} from "../../../lib/i18n.mjs";
+import {
+  breadcrumbListJsonLd,
+  organizationJsonLd,
+} from "../../../lib/structured-data.mjs";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("profiles");
+  return (locales as Locale[]).flatMap((locale) =>
+    localizedCatalogItems(entries, locale).map((profile) => ({
+      params: {
+        locale: localeDetails(locale).route_segment,
+        slug: profile.slug,
+      },
+      props: { locale, profile },
+    })),
+  );
+}
+
+interface Props {
+  locale: Locale;
+  profile: ReturnType<typeof localizedCatalogItems>[number];
+}
+
+const { locale, profile } = Astro.props as Props;
+const labels = strings(locale);
+const entries = await getCollection("profiles");
+const entry = entries.find(({ id }) => id === profile.contentEntryId);
+if (!entry) {
+  throw new Error(`Missing profile content entry: ${profile.contentEntryId}`);
+}
+const { Content } = await render(entry);
+const routeSuffix = profileRouteSuffix(profile.slug);
+const requestedPath = localizedRoute(locale, routeSuffix);
+const canonicalPath = profile.isFallback
+  ? localizedRoute("en", routeSuffix)
+  : requestedPath;
+const structuredData = [
+  breadcrumbListJsonLd([
+    { name: labels.home, path: localizedRoute(locale, "/") },
+    { name: labels.catalog, path: localizedRoute(locale, "/catalog/") },
+    { name: profile.name, path: requestedPath },
+  ]),
+  organizationJsonLd(profile),
+];
+const geography = [
+  profile.baseGeography?.code,
+  ...profile.countriesCovered,
+].filter(Boolean);
+const documentTitle =
+  profile.name.length > 69
+    ? `${profile.name.slice(0, 68).trimEnd()}…`
+    : profile.name;
+---
+
+<BaseLayout
+  title={documentTitle}
+  description={profile.summary ?? labels.catalogDescription}
+  canonicalPath={canonicalPath}
+  routeSuffix={routeSuffix}
+  locale={locale}
+  availableLocales={profile.availableLocales}
+  noindex={profile.isFallback}
+  structuredData={structuredData}
+>
+  <article
+    class="profile-detail"
+    lang={profile.contentLocale}
+    data-pagefind-body={!profile.isFallback ? "" : undefined}
+  >
+    {!profile.isFallback && <ProfileIndexMetadata profile={profile} />}
+    <div class="profile-content">
+      <Content />
+    </div>
+
+    <aside class="profile-facts" aria-label={profile.name}>
+      {
+        geography.length > 0 && (
+          <div>
+            <strong>{labels.coverage}</strong>
+            <span>{geography.join(", ")}</span>
+          </div>
+        )
+      }
+      {
+        profile.stages.length > 0 && (
+          <div>
+            <strong>{labels.stages}</strong>
+            <span>{profile.stages.join(", ")}</span>
+          </div>
+        )
+      }
+      {
+        profile.focuses.length > 0 && (
+          <div>
+            <strong>{labels.focuses}</strong>
+            <span>{profile.focuses.join(", ")}</span>
+          </div>
+        )
+      }
+      {
+        profile.lastVerified && (
+          <div>
+            <strong>{labels.verifiedOn}</strong>
+            <span>{profile.lastVerified}</span>
+          </div>
+        )
+      }
+    </aside>
+
+    <nav class="profile-actions" aria-label={profile.name}>
+      <a href={profile.canonicalSourceUrl}>{labels.profileSource}</a>
+      <a href={profileHistoryUrl(profile.sourcePath)}>{labels.profileHistory}</a>
+      {
+        profile.officialWebsite && (
+          <a href={profile.officialWebsite}>{labels.officialWebsite}</a>
+        )
+      }
+      {
+        profile.founderRoute && (
+          <a href={profile.founderRoute}>{labels.founderRoute}</a>
+        )
+      }
+      <a href={localizedHref(locale, "/catalog/")}>{labels.catalog}</a>
+    </nav>
+  </article>
+</BaseLayout>

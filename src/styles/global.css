@@ -71,7 +71,7 @@ input:focus-visible {
 
 .directory-search {
   display: grid;
-  grid-template-columns: minmax(12rem, 1fr) minmax(16rem, 2fr);
+  grid-template-columns: minmax(12rem, 1fr) minmax(16rem, 2fr) auto;
   align-items: end;
   gap: 0.75rem 2rem;
 }
@@ -223,9 +223,164 @@ input:focus-visible {
   background: var(--surface);
 }
 
+.directory-submit {
+  min-height: 3rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--primary);
+  color: var(--white);
+  background: var(--primary);
+  font: inherit;
+  font-weight: 680;
+  cursor: pointer;
+}
+
+.directory-submit:hover {
+  background: var(--primary-deep);
+}
+
+.landing-navigation {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 6vw, 6rem);
+  padding-block: clamp(3rem, 7vw, 6rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.landing-navigation h2 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.landing-navigation ul,
+.profile-link-list {
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--ink);
+  list-style: none;
+}
+
+.landing-navigation li,
+.profile-link-list li {
+  border-bottom: 1px solid var(--line);
+}
+
+.landing-navigation a,
+.profile-link-list a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  padding-block: 1rem;
+  text-decoration: none;
+}
+
+.landing-navigation a:hover,
+.profile-link-list a:hover strong {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.landing-navigation a > span:last-child {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.landing-intro + .profile-link-list {
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+.profile-link-list a {
+  grid-template-columns: minmax(12rem, 0.7fr) minmax(18rem, 1.3fr);
+}
+
+.profile-link-list strong {
+  font-family: var(--font-display);
+}
+
+.profile-link-list a > span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.profile-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(16rem, 0.6fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  padding-block: clamp(4rem, 9vw, 8rem);
+}
+
+.profile-content {
+  min-width: 0;
+}
+
+.profile-content h1 {
+  margin-bottom: 2.5rem;
+}
+
+.profile-content h2 {
+  margin: 3rem 0 1rem;
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+}
+
+.profile-content p,
+.profile-content li {
+  max-width: 72ch;
+  line-height: 1.75;
+}
+
+.profile-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-facts {
+  align-self: start;
+  border-top: 1px solid var(--ink);
+}
+
+.profile-facts div {
+  display: grid;
+  gap: 0.35rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.profile-facts strong {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.profile-facts span {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.profile-actions {
+  display: flex;
+  grid-column: 1 / -1;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.profile-actions a {
+  min-height: 2.75rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--line);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.profile-actions a:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
 @media (max-width: 44rem) {
   .directory-search,
-  .directory-results a {
+  .directory-results a,
+  .profile-link-list a {
     grid-template-columns: 1fr;
   }
 
@@ -809,7 +964,9 @@ footer p {
   }
 
   .hero,
-  .section-grid {
+  .section-grid,
+  .landing-navigation,
+  .profile-detail {
     grid-template-columns: 1fr;
   }
 
