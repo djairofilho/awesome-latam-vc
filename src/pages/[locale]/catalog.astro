@@ -1,0 +1,86 @@
+---
+import { getCollection } from "astro:content";
+import type { Locale } from "../../i18n/ui";
+import { strings } from "../../i18n/ui";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { catalogItem, categories, type Category } from "../../lib/catalog";
+import {
+  localeDetails,
+  locales,
+  localizedRoute,
+} from "../../lib/i18n.mjs";
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({
+    params: { locale: localeDetails(locale).route_segment },
+    props: { locale },
+  }));
+}
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props as Props;
+const labels = strings(locale);
+const profiles = (await getCollection("profiles"))
+  .map(catalogItem)
+  .sort((left, right) => left.name.localeCompare(right.name, locale));
+const grouped = categories.map((category) => ({
+  category: category as Category,
+  label: labels.categoryLabels[category],
+  profiles: profiles.filter((profile) => profile.category === category),
+}));
+---
+
+<BaseLayout
+  title={labels.catalogTitle}
+  description={labels.catalogDescription}
+  canonicalPath={localizedRoute(locale, "/catalog/")}
+  routeSuffix="/catalog/"
+  locale={locale}
+>
+  <header class="page-intro">
+    <p class="eyebrow">{labels.catalogKicker}</p>
+    <h1>{labels.profileCount(profiles.length)}</h1>
+    <p>{labels.catalogIntro}</p>
+  </header>
+
+  <nav class="catalog-jump" aria-label={labels.jumpNavigation}>
+    {
+      grouped.map(({ category, label, profiles: entries }) => (
+        <a href={`#${category}`}>
+          {label} <span>{entries.length}</span>
+        </a>
+      ))
+    }
+  </nav>
+
+  <div class="catalog-groups">
+    {
+      grouped.map(({ category, label, profiles: entries }) => (
+        <section id={category} aria-labelledby={`${category}-heading`}>
+          <header>
+            <h2 id={`${category}-heading`}>{label}</h2>
+            <p>
+              {entries.length} {labels.profilePlural}
+            </p>
+          </header>
+          <ul class="profile-list">
+            {entries.map((profile) => (
+              <li data-profile-id={profile.id}>
+                <a href={profile.sourceUrl}>
+                  <strong>{profile.name}</strong>
+                  <span>{profile.country}</span>
+                  <span class="source-label">
+                    {labels.sourceLabel} <span aria-hidden="true">↗</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>

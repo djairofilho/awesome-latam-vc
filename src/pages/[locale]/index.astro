@@ -1,0 +1,116 @@
+---
+import { getCollection } from "astro:content";
+import CategoryList from "../../components/CategoryList.astro";
+import type { Locale } from "../../i18n/ui";
+import { strings } from "../../i18n/ui";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { catalogItem, categories, type Category } from "../../lib/catalog";
+import {
+  localeDetails,
+  locales,
+  localizedHref,
+  localizedRoute,
+} from "../../lib/i18n.mjs";
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({
+    params: { locale: localeDetails(locale).route_segment },
+    props: { locale },
+  }));
+}
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props as Props;
+const labels = strings(locale);
+const profiles = (await getCollection("profiles")).map(catalogItem);
+const counts = Object.fromEntries(
+  categories.map((category) => [
+    category,
+    profiles.filter((profile) => profile.category === category).length,
+  ]),
+) as Record<Category, number>;
+const countries = new Set(profiles.map((profile) => profile.country));
+---
+
+<BaseLayout
+  title={labels.homeTitle}
+  description={labels.homeDescription}
+  canonicalPath={localizedRoute(locale, "/")}
+  routeSuffix="/"
+  locale={locale}
+>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">{labels.heroKicker}</p>
+      <h1>{labels.heroTitle}</h1>
+      <p class="hero-lede">{labels.heroBody}</p>
+      <div class="hero-actions">
+        <a
+          class="button button-primary"
+          href={localizedHref(locale, "/catalog/")}
+        >
+          {labels.browseCatalog}
+        </a>
+        <a
+          class="button button-secondary"
+          href="https://github.com/djairofilho/awesome-latam-vc"
+        >
+          {labels.inspectSource}
+        </a>
+      </div>
+    </div>
+    <aside class="catalog-snapshot" aria-label={labels.snapshot}>
+      <p>{labels.snapshot}</p>
+      <strong>{profiles.length}</strong>
+      <span>{labels.canonicalProfiles}</span>
+      <dl>
+        <div>
+          <dt>{labels.geographies}</dt>
+          <dd>{countries.size}</dd>
+        </div>
+        <div>
+          <dt>{labels.categories}</dt>
+          <dd>{categories.length}</dd>
+        </div>
+        <div>
+          <dt>{labels.runtime}</dt>
+          <dd>0</dd>
+        </div>
+      </dl>
+    </aside>
+  </section>
+
+  <section class="section-grid" aria-labelledby="catalog-heading">
+    <div>
+      <p class="section-index" aria-hidden="true">01</p>
+      <h2 id="catalog-heading">{labels.categoryHeading}</h2>
+      <p>{labels.categoryBody}</p>
+    </div>
+    <CategoryList
+      counts={counts}
+      labels={labels.categoryLabels}
+      catalogHref={localizedHref(locale, "/catalog/")}
+      ariaLabel={labels.categories}
+    />
+  </section>
+
+  <section class="principles" aria-labelledby="principles-heading">
+    <div class="principles-heading">
+      <p class="section-index" aria-hidden="true">02</p>
+      <h2 id="principles-heading">{labels.principlesHeading}</h2>
+    </div>
+    <ol>
+      {
+        labels.principles.map(([heading, body]) => (
+          <li>
+            <strong>{heading}</strong>
+            <span>{body}</span>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+</BaseLayout>

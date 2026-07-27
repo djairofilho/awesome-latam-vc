@@ -1,69 +1,42 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import {
-  catalogItem,
-  categoryLabels,
-  type Category,
-} from "../lib/catalog";
-
-const profiles = (await getCollection("profiles"))
-  .map(catalogItem)
-  .sort((left, right) => left.name.localeCompare(right.name, "en"));
-const grouped = Object.keys(categoryLabels).map((category) => ({
-  category: category as Category,
-  label: categoryLabels[category as Category],
-  profiles: profiles.filter((profile) => profile.category === category),
-}));
+  localeDetails,
+  locales,
+  localizedCanonical,
+  localizedHref,
+} from "../lib/i18n.mjs";
 ---
 
 <BaseLayout
-  title="Catalog · Awesome LatAm VC"
-  description="Browse the canonical Awesome LatAm VC funding catalog by entity type."
-  canonicalPath="/catalog/"
+  title="Catalog language · Awesome LatAm VC"
+  description="Choose a language for the Awesome LatAm VC catalog."
+  canonicalPath="/en/catalog/"
+  routeSuffix="/catalog/"
+  noindex
 >
-  <header class="page-intro">
-    <p class="eyebrow">Canonical catalog</p>
-    <h1>{profiles.length} profiles, directly from the repository.</h1>
+  <section class="language-landing" aria-labelledby="language-heading">
+    <p class="language-mark" aria-hidden="true">CATALOG · CATÁLOGO</p>
+    <h1 id="language-heading">Choose a catalog language.</h1>
     <p>
-      This first static layer keeps navigation intentionally simple. Search,
-      localized profile routes and filters arrive in the next platform gates.
+      This compatibility route does not redirect or claim to be a localized
+      page. Its canonical is
+      <a href={localizedCanonical("en", "/catalog/")}>the English catalog</a>.
     </p>
-  </header>
-
-  <nav class="catalog-jump" aria-label="Jump to a catalog category">
-    {
-      grouped.map(({ category, label, profiles: entries }) => (
-        <a href={`#${category}`}>
-          {label} <span>{entries.length}</span>
-        </a>
-      ))
-    }
-  </nav>
-
-  <div class="catalog-groups">
-    {
-      grouped.map(({ category, label, profiles: entries }) => (
-        <section id={category} aria-labelledby={`${category}-heading`}>
-          <header>
-            <h2 id={`${category}-heading`}>{label}</h2>
-            <p>{entries.length} profiles</p>
-          </header>
-          <ul class="profile-list">
-            {entries.map((profile) => (
-              <li>
-                <a href={profile.sourceUrl}>
-                  <strong>{profile.name}</strong>
-                  <span>{profile.country}</span>
-                  <span class="source-label">
-                    View canonical Markdown <span aria-hidden="true">↗</span>
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))
-    }
-  </div>
+    <ul class="language-options">
+      {
+        locales.map((locale) => (
+          <li>
+            <a
+              href={localizedHref(locale, "/catalog/")}
+              lang={localeDetails(locale).html_lang}
+            >
+              <span>{localeDetails(locale).label}</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </BaseLayout>

@@ -50,11 +50,32 @@ function indexHtml() {
   return readFileSync(join(dist, "index.html"), "utf8");
 }
 
+function routeHtml(...segments) {
+  return readFileSync(join(dist, ...segments, "index.html"), "utf8");
+}
+
 build("production");
 const first = snapshot();
 const productionHtml = indexHtml();
-const catalogHtml = readFileSync(join(dist, "catalog", "index.html"), "utf8");
+const compatibilityCatalogHtml = routeHtml("catalog");
 const notFoundHtml = readFileSync(join(dist, "404.html"), "utf8");
+const localeRoutes = {
+  en: "en",
+  "pt-BR": "pt-br",
+  es: "es",
+};
+const localizedHomeHtml = Object.fromEntries(
+  Object.entries(localeRoutes).map(([locale, segment]) => [
+    locale,
+    routeHtml(segment),
+  ]),
+);
+const localizedCatalogHtml = Object.fromEntries(
+  Object.entries(localeRoutes).map(([locale, segment]) => [
+    locale,
+    routeHtml(segment, "catalog"),
+  ]),
+);
 const sourceProfileCount = profileRoots
   .flatMap((directory) => files(join(root, directory)))
   .filter(
@@ -62,9 +83,6 @@ const sourceProfileCount = profileRoots
       path.endsWith(".md") &&
       !/^README(?:\.[^.]+)?\.md$/i.test(path.split(/[\\/]/).at(-1)),
   ).length;
-const renderedProfileCount = (
-  catalogHtml.match(/View canonical Markdown/g) ?? []
-).length;
 assert(
   productionHtml.includes(
     '<link rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/">',
@@ -76,25 +94,73 @@ assert(
   "production output must remain indexable",
 );
 assert(
-  productionHtml.includes('href="/awesome-latam-vc/catalog/"'),
-  "internal links must include the GitHub Pages base path",
-);
-assert(
-  catalogHtml.includes(
-    '<link rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/catalog/">',
+  !/(?:window\.location|location\.replace|http-equiv="refresh")/i.test(
+    productionHtml,
   ),
-  "catalog canonical is missing or incorrect",
+  "the x-default root must not redirect automatically",
 );
 assert(
-  renderedProfileCount === sourceProfileCount,
-  `catalog rendered ${renderedProfileCount} of ${sourceProfileCount} canonical profiles`,
+  productionHtml.includes(
+    '<link rel="alternate" hreflang="x-default" href="https://djairofilho.github.io/awesome-latam-vc/">',
+  ),
+  "the root must advertise its x-default URL",
 );
+assert(
+  compatibilityCatalogHtml.includes(
+    '<link rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/en/catalog/">',
+  ) &&
+    compatibilityCatalogHtml.includes(
+      'name="robots" content="noindex, nofollow"',
+    ),
+  "the compatibility catalog route must canonicalize to English and remain noindex",
+);
+for (const [locale, segment] of Object.entries(localeRoutes)) {
+  const home = localizedHomeHtml[locale];
+  const catalog = localizedCatalogHtml[locale];
+  assert(
+    home.includes(`<html lang="${locale}">`),
+    `${locale} home has an incorrect lang attribute`,
+  );
+  assert(
+    home.includes(
+      `<link rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/${segment}/">`,
+    ),
+    `${locale} home canonical is missing or incorrect`,
+  );
+  assert(
+    catalog.includes(
+      `<link rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/${segment}/catalog/">`,
+    ),
+    `${locale} catalog canonical is missing or incorrect`,
+  );
+  for (const targetSegment of Object.values(localeRoutes)) {
+    assert(
+      catalog.includes(
+        `href="/awesome-latam-vc/${targetSegment}/catalog/"`,
+      ),
+      `${locale} catalog language switcher lost the catalog suffix`,
+    );
+  }
+  const renderedProfileCount = (
+    catalog.match(/data-profile-id=/g) ?? []
+  ).length;
+  assert(
+    renderedProfileCount === sourceProfileCount,
+    `${locale} catalog rendered ${renderedProfileCount} of ${sourceProfileCount} canonical profiles`,
+  );
+  assert(
+    !/(?:href|src)="\/(?!awesome-latam-vc\/)/.test(home + catalog),
+    `${locale} output contains a root-relative link outside the Pages base`,
+  );
+}
 assert(
   notFoundHtml.includes('name="robots" content="noindex, nofollow"'),
   "the 404 page must remain noindex in production",
 );
 assert(
-  !/(?:href|src)="\/(?!awesome-latam-vc\/)/.test(productionHtml),
+  !/(?:href|src)="\/(?!awesome-latam-vc\/)/.test(
+    productionHtml + compatibilityCatalogHtml,
+  ),
   "root-relative asset or link escaped the configured base path",
 );
 

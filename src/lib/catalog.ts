@@ -4,15 +4,15 @@ import { relative, sep } from "node:path";
 
 const repositoryRoot = process.cwd();
 
-export const categoryLabels = {
-  fund: "Venture funds",
-  accelerator: "Accelerators",
-  angel_network: "Angel networks",
-  funding_platform: "Funding platforms",
-  public_program: "Public programs",
-} as const;
+export const categories = [
+  "fund",
+  "accelerator",
+  "angel_network",
+  "funding_platform",
+  "public_program",
+] as const;
 
-export type Category = keyof typeof categoryLabels;
+export type Category = (typeof categories)[number];
 
 const categoryByPath: Record<string, Category> = {
   funds: "fund",
@@ -52,7 +52,6 @@ export function catalogItem(entry: CollectionEntry<"profiles">) {
     name: entry.data.name ?? fallbackName(entry),
     summary: entry.data.summary,
     category,
-    categoryLabel: categoryLabels[category],
     country,
     sourcePath,
     sourceUrl: `https://github.com/djairofilho/awesome-latam-vc/blob/main/${sourcePath

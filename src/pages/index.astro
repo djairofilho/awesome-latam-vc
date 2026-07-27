@@ -1,101 +1,39 @@
 ---
-import { getCollection } from "astro:content";
-import CategoryList from "../components/CategoryList.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import {
-  catalogItem,
-  categoryLabels,
-  type Category,
-} from "../lib/catalog";
-import { withBase } from "../lib/paths.mjs";
-
-const profiles = (await getCollection("profiles")).map(catalogItem);
-const counts = Object.fromEntries(
-  Object.keys(categoryLabels).map((category) => [
-    category,
-    profiles.filter((profile) => profile.category === category).length,
-  ]),
-) as Record<Category, number>;
-const countries = new Set(profiles.map((profile) => profile.country));
+  localeDetails,
+  locales,
+  localizedHref,
+} from "../lib/i18n.mjs";
 ---
 
 <BaseLayout
-  title="Awesome LatAm VC · The open funding directory"
-  description="An open, source-backed directory of venture funds and startup funding programs across Latin America."
+  title="Awesome LatAm VC · Choose your language"
+  description="Choose English, Portuguese or Spanish to browse the open Latin American funding directory."
   canonicalPath="/"
+  routeSuffix="/"
 >
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow">Open funding intelligence for Latin America</p>
-      <h1>Find the capital paths that are actually documented.</h1>
-      <p class="hero-lede">
-        Venture funds, accelerators, angel networks, funding platforms and
-        public programs. Every entry stays connected to its Markdown source,
-        official evidence and Git history.
-      </p>
-      <div class="hero-actions">
-        <a class="button button-primary" href={withBase("/catalog/")}>
-          Browse the catalog
-        </a>
-        <a
-          class="button button-secondary"
-          href="https://github.com/djairofilho/awesome-latam-vc"
-        >
-          Inspect the source
-        </a>
-      </div>
-    </div>
-    <aside class="catalog-snapshot" aria-label="Current catalog snapshot">
-      <p>Current snapshot</p>
-      <strong>{profiles.length}</strong>
-      <span>canonical profiles</span>
-      <dl>
-        <div>
-          <dt>Geographies</dt>
-          <dd>{countries.size}</dd>
-        </div>
-        <div>
-          <dt>Categories</dt>
-          <dd>{Object.keys(categoryLabels).length}</dd>
-        </div>
-        <div>
-          <dt>Runtime</dt>
-          <dd>0</dd>
-        </div>
-      </dl>
-    </aside>
-  </section>
-
-  <section class="section-grid" aria-labelledby="catalog-heading">
-    <div>
-      <p class="section-index" aria-hidden="true">01</p>
-      <h2 id="catalog-heading">One catalog, five routes to funding</h2>
-      <p>
-        Counts come from the canonical files at build time. New accepted
-        profiles appear automatically without copying content into the site.
-      </p>
-    </div>
-    <CategoryList counts={counts} />
-  </section>
-
-  <section class="principles" aria-labelledby="principles-heading">
-    <div class="principles-heading">
-      <p class="section-index" aria-hidden="true">02</p>
-      <h2 id="principles-heading">Built for verification, not hype</h2>
-    </div>
-    <ol>
-      <li>
-        <strong>Canonical Markdown</strong>
-        <span>The repository remains the source of truth.</span>
-      </li>
-      <li>
-        <strong>Structured evidence</strong>
-        <span>Official links and verification dates travel with profiles.</span>
-      </li>
-      <li>
-        <strong>Static by default</strong>
-        <span>Every published page works without a runtime server.</span>
-      </li>
-    </ol>
+  <section class="language-landing" aria-labelledby="language-heading">
+    <p class="language-mark" aria-hidden="true">EN · PT-BR · ES</p>
+    <h1 id="language-heading">Choose your language.</h1>
+    <p>
+      Escolha seu idioma. Elige tu idioma. The directory never redirects based
+      on browser settings, and every option works without JavaScript.
+    </p>
+    <ul class="language-options">
+      {
+        locales.map((locale) => (
+          <li>
+            <a
+              href={localizedHref(locale, "/")}
+              lang={localeDetails(locale).html_lang}
+            >
+              <span>{localeDetails(locale).label}</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </section>
 </BaseLayout>

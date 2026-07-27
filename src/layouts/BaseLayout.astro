@@ -2,12 +2,22 @@
 import "@fontsource-variable/archivo";
 import "@fontsource-variable/public-sans";
 import "../styles/global.css";
+import LanguageSwitcher from "../components/LanguageSwitcher.astro";
+import type { Locale } from "../i18n/ui";
+import { strings } from "../i18n/ui";
+import {
+  hreflangUrls,
+  localizedHref,
+} from "../lib/i18n.mjs";
 import { canonicalUrl, withBase } from "../lib/paths.mjs";
 
 interface Props {
   title: string;
   description: string;
   canonicalPath?: string;
+  locale?: Locale;
+  routeSuffix?: string;
+  emitAlternates?: boolean;
   noindex?: boolean;
 }
 
@@ -15,48 +25,66 @@ const {
   title,
   description,
   canonicalPath = Astro.url.pathname,
+  locale,
+  routeSuffix = "/",
+  emitAlternates = true,
   noindex = false,
 } = Astro.props;
 const preview = import.meta.env.PUBLIC_SITE_ENV === "preview";
 const canonical = canonicalUrl(canonicalPath);
+const labels = strings(locale ?? "en");
+const alternates: Record<string, string> = emitAlternates
+  ? hreflangUrls(routeSuffix)
+  : {};
+const homeHref = locale ? localizedHref(locale, "/") : withBase("/");
+const catalogHref = locale
+  ? localizedHref(locale, "/catalog/")
+  : withBase("/catalog/");
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={locale ?? "en"}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     {(preview || noindex) && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
+    {
+      Object.entries(alternates).map(([hreflang, href]) => (
+        <link rel="alternate" hreflang={hreflang} href={href} />
+      ))
+    }
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
+    <a class="skip-link" href="#main-content">{labels.skipLink}</a>
     <header class="site-header">
-      <a class="wordmark" href={withBase("/")} aria-label="Awesome LatAm VC home">
+      <a class="wordmark" href={homeHref} aria-label="Awesome LatAm VC home">
         <span aria-hidden="true">A</span>
         <strong>Awesome LatAm VC</strong>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href={withBase("/")}>Overview</a>
-        <a href={withBase("/catalog/")}>Catalog</a>
+      <nav class="primary-navigation" aria-label={labels.primaryNavigation}>
+        <a href={homeHref}>{labels.home}</a>
+        <a href={catalogHref}>{labels.catalog}</a>
         <a
           href="https://github.com/djairofilho/awesome-latam-vc"
           rel="external"
-        >GitHub <span aria-hidden="true">↗</span></a>
+        >{labels.githubLabel} <span aria-hidden="true">↗</span></a>
       </nav>
+      <LanguageSwitcher currentLocale={locale} routeSuffix={routeSuffix} />
     </header>
     <main id="main-content">
       <slot />
     </main>
     <footer>
       <p>
-        Open data, official sources and an auditable history on
+        {labels.sourceFooter}
+        {" "}
         <a href="https://github.com/djairofilho/awesome-latam-vc">GitHub</a>.
       </p>
-      <p>Built as static HTML. No runtime server.</p>
+      <p>{labels.staticFooter}</p>
     </footer>
   </body>
 </html>
