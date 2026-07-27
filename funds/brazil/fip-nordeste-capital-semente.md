@@ -1,0 +1,46 @@
+# FIP Nordeste Capital Semente
+
+FIP Nordeste Capital Semente is a venture capital vehicle managed by Triaxis
+Capital and Crescera Ventures for technology startups in Brazil's Northeast
+and adjacent eligible regions.
+
+## Investment profile
+
+- **Website:** https://www.fipnordeste.com/
+- **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
+- **Stage at entry:** Pre-seed and Seed
+- **Follow-on stages:** Series A
+- **Focus:** Technology startups contributing to regional development
+- **Geography:** Northeast Brazil, northern Minas Gerais, and Espírito Santo
+- **Initial check:** Up to BRL 1 million through a convertible loan
+- **Investment role:** Not publicly disclosed
+- **Business models:** Fintech, HealthTech, clean technologies, biotechnology,
+  AgriTech, cybersecurity, and other technology-enabled businesses
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
+- **Submit a startup:** https://www.fipnordeste.com/
+
+## Declared thesis
+
+The vehicle invests in regional technology startups and can provide up to BRL
+1 million through a convertible loan, followed by up to BRL 6 million in a
+later round. Its public sector scope includes financial services, health,
+clean technology, biotechnology, agribusiness, and cybersecurity.
+
+## Portfolio signals
+
+Official Triaxis updates reviewed in the frozen evidence record describe active
+operations, founder meetings, and investments in Northeast-based startups in
+2026. The vehicle is presented separately from its managers;
+the reviewed sources do not provide a reliable public portfolio count.
+
+## Sources
+
+- [FIP Nordeste Capital Semente website](https://www.fipnordeste.com/)
+- [Banco do Nordeste fund announcement](https://www.bnb.gov.br/imprensa/noticias/-/asset_publisher/QGdgGhxvRtMv/content/bnb-finep-e-sebrae-lan%C3%A7am-fundos-financeiros-para-startups-e-mulheres-empreendedoras/44540)
+- [Finep report on the fund's regional startup program](https://www.finep.gov.br/en/noticias/todas-noticias/7076-finep-conexoes-integracao-de-instrumentos-de-subvencao-credito-e-investimentos-em-prol-da-inovacao-na-regiao-nordeste)
+- [Triaxis Capital official updates](https://www.linkedin.com/company/triaxis-capital)
+
+**Last verified:** 2026-07-27
