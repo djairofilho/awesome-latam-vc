@@ -174,16 +174,6 @@ class AngelPublicationTests(unittest.TestCase):
             self.assertEqual(len(expected), len(links))
             self.assertTrue(all((path.parent / link).is_file() for link in links))
 
-    def test_localized_root_indexes_point_to_localized_network_indexes(self):
-        self.assertIn(
-            "ecosystem/angel-networks/README.pt.md",
-            (REPOSITORY_ROOT / "README.pt.md").read_text(encoding="utf-8"),
-        )
-        self.assertIn(
-            "ecosystem/angel-networks/README.es.md",
-            (REPOSITORY_ROOT / "README.es.md").read_text(encoding="utf-8"),
-        )
-
     def test_manifest_hashes_match_profiles_indexes_sources_and_batch(self):
         for group in (
             "profile_hashes",
@@ -221,8 +211,6 @@ class AngelPublicationTests(unittest.TestCase):
         paths = [
             *ROOT.rglob("*"),
             *NETWORK_ROOT.rglob("*.md"),
-            REPOSITORY_ROOT / "README.pt.md",
-            REPOSITORY_ROOT / "README.es.md",
         ]
         for path in paths:
             if path.is_file() and path.suffix in {".json", ".jsonl", ".md", ".py"}:

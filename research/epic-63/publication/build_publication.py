@@ -253,15 +253,6 @@ def index_bytes(candidates: list[dict], language: str) -> bytes:
     ).encode("utf-8")
 
 
-def localized_root_bytes(filename: str, language: str) -> bytes:
-    path = REPOSITORY_ROOT / filename
-    text = path.read_text(encoding="utf-8")
-    english = "ecosystem/angel-networks/README.md"
-    localized = f"ecosystem/angel-networks/README.{language}.md"
-    text = text.replace(localized, english).replace(english, localized)
-    return text.encode("utf-8")
-
-
 def build_outputs() -> dict[Path, bytes]:
     candidates, evidence, queue, frozen_manifest = load_frozen_queue()
     candidate_by_id = {item["network_id"]: item for item in candidates}
@@ -300,9 +291,6 @@ def build_outputs() -> dict[Path, bytes]:
         ("es", "README.es.md"),
     ):
         outputs[PUBLICATION_ROOT / filename] = index_bytes(eligible, language)
-    outputs[REPOSITORY_ROOT / "README.pt.md"] = localized_root_bytes("README.pt.md", "pt")
-    outputs[REPOSITORY_ROOT / "README.es.md"] = localized_root_bytes("README.es.md", "es")
-
     batch_core = {
         "batch_id": BATCH_ID,
         "branch": BRANCH,
@@ -351,8 +339,6 @@ def build_outputs() -> dict[Path, bytes]:
         PUBLICATION_ROOT / "README.md",
         PUBLICATION_ROOT / "README.pt.md",
         PUBLICATION_ROOT / "README.es.md",
-        REPOSITORY_ROOT / "README.pt.md",
-        REPOSITORY_ROOT / "README.es.md",
     )
     source_paths = (
         CONSOLIDATION / "candidates.jsonl",

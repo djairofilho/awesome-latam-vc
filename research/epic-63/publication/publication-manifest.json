@@ -14,8 +14,6 @@
   "expected_batch_count": 1,
   "hash_algorithm": "sha256",
   "index_hashes": {
-    "README.es.md": "e74e08c7341200191ed8f2a6f3beac82abac26a91ac9035743a477bea53fc12f",
-    "README.pt.md": "670a9b5b57e45d3305f460a07098ef1b2ea9c60568d704478b62572cffe249f4",
     "ecosystem/angel-networks/README.es.md": "47d273df8d95fd5dcd8012662476ea76ab54712e8c7071de83114386fde18904",
     "ecosystem/angel-networks/README.md": "06949ab76f91571d6f393afed67ed8977149ec3b4cb8b8998d1b6c9ee4fbfda3",
     "ecosystem/angel-networks/README.pt.md": "1493140bf25aa587b964f88a3aed92eeb3b0c13e70a6a3b83da618312bd509c4"
