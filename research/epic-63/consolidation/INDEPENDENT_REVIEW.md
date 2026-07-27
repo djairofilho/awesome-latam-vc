@@ -2,18 +2,19 @@
 
 ## Autoria e escopo
 
-- Revisor: `independent-reviewer-issue-86`.
+- Revisor: `independent-reviewer-final-issue-86`.
 - Consolidador: `consolidator-issue-86`.
 - Data: 2026-07-27.
 - Registros revisados: 42.
-- Divergências críticas ou altas pendentes: 0.
+- Divergências altas encontradas: 1, resolvida.
+- Divergências altas pendentes: 0.
 
-O revisor leu a fila consolidada e as evidências já coletadas. Não executou
-scraping novo e não criou perfis.
+O revisor conferiu os artefatos consolidados, as evidências oficiais e os
+contratos das epics relacionadas. Não criou perfis.
 
 ## Cobertura
 
-- 100% dos 12 elegíveis;
+- 100% dos 12 originalmente elegíveis;
 - 100% dos 12 encaminhados;
 - 100% dos casos com evidência insuficiente, duplicados e híbridos;
 - amostra determinística de 1 entre
@@ -21,23 +22,33 @@ scraping novo e não criou perfis.
 
 A amostra usa `sha256(network_id), ordem crescente, ceil(20%)`. Registro selecionado: `ang-venecapital-org`.
 
-## Resultado
+## Divergências e resolução
 
-As 42 decisões revisadas foram confirmadas. Todos os elegíveis mantêm
-evidência oficial de categoria, atividade e acesso externo. As duas
-duplicidades apontam diretamente para destino canônico. As 12 transferências
-possuem categoria, ID-alvo e caminho de destino. Os casos híbridos preservam
-rede, operador e veículo como unidades separadas quando a evidência permite.
+O PAD/UDEP foi alterado de `elegível` para `evidência-insuficiente`. A fonte
+oficial confirma a rede, seleção e atividade recente, mas a rota registrada
+recebe inscrições de participantes em um seminário e em seu fórum exclusivo.
+Ela não comprova acesso externo de startups à seleção recorrente da rede.
+
+O Honduras Digital Challenge continua transferido como fronteira de categoria.
+A epic 62 o exclui como desafio pontual; a transferência preserva a
+proveniência e não equivale a aceitação no destino.
+
+## Resultado congelado
+
+A fila final contém 11 redes elegíveis. Todas satisfazem categoria, atividade,
+recorrência, acesso externo, atores e rota com evidência oficial. As duas
+duplicidades e as sete resoluções de identidade têm destino explícito. As 12
+transferências têm categoria, ID-alvo e destino; nenhuma fica órfã.
 
 ### Decisões revisadas
 
 - `duplicado`: 2
-- `elegível`: 12
+- `elegível`: 11
 - `encaminhado-para-aceleradoras`: 2
 - `encaminhado-para-funds`: 4
 - `encaminhado-para-plataformas`: 5
 - `encaminhado-para-programas-públicos`: 1
-- `evidência-insuficiente`: 15
+- `evidência-insuficiente`: 16
 - `excluído`: 1
 
 ### Grupos de revisão

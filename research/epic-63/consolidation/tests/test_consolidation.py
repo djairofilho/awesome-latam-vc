@@ -30,6 +30,7 @@ GENERATED = (
     "independent-review.jsonl",
     "provenance.jsonl",
     "publication-queue.jsonl",
+    "review-divergences.json",
     "run-manifest.jsonl",
     "sha256sums.txt",
     "source-inventory.jsonl",
@@ -83,7 +84,7 @@ class AngelConsolidationTests(unittest.TestCase):
                 "candidates": 44,
                 "coverage_rows": 42,
                 "evidence": 57,
-                "publication_queue": 12,
+                "publication_queue": 11,
                 "sources": 61,
             },
             self.manifest["after_counts"],
@@ -192,7 +193,7 @@ class AngelConsolidationTests(unittest.TestCase):
         queued = {item["network_id"] for item in self.queue}
         self.assertEqual(eligible, queued)
         self.assertEqual(
-            Counter({"pending-publication": 7, "already-published": 5}),
+            Counter({"pending-publication": 6, "already-published": 5}),
             Counter(item["publication_status"] for item in self.queue),
         )
         for item in self.queue:
@@ -225,12 +226,15 @@ class AngelConsolidationTests(unittest.TestCase):
 
     def test_review_covers_mandatory_scope_and_deterministic_sample(self) -> None:
         reviewed = {item["subject_id"] for item in self.reviews}
+        original = {
+            item["network_id"]: item["original_decision"] for item in self.provenance
+        }
         mandatory = {
             item["network_id"]
             for item in self.candidates
-            if item["decision"] == "elegível"
-            or item["decision"] in ROUTED
-            or item["decision"] in {"evidência-insuficiente", "duplicado"}
+            if original[item["network_id"]] == "elegível"
+            or original[item["network_id"]] in ROUTED
+            or original[item["network_id"]] in {"evidência-insuficiente", "duplicado"}
             or item["network_id"] in {"ang-brangels-global", "ang-theboardperu-com"}
         }
         self.assertLessEqual(mandatory, reviewed)
@@ -254,11 +258,27 @@ class AngelConsolidationTests(unittest.TestCase):
 
     def test_independent_review_is_separate_and_resolved(self) -> None:
         self.assertTrue(
-            all(item["reviewer"] == "independent-reviewer-issue-86" for item in self.reviews)
+            all(
+                item["reviewer"] == "independent-reviewer-final-issue-86"
+                for item in self.reviews
+            )
         )
         self.assertTrue(all(item["resolved"] for item in self.reviews))
         self.assertEqual("complete", self.manifest["independent_review_status"])
         self.assertEqual(0, self.manifest["unresolved_high_divergences"])
+        self.assertEqual(1, self.manifest["resolved_high_divergences"])
+        pad = next(
+            item
+            for item in self.reviews
+            if item["subject_id"] == "ang-hub-udep-pe--pad"
+        )
+        self.assertEqual("elegível", pad["original_decision"])
+        self.assertEqual("evidência-insuficiente", pad["final_decision"])
+        divergences = json.loads(
+            (ROOT / "review-divergences.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(0, divergences["open_high_divergences"])
+        self.assertEqual(2, len(divergences["divergences"]))
 
     def test_manifest_output_hashes_are_frozen(self) -> None:
         for name, expected in self.manifest["output_hashes"].items():
@@ -273,7 +293,7 @@ class AngelConsolidationTests(unittest.TestCase):
             ).splitlines()
             if line.strip()
         ]
-        self.assertEqual(14, len(rows))
+        self.assertEqual(15, len(rows))
         for expected, name in rows:
             self.assertEqual(expected, sha256(ROOT / name), name)
 

@@ -1,0 +1,32 @@
+{
+  "divergences": [
+    {
+      "divergence_id": "div-issue86-pad-external-access",
+      "evidence_ids": [
+        "ev-peru-pad-model",
+        "ev-peru-pad-activity"
+      ],
+      "finding": "A URL registrada é inscrição de participantes no seminário e no fórum exclusivo; não é rota de submissão externa de startups.",
+      "resolution": "Reclassificado de elegível para evidência-insuficiente e removido da fila de publicação.",
+      "severity": "high",
+      "status": "resolved",
+      "subject_id": "ang-hub-udep-pe--pad"
+    },
+    {
+      "divergence_id": "div-issue86-honduras-target-status",
+      "evidence_ids": [
+        "ev-honduras-digital-challenge-boundary"
+      ],
+      "finding": "A auditoria da epic 62 classifica o destino como desafio pontual excluído, embora a origem pertença à fronteira de aceleradoras.",
+      "resolution": "Mantida a transferência como registro de fronteira e proveniência; ela não implica aceitação no destino.",
+      "severity": "medium",
+      "status": "resolved",
+      "subject_id": "ang-hondurasdigitalchallenge-com"
+    }
+  ],
+  "issue": 86,
+  "open_high_divergences": 0,
+  "reviewed_on": "2026-07-27",
+  "reviewer": "independent-reviewer-final-issue-86",
+  "schema_version": "1.0"
+}
