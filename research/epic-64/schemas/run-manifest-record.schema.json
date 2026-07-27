@@ -44,6 +44,38 @@
         "status": { "enum": ["planned", "running", "complete", "cancelled"] },
         "task_count": { "type": "integer", "minimum": 1 },
         "scraping_performed": { "type": "boolean" },
+        "hash_algorithm": {
+          "type": ["string", "null"],
+          "enum": ["sha256", null]
+        },
+        "artifact_hashes": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": [
+            "candidates.jsonl",
+            "coverage-matrix.jsonl",
+            "evidence.jsonl",
+            "source-inventory.jsonl"
+          ],
+          "properties": {
+            "candidates.jsonl": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "coverage-matrix.jsonl": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "evidence.jsonl": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "source-inventory.jsonl": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        },
         "owner": { "type": "string", "minLength": 1 },
         "execution_policy": {
           "type": "object",
