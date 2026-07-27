@@ -135,6 +135,18 @@ def git_changed_paths(root: Path, base_ref: str) -> tuple[set[str], set[str]]:
         changed.add(path)
         if status == "A":
             added.add(path)
+    untracked_result = subprocess.run(
+        ["git", "ls-files", "--others", "--exclude-standard"],
+        cwd=root,
+        check=True,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+    )
+    for line in untracked_result.stdout.splitlines():
+        path = line.replace("\\", "/")
+        changed.add(path)
+        added.add(path)
     return changed, added
 
 
@@ -183,6 +195,7 @@ def validate_profile(path: Path, display_path: str) -> list[str]:
 
 def validate_internal_links(root: Path, readme: Path, text: str) -> list[str]:
     errors: list[str] = []
+    display_path = readme.relative_to(root).as_posix()
     for target in MARKDOWN_LINK_RE.findall(text):
         clean_target = target.strip().split("#", 1)[0]
         if not clean_target or re.match(r"^[a-z][a-z0-9+.-]*:", clean_target, re.I):
@@ -191,11 +204,29 @@ def validate_internal_links(root: Path, readme: Path, text: str) -> list[str]:
         try:
             candidate.relative_to(root.resolve())
         except ValueError:
-            errors.append(f"{readme.name}: link sai do repositório: {target}")
+            errors.append(f"{display_path}: link sai do repositório: {target}")
             continue
         if not candidate.exists():
-            errors.append(f"{readme.name}: link interno inexistente: {target}")
+            errors.append(f"{display_path}: link interno inexistente: {target}")
     return errors
+
+
+def is_fund_profile_path(path: str) -> bool:
+    """Return whether a repository path is an individual fund profile."""
+    return (
+        path.startswith("funds/")
+        and path.endswith(".md")
+        and path != "funds/README.md"
+    )
+
+
+def fund_profile_paths(root: Path) -> set[str]:
+    """Return fund profile paths without directory documentation files."""
+    return {
+        path.relative_to(root).as_posix()
+        for path in (root / "funds").rglob("*.md")
+        if is_fund_profile_path(path.relative_to(root).as_posix())
+    }
 
 
 def validate_mojibake(path: Path, display_path: str) -> list[str]:
@@ -259,10 +290,7 @@ def validate_repository(root: Path, base_ref: str) -> list[str]:
             if paths != reference_paths:
                 errors.append(f"{readme_name}: ordem dos fundos difere de {reference_name}")
 
-        profile_paths = {
-            path.relative_to(root).as_posix()
-            for path in (root / "funds").rglob("*.md")
-        }
+        profile_paths = fund_profile_paths(root)
         if reference_set != profile_paths:
             missing = sorted(profile_paths - reference_set)
             extra = sorted(reference_set - profile_paths)
@@ -271,7 +299,7 @@ def validate_repository(root: Path, base_ref: str) -> list[str]:
                 f"não indexados={missing}, links sem perfil={extra}"
             )
 
-    added_funds = sorted(path for path in added if path.startswith("funds/") and path.endswith(".md"))
+    added_funds = sorted(path for path in added if is_fund_profile_path(path))
     if len(added_funds) > 10:
         errors.append(
             f"o diff adiciona {len(added_funds)} fundos; o limite por PR é 10"
@@ -280,7 +308,7 @@ def validate_repository(root: Path, base_ref: str) -> list[str]:
     changed_profiles = sorted(
         path
         for path in changed
-        if path.startswith("funds/") and path.endswith(".md") and (root / path).exists()
+        if is_fund_profile_path(path) and (root / path).exists()
     )
     for relative_path in changed_profiles:
         errors.extend(validate_profile(root / relative_path, relative_path))
@@ -292,6 +320,13 @@ def validate_repository(root: Path, base_ref: str) -> list[str]:
         path = root / relative_path
         if path.is_file() and path.suffix.lower() in text_extensions:
             errors.extend(validate_mojibake(path, relative_path))
+            if path.suffix.lower() == ".md":
+                try:
+                    text = read_utf8(path)
+                except (OSError, ValueError) as exc:
+                    errors.append(str(exc))
+                else:
+                    errors.extend(validate_internal_links(root, path, text))
 
     return sorted(set(errors))
 

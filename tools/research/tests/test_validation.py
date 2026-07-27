@@ -12,8 +12,12 @@ sys.path.insert(0, str(RESEARCH_DIR))
 
 from validate import (  # noqa: E402
     IndexRow,
+    fund_profile_paths,
+    git_changed_paths,
+    is_fund_profile_path,
     ordering_inversions,
     parse_index,
+    validate_internal_links,
     validate_mojibake,
     validate_profile,
 )
@@ -42,7 +46,76 @@ class IndexParsingTests(unittest.TestCase):
         )
 
 
+class GitChangedPathTests(unittest.TestCase):
+    def test_includes_untracked_files_as_added(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            subprocess.run(
+                ["git", "init"],
+                cwd=root,
+                check=True,
+                capture_output=True,
+            )
+            subprocess.run(
+                [
+                    "git",
+                    "-c",
+                    "user.name=Test",
+                    "-c",
+                    "user.email=test@example.com",
+                    "commit",
+                    "--allow-empty",
+                    "-m",
+                    "base",
+                ],
+                cwd=root,
+                check=True,
+                capture_output=True,
+            )
+            (root / "new.md").write_text("# New\n", encoding="utf-8")
+            changed, added = git_changed_paths(root, "HEAD")
+            self.assertIn("new.md", changed)
+            self.assertIn("new.md", added)
+
+
 class ProfileValidationTests(unittest.TestCase):
+    def test_distinguishes_fund_profiles_from_directory_readme(self) -> None:
+        self.assertTrue(is_fund_profile_path("funds/brazil/fund.md"))
+        self.assertFalse(is_fund_profile_path("funds/README.md"))
+
+    def test_excludes_funds_readme_from_profile_paths(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "funds" / "brazil").mkdir(parents=True)
+            (root / "funds" / "README.md").write_text("# Funds\n", encoding="utf-8")
+            profile = root / "funds" / "brazil" / "fund.md"
+            profile.write_text("# Fund\n", encoding="utf-8")
+            self.assertEqual(
+                {"funds/brazil/fund.md"},
+                fund_profile_paths(root),
+            )
+
+    def test_validates_links_relative_to_nested_document(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            category = root / "ecosystem" / "angel-networks"
+            profile = category / "brazil" / "network.md"
+            profile.parent.mkdir(parents=True)
+            profile.write_text("# Network\n", encoding="utf-8")
+            readme = category / "README.md"
+            readme.write_text(
+                "[Network](brazil/network.md)\n",
+                encoding="utf-8",
+            )
+            self.assertEqual(
+                [],
+                validate_internal_links(
+                    root,
+                    readme,
+                    readme.read_text(encoding="utf-8"),
+                ),
+            )
+
     def test_reports_missing_enriched_fields(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "fund.md"

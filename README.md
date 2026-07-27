@@ -221,9 +221,10 @@ These organizations can help founders access capital but are not VC funds, so
 they remain outside the main tables. See the
 [scope and inclusion criteria](ecosystem/README.md).
 
-- [Angel networks](ecosystem/angels.md)
-- [Equity crowdfunding and investment platforms](ecosystem/crowdfunding.md)
-- [Government programs](ecosystem/government-programs.md)
+- [Accelerators](ecosystem/accelerators/README.md)
+- [Angel networks](ecosystem/angel-networks/README.md)
+- [Funding platforms](ecosystem/funding-platforms/README.md)
+- [Public programs](ecosystem/public-programs/README.md)
 
 ## Contributing
 
