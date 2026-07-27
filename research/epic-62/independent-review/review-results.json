@@ -1,0 +1,1625 @@
+[
+  {
+    "candidate_id": "accel-ace-amazonia-impacto",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/brazil/ace-ventures.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Programa de Aceleração de Startups de Impacto na Amazônia",
+    "official_evidence_ids": [
+      "ev-accel-br-ace-amazonia"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "cross_category",
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-ace-for-doers",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/brazil/ace-ventures.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "For Doers",
+    "official_evidence_ids": [
+      "ev-accel-br-ace-for-doers"
+    ],
+    "original_decision": "evidência-insuficiente",
+    "outcome": "confirmed",
+    "resolved_decision": "evidência-insuficiente",
+    "reviewed_groups": [
+      "cross_category"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-ace-funses1-digital",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/brazil/ace-ventures.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Aceleração Digital FUNSES1",
+    "official_evidence_ids": [
+      "ev-accel-br-ace-funses1"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "cross_category",
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-acelera-divinopolis",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "epic-65:program/program-acelera-divinopolis",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/:divinopolis.mg.gov.br#acelera-benefits",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Acelera Divinópolis",
+    "official_evidence_ids": [
+      "ev-accel-br-divinopolis"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-acre-for-startups",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "epic-65:program/program-acre-for-startups",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/:sebrae.com.br#acre-startup-scholarship",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Acre for Startups",
+    "official_evidence_ids": [
+      "ev-accel-br-acre-for-startups"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-and-agroinnovatec",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "epic-65:program/program-agroinnovatec",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "AgroInnovatec 2026",
+    "official_evidence_ids": [
+      "ev-accel-and-agroinnovatec"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-and-buentrip",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/regional/buentrip-ventures.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "BuenTrip Hub",
+    "official_evidence_ids": [
+      "ev-accel-and-buentrip"
+    ],
+    "original_decision": "evidência-insuficiente",
+    "outcome": "confirmed",
+    "resolved_decision": "evidência-insuficiente",
+    "reviewed_groups": [
+      "cross_category"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-and-emprendimiento-digital",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "epic-65:program/program-emprendimiento-digital",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "Emprendimiento Digital 2026",
+    "official_evidence_ids": [
+      "ev-accel-and-emprendimiento-digital"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-and-impact-hub-caracas",
+    "catalog_relationships": [],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "Impact Hub Caracas",
+    "official_evidence_ids": [
+      "ev-accel-and-impact-hub-caracas"
+    ],
+    "original_decision": "excluído",
+    "outcome": "confirmed",
+    "resolved_decision": "excluído",
+    "reviewed_groups": [
+      "excluded_sample"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-and-innovalab",
+    "catalog_relationships": [],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Aceleradora InnovaLab Mujeres Tech",
+    "official_evidence_ids": [
+      "ev-accel-and-innovalab"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-and-liquid",
+    "catalog_relationships": [],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "LIQUID Venture Studio",
+    "official_evidence_ids": [
+      "ev-accel-and-liquid"
+    ],
+    "original_decision": "excluído",
+    "outcome": "confirmed",
+    "resolved_decision": "excluído",
+    "reviewed_groups": [
+      "excluded_sample"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-and-rockstart",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:rockstart.com#investment-vehicle",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "Rockstart LATAM",
+    "official_evidence_ids": [
+      "ev-accel-and-rockstart"
+    ],
+    "original_decision": "evidência-insuficiente",
+    "outcome": "confirmed",
+    "resolved_decision": "evidência-insuficiente",
+    "reviewed_groups": [
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-and-startup-peru",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "research/epic-65/andean/programs.jsonl#program-proinnovate-startup-peru",
+        "relationship": "encaminhado",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "StartUp Perú",
+    "official_evidence_ids": [
+      "ev-accel-and-startup-peru"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-and-utec",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/regional/utec-ventures.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Aceleradora UTEC Ventures",
+    "official_evidence_ids": [
+      "ev-accel-and-utec"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "cross_category",
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-bndes-garagem",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "epic-65:program/program-bndes-garagem",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/:bndes.gov.br#garagem-awards",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "BNDES Garagem",
+    "official_evidence_ids": [
+      "ev-accel-br-bndes-garagem"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-boost",
+    "catalog_relationships": [],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Boost Acceleration Camp",
+    "official_evidence_ids": [
+      "ev-accel-pilot-boost-apply",
+      "ev-accel-pilot-boost-program"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-brde-labs-rs",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "epic-65:program/program-brde-labs-rs",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/:brde.com.br#brde-labs-awards",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "BRDE Labs RS",
+    "official_evidence_ids": [
+      "ev-accel-br-brde-labs"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-capital-empreendedor-rj",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "research/epic-65/brazil/programs.jsonl#program-sebrae-capital-empreendedor",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Capital Empreendedor RJ",
+    "official_evidence_ids": [
+      "ev-accel-br-capital-empreendedor-rj"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "cross_category",
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-darwin-scale",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/brazil/darwin-startups.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Darwin Scale",
+    "official_evidence_ids": [
+      "ev-accel-br-darwin-scale"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "cross_category",
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-dasa-pulsa",
+    "catalog_relationships": [],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Dasa Pulsa",
+    "official_evidence_ids": [
+      "ev-accel-br-dasa-pulsa"
+    ],
+    "original_decision": "excluído",
+    "outcome": "confirmed",
+    "resolved_decision": "excluído",
+    "reviewed_groups": [
+      "excluded_sample"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-finep-mulheres-inovadoras",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "epic-65:program/program-finep-mulheres-inovadoras",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/:finep.gov.br#mulheres-inovadoras-awards",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Programa Mulheres Inovadoras",
+    "official_evidence_ids": [
+      "ev-accel-br-finep-mulheres"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-foreign-500-global-flagship",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/regional/500-latam-500-global.md",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "materializado"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/regional/500-latam-500-global.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "500 Global Flagship Accelerator",
+    "official_evidence_ids": [
+      "ev-accel-foreign-500-global-flagship"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "cross_category",
+      "eligible",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-foreign-alchemist-flagship",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:alchemistaccelerator.com#investment-vehicle",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Alchemist Flagship",
+    "official_evidence_ids": [
+      "ev-accel-foreign-alchemist-flagship"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-foreign-antler-singapore",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:antler.co#global-venture-capital",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/:antler.co#global-venture-capital",
+        "relationship": "entidade-encaminhada",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Antler Singapore Residency",
+    "official_evidence_ids": [
+      "ev-accel-foreign-antler-singapore"
+    ],
+    "original_decision": "encaminhado-para-funds",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-funds",
+    "reviewed_groups": [
+      "cross_category",
+      "routed",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-foreign-aws-generative-ai",
+    "catalog_relationships": [],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "AWS Generative AI Accelerator",
+    "official_evidence_ids": [
+      "ev-accel-foreign-aws-generative-ai"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-foreign-berkeley-skydeck",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:skydeck.berkeley.edu#skydeck-fund",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Berkeley SkyDeck Accelerator",
+    "official_evidence_ids": [
+      "ev-accel-foreign-berkeley-skydeck"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-foreign-founder-institute-latam",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:fi.co#founder-capital",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "fila-canônica"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [
+      "div-issue77-founder-institute-vehicle"
+    ],
+    "name": "Founder Institute LatAm Fall 2026",
+    "official_evidence_ids": [
+      "ev-accel-foreign-founder-institute-latam",
+      "ev-accel-review-founder-institute-vehicle"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed_with_resolution",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-foreign-google-ai-cybersecurity-latam",
+    "catalog_relationships": [],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Google for Startups Accelerator: AI for Cybersecurity Latin America",
+    "official_evidence_ids": [
+      "ev-accel-foreign-google-ai-cybersecurity-latam"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-foreign-seedstars-lif-caf-rural-tech",
+    "catalog_relationships": [],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "LIF CAF Rural Tech",
+    "official_evidence_ids": [
+      "ev-accel-foreign-seedstars-lif-caf-rural-tech"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-foreign-techstars-anywhere",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:techstars.com#investment-vehicle",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Techstars Anywhere Accelerator",
+    "official_evidence_ids": [
+      "ev-accel-foreign-techstars-anywhere"
+    ],
+    "original_decision": "evidência-insuficiente",
+    "outcome": "confirmed",
+    "resolved_decision": "evidência-insuficiente",
+    "reviewed_groups": [
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-foreign-y-combinator",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:ycombinator.com#investment-vehicle",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Y Combinator Fall 2026",
+    "official_evidence_ids": [
+      "ev-accel-foreign-y-combinator"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-ganesha-go-europe",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:theganeshalab.com#ganesha-fund",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "The Ganesha Lab, Go Europe Connect",
+    "official_evidence_ids": [
+      "ev-accel-pilot-ganesha-hub",
+      "ev-accel-pilot-ganesha-program"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-gb-ventures",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/brazil/grupo-boticario-ventures.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Programa de Aceleração GB Ventures",
+    "official_evidence_ids": [
+      "ev-accel-br-gb-ventures"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "cross_category",
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-google-for-startups-brazil",
+    "catalog_relationships": [],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Google for Startups Accelerator: Brazil",
+    "official_evidence_ids": [
+      "ev-accel-br-google-brazil"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-inovativa-brasil",
+    "catalog_relationships": [],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "InovAtiva Brasil",
+    "official_evidence_ids": [
+      "ev-accel-br-inovativa-program",
+      "ev-accel-review-inovativa-recurrence"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed_with_additional_evidence",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-mxcac-500-latam",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/regional/500-latam-500-global.md",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "materializado"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/regional/500-latam-500-global.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "500 LatAm Accelerator",
+    "official_evidence_ids": [
+      "ev-accel-mxcac-500-latam"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "cross_category",
+      "eligible",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-mxcac-alterna",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:alterna.pro#investment-vehicle",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "Ruta Alterna",
+    "official_evidence_ids": [
+      "ev-accel-mxcac-alterna"
+    ],
+    "original_decision": "evidência-insuficiente",
+    "outcome": "confirmed",
+    "resolved_decision": "evidência-insuficiente",
+    "reviewed_groups": [
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-mxcac-carao",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/regional/carao-ventures.md",
+        "relationship": "encaminhado",
+        "status": "materializado"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/regional/carao-ventures.md",
+        "relationship": "entidade-encaminhada",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "Carao Ventures",
+    "official_evidence_ids": [
+      "ev-accel-mxcac-carao"
+    ],
+    "original_decision": "encaminhado-para-funds",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-funds",
+    "reviewed_groups": [
+      "cross_category",
+      "routed",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-mxcac-cenpromype",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "epic-65:program/program-cenpromype",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "Programas CENPROMYPE",
+    "official_evidence_ids": [
+      "ev-accel-mxcac-cenpromype"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-mxcac-honduras-digital",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-63",
+        "destination": "research/epic-63/mexico-cac/candidates.jsonl#ang-hondurasdigitalchallenge-com",
+        "relationship": "encaminhamento-de-fronteira-divergente",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [
+      "div-issue77-honduras-digital-boundary"
+    ],
+    "name": "Honduras Digital Challenge",
+    "official_evidence_ids": [
+      "ev-accel-mxcac-honduras-digital"
+    ],
+    "original_decision": "excluído",
+    "outcome": "confirmed_with_resolution",
+    "resolved_decision": "excluído",
+    "reviewed_groups": [
+      "excluded_sample"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-mxcac-parallel18",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/regional/parallel18-ventures.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "P18",
+    "official_evidence_ids": [
+      "ev-accel-mxcac-parallel18"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "cross_category",
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-sc-anii-sprintuy",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "epic-65:program/program-anii-sprintuy",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "SprintUy 2026",
+    "official_evidence_ids": [
+      "ev-accel-sc-anii-sprintuy"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-sc-cites",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/regional/cites.md",
+        "relationship": "encaminhado",
+        "status": "materializado"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/regional/cites.md",
+        "relationship": "entidade-encaminhada",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "CITES",
+    "official_evidence_ids": [
+      "ev-accel-sc-cites"
+    ],
+    "original_decision": "encaminhado-para-funds",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-funds",
+    "reviewed_groups": [
+      "cross_category",
+      "routed",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-sc-grid-transform",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/multi-country/gridx.md",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "materializado"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/multi-country/gridx.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "GRIDX Transform",
+    "official_evidence_ids": [
+      "ev-accel-sc-grid-transform"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "cross_category",
+      "eligible",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-sc-incubate",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "epic-65:program/program-incubate",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "IncuBAte 2026",
+    "official_evidence_ids": [
+      "ev-accel-sc-incubate"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-sc-magical",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:magicalstartups.com#venture-capital",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Magical Accelerator",
+    "official_evidence_ids": [
+      "ev-accel-sc-magical"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-sc-mic-reinventa",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "epic-65:program/program-mic-reinventa",
+        "relationship": "encaminhado",
+        "status": "fila-canônica"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Programa Reinventa 2026",
+    "official_evidence_ids": [
+      "ev-accel-sc-mic-reinventa"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-sc-platanus",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:platanus.ventures#investment-vehicle",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/:platanus.ventures#investment-vehicle",
+        "relationship": "unidades-distintas",
+        "status": "fila-canônica"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "not_required",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "not_required"
+    },
+    "divergence_ids": [],
+    "name": "Platanus Ventures Program",
+    "official_evidence_ids": [
+      "ev-accel-sc-platanus"
+    ],
+    "original_decision": "evidência-insuficiente",
+    "outcome": "confirmed",
+    "resolved_decision": "evidência-insuficiente",
+    "reviewed_groups": [
+      "cross_category",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-sc-startup-chile",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-65",
+        "destination": "research/epic-65/southern-cone/programs.jsonl#program-start-up-chile",
+        "relationship": "encaminhado",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "Start-Up Chile BIG",
+    "official_evidence_ids": [
+      "ev-accel-sc-startup-chile"
+    ],
+    "original_decision": "encaminhado-para-outra-epic",
+    "outcome": "confirmed",
+    "resolved_decision": "encaminhado-para-outra-epic",
+    "reviewed_groups": [
+      "cross_category",
+      "routed"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-tecnoparq-acelera",
+    "catalog_relationships": [],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "tecnoPARQ Acelera",
+    "official_evidence_ids": [
+      "ev-accel-br-tecnoparq-program"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-ventiur-acelera-impacto",
+    "catalog_relationships": [
+      {
+        "catalog": "epic-64",
+        "destination": "research/epic-64/brazil/candidates.jsonl#plat-ventiur",
+        "relationship": "operadora-e-programa-distintos",
+        "status": "materializado"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/brazil/ventiur.md",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "materializado"
+      },
+      {
+        "catalog": "funds",
+        "destination": "funds/brazil/ventiur.md",
+        "relationship": "unidades-distintas",
+        "status": "materializado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [
+      "div-issue77-ventiur-activity"
+    ],
+    "name": "Acelera Impacto",
+    "official_evidence_ids": [
+      "ev-accel-br-ventiur-impacto",
+      "ev-accel-review-ventiur-calendar"
+    ],
+    "original_decision": "evidência-insuficiente",
+    "outcome": "reopened",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "cross_category",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  },
+  {
+    "candidate_id": "accel-wow",
+    "catalog_relationships": [
+      {
+        "catalog": "funds",
+        "destination": "funds/:wow.ac#wow-investment-network",
+        "relationship": "programa-e-veículo-distintos",
+        "status": "não-publicado"
+      }
+    ],
+    "checks": {
+      "external_latam_access": "confirmed",
+      "funds_epics_63_64_65": "checked",
+      "official_category": "confirmed",
+      "recent_activity": "confirmed"
+    },
+    "divergence_ids": [],
+    "name": "WOW Acceleration Program",
+    "official_evidence_ids": [
+      "ev-accel-br-wow-program"
+    ],
+    "original_decision": "elegível",
+    "outcome": "confirmed",
+    "resolved_decision": "elegível",
+    "reviewed_groups": [
+      "eligible",
+      "vehicles"
+    ],
+    "reviewed_on": "2026-07-27",
+    "schema_version": "1.0"
+  }
+]
