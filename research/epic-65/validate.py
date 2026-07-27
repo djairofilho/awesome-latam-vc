@@ -79,6 +79,22 @@ def parse_date(value: object) -> date | None:
         return None
 
 
+def call_is_open_on_capture(call: dict) -> bool:
+    """Return whether a call is temporally consistent with an open snapshot."""
+    if call.get("call_status") != "aberta":
+        return False
+    captured_date = parse_date(call.get("captured_on"))
+    opened_date = parse_date(call.get("opened_on"))
+    closes_date = parse_date(call.get("closes_on"))
+    if captured_date is None:
+        return False
+    if opened_date is not None and captured_date < opened_date:
+        return False
+    if closes_date is not None and captured_date > closes_date:
+        return False
+    return True
+
+
 def validate_bundle(bundle: Path) -> list[str]:
     errors: list[str] = []
     schemas: dict[str, dict] = {}
@@ -210,6 +226,25 @@ def validate_bundle(bundle: Path) -> list[str]:
             errors.append(
                 f"{bundle}/run-manifest.jsonl: task_id duplicado"
             )
+        shard_owners: dict[str, str] = {}
+        for task in task_rows:
+            shard_path = task.get("shard_path")
+            worker_id = task.get("worker_id")
+            if not isinstance(shard_path, str) or not isinstance(worker_id, str):
+                continue
+            previous_owner = shard_owners.get(shard_path)
+            if previous_owner is not None:
+                errors.append(
+                    f"{bundle}/run-manifest.jsonl: shard_path duplicado: "
+                    f"{shard_path}"
+                )
+                if previous_owner != worker_id:
+                    errors.append(
+                        f"{bundle}/run-manifest.jsonl: workers distintos "
+                        f"compartilham {shard_path}: {previous_owner} e {worker_id}"
+                    )
+            else:
+                shard_owners[shard_path] = worker_id
 
     for agency in records["agencies.jsonl"]:
         agency_id = agency.get("agency_id")
@@ -316,13 +351,13 @@ def validate_bundle(bundle: Path) -> list[str]:
                     )
             if program.get("activity_basis") == "chamada aberta":
                 has_open_call = any(
-                    calls.get(call_id, {}).get("call_status") == "aberta"
+                    call_is_open_on_capture(calls.get(call_id, {}))
                     for call_id in program.get("call_ids", [])
                 )
                 if not has_open_call:
                     errors.append(
                         f"{bundle}/programs.jsonl: {program_id} usa chamada aberta "
-                        "sem call_id aberta vinculada"
+                        "sem call_id aberta e temporalmente válida vinculada"
                     )
             if program.get("program_status") == "fechado agora, recorrente" and (
                 program.get("activity_basis") != "recorrência oficial em 24 meses"
@@ -359,11 +394,45 @@ def validate_bundle(bundle: Path) -> list[str]:
             errors.append(f"{bundle}: vínculo assimétrico entre {program_id} e {call_id}")
         opened_on = call.get("opened_on")
         closes_on = call.get("closes_on")
+        captured_on = call.get("captured_on")
         opened_date = parse_date(opened_on)
         closes_date = parse_date(closes_on)
+        captured_date = parse_date(captured_on)
         if opened_date and closes_date and closes_date < opened_date:
             errors.append(
                 f"{bundle}/calls.jsonl: {call_id} fecha antes de abrir"
+            )
+        if call.get("call_status") == "aberta" and captured_date:
+            if opened_date and captured_date < opened_date:
+                errors.append(
+                    f"{bundle}/calls.jsonl: {call_id} foi capturada como aberta "
+                    "antes da data de abertura"
+                )
+            if closes_date and captured_date > closes_date:
+                errors.append(
+                    f"{bundle}/calls.jsonl: {call_id} foi capturada como aberta "
+                    "após a data de fechamento"
+                )
+        if call.get("call_status") == "fechada" and captured_date:
+            if opened_date and captured_date < opened_date:
+                errors.append(
+                    f"{bundle}/calls.jsonl: {call_id} foi capturada como fechada "
+                    "antes da data de abertura"
+                )
+            if closes_date and captured_date < closes_date:
+                errors.append(
+                    f"{bundle}/calls.jsonl: {call_id} foi capturada como fechada "
+                    "antes da data de fechamento"
+                )
+        if (
+            call.get("call_status") == "prevista"
+            and captured_date
+            and opened_date
+            and captured_date >= opened_date
+        ):
+            errors.append(
+                f"{bundle}/calls.jsonl: {call_id} continua prevista na data "
+                "ou após a abertura"
             )
         if call.get("call_status") in {"aberta", "fechada"}:
             claims = set()

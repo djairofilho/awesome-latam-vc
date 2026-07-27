@@ -80,6 +80,12 @@ Um programa elegível usa exatamente uma base de atividade:
 data de avaliação. O validador rejeita sinal posterior à avaliação ou anterior
 à janela de 24 meses.
 
+O status de uma chamada é um retrato em `captured_on`. Uma chamada `aberta` não
+pode ter sido capturada antes de `opened_on` nem depois de `closes_on`, quando
+essas datas são conhecidas. De forma análoga, uma chamada `fechada` não pode ser
+capturada antes de sua abertura ou de seu fechamento, e uma chamada `prevista`
+não pode conservar esse status na data ou depois de `opened_on`.
+
 Uma página antiga sem intake atual, chamada aberta ou recorrência confirmada não
 comprova atividade. `Fechado agora, recorrente` exige evidência oficial de
 recorrência, não apenas uma chamada encerrada.
@@ -183,7 +189,8 @@ research/epic-65/<região>/shards/<worker-id>/
 Workers não fazem append em arquivos compartilhados. A consolidação posterior
 reduz os shards de forma determinística, resolve IDs e verifica referências. O
 `task_count` do manifesto deve coincidir com a quantidade de tarefas. Uma tarefa
-`bloqueada` exige motivo e próxima ação.
+`bloqueada` exige motivo e próxima ação. Cada `shard_path` pertence a uma única
+tarefa e a um único `worker_id`; caminhos repetidos no manifesto são inválidos.
 
 ## Fronteiras com outros catálogos
 

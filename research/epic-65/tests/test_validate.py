@@ -80,15 +80,58 @@ class ContractValidationTests(unittest.TestCase):
             errors = validate_bundle(bundle)
         self.assertTrue(any("sem call_id aberta" in error for error in errors))
 
+    def test_open_call_captured_after_close_cannot_prove_activity(self) -> None:
+        def change_programs(rows):
+            rows[0]["activity_basis"] = "chamada aberta"
+
+        def change_calls(rows):
+            rows[0].update(
+                call_status="aberta",
+                opened_on="2026-06-01",
+                closes_on="2026-07-01",
+                captured_on="2026-07-27",
+            )
+
+        def change_evidence(rows):
+            status_claim = next(
+                claim
+                for claim in rows[2]["claims"]
+                if claim["field"] == "status da chamada"
+            )
+            status_claim["finding"] = "confirmado"
+
+        with self.modified_bundle(
+            {
+                "programs.jsonl": change_programs,
+                "calls.jsonl": change_calls,
+                "evidence.jsonl": change_evidence,
+            }
+        ) as bundle:
+            errors = validate_bundle(bundle)
+        self.assertTrue(any("temporalmente válida" in error for error in errors))
+        self.assertTrue(any("após a data de fechamento" in error for error in errors))
+
+    def test_distinct_workers_cannot_share_shard_path(self) -> None:
+        def share_shard(rows):
+            rows[0]["task_count"] = 2
+            duplicate = copy.deepcopy(rows[1])
+            duplicate["task_id"] = "task-example-chile-corfo-2"
+            duplicate["worker_id"] = "worker-example-chile-2"
+            rows.append(duplicate)
+
+        with self.modified_bundle({"run-manifest.jsonl": share_shard}) as bundle:
+            errors = validate_bundle(bundle)
+        self.assertTrue(any("shard_path duplicado" in error for error in errors))
+        self.assertTrue(any("workers distintos" in error for error in errors))
+
     def test_month_subtraction_handles_leap_day(self) -> None:
         from datetime import date
 
         self.assertEqual(date(2022, 2, 28), subtract_months(date(2024, 2, 29), 24))
 
-    class modified_example:
-        def __init__(self, filename, mutate):
-            self.filename = filename
-            self.mutate = mutate
+    class modified_bundle:
+        def __init__(self, mutators):
+            self.mutators = mutators
             self.temporary = tempfile.TemporaryDirectory()
 
         def __enter__(self):
@@ -99,8 +142,8 @@ class ContractValidationTests(unittest.TestCase):
                     {key: value for key, value in row.items() if key != "_line_number"}
                     for row in copy.deepcopy(rows)
                 ]
-                if filename == self.filename:
-                    self.mutate(clean_rows[0])
+                if filename in self.mutators:
+                    self.mutators[filename](clean_rows)
                 content = "".join(
                     json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n"
                     for row in clean_rows
@@ -110,6 +153,10 @@ class ContractValidationTests(unittest.TestCase):
 
         def __exit__(self, *_):
             self.temporary.cleanup()
+
+    class modified_example(modified_bundle):
+        def __init__(self, filename, mutate):
+            super().__init__({filename: lambda rows: mutate(rows[0])})
 
 
 if __name__ == "__main__":
