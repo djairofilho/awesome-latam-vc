@@ -108,28 +108,27 @@ Aliases históricos ou operacionais foram preservados, incluindo Paris Ventures,
 Ventures Gerdau, Randon Ventures, Wayra Brasil, GB Ventures e inovabra ventures.
 Nenhum alias foi unido automaticamente a um veículo diferente.
 
-## Lacunas e fila restante
+## Encerramento e limites
 
-O escopo de alto impacto desta onda foi encerrado. A fila residual é:
+Todos os 20 candidatos registrados estão decididos. Não há candidato com status
+`descoberto` ou `em pesquisa`, nem decisão nula.
 
-1. esclarecer em fonte societária se o financiamento da AlperTech inclui
-   participação acionária;
-2. validar eventuais veículos próprios de Porto, Brasilseg, Sompo e IRB(Re) que
-   não usem a marca de seus programas de inovação aberta;
-3. aprofundar hospitais, laboratórios e operadoras fora das organizações
-   exibidas nos rankings renderizados;
-4. revisar Qualcomm Ventures, encontrada na vitrine de investors do Cubo,
-   somente se uma fonte oficial confirmar mandato ou atividade no Brasil;
-5. confirmar canal de pitch para Gerdau Next Ventures, Panvel Ventures, Vivo
-   Ventures, RV e SLC Ventures. A ausência pública foi mantida como `null`.
+A AlperTech permanece deliberadamente como `evidência insuficiente`, com motivo,
+responsável e próxima ação no registro do candidato. As buscas por eventuais
+veículos próprios de Porto, Brasilseg, Sompo e IRB(Re), por mandato brasileiro
+da Qualcomm Ventures e por outras organizações fora das categorias
+renderizadas podem formar uma nova pesquisa, mas não são pendências deste
+recorte.
 
-Responsável sugerido para a fila: `issue-20-next-run`.
+Os canais de pitch não localizados para Gerdau Next Ventures, Panvel Ventures,
+Vivo Ventures, RV e SLC Ventures permanecem `null`; ausência de publicação não
+foi convertida em afirmação negativa.
 
 ## Artefatos
 
 - `source-inventory.jsonl`: 32 fontes e recortes;
 - `candidates.jsonl`: 20 candidatos deduplicados;
 - `evidence.jsonl`: 23 evidências oficiais;
-- `run-manifest.jsonl`: duas execuções e 15 tarefas.
+- `run-manifest.jsonl`: três execuções e 16 tarefas.
 
 O manifesto declara `local_startup_dataset_used: false`.
