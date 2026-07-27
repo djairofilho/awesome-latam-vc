@@ -4,13 +4,15 @@
   "id": "public_program:corfo:en",
   "entity_id": "public_program:corfo",
   "slug": "corfo",
-  "name": "CORFO",
+  "name": "Corporación de Fomento de la Producción",
   "entity_type": "public_program",
   "locale": "en",
   "translation_of": null,
   "translation_status": "canonical",
-  "summary": "https://www.corfo.gob.cl/sites/cpp/",
-  "aliases": [],
+  "summary": "A iniciativa da CORFO mantém uma rota explícita para startups tecnológicas escaláveis.",
+  "aliases": [
+    "CORFO"
+  ],
   "operator": null,
   "base_geography": {
     "kind": "country",
@@ -26,50 +28,42 @@
     "entrepreneurship",
     "innovation"
   ],
-  "official_website": "https://www.corfo.gob.cl/",
-  "founder_route": "https://www.corfo.gob.cl/sites/cpp/",
+  "official_website": "https://www.corfo.cl/",
+  "founder_route": "https://startupchile.org/en/apply/",
   "sources": [
     {
-      "title": "CORFO programs and current calls",
-      "url": "https://www.corfo.gob.cl/sites/cpp/",
-      "kind": "official_program"
-    },
-    {
-      "title": "CORFO entrepreneurship support",
-      "url": "https://www.corfo.gob.cl/sites/cpp/quieresemprender/",
-      "kind": "official_program"
-    },
-    {
-      "title": "CORFO financing mechanisms",
-      "url": "https://www.corfo.gob.cl/sites/cpp/buscasfinanciamiento/",
+      "title": "Apply to Start-Up Chile",
+      "url": "https://startupchile.org/en/apply/",
       "kind": "official_program"
     }
   ],
-  "last_verified": "2026-07-26",
+  "last_verified": "2026-07-27",
   "protected_terms": [
-    "CORFO"
+    "Corporación de Fomento de la Producción"
   ]
 }
 ---
-# CORFO
+# Corporación de Fomento de la Producción
 
-- **Type:** Government economic-development agency and program provider
-- **Website:** https://www.corfo.gob.cl/
+- **Entity ID:** `agency-corfo`
+- **Entity type:** Public agency
+- **Aliases:** CORFO
+- **Website:** https://www.corfo.cl/
 - **Geography:** Chile
-- **Founder route:** Review current programs and calls at
-  https://www.corfo.gob.cl/sites/cpp/
+- **Founder route:** https://startupchile.org/en/apply/
+- **Publication batch:** `public-programs-01`
 
-Chile's Corporación de Fomento de la Producción supports entrepreneurship and
-innovation through direct subsidies, ecosystem-development initiatives,
-training, financing mechanisms, and programs delivered with partner
-organizations. It also supports the development of venture capital funds, but
-CORFO itself should not be presented as a VC fund. Founders must check the
-current call because availability, scope, amounts, and eligibility vary.
+A iniciativa da CORFO mantém uma rota explícita para startups tecnológicas escaláveis.
 
-## Sources
+This agency profile represents the stable public route. Program-specific benefits, eligibility, values, dates, and availability remain attached to each program or call.
 
-- [CORFO programs and current calls](https://www.corfo.gob.cl/sites/cpp/)
-- [CORFO entrepreneurship support](https://www.corfo.gob.cl/sites/cpp/quieresemprender/)
-- [CORFO financing mechanisms](https://www.corfo.gob.cl/sites/cpp/buscasfinanciamiento/)
+## Published programs
 
-**Last verified:** 2026-07-26
+- [Semilla Inicia para Empresas Lideradas por Mujeres](corfo-semilla-inicia-mujeres.md) (`program-corfo-semilla-inicia-mujeres`)
+- [Start-Up Chile](start-up-chile.md) (`program-start-up-chile`)
+
+## Official sources
+
+- [Apply to Start-Up Chile](https://startupchile.org/en/apply/) — A iniciativa da CORFO mantém uma rota explícita para startups tecnológicas escaláveis. (`evidence-agency-corfo`)
+
+**Last verified:** 2026-07-27

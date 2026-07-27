@@ -1,0 +1,53 @@
+{
+  "batch_artifact_hash": "8d2dbe384c4f33d19127d03009f06936cf690dd1cebd43590ec07540172d8a87",
+  "batch_count": 1,
+  "batch_size": 10,
+  "branches": [
+    "agent/issue-95-platforms-publication"
+  ],
+  "cutoff_date": "2026-07-27",
+  "eligible_count": 9,
+  "expected_batch_count": 1,
+  "hash_algorithm": "sha256",
+  "index_hashes": {
+    "README.es.md": "efa74e99e447c3652a234fe461aec2d70ffefa319f8b5da4786e6059b765fefc",
+    "README.pt.md": "ea4fa2b620c1df059d0563f53c90c6c4269d0981b11692201949726bb6283dc9",
+    "ecosystem/funding-platforms/README.es.md": "657c43df611997ac7a485db325beb873e5b7b6ce85075f27829c4a303822603b",
+    "ecosystem/funding-platforms/README.md": "25d2f6339dd0377f4181c517663df85a126a3ec64b5b411575b8a5009cc89a22",
+    "ecosystem/funding-platforms/README.pt.md": "08709fce49b4839a56d36e6b96a426012b9b5cf77a4157d42c774068be2cb7bd"
+  },
+  "issue": 95,
+  "not_published_count": 30,
+  "not_published_decision_counts": {
+    "excluded": 4,
+    "inactive": 2,
+    "insufficient_evidence": 18,
+    "other_category": 6
+  },
+  "parent_epic": 64,
+  "profile_hashes": {
+    "ecosystem/funding-platforms/brazil/captable.md": "eed3aafceda1ed162b74ad8a7f1b9b4c5584cd9824d3cbdb97653b0af538b686",
+    "ecosystem/funding-platforms/brazil/eqseed.md": "7b88ae9b78806a47d2d151f004bc2a2da6ded2f7a215d03810c3cce72e967e48",
+    "ecosystem/funding-platforms/brazil/kria.md": "5480e8db53ebf5e261ab878d6c83ee9b1f122cb7b3ca81a632f939579be48826",
+    "ecosystem/funding-platforms/brazil/smu.md": "6a8737685c156a3be4f7eea6d059835d0672e0f642e63b0e66802aada9a56722",
+    "ecosystem/funding-platforms/chile/broota.md": "845868f1bb84e6cdea9f9a22a5473633983902ba9e88bac481f4e788d618dfc9",
+    "ecosystem/funding-platforms/colombia/a2censo.md": "430f510fab037bff7a26b2a0792a746163e8d98b61714b4b7c88e97144ed29ac",
+    "ecosystem/funding-platforms/mexico/arkangeles.md": "4704cbf3faf86a0882edb5373b60dacbbfebf095bc11f0d7c3accb26b8d87b86",
+    "ecosystem/funding-platforms/mexico/play-business.md": "114c1a8496d81b6a8ce8166e6a9e5cf584c45d4c971b19dffecff297215f31b6",
+    "ecosystem/funding-platforms/uruguay/crowder.md": "7f7ca893ad84696e745c4b7bf1979b21c3a87abe01d9737fa6cee1758164df85"
+  },
+  "published_count": 9,
+  "schema_version": "1.0",
+  "source_hashes": {
+    "candidates.jsonl": "71216a50eb4297eb07c9d818a5a478210e34de6f36a98c637e38ebce046cd38a",
+    "consolidation-manifest.json": "cbdfa6ad72a89799abd7255ebbbcc179340feb1747a46aa86c9b0a5685ddf7c7",
+    "evidence.jsonl": "a9e480821d74d5821d8b57c340cccff4368a24c7938a1af9686ce05450621d6d",
+    "independent-review.jsonl": "ef02763e513ffc9c94b36c97d20e56ebfb84f61510df8389fd21b52f22fa1877"
+  },
+  "source_independent_review_status": "complete",
+  "source_queue_status": "frozen",
+  "status": "complete",
+  "sub_issues": [
+    151
+  ]
+}

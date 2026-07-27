@@ -72,6 +72,12 @@ states that no website was publicly disclosed. Focus values use lowercase
 `snake_case`; they are normalized filter keys and never replace the factual
 wording in the body.
 
+`sources` preserves source occurrences in the canonical body, including an
+exact repeated occurrence when the visible source list itself contains one.
+Catalog validation requires titles, URLs, order and repetition to correspond
+exactly; generators must not introduce a duplicate that is absent from the
+body.
+
 ## Translation rules
 
 The canonical profile is the only authority for protected metadata.

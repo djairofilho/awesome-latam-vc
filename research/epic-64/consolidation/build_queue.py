@@ -655,6 +655,10 @@ def incoming_angel_transfers(
             if network_id in seen_networks:
                 continue
             seen_networks.add(network_id)
+            if network_id not in INCOMING_RESOLUTIONS:
+                # The issue #94 queue is frozen. Transfers merged into epic #63
+                # after its cutoff belong to a later consolidation cycle.
+                continue
             proposed_profile = candidate.get("canonical_profile")
             adjudication = INCOMING_RESOLUTIONS[network_id]
             target_id = adjudication["target_platform_id"]

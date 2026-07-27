@@ -42,7 +42,7 @@
     {
       "title": "Terms for startup applications",
       "url": "https://ventiur.net/termosdeuso",
-      "kind": "official_application"
+      "kind": "official_website"
     }
   ],
   "last_verified": "2026-07-26",

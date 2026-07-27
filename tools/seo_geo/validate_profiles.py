@@ -36,7 +36,8 @@ VISIBLE_FIELD_RE = re.compile(
     re.MULTILINE,
 )
 SOURCE_SECTION_RE = re.compile(
-    r"^## Sources\s*$\n(?P<section>.*?)(?=^\*\*Last verified:\*\*|\Z)",
+    r"^## (?:Official sources|Sources)\s*$\n"
+    r"(?P<section>.*?)(?=^\*\*Last verified:\*\*|\Z)",
     re.MULTILINE | re.DOTALL,
 )
 SOURCE_LINK_RE = re.compile(r"^-\s+\[([^\]]+)\]\((https://[^)]+)\)", re.MULTILINE)
@@ -257,7 +258,7 @@ def validate_catalog_correspondence(profile: Profile) -> list[str]:
         for match in VISIBLE_FIELD_RE.finditer(profile.body)
     }
     website = metadata.get("official_website")
-    visible_website = fields.get("Website", "")
+    visible_website = fields.get("Website") or fields.get("Official page", "")
     if website is None:
         if not visible_website.startswith("Not publicly disclosed"):
             errors.append(

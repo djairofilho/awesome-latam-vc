@@ -1,30 +1,30 @@
 {
   "after": {
-    "profiles": 159,
-    "profiles_with_front_matter": 159,
-    "sources": 390
+    "profiles": 195,
+    "profiles_with_front_matter": 195,
+    "sources": 436
   },
   "before": {
-    "profiles": 159,
+    "profiles": 195,
     "profiles_with_front_matter": 0,
-    "sources": 390
+    "sources": 436
   },
   "body_hash_mismatches": 0,
   "cutoff_date": "2026-07-27",
   "entity_type_counts": {
     "angel_network": 5,
     "fund": 152,
-    "funding_platform": 1,
-    "public_program": 1
+    "funding_platform": 9,
+    "public_program": 29
   },
   "issue": 110,
   "normalization_note_counts": {
-    "countries_covered": 14,
-    "focuses": 9,
+    "countries_covered": 20,
+    "focuses": 17,
     "founder_route": 74,
     "official_website": 2,
-    "operator": 152,
-    "stages": 48
+    "operator": 162,
+    "stages": 56
   },
   "schema_version": "1.0"
 }

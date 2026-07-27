@@ -29,6 +29,7 @@ COUNTRY_DIRECTORIES = {
     "brazil": "BR",
     "chile": "CL",
     "colombia": "CO",
+    "ecuador": "EC",
     "mexico": "MX",
     "peru": "PE",
     "uruguay": "UY",
@@ -36,6 +37,7 @@ COUNTRY_DIRECTORIES = {
 COUNTRY_TERMS = {
     "Argentina": "AR",
     "Bolivia": "BO",
+    "Bolívia": "BO",
     "Brazil": "BR",
     "Brasil": "BR",
     "Chile": "CL",
@@ -43,6 +45,7 @@ COUNTRY_TERMS = {
     "Costa Rica": "CR",
     "Dominican Republic": "DO",
     "Ecuador": "EC",
+    "Equador": "EC",
     "Guatemala": "GT",
     "Mexico": "MX",
     "México": "MX",
@@ -323,13 +326,25 @@ def source_kind(
     lowered = title.casefold()
     if "unavailable" in lowered or "previously listed" in lowered:
         return "secondary"
-    if any(term in lowered for term in ("regulator", "regulation", "cadastro")):
+    if any(
+        term in lowered
+        for term in (
+            "banco central",
+            "cadastro",
+            "cmf",
+            "cnmv",
+            "cvm",
+            "regulation",
+            "regulator",
+            "superintendencia",
+        )
+    ):
         return "official_regulator"
     if entity_type == "public_program":
         return "official_program"
-    if url == founder_route or any(
-        term in lowered
-        for term in ("application", "apply", "submit", "contact", "form", "pitch")
+    if url == founder_route or re.search(
+        r"\b(?:application|apply|submit|contact|form|pitch)\b",
+        lowered,
     ):
         return "official_application"
     if any(term in lowered for term in ("portfolio", "companies", "investments")):
@@ -350,7 +365,8 @@ def sources_for(
     founder_route: str | None,
 ) -> list[dict[str, str]]:
     section_match = re.search(
-        r"^## Sources\s*$\n(.*?)(?=^\*\*Last verified:\*\*|\Z)",
+        r"^## (?:Official sources|Sources)\s*$\n"
+        r"(.*?)(?=^\*\*Last verified:\*\*|\Z)",
         body,
         re.MULTILINE | re.DOTALL,
     )
@@ -381,6 +397,17 @@ def aliases_and_operator(
 ) -> tuple[list[str], str | None]:
     override = DISPLAY_NAME_OVERRIDES.get(slug, {})
     aliases = list(override.get("aliases", []))
+    visible_aliases = fields.get("Aliases")
+    if (
+        visible_aliases
+        and visible_aliases.casefold() not in {"none", "none recorded"}
+    ):
+        aliases.extend(
+            alias.strip()
+            for alias in visible_aliases.split(",")
+            if alias.strip()
+        )
+    aliases = list(dict.fromkeys(aliases))
     operator = override.get("operator")
     if entity_type != "fund" and fields.get("Operator"):
         operator = fields["Operator"]
@@ -396,7 +423,9 @@ def build_metadata(path: Path, body: str) -> tuple[dict[str, Any], list[str]]:
         raise ValueError(f"{relative}: perfil sem H1")
     name = heading.group(1)
     fields = visible_fields(body)
-    official_website = extract_https(fields.get("Website"))
+    official_website = extract_https(
+        fields.get("Website") or fields.get("Official page")
+    )
     route_field = (
         fields.get("Submit a startup")
         if entity_type == "fund"

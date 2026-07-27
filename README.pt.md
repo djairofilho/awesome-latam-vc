@@ -223,7 +223,7 @@ fundos de VC e, por isso, permanecem fora das tabelas principais. Consulte o
 
 - [Aceleradoras](ecosystem/accelerators/README.md)
 - [Redes de investidores-anjo](ecosystem/angel-networks/README.md)
-- [Plataformas de captação](ecosystem/funding-platforms/README.md)
+- [Plataformas de captação](ecosystem/funding-platforms/README.pt.md)
 - [Programas públicos](ecosystem/public-programs/README.md)
 
 ## Contribuindo
