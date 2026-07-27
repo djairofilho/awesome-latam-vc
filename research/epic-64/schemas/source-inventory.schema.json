@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-64/schemas/source-inventory.schema.json",
+  "title": "Fonte inventariada da epic 64",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_id",
+    "issue",
+    "country",
+    "source",
+    "initial_url",
+    "source_category",
+    "scope_walked",
+    "accessed_on",
+    "robots_status",
+    "access_method",
+    "cache_key",
+    "result",
+    "reason",
+    "owner",
+    "next_action",
+    "notes"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "source_id": {
+      "type": "string",
+      "pattern": "^src-[a-z0-9][a-z0-9-]*$"
+    },
+    "issue": { "type": "integer", "minimum": 90, "maximum": 93 },
+    "country": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "source": { "type": "string", "minLength": 1 },
+    "initial_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "source_category": {
+      "enum": ["regulator", "public_ecosystem", "official_platform", "discovery"]
+    },
+    "scope_walked": { "type": "string", "minLength": 1 },
+    "accessed_on": { "type": "string", "format": "date" },
+    "robots_status": { "enum": ["allowed", "disallowed", "unavailable", "not_applicable"] },
+    "access_method": { "enum": ["http", "browser", "manual", "not_accessed"] },
+    "cache_key": { "type": ["string", "null"], "minLength": 1 },
+    "result": { "enum": ["complete", "partial", "unavailable"] },
+    "reason": { "type": ["string", "null"], "minLength": 1 },
+    "owner": { "type": ["string", "null"], "minLength": 1 },
+    "next_action": { "type": ["string", "null"], "minLength": 1 },
+    "notes": { "type": ["string", "null"], "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "result": { "enum": ["partial", "unavailable"] } },
+        "required": ["result"]
+      },
+      "then": {
+        "properties": {
+          "reason": { "type": "string" },
+          "owner": { "type": "string" },
+          "next_action": { "type": "string" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "robots_status": { "const": "disallowed" } },
+        "required": ["robots_status"]
+      },
+      "then": {
+        "properties": {
+          "access_method": { "const": "not_accessed" },
+          "result": { "const": "unavailable" }
+        }
+      }
+    }
+  ]
+}

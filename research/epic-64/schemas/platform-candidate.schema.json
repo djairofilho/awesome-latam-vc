@@ -1,0 +1,352 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-64/schemas/platform-candidate.schema.json",
+  "title": "Candidato a plataforma de captação da epic 64",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "platform_id",
+    "operator",
+    "brand",
+    "platform",
+    "products",
+    "offers",
+    "regulatory_records",
+    "discovery_source_ids",
+    "official_evidence_ids",
+    "activity_evidence_ids",
+    "route_evidence_ids",
+    "discovered_on",
+    "activity_status",
+    "last_official_activity_on",
+    "latam_founder_route",
+    "status",
+    "decision",
+    "reason",
+    "canonical_platform_id",
+    "canonical_profile",
+    "owner",
+    "next_action"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "platform_id": {
+      "type": "string",
+      "pattern": "^plat-[a-z0-9][a-z0-9-]*$"
+    },
+    "operator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operator_id", "legal_name", "jurisdiction", "official_url"],
+      "properties": {
+        "operator_id": {
+          "type": "string",
+          "pattern": "^op-[a-z0-9][a-z0-9-]*$"
+        },
+        "legal_name": { "type": "string", "minLength": 1 },
+        "jurisdiction": { "type": "string", "pattern": "^[A-Z]{2}$" },
+        "official_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        }
+      }
+    },
+    "brand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["brand_id", "name", "aliases"],
+      "properties": {
+        "brand_id": {
+          "type": "string",
+          "pattern": "^brand-[a-z0-9][a-z0-9-]*$"
+        },
+        "name": { "type": "string", "minLength": 1 },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "platform": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "canonical_domain",
+        "official_url",
+        "founder_route_url",
+        "declared_countries"
+      ],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "canonical_domain": {
+          "type": "string",
+          "pattern": "^[a-z0-9.-]+\\.[a-z]{2,}$"
+        },
+        "official_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "founder_route_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "declared_countries": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["product_id", "name", "instrument_type", "status"],
+        "properties": {
+          "product_id": {
+            "type": "string",
+            "pattern": "^prod-[a-z0-9][a-z0-9-]*$"
+          },
+          "name": { "type": "string", "minLength": 1 },
+          "instrument_type": {
+            "enum": [
+              "equity crowdfunding",
+              "debt crowdfunding",
+              "revenue share",
+              "convertible",
+              "syndicate",
+              "matching",
+              "other"
+            ]
+          },
+          "status": { "enum": ["active", "recurring", "inactive", "unknown"] }
+        }
+      }
+    },
+    "offers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "offer_id",
+          "product_id",
+          "name",
+          "status",
+          "official_url",
+          "profile_eligible"
+        ],
+        "properties": {
+          "offer_id": {
+            "type": "string",
+            "pattern": "^offer-[a-z0-9][a-z0-9-]*$"
+          },
+          "product_id": {
+            "type": "string",
+            "pattern": "^prod-[a-z0-9][a-z0-9-]*$"
+          },
+          "name": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["open", "closed", "cancelled", "unknown"] },
+          "official_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          },
+          "profile_eligible": { "const": false }
+        }
+      }
+    },
+    "regulatory_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "regulatory_id",
+          "authority",
+          "jurisdiction",
+          "registration_number",
+          "claimed_status",
+          "evidence_id"
+        ],
+        "properties": {
+          "regulatory_id": {
+            "type": "string",
+            "pattern": "^reg-[a-z0-9][a-z0-9-]*$"
+          },
+          "authority": { "type": "string", "minLength": 1 },
+          "jurisdiction": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "registration_number": {
+            "type": ["string", "null"],
+            "minLength": 1
+          },
+          "claimed_status": {
+            "enum": ["authorized", "registered", "exempt", "inactive", "unknown"]
+          },
+          "evidence_id": {
+            "type": "string",
+            "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+          }
+        }
+      },
+      "uniqueItems": true
+    },
+    "discovery_source_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^src-[a-z0-9][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    },
+    "official_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    },
+    "activity_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    },
+    "route_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    },
+    "discovered_on": { "type": "string", "format": "date" },
+    "activity_status": {
+      "enum": ["open", "recurring_closed", "inactive", "unknown"]
+    },
+    "last_official_activity_on": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "latam_founder_route": { "type": ["boolean", "null"] },
+    "status": {
+      "enum": ["discovered", "researching", "decided", "published"]
+    },
+    "decision": {
+      "type": ["string", "null"],
+      "enum": [
+        "eligible",
+        "duplicate",
+        "inactive",
+        "insufficient_evidence",
+        "excluded",
+        "other_category",
+        null
+      ]
+    },
+    "reason": { "type": ["string", "null"], "minLength": 1 },
+    "canonical_platform_id": {
+      "type": ["string", "null"],
+      "pattern": "^plat-[a-z0-9][a-z0-9-]*$"
+    },
+    "canonical_profile": {
+      "type": ["string", "null"],
+      "pattern": "^ecosystem/funding-platforms/.+\\.md$"
+    },
+    "owner": { "type": ["string", "null"], "minLength": 1 },
+    "next_action": { "type": ["string", "null"], "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": { "enum": ["discovered", "researching"] }
+        },
+        "required": ["status"]
+      },
+      "then": { "properties": { "decision": { "type": "null" } } }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": { "enum": ["decided", "published"] }
+        },
+        "required": ["status"]
+      },
+      "then": { "properties": { "decision": { "type": "string" } } }
+    },
+    {
+      "if": {
+        "properties": { "decision": { "const": "eligible" } },
+        "required": ["decision"]
+      },
+      "then": {
+        "properties": {
+          "activity_status": { "enum": ["open", "recurring_closed"] },
+          "last_official_activity_on": { "type": "string" },
+          "latam_founder_route": { "const": true },
+          "official_evidence_ids": { "minItems": 1 },
+          "activity_evidence_ids": { "minItems": 1 },
+          "route_evidence_ids": { "minItems": 1 },
+          "platform": {
+            "properties": {
+              "founder_route_url": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "decision": { "const": "duplicate" } },
+        "required": ["decision"]
+      },
+      "then": {
+        "anyOf": [
+          { "properties": { "canonical_platform_id": { "type": "string" } } },
+          { "properties": { "canonical_profile": { "type": "string" } } }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "enum": [
+              "duplicate",
+              "inactive",
+              "insufficient_evidence",
+              "excluded",
+              "other_category"
+            ]
+          }
+        },
+        "required": ["decision"]
+      },
+      "then": { "properties": { "reason": { "type": "string" } } }
+    },
+    {
+      "if": {
+        "properties": { "decision": { "const": "insufficient_evidence" } },
+        "required": ["decision"]
+      },
+      "then": {
+        "anyOf": [
+          { "properties": { "owner": { "type": "string" } } },
+          { "properties": { "next_action": { "type": "string" } } }
+        ]
+      }
+    }
+  ]
+}
