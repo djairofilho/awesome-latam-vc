@@ -48,9 +48,20 @@ class EditorialContractTests(unittest.TestCase):
 
     def test_release_gate_reports_missing_translations(self) -> None:
         errors = validate_editorial_collection(require_complete_locales=True)
+        expected_missing = sum(
+            not (EDITORIAL_ROOT / locale / f"{slug}.md").exists()
+            for slug in REQUIRED_EDITORIAL_SLUGS
+            for locale in ("pt-BR", "es")
+        )
         self.assertEqual(
             sum(error.startswith("missing release page:") for error in errors),
-            len(REQUIRED_EDITORIAL_SLUGS) * 2,
+            expected_missing,
+        )
+
+    def test_portuguese_release_gate_is_complete(self) -> None:
+        self.assertEqual(
+            validate_editorial_collection(release_locale="pt-BR"),
+            [],
         )
 
     def test_rejects_synthetic_faq_and_unrendered_reference(self) -> None:
@@ -71,6 +82,40 @@ class EditorialContractTests(unittest.TestCase):
         errors = validate_editorial_document(document, self.schema)
         self.assertTrue(any("synthetic FAQ" in error for error in errors))
         self.assertTrue(any("reference is not rendered" in error for error in errors))
+
+    def test_localized_pages_require_headings_for_their_locale(self) -> None:
+        portuguese_title = "Metodologia do diretório"
+        replacements = {
+            "# Directory methodology": f"# {portuguese_title}",
+            "## How the directory is built": "## Como o diretório é construído",
+            "## What the data means": "## O que os dados significam",
+            "## Quality controls": "## Controles de qualidade",
+            "## References": "## Referências",
+        }
+        body = self.methodology.body
+        for source, target in replacements.items():
+            body = body.replace(source, target)
+        metadata = {
+            **self.methodology.metadata,
+            "id": "editorial:methodology:pt-BR",
+            "locale": "pt-BR",
+            "translation_of": "editorial:methodology:en",
+            "translation_status": "complete",
+            "title": portuguese_title,
+        }
+        localized = replace(self.methodology, metadata=metadata, body=body)
+        errors = validate_editorial_document(localized, self.schema)
+        self.assertFalse(any("missing sections" in error for error in errors))
+
+        english_headings = replace(
+            localized,
+            body=self.methodology.body.replace(
+                "# Directory methodology",
+                f"# {portuguese_title}",
+            ),
+        )
+        errors = validate_editorial_document(english_headings, self.schema)
+        self.assertTrue(any("missing sections" in error for error in errors))
 
     def test_rejects_duplicate_landing_introductions(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
