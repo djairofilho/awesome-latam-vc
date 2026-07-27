@@ -87,7 +87,7 @@ const sourceUrl = sourcePath
 
     <article class="editorial-article">
       {
-        locale === "pt-BR" && (
+        locale !== "en" && (
           <TranslationNotice
             message={labels.translationNotice}
             correctionLabel={labels.suggestCorrection}
