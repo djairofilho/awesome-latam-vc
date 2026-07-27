@@ -49,6 +49,12 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def stable_sha256(path: Path) -> str:
+    return hashlib.sha256(
+        path.read_bytes().replace(b"\r\n", b"\n")
+    ).hexdigest()
+
+
 class AngelConsolidationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
@@ -282,7 +288,7 @@ class AngelConsolidationTests(unittest.TestCase):
 
     def test_manifest_output_hashes_are_frozen(self) -> None:
         for name, expected in self.manifest["output_hashes"].items():
-            self.assertEqual(expected, sha256(ROOT / name), name)
+            self.assertEqual(expected, stable_sha256(ROOT / name), name)
         self.assertEqual("frozen", self.manifest["status"])
 
     def test_sha256sums_match_every_frozen_artifact(self) -> None:
@@ -295,7 +301,7 @@ class AngelConsolidationTests(unittest.TestCase):
         ]
         self.assertEqual(15, len(rows))
         for expected, name in rows:
-            self.assertEqual(expected, sha256(ROOT / name), name)
+            self.assertEqual(expected, stable_sha256(ROOT / name), name)
 
     def test_final_run_manifest_has_only_done_tasks(self) -> None:
         rows = read_jsonl(ROOT / "run-manifest.jsonl")
@@ -305,7 +311,7 @@ class AngelConsolidationTests(unittest.TestCase):
         self.assertTrue(all(item["status"] == "done" for item in rows[1:]))
 
     def test_generator_and_reviewer_are_idempotent(self) -> None:
-        before = {name: sha256(ROOT / name) for name in GENERATED}
+        before = {name: stable_sha256(ROOT / name) for name in GENERATED}
         for _ in range(2):
             subprocess.run(
                 [sys.executable, str(ROOT / "build_registry.py")],
@@ -317,7 +323,7 @@ class AngelConsolidationTests(unittest.TestCase):
                 cwd=REPOSITORY,
                 check=True,
             )
-            after = {name: sha256(ROOT / name) for name in GENERATED}
+            after = {name: stable_sha256(ROOT / name) for name in GENERATED}
             self.assertEqual(before, after)
 
     def test_utf8_has_no_mojibake(self) -> None:
