@@ -32,47 +32,137 @@ REQUIRED_EDITORIAL_SLUGS = {
     "citation",
 }
 REQUIRED_SECTIONS = {
-    "methodology": {
-        "How the directory is built",
-        "What the data means",
-        "Quality controls",
-        "References",
+    "en": {
+        "methodology": {
+            "How the directory is built",
+            "What the data means",
+            "Quality controls",
+            "References",
+        },
+        "inclusion": {
+            "Included entities",
+            "Excluded entities",
+            "Decision boundaries",
+            "References",
+        },
+        "sources": {
+            "Source hierarchy",
+            "How evidence is recorded",
+            "When evidence is insufficient",
+            "References",
+        },
+        "updates": {
+            "Update cycle",
+            "Verification dates",
+            "Corrections",
+            "References",
+        },
+        "license": {
+            "Repository content",
+            "Third-party material",
+            "Attribution",
+            "References",
+        },
+        "limitations": {
+            "Coverage limitations",
+            "Data limitations",
+            "How to interpret absence",
+            "References",
+        },
+        "citation": {
+            "Preferred citation",
+            "Dataset citation",
+            "Stable references",
+            "References",
+        },
     },
-    "inclusion": {
-        "Included entities",
-        "Excluded entities",
-        "Decision boundaries",
-        "References",
+    "pt-BR": {
+        "methodology": {
+            "Como o diretório é construído",
+            "O que os dados significam",
+            "Controles de qualidade",
+            "Referências",
+        },
+        "inclusion": {
+            "Entidades incluídas",
+            "Entidades excluídas",
+            "Critérios de decisão",
+            "Referências",
+        },
+        "sources": {
+            "Hierarquia de fontes",
+            "Como as evidências são registradas",
+            "Quando as evidências são insuficientes",
+            "Referências",
+        },
+        "updates": {
+            "Ciclo de atualização",
+            "Datas de verificação",
+            "Correções",
+            "Referências",
+        },
+        "license": {
+            "Conteúdo do repositório",
+            "Material de terceiros",
+            "Atribuição",
+            "Referências",
+        },
+        "limitations": {
+            "Limitações de cobertura",
+            "Limitações dos dados",
+            "Como interpretar ausências",
+            "Referências",
+        },
+        "citation": {
+            "Citação recomendada",
+            "Citação do conjunto de dados",
+            "Referências estáveis",
+            "Referências",
+        },
     },
-    "sources": {
-        "Source hierarchy",
-        "How evidence is recorded",
-        "When evidence is insufficient",
-        "References",
-    },
-    "updates": {
-        "Update cycle",
-        "Verification dates",
-        "Corrections",
-        "References",
-    },
-    "license": {
-        "Repository content",
-        "Third-party material",
-        "Attribution",
-        "References",
-    },
-    "limitations": {
-        "Coverage limitations",
-        "Data limitations",
-        "How to interpret absence",
-        "References",
-    },
-    "citation": {
-        "Preferred citation",
-        "Dataset citation",
-        "Stable references",
-        "References",
+    "es": {
+        "methodology": {
+            "Cómo se construye el directorio",
+            "Qué significan los datos",
+            "Controles de calidad",
+            "Referencias",
+        },
+        "inclusion": {
+            "Entidades incluidas",
+            "Entidades excluidas",
+            "Criterios de decisión",
+            "Referencias",
+        },
+        "sources": {
+            "Jerarquía de fuentes",
+            "Cómo se registra la evidencia",
+            "Cuándo la evidencia es insuficiente",
+            "Referencias",
+        },
+        "updates": {
+            "Ciclo de actualización",
+            "Fechas de verificación",
+            "Correcciones",
+            "Referencias",
+        },
+        "license": {
+            "Contenido del repositorio",
+            "Material de terceros",
+            "Atribución",
+            "Referencias",
+        },
+        "limitations": {
+            "Limitaciones de cobertura",
+            "Limitaciones de los datos",
+            "Cómo interpretar la ausencia",
+            "Referencias",
+        },
+        "citation": {
+            "Cita recomendada",
+            "Cita del conjunto de datos",
+            "Referencias estables",
+            "Referencias",
+        },
     },
 }
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*$", re.MULTILINE)
@@ -173,7 +263,8 @@ def validate_editorial_document(document: Document, schema: dict) -> list[str]:
         )
 
     second_level = {text for level, text in headings if level == "##"}
-    missing_sections = REQUIRED_SECTIONS.get(slug, set()) - second_level
+    required_sections = REQUIRED_SECTIONS.get(locale, {}).get(slug, set())
+    missing_sections = required_sections - second_level
     if missing_sections:
         errors.append(
             f"{document.display_path}: missing sections: "
@@ -226,6 +317,7 @@ def validate_editorial_collection(
     root: Path = EDITORIAL_ROOT,
     *,
     require_complete_locales: bool = False,
+    release_locale: str | None = None,
 ) -> list[str]:
     schema = read_schema(EDITORIAL_SCHEMA_PATH)
     documents, errors = load_documents(root.glob("*/*.md"))
@@ -275,9 +367,14 @@ def validate_editorial_collection(
                 f"{document.display_path}: protected references differ from canonical"
             )
 
+    required_locales: set[str] = set()
     if require_complete_locales:
+        required_locales.update(LOCALES)
+    if release_locale:
+        required_locales.add(release_locale)
+    if required_locales:
         for slug in REQUIRED_EDITORIAL_SLUGS:
-            for locale in LOCALES:
+            for locale in required_locales:
                 document = by_pair.get((slug, locale))
                 if document is None:
                     errors.append(f"missing release page: {slug}:{locale}")
@@ -352,13 +449,19 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="require complete EN, PT-BR and ES editorial coverage",
     )
+    parser.add_argument(
+        "--release-locale",
+        choices=sorted(locale for locale in LOCALES if locale != "en"),
+        help="require complete editorial coverage for one translated locale",
+    )
     return parser
 
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     errors = validate_editorial_collection(
-        require_complete_locales=args.require_complete_locales
+        require_complete_locales=args.require_complete_locales,
+        release_locale=args.release_locale,
     )
     errors.extend(validate_landing_collection())
     if errors:

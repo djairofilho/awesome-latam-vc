@@ -32,6 +32,26 @@ REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 I18N_ROOT = REPOSITORY_ROOT / "research" / "seo-geo" / "i18n"
 CONFIG_PATH = I18N_ROOT / "locales.json"
 PROFILE_PREFIXES = ("funds/", "ecosystem/")
+PORTUGUESE_REVIEW_ARTIFACTS = (
+    "sãa",
+    "empresass",
+    "países empresa",
+    "países de empresa",
+    "sementent",
+    "mantentem",
+    "contínúo",
+    "atuiais",
+    "descreve- se",
+    "normalizá- las",
+    "Aplicar- se",
+    "co- investimento",
+    "escalables",
+    "escalable",
+    "El programa ",
+    "La Secretaría ",
+    "uma o portfólio",
+    "umao portfólio",
+)
 
 
 @dataclass(frozen=True)
@@ -209,13 +229,40 @@ def translation_relative_path(config: dict, profile: Profile, root: Path) -> str
         ) from exc
 
 
+def validate_portuguese_review_artifacts(profile: Profile) -> list[str]:
+    if profile.metadata.get("locale") != "pt-BR":
+        return []
+    return [
+        f"{profile.display_path}: Portuguese review artifact {fragment!r}"
+        for fragment in PORTUGUESE_REVIEW_ARTIFACTS
+        if fragment in profile.body
+    ]
+
+
 def validate_i18n(
     *,
     root: Path = REPOSITORY_ROOT,
     release: bool = False,
+    release_locales: Sequence[str] | None = None,
     config_path: Path | None = None,
 ) -> ValidationResult:
     config = load_config(config_path or root / CONFIG_PATH.relative_to(REPOSITORY_ROOT))
+    if release and release_locales:
+        raise ValueError("release and release_locales are mutually exclusive")
+    configured_release_locales = config["release"]["required_locales"]
+    if release_locales:
+        unsupported = sorted(
+            set(release_locales) - set(configured_release_locales)
+        )
+        if unsupported:
+            raise ValueError(
+                f"unsupported release locales: {', '.join(unsupported)}"
+            )
+        canonical_locale = config["canonical_locale"]
+        if canonical_locale in release_locales:
+            raise ValueError(
+                "release_locales must contain translated locales only"
+            )
     schema, enums = read_contract()
     errors: list[str] = []
     warnings: list[str] = []
@@ -250,6 +297,8 @@ def validate_i18n(
             errors.append(f"{path.as_posix()}: {exc}")
 
     errors.extend(validate_collection(canonical_profiles + translations, schema, enums))
+    for translation in translations:
+        errors.extend(validate_portuguese_review_artifacts(translation))
     canonical_by_entity = {
         profile.metadata.get("entity_id"): profile for profile in canonical_profiles
     }
@@ -298,7 +347,12 @@ def validate_i18n(
             )
 
     accepted_statuses = config["release"]["accepted_translation_statuses"]
-    required_locales = config["release"]["required_locales"]
+    required_locales = (
+        list(dict.fromkeys(release_locales))
+        if release_locales
+        else configured_release_locales
+    )
+    enforce_release = release or bool(release_locales)
     for entity_id, canonical in sorted(canonical_by_entity.items()):
         canonical_relative = canonical_relative_path(canonical.path, root)
         for locale in required_locales:
@@ -313,7 +367,7 @@ def validate_i18n(
             ).relative_to(root).as_posix()
             if translation is None:
                 message = f"{entity_id}@{locale}: missing translation at {expected}"
-                (errors if release else warnings).append(message)
+                (errors if enforce_release else warnings).append(message)
                 continue
             status = translation.metadata.get("translation_status")
             if status not in accepted_statuses[locale]:
@@ -321,7 +375,7 @@ def validate_i18n(
                     f"{translation.display_path}: translation status {status!r} "
                     f"is not release-complete"
                 )
-                (errors if release else warnings).append(message)
+                (errors if enforce_release else warnings).append(message)
 
     return ValidationResult(
         errors=tuple(sorted(set(errors))),
@@ -333,10 +387,18 @@ def validate_i18n(
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
+    release_group = parser.add_mutually_exclusive_group()
+    release_group.add_argument(
         "--release",
         action="store_true",
         help="Treat missing or needs-review translations as errors.",
+    )
+    release_group.add_argument(
+        "--release-locale",
+        action="append",
+        choices=("pt-BR", "es"),
+        dest="release_locales",
+        help="Enforce release completeness for one translated locale.",
     )
     parser.add_argument(
         "--verbose",
@@ -349,7 +411,10 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: Iterable[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     try:
-        result = validate_i18n(release=args.release)
+        result = validate_i18n(
+            release=args.release,
+            release_locales=args.release_locales,
+        )
     except (OSError, json.JSONDecodeError, ValueError) as exc:
         print(f"SEO/GEO i18n validation failed: {exc}", file=sys.stderr)
         return 1

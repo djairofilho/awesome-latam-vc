@@ -1055,6 +1055,19 @@ footer p {
   border-top: 1px solid var(--line);
 }
 
+.translation-notice {
+  margin-block: 1.5rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 0.25rem solid var(--accent);
+  border-radius: 0.5rem;
+  background: var(--surface);
+}
+
+.translation-notice p {
+  margin: 0;
+}
+
 .profile-answer__summary {
   max-width: 70ch;
   font-size: clamp(1.15rem, 2vw, 1.4rem);

@@ -38,9 +38,14 @@ function fallbackName(entry: CollectionEntry<"profiles">) {
   return source.match(/^#\s+(.+)$/m)?.[1]?.trim() ?? entry.id;
 }
 
-export function catalogItem(entry: CollectionEntry<"profiles">) {
+export function catalogItem(
+  entry: CollectionEntry<"profiles">,
+  canonicalEntry?: CollectionEntry<"profiles">,
+) {
   const sourcePath = normalizedSourcePath(entry);
-  const canonicalSourcePath = entry.data.translation_of ?? sourcePath;
+  const canonicalSourcePath = canonicalEntry
+    ? normalizedSourcePath(canonicalEntry)
+    : sourcePath;
   const parts = sourcePath.split("/");
   const category =
     entry.data.entity_type ??
@@ -101,10 +106,11 @@ export function localizedCatalogItems(
     if (!entry) {
       return [];
     }
+    const canonicalEntry = variants.get("en");
     const contentLocale = (entry.data.locale ?? "en") as ContentLocale;
     return [
       {
-        ...catalogItem(entry),
+        ...catalogItem(entry, canonicalEntry),
         contentEntryId: entry.id,
         contentLocale,
         isFallback: contentLocale !== locale,

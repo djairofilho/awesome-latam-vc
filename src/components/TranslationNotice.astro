@@ -1,0 +1,16 @@
+---
+interface Props {
+  message: string;
+  correctionLabel: string;
+}
+
+const { message, correctionLabel } = Astro.props;
+const correctionUrl =
+  "https://github.com/djairofilho/awesome-latam-vc/issues/new";
+---
+
+<aside class="translation-notice" role="note">
+  <p>
+    {message} <a href={correctionUrl}>{correctionLabel}</a>
+  </p>
+</aside>
