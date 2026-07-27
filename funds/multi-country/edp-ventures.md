@@ -1,0 +1,47 @@
+# EDP Ventures
+
+EDP Ventures is EDP's corporate venture capital arm for early-stage technology
+companies advancing the energy transition.
+
+## Investment profile
+
+- **Website:** https://edp.com/en/innovation/venture-investments
+- **Fund type:** Corporate venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
+- **Stage at entry:** Seed to Series B
+- **Follow-on stages:** Later-round follow-ons are possible
+- **Focus:** Energy transition and energy technology
+- **Geography:** Global
+- **Initial check:** EUR 1 million to EUR 10 million
+- **Investment role:** Minority strategic investor
+- **Business models:** Primarily B2B, with B2C also considered
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed on the reviewed page
+- **Submit a startup:** https://edp.com/en/innovation/venture-investments
+
+## Declared thesis
+
+The program invests worldwide in technologies for renewable energy, grids,
+distributed energy resources, green hydrogen, storage and flexibility,
+mobility, energy-use decarbonization, and AI and digital applications. It looks
+for near-market-ready products and makes about five to eight Seed through
+Series B investments per year.
+
+EDP Ventures is an EDP Group program, with investment teams in Lisbon, Madrid,
+and São Paulo and EUR 150 million under management. It distinguishes direct
+minority investment from the proofs of concept that may be run with EDP
+business units during diligence.
+
+## Portfolio signals
+
+The official page labels a portfolio section but does not expose a reliable
+company list or total in its accessible content. Neither the annual investment
+pace nor proofs of concept are used as a portfolio count.
+
+## Sources
+
+- [EDP venture investments](https://edp.com/en/innovation/venture-investments)
+- [EDP commitment to energy-transition startups](https://edp.com/en/media/news/edp-invest-100-million-euros-energy-transition-startups)
+
+**Last verified:** 2026-07-27
