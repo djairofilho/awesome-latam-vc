@@ -22,6 +22,15 @@ ENUMS_PATH = CONTRACT_ROOT / "enums.json"
 FRONT_MATTER_BOUNDARY = "---"
 LINK_DESTINATION_RE = re.compile(r"!?\[[^\]]*\]\(([^)\s]+)(?:\s+['\"][^'\"]*['\"])?\)")
 URL_RE = re.compile(r"https?://[^\s<>)\]]+")
+BARE_DOMAIN_RE = re.compile(
+    r"(?<![/@\w-])(?:[a-z0-9-]+\.)+[a-z]{2,}(?:#[a-z0-9-]+)?",
+    re.IGNORECASE,
+)
+REPOSITORY_PATH_RE = re.compile(
+    r"\b(?:funds|ecosystem|translations)/"
+    r"[a-z0-9_./:#-]*[a-z0-9_:#-](?=[\s,;.)]|$)",
+    re.IGNORECASE,
+)
 FENCED_CODE_RE = re.compile(r"```[^\n]*\n(.*?)```", re.DOTALL)
 INLINE_CODE_RE = re.compile(r"(?<!`)`([^`\n]+)`(?!`)")
 ISO_DATE_RE = re.compile(r"(?<!\d)\d{4}-\d{2}-\d{2}(?!\d)")
@@ -156,6 +165,10 @@ def validate_semantics(profile: Profile) -> list[str]:
             f"({expected_profile_id})"
         )
 
+    heading = HEADING_RE.search(profile.body)
+    if not heading or heading.group(1) != metadata.get("name"):
+        errors.append(f"{profile.display_path}: H1 must equal metadata name")
+
     base = metadata.get("base_geography", {})
     countries_covered = set(metadata.get("countries_covered", []))
     aggregate_covers_base = (
@@ -191,6 +204,10 @@ def protected_body_tokens(body: str) -> dict[str, Counter[str]]:
     return {
         "markdown_link_destinations": Counter(LINK_DESTINATION_RE.findall(body)),
         "urls": Counter(URL_RE.findall(body)),
+        "bare_domains": Counter(BARE_DOMAIN_RE.findall(body_without_fences)),
+        "repository_paths": Counter(
+            REPOSITORY_PATH_RE.findall(body_without_fences)
+        ),
         "inline_code": Counter(INLINE_CODE_RE.findall(body_without_fences)),
         "fenced_code": Counter(block.rstrip("\r\n") for block in fenced_blocks),
         "iso_dates": Counter(ISO_DATE_RE.findall(body)),

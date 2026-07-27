@@ -110,8 +110,17 @@ class CompletenessTests(unittest.TestCase):
         shutil.copy2(VALID_EXAMPLES / source_name, target)
         return target
 
-    def validate(self, *, release: bool = False):
-        return I18N.validate_i18n(root=self.root, release=release)
+    def validate(
+        self,
+        *,
+        release: bool = False,
+        release_locales: tuple[str, ...] | None = None,
+    ):
+        return I18N.validate_i18n(
+            root=self.root,
+            release=release,
+            release_locales=release_locales,
+        )
 
     def test_migration_warns_but_release_rejects_missing_translations(self) -> None:
         migration = self.validate()
@@ -133,6 +142,15 @@ class CompletenessTests(unittest.TestCase):
             {"en": 1, "pt-BR": 1, "es": 1},
         )
 
+    def test_locale_release_gate_is_independent_during_parallel_translation(self) -> None:
+        self.add_translation("pt-BR", "fund-500-latam.pt-BR.md")
+
+        portuguese = self.validate(release_locales=("pt-BR",))
+        self.assertEqual(portuguese.errors, ())
+        self.assertEqual(portuguese.warnings, ())
+        spanish = self.validate(release_locales=("es",))
+        self.assertIn("missing translation", "\n".join(spanish.errors))
+
     def test_needs_review_is_warning_then_release_error(self) -> None:
         path = self.add_translation("pt-BR", "fund-500-latam.pt-BR.md")
         text = path.read_text(encoding="utf-8").replace(
@@ -144,6 +162,16 @@ class CompletenessTests(unittest.TestCase):
         self.assertIn("not release-complete", "\n".join(migration.warnings))
         release = self.validate(release=True)
         self.assertIn("not release-complete", "\n".join(release.errors))
+
+    def test_portuguese_review_artifacts_are_rejected(self) -> None:
+        path = self.add_translation("pt-BR", "fund-500-latam.pt-BR.md")
+        text = path.read_text(encoding="utf-8").replace(
+            "# 500 LatAm",
+            "# 500 LatAm\n\nO texto ainda contém países empresa.",
+        )
+        path.write_text(text, encoding="utf-8")
+        result = self.validate(release_locales=("pt-BR",))
+        self.assertIn("Portuguese review artifact", "\n".join(result.errors))
 
     def test_orphan_translation_is_rejected(self) -> None:
         path = self.add_translation("es", "fund-500-latam.es.md")

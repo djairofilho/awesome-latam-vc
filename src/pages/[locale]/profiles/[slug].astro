@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import ProfileIndexMetadata from "../../../components/ProfileIndexMetadata.astro";
+import TranslationNotice from "../../../components/TranslationNotice.astro";
 import type { Locale } from "../../../i18n/ui";
 import { strings } from "../../../i18n/ui";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
@@ -89,6 +90,14 @@ const geography = [
       { label: profile.name },
     ]}
   />
+  {
+    locale === "pt-BR" && (
+      <TranslationNotice
+        message={labels.translationNotice}
+        correctionLabel={labels.suggestCorrection}
+      />
+    )
+  }
   <article
     class="profile-detail"
     lang={profile.contentLocale}

@@ -21,6 +21,8 @@ const editorialReference = z.strictObject({
 const profiles = defineCollection({
   loader: glob({
     base: ".",
+    generateId: ({ entry, data }) =>
+      typeof data.id === "string" ? data.id : entry,
     pattern: [
       "funds/**/*.md",
       "ecosystem/accelerators/**/*.md",
@@ -78,6 +80,8 @@ const profiles = defineCollection({
 const editorialPages = defineCollection({
   loader: glob({
     base: "research/seo-geo/content/editorial",
+    generateId: ({ entry, data }) =>
+      typeof data.id === "string" ? data.id : entry,
     pattern: "**/*.md",
   }),
   schema: z.strictObject({

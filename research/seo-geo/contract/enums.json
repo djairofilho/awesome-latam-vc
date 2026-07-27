@@ -72,6 +72,8 @@
   "protected_body_tokens": [
     "markdown_link_destinations",
     "autolink_urls",
+    "bare_domains",
+    "repository_paths",
     "inline_code",
     "fenced_code",
     "iso_dates",

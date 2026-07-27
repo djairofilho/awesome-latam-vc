@@ -11,6 +11,8 @@ export const ui = {
     editorialNavigation: "Editorial pages",
     lastReviewed: "Last reviewed",
     viewSource: "View Markdown source",
+    translationNotice: "This page includes machine-translated content that was reviewed before publication.",
+    suggestCorrection: "Suggest a correction.",
     breadcrumbNavigation: "Breadcrumb",
     primaryNavigation: "Primary navigation",
     githubLabel: "GitHub",
@@ -105,6 +107,9 @@ export const ui = {
     editorialNavigation: "Páginas editoriais",
     lastReviewed: "Última revisão",
     viewSource: "Ver fonte em Markdown",
+    translationNotice:
+      "Esta página inclui conteúdo traduzido automaticamente e revisado antes da publicação.",
+    suggestCorrection: "Sugira uma correção.",
     breadcrumbNavigation: "Trilha de navegação",
     primaryNavigation: "Navegação principal",
     githubLabel: "GitHub",
@@ -203,6 +208,9 @@ export const ui = {
     editorialNavigation: "Páginas editoriales",
     lastReviewed: "Última revisión",
     viewSource: "Ver fuente en Markdown",
+    translationNotice:
+      "Esta página incluye contenido traducido automáticamente y revisado antes de su publicación.",
+    suggestCorrection: "Sugiere una corrección.",
     breadcrumbNavigation: "Ruta de navegación",
     primaryNavigation: "Navegación principal",
     githubLabel: "GitHub",

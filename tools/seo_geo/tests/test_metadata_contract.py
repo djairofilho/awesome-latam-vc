@@ -113,7 +113,8 @@ class MetadataContractTests(unittest.TestCase):
     def test_protected_body_token_extraction(self) -> None:
         tokens = VALIDATE.protected_body_tokens(
             "Value USD 25,000 on 2026-07-27. "
-            "[Source](https://example.com/a) and `entity:id`.\n"
+            "[Source](https://example.com/a) and `entity:id`. "
+            "See example.org#terms and funds/regional/example.md.\n"
             "```text\nR$ 10\n```\n"
         )
         self.assertEqual(tokens["markdown_link_destinations"]["https://example.com/a"], 1)
@@ -122,6 +123,34 @@ class MetadataContractTests(unittest.TestCase):
         self.assertEqual(tokens["iso_dates"]["2026-07-27"], 1)
         self.assertEqual(tokens["inline_code"]["entity:id"], 1)
         self.assertEqual(tokens["fenced_code"]["R$ 10"], 1)
+        self.assertEqual(tokens["bare_domains"]["example.org#terms"], 1)
+        self.assertEqual(
+            tokens["repository_paths"]["funds/regional/example.md"],
+            1,
+        )
+
+    def test_translation_heading_preserves_the_proper_name(self) -> None:
+        canonical = self.valid_profiles[0]
+        metadata = {
+            **copy.deepcopy(canonical.metadata),
+            "id": f"{canonical.metadata['entity_id']}:pt-BR",
+            "locale": "pt-BR",
+            "translation_of": canonical.metadata["id"],
+            "translation_status": "complete",
+        }
+        changed_heading = canonical.body.replace(
+            f"# {canonical.metadata['name']}",
+            "# Nome traduzido",
+            1,
+        )
+        translated = VALIDATE.Profile(
+            path=canonical.path,
+            metadata=metadata,
+            body=changed_heading,
+        )
+
+        errors = VALIDATE.validate_semantics(translated)
+        self.assertIn("H1 must equal metadata name", "\n".join(errors))
 
     def test_cli_validator_accepts_valid_directory(self) -> None:
         self.assertEqual(VALIDATE.validate_paths([VALID_EXAMPLES]), [])
