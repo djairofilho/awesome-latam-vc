@@ -5,7 +5,7 @@ startups that can strengthen the steel value chain.
 
 ## Investment profile
 
-- **Website:** https://qas-brasil.arcelormittal.com.br/sustentabilidade-inovacao/inovacao/acolab
+- **Website:** https://brasil.arcelormittal.com/sustentabilidade-inovacao/inovacao/acolab
 - **Fund type:** Corporate venture capital
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
@@ -43,6 +43,6 @@ innovation projects.
 
 ## Sources
 
-- [Açolab and Açolab Ventures](https://qas-brasil.arcelormittal.com.br/sustentabilidade-inovacao/inovacao/acolab)
+- [Açolab and Açolab Ventures](https://brasil.arcelormittal.com/sustentabilidade-inovacao/inovacao/acolab)
 
 **Last verified:** 2026-07-27

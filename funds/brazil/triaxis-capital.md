@@ -39,6 +39,6 @@ manager.
 ## Sources
 
 - [Triaxis Capital website, thesis, and portfolio](https://www.triaxiscapital.com/)
-- [Finep report on FIP Nordeste](https://www.finep.gov.br/en/noticias/todas-noticias/7076-finep-conexoes-integracao-de-instrumentos-de-subvencao-credito-e-investimentos-em-prol-da-inovacao-na-regiao-nordeste)
+- [FIP Nordeste Capital Semente website](https://www.fipnordeste.com/)
 
 **Last verified:** 2026-07-27
