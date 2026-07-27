@@ -1,0 +1,324 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/seo-geo/contract/profile.schema.json",
+  "title": "Awesome LatAm VC localized profile metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "entity_id",
+    "slug",
+    "name",
+    "entity_type",
+    "locale",
+    "translation_of",
+    "translation_status",
+    "summary",
+    "aliases",
+    "operator",
+    "base_geography",
+    "countries_covered",
+    "stages",
+    "focuses",
+    "official_website",
+    "founder_route",
+    "sources",
+    "last_verified",
+    "protected_terms"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program):[a-z0-9]+(?:-[a-z0-9]+)*:(en|pt-BR|es)$"
+    },
+    "entity_id": {
+      "type": "string",
+      "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program):[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 2,
+      "maxLength": 100
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "entity_type": {
+      "enum": [
+        "fund",
+        "accelerator",
+        "angel_network",
+        "funding_platform",
+        "public_program"
+      ]
+    },
+    "locale": {
+      "enum": [
+        "en",
+        "pt-BR",
+        "es"
+      ]
+    },
+    "translation_of": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program):[a-z0-9]+(?:-[a-z0-9]+)*:en$"
+    },
+    "translation_status": {
+      "enum": [
+        "canonical",
+        "complete",
+        "needs_review"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "operator": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "base_geography": {
+      "$ref": "#/$defs/geography"
+    },
+    "countries_covered": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          },
+          {
+            "enum": [
+              "LATAM",
+              "CARIBBEAN",
+              "GLOBAL"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "angel",
+          "pre_seed",
+          "seed",
+          "series_a",
+          "series_b",
+          "growth",
+          "multi_stage",
+          "not_disclosed",
+          "not_applicable"
+        ]
+      }
+    },
+    "focuses": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+      }
+    },
+    "official_website": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "founder_route": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "last_verified": {
+      "type": "string",
+      "format": "date"
+    },
+    "protected_terms": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "locale": {
+            "const": "en"
+          }
+        },
+        "required": [
+          "locale"
+        ]
+      },
+      "then": {
+        "properties": {
+          "translation_of": {
+            "const": null
+          },
+          "translation_status": {
+            "const": "canonical"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "translation_of": {
+            "type": "string"
+          },
+          "translation_status": {
+            "enum": [
+              "complete",
+              "needs_review"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "geography": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "code"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "country",
+            "region",
+            "global"
+          ]
+        },
+        "code": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Z]{2}$"
+            },
+            {
+              "enum": [
+                "LATAM",
+                "CARIBBEAN",
+                "GLOBAL"
+              ]
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "country"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "code": {
+                "pattern": "^[A-Z]{2}$"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "global"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "code": {
+                "const": "GLOBAL"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "url",
+        "kind"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "kind": {
+          "enum": [
+            "official_website",
+            "official_thesis",
+            "official_portfolio",
+            "official_application",
+            "official_program",
+            "official_regulator",
+            "official_activity",
+            "secondary"
+          ]
+        }
+      }
+    }
+  }
+}
