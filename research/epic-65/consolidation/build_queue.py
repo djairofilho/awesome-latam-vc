@@ -1137,7 +1137,12 @@ def main() -> int:
     for filename, payload in outputs.items():
         path = HERE / filename
         if args.check:
-            if not path.is_file() or path.read_bytes() != payload:
+            current = (
+                path.read_bytes().replace(b"\r\n", b"\n")
+                if path.is_file()
+                else None
+            )
+            if current != payload:
                 drift.append(filename)
         else:
             path.write_bytes(payload)

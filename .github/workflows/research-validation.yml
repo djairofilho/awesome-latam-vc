@@ -6,7 +6,9 @@ on:
       - "funds/**"
       - "ecosystem/**"
       - "research/epic-*/**"
+      - "research/seo-geo/**"
       - "tools/research/**"
+      - "tools/seo_geo/**"
       - "requirements-research.txt"
       - "README.md"
       - "README.pt.md"
@@ -19,7 +21,9 @@ on:
       - "funds/**"
       - "ecosystem/**"
       - "research/epic-*/**"
+      - "research/seo-geo/**"
       - "tools/research/**"
+      - "tools/seo_geo/**"
       - "requirements-research.txt"
       - "README.md"
       - "README.pt.md"
@@ -62,6 +66,7 @@ jobs:
           python -m unittest discover -s research/epic-63/tests -v
           python -m unittest discover -s research/epic-64/tests -v
           python -m unittest discover -s research/epic-65/tests -v
+          python -m unittest discover -s tools/seo_geo/tests -v
 
       - name: Check translated index synchronization
         run: python tools/research/generate_indexes.py --check
