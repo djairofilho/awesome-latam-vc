@@ -1,0 +1,69 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  catalogItem,
+  categoryLabels,
+  type Category,
+} from "../lib/catalog";
+
+const profiles = (await getCollection("profiles"))
+  .map(catalogItem)
+  .sort((left, right) => left.name.localeCompare(right.name, "en"));
+const grouped = Object.keys(categoryLabels).map((category) => ({
+  category: category as Category,
+  label: categoryLabels[category as Category],
+  profiles: profiles.filter((profile) => profile.category === category),
+}));
+---
+
+<BaseLayout
+  title="Catalog · Awesome LatAm VC"
+  description="Browse the canonical Awesome LatAm VC funding catalog by entity type."
+  canonicalPath="/catalog/"
+>
+  <header class="page-intro">
+    <p class="eyebrow">Canonical catalog</p>
+    <h1>{profiles.length} profiles, directly from the repository.</h1>
+    <p>
+      This first static layer keeps navigation intentionally simple. Search,
+      localized profile routes and filters arrive in the next platform gates.
+    </p>
+  </header>
+
+  <nav class="catalog-jump" aria-label="Jump to a catalog category">
+    {
+      grouped.map(({ category, label, profiles: entries }) => (
+        <a href={`#${category}`}>
+          {label} <span>{entries.length}</span>
+        </a>
+      ))
+    }
+  </nav>
+
+  <div class="catalog-groups">
+    {
+      grouped.map(({ category, label, profiles: entries }) => (
+        <section id={category} aria-labelledby={`${category}-heading`}>
+          <header>
+            <h2 id={`${category}-heading`}>{label}</h2>
+            <p>{entries.length} profiles</p>
+          </header>
+          <ul class="profile-list">
+            {entries.map((profile) => (
+              <li>
+                <a href={profile.sourceUrl}>
+                  <strong>{profile.name}</strong>
+                  <span>{profile.country}</span>
+                  <span class="source-label">
+                    View canonical Markdown <span aria-hidden="true">↗</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>
