@@ -73,7 +73,7 @@ El índice está optimizado para una comparación rápida. Todos los perfiles de
 | [Honey Island Capital](funds/brazil/honey-island-capital.md) | No divulgado públicamente | Fintech y tecnología | Brasil |
 | [Indicator Capital](funds/brazil/indicator-capital.md) | Pre-seed y Seed | Deep tech | América Latina |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed y Seed | Software y tecnología | Brasil |
-| [Itau Ventures](funds/brazil/itau-ventures.md) | No divulgado públicamente | Servicios financieros y tecnologías adyacentes | Brasil y América Latina |
+| [Itaú Ventures](funds/brazil/itau-ventures.md) | No divulgado públicamente | Servicios financieros y tecnologías adyacentes | Brasil y América Latina |
 | [KPTL](funds/brazil/kptl.md) | Multietapa | Deep tech, salud, bioeconomía y tecnología | Brasil |
 | [Monashees](funds/brazil/monashees.md) | No divulgado públicamente | Tecnología | América Latina al mundo |
 | [Oria Capital](funds/brazil/oria-capital.md) | No divulgado públicamente | Software B2B | Brasil |
@@ -97,10 +97,10 @@ El índice está optimizado para una comparación rápida. Todos los perfiles de
 
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
-| [Axon Partners + Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | No divulgado públicamente | Tecnología e innovación estratégica | Colombia y América Latina |
+| [Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | No divulgado públicamente | Tecnología para servicios públicos | Colombia y América Latina |
 | [QAPU Ventures](funds/colombia/qapu-ventures.md) | No divulgado públicamente | No divulgado públicamente | No divulgado públicamente |
 | [Velum Ventures](funds/colombia/velum-ventures.md) | Seed | Tecnología | Colombia y América Latina |
-| [Veronorte](funds/colombia/veronorte.md) | No divulgado públicamente | Innovación corporativa y fondos de venture capital | Colombia y América Latina |
+| [Veronorte](funds/colombia/veronorte.md) | Multietapa | Sostenibilidad y bienestar | América Latina |
 
 ## México
 
@@ -115,7 +115,7 @@ El índice está optimizado para una comparación rápida. Todos los perfiles de
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
 | [EMA Ventures](funds/peru/ema-ventures.md) | Pre-seed y Seed | Tecnología y empresas lideradas por mujeres | América Latina hispanohablante |
-| [RPP Ventures](funds/peru/rpp-ventures.md) | No divulgado públicamente | Medios, contenido y tecnología | Perú |
+| [GRPP Ventures](funds/peru/rpp-ventures.md) | No divulgado públicamente | Tecnología escalable | Perú |
 | [UTEC Ventures](funds/peru/utec-ventures.md) | Pre-seed y Seed | Ciencia, tecnología y deep tech | Perú y América Latina |
 | [Winnipeg Capital](funds/peru/winnipeg-capital.md) | No divulgado públicamente | Empresas tecnológicas escalables | América Latina |
 | [AVP Ventures](funds/peru/avp-ventures.md) | Seed | Tecnología | Perú y América Latina |
@@ -134,7 +134,7 @@ El índice está optimizado para una comparación rápida. Todos los perfiles de
 | [FJ Labs](funds/multi-country/fj-labs.md) | Pre-seed y Seed | Marketplaces y efectos de red | Global |
 | [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Pre-seed y Seed | Tecnología, agnóstico a sectores | Global, incluida América Latina |
 | [GRIDX](funds/multi-country/gridx.md) | Pre-seed | Ciencias de la vida y biotecnología | América Latina al mundo |
-| [Grupo Boticario Ventures](funds/multi-country/grupo-boticario-ventures.md) | No divulgado públicamente | Belleza y comercio minorista | Brasil y América Latina |
+| [Grupo Boticário Ventures](funds/multi-country/grupo-boticario-ventures.md) | Seed y Serie A | Belleza y comercio minorista | Brasil y global |
 | [Igah Ventures (Patria)](funds/multi-country/igah-ventures-patria.md) | Multietapa | Empresas de alto crecimiento | Brasil y América Latina |
 | [Impact Ventures PSM](funds/multi-country/impact-ventures-psm.md) | Seed y Serie A | Emprendimiento de impacto | México y América Latina |
 | [Infinite Capital](funds/multi-country/infinite-capital.md) | Pre-seed y Seed | Ciencia e ingeniería de frontera | Global |

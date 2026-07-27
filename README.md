@@ -73,7 +73,7 @@ The index is optimized for quick comparison. All fund profiles use the enriched 
 | [Honey Island Capital](funds/brazil/honey-island-capital.md) | Not publicly disclosed | Fintech and technology | Brazil |
 | [Indicator Capital](funds/brazil/indicator-capital.md) | Pre-seed and Seed | Deep tech | Latin America |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed and Seed | Software and technology | Brazil |
-| [Itau Ventures](funds/brazil/itau-ventures.md) | Not publicly disclosed | Financial services and adjacent technologies | Brazil and Latin America |
+| [Itaú Ventures](funds/brazil/itau-ventures.md) | Not publicly disclosed | Financial services and adjacent technologies | Brazil and Latin America |
 | [KPTL](funds/brazil/kptl.md) | Multi-stage | Deep tech, health, bioeconomy, and technology | Brazil |
 | [Monashees](funds/brazil/monashees.md) | Not publicly disclosed | Technology | Latin America to global markets |
 | [Oria Capital](funds/brazil/oria-capital.md) | Not publicly disclosed | B2B software | Brazil |
@@ -97,10 +97,10 @@ The index is optimized for quick comparison. All fund profiles use the enriched 
 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
-| [Axon Partners + Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | Not publicly disclosed | Technology and strategic innovation | Colombia and Latin America |
+| [Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | Not publicly disclosed | Public-service technology | Colombia and Latin America |
 | [QAPU Ventures](funds/colombia/qapu-ventures.md) | Not publicly disclosed | Not publicly disclosed | Not publicly disclosed |
 | [Velum Ventures](funds/colombia/velum-ventures.md) | Seed | Technology | Colombia and Latin America |
-| [Veronorte](funds/colombia/veronorte.md) | Not publicly disclosed | Corporate innovation and venture funds | Colombia and Latin America |
+| [Veronorte](funds/colombia/veronorte.md) | Multi-stage | Sustainability and wellbeing | Latin America |
 
 ## Mexico
 
@@ -115,7 +115,7 @@ The index is optimized for quick comparison. All fund profiles use the enriched 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
 | [EMA Ventures](funds/peru/ema-ventures.md) | Pre-seed and Seed | Technology and women-led companies | Spanish-speaking Latin America |
-| [RPP Ventures](funds/peru/rpp-ventures.md) | Not publicly disclosed | Media, content, and technology | Peru |
+| [GRPP Ventures](funds/peru/rpp-ventures.md) | Not publicly disclosed | Scalable technology | Peru |
 | [UTEC Ventures](funds/peru/utec-ventures.md) | Pre-seed and Seed | Science, technology, and deep tech | Peru and Latin America |
 | [Winnipeg Capital](funds/peru/winnipeg-capital.md) | Not publicly disclosed | Scalable technology companies | Latin America |
 | [AVP Ventures](funds/peru/avp-ventures.md) | Seed | Technology | Peru and Latin America |
@@ -134,7 +134,7 @@ The index is optimized for quick comparison. All fund profiles use the enriched 
 | [FJ Labs](funds/multi-country/fj-labs.md) | Pre-seed and Seed | Marketplaces and network effects | Global |
 | [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Pre-seed and Seed | Technology, sector agnostic | Global, including Latin America |
 | [GRIDX](funds/multi-country/gridx.md) | Pre-seed | Life sciences & biotech | Latin America to global markets |
-| [Grupo Boticario Ventures](funds/multi-country/grupo-boticario-ventures.md) | Not publicly disclosed | Beauty and retail | Brazil and Latin America |
+| [Grupo Boticário Ventures](funds/multi-country/grupo-boticario-ventures.md) | Seed and Series A | Beauty and retail | Brazil and global |
 | [Igah Ventures (Patria)](funds/multi-country/igah-ventures-patria.md) | Multi-stage | High-growth companies | Brazil and Latin America |
 | [Impact Ventures PSM](funds/multi-country/impact-ventures-psm.md) | Seed and Series A | Impact entrepreneurship | Mexico and Latin America |
 | [Infinite Capital](funds/multi-country/infinite-capital.md) | Pre-seed and Seed | Breakthrough science and engineering | Global |
