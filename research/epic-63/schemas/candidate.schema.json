@@ -1,0 +1,348 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-63/schemas/candidate.schema.json",
+  "title": "Candidato de rede-anjo da epic 63",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "network_id",
+    "name",
+    "canonical_domain",
+    "official_site",
+    "entity_type",
+    "base_country",
+    "declared_geography",
+    "aliases",
+    "chapter_identity",
+    "parent_network_id",
+    "canonical_network_id",
+    "chapter_autonomy",
+    "discovery_source_ids",
+    "official_evidence_ids",
+    "discovered_on",
+    "cutoff_date",
+    "selection_actors",
+    "decision_actors",
+    "capital_actors",
+    "recurring_selection",
+    "activity_status",
+    "activity_evidence_date",
+    "external_access",
+    "application_route",
+    "already_listed",
+    "canonical_profile",
+    "status",
+    "decision",
+    "reason",
+    "owner",
+    "next_action"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "network_id": {
+      "type": "string",
+      "pattern": "^ang-[a-z0-9][a-z0-9-]*(--[a-z0-9][a-z0-9-]*)?$"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "canonical_domain": {
+      "type": ["string", "null"],
+      "pattern": "^[a-z0-9.-]+\\.[a-z]{2,}$"
+    },
+    "official_site": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "entity_type": {
+      "enum": [
+        "rede",
+        "clube",
+        "alumni network",
+        "capítulo",
+        "syndicate",
+        "plataforma",
+        "fundo",
+        "aceleradora",
+        "programa público",
+        "comunidade",
+        "investidor individual",
+        "desconhecido"
+      ]
+    },
+    "base_country": { "type": ["string", "null"] },
+    "declared_geography": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "alias_type"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "alias_type": {
+            "enum": ["nome", "marca anterior", "capítulo", "sigla"]
+          }
+        }
+      }
+    },
+    "chapter_identity": {
+      "enum": ["não aplicável", "alias", "standalone"]
+    },
+    "parent_network_id": {
+      "type": ["string", "null"],
+      "pattern": "^ang-[a-z0-9][a-z0-9-]*(--[a-z0-9][a-z0-9-]*)?$"
+    },
+    "canonical_network_id": {
+      "type": ["string", "null"],
+      "pattern": "^ang-[a-z0-9][a-z0-9-]*(--[a-z0-9][a-z0-9-]*)?$"
+    },
+    "chapter_autonomy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["selection", "decision", "geography", "recent_activity"],
+      "properties": {
+        "selection": { "type": ["boolean", "null"] },
+        "decision": { "type": ["boolean", "null"] },
+        "geography": { "type": ["boolean", "null"] },
+        "recent_activity": { "type": ["boolean", "null"] }
+      }
+    },
+    "discovery_source_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^src-[a-z0-9][a-z0-9-]*$"
+      }
+    },
+    "official_evidence_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+      }
+    },
+    "discovered_on": { "type": "string", "format": "date" },
+    "cutoff_date": { "type": "string", "format": "date" },
+    "selection_actors": { "$ref": "#/$defs/actors" },
+    "decision_actors": { "$ref": "#/$defs/actors" },
+    "capital_actors": { "$ref": "#/$defs/actors" },
+    "recurring_selection": { "type": ["boolean", "null"] },
+    "activity_status": {
+      "enum": [
+        "confirmada-recente",
+        "entre-ciclos-recorrente",
+        "desatualizada",
+        "não confirmada"
+      ]
+    },
+    "activity_evidence_date": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "external_access": {
+      "enum": [
+        "aberto",
+        "explícito-américa-latina",
+        "somente membros",
+        "somente indicação",
+        "fechado",
+        "não confirmado"
+      ]
+    },
+    "application_route": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "already_listed": { "type": "boolean" },
+    "canonical_profile": {
+      "type": ["string", "null"],
+      "pattern": "^(funds|ecosystem)/.+\\.md$"
+    },
+    "status": {
+      "enum": ["descoberto", "em pesquisa", "decidido", "publicado"]
+    },
+    "decision": {
+      "type": ["string", "null"],
+      "enum": [
+        "elegível",
+        "duplicado",
+        "encaminhado-para-funds",
+        "encaminhado-para-aceleradoras",
+        "encaminhado-para-plataformas",
+        "encaminhado-para-programas-públicos",
+        "inativo",
+        "evidência-insuficiente",
+        "excluído",
+        null
+      ]
+    },
+    "reason": { "type": ["string", "null"], "minLength": 1 },
+    "owner": { "type": ["string", "null"], "minLength": 1 },
+    "next_action": { "type": ["string", "null"], "minLength": 1 }
+  },
+  "$defs": {
+    "actors": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "actor_type"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "actor_type": {
+            "enum": [
+              "equipe da rede",
+              "comitê",
+              "membros individuais",
+              "líder do syndicate",
+              "veículo agrupado",
+              "terceiro",
+              "não divulgado"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": { "enum": ["descoberto", "em pesquisa"] }
+        }
+      },
+      "then": {
+        "properties": {
+          "decision": { "type": "null" },
+          "owner": { "type": "string" },
+          "next_action": { "type": "string" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": { "enum": ["decidido", "publicado"] }
+        }
+      },
+      "then": { "properties": { "decision": { "type": "string" } } }
+    },
+    {
+      "if": { "properties": { "decision": { "const": "elegível" } } },
+      "then": {
+        "properties": {
+          "entity_type": {
+            "enum": [
+              "rede",
+              "clube",
+              "alumni network",
+              "capítulo",
+              "syndicate"
+            ]
+          },
+          "official_site": { "type": "string" },
+          "recurring_selection": { "const": true },
+          "activity_status": {
+            "enum": ["confirmada-recente", "entre-ciclos-recorrente"]
+          },
+          "activity_evidence_date": { "type": "string" },
+          "external_access": {
+            "enum": ["aberto", "explícito-américa-latina"]
+          },
+          "official_evidence_ids": { "minItems": 1 }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "enum": [
+              "duplicado",
+              "encaminhado-para-funds",
+              "encaminhado-para-aceleradoras",
+              "encaminhado-para-plataformas",
+              "encaminhado-para-programas-públicos",
+              "inativo",
+              "evidência-insuficiente",
+              "excluído"
+            ]
+          }
+        }
+      },
+      "then": { "properties": { "reason": { "type": "string" } } }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": { "const": "evidência-insuficiente" }
+        }
+      },
+      "then": {
+        "properties": {
+          "owner": { "type": "string" },
+          "next_action": { "type": "string" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "chapter_identity": { "const": "alias" } } },
+      "then": {
+        "properties": {
+          "entity_type": { "const": "capítulo" },
+          "canonical_network_id": { "type": "string" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "chapter_identity": { "const": "standalone" } }
+      },
+      "then": {
+        "properties": {
+          "entity_type": { "const": "capítulo" },
+          "parent_network_id": { "type": "string" },
+          "canonical_network_id": { "type": "null" },
+          "chapter_autonomy": {
+            "properties": {
+              "selection": { "const": true },
+              "decision": { "const": true },
+              "geography": { "const": true },
+              "recent_activity": { "const": true }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "chapter_identity": { "const": "não aplicável" } }
+      },
+      "then": {
+        "properties": {
+          "parent_network_id": { "type": "null" },
+          "chapter_autonomy": {
+            "properties": {
+              "selection": { "type": "null" },
+              "decision": { "type": "null" },
+              "geography": { "type": "null" },
+              "recent_activity": { "type": "null" }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
