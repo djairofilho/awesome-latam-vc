@@ -20,6 +20,7 @@ from queue import (
     import_baseline_into_database,
     init_database,
     lease,
+    main,
     requeue_expired,
 )
 
@@ -128,6 +129,49 @@ class QueueTests(unittest.TestCase):
             ).fetchall()
         self.assertEqual(len(rows), 2)
         self.assertEqual({row["domain"] for row in rows}, {"shared.example"})
+
+    def test_cli_reads_payload_and_output_from_utf8_files(self) -> None:
+        payload_file = self.root / "payload.json"
+        output_file = self.root / "output.json"
+        payload_file.write_text('{"nome": "Açaí"}', encoding="utf-8")
+        output_file.write_text('{"resultado": "concluído"}', encoding="utf-8")
+
+        self.assertEqual(
+            main(
+                [
+                    "--db",
+                    str(self.database),
+                    "enqueue",
+                    "cli-task",
+                    "https://example.com",
+                    "--payload-file",
+                    str(payload_file),
+                ]
+            ),
+            0,
+        )
+        lease(self.database, "worker-cli")
+        self.assertEqual(
+            main(
+                [
+                    "--db",
+                    str(self.database),
+                    "complete",
+                    "cli-task",
+                    "worker-cli",
+                    "--output-file",
+                    str(output_file),
+                ]
+            ),
+            0,
+        )
+
+        with closing(self.connect()) as connection:
+            row = connection.execute(
+                "SELECT payload, output FROM tasks WHERE task_id = 'cli-task'"
+            ).fetchone()
+        self.assertEqual(json.loads(row["payload"]), {"nome": "Açaí"})
+        self.assertEqual(json.loads(row["output"]), {"resultado": "concluído"})
 
 
 if __name__ == "__main__":

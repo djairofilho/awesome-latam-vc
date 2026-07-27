@@ -280,6 +280,16 @@ def parse_json(value: str | None, default: Any = None) -> Any:
     return default if value is None else json.loads(value)
 
 
+def parse_json_input(
+    value: str | None,
+    file_path: str | None,
+    default: Any = None,
+) -> Any:
+    if file_path is not None:
+        return json.loads(Path(file_path).read_text(encoding="utf-8"))
+    return parse_json(value, default)
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", default=".work/epic-16/research.sqlite")
@@ -293,7 +303,12 @@ def build_parser() -> argparse.ArgumentParser:
     enqueue_parser.add_argument("--issue", type=int)
     enqueue_parser.add_argument("--partition", default="")
     enqueue_parser.add_argument("--priority", type=int, default=0)
-    enqueue_parser.add_argument("--payload", help="JSON payload")
+    enqueue_payload = enqueue_parser.add_mutually_exclusive_group()
+    enqueue_payload.add_argument("--payload", help="JSON payload")
+    enqueue_payload.add_argument(
+        "--payload-file",
+        help="UTF-8 JSON file, preferred for PowerShell and Windows",
+    )
 
     lease_parser = commands.add_parser("lease", help="atomically lease one task")
     lease_parser.add_argument("worker")
@@ -303,7 +318,12 @@ def build_parser() -> argparse.ArgumentParser:
     complete_parser = commands.add_parser("complete", help="complete a leased task")
     complete_parser.add_argument("task_id")
     complete_parser.add_argument("worker")
-    complete_parser.add_argument("--output", help="JSON output")
+    complete_output = complete_parser.add_mutually_exclusive_group()
+    complete_output.add_argument("--output", help="JSON output")
+    complete_output.add_argument(
+        "--output-file",
+        help="UTF-8 JSON file, preferred for PowerShell and Windows",
+    )
 
     fail_parser = commands.add_parser("fail", help="fail a leased task")
     fail_parser.add_argument("task_id")
@@ -338,7 +358,7 @@ def main(argv: list[str] | None = None) -> int:
             issue=args.issue,
             partition=args.partition,
             priority=args.priority,
-            payload=parse_json(args.payload, {}),
+            payload=parse_json_input(args.payload, args.payload_file, {}),
         )
         print(json.dumps({"inserted": inserted, "task_id": args.task_id}))
     elif args.command == "lease":
@@ -349,7 +369,12 @@ def main(argv: list[str] | None = None) -> int:
             )
         )
     elif args.command == "complete":
-        complete(args.db, args.task_id, args.worker, parse_json(args.output))
+        complete(
+            args.db,
+            args.task_id,
+            args.worker,
+            parse_json_input(args.output, args.output_file),
+        )
     elif args.command == "fail":
         fail(args.db, args.task_id, args.worker, args.error)
     elif args.command == "requeue-expired":
