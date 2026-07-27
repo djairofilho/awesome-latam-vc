@@ -41,6 +41,11 @@ const {
   structuredData = [],
 } = Astro.props;
 const preview = import.meta.env.PUBLIC_SITE_ENV === "preview";
+const googleSiteVerification =
+  import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
+const bingSiteVerification =
+  import.meta.env.PUBLIC_BING_SITE_VERIFICATION?.trim();
+const isPublicRoot = canonicalPath === "/";
 const canonical = canonicalPath === null ? undefined : canonicalUrl(canonicalPath);
 const labels = strings(locale ?? "en");
 const alternates: Record<string, string> = emitAlternates
@@ -64,6 +69,19 @@ const openGraphLocaleAlternates = socialLocaleAlternates(locale ?? "en");
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     {(preview || noindex) && <meta name="robots" content="noindex, nofollow" />}
+    {
+      isPublicRoot && googleSiteVerification && (
+        <meta
+          name="google-site-verification"
+          content={googleSiteVerification}
+        />
+      )
+    }
+    {
+      isPublicRoot && bingSiteVerification && (
+        <meta name="msvalidate.01" content={bingSiteVerification} />
+      )
+    }
     {canonical && <link rel="canonical" href={canonical} />}
     <link
       rel="sitemap"

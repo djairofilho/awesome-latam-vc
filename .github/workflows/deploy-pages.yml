@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PUBLIC_SITE_ENV: production
+      PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
+      PUBLIC_BING_SITE_VERIFICATION: ${{ vars.BING_SITE_VERIFICATION }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
