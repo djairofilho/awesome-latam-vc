@@ -18,7 +18,7 @@ KIND_TO_FILENAME = {
     "sources": "source-inventory.jsonl",
 }
 ID_FIELDS_BY_KIND = {
-    "candidates": ("candidate_id", "platform_id"),
+    "candidates": ("candidate_id", "network_id", "platform_id"),
     "coverage": ("coverage_id", "country"),
     "evidence": ("evidence_id",),
     "sources": ("source_id",),
