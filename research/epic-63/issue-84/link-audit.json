@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "accessed_on": "2026-07-27",
+  "user_agent": "awesome-latam-vc-research/1.0",
+  "timeout_seconds": 8,
+  "policy": "Nenhum bloqueio, autenticação, CAPTCHA ou restrição de robots.txt foi contornado.",
+  "summary": {
+    "representative_links_checked": 12,
+    "representative_links_ok": 11,
+    "robots_checked": 11,
+    "robots_ok": 9
+  },
+  "links": [
+    {"url": "https://www.bocap.vc/miembros", "status": 200},
+    {"url": "https://colcapital.org/", "status": 200},
+    {"url": "https://www.angelinvestmentnetwork.com.co/nuestras-tarifas", "status": 200},
+    {"url": "https://vca.com.co/", "status": 200},
+    {"url": "https://www.ecuacap.org/about", "status": 200},
+    {"url": "https://www.startupsventures.com/", "status": 0, "error": "Conexão encerrada sem resposta HTTP."},
+    {"url": "https://www.pecap.pe/directorio", "status": 200},
+    {"url": "https://www.hub.udep.pe/nosotros", "status": 200},
+    {"url": "https://www.hub.udep.pe/new/seminario-en-inversion-angel", "status": 200},
+    {"url": "https://theboardperu.com/faqs", "status": 200},
+    {"url": "https://venecapital.org/", "status": 200},
+    {"url": "https://www.linkedin.com/company/venecapital/", "status": 200}
+  ],
+  "robots": [
+    {"url": "https://www.bocap.vc/robots.txt", "status": 200},
+    {"url": "https://colcapital.org/robots.txt", "status": 200},
+    {"url": "https://www.angelinvestmentnetwork.com.co/robots.txt", "status": 200},
+    {"url": "https://vca.com.co/robots.txt", "status": 200},
+    {"url": "https://www.ecuacap.org/robots.txt", "status": 200},
+    {"url": "https://www.startupsventures.com/robots.txt", "status": 0, "error": "Mesmo erro de conexão do domínio."},
+    {"url": "https://www.pecap.pe/robots.txt", "status": 200},
+    {"url": "https://www.hub.udep.pe/robots.txt", "status": 200},
+    {"url": "https://theboardperu.com/robots.txt", "status": 200},
+    {"url": "https://venecapital.org/robots.txt", "status": 0, "error": "Sem resposta dentro do timeout; somente a página pública já acessível foi usada."},
+    {"url": "https://www.linkedin.com/robots.txt", "status": 200}
+  ]
+}
