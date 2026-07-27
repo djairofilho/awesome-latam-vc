@@ -86,6 +86,50 @@ test("the content layer reads canonical profiles and mirrored translations", () 
   assert.match(catalog, /variants\.get\(locale\) \?\? variants\.get\("en"\)/);
 });
 
+test("editorial routes load validated content and expose available locales", () => {
+  const config = readFileSync("src/content.config.ts", "utf8");
+  assert.match(config, /research\/seo-geo\/content\/editorial/);
+  assert.match(config, /editorialPages/);
+
+  const route = readFileSync(
+    "src/pages/[locale]/about/[slug].astro",
+    "utf8",
+  );
+  assert.match(route, /getCollection\("editorialPages"\)/);
+  assert.match(route, /availableLocales/);
+  assert.match(route, /localizedRoute\(locale, routeSuffix\)/);
+  assert.match(route, /View Markdown source|labels\.viewSource/);
+
+  const layout = readFileSync("src/layouts/BaseLayout.astro", "utf8");
+  const switcher = readFileSync(
+    "src/components/LanguageSwitcher.astro",
+    "utf8",
+  );
+  assert.match(layout, /hreflangUrls\(routeSuffix, availableLocales\)/);
+  assert.match(switcher, /availableLocales\.includes\(locale\)/);
+});
+
+test("profile answer pattern keeps claims, observations and evidence separate", () => {
+  const component = readFileSync("src/components/ProfileAnswer.astro", "utf8");
+  const contract = JSON.parse(
+    readFileSync(
+      "research/seo-geo/content/profile-answer-contract.json",
+      "utf8",
+    ),
+  );
+  assert.deepEqual(contract.section_order, [
+    "answer",
+    "key_facts",
+    "declared_thesis",
+    "observed_signals",
+    "sources",
+    "verification",
+  ]);
+  assert.match(component, /slot name="declared-thesis"/);
+  assert.match(component, /slot name="observed-signals"/);
+  assert.match(component, /datetime=\{lastVerified\}/);
+});
+
 test("pull requests validate without deployment", () => {
   const workflow = readFileSync(".github/workflows/site-build.yml", "utf8");
   assert.match(workflow, /pull_request:/);

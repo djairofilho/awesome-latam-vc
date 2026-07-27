@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/seo-geo/content/editorial-page.schema.json",
+  "title": "Answer-oriented editorial page",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "slug",
+    "locale",
+    "translation_of",
+    "translation_status",
+    "title",
+    "summary",
+    "last_reviewed",
+    "references"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^editorial:(methodology|inclusion|sources|updates|license|limitations|citation):(en|pt-BR|es)$"
+    },
+    "slug": {
+      "enum": [
+        "methodology",
+        "inclusion",
+        "sources",
+        "updates",
+        "license",
+        "limitations",
+        "citation"
+      ]
+    },
+    "locale": {
+      "enum": ["en", "pt-BR", "es"]
+    },
+    "translation_of": {
+      "type": ["string", "null"],
+      "pattern": "^editorial:(methodology|inclusion|sources|updates|license|limitations|citation):en$"
+    },
+    "translation_status": {
+      "enum": ["canonical", "complete", "needs_review"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date"
+    },
+    "references": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "url"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "locale": {
+            "const": "en"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "translation_of": {
+            "const": null
+          },
+          "translation_status": {
+            "const": "canonical"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "translation_of": {
+            "type": "string"
+          },
+          "translation_status": {
+            "enum": ["complete", "needs_review"]
+          }
+        }
+      }
+    }
+  ]
+}

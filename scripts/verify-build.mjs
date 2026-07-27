@@ -89,6 +89,16 @@ const localizedCatalogHtml = Object.fromEntries(
   ]),
 );
 const catalogHtml = localizedCatalogHtml.en;
+const editorialSourceRoot = join(
+  root,
+  "research",
+  "seo-geo",
+  "content",
+  "editorial",
+);
+const editorialSources = files(editorialSourceRoot).filter((path) =>
+  path.endsWith(".md"),
+);
 const sourceProfileCount = profileRoots
   .flatMap((directory) => files(join(root, directory)))
   .filter(
@@ -180,6 +190,46 @@ for (const [locale, segment] of Object.entries(localeRoutes)) {
   assert(
     !/(?:href|src)="\/(?!awesome-latam-vc\/)/.test(home + catalog),
     `${locale} output contains a root-relative link outside the Pages base`,
+  );
+}
+for (const sourcePath of editorialSources) {
+  const locale = sourcePath.split(/[\\/]/).at(-2);
+  const segment = localeRoutes[locale];
+  const slug = sourcePath.split(/[\\/]/).at(-1).replace(/\.md$/, "");
+  const html = routeHtml(segment, "about", slug);
+  const route = `/${segment}/about/${slug}/`;
+  assert(
+    html.includes(`<html lang="${locale}">`),
+    `${locale} editorial page has an incorrect lang attribute`,
+  );
+  assert(
+    html.includes(
+      `<link rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc${route}">`,
+    ),
+    `${locale}:${slug} editorial canonical is missing or incorrect`,
+  );
+  assert(
+    html.includes(
+      "https://github.com/djairofilho/awesome-latam-vc/blob/main/research/seo-geo/content/editorial/",
+    ),
+    `${locale}:${slug} editorial page does not expose its Markdown source`,
+  );
+  for (const [targetLocale, targetSegment] of Object.entries(localeRoutes)) {
+    const variantExists = editorialSources.some(
+      (candidate) =>
+        candidate.split(/[\\/]/).at(-2) === targetLocale &&
+        candidate.split(/[\\/]/).at(-1) === `${slug}.md`,
+    );
+    assert(
+      html.includes(
+        `href="/awesome-latam-vc/${targetSegment}/about/${slug}/"`,
+      ) === variantExists,
+      `${locale}:${slug} language switcher does not match available variants`,
+    );
+  }
+  assert(
+    !/(?:href|src)="\/(?!awesome-latam-vc\/)/.test(html),
+    `${locale}:${slug} contains a root-relative link outside the Pages base`,
   );
 }
 assert(

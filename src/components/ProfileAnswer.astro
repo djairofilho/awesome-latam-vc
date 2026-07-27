@@ -1,0 +1,85 @@
+---
+interface Fact {
+  label: string;
+  value: string | null;
+}
+
+interface Source {
+  title: string;
+  url: string;
+}
+
+interface Labels {
+  keyFacts: string;
+  declaredThesis: string;
+  observedSignals: string;
+  sources: string;
+  lastVerified: string;
+  notDisclosed: string;
+}
+
+interface Props {
+  summary: string;
+  facts: Fact[];
+  sources: Source[];
+  lastVerified: string;
+  labels: Labels;
+}
+
+const { summary, facts, sources, lastVerified, labels } = Astro.props;
+const hasDeclaredThesis = Astro.slots.has("declared-thesis");
+const hasObservedSignals = Astro.slots.has("observed-signals");
+---
+
+<div class="profile-answer">
+  <p class="profile-answer__summary">{summary}</p>
+
+  <section aria-labelledby="profile-key-facts">
+    <h2 id="profile-key-facts">{labels.keyFacts}</h2>
+    <dl class="profile-facts">
+      {
+        facts.map(({ label, value }) => (
+          <div>
+            <dt>{label}</dt>
+            <dd>{value ?? labels.notDisclosed}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </section>
+
+  {
+    hasDeclaredThesis && (
+      <section aria-labelledby="profile-declared-thesis">
+        <h2 id="profile-declared-thesis">{labels.declaredThesis}</h2>
+        <slot name="declared-thesis" />
+      </section>
+    )
+  }
+
+  {
+    hasObservedSignals && (
+      <section aria-labelledby="profile-observed-signals">
+        <h2 id="profile-observed-signals">{labels.observedSignals}</h2>
+        <slot name="observed-signals" />
+      </section>
+    )
+  }
+
+  <section aria-labelledby="profile-sources">
+    <h2 id="profile-sources">{labels.sources}</h2>
+    <ul>
+      {
+        sources.map(({ title, url }) => (
+          <li>
+            <a href={url}>{title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <p class="profile-verification">
+    <strong>{labels.lastVerified}:</strong> <time datetime={lastVerified}>{lastVerified}</time>
+  </p>
+</div>

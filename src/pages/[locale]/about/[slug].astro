@@ -1,0 +1,100 @@
+---
+import { getCollection, render } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import { relative, sep } from "node:path";
+import type { Locale } from "../../../i18n/ui";
+import { strings } from "../../../i18n/ui";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import {
+  localeDetails,
+  localizedHref,
+  localizedRoute,
+} from "../../../lib/i18n.mjs";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("editorialPages");
+  return pages.map((page) => {
+    const availableLocales = pages
+      .filter((candidate) => candidate.data.slug === page.data.slug)
+      .map((candidate) => candidate.data.locale);
+    return {
+      params: {
+        locale: localeDetails(page.data.locale).route_segment,
+        slug: page.data.slug,
+      },
+      props: { page, availableLocales },
+    };
+  });
+}
+
+type EditorialEntry = CollectionEntry<"editorialPages">;
+
+interface Props {
+  page: EditorialEntry;
+  availableLocales: Locale[];
+}
+
+const { page, availableLocales } = Astro.props as Props;
+const locale = page.data.locale;
+const labels = strings(locale);
+const pages = (await getCollection("editorialPages"))
+  .filter((candidate) => candidate.data.locale === locale)
+  .sort((left, right) => left.data.title.localeCompare(right.data.title, locale));
+const { Content } = await render(page);
+const routeSuffix = `/about/${page.data.slug}/`;
+const sourcePath = page.filePath
+  ? relative(process.cwd(), page.filePath).split(sep).join("/")
+  : undefined;
+const sourceUrl = sourcePath
+  ? `https://github.com/djairofilho/awesome-latam-vc/blob/main/${sourcePath}`
+  : "https://github.com/djairofilho/awesome-latam-vc";
+---
+
+<BaseLayout
+  title={`${page.data.title} · Awesome LatAm VC`}
+  description={page.data.summary}
+  canonicalPath={localizedRoute(locale, routeSuffix)}
+  routeSuffix={routeSuffix}
+  locale={locale}
+  availableLocales={availableLocales}
+>
+  <div class="editorial-shell">
+    <aside>
+      <nav aria-label={labels.editorialNavigation}>
+        <p>{labels.editorialNavigation}</p>
+        <ul>
+          {
+            pages.map((candidate) => (
+              <li>
+                <a
+                  href={localizedHref(
+                    locale,
+                    `/about/${candidate.data.slug}/`,
+                  )}
+                  aria-current={
+                    candidate.data.slug === page.data.slug ? "page" : undefined
+                  }
+                >
+                  {candidate.data.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </aside>
+
+    <article class="editorial-article">
+      <Content />
+      <footer class="editorial-provenance">
+        <p>
+          <strong>{labels.lastReviewed}:</strong>{" "}
+          <time datetime={page.data.last_reviewed}>
+            {page.data.last_reviewed}
+          </time>
+        </p>
+        <a href={sourceUrl}>{labels.viewSource}</a>
+      </footer>
+    </article>
+  </div>
+</BaseLayout>

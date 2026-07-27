@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "source_of_truth": "research/seo-geo/contract/profile.schema.json",
+  "section_order": [
+    "answer",
+    "key_facts",
+    "declared_thesis",
+    "observed_signals",
+    "sources",
+    "verification"
+  ],
+  "sections": {
+    "answer": {
+      "source": "localized summary",
+      "rule": "Render verbatim; do not synthesize or expand claims."
+    },
+    "key_facts": {
+      "source": "canonical front matter",
+      "fields": [
+        "entity_type",
+        "operator",
+        "base_geography",
+        "countries_covered",
+        "stages",
+        "focuses",
+        "official_website",
+        "founder_route"
+      ],
+      "rule": "Use normalized values only as labels; null and not_disclosed remain explicit."
+    },
+    "declared_thesis": {
+      "source": "localized Markdown body",
+      "rule": "Keep an entity's declared thesis separate from directory observations."
+    },
+    "observed_signals": {
+      "source": "localized Markdown body",
+      "rule": "Label portfolio or activity observations as observations, not declared scope."
+    },
+    "sources": {
+      "source": "canonical front matter sources",
+      "rule": "Preserve source title, URL, kind, order and repetition."
+    },
+    "verification": {
+      "source": "canonical front matter last_verified",
+      "rule": "Display the date as a verification date, never as a promise of current availability."
+    }
+  },
+  "prohibited_derivations": [
+    "estimated check size",
+    "estimated stage",
+    "estimated sector focus",
+    "estimated activity",
+    "estimated geography",
+    "unsupported ranking",
+    "unsupported comparison"
+  ]
+}

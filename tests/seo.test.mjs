@@ -45,6 +45,30 @@ test("sitemap is multilingual, absolute and deterministic", () => {
   }
 });
 
+test("sitemap includes editorial routes without inventing translations", () => {
+  const suffix = "/about/methodology/";
+  const editorialGroup = {
+    suffix,
+    paths: ["/en/about/methodology/"],
+    alternates: {
+      en: "https://djairofilho.github.io/awesome-latam-vc/en/about/methodology/",
+      "x-default":
+        "https://djairofilho.github.io/awesome-latam-vc/en/about/methodology/",
+    },
+  };
+  const sitemap = sitemapXml([editorialGroup]);
+
+  assert.match(
+    sitemap,
+    /<loc>https:\/\/djairofilho\.github\.io\/awesome-latam-vc\/en\/about\/methodology\/<\/loc>/,
+  );
+  assert.match(sitemap, /hreflang="en"/);
+  assert.doesNotMatch(
+    sitemap,
+    /hreflang="(?:pt-BR|es)" href="[^"]*\/about\/methodology\/"/,
+  );
+});
+
 test("robots advertises the only public sitemap", () => {
   assert.equal(
     robotsText(),

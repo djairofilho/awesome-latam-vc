@@ -55,8 +55,12 @@ function escapeXml(value) {
     .replaceAll(">", "&gt;");
 }
 
-export function sitemapXml() {
-  const entries = indexableRouteGroups().flatMap(({ paths, alternates }) =>
+export function sitemapXml(additionalRouteGroups = []) {
+  const routeGroups = [
+    ...indexableRouteGroups(),
+    ...additionalRouteGroups,
+  ];
+  const entries = routeGroups.flatMap(({ paths, alternates }) =>
     paths.map((path) => {
       const links = Object.entries(alternates)
         .map(

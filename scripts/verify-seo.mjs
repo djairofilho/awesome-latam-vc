@@ -136,11 +136,20 @@ for (const { route, html } of indexable) {
     html,
     /<link\s+rel="alternate"\s+hreflang="([^"]+)"\s+href="([^"]+)"\s*\/?>/g,
   );
-  assert(alternates.length === 4, `${route} must expose four hreflang links`);
+  assert(
+    alternates.length >= 2 && alternates.length <= 4,
+    `${route} must expose its available locales and x-default hreflang`,
+  );
   assert(
     new Set(alternates.map(([, hreflang]) => hreflang)).size ===
       alternates.length,
     `${route} contains duplicate hreflang values`,
+  );
+  assert(
+    alternates.every(([, hreflang]) =>
+      ["en", "pt-BR", "es", "x-default"].includes(hreflang),
+    ),
+    `${route} contains an unsupported hreflang value`,
   );
   assert(alternates.some(([, lang]) => lang === "x-default"),
     `${route} is missing x-default hreflang`);
