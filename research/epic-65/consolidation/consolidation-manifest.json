@@ -1,10 +1,10 @@
 {
   "after_counts": {
-    "agencies": 27,
+    "agencies": 29,
     "calls": 21,
     "coverage_rows": 55,
-    "evidence": 90,
-    "programs": 39,
+    "evidence": 98,
+    "programs": 45,
     "tasks": 55
   },
   "before_counts": {
@@ -41,19 +41,20 @@
   "decision_counts": {
     "agencies": {
       "elegível": 12,
-      "evidência insuficiente": 5,
-      "excluída": 7,
+      "evidência insuficiente": 8,
+      "excluída": 6,
       "inativa": 3
     },
     "programs": {
-      "elegível": 15,
-      "evidência insuficiente": 5,
+      "elegível": 17,
+      "evidência insuficiente": 9,
       "excluído": 14,
       "inativo": 5
     }
   },
   "incoming_transfers": 13,
-  "independent_review_status": "pending",
+  "independent_review_status": "complete",
+  "independent_reviewer": "independent-reviewer-issue-102",
   "input_hashes": {
     "research/epic-65/andean/agencies.jsonl": "3faaaf83e76b1784a1b7e9b35817ff146fd169fadf188bfdf35efbde01c2ffbe",
     "research/epic-65/andean/calls.jsonl": "efc9f40b46f4ddad650d4c07d7542b24163200367afc2eddebdd324bfe340b9a",
@@ -81,17 +82,23 @@
     "research/epic-65/southern-cone/run-manifest.jsonl": "c03769e92233e8096a605753455ba6cfdee8eb2a0f75af71ed9521e5f84be5b8"
   },
   "issue": 102,
-  "materialized_incoming_transfers": 2,
+  "materialized_incoming_transfers": 8,
   "outgoing_category_resolutions": 5,
   "output_hashes": {
-    "agencies.jsonl": "7089a2abde1fe3d75860c1533abf036979aa84a58ed52bc740e56c84f74c81ac",
+    "INDEPENDENT_REVIEW.md": "e75a8595d07a5576337d651474aca5d4b813f43a0f12b8a7ea04d2b13aa5a10a",
+    "agencies.jsonl": "2d1c3ee28d0fe19ac85726a8763cccd4753e35ed50cbf583f39aba4397eb2f97",
     "calls.jsonl": "0af5579f7b9cf8e5fcbc30eec2dcdf7ba4c8b03aae5fdc503ff30411bae4bb6a",
-    "category-resolutions.json": "b42ff745109fc95eed5c0f388fc339952cc7ced32558d1dbc56ef7104e16b0aa",
+    "category-resolutions.json": "12b2caf3992d72d50ba351ab66d455d0a2770d0bcaa6ad6857a2f7d757739fb8",
     "coverage-matrix.jsonl": "d76b1c10255555ce10d14edfc47ac3c857815580cf4201d891fa01ede22d6483",
-    "evidence.jsonl": "84f130ba7c3d8e24cdd48e4cffb1e070b2239c8d5222f422d9eef08afc432271",
-    "programs.jsonl": "25ed71ec5d1ecbcf02ee1f707aadd50eab7e011ee0fccd6f0ff55f8b53f78a4c",
+    "evidence.jsonl": "552d3da6841591635042666191a070e037d3a746f0fe27973826e149d282d046",
+    "independent-review.jsonl": "b7bf22b337f5e41fde35ceb7ab17c488acb2ba1788a508a2abbc858bd2b8a876",
+    "programs.jsonl": "f310197af572e6e7db6c2c9ab49ce4b8ec51a3c1f61410822298482e893e880e",
     "run-manifest.jsonl": "75940f99777d4be7ab7d03d37bf24e9933f3f5c9c608c554b8167b6c0cc0e2ae"
   },
+  "resolved_high_divergences": 18,
+  "review_count": 58,
+  "reviewed_on": "2026-07-27",
   "schema_version": "1.0",
-  "status": "provisional"
+  "status": "frozen",
+  "unresolved_high_divergences": 0
 }

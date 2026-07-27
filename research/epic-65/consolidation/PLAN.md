@@ -25,7 +25,9 @@ scraping novo.
 
 ## Gates mecânicos
 
-- 27 agências, 39 programas, 21 chamadas e 90 evidências antes e depois;
+- baseline mecânico de 27 agências, 39 programas, 21 chamadas e 90 evidências;
+- contagens finais podem crescer apenas pela materialização adjudicada das
+  transferências recebidas, com before/after e hashes explícitos;
 - zero IDs duplicados ou referências órfãs;
 - zero agências ou programas sem decisão;
 - toda pendência com responsável e próxima ação;

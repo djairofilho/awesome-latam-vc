@@ -1,37 +1,43 @@
-# Fila provisória consolidada de programas públicos
+# Fila consolidada de programas públicos
 
 Este bundle consolida as quatro auditorias regionais da epic #65 na data de
-corte 2026-07-27. Nenhum perfil é publicado nesta etapa.
+corte 2026-07-27. A revisão independente está concluída e nenhum perfil é
+publicado nesta etapa.
 
 ## Before / after
 
 | Entidade | Antes | Depois |
 | --- | ---: | ---: |
-| Agências | 27 | 27 |
-| Programas | 39 | 39 |
+| Agências | 27 | 29 |
+| Programas | 39 | 45 |
 | Chamadas | 21 | 21 |
-| Evidências | 90 | 90 |
+| Evidências | 90 | 98 |
 | Linhas de cobertura | 55 | 55 |
 
 Não havia IDs duplicados entre regiões. A redução preservou todos os registros,
-ordenou-os por ID e reconciliou suas relações.
+ordenou-os por ID, materializou seis transferências antes pendentes e
+reconciliou suas relações.
 
 ## Decisões
 
 - Agências elegíveis: 12.
-- Programas elegíveis: 15.
-- Agências com evidência insuficiente: 5.
-- Programas com evidência insuficiente: 5.
+- Programas elegíveis: 17.
+- Agências com evidência insuficiente: 8.
+- Programas com evidência insuficiente: 9.
 - Transferências recebidas da epic #62: 13.
-- Transferências já ligadas a programas existentes: 2.
-- Transferências que exigem revisão pelo contrato público: 11.
+- Transferências materializadas na fila pública: 8.
+- Transferências rejeitadas pelo contrato público: 5.
 - Fronteiras encaminhadas para fundos ou aceleradoras: 5.
 
-## Estado do gate
+## Revisão independente
 
-A redução mecânica está concluída, mas a fila ainda é `provisional`. Um agente
-diferente do consolidador deve revisar 100% dos elegíveis, pendências e casos de
-fronteira antes de congelar os hashes.
+A revisão de 100% dos grupos obrigatórios está em
+`independent-review.jsonl`, com narrativa em `INDEPENDENT_REVIEW.md`.
+Fondo Emprender e Capital Pioneras foram rebaixados por não confirmarem uma rota
+específica para startups. Seis transferências antes pendentes foram
+materializadas, além das duas já ligadas a programas; cinco receberam outro
+destino canônico. Não restam divergências altas abertas e o manifesto está
+congelado com hashes SHA-256.
 
 ## Reprodução
 
