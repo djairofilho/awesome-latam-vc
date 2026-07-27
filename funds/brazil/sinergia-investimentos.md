@@ -1,3 +1,67 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:sinergia-investimentos:en",
+  "entity_id": "fund:sinergia-investimentos",
+  "slug": "sinergia-investimentos",
+  "name": "Sinergia Investimentos",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Sinergia Investimentos is a corporate venture capital program using adaptable capital and strategic support for startups in the Amazon bioeconomy.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "amazon_bioeconomy",
+    "regenerative_businesses"
+  ],
+  "official_website": "https://sinergiainvestimentos.jornadaamazonia.org.br/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Sinergia Investimentos",
+      "url": "https://sinergiainvestimentos.jornadaamazonia.org.br/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Official portfolio",
+      "url": "https://sinergiainvestimentos.jornadaamazonia.org.br/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Batch 3 regulation",
+      "url": "https://sinergiainvestimentos.jornadaamazonia.org.br/wp-content/uploads/2025/02/Regulamento-Batch-3-Sinergia-Investimentos.pdf",
+      "kind": "official_regulator"
+    },
+    {
+      "title": "Jornada Amazônia on Capital Evolutivo and CVentures",
+      "url": "https://jornadaamazonia.org.br/saiba-o-que-e-capital-evolutivo-e-como-podera-multiplicar-impacto-de-startups-na-amazonia/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Sinergia 2026 regulation",
+      "url": "https://sinergia.jornadaamazonia.org.br/wp-content/uploads/2026/06/Regulamento-do-Programa-Sinergia-2026-1.pdf",
+      "kind": "official_regulator"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Sinergia Investimentos"
+  ]
+}
+---
 # Sinergia Investimentos
 
 Sinergia Investimentos is a corporate venture capital program using

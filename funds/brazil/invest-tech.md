@@ -1,3 +1,55 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:invest-tech:en",
+  "entity_id": "fund:invest-tech",
+  "slug": "invest-tech",
+  "name": "Invest Tech",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Invest Tech is a Brazilian private equity and venture capital manager investing in technology-enabled companies that digitize the country's economy.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "seed"
+  ],
+  "focuses": [
+    "technology_enabled_b2b_companies"
+  ],
+  "official_website": "https://investtech.com.br/",
+  "founder_route": "https://investtech.com.br/en/#contato",
+  "sources": [
+    {
+      "title": "Invest Tech website and portfolio",
+      "url": "https://investtech.com.br/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Venture capital funds and strategy",
+      "url": "https://investtech.com.br/en/fundos/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Contact form",
+      "url": "https://investtech.com.br/en/#contato",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Invest Tech"
+  ]
+}
+---
 # Invest Tech
 
 Invest Tech is a Brazilian private equity and venture capital manager investing

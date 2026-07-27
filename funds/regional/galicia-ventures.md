@@ -1,3 +1,57 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:galicia-ventures:en",
+  "entity_id": "fund:galicia-ventures",
+  "slug": "galicia-ventures",
+  "name": "Galicia Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Galicia Ventures is Grupo Financiero Galicia's corporate venture capital program for early-stage Latin American startups.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a",
+    "series_b"
+  ],
+  "focuses": [
+    "fintech",
+    "insurtech",
+    "agtech",
+    "disruptive_technology",
+    "b2b_models"
+  ],
+  "official_website": "https://galicia-ventures.ar/",
+  "founder_route": "https://galicia-ventures.ar/",
+  "sources": [
+    {
+      "title": "Investment thesis and contact",
+      "url": "https://galicia-ventures.ar/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Strike investment announcement",
+      "url": "https://galicia-ventures.ar/strike-se-suma-al-portfolio-de-galicia-ventures/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Galicia Ventures"
+  ]
+}
+---
 # Galicia Ventures
 
 Galicia Ventures is Grupo Financiero Galicia's corporate venture capital program for early-stage Latin American startups.

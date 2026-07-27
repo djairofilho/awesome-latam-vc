@@ -1,3 +1,61 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:domo-vc:en",
+  "entity_id": "fund:domo-vc",
+  "slug": "domo-vc",
+  "name": "DOMO.VC",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "DOMO.VC is an investment organization focused on Technology in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://domo.vc/",
+  "founder_route": "https://domo.vc/contato-en/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://domo.vc/portfolio-en/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://domo.vc/contato-en/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://domo.vc/portfolio-en/all-en/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://domo.vc/portfolio-en/adtech-en/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "DOMO.VC"
+  ]
+}
+---
 # DOMO.VC
 
 DOMO.VC is an investment organization focused on Technology in Brazil.

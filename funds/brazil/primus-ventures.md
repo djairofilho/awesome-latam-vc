@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:primus-ventures:en",
+  "entity_id": "fund:primus-ventures",
+  "slug": "primus-ventures",
+  "name": "Primus Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Primus Ventures is an investment organization focused on B2B technology in Southern Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "b2b_technology"
+  ],
+  "official_website": "https://sulventures.com.br/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://www.primusvc.com.br/portf%C3%B3lio",
+      "kind": "secondary"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.primusvc.com.br/",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Primus Ventures"
+  ]
+}
+---
 # Primus Ventures
 
 Primus Ventures is an investment organization focused on B2B technology in Southern Brazil.

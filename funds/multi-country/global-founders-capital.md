@@ -1,3 +1,63 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:global-founders-capital:en",
+  "entity_id": "fund:global-founders-capital",
+  "slug": "global-founders-capital",
+  "name": "Global Founders Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Global Founders Capital is an investment organization focused on Technology, sector agnostic in Global, including Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://www.globalfounderscapital.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://www.globalfounderscapital.com/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://latamlist.com/energy-trader-bia-wraps-6-million-to-lower-energy-costs-for-businesses-in-colombia/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://latamlist.com/category/startup-news/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://latamlist.com/category/startup-news/funding/",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Global Founders Capital"
+  ]
+}
+---
 # Global Founders Capital
 
 Global Founders Capital is an investment organization focused on Technology, sector agnostic in Global, including Latin America.

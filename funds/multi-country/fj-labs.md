@@ -1,3 +1,57 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:fj-labs:en",
+  "entity_id": "fund:fj-labs",
+  "slug": "fj-labs",
+  "name": "FJ Labs",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "FJ Labs is an investment organization focused on Marketplaces and network effects in Global.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "marketplaces",
+    "network_effects"
+  ],
+  "official_website": "https://www.fjlabs.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.fjlabs.com/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.fjlabs.com/strategy",
+      "kind": "official_website"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://www.fjlabs.com/portfolio?6b6149fe_page=2",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "FJ Labs"
+  ]
+}
+---
 # FJ Labs
 
 FJ Labs is an investment organization focused on Marketplaces and network effects in Global.

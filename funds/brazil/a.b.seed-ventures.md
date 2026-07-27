@@ -1,3 +1,56 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:a-b-seed-ventures:en",
+  "entity_id": "fund:a-b-seed-ventures",
+  "slug": "a-b-seed-ventures",
+  "name": "A.B.Seed Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "A.B.Seed Ventures is an investment organization focused on B2B software in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "b2b_software"
+  ],
+  "official_website": "https://abseed.com.br/",
+  "founder_route": "https://abseed.com.br/contact-us/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://abseed.com.br/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://abseed.com.br/about-us/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://abseed.com.br/contact-us/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "A.B.Seed Ventures"
+  ]
+}
+---
 # A.B.Seed Ventures
 
 A.B.Seed Ventures is an investment organization focused on B2B software in Brazil.

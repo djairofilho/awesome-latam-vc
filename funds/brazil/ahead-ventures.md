@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:ahead-ventures:en",
+  "entity_id": "fund:ahead-ventures",
+  "slug": "ahead-ventures",
+  "name": "Ahead Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Ahead Ventures is a Brazilian corporate venture capital manager that structures and operates investment programs for corporations.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "sectors_aligned_with_each_corporate_client_s_strategic_thesis"
+  ],
+  "official_website": "https://aheadventures.com.br/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Ahead Ventures website",
+      "url": "https://aheadventures.com.br/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Clients and active mandates",
+      "url": "https://aheadventures.com.br/clientes/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Ahead Ventures"
+  ]
+}
+---
 # Ahead Ventures
 
 Ahead Ventures is a Brazilian corporate venture capital manager that structures

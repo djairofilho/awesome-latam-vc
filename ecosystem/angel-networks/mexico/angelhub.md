@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "angel_network:angelhub:en",
+  "entity_id": "angel_network:angelhub",
+  "slug": "angelhub",
+  "name": "AngelHub",
+  "entity_type": "angel_network",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "members",
+  "aliases": [],
+  "operator": "AngelHub",
+  "base_geography": {
+    "kind": "country",
+    "code": "MX"
+  },
+  "countries_covered": [
+    "LATAM",
+    "MX"
+  ],
+  "stages": [
+    "angel"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://www.angelhub.mx/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "AngelHub investment thesis, check range, and process",
+      "url": "https://www.angelhub.mx/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Official July 2026 batch activity",
+      "url": "https://es.linkedin.com/posts/angelhubclub_ecuadortechweek-startupgrind-vcreversepitch-activity-7483629335380336640-eJ6F",
+      "kind": "official_activity"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "AngelHub"
+  ]
+}
+---
 # AngelHub
 
 - **Type:** Angel-investment club

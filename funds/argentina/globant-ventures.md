@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:globant-ventures:en",
+  "entity_id": "fund:globant-ventures",
+  "slug": "globant-ventures",
+  "name": "Globant Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Globant Ventures is Globant's corporate venture capital fund for technology startups from Seed through Series A.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "AR"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "artificial_intelligence",
+    "blockchain",
+    "the_future_of_work"
+  ],
+  "official_website": "https://www.globantventures.com/index.php/",
+  "founder_route": "https://www.globantventures.com/index.php/",
+  "sources": [
+    {
+      "title": "Investment thesis, portfolio, and application",
+      "url": "https://www.globantventures.com/index.php/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Globant Ventures"
+  ]
+}
+---
 # Globant Ventures
 
 Globant Ventures is Globant's corporate venture capital fund for technology startups from Seed through Series A.

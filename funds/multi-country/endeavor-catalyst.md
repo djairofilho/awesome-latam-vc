@@ -1,3 +1,60 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:endeavor-catalyst:en",
+  "entity_id": "fund:endeavor-catalyst",
+  "slug": "endeavor-catalyst",
+  "name": "Endeavor Catalyst",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Endeavor Catalyst is an investment organization focused on Endeavor network companies in Global.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "endeavor_network_companies"
+  ],
+  "official_website": "https://endeavor.org/catalyst/",
+  "founder_route": "https://endeavor.org/entrepreneur-experience/apply/",
+  "sources": [
+    {
+      "title": "Investment model, eligibility, and official investment count",
+      "url": "https://endeavor.org/catalyst/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://endeavor.org/entrepreneur-experience/apply/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://endeavor.org/entrepreneur-companies/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://endeavor.org/about-us/",
+      "kind": "official_thesis"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Endeavor Catalyst"
+  ]
+}
+---
 # Endeavor Catalyst
 
 Endeavor Catalyst is an investment organization focused on Endeavor network companies in Global.

@@ -1,3 +1,62 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:shima-capital:en",
+  "entity_id": "fund:shima-capital",
+  "slug": "shima-capital",
+  "name": "Shima Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Shima Capital is an investment organization focused on Web3 and blockchain in Global.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "web3",
+    "blockchain"
+  ],
+  "official_website": "https://shima.capital/",
+  "founder_route": "https://chainbroker.io/contacts/",
+  "sources": [
+    {
+      "title": "Secondary profile",
+      "url": "https://chainbroker.io/funds/shima-capital/",
+      "kind": "secondary"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://chainbroker.io/about-us/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://chainbroker.io/contacts/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Secondary profile",
+      "url": "https://chainbroker.io/funds/shima-capital/recent/",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Shima Capital"
+  ]
+}
+---
 # Shima Capital
 
 Shima Capital is an investment organization focused on Web3 and blockchain in Global.

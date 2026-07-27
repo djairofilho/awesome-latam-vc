@@ -1,3 +1,55 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:rx-ventures:en",
+  "entity_id": "fund:rx-ventures",
+  "slug": "rx-ventures",
+  "name": "RX Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "RX Ventures is Lojas Renner S.A.'s corporate venture capital vehicle for startups shaping the future of fashion, retail, and lifestyle.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "fashion",
+    "retail",
+    "lifestyle",
+    "customer_experience",
+    "responsible_brands"
+  ],
+  "official_website": "https://www.lojasrennersa.com.br/rx-ventures/",
+  "founder_route": "https://airtable.com/app4qXQkm1B3hEZrh/pagujtJRtVULaeKoN/form",
+  "sources": [
+    {
+      "title": "RX Ventures thesis, portfolio, team, and founder contact",
+      "url": "https://www.lojasrennersa.com.br/rx-ventures/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Lojas Renner sustainability and climate disclosure",
+      "url": "https://www.lojasrennersa.com.br/wp-content/uploads/2025/07/Informacoes-financeiras-relacionadas-a-sustentabilidade-clima-IFRS-S1-e-S2-_-CBPS-1-e-2.pdf",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "RX Ventures"
+  ]
+}
+---
 # RX Ventures
 
 RX Ventures is Lojas Renner S.A.'s corporate venture capital vehicle for

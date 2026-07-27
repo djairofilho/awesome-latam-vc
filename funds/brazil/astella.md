@@ -1,3 +1,63 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:astella:en",
+  "entity_id": "fund:astella",
+  "slug": "astella",
+  "name": "Astella",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Astella is an investment organization focused on Technology, sector agnostic in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://www.astella.com.br/",
+  "founder_route": "https://www.astella.com.br/en/pt/contact",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.astella.com.br/en/pt/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://www.astella.com.br/en/astella-portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://www.astella.com.br/en/pt/about",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://www.astella.com.br/en/pt/contact",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Astella"
+  ]
+}
+---
 # Astella
 
 Astella is an investment organization focused on Technology, sector agnostic in Brazil.

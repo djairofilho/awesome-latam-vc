@@ -1,3 +1,63 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:genesis-ventures:en",
+  "entity_id": "fund:genesis-ventures",
+  "slug": "genesis-ventures",
+  "name": "Genesis Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Genesis Ventures is an investment organization focused on Technology, energy, and real estate in Chile and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "CL",
+    "LATAM"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "technology",
+    "energy",
+    "real_estate"
+  ],
+  "official_website": "https://genesisventures.vc/",
+  "founder_route": "https://genesisventures.vc/contact/",
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://genesisventures.vc/",
+      "kind": "official_website"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://genesisventures.vc/about/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://genesisventures.vc/genesis-ventures-i/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://genesisventures.vc/contact/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Genesis Ventures"
+  ]
+}
+---
 # Genesis Ventures
 
 Genesis Ventures is an investment organization focused on Technology, energy, and real estate in Chile and Latin America.

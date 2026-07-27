@@ -1,3 +1,61 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:darwin-startups:en",
+  "entity_id": "fund:darwin-startups",
+  "slug": "darwin-startups",
+  "name": "Darwin Startups",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Darwin Startups is an investment organization focused on Technology startups in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology_startups"
+  ],
+  "official_website": "https://www.darwinstartups.com/",
+  "founder_route": "https://www.darwinstartups.com/startups",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.darwinstartups.com/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Programs for startups and official investment count",
+      "url": "https://www.darwinstartups.com/startups",
+      "kind": "official_application"
+    },
+    {
+      "title": "Program and application terms",
+      "url": "https://www.darwinstartups.com/ds-termos-de-uso",
+      "kind": "official_application"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://www.darwinstartups.com/contato",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Darwin Startups"
+  ]
+}
+---
 # Darwin Startups
 
 Darwin Startups is an investment organization focused on Technology startups in Brazil.

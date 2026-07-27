@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:caravela-capital:en",
+  "entity_id": "fund:caravela-capital",
+  "slug": "caravela-capital",
+  "name": "Caravela Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Caravela Capital is an investment organization focused on Technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://caravela.capital/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://caravela.capital/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://caravela.capital/wp-content/uploads/5.-Politica-de-Selecao-e-Alocacao-de-Investimento_Caravela-_FMD15.09.202....pdf",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Caravela Capital"
+  ]
+}
+---
 # Caravela Capital
 
 Caravela Capital is an investment organization focused on Technology in Latin America.

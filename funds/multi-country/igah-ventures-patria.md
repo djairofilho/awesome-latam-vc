@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:igah-ventures-patria:en",
+  "entity_id": "fund:igah-ventures-patria",
+  "slug": "igah-ventures-patria",
+  "name": "Igah Ventures (Patria)",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Igah Ventures (Patria) is an investment organization focused on High-growth companies in Brazil and Latin America.",
+  "aliases": [],
+  "operator": "Patria",
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "BR",
+    "LATAM"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "high_growth_companies"
+  ],
+  "official_website": "https://www.patriaventure.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Previously listed source; unavailable during verification",
+      "url": "https://www.patriaventure.com/",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Igah Ventures (Patria)"
+  ]
+}
+---
 # Igah Ventures (Patria)
 
 Igah Ventures (Patria) is an investment organization focused on High-growth companies in Brazil and Latin America.

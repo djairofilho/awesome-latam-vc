@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:krealo:en",
+  "entity_id": "fund:krealo",
+  "slug": "krealo",
+  "name": "Krealo",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Krealo is an investment organization focused on Financial technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "financial_technology"
+  ],
+  "official_website": "https://www.krealo.pe/",
+  "founder_route": "https://www.krealo.pe/",
+  "sources": [
+    {
+      "title": "Investment thesis, portfolio count, and pitch route",
+      "url": "https://www.krealo.pe/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://www.krealo.pe/portafolio",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Krealo"
+  ]
+}
+---
 # Krealo
 
 Krealo is an investment organization focused on Financial technology in Latin America.

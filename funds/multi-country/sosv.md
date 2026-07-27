@@ -1,3 +1,64 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:sosv:en",
+  "entity_id": "fund:sosv",
+  "slug": "sosv",
+  "name": "SOSV",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "SOSV is an investment organization focused on Deep tech, climate, and health in Global, including Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "deep_tech",
+    "climate",
+    "health"
+  ],
+  "official_website": "https://sosv.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://sosv.com/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://sosv.com/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://sosv.com/about/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://sosv.com/invest/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "SOSV"
+  ]
+}
+---
 # SOSV
 
 SOSV is an investment organization focused on Deep tech, climate, and health in Global, including Latin America.

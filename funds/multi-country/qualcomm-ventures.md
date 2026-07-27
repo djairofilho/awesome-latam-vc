@@ -1,3 +1,56 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:qualcomm-ventures:en",
+  "entity_id": "fund:qualcomm-ventures",
+  "slug": "qualcomm-ventures",
+  "name": "Qualcomm Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Qualcomm Ventures is the corporate venture capital arm of Qualcomm, with an active investment mandate and portfolio in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "LATAM"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "ai",
+    "automotive",
+    "mobile",
+    "enterprise",
+    "data_center",
+    "smart_systems"
+  ],
+  "official_website": "https://www.qualcommventures.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Qualcomm Ventures investment areas and global portfolio metrics",
+      "url": "https://www.qualcommventures.com/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Qualcomm Ventures Latin America investment team and portfolio",
+      "url": "https://www.qualcommventures.com/insights/blog/meet-the-team-5-questions-with-stephanie-shao-ni-ng-director-at-qualcomm-ventures/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Qualcomm Ventures"
+  ]
+}
+---
 # Qualcomm Ventures
 
 Qualcomm Ventures is the corporate venture capital arm of Qualcomm, with an active investment mandate and portfolio in Latin America.

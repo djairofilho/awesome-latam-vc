@@ -1,3 +1,62 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:fundepar:en",
+  "entity_id": "fund:fundepar",
+  "slug": "fundepar",
+  "name": "Fundepar",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Fundepar is a Brazilian venture capital manager supporting innovative, high-growth businesses through direct investments and dedicated vehicles.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology",
+    "science_based_innovation",
+    "positive_social_or_environmental_impact"
+  ],
+  "official_website": "https://fundepar.com.br/",
+  "founder_route": "https://fundepar.com.br/fundos-e-programas/formulario-de-inscricao-seed4science/",
+  "sources": [
+    {
+      "title": "Fundepar website",
+      "url": "https://fundepar.com.br/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fundep institutional profile",
+      "url": "https://www.fundep.ufmg.br/fundepar",
+      "kind": "secondary"
+    },
+    {
+      "title": "Official 2026 investment announcement",
+      "url": "https://fundepar.com.br/fundepar-anuncia-investimento-em-startup-mineira-que-reduz-uso-de-plastico-no-setor-automotivo/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Seed4Science application form",
+      "url": "https://fundepar.com.br/fundos-e-programas/formulario-de-inscricao-seed4science/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Fundepar"
+  ]
+}
+---
 # Fundepar
 
 Fundepar is a Brazilian venture capital manager supporting innovative,

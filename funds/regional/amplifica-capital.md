@@ -1,3 +1,64 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:amplifica-capital:en",
+  "entity_id": "fund:amplifica-capital",
+  "slug": "amplifica-capital",
+  "name": "Amplifica Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Amplifica Capital is an investment organization focused on Inclusion, digital access, and climate technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "inclusion",
+    "digital_access",
+    "climate_technology"
+  ],
+  "official_website": "https://www.amplifica.capital/",
+  "founder_route": "https://www.amplifica.capital/en/contact",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.amplifica.capital/en/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://www.amplifica.capital/en/aboutus",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.amplifica.capital/en/funding",
+      "kind": "official_website"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://www.amplifica.capital/en/contact",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Amplifica Capital"
+  ]
+}
+---
 # Amplifica Capital
 
 Amplifica Capital is an investment organization focused on Inclusion, digital access, and climate technology in Latin America.

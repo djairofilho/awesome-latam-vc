@@ -1,3 +1,55 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:lotux:en",
+  "entity_id": "fund:lotux",
+  "slug": "lotux",
+  "name": "Lotux",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Lotux is an investment organization focused on Fintech, insurtech, logistics, commerce, education, and health in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed"
+  ],
+  "focuses": [
+    "fintech",
+    "insurtech",
+    "logistics",
+    "commerce",
+    "education",
+    "health"
+  ],
+  "official_website": "https://lotux.vc/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://lotux.vc/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://lotux.vc/investor-resources/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Lotux"
+  ]
+}
+---
 # Lotux
 
 Lotux is an investment organization focused on Fintech, insurtech, logistics, commerce, education, and health in Latin America.

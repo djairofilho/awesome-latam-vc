@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:slc-ventures:en",
+  "entity_id": "fund:slc-ventures",
+  "slug": "slc-ventures",
+  "name": "SLC Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "SLC Ventures is SLC Agrícola's startup investment program, combining corporate venture capital and corporate venture building for agribusiness innovation.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "agribusiness_technology",
+    "sustainable_agricultural_operations"
+  ],
+  "official_website": "https://www.slcagricola.com.br/inovacao/horizonte-slc",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Horizonte SLC and SLC Ventures",
+      "url": "https://www.slcagricola.com.br/inovacao/horizonte-slc",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "SLC Ventures"
+  ]
+}
+---
 # SLC Ventures
 
 SLC Ventures is SLC Agrícola's startup investment program, combining corporate

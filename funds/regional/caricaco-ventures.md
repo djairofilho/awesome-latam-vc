@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:caricaco-ventures:en",
+  "entity_id": "fund:caricaco-ventures",
+  "slug": "caricaco-ventures",
+  "name": "Caricaco Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Caricaco Ventures invests in software and AI-native startups connected to Central America and the Dominican Republic.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "DO"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "software",
+    "artificial_intelligence",
+    "purpose_driven_technology"
+  ],
+  "official_website": "https://caricaco.vc/",
+  "founder_route": "https://caricaco.vc/aplicar/",
+  "sources": [
+    {
+      "title": "CV2 launch and investment criteria",
+      "url": "https://caricaco.vc/en/blog/introducing-cv2-the-first-check-for-global-founders-from-central-america-and-the-dominican-republic/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Caricaco Ventures",
+      "url": "https://caricaco.vc/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Caricaco Ventures"
+  ]
+}
+---
 # Caricaco Ventures
 
 Caricaco Ventures invests in software and AI-native startups connected to

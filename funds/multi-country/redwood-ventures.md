@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:redwood-ventures:en",
+  "entity_id": "fund:redwood-ventures",
+  "slug": "redwood-ventures",
+  "name": "Redwood Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Redwood Ventures is an investment organization focused on Technology, sector agnostic in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://www.redwoodcapital.partners/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://www.redwoodcapital.partners/technology",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.redwoodcapital.partners/investmentbanking",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Redwood Ventures"
+  ]
+}
+---
 # Redwood Ventures
 
 Redwood Ventures is an investment organization focused on Technology, sector agnostic in Latin America.

@@ -1,3 +1,62 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:magma-partners:en",
+  "entity_id": "fund:magma-partners",
+  "slug": "magma-partners",
+  "name": "Magma Partners",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Magma Partners is an investment organization focused on Technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://magmapartners.com/",
+  "founder_route": "https://magmapartners.com/contact-us",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://magmapartners.com/companies",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://magmapartners.com/contact-us",
+      "kind": "official_application"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://magmapartners.com/es/companies",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://magmapartners.com/company/fluap",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Magma Partners"
+  ]
+}
+---
 # Magma Partners
 
 Magma Partners is an investment organization focused on Technology in Latin America.

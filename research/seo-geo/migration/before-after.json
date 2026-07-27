@@ -1,0 +1,30 @@
+{
+  "after": {
+    "profiles": 159,
+    "profiles_with_front_matter": 159,
+    "sources": 390
+  },
+  "before": {
+    "profiles": 159,
+    "profiles_with_front_matter": 0,
+    "sources": 390
+  },
+  "body_hash_mismatches": 0,
+  "cutoff_date": "2026-07-27",
+  "entity_type_counts": {
+    "angel_network": 5,
+    "fund": 152,
+    "funding_platform": 1,
+    "public_program": 1
+  },
+  "issue": 110,
+  "normalization_note_counts": {
+    "countries_covered": 14,
+    "focuses": 9,
+    "founder_route": 74,
+    "official_website": 2,
+    "operator": 152,
+    "stages": 48
+  },
+  "schema_version": "1.0"
+}

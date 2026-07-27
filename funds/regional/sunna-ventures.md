@@ -1,3 +1,61 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:sunna-ventures:en",
+  "entity_id": "fund:sunna-ventures",
+  "slug": "sunna-ventures",
+  "name": "Sunna Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Sunna Ventures is a Chile-based early-stage climate technology venture capital firm connecting Latin America with the global innovation ecosystem.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "climate_technology",
+    "industrial_decarbonization",
+    "critical_minerals",
+    "energy",
+    "circularity"
+  ],
+  "official_website": "https://sunna.vc/",
+  "founder_route": "https://sunna.vc/",
+  "sources": [
+    {
+      "title": "Sunna Ventures overview and founder application",
+      "url": "https://sunna.vc/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Sunna Ventures approach",
+      "url": "https://sunna.vc/about-us/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Sunna Ventures portfolio",
+      "url": "https://sunna.vc/portfolio/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Sunna Ventures"
+  ]
+}
+---
 # Sunna Ventures
 
 Sunna Ventures is a Chile-based early-stage climate technology venture capital firm connecting Latin America with the global innovation ecosystem.

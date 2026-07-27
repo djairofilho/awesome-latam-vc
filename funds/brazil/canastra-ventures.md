@@ -1,3 +1,56 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:canastra-ventures:en",
+  "entity_id": "fund:canastra-ventures",
+  "slug": "canastra-ventures",
+  "name": "Canastra Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Canastra Ventures is a Brazilian pre-seed venture capital firm investing in AI-first startups that target Brazil and have global ambitions.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR",
+    "GLOBAL"
+  ],
+  "stages": [
+    "pre_seed"
+  ],
+  "focuses": [
+    "ai_first_startups"
+  ],
+  "official_website": "https://www.canastra.ventures/",
+  "founder_route": "https://www.canastra.ventures/pitch-us",
+  "sources": [
+    {
+      "title": "Official website and team",
+      "url": "https://www.canastra.ventures/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Investment thesis, criteria, value add, and pitch route",
+      "url": "https://www.canastra.ventures/pitch-us",
+      "kind": "official_application"
+    },
+    {
+      "title": "AI Residency",
+      "url": "https://www.canastra.ventures/air",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Canastra Ventures"
+  ]
+}
+---
 # Canastra Ventures
 
 Canastra Ventures is a Brazilian pre-seed venture capital firm investing in

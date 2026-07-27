@@ -1,3 +1,50 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:ithink-vc:en",
+  "entity_id": "fund:ithink-vc",
+  "slug": "ithink-vc",
+  "name": "iThink VC",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "iThink VC invests in technology companies from emerging Latin American ecosystems.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "BO",
+    "EC",
+    "PE",
+    "PY",
+    "UY"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology_solving_structural_problems_in_latin_america"
+  ],
+  "official_website": "https://www.ithink.vc/",
+  "founder_route": "https://www.ithink.vc/",
+  "sources": [
+    {
+      "title": "iThink VC",
+      "url": "https://www.ithink.vc/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "iThink VC"
+  ]
+}
+---
 # iThink VC
 
 iThink VC invests in technology companies from emerging Latin American

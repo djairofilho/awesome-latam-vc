@@ -1,3 +1,57 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:infinite-capital:en",
+  "entity_id": "fund:infinite-capital",
+  "slug": "infinite-capital",
+  "name": "Infinite Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Infinite Capital is an investment organization focused on Breakthrough science and engineering in Global.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "breakthrough_science",
+    "engineering"
+  ],
+  "official_website": "https://www.infinite.xyz/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.infinite.xyz/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://www.infinite.xyz/thesis",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.infinite.xyz/crypto",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Infinite Capital"
+  ]
+}
+---
 # Infinite Capital
 
 Infinite Capital is an investment organization focused on Breakthrough science and engineering in Global.

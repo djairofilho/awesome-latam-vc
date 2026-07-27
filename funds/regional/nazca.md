@@ -1,3 +1,60 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:nazca:en",
+  "entity_id": "fund:nazca",
+  "slug": "nazca",
+  "name": "Nazca",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Nazca is an investment organization focused on Technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://nazca.vc/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://nazca.vc/",
+      "kind": "official_website"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://nazca.vc/about",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://nazca.vc/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://nazca.vc/portfolio/kavak",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Nazca"
+  ]
+}
+---
 # Nazca
 
 Nazca is an investment organization focused on Technology in Latin America.

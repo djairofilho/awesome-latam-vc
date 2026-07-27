@@ -1,3 +1,63 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:kptl:en",
+  "entity_id": "fund:kptl",
+  "slug": "kptl",
+  "name": "KPTL",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "KPTL is an investment organization focused on Deep tech, health, bioeconomy, and technology in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "deep_tech",
+    "health",
+    "bioeconomy",
+    "technology"
+  ],
+  "official_website": "https://www.kptl.com.br/",
+  "founder_route": "https://www.kptl.com.br/contato/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.kptl.com.br/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://www.kptl.com.br/contato/",
+      "kind": "official_application"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://www.kptl.com.br/sobre-kptl/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.kptl.com.br/fundo-venture-capital/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "KPTL"
+  ]
+}
+---
 # KPTL
 
 KPTL is an investment organization focused on Deep tech, health, bioeconomy, and technology in Brazil.

@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:ace-ventures:en",
+  "entity_id": "fund:ace-ventures",
+  "slug": "ace-ventures",
+  "name": "ACE Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "ACE Ventures is an investment organization focused on Technology in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://aceventures.com.br/",
+  "founder_route": "https://aceventures.com.br/contato-2/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://aceventures.com.br/venture-capital/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://aceventures.com.br/contato-2/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "ACE Ventures"
+  ]
+}
+---
 # ACE Ventures
 
 ACE Ventures is an investment organization focused on Technology in Brazil.

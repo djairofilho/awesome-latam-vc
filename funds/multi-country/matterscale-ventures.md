@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:matterscale-ventures:en",
+  "entity_id": "fund:matterscale-ventures",
+  "slug": "matterscale-ventures",
+  "name": "MatterScale Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "MatterScale Ventures invests in Latin founders across the Americas.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "affordable",
+    "accessible_technology_enabled_services"
+  ],
+  "official_website": "https://matterscale.com/",
+  "founder_route": "https://matterscale.com/",
+  "sources": [
+    {
+      "title": "MatterScale thesis, team, and portfolio",
+      "url": "https://matterscale.com/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "MatterScale Ventures"
+  ]
+}
+---
 # MatterScale Ventures
 
 MatterScale Ventures invests in Latin founders across the Americas.

@@ -1,3 +1,50 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:oria-capital:en",
+  "entity_id": "fund:oria-capital",
+  "slug": "oria-capital",
+  "name": "Oria Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Oria Capital is an investment organization focused on B2B software in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "b2b_software"
+  ],
+  "official_website": "https://www.oriacapital.com.br/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://www.oriacapital.com.br/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.oriacapital.com.br/c%C3%B3pia-compliance-3",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Oria Capital"
+  ]
+}
+---
 # Oria Capital
 
 Oria Capital is an investment organization focused on B2B software in Brazil.

@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:pant3ra-venture-fund:en",
+  "entity_id": "fund:pant3ra-venture-fund",
+  "slug": "pant3ra-venture-fund",
+  "name": "Pant3ra Venture Fund",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Pant3ra Venture Fund is an investment organization focused on Mobility, logistics, e-commerce, and fintech in Mexico, the United States, and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM",
+    "MX",
+    "US"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "mobility",
+    "logistics",
+    "e_commerce",
+    "fintech"
+  ],
+  "official_website": "https://www.linkedin.com/company/pant3ra/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Secondary profile",
+      "url": "https://www.linkedin.com/company/pant3ra/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Pant3ra Venture Fund"
+  ]
+}
+---
 # Pant3ra Venture Fund
 
 Pant3ra Venture Fund is an investment organization focused on Mobility, logistics, e-commerce, and fintech in Mexico, the United States, and Latin America.

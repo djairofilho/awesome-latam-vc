@@ -1,3 +1,58 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:invariantes-fund:en",
+  "entity_id": "fund:invariantes-fund",
+  "slug": "invariantes-fund",
+  "name": "Invariantes Fund",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Invariantes Fund is an investment organization focused on Technology, sector agnostic in Latin America and the United States.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM",
+    "US"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://www.invariantes.com/",
+  "founder_route": "https://www.invariantes.com/contact_website",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.invariantes.com/portfolio_website",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.invariantes.com/us_website",
+      "kind": "official_website"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://www.invariantes.com/contact_website",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Invariantes Fund"
+  ]
+}
+---
 # Invariantes Fund
 
 Invariantes Fund is an investment organization focused on Technology, sector agnostic in Latin America and the United States.

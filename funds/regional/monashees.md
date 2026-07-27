@@ -1,3 +1,56 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:monashees:en",
+  "entity_id": "fund:monashees",
+  "slug": "monashees",
+  "name": "Monashees",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Monashees is a Brazilian venture capital firm backing technology-driven Latin American founders building companies for regional and global markets.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.monashees.com/",
+  "founder_route": "https://www.monashees.com/contact",
+  "sources": [
+    {
+      "title": "Monashees website and firm description",
+      "url": "https://www.monashees.com/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Official portfolio",
+      "url": "https://www.monashees.com/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact page",
+      "url": "https://www.monashees.com/contact",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-25",
+  "protected_terms": [
+    "Monashees"
+  ]
+}
+---
 # Monashees
 
 Monashees is a Brazilian venture capital firm backing technology-driven Latin

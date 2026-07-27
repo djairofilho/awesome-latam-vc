@@ -1,3 +1,57 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:eurofarma-ventures:en",
+  "entity_id": "fund:eurofarma-ventures",
+  "slug": "eurofarma-ventures",
+  "name": "Eurofarma Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Eurofarma Ventures is Eurofarma's corporate venture fund for biotechnology and breakthrough drug research and development.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "biotechnology",
+    "drug_discovery",
+    "advanced_therapies"
+  ],
+  "official_website": "https://eurofarma.com/eurofarma-ventures",
+  "founder_route": "https://eurofarma.com/eurofarma-ventures",
+  "sources": [
+    {
+      "title": "Eurofarma Ventures",
+      "url": "https://eurofarma.com/eurofarma-ventures",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official fund launch and thesis",
+      "url": "https://eurofarma.com/press-room/eurofarma-to-invest-up-to-100-million-in-biotechs",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Integrated Report 2026, base year 2025",
+      "url": "https://eurofarma.com/storage/media/21753/IntegratedReport26baseyear25.pdf",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Eurofarma Ventures"
+  ]
+}
+---
 # Eurofarma Ventures
 
 Eurofarma Ventures is Eurofarma's corporate venture fund for biotechnology and

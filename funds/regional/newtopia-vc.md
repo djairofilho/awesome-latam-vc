@@ -1,3 +1,61 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:newtopia-vc:en",
+  "entity_id": "fund:newtopia-vc",
+  "slug": "newtopia-vc",
+  "name": "Newtopia VC",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Newtopia VC is an investment organization focused on Technology, sector agnostic in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://newtopia.vc/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://newtopia.vc/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://newtopia.vc/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://app.pipefy.com/public/form/mmuPVAvh",
+      "kind": "secondary"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://newtopia.vc/portfolio/aviva/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Newtopia VC"
+  ]
+}
+---
 # Newtopia VC
 
 Newtopia VC is an investment organization focused on Technology, sector agnostic in Latin America.

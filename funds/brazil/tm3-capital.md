@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:tm3-capital:en",
+  "entity_id": "fund:tm3-capital",
+  "slug": "tm3-capital",
+  "name": "TM3 Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "TM3 Capital is an investment organization listed in this directory; its current investment mandate could not be verified.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": null,
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Previously listed source; unavailable during verification",
+      "url": "https://www.linkedin.com/company/tm3-capital/",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "TM3 Capital"
+  ]
+}
+---
 # TM3 Capital
 
 TM3 Capital is an investment organization listed in this directory; its current investment mandate could not be verified.

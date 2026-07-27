@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:dila-capital:en",
+  "entity_id": "fund:dila-capital",
+  "slug": "dila-capital",
+  "name": "DILA Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "DILA Capital is an investment organization focused on Technology in Spanish-speaking Latin America and the United States.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM",
+    "US"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.dilacapital.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://www.dilacapital.com/home",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.dilacapital.com/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "DILA Capital"
+  ]
+}
+---
 # DILA Capital
 
 DILA Capital is an investment organization focused on Technology in Spanish-speaking Latin America and the United States.
