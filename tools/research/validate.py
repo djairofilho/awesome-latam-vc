@@ -19,6 +19,7 @@ try:
         validate_accelerator_profile,
         validate_epic_62,
     )
+    from .public_program_validation import validate_epic_65
 except ImportError:  # Allow `python tools/research/validate.py`.
     from accelerator_validation import (
         is_accelerator_profile_path,
@@ -26,6 +27,7 @@ except ImportError:  # Allow `python tools/research/validate.py`.
         validate_accelerator_profile,
         validate_epic_62,
     )
+    from public_program_validation import validate_epic_65
 
 
 README_NAMES = ("README.md", "README.pt.md", "README.es.md")
@@ -349,6 +351,7 @@ def validate_repository(root: Path, base_ref: str) -> list[str]:
 
     errors.extend(validate_accelerator_index(root))
     errors.extend(validate_epic_62(root))
+    errors.extend(validate_epic_65(root))
 
     # Source code intentionally contains the marker literals used by this check.
     # Scan authored/research content, not the validator implementation itself.
