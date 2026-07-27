@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import { unified } from "@astrojs/markdown-remark";
 import { rehypeProfileLinks } from "./scripts/rehype-profile-links.mjs";
 
 export default defineConfig({
@@ -7,7 +8,9 @@ export default defineConfig({
   output: "static",
   trailingSlash: "always",
   markdown: {
-    rehypePlugins: [rehypeProfileLinks],
+    processor: unified({
+      rehypePlugins: [rehypeProfileLinks],
+    }),
     syntaxHighlight: false,
   },
   build: {
