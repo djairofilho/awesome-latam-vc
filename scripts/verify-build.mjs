@@ -94,9 +94,6 @@ const sourceProfileCount = profileRoots
       path.endsWith(".md") &&
       !/^README(?:\.[^.]+)?\.md$/i.test(path.split(/[\\/]/).at(-1)),
   ).length;
-const renderedProfileCount = (
-  catalogHtml.match(/data-profile-id=/g) ?? []
-).length;
 const entityDocument = JSON.parse(
   readFileSync(join(root, "data", "entities.json"), "utf8"),
 );

@@ -18,19 +18,23 @@ export function webSiteJsonLd() {
   };
 }
 
-export function datasetJsonLd(entityCount) {
+export function datasetJsonLd(
+  entityCount,
+  catalogPath = "/catalog/",
+  language = "en",
+) {
   return {
     "@type": "Dataset",
     "@id": `${canonicalUrl("/data/entities.json")}#dataset`,
     name: "Awesome LatAm VC catalog entities",
     description:
       "Canonical metadata for venture funds and startup funding programs across Latin America.",
-    url: canonicalUrl("/catalog/"),
+    url: canonicalUrl(catalogPath),
     version: DATASET_VERSION,
     datePublished: DATASET_DATE,
     dateModified: DATASET_DATE,
     license: DATASET_LICENSE,
-    inLanguage: "en",
+    inLanguage: language,
     variableMeasured: {
       "@type": "PropertyValue",
       name: "Entity count",
@@ -72,7 +76,7 @@ export function organizationJsonLd(profile) {
 
   const organization = {
     "@type": publicAgency ? "GovernmentOrganization" : "Organization",
-    "@id": profile.sourceUrl,
+    "@id": profile.canonicalSourceUrl ?? profile.sourceUrl,
     name: profile.name,
     url: profile.sourceUrl,
   };

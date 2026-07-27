@@ -4,7 +4,11 @@ import CategoryList from "../../components/CategoryList.astro";
 import type { Locale } from "../../i18n/ui";
 import { strings } from "../../i18n/ui";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { catalogItem, categories, type Category } from "../../lib/catalog";
+import {
+  categories,
+  localizedCatalogItems,
+  type Category,
+} from "../../lib/catalog";
 import {
   localeDetails,
   locales,
@@ -25,7 +29,7 @@ interface Props {
 
 const { locale } = Astro.props as Props;
 const labels = strings(locale);
-const profiles = (await getCollection("profiles")).map(catalogItem);
+const profiles = localizedCatalogItems(await getCollection("profiles"), locale);
 const counts = Object.fromEntries(
   categories.map((category) => [
     category,

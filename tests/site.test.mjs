@@ -61,7 +61,7 @@ test("interface labels are stored separately from profile content", () => {
   }
 });
 
-test("the content layer reads canonical profiles without moving them", () => {
+test("the content layer reads canonical profiles and mirrored translations", () => {
   const config = readFileSync("src/content.config.ts", "utf8");
   const contract = JSON.parse(
     readFileSync("research/seo-geo/contract/profile.schema.json", "utf8"),
@@ -72,12 +72,18 @@ test("the content layer reads canonical profiles without moving them", () => {
     "ecosystem/angel-networks/**/*.md",
     "ecosystem/funding-platforms/**/*.md",
     "ecosystem/public-programs/**/*.md",
+    "translations/pt-BR/funds/**/*.md",
+    "translations/pt-BR/ecosystem/accelerators/**/*.md",
+    "translations/es/funds/**/*.md",
+    "translations/es/ecosystem/accelerators/**/*.md",
   ]) {
     assert.match(config, new RegExp(source.replaceAll("*", "\\*")));
   }
   for (const field of contract.required) {
     assert.match(config, new RegExp(`\\b${field}:`), `missing ${field}`);
   }
+  const catalog = readFileSync("src/lib/catalog.ts", "utf8");
+  assert.match(catalog, /variants\.get\(locale\) \?\? variants\.get\("en"\)/);
 });
 
 test("pull requests validate without deployment", () => {

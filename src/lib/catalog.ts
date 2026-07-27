@@ -13,6 +13,7 @@ export const categories = [
 ] as const;
 
 export type Category = (typeof categories)[number];
+export type ContentLocale = "en" | "pt-BR" | "es";
 
 const categoryByPath: Record<string, Category> = {
   funds: "fund",
@@ -39,6 +40,7 @@ function fallbackName(entry: CollectionEntry<"profiles">) {
 
 export function catalogItem(entry: CollectionEntry<"profiles">) {
   const sourcePath = normalizedSourcePath(entry);
+  const canonicalSourcePath = entry.data.translation_of ?? sourcePath;
   const parts = sourcePath.split("/");
   const category =
     entry.data.entity_type ??
@@ -58,8 +60,45 @@ export function catalogItem(entry: CollectionEntry<"profiles">) {
       .split("/")
       .map(encodeURIComponent)
       .join("/")}`,
+    canonicalSourceUrl: `https://github.com/djairofilho/awesome-latam-vc/blob/main/${canonicalSourcePath
+      .split("/")
+      .map(encodeURIComponent)
+      .join("/")}`,
     operator: entry.data.operator,
     officialWebsite: entry.data.official_website,
     hasStructuredMetadata: Boolean(entry.data.entity_id),
   };
+}
+
+export function localizedCatalogItems(
+  entries: CollectionEntry<"profiles">[],
+  locale: ContentLocale,
+) {
+  const byEntity = new Map<
+    string,
+    Map<ContentLocale, CollectionEntry<"profiles">>
+  >();
+
+  for (const entry of entries) {
+    const item = catalogItem(entry);
+    const contentLocale = (entry.data.locale ?? "en") as ContentLocale;
+    const variants = byEntity.get(item.id) ?? new Map();
+    variants.set(contentLocale, entry);
+    byEntity.set(item.id, variants);
+  }
+
+  return [...byEntity.values()].flatMap((variants) => {
+    const entry = variants.get(locale) ?? variants.get("en");
+    if (!entry) {
+      return [];
+    }
+    const contentLocale = (entry.data.locale ?? "en") as ContentLocale;
+    return [
+      {
+        ...catalogItem(entry),
+        contentLocale,
+        isFallback: contentLocale !== locale,
+      },
+    ];
+  });
 }

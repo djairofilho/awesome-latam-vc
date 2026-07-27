@@ -3,12 +3,21 @@ import { getCollection } from "astro:content";
 import type { Locale } from "../../i18n/ui";
 import { strings } from "../../i18n/ui";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { catalogItem, categories, type Category } from "../../lib/catalog";
+import {
+  categories,
+  localizedCatalogItems,
+  type Category,
+} from "../../lib/catalog";
 import {
   localeDetails,
   locales,
   localizedRoute,
 } from "../../lib/i18n.mjs";
+import {
+  breadcrumbListJsonLd,
+  datasetJsonLd,
+  organizationJsonLd,
+} from "../../lib/structured-data.mjs";
 
 export function getStaticPaths() {
   return locales.map((locale) => ({
@@ -23,22 +32,33 @@ interface Props {
 
 const { locale } = Astro.props as Props;
 const labels = strings(locale);
-const profiles = (await getCollection("profiles"))
-  .map(catalogItem)
-  .sort((left, right) => left.name.localeCompare(right.name, locale));
+const profiles = localizedCatalogItems(
+  await getCollection("profiles"),
+  locale,
+).sort((left, right) => left.name.localeCompare(right.name, locale));
 const grouped = categories.map((category) => ({
   category: category as Category,
   label: labels.categoryLabels[category],
   profiles: profiles.filter((profile) => profile.category === category),
 }));
+const catalogPath = localizedRoute(locale, "/catalog/");
+const structuredData = [
+  datasetJsonLd(profiles.length, catalogPath, locale),
+  breadcrumbListJsonLd([
+    { name: labels.home, path: localizedRoute(locale, "/") },
+    { name: labels.catalog, path: catalogPath },
+  ]),
+  ...profiles.map(organizationJsonLd).filter(Boolean),
+];
 ---
 
 <BaseLayout
   title={labels.catalogTitle}
   description={labels.catalogDescription}
-  canonicalPath={localizedRoute(locale, "/catalog/")}
+  canonicalPath={catalogPath}
   routeSuffix="/catalog/"
   locale={locale}
+  structuredData={structuredData}
 >
   <header class="page-intro">
     <p class="eyebrow">{labels.catalogKicker}</p>
