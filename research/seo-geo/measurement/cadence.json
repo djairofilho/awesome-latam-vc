@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "anchor": "first_stable_public_production_deployment_utc",
+  "launch_date": null,
+  "checkpoints": [
+    {
+      "id": "d30",
+      "offset_days": 30,
+      "run_directory_pattern": "runs/YYYY-MM-DD-d30"
+    },
+    {
+      "id": "d60",
+      "offset_days": 60,
+      "run_directory_pattern": "runs/YYYY-MM-DD-d60"
+    },
+    {
+      "id": "d90",
+      "offset_days": 90,
+      "run_directory_pattern": "runs/YYYY-MM-DD-d90"
+    }
+  ],
+  "required_outputs": [
+    "run.json",
+    "query-results.jsonl",
+    "generative-samples.jsonl"
+  ],
+  "overwrite_previous_runs": false
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "run_id": null,
+  "launch_date": null,
+  "checkpoint": null,
+  "period": {
+    "start": null,
+    "end": null,
+    "timezone": "UTC"
+  },
+  "property_url": "https://djairofilho.github.io/awesome-latam-vc/",
+  "sitemap_url": "https://djairofilho.github.io/awesome-latam-vc/sitemap.xml",
+  "providers": {
+    "google_search_console": {
+      "verification_status": "pending_authenticated_owner",
+      "verification_checked_on": null,
+      "verification_evidence": null,
+      "sitemap_status": "not_submitted_no_authenticated_session",
+      "sitemap_checked_on": null,
+      "sitemap_evidence": null,
+      "indexed_pages": null,
+      "observed_queries": null,
+      "impressions": null,
+      "clicks": null,
+      "countries": [],
+      "devices": [],
+      "source_export_reference": null
+    },
+    "bing_webmaster_tools": {
+      "verification_status": "pending_authenticated_owner",
+      "verification_checked_on": null,
+      "verification_evidence": null,
+      "sitemap_status": "not_submitted_no_authenticated_session",
+      "sitemap_checked_on": null,
+      "sitemap_evidence": null,
+      "indexed_pages": null,
+      "observed_queries": null,
+      "impressions": null,
+      "clicks": null,
+      "countries": [],
+      "devices": [],
+      "source_export_reference": null
+    }
+  },
+  "baseline_query_rerun": {
+    "source": "../baseline/queries.jsonl",
+    "expected_query_count": 30,
+    "results_file": "query-results.jsonl",
+    "preserve_query_text_locale_and_intent": true
+  },
+  "generative_measurement": {
+    "results_file": "generative-samples.jsonl",
+    "required_fields": [
+      "query_id",
+      "measured_on",
+      "language",
+      "mechanism",
+      "provider",
+      "location",
+      "project_present",
+      "project_cited",
+      "observed_url",
+      "limitations"
+    ]
+  },
+  "privacy": {
+    "contains_personal_data": false,
+    "contains_credentials": false,
+    "analytics_or_cookie_data": false
+  },
+  "limitations": [
+    "Complete after authenticated provider access is available.",
+    "Separate technical readiness from externally observed outcomes.",
+    "Sampled absence does not prove that a page is not indexed or cited."
+  ]
+}

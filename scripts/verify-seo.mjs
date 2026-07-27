@@ -81,6 +81,12 @@ const pages = files(dist)
 const indexable = pages.filter(
   ({ html }) => !/<meta\s+name="robots"\s+content="[^"]*noindex/i.test(html),
 );
+const forbiddenTrackingPatterns = [
+  ["Google Analytics", /google-analytics\.com|googletagmanager\.com|gtag\s*\(/i],
+  ["Meta Pixel", /connect\.facebook\.net|fbq\s*\(/i],
+  ["Microsoft Clarity", /clarity\.ms|clarity\s*\(/i],
+  ["analytics cookie", /document\.cookie|(?:^|["'])_ga(?:["']|=)/i],
+];
 
 const titles = new Map();
 const descriptions = new Map();
@@ -213,6 +219,9 @@ assert(!/rel="canonical"/.test(notFound.html),
   "custom 404 must not claim a canonical URL");
 
 for (const { route, html } of pages) {
+  for (const [tracker, expression] of forbiddenTrackingPatterns) {
+    assert(!expression.test(html), `${route} contains ${tracker} tracking code`);
+  }
   const hrefs = matches(html, /href="([^"]+)"/g).map((match) => match[1]);
   for (const href of hrefs) {
     if (href.startsWith("#")) {
