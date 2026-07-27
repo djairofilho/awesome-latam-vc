@@ -1,6 +1,6 @@
 # Auditoria de seleções públicas de venture capital
 
-Este diretório registra a primeira onda da
+Este diretório registra a auditoria concluída da
 [#19](https://github.com/djairofilho/awesome-latam-vc/issues/19), conforme o
 contrato da #17. A data de corte e de acesso é 2026-07-27.
 
@@ -43,14 +43,15 @@ Venture Capital da página oficial. Foram registrados 6 veículos e 7 gestores:
 
 O BNDES confirma tese, período de investimento e, quando divulgado, canal de
 propostas. Astella, Canary, Crescera, KPTL e Valor Capital Group foram
-deduplicados contra o baseline. Os demais gestores e veículos permanecem com
-`evidência insuficiente` até a validação em páginas controladas pelos gestores.
+deduplicados contra o baseline. Os demais gestores e veículos foram
+classificados como `evidência insuficiente`: a seleção pública não substitui a
+validação em páginas controladas pelos gestores.
 
 O resultado final da Chamada de Clima registrou 5 fundos de equity e 2 fundos
 de crédito. A página informa que seleção, diligência, contratação e aprovação
 da subscrição são etapas diferentes. Por isso, os fundos de equity e seus
-gestores permanecem pendentes. Os dois fundos de crédito foram excluídos da
-fila de VC direto.
+gestores foram classificados como `evidência insuficiente`. Os dois fundos de
+crédito foram excluídos do recorte de VC direto.
 
 As requisições ao domínio BNDES respeitaram intervalo mínimo de 2 segundos.
 
@@ -71,7 +72,7 @@ oficiais:
 
 O resultado da seleção do FIP Nordeste não comprova que o veículo foi
 constituído ou iniciou investimentos. A chamada de IA ainda não apresentava
-gestor selecionado no recorte consultado. Esses veículos permanecem com
+gestor selecionado no recorte consultado. Esses veículos foram classificados com
 `evidência insuficiente`.
 
 ## Sebrae
@@ -102,22 +103,27 @@ Veículos com um único gestor identificado apontam para ele por
 `canonical_candidate_id`. O Fundo Criatec 4 possui dois gestores e permanece
 sem um único destino canônico.
 
-## Lacunas e fila restante
+## Encerramento e limites
 
-- Validar os 12 gestores novos em sites próprios.
-- Validar operação, acesso externo e vínculo atual dos 15 veículos pendentes.
-- Revisitar o resultado da chamada de IA após a seleção do gestor.
-- Confirmar constituição e início de operação do FIP Nordeste Capital Semente.
-- Revisar manualmente os demais fundos da Finep, sem crawler.
-- Encontrar URL estável para o resultado FIC-FIP do Sebrae.
-- Abrir chamadas antigas do BNDES somente quando houver veículo ainda em
-  período de investimento.
+Todos os 40 candidatos registrados estão decididos. Não há candidato com status
+`descoberto` ou `em pesquisa`, nem decisão nula.
+
+Os 27 registros com `evidência insuficiente` preservam motivo, responsável e
+próxima ação individual. Eles não foram promovidos porque resultado de chamada,
+seleção pública ou carteira de investidor institucional não comprova, sozinho,
+operação do gestor, investimento direto em startups e acesso externo.
+
+Quatro recortes permanecem `parcial` no inventário: índice histórico do BNDES,
+investimento indireto da Finep, sitemap do Sebrae e resultado FIC-FIP do Sebrae.
+Isso expressa os limites de acesso e de cobertura, não tarefas abertas nesta
+execução. Uma nova rodada poderá revisar manualmente a Finep, localizar uma URL
+estável do Sebrae e consultar chamadas antigas do BNDES somente quando houver
+um veículo ainda em período de investimento.
 
 O [source-inventory.jsonl](source-inventory.jsonl) registra os recortes,
 resultados e limites de acesso. O [evidence.jsonl](evidence.jsonl) separa
 afirmações oficiais por entidade. O [run-manifest.jsonl](run-manifest.jsonl)
-mantém os shards concluídos e a fila restante.
+mantém os nove shards concluídos.
 
-A execução continua como `em execução` porque há fontes parciais e validações
-de gestores pendentes. O arquivo local de startups não foi usado para
-descoberta, priorização, comprovação ou decisão.
+A execução está `concluída` dentro do recorte documentado. O arquivo local de
+startups não foi usado para descoberta, priorização, comprovação ou decisão.
