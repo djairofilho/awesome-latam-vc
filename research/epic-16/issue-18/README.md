@@ -12,8 +12,8 @@ contrato da #17. A data de corte e de acesso é 2026-07-27.
 - 1 área autenticada indisponível para esta coleta.
 - 234 ocorrências de organizações no recorte concluído.
 - 228 candidatos canônicos após deduplicação entre as fontes.
-- 16 candidatos já possuem perfil no baseline.
-- 212 candidatos permanecem como `descoberto`, sem decisão de elegibilidade.
+- 20 candidatos já possuem perfil no baseline.
+- 208 candidatos permanecem como `descoberto`, sem decisão de elegibilidade.
 - 15 candidatos estrangeiros ausentes foram roteados para a fila da #24.
 
 As 234 ocorrências vieram de:
@@ -63,7 +63,7 @@ mescladas no mesmo candidato e os nomes adicionais foram preservados em
 `aliases`. Nomes idênticos em categorias diferentes da ABVCAP também foram
 mesclados. Um domínio compartilhado, sozinho, não uniu entidades novas.
 
-Diretórios foram tratados somente como descoberta. Os 212 candidatos novos não
+Diretórios foram tratados somente como descoberta. Os 208 candidatos novos não
 foram marcados como elegíveis. Cada um possui uma próxima ação para validar
 investimento direto, atividade recente e acesso de fundadores no site oficial.
 
@@ -80,7 +80,7 @@ para a elegibilidade de cada candidato.
 - Percorrer os corpos e páginas externas dos 53 eventos em shards por item.
 - Extrair o PDF de membros e comparar suas entradas com as 205 entradas do
   HTML.
-- Validar os 212 candidatos descobertos em sites oficiais.
+- Validar os 208 candidatos descobertos em sites oficiais.
 - Confirmar país-base e atuação latino-americana dos 15 candidatos roteados
   para a #24.
 - Manter a área autenticada fora da coleta até existir autorização explícita e
