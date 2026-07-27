@@ -1,0 +1,231 @@
+{
+  "algorithm": {
+    "batch_count": "ceil(eligible_profiles / 10)",
+    "batch_hash": "sha256(canonical-json(profiles))",
+    "maximum_batch_size": 10,
+    "ordering": "entity_id ascending",
+    "queue_hash": "sha256(canonical-json(all profiles))"
+  },
+  "batches": [
+    {
+      "batch_hash": "5784c0682655b738feefb43b0ec864168d4013c1efa0b7d8704b68dad4046875",
+      "batch_id": "public-programs-01",
+      "branch": "agent/issue-103-public-programs-batch-01",
+      "issue_number": 145,
+      "owner": "djairofilho",
+      "profiles": [
+        {
+          "entity_id": "agency-ande",
+          "entity_type": "agency",
+          "name": "Agencia Nacional de Desarrollo",
+          "path": "ecosystem/public-programs/uruguay/ande.md"
+        },
+        {
+          "entity_id": "agency-anii",
+          "entity_type": "agency",
+          "name": "Agencia Nacional de Investigación e Innovación",
+          "path": "ecosystem/public-programs/uruguay/anii.md"
+        },
+        {
+          "entity_id": "agency-bdp-bolivia",
+          "entity_type": "agency",
+          "name": "Banco de Desarrollo Productivo",
+          "path": "ecosystem/public-programs/bolivia/bdp-bolivia.md"
+        },
+        {
+          "entity_id": "agency-bndes",
+          "entity_type": "agency",
+          "name": "Banco Nacional de Desenvolvimento Econômico e Social",
+          "path": "ecosystem/public-programs/brazil/bndes.md"
+        },
+        {
+          "entity_id": "agency-brde",
+          "entity_type": "agency",
+          "name": "Banco Regional de Desenvolvimento do Extremo Sul",
+          "path": "ecosystem/public-programs/brazil/brde.md"
+        },
+        {
+          "entity_id": "agency-conquito",
+          "entity_type": "agency",
+          "name": "Corporación de Promoción Económica ConQuito",
+          "path": "ecosystem/public-programs/ecuador/conquito.md"
+        },
+        {
+          "entity_id": "agency-corfo",
+          "entity_type": "agency",
+          "name": "Corporación de Fomento de la Producción",
+          "path": "ecosystem/public-programs/chile/corfo.md"
+        },
+        {
+          "entity_id": "agency-fapesp",
+          "entity_type": "agency",
+          "name": "Fundação de Amparo à Pesquisa do Estado de São Paulo",
+          "path": "ecosystem/public-programs/brazil/fapesp.md"
+        },
+        {
+          "entity_id": "agency-finep",
+          "entity_type": "agency",
+          "name": "Financiadora de Estudos e Projetos",
+          "path": "ecosystem/public-programs/brazil/finep.md"
+        },
+        {
+          "entity_id": "agency-proinnovate",
+          "entity_type": "agency",
+          "name": "Programa Nacional de Innovación y Desarrollo Productivo",
+          "path": "ecosystem/public-programs/peru/proinnovate.md"
+        }
+      ]
+    },
+    {
+      "batch_hash": "90a01b9ed5adf3211cfbe3c2fd75688e352135f507d97c1725a4ae3cc5473522",
+      "batch_id": "public-programs-02",
+      "branch": "agent/issue-103-public-programs-batch-02",
+      "issue_number": 146,
+      "owner": "djairofilho",
+      "profiles": [
+        {
+          "entity_id": "agency-sebrae",
+          "entity_type": "agency",
+          "name": "Serviço Brasileiro de Apoio às Micro e Pequenas Empresas",
+          "path": "ecosystem/public-programs/brazil/sebrae.md"
+        },
+        {
+          "entity_id": "agency-secihti",
+          "entity_type": "agency",
+          "name": "Secretaría de Ciencia, Humanidades, Tecnología e Innovación",
+          "path": "ecosystem/public-programs/mexico/secihti.md"
+        },
+        {
+          "entity_id": "program-agroinnovatec",
+          "entity_type": "program",
+          "name": "AgroInnovatec",
+          "path": "ecosystem/public-programs/bolivia/agroinnovatec.md"
+        },
+        {
+          "entity_id": "program-anii-coinversion-startups",
+          "entity_type": "program",
+          "name": "Coinversión en Startups",
+          "path": "ecosystem/public-programs/uruguay/anii-coinversion-startups.md"
+        },
+        {
+          "entity_id": "program-anii-emprendimientos-innovadores",
+          "entity_type": "program",
+          "name": "Apoyo a Emprendimientos Innovadores",
+          "path": "ecosystem/public-programs/uruguay/anii-emprendimientos-innovadores.md"
+        },
+        {
+          "entity_id": "program-anii-validacion-ideas",
+          "entity_type": "program",
+          "name": "Validación de Ideas de Negocios",
+          "path": "ecosystem/public-programs/uruguay/anii-validacion-ideas.md"
+        },
+        {
+          "entity_id": "program-bdp-fondo-startup",
+          "entity_type": "program",
+          "name": "Fondo de Capital de Riesgo para Emprendimientos Innovadores",
+          "path": "ecosystem/public-programs/bolivia/bdp-fondo-startup.md"
+        },
+        {
+          "entity_id": "program-bndes-fundo-clima-servicos-inovacao-verdes",
+          "entity_type": "program",
+          "name": "Fundo Clima - Serviços e Inovação Verdes",
+          "path": "ecosystem/public-programs/brazil/bndes-fundo-clima-servicos-inovacao-verdes.md"
+        },
+        {
+          "entity_id": "program-bndes-garagem",
+          "entity_type": "program",
+          "name": "BNDES Garagem",
+          "path": "ecosystem/public-programs/brazil/bndes-garagem.md"
+        },
+        {
+          "entity_id": "program-brde-labs-rs",
+          "entity_type": "program",
+          "name": "BRDE Labs RS",
+          "path": "ecosystem/public-programs/brazil/brde-labs-rs.md"
+        }
+      ]
+    },
+    {
+      "batch_hash": "f2c3edfa9bbcffd0bf33593a80063a29d310854abf8a53def43250b78d7ec40d",
+      "batch_id": "public-programs-03",
+      "branch": "agent/issue-103-public-programs-batch-03",
+      "issue_number": 147,
+      "owner": "djairofilho",
+      "profiles": [
+        {
+          "entity_id": "program-conquito-fonquito",
+          "entity_type": "program",
+          "name": "FonQuito",
+          "path": "ecosystem/public-programs/ecuador/conquito-fonquito.md"
+        },
+        {
+          "entity_id": "program-corfo-semilla-inicia-mujeres",
+          "entity_type": "program",
+          "name": "Semilla Inicia para Empresas Lideradas por Mujeres",
+          "path": "ecosystem/public-programs/chile/corfo-semilla-inicia-mujeres.md"
+        },
+        {
+          "entity_id": "program-fapesp-pipe",
+          "entity_type": "program",
+          "name": "Pesquisa Inovativa em Pequenas Empresas",
+          "path": "ecosystem/public-programs/brazil/fapesp-pipe.md"
+        },
+        {
+          "entity_id": "program-finep-mulheres-inovadoras",
+          "entity_type": "program",
+          "name": "Programa Mulheres Inovadoras",
+          "path": "ecosystem/public-programs/brazil/finep-mulheres-inovadoras.md"
+        },
+        {
+          "entity_id": "program-proinnovate-startup-peru",
+          "entity_type": "program",
+          "name": "StartUp Perú",
+          "path": "ecosystem/public-programs/peru/proinnovate-startup-peru.md"
+        },
+        {
+          "entity_id": "program-sebraetec-negocios-inovadores",
+          "entity_type": "program",
+          "name": "Sebraetec Negócios Inovadores",
+          "path": "ecosystem/public-programs/brazil/sebraetec-negocios-inovadores.md"
+        },
+        {
+          "entity_id": "program-secihti-desarrollo-tecnologico-innovacion",
+          "entity_type": "program",
+          "name": "Proyectos de Desarrollo Tecnológico, Innovación y Fortalecimiento de Infraestructura",
+          "path": "ecosystem/public-programs/mexico/secihti-desarrollo-tecnologico-innovacion.md"
+        },
+        {
+          "entity_id": "program-semilla-ande-2026",
+          "entity_type": "program",
+          "name": "Semilla ANDE 2026",
+          "path": "ecosystem/public-programs/uruguay/semilla-ande-2026.md"
+        },
+        {
+          "entity_id": "program-start-up-chile",
+          "entity_type": "program",
+          "name": "Start-Up Chile",
+          "path": "ecosystem/public-programs/chile/start-up-chile.md"
+        }
+      ]
+    }
+  ],
+  "cutoff_date": "2026-07-27",
+  "eligible_counts": {
+    "agencies": 12,
+    "programs": 17,
+    "profiles": 29
+  },
+  "issue": 103,
+  "notes": "Plano congelado antes da criação ou atualização dos perfis.",
+  "profile_queue_hash": "d032b63c0f964870c2e8a8b774e14f65679db401bc55ba77cefaba3bba5e1ab9",
+  "schema_version": "1.0",
+  "source_hashes": {
+    "agencies.jsonl": "2d1c3ee28d0fe19ac85726a8763cccd4753e35ed50cbf583f39aba4397eb2f97",
+    "calls.jsonl": "0af5579f7b9cf8e5fcbc30eec2dcdf7ba4c8b03aae5fdc503ff30411bae4bb6a",
+    "consolidation-manifest.json": "7620a46f7e4534ac27ba692458cf14307f053ed33bc0a20e51e3a715769b36f3",
+    "evidence.jsonl": "552d3da6841591635042666191a070e037d3a746f0fe27973826e149d282d046",
+    "independent-review.jsonl": "b7bf22b337f5e41fde35ceb7ab17c488acb2ba1788a508a2abbc858bd2b8a876",
+    "programs.jsonl": "f310197af572e6e7db6c2c9ab49ce4b8ec51a3c1f61410822298482e893e880e"
+  },
+  "status": "frozen"
+}
