@@ -75,7 +75,7 @@ lacuna acionável para a consolidação.
 
 | Artefato | SHA-256 |
 | --- | --- |
-| `candidates.jsonl` | `e576f195b5fc1c8e572dd6a260db89fb16199066dd8e4207fd0e5bfb87fe709b` |
+| `candidates.jsonl` | `2979feacb09f98c349897a65ce832259bfb6bca976b13a627c019cd8b64828a4` |
 | `coverage-matrix.jsonl` | `c019a3b8cea22868402496edb0ba3447e2585c2b0ccf1798d03f76e47f987bdd` |
 | `evidence.jsonl` | `c967b2c5f81659eab9ca1a0597571fbddeac6e20d7f8d73fcb323fcd1b88b0cd` |
 | `run-manifest.jsonl` | `b1b7ed7a21eabadaa354b405e69d29154e606b79697deb6b96d3cb26b7f1d962` |
