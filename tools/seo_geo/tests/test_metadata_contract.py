@@ -115,12 +115,15 @@ class MetadataContractTests(unittest.TestCase):
             "Value USD 25,000 on 2026-07-27. "
             "[Source](https://example.com/a) and `entity:id`. "
             "See example.org#terms and funds/regional/example.md.\n"
+            "The 24-month window uses a 100-day plan.\n"
             "```text\nR$ 10\n```\n"
         )
         self.assertEqual(tokens["markdown_link_destinations"]["https://example.com/a"], 1)
         self.assertEqual(tokens["currency_codes"]["USD"], 1)
         self.assertEqual(tokens["currency_symbols"]["R$"], 1)
         self.assertEqual(tokens["iso_dates"]["2026-07-27"], 1)
+        self.assertEqual(tokens["numbers"]["24"], 1)
+        self.assertEqual(tokens["numbers"]["100"], 1)
         self.assertEqual(tokens["inline_code"]["entity:id"], 1)
         self.assertEqual(tokens["fenced_code"]["R$ 10"], 1)
         self.assertEqual(tokens["bare_domains"]["example.org#terms"], 1)

@@ -176,6 +176,29 @@ class ProfileValidationTests(unittest.TestCase):
                 ),
             )
 
+    def test_translation_link_can_fall_back_to_canonical_during_rollout(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            canonical = root / "ecosystem" / "public-programs" / "bolivia"
+            canonical.mkdir(parents=True)
+            (canonical / "operator.md").write_text("# Operator\n", encoding="utf-8")
+            translated = (
+                root
+                / "translations"
+                / "pt-BR"
+                / "ecosystem"
+                / "public-programs"
+                / "bolivia"
+                / "program.md"
+            )
+            translated.parent.mkdir(parents=True)
+            text = "[Operator](operator.md)\n"
+            translated.write_text(text, encoding="utf-8")
+            self.assertEqual(
+                [],
+                validate_internal_links(root, translated, text),
+            )
+
     def test_ignores_example_links_inside_code(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
