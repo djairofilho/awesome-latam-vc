@@ -1,0 +1,109 @@
+{
+  "auditor": "final-auditor-issue-88",
+  "checks": {
+    "actors_separated_for_eligible": true,
+    "all_candidates_decided": true,
+    "all_frozen_hashes_match": true,
+    "candidate_ids_unique": true,
+    "candidate_references_resolve": true,
+    "coverage_unique_and_closed": true,
+    "eligible_queue_exact": true,
+    "identities_resolved": true,
+    "independent_review_complete": true,
+    "indexes_exact": true,
+    "no_broken_index_links": true,
+    "no_high_divergence_open": true,
+    "no_individual_investor_published": true,
+    "official_links_embedded": true,
+    "pad_excluded": true,
+    "profiles_exact": true,
+    "publication_split_exact": true,
+    "runs_and_tasks_closed": true,
+    "transfers_resolved": true,
+    "utf8_clean": true
+  },
+  "cutoff_date": "2026-07-27",
+  "failures": {
+    "batch_hash": [],
+    "broken_index_links": [],
+    "checksums": [],
+    "consolidation_output_hashes": [],
+    "encoding": [],
+    "input_hashes": [],
+    "invalid_official_urls": [],
+    "missing_evidence": [],
+    "missing_sources": [],
+    "mojibake": [],
+    "partial_coverage": [],
+    "profile_sources": [],
+    "publication_index_hashes": [],
+    "publication_profile_hashes": [],
+    "publication_source_hashes": [],
+    "runs": [],
+    "tasks": []
+  },
+  "issue": 88,
+  "limitations": [
+    "A auditoria comprova o snapshot congelado em 2026-07-27; mudanças posteriores nas fontes oficiais exigem nova coleta.",
+    "As nove células parciais permanecem fechadas com motivo, responsável e próxima ação, sem promover candidatos sem evidência suficiente.",
+    "Dezesseis candidatos permanecem como evidência-insuficiente; isso é uma decisão explícita e não uma omissão do registro."
+  ],
+  "metrics": {
+    "candidates": 44,
+    "coverage_rows": 42,
+    "coverage_statuses": {
+      "concluída": 32,
+      "não aplicável": 1,
+      "parcial": 9
+    },
+    "decision_counts": {
+      "duplicado": 2,
+      "elegível": 11,
+      "encaminhado-para-aceleradoras": 2,
+      "encaminhado-para-funds": 4,
+      "encaminhado-para-plataformas": 5,
+      "encaminhado-para-programas-públicos": 1,
+      "evidência-insuficiente": 16,
+      "excluído": 1,
+      "inativo": 2
+    },
+    "eligible": 11,
+    "identity_resolutions": 7,
+    "identity_subjects": 12,
+    "independent_review_records": 42,
+    "indexes": 3,
+    "new_profiles": 6,
+    "not_published": 33,
+    "official_evidence_records": 57,
+    "outgoing_category_transfers": 12,
+    "preserved_profiles": 5,
+    "profiles": 11,
+    "runs": 6,
+    "source_records": 61,
+    "task_statuses": {
+      "blocked": 1,
+      "done": 46
+    },
+    "tasks": 47
+  },
+  "pad_checks": {
+    "application_route_absent": true,
+    "external_access_unconfirmed": true,
+    "final_decision_insufficient": true,
+    "high_divergence_resolved": true,
+    "not_batched": true,
+    "not_indexed": true,
+    "not_queued": true,
+    "profile_absent": true,
+    "review_changed_decision": true
+  },
+  "parent_epic": 63,
+  "schema_version": "1.0",
+  "severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "low": 0,
+    "medium": 0
+  },
+  "status": "passed"
+}
