@@ -71,6 +71,7 @@ jobs:
           python -m unittest discover -s research/epic-64/tests -v
           python -m unittest discover -s research/epic-65/tests -v
           python -m unittest discover -s research/epic-65/final-audit/tests -v
+          python -m unittest discover -s research/seo-geo/measurement/tests -v
           python -m unittest discover -s tools/seo_geo/tests -v
 
       - name: Check final epic audits
