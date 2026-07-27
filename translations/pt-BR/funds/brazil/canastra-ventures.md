@@ -76,7 +76,7 @@ Canastra Ventures é uma empresa brasileira de capital de risco pré-semente que
 
 Canastra Ventures investe nas primeiras rodadas de startups AI-first, preferencialmente fundadas por brasileiros, que tratam o Brasil como mercado-alvo e têm ambições globais. Seus critérios para Pre-seed incluem MVP validado, receita inicial ou tração equivalente, estratégia de go-to-market definida e caminho para uma rodada Seed em até 24 meses. A empresa busca rodadas de BRL 500,000 a BRL 2 milhões e avaliações pre-money de BRL 5 milhões a BRL 20 milhões; esses valores descrevem a rodada-alvo, não o cheque individual da Canastra Ventures.
 
-Após o investimento, a empresa descreve um plano de cem dias (100-day), com acompanhamento semanal e apoio para estratégia de produto com AI, aquisição de talentos, desenvolvimento de negócios, go-to-market, conselheiros e captação de recursos para a rodada Seed.
+Após o investimento, a empresa descreve um plano de 100 dias, com acompanhamento semanal e apoio para estratégia de produto com AI, aquisição de talentos, desenvolvimento de negócios, go-to-market, conselheiros e captação de recursos para a rodada Seed.
 
 ## Indicadores do portfólio
 
