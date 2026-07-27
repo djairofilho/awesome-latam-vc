@@ -1,0 +1,71 @@
+{
+  "incoming_angel_transfers": [
+    {
+      "materialized": false,
+      "next_action": "Revisar operador, produto, rota para founders e atividade contra o contrato da epic #64.",
+      "owner": "independent-reviewer-issue-94",
+      "proposed_profile": "ecosystem/funding-platforms/red-colombiana-de-inversiones.md",
+      "resolution": "requires-platform-contract-adjudication",
+      "source_epic": 63,
+      "source_name": "Red Colombiana de Inversiones",
+      "source_network_id": "ang-angelinvestmentnetwork-com-co",
+      "target_platform_id": "plat-red-colombiana-de-inversiones"
+    },
+    {
+      "materialized": false,
+      "next_action": "Revisar operador, produto, rota para founders e atividade contra o contrato da epic #64.",
+      "owner": "independent-reviewer-issue-94",
+      "proposed_profile": "ecosystem/funding-platforms/regional/caribbean-business-angel-network.md",
+      "resolution": "requires-platform-contract-adjudication",
+      "source_epic": 63,
+      "source_name": "Caribbean Business Angel Network",
+      "source_network_id": "ang-carib-export-com--caribbean-business-angel-network",
+      "target_platform_id": "plat-caribbean-business-angel-network"
+    },
+    {
+      "materialized": false,
+      "next_action": "Revisar operador, produto, rota para founders e atividade contra o contrato da epic #64.",
+      "owner": "independent-reviewer-issue-94",
+      "proposed_profile": "ecosystem/funding-platforms/guatemala/winverz.md",
+      "resolution": "requires-platform-contract-adjudication",
+      "source_epic": 63,
+      "source_name": "Winverz",
+      "source_network_id": "ang-winverz-com",
+      "target_platform_id": "plat-winverz"
+    }
+  ],
+  "issue": 94,
+  "outgoing_category_resolutions": [
+    {
+      "canonical_destination": "epic-62:program/auge-ucr",
+      "platform_decision": "other_category",
+      "platform_id": "plat-auge-ucr"
+    },
+    {
+      "canonical_destination": "research/epic-62/consolidation/candidates.jsonl#accel-sc-koga",
+      "platform_decision": "other_category",
+      "platform_id": "plat-koga-impact-lab"
+    },
+    {
+      "canonical_destination": "epic-62:program/open-angels",
+      "platform_decision": "other_category",
+      "platform_id": "plat-open-angels"
+    },
+    {
+      "canonical_destination": "epic-62:program/pitch-day-pandolab",
+      "platform_decision": "other_category",
+      "platform_id": "plat-pitch-day"
+    },
+    {
+      "canonical_destination": "epic-62:program/sambil-emprende",
+      "platform_decision": "other_category",
+      "platform_id": "plat-sambil-emprende"
+    },
+    {
+      "canonical_destination": "research/epic-62/consolidation/candidates.jsonl#accel-ventiur-acelera-impacto",
+      "platform_decision": "other_category",
+      "platform_id": "plat-ventiur"
+    }
+  ],
+  "schema_version": "1.0"
+}

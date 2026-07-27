@@ -1,0 +1,81 @@
+{
+  "after_counts": {
+    "candidates": 38,
+    "countries": 20,
+    "evidence": 62,
+    "sources": 117,
+    "tasks": 93
+  },
+  "before_counts": {
+    "andean": {
+      "candidates.jsonl": 13,
+      "coverage-matrix.jsonl": 5,
+      "evidence.jsonl": 18,
+      "source-inventory.jsonl": 37
+    },
+    "brazil": {
+      "candidates.jsonl": 9,
+      "coverage-matrix.jsonl": 1,
+      "evidence.jsonl": 18,
+      "source-inventory.jsonl": 17
+    },
+    "mexico-cac": {
+      "candidates.jsonl": 8,
+      "coverage-matrix.jsonl": 10,
+      "evidence.jsonl": 11,
+      "source-inventory.jsonl": 44
+    },
+    "southern-cone": {
+      "candidates.jsonl": 8,
+      "coverage-matrix.jsonl": 4,
+      "evidence.jsonl": 15,
+      "source-inventory.jsonl": 19
+    }
+  },
+  "cutoff_date": "2026-07-27",
+  "decision_counts": {
+    "eligible": 9,
+    "excluded": 4,
+    "inactive": 2,
+    "insufficient_evidence": 17,
+    "other_category": 6
+  },
+  "incoming_angel_transfers": 3,
+  "independent_review_status": "pending",
+  "input_hashes": {
+    "research/epic-64/andean/candidates.jsonl": "d0dd0f7c5de8f115ffd149007c330d8b974f00a68aa16a30ac518a4068a0e964",
+    "research/epic-64/andean/coverage-matrix.jsonl": "7aa66ecb1de36a984548d06a47a55dba79972c7e0d136e17e4f2186701a5c6cd",
+    "research/epic-64/andean/evidence.jsonl": "7a45c98a973aec6bdc06108ac52af257ea31f3fad7ef243c39d25f27b56a3e9e",
+    "research/epic-64/andean/run-manifest.jsonl": "04d0412a3cd40156b2049727151ec1b93a16be6a6fb6ddd46259acfbb265247e",
+    "research/epic-64/andean/source-inventory.jsonl": "9f8196cc16d8525206e101a74485a2371036f93390fca696ed16f2d3e4223f70",
+    "research/epic-64/brazil/candidates.jsonl": "85db0db44b18a353ff6c35c8325d7738b138f1f01807bc747af4062344b92aac",
+    "research/epic-64/brazil/coverage-matrix.jsonl": "46fc225660e70a95c7455c1eac6f7157dec47557dac5a451f22664ecf47fc75b",
+    "research/epic-64/brazil/evidence.jsonl": "90047b6045f98236c05dc9d7ceb8d9dcd24a192b9bc93d31f48f6ab277a83de7",
+    "research/epic-64/brazil/run-manifest.jsonl": "6cfef7ea76865946fc6ea012a4da8b42aa5e2b38030e815b6e3b65347aaaef27",
+    "research/epic-64/brazil/source-inventory.jsonl": "45f7fe4e420cc9596d2da28cdacac1289ac177a65238e4e3a364d259be017331",
+    "research/epic-64/mexico-cac/candidates.jsonl": "778d7d13c940329038f84922b3850be147d0bc4733884bf540809bdb538e5f31",
+    "research/epic-64/mexico-cac/coverage-matrix.jsonl": "527c0bd550d80ec72e06453de716153f251baa38860d46ddd6869a18a4e7a245",
+    "research/epic-64/mexico-cac/evidence.jsonl": "7bbb2aa66466c398aee69f4d1c9380c89a64663cd03b52157891800f219acf0b",
+    "research/epic-64/mexico-cac/run-manifest.jsonl": "bf5dd02ab4fa0b6f09e0c670bc5f244f4c089e16662949e86b47781396cac9aa",
+    "research/epic-64/mexico-cac/source-inventory.jsonl": "f53039ce96b265cacf5b8f624639cf5c4b692ad3653f9b7ba162afb0f99f1913",
+    "research/epic-64/southern-cone/candidates.jsonl": "5031eee5e93ba497e4c0159e5a44642dd7e386a959a3d2191c5266092c34fa33",
+    "research/epic-64/southern-cone/coverage-matrix.jsonl": "27810dd2a49978621a222c1725389a7b06fc591bfc45c7d25180ee0f81b1ef95",
+    "research/epic-64/southern-cone/evidence.jsonl": "4592d66cde6c58f7221712de42b3c639302fe40d760509de3c734448c76d7e7c",
+    "research/epic-64/southern-cone/run-manifest.jsonl": "ce4ccd00d24d389b3039dc2d03f8edc9a626318ca0e4fa03607cb8e477a8bf2c",
+    "research/epic-64/southern-cone/source-inventory.jsonl": "66d2b414635ab3662a325109d2d93fdfb4946b359a6e8ef802839abe689b05bc"
+  },
+  "issue": 94,
+  "materialized_incoming_transfers": 0,
+  "outgoing_category_resolutions": 6,
+  "output_hashes": {
+    "candidates.jsonl": "6ed3fe7e3cfda5d3aa22f2af3dd63da90420d4061c4c9fb0d9fb9ee2b8c078cc",
+    "category-resolutions.json": "6a3517d7b4e85431a4e49c1bcf2db707fcec46ed87c54064d5f0707b9336c9aa",
+    "coverage-matrix.jsonl": "ef8839a61549a89bb8c12b8a608bb612c555a2c74b2e29cc0988de295ffac781",
+    "deduplication-report.json": "f3d20bd7140012acabac19c2713d42ed4243cbda726633d32a4c504a3735c95e",
+    "evidence.jsonl": "f1e815c4797821b2cda854667ae7f5aac199e57f9341db41094d090e4f2a38db",
+    "run-manifest.jsonl": "5e564058041b3d3e06f711164f53cf456ea2f2efa9a2c9d6c16b84d1150472b0",
+    "source-inventory.jsonl": "2c72b4e0ff28c4f68bd9f417e382b98051a27e15919dd86968f90715d26fa47d"
+  },
+  "schema_version": "1.0",
+  "status": "provisional"
+}
