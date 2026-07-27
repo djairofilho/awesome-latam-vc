@@ -94,3 +94,36 @@ permanecem abertos.
 
 O arquivo local de startups não foi usado para descoberta, priorização,
 comprovação ou decisão.
+
+## Validação antecipada, onda 1
+
+Um primeiro shard de 8 gestores brasileiros de alta probabilidade foi validado
+antes da varredura dos demais candidatos. A seleção priorizou gestores e gestores
+iniciantes da ABVCAP, domínio oficial acessível e nomes claramente ligados a
+venture capital. Prestadores, entidades estrangeiras e sobreposições com as
+issues #19, #20 e #21 ficaram fora do shard.
+
+O resultado foi:
+
+- 5 candidatos `elegível`: Ahead Ventures, MSW Capital, Fundepar, Raio Capital
+  e Invest Tech.
+- 3 candidatos com `evidência insuficiente`: ACE Outlier Capital, Eqwow
+  Ventures e Kortex Ventures.
+- 15 registros de evidência oficial.
+- 8 novos recortes no inventário de fontes.
+
+As decisões elegíveis exigiram, em conjunto, entidade investidora, investimento
+direto, atividade recente e acesso externo para fundadores. O e-mail específico
+para captação, o formulário de inscrição ou a candidatura identificada no aviso
+do formulário serviram como acesso externo. Contato institucional genérico não
+foi suficiente.
+
+ACE Outlier e Kortex permaneceram pendentes porque não foi localizado um canal
+público inequívoco para propostas de startups. Eqwow permaneceu pendente porque
+o portfólio não permite confirmar atividade nos últimos 24 meses e os contatos
+publicados não são descritos como canal de candidatura. Esses registros mantêm
+responsável e próxima ação para uma onda posterior.
+
+O arquivo [evidence.jsonl](evidence.jsonl) registra as páginas oficiais e as
+afirmações verificadas. Os registros anteriores de descoberta e suas fontes
+foram preservados. O arquivo local de startups não foi usado nesta validação.
