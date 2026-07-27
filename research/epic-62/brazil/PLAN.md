@@ -61,3 +61,14 @@ nos 24 meses anteriores à data de corte.
 4. resumo de cobertura estadual e setorial;
 5. zero perfil publicado nesta issue;
 6. decisões elegíveis revisadas independentemente na issue #77.
+
+## Errata do baseline congelado
+
+A matriz inicial registrou quatro fontes corporativas e sete institucionais.
+A tabela aprovada e o manifesto sempre tiveram três workers corporativos e seis
+institucionais, totalizando as mesmas vinte tarefas. A execução preserva as
+contagens originais em `original_planned_sources`, corrige o plano executável
+para três e seis e registra a justificativa em `planning_errata`.
+
+Essa correção não adiciona nem remove fonte depois da coleta. Ela torna explícito
+um erro de soma do baseline.
