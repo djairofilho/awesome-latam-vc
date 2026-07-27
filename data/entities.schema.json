@@ -1,0 +1,246 @@
+{
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/data/entities.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "dataset": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "format": "date",
+          "type": "string"
+        },
+        "encoding": {
+          "const": "UTF-8"
+        },
+        "entity_count": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "id": {
+          "const": "awesome-latam-vc-entities"
+        },
+        "license": {
+          "const": "CC0-1.0"
+        },
+        "license_url": {
+          "const": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        "name": {
+          "const": "Awesome LatAm VC catalog entities"
+        },
+        "version": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "version",
+        "date",
+        "license",
+        "license_url",
+        "encoding",
+        "entity_count"
+      ],
+      "type": "object"
+    },
+    "entities": {
+      "items": {
+        "$ref": "#/$defs/entity"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0"
+    }
+  },
+  "required": [
+    "schema_version",
+    "dataset",
+    "entities"
+  ],
+  "title": "Awesome LatAm VC entity dataset",
+  "type": "object",
+  "$defs": {
+    "entity": {
+      "additionalProperties": false,
+      "properties": {
+        "aliases": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "base_geography": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "pattern": "^(?:[A-Z]{2}|LATAM|CARIBBEAN|GLOBAL)$",
+              "type": "string"
+            },
+            "kind": {
+              "enum": [
+                "country",
+                "region",
+                "global"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "code"
+          ],
+          "type": "object"
+        },
+        "countries_covered": {
+          "items": {
+            "pattern": "^(?:[A-Z]{2}|LATAM|CARIBBEAN|GLOBAL|NOT_DISCLOSED)$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "entity_type": {
+          "enum": [
+            "fund",
+            "accelerator",
+            "angel_network",
+            "funding_platform",
+            "public_program"
+          ]
+        },
+        "focuses": {
+          "items": {
+            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "founder_route": {
+          "format": "uri",
+          "pattern": "^https://",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program):[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "official_website": {
+          "format": "uri",
+          "pattern": "^https://",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "operator": {
+          "minLength": 1,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_profile": {
+          "pattern": "^(?:funds|ecosystem)/.+\\.md$",
+          "type": "string"
+        },
+        "sources": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "official_website",
+                  "official_thesis",
+                  "official_portfolio",
+                  "official_application",
+                  "official_program",
+                  "official_regulator",
+                  "official_activity",
+                  "secondary"
+                ]
+              },
+              "title": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "url": {
+                "format": "uri",
+                "pattern": "^https://",
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "url",
+              "kind"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "stages": {
+          "items": {
+            "enum": [
+              "angel",
+              "pre_seed",
+              "seed",
+              "series_a",
+              "series_b",
+              "growth",
+              "multi_stage",
+              "not_disclosed",
+              "not_applicable"
+            ]
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "summary": {
+          "maxLength": 240,
+          "minLength": 1,
+          "type": "string"
+        },
+        "verified_on": {
+          "format": "date",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "entity_type",
+        "summary",
+        "aliases",
+        "operator",
+        "base_geography",
+        "countries_covered",
+        "stages",
+        "focuses",
+        "official_website",
+        "founder_route",
+        "sources",
+        "verified_on",
+        "source_profile"
+      ],
+      "type": "object"
+    }
+  }
+}
