@@ -16,7 +16,7 @@ Uma lista curada de fundos de Venture Capital que investem na América Latina.
 
 ---
 
-O índice foi otimizado para comparação rápida e atualmente reúne 143 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
+O índice foi otimizado para comparação rápida e atualmente reúne 152 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
 
 ## Pan-América Latina (sede na região)
 
@@ -25,6 +25,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 143 fundos
 | [500 LatAm (500 Global)](funds/regional/500-latam-500-global.md) | Pre-seed e Seed | Tecnologia, agnóstico a setores | América Latina hispânica |
 | [Açolab Ventures](funds/regional/acolab-ventures.md) | Produto validado e receita operacional | Inovação e sustentabilidade na cadeia do aço | América Latina |
 | [Actions Capital (ex-K50 Ventures)](funds/regional/actions-capital-k50-ventures.md) | Pre-seed e Seed | Tecnologia | América Latina |
+| [Alina VC](funds/regional/alina-vc.md) | Não divulgado publicamente | Tecnologia para o futuro do trabalho | América Latina |
 | [ALIVE Ventures](funds/regional/alive-ventures.md) | Seed e Série A | Tecnologia de impacto e inclusão econômica | Colômbia, Peru e América Latina |
 | [Amplifica Capital](funds/regional/amplifica-capital.md) | Pre-seed, Seed e Série A | Inclusão, acesso digital e tecnologia climática | América Latina |
 | [Angel Ventures](funds/regional/angel-ventures.md) | Não divulgado publicamente | Tecnologia, agnóstico a setores | América Latina |
@@ -35,15 +36,22 @@ O índice foi otimizado para comparação rápida e atualmente reúne 143 fundos
 | [Caravela Capital](funds/regional/caravela-capital.md) | Pre-seed e Seed | Tecnologia | América Latina |
 | [Caricaco Ventures](funds/regional/caricaco-ventures.md) | Não divulgado publicamente | Software e inteligência artificial | América Central e República Dominicana |
 | [Chile Ventures](funds/regional/chile-ventures.md) | Não divulgado publicamente | Tecnologia de receita recorrente | Chile e América Latina |
+| [CITES](funds/regional/cites.md) | Pre-seed, Seed e Série A | Deep tech de base científica | Argentina e América Latina |
 | [Cometa (ex-Variv)](funds/regional/cometa-variv.md) | Pre-seed, Seed e Série A | Tecnologia | América Latina hispânica |
 | [Dalus Capital](funds/regional/dalus-capital.md) | Não divulgado publicamente | Tecnologia | América Latina |
+| [Draper Cygnus](funds/regional/draper-cygnus.md) | Seed e Série A | Deep tech | Fundadores latino-americanos com atuação global |
 | [EWA Capital](funds/regional/ewa-capital.md) | Seed e Série A | Tecnologia com enfoque de gênero e inclusão | América Latina de língua espanhola |
+| [Galicia Ventures](funds/regional/galicia-ventures.md) | Pre-seed, Seed, Série A e Série B | Fintech, insurtech, agtech, tecnologia disruptiva e modelos B2B | América Latina |
+| [Globant Ventures](funds/regional/globant-ventures.md) | Seed e Série A | Inteligência artificial, blockchain e futuro do trabalho | Global |
+| [GLOCAL Latam](funds/regional/glocal-latam.md) | Não divulgado publicamente | AgriFoodTech e ClimateTech | América Latina |
 | [Hi Ventures (ex-ALLVP)](funds/regional/hi-ventures-allvp.md) | Pre-seed e Seed | IA e tecnologia | América Latina |
 | [IGNIA](funds/regional/ignia.md) | Seed e Série A | Tecnologia e crescimento inclusivo | América Latina |
 | [Impacta VC](funds/regional/impacta-vc.md) | Seed | Impacto social e ambiental | América Latina |
 | [Innogen Capital Ventures](funds/regional/innogen-capital-ventures.md) | Pre-seed, Seed e Série A | Tecnologia em estágio inicial | Norte da América Latina |
+| [Innventure](funds/regional/innventure.md) | Não divulgado publicamente | AgTech e AgriFoodTech | América Latina |
 | [iThink VC](funds/regional/ithink-vc.md) | Pre-seed e Seed | Tecnologia para problemas estruturais | Paraguai, Peru, Equador, Bolívia e Uruguai |
 | [Kalei Ventures](funds/regional/kalei-ventures.md) | Pre-seed e Seed | Tecnologia habilitada por IA | América Latina |
+| [Kamay Ventures](funds/regional/kamay-ventures.md) | Seed e Série A | Tecnologia para a cadeia de bens de consumo | América Latina |
 | [Kaszek](funds/regional/kaszek.md) | Multiestágio | Tecnologia | América Latina |
 | [Kayyak Ventures](funds/regional/kayyak-ventures.md) | Seed, Série A e Série B | Tecnologia | América Latina |
 | [Magma Partners](funds/regional/magma-partners.md) | Pre-seed, Seed e Série A | Tecnologia | América Latina |
@@ -143,9 +151,10 @@ O índice foi otimizado para comparação rápida e atualmente reúne 143 fundos
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | Não divulgado publicamente | Tecnologia para serviços públicos | Colômbia e América Latina |
 | [QAPU Ventures](funds/colombia/qapu-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
 | [Velum Ventures](funds/colombia/velum-ventures.md) | Seed | Tecnologia | Colômbia e América Latina |
+| [Ventures Comfama](funds/colombia/ventures-comfama.md) | Não divulgado publicamente | Tecnologias emergentes e modelos de negócio com impacto social | Colômbia |
+| [Ventures EPM](funds/colombia/axon-partners-ventures-epm.md) | Não divulgado publicamente | Tecnologia para serviços públicos | Colômbia e América Latina |
 | [Veronorte](funds/colombia/veronorte.md) | Multiestágio | Sustentabilidade e bem-estar | América Latina |
 
 ## México
@@ -169,7 +178,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 143 fundos
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [ADN.VC](funds/multi-country/adn.vc.md) | Não divulgado publicamente | Tecnologia | América Central e América Latina |
+| [ADN.VC](funds/multi-country/adn.vc.md) | Pre-seed e Seed | Fintech, proptech e contech | América Latina |
 | [Alexia Ventures](funds/multi-country/alexia-ventures.md) | Seed e Série A | Software inteligente e IA aplicada | América Latina |
 | [Carao Ventures](funds/multi-country/carao-ventures.md) | Não divulgado publicamente | Tecnologia | América Central e América Latina |
 | [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | Não divulgado publicamente | Tecnologia financeira | Global, incluindo a América Latina |
