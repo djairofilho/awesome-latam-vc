@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-64/schemas/run-manifest-record.schema.json",
+  "title": "Registro de execução da epic 64",
+  "oneOf": [
+    { "$ref": "#/$defs/run" },
+    { "$ref": "#/$defs/task" }
+  ],
+  "$defs": {
+    "run": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "record_type",
+        "run_id",
+        "issues",
+        "contract_issue",
+        "cutoff_date",
+        "created_on",
+        "status",
+        "task_count",
+        "scraping_performed",
+        "owner",
+        "execution_policy",
+        "notes"
+      ],
+      "properties": {
+        "schema_version": { "const": "1.0" },
+        "record_type": { "const": "run" },
+        "run_id": {
+          "type": "string",
+          "pattern": "^run-[a-z0-9][a-z0-9-]*$"
+        },
+        "issues": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 90, "maximum": 93 }
+        },
+        "contract_issue": { "const": 89 },
+        "cutoff_date": { "type": "string", "format": "date" },
+        "created_on": { "type": "string", "format": "date" },
+        "status": { "enum": ["planned", "running", "complete", "cancelled"] },
+        "task_count": { "type": "integer", "minimum": 1 },
+        "scraping_performed": { "type": "boolean" },
+        "owner": { "type": "string", "minLength": 1 },
+        "execution_policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "respect_robots_txt",
+            "bypass_access_controls",
+            "max_concurrency_per_domain",
+            "minimum_delay_ms",
+            "cache_enabled",
+            "retry_attempts",
+            "browser_policy"
+          ],
+          "properties": {
+            "respect_robots_txt": { "const": true },
+            "bypass_access_controls": { "const": false },
+            "max_concurrency_per_domain": { "type": "integer", "minimum": 1, "maximum": 2 },
+            "minimum_delay_ms": { "type": "integer", "minimum": 500 },
+            "cache_enabled": { "const": true },
+            "retry_attempts": { "type": "integer", "minimum": 0, "maximum": 4 },
+            "browser_policy": { "const": "official_js_only" }
+          }
+        },
+        "notes": { "type": ["string", "null"], "minLength": 1 }
+      }
+    },
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "record_type",
+        "run_id",
+        "task_id",
+        "issue",
+        "url",
+        "country",
+        "source_category",
+        "partition",
+        "worker_id",
+        "shard_path",
+        "priority",
+        "status",
+        "owner",
+        "block_reason",
+        "next_action",
+        "last_error"
+      ],
+      "properties": {
+        "schema_version": { "const": "1.0" },
+        "record_type": { "const": "task" },
+        "run_id": {
+          "type": "string",
+          "pattern": "^run-[a-z0-9][a-z0-9-]*$"
+        },
+        "task_id": {
+          "type": "string",
+          "pattern": "^task-[a-z0-9][a-z0-9-]*$"
+        },
+        "issue": { "type": "integer", "minimum": 90, "maximum": 93 },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "country": { "type": "string", "pattern": "^[A-Z]{2}$" },
+        "source_category": {
+          "enum": ["regulator", "public_ecosystem", "official_platform", "discovery"]
+        },
+        "partition": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "worker_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "shard_path": {
+          "type": "string",
+          "pattern": "^research/epic-64/[a-z0-9][a-z0-9-]*/shards/[a-z0-9][a-z0-9-]*$"
+        },
+        "priority": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "status": { "enum": ["todo", "leased", "extracted", "verified", "done", "blocked"] },
+        "owner": { "type": ["string", "null"], "minLength": 1 },
+        "block_reason": { "type": ["string", "null"], "minLength": 1 },
+        "next_action": { "type": ["string", "null"], "minLength": 1 },
+        "last_error": { "type": ["string", "null"], "minLength": 1 }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": { "enum": ["leased", "extracted", "verified"] }
+            },
+            "required": ["status"]
+          },
+          "then": {
+            "properties": {
+              "owner": { "type": "string" },
+              "next_action": { "type": "string" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "status": { "const": "blocked" } },
+            "required": ["status"]
+          },
+          "then": {
+            "properties": {
+              "owner": { "type": "string" },
+              "block_reason": { "type": "string" },
+              "next_action": { "type": "string" }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

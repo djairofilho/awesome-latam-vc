@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-63/schemas/evidence.schema.json",
+  "title": "Evidência de rede-anjo da epic 63",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "evidence_id",
+    "network_id",
+    "url",
+    "title",
+    "publisher",
+    "source_type",
+    "published_on",
+    "accessed_on",
+    "claims",
+    "locator",
+    "summary"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "evidence_id": {
+      "type": "string",
+      "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+    },
+    "network_id": {
+      "type": "string",
+      "pattern": "^ang-[a-z0-9][a-z0-9-]*(--[a-z0-9][a-z0-9-]*)?$"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "publisher": { "type": "string", "minLength": 1 },
+    "source_type": { "enum": ["oficial", "terceiro"] },
+    "published_on": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "accessed_on": { "type": "string", "format": "date" },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["field", "finding"],
+        "properties": {
+          "field": {
+            "enum": [
+              "categoria",
+              "atividade",
+              "acesso externo",
+              "seleção",
+              "decisão",
+              "capital",
+              "autonomia de seleção",
+              "autonomia de decisão",
+              "autonomia geográfica",
+              "autonomia de atividade recente",
+              "geografia",
+              "rota de aplicação",
+              "recorrência"
+            ]
+          },
+          "finding": {
+            "enum": ["confirmado", "refutado", "não divulgado"]
+          }
+        }
+      }
+    },
+    "locator": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 }
+  }
+}

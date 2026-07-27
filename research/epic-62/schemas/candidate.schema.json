@@ -115,6 +115,7 @@
     "application_status": {
       "enum": [
         "open",
+        "closed",
         "closed_between_cycles",
         "invite_only",
         "not_publicly_disclosed",
