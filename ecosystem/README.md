@@ -2,7 +2,7 @@
 
 This directory covers organizations that can help founders access capital but
 are not venture capital funds. They are intentionally kept outside the main fund
-tables and do not count toward the project's total of 100 direct-investor
+tables and do not count toward the project's total of 101 direct-investor
 profiles.
 
 ## Categories

@@ -66,6 +66,7 @@ The index is optimized for quick comparison. All fund profiles use the enriched 
 | [Astella](funds/brazil/astella.md) | Pre-seed, Seed, and Series A | Technology, sector agnostic | Brazil |
 | [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Pre-seed and Seed | B2B and B2B2C technology | Brazil |
 | [Canary](funds/brazil/canary.md) | Pre-seed, Seed, and Series A | Sector agnostic | Latin America |
+| [Canastra Ventures](funds/brazil/canastra-ventures.md) | Pre-seed | AI-first startups | Brazil and global |
 | [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Growth | Technology and high-growth companies | Brazil |
 | [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed and Seed | Technology startups | Brazil |
 | [DGF Investimentos](funds/brazil/dgf-investimentos.md) | Multi-stage | High-growth technology companies | Brazil and Latin America |
