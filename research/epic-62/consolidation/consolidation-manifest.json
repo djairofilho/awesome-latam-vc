@@ -1,0 +1,47 @@
+{
+  "canonical_candidates": 78,
+  "cross_category_resolutions": 30,
+  "cutoff_date": "2026-07-27",
+  "decision_counts": {
+    "elegível": 25,
+    "encaminhado-para-funds": 3,
+    "encaminhado-para-outra-epic": 13,
+    "evidência-insuficiente": 19,
+    "excluído": 17,
+    "inativo": 1
+  },
+  "input_hashes": {
+    "research/epic-62/andean/candidates.jsonl": "5c5ef268b3d9ba146803a64148f4d9a8dbebc9761407fded151aa5691e46d854",
+    "research/epic-62/andean/evidence.jsonl": "23f2d854a2f1ecaee7611e7251fe6f9c6162afa8852c8dec9590d14beebebac0",
+    "research/epic-62/andean/source-inventory.jsonl": "0cf6e555033e6ea81edd7863b3f72c2a194ea63be7b1ed76693eebd30368f1d2",
+    "research/epic-62/brazil/candidates.jsonl": "cc05a4ee52fc151fc939694d9d961aad4899c25431aa6095a4e5fcc1a6293e01",
+    "research/epic-62/brazil/evidence.jsonl": "cff9bdd0a7afe50498e28cd233c7ee874309071b7fc7ad37250e439df047f576",
+    "research/epic-62/brazil/source-inventory.jsonl": "ef039b96213e6341fcd047fe2d63f2950191b881e226c1ddacee182bcaf56886",
+    "research/epic-62/foreign/candidates.jsonl": "bf461ea1b2c4f89649daf08dad92198e0989d6a6d018fffc375797042122ba21",
+    "research/epic-62/foreign/evidence.jsonl": "8ae013e3be4930a06e544ff763d63c5c248354291a14171b1194445493bc61e4",
+    "research/epic-62/foreign/source-inventory.jsonl": "26bfbeed49d269a7249868c02d059d0ea470f81bf0e8712b362909fd5d754979",
+    "research/epic-62/mexico-cac/candidates.jsonl": "fb8f0f79392b9ef4947bdf4e4a8fc43d5bcc72cd45ab1b4fd0f9fa70cf864afe",
+    "research/epic-62/mexico-cac/evidence.jsonl": "820a7e3716d9152419e2fef3ee7f7bb6a80f87917a33f8dd8e6da480f64a74d1",
+    "research/epic-62/mexico-cac/source-inventory.jsonl": "a800d1fb58eb81d35e510302c457d92216ac6a34ec43979df212e8666e1cdb20",
+    "research/epic-62/pilot/candidates.jsonl": "4e33eeea884536c32e9a9f1bb42c0bed1db76aa90489cea3fd914b958cb39332",
+    "research/epic-62/pilot/evidence.jsonl": "796a2c398e76dc5c84dc0c559ab09b2ccd2736316e9f71c94c3f7a69ce6fdd7a",
+    "research/epic-62/pilot/source-inventory.jsonl": "7c369c77456da1152728aac262473d95a0191fd1a0b8a5478ba8decc0cd386e2",
+    "research/epic-62/southern-cone/candidates.jsonl": "a0a84fdcbd8b1758e929000c68b8317c53e1ff6123c3f61b4375cc21c9536f5b",
+    "research/epic-62/southern-cone/evidence.jsonl": "97b3ba1bca2ac76b4614694bb9a625b3f91ce986106da3d81350d053af998876",
+    "research/epic-62/southern-cone/source-inventory.jsonl": "7057a7cb3af8406832893efaa6d18fa4ce4642a2deb9b6cb3610e21d5bf1a7cb"
+  },
+  "input_occurrences": 80,
+  "issue": 76,
+  "merged_duplicate_occurrences": 2,
+  "output_hashes": {
+    "candidates.jsonl": "d114887306d8fb26dea79918eebe60d8e63b9fa05709c49c316b0dffaf06f509",
+    "category-resolutions.json": "e05bd2c47251d19b992a52651af52b2f16e8b251392d7f23f5f19e3a583a545a",
+    "evidence.jsonl": "f19d50bdd33a5794499e7710f4bf88ed73dca7e7c1906fcc7fe0807f6df6894b",
+    "registry-index.json": "8bbe41f4c1077b03cce9a7d9bc1f43ad6b2728b1c23e84bf04292488cb516218",
+    "source-inventory.jsonl": "b27ab93f68a6a26ffcd7d96e4fd1b41ab790d23dad52684d814f1e75dff38994"
+  },
+  "queued_route_follow_ups": 12,
+  "schema_version": "1.0",
+  "status": "provisional",
+  "vehicle_resolutions": 22
+}
