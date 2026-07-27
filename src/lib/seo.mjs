@@ -1,4 +1,9 @@
-import { existsSync, readFileSync } from "node:fs";
+import {
+  existsSync,
+  readdirSync,
+  readFileSync,
+  statSync,
+} from "node:fs";
 import { join, resolve } from "node:path";
 import {
   hreflangUrls,
@@ -14,15 +19,29 @@ const entityDocument = JSON.parse(
   readFileSync(resolve(repositoryRoot, "data", "entities.json"), "utf8"),
 );
 
-function profileMetadata(sourceProfile) {
-  const source = readFileSync(join(repositoryRoot, sourceProfile), "utf8");
+function structuredMetadata(sourcePath) {
+  const source = readFileSync(join(repositoryRoot, sourcePath), "utf8");
   const frontmatter = source.match(
     /^---\s*\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/,
   )?.[1];
   if (!frontmatter) {
-    throw new Error(`Profile has no structured frontmatter: ${sourceProfile}`);
+    throw new Error(`Content has no structured frontmatter: ${sourcePath}`);
   }
   return JSON.parse(frontmatter);
+}
+
+function contentFiles(directory) {
+  if (!existsSync(directory)) {
+    return [];
+  }
+  return readdirSync(directory).flatMap((name) => {
+    const path = join(directory, name);
+    return statSync(path).isDirectory()
+      ? contentFiles(path)
+      : path.endsWith(".md")
+        ? [path]
+        : [];
+  });
 }
 
 const socialLocales = Object.freeze({
@@ -79,9 +98,31 @@ export function indexableRouteGroups() {
       alternates,
     };
   });
+  const editorialPages = contentFiles(
+    join(repositoryRoot, "research", "seo-geo", "content", "editorial"),
+  ).map((path) =>
+    structuredMetadata(path.slice(repositoryRoot.length + 1)),
+  );
+  const editorialGroups = [...new Set(editorialPages.map(({ slug }) => slug))]
+    .sort()
+    .map((slug) => {
+      const suffix = `/about/${slug}/`;
+      const availableLocales = locales.filter((locale) =>
+        editorialPages.some(
+          (page) => page.slug === slug && page.locale === locale,
+        ),
+      );
+      return {
+        suffix,
+        paths: availableLocales.map((locale) =>
+          localizedRoute(locale, suffix),
+        ),
+        alternates: hreflangUrls(suffix, availableLocales),
+      };
+    });
   const profileGroups = entityDocument.entities
     .map((entity) => {
-      const slug = profileMetadata(entity.source_profile).slug;
+      const slug = structuredMetadata(entity.source_profile).slug;
       const suffix = `/profiles/${slug}/`;
       const availableLocales = locales.filter((locale) => {
         if (locale === "en") {
@@ -106,7 +147,7 @@ export function indexableRouteGroups() {
     .sort(({ suffix: left }, { suffix: right }) =>
       left.localeCompare(right),
     );
-  return [...sharedGroups, ...profileGroups];
+  return [...sharedGroups, ...editorialGroups, ...profileGroups];
 }
 
 export function indexablePaths() {
@@ -121,8 +162,12 @@ function escapeXml(value) {
     .replaceAll(">", "&gt;");
 }
 
-export function sitemapXml() {
-  const entries = indexableRouteGroups().flatMap(({ paths, alternates }) =>
+export function sitemapXml(additionalRouteGroups = []) {
+  const routeGroups = [
+    ...indexableRouteGroups(),
+    ...additionalRouteGroups,
+  ];
+  const entries = routeGroups.flatMap(({ paths, alternates }) =>
     paths.map((path) => {
       const links = Object.entries(alternates)
         .map(

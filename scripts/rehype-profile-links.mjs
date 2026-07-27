@@ -14,5 +14,13 @@ function rewriteLinks(node) {
 }
 
 export function rehypeProfileLinks() {
-  return rewriteLinks;
+  return (tree, file) => {
+    const sourcePath = String(file.path ?? "").replaceAll("\\", "/");
+    if (
+      sourcePath.includes("/funds/") ||
+      sourcePath.includes("/ecosystem/")
+    ) {
+      rewriteLinks(tree);
+    }
+  };
 }

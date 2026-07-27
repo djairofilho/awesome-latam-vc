@@ -13,6 +13,8 @@ test("indexable route inventory includes profiles and curated landings", () => {
   assert.ok(paths.includes("/en/profiles/kaszek/"));
   assert.ok(paths.includes("/pt-br/categories/fund/"));
   assert.ok(paths.includes("/es/countries/br/"));
+  assert.ok(paths.includes("/en/about/methodology/"));
+  assert.ok(!paths.includes("/pt-br/about/methodology/"));
   assert.ok(!paths.includes("/pt-br/profiles/kaszek/"));
   for (const path of indexablePaths()) {
     assert.doesNotMatch(path, /[?#]/);
@@ -48,6 +50,30 @@ test("sitemap is multilingual, absolute and deterministic", () => {
       group.paths.length + (group.suffix === "/" ? 0 : 1),
     );
   }
+});
+
+test("sitemap includes editorial routes without inventing translations", () => {
+  const suffix = "/about/methodology/";
+  const editorialGroup = {
+    suffix,
+    paths: ["/en/about/methodology/"],
+    alternates: {
+      en: "https://djairofilho.github.io/awesome-latam-vc/en/about/methodology/",
+      "x-default":
+        "https://djairofilho.github.io/awesome-latam-vc/en/about/methodology/",
+    },
+  };
+  const sitemap = sitemapXml([editorialGroup]);
+
+  assert.match(
+    sitemap,
+    /<loc>https:\/\/djairofilho\.github\.io\/awesome-latam-vc\/en\/about\/methodology\/<\/loc>/,
+  );
+  assert.match(sitemap, /hreflang="en"/);
+  assert.doesNotMatch(
+    sitemap,
+    /hreflang="(?:pt-BR|es)" href="[^"]*\/about\/methodology\/"/,
+  );
 });
 
 test("robots advertises the only public sitemap", () => {

@@ -13,6 +13,11 @@ const source = z.looseObject({
   kind: z.string(),
 });
 
+const editorialReference = z.strictObject({
+  title: z.string().min(1),
+  url: z.url(),
+});
+
 const profiles = defineCollection({
   loader: glob({
     base: ".",
@@ -70,4 +75,31 @@ const profiles = defineCollection({
   }),
 });
 
-export const collections = { profiles };
+const editorialPages = defineCollection({
+  loader: glob({
+    base: "research/seo-geo/content/editorial",
+    pattern: "**/*.md",
+  }),
+  schema: z.strictObject({
+    schema_version: z.literal("1.0"),
+    id: z.string(),
+    slug: z.enum([
+      "methodology",
+      "inclusion",
+      "sources",
+      "updates",
+      "license",
+      "limitations",
+      "citation",
+    ]),
+    locale: z.enum(["en", "pt-BR", "es"]),
+    translation_of: z.string().nullable(),
+    translation_status: z.enum(["canonical", "complete", "needs_review"]),
+    title: z.string().min(1).max(80),
+    summary: z.string().min(1).max(240),
+    last_reviewed: z.string(),
+    references: z.array(editorialReference),
+  }),
+});
+
+export const collections = { profiles, editorialPages };

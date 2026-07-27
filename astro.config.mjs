@@ -8,6 +8,7 @@ export default defineConfig({
   trailingSlash: "always",
   markdown: {
     rehypePlugins: [rehypeProfileLinks],
+    syntaxHighlight: false,
   },
   build: {
     format: "directory",

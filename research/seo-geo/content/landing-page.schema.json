@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/seo-geo/content/landing-page.schema.json",
+  "title": "Factual catalog landing-page introduction",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "subject_type",
+    "subject_id",
+    "locale",
+    "title",
+    "summary",
+    "last_reviewed"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^landing:(country|category):[a-z0-9]+(?:-[a-z0-9]+)*:(en|pt-BR|es)$"
+    },
+    "subject_type": {
+      "enum": ["country", "category"]
+    },
+    "subject_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "locale": {
+      "enum": ["en", "pt-BR", "es"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

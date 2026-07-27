@@ -23,8 +23,8 @@ interface Props {
   canonicalPath?: string | null;
   locale?: Locale;
   routeSuffix?: string;
-  emitAlternates?: boolean;
   availableLocales?: Locale[];
+  emitAlternates?: boolean;
   noindex?: boolean;
   structuredData?: Array<Record<string, unknown> | null>;
 }
@@ -35,8 +35,8 @@ const {
   canonicalPath = Astro.url.pathname,
   locale,
   routeSuffix = "/",
-  emitAlternates = true,
   availableLocales,
+  emitAlternates = true,
   noindex = false,
   structuredData = [],
 } = Astro.props;
@@ -111,12 +111,23 @@ const openGraphLocaleAlternates = socialLocaleAlternates(locale ?? "en");
       <nav class="primary-navigation" aria-label={labels.primaryNavigation}>
         <a href={homeHref}>{labels.home}</a>
         <a href={catalogHref}>{labels.catalog}</a>
+        {
+          locale === "en" && (
+            <a href={localizedHref(locale, "/about/methodology/")}>
+              {labels.editorial}
+            </a>
+          )
+        }
         <a
           href="https://github.com/djairofilho/awesome-latam-vc"
           rel="external"
         >{labels.githubLabel} <span aria-hidden="true">↗</span></a>
       </nav>
-      <LanguageSwitcher currentLocale={locale} routeSuffix={routeSuffix} />
+      <LanguageSwitcher
+        currentLocale={locale}
+        routeSuffix={routeSuffix}
+        availableLocales={availableLocales}
+      />
     </header>
     <main id="main-content">
       <slot />

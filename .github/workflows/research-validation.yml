@@ -76,6 +76,9 @@ jobs:
       - name: Check final epic audits
         run: python research/epic-65/final-audit/audit.py --check
 
+      - name: Validate editorial content
+        run: python tools/seo_geo/validate_editorial.py
+
       - name: Validate locale routes and translation associations
         run: python tools/seo_geo/validate_i18n.py
 

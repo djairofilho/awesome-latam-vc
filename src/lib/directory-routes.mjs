@@ -57,6 +57,9 @@ export function profileHistoryUrl(sourcePath) {
 }
 
 export function profileMarkdownHref(href) {
+  if (/^[a-z][a-z+.-]*:/i.test(String(href)) || String(href).startsWith("/")) {
+    return href;
+  }
   const match = String(href).match(/([^/#]+)\.md(#[^#]*)?$/);
   if (!match) {
     return href;

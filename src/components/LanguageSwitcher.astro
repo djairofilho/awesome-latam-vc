@@ -10,9 +10,14 @@ import {
 interface Props {
   currentLocale?: Locale;
   routeSuffix?: string;
+  availableLocales?: Locale[];
 }
 
-const { currentLocale, routeSuffix = "/" } = Astro.props;
+const {
+  currentLocale,
+  routeSuffix = "/",
+  availableLocales = locales,
+} = Astro.props;
 const labels = strings(currentLocale ?? "en");
 ---
 
@@ -20,7 +25,7 @@ const labels = strings(currentLocale ?? "en");
   <span aria-hidden="true">A/文</span>
   <ul>
     {
-      locales.map((locale) => (
+      locales.filter((locale) => availableLocales.includes(locale)).map((locale) => (
         <li>
           <a
             href={localizedHref(locale, routeSuffix)}

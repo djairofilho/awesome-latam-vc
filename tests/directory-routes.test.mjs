@@ -55,7 +55,7 @@ test("profile Markdown links resolve to localized profile routes", () => {
     "../a-b-seed-ventures/#evidence",
   );
   assert.equal(
-    profileMarkdownHref("https://example.com/source"),
-    "https://example.com/source",
+    profileMarkdownHref("https://example.com/source.md"),
+    "https://example.com/source.md",
   );
 });
