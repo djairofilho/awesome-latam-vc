@@ -1,0 +1,91 @@
+{
+  "captable_checks": {
+    "eligible": true,
+    "has_cvm_evidence": true,
+    "has_regulatory_record": true,
+    "profile_hash_frozen": true,
+    "published_once": true,
+    "structured_founder_route": true
+  },
+  "checks": {
+    "all_candidate_evidence_resolves": true,
+    "all_candidates_decided": true,
+    "all_frozen_hashes_match": true,
+    "all_indexes_exact": true,
+    "all_official_evidence_urls_valid": true,
+    "all_tasks_closed": true,
+    "candidate_ids_unique": true,
+    "captable_revalidated": true,
+    "coverage_cells_complete": true,
+    "coverage_statuses_closed": true,
+    "deduplication_closed": true,
+    "eligible_published_exactly_once": true,
+    "incoming_routes_adjudicated": true,
+    "independent_review_complete": true,
+    "no_broken_index_links": true,
+    "no_high_divergence_open": true,
+    "noneligible_not_published": true,
+    "outgoing_routes_resolved": true,
+    "publication_paths_unique": true,
+    "utf8_clean": true
+  },
+  "cutoff_date": "2026-07-27",
+  "failures": {
+    "batch_hash": [],
+    "broken_index_links": [],
+    "consolidation_output_hashes": [],
+    "encoding": [],
+    "input_hashes": [],
+    "invalid_official_urls": [],
+    "missing_evidence": [],
+    "mojibake": [],
+    "publication_index_hashes": [],
+    "publication_profile_hashes": [],
+    "publication_source_hashes": []
+  },
+  "issue": 96,
+  "limitations": [
+    "A auditoria comprova a consistência do snapshot congelado em 2026-07-27; alterações externas posteriores exigem nova coleta.",
+    "Células sem fonte vigente permanecem fechadas apenas quando o artefato registra gap justificado, owner e próxima ação.",
+    "Dezoito candidatos seguem como insufficient_evidence e não foram publicados; isso é uma decisão explícita, não ausência de destino."
+  ],
+  "metrics": {
+    "candidates": 39,
+    "countries": 20,
+    "coverage_cells": 80,
+    "coverage_statuses": {
+      "complete": 55,
+      "gap_justified": 25
+    },
+    "decision_counts": {
+      "eligible": 9,
+      "excluded": 4,
+      "inactive": 2,
+      "insufficient_evidence": 18,
+      "other_category": 6
+    },
+    "eligible": 9,
+    "incoming_category_transfers": 3,
+    "independent_review_records": 29,
+    "indexes": 5,
+    "not_published": 30,
+    "official_evidence_records": 63,
+    "outgoing_category_transfers": 6,
+    "profiles": 9,
+    "published": 9,
+    "task_statuses": {
+      "blocked": 35,
+      "done": 58
+    },
+    "tasks": 93
+  },
+  "parent_epic": 64,
+  "schema_version": "1.0",
+  "severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "low": 0,
+    "medium": 0
+  },
+  "status": "passed"
+}

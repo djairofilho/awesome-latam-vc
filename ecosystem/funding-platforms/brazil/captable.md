@@ -1,21 +1,40 @@
 # Captable
 
-- **Type:** Investment platform offering equity crowdfunding, private
-  fundraising, matchmaking, and debt operations
-- **Website:** https://captable.com.br/
+<!-- platform-id: plat-captable -->
+
+- **Type:** Funding platform
+- **Operator:** Captable Consultoria em Gestão Empresarial S/A (`op-captable`)
+- **Operator jurisdiction:** BR
+- **Operator website:** [https://captable.com.br/](https://captable.com.br/)
+- **Brand:** Captable (`brand-captable`)
+- **Aliases:** None recorded
+- **Platform:** Captable (`plat-captable`)
+- **Website:** [captable.com.br](https://captable.com.br/)
+- **Founder route:** [Start a fundraising process](https://captable.com.br/quero-captar)
 - **Geography:** Brazil
-- **Founder route:** https://captable.com.br/quero-captar
+- **Activity:** Open; last official activity on 2026-07-27
 
-Captable structures public and private fundraising for startups and other
-companies. Its founder page describes equity crowdfunding regulated by the
-Brazilian securities regulator, private introductions to investors, institutional
-matchmaking, and debt products. Companies are evaluated before an offering is
-made available; eligibility and terms depend on the specific operation.
+The platform provides a structured route for founders using these instruments:
+convertible instruments, debt crowdfunding, investor matching. It is listed as an
+intermediary, not as a venture capital fund or as a temporary offer.
 
-## Sources
+## Products
 
-- [Captable platform and investment process](https://captable.com.br/)
-- [Fundraising formats and founder application](https://captable.com.br/quero-captar)
-- [Captable educational material](https://captable.com.br/material-didatico)
+| Product | Instrument | Status | Product ID |
+| --- | --- | --- | --- |
+| Crowdfunding para startups | Convertible instruments | Active | `prod-captable-startups` |
+| Operações de dívida | Debt crowdfunding | Active | `prod-captable-debt` |
+| Matchmaking | Investor matching | Active | `prod-captable-matching` |
 
-**Last verified:** 2026-07-26
+## Regulation
+
+| Authority | Jurisdiction | Status | Registration | Record ID |
+| --- | --- | --- | --- | --- |
+| Comissão de Valores Mobiliários | BR | Registered | Not disclosed | `reg-captable-cvm` |
+
+## Official sources
+
+- [Cadastro de plataformas de crowdfunding — Comissão de Valores Mobiliários](https://dados.cvm.gov.br/dados/CROWDFUNDING/CAD/DADOS/cad_crowdfunding.zip) (official regulator, accessed 2026-07-27)
+- [Quero captar - Captable — Captable](https://captable.com.br/quero-captar) (official platform, accessed 2026-07-27)
+
+**Last verified:** 2026-07-27
