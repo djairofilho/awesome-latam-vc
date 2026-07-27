@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:dux-capital:en",
+  "entity_id": "fund:dux-capital",
+  "slug": "dux-capital",
+  "name": "Dux Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Dux Capital is a United States-based venture capital firm with offices in Austin and Mexico City, focused on underrepresented and cross-border founders.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "US"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology",
+    "underrepresented_founders"
+  ],
+  "official_website": "https://duxcapital.vc/",
+  "founder_route": "https://duxcapital.vc/contact/",
+  "sources": [
+    {
+      "title": "Official thesis, offices, and funds",
+      "url": "https://duxcapital.vc/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Official founder contact route",
+      "url": "https://duxcapital.vc/contact/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Dux Capital"
+  ]
+}
+---
 # Dux Capital
 
 Dux Capital is a United States-based venture capital firm with offices in Austin

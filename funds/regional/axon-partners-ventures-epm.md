@@ -1,3 +1,66 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:axon-partners-ventures-epm:en",
+  "entity_id": "fund:axon-partners-ventures-epm",
+  "slug": "axon-partners-ventures-epm",
+  "name": "Ventures EPM",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Ventures EPM is Grupo EPM's corporate venture program.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "CO",
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "public_service_technology"
+  ],
+  "official_website": "https://www.epm.com.co/institucional/innovacion/programa-ventures-epm/",
+  "founder_route": "https://www.epm.com.co/institucional/innovacion/ventures-epm/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.epm.com.co/content/dam/epm/institucional/sala-de-prensa-epm/noticias-y-novedades/noticias-y-novedades/batx-la-nueva-startup-que-ingresa-a-ventures-epm/VenturesEPM-PortafolioEmpresasInvertidas.pdf",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Ventures EPM program",
+      "url": "https://www.epm.com.co/institucional/innovacion/programa-ventures-epm/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund II investment profile",
+      "url": "https://www.epm.com.co/institucional/innovacion/programa-ventures-epm/fondo-de-capital-privado-ii/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Current fund manager and program history",
+      "url": "https://www.epm.com.co/institucional/sala-de-prensa/noticias-y-novedades/batx-startup-se-une-a-ventures-epm",
+      "kind": "official_website"
+    },
+    {
+      "title": "Program contacts",
+      "url": "https://www.epm.com.co/institucional/innovacion/ventures-epm/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Ventures EPM"
+  ]
+}
+---
 # Ventures EPM
 
 Ventures EPM is Grupo EPM's corporate venture program. Its active private

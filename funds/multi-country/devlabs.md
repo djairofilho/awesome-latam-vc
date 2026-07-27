@@ -1,3 +1,47 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:devlabs:en",
+  "entity_id": "fund:devlabs",
+  "slug": "devlabs",
+  "name": "devlabs",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "devlabs is an investment organization focused on Globally scalable software in Latin America and the United States.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM",
+    "US"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "globally_scalable_software"
+  ],
+  "official_website": "https://devlabs.vc/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://devlabs.vc/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "devlabs"
+  ]
+}
+---
 # devlabs
 
 devlabs is an investment organization focused on Globally scalable software in Latin America and the United States.

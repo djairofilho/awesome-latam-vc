@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:500-latam:en",
+  "entity_id": "accelerator:500-latam",
+  "slug": "500-latam",
+  "name": "500 LatAm Accelerator",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "500 LatAm Accelerator is a structured acceleration program operated by 500 Global.",
+  "aliases": [],
+  "operator": "500 Global",
+  "base_geography": {
+    "kind": "country",
+    "code": "MX"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://latam.aplica.500.co/es/programa",
+  "founder_route": "https://latam.aplica.500.co/es/programa",
+  "sources": [
+    {
+      "title": "500 LatAm Accelerator",
+      "url": "https://latam.aplica.500.co/es/programa",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "500 LatAm Accelerator"
+  ]
+}
+---
 # 500 LatAm Accelerator
 
 - **Website:** https://latam.aplica.500.co/es/programa

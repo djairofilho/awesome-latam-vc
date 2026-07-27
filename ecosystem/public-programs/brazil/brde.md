@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:brde:en",
+  "entity_id": "public_program:brde",
+  "slug": "brde",
+  "name": "Banco Regional de Desenvolvimento do Extremo Sul",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "O banco público opera a sétima edição de uma rota recorrente para startups.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://brde.com.br/",
+  "founder_route": "https://brde.com.br/noticia/brde-labs-rs-2026-esta-com-inscricoes-abertas/",
+  "sources": [
+    {
+      "title": "BRDE Labs RS 2026",
+      "url": "https://brde.com.br/noticia/brde-labs-rs-2026-esta-com-inscricoes-abertas/",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Banco Regional de Desenvolvimento do Extremo Sul"
+  ]
+}
+---
 # Banco Regional de Desenvolvimento do Extremo Sul
 
 - **Entity ID:** `agency-brde`

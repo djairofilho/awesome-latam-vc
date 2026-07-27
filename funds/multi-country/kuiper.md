@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:kuiper:en",
+  "entity_id": "fund:kuiper",
+  "slug": "kuiper",
+  "name": "Kuiper",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Kuiper is an investment organization focused on Technology in Latin America and the United States.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM",
+    "US"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.kuipervc.com/",
+  "founder_route": "https://www.kuipervc.com/contacto",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.kuipervc.com/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://www.kuipervc.com/contacto",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Kuiper"
+  ]
+}
+---
 # Kuiper
 
 Kuiper is an investment organization focused on Technology in Latin America and the United States.

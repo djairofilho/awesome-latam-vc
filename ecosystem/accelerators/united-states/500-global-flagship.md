@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:500-global-flagship:en",
+  "entity_id": "accelerator:500-global-flagship",
+  "slug": "500-global-flagship",
+  "name": "500 Global Flagship Accelerator",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "500 Global Flagship Accelerator is a structured acceleration program operated by 500 Global.",
+  "aliases": [],
+  "operator": "500 Global",
+  "base_geography": {
+    "kind": "country",
+    "code": "US"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://500.co/founders/flagship",
+  "founder_route": "https://500.co/founders/flagship",
+  "sources": [
+    {
+      "title": "500 Global Flagship Accelerator",
+      "url": "https://500.co/founders/flagship",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "500 Global Flagship Accelerator"
+  ]
+}
+---
 # 500 Global Flagship Accelerator
 
 - **Website:** https://500.co/founders/flagship

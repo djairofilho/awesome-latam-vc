@@ -1,3 +1,57 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:vivo-ventures:en",
+  "entity_id": "fund:vivo-ventures",
+  "slug": "vivo-ventures",
+  "name": "Vivo Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Vivo Ventures is Vivo's corporate venture capital vehicle for later-stage strategic investments and is managed in coordination with Wayra Brasil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "series_a",
+    "series_b",
+    "growth"
+  ],
+  "focuses": [
+    "education",
+    "energy",
+    "health",
+    "financial_services",
+    "smart_home",
+    "entertainment"
+  ],
+  "official_website": "https://www.telefonica.com.br/inovacao",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Vivo innovation, Wayra, and Vivo Ventures",
+      "url": "https://www.telefonica.com.br/inovacao",
+      "kind": "official_website"
+    },
+    {
+      "title": "Vivo 2025 results and venture activity",
+      "url": "https://www.telefonica.com.br/noticias/2026/fevereiro/lucro-da-vivo-em-2025",
+      "kind": "official_activity"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Vivo Ventures"
+  ]
+}
+---
 # Vivo Ventures
 
 Vivo Ventures is Vivo's corporate venture capital vehicle for later-stage

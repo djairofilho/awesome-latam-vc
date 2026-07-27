@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:chile-ventures:en",
+  "entity_id": "fund:chile-ventures",
+  "slug": "chile-ventures",
+  "name": "Chile Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Chile Ventures is a Chile-based venture capital firm that invests in recurring-revenue technology startups serving Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "CL",
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology_startups_with_recurring_revenue_through_saas",
+    "subscriptions",
+    "or_licenses"
+  ],
+  "official_website": "https://chileventures.vc/en",
+  "founder_route": "https://chileventures.vc/en",
+  "sources": [
+    {
+      "title": "Chile Ventures portfolio, process, and application",
+      "url": "https://chileventures.vc/en",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Chile Ventures"
+  ]
+}
+---
 # Chile Ventures
 
 Chile Ventures is a Chile-based venture capital firm that invests in recurring-revenue technology startups serving Latin America.

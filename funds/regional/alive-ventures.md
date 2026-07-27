@@ -1,3 +1,64 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:alive-ventures:en",
+  "entity_id": "fund:alive-ventures",
+  "slug": "alive-ventures",
+  "name": "ALIVE Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "ALIVE Ventures is an investment organization focused on Impact technology and economic inclusion in Colombia, Peru, and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "CO",
+    "LATAM",
+    "PE"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "impact_technology",
+    "economic_inclusion"
+  ],
+  "official_website": "https://www.alive-ventures.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.alive-ventures.com/#Portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.alive-ventures.com/",
+      "kind": "official_website"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://www.alive-ventures.com/about",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.alive-ventures.com/post/alive-invests-in-aviva-to-expand-credit-access-for-underserved-micro-entrepreneurs-across-mexico",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "ALIVE Ventures"
+  ]
+}
+---
 # ALIVE Ventures
 
 ALIVE Ventures is an investment organization focused on Impact technology and economic inclusion in Colombia, Peru, and Latin America.

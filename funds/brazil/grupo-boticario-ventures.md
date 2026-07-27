@@ -1,3 +1,63 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:grupo-boticario-ventures:en",
+  "entity_id": "fund:grupo-boticario-ventures",
+  "slug": "grupo-boticario-ventures",
+  "name": "Grupo Boticário Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Grupo Boticário Ventures is Grupo Boticário's corporate venture unit for beauty and retail innovation.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR",
+    "GLOBAL"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "beauty",
+    "retail"
+  ],
+  "official_website": "https://ventures.grupoboticario.com.br/",
+  "founder_route": "https://ventures.grupoboticario.com.br/investimento",
+  "sources": [
+    {
+      "title": "Corporate venture initiatives and official investment count",
+      "url": "https://ventures.grupoboticario.com.br/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Investment criteria, portfolio, and application",
+      "url": "https://ventures.grupoboticario.com.br/investimento",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official CVC announcement, stage, ticket, and thesis",
+      "url": "https://www.grupoboticario.com.br/midia/grupo-boticario-investe-100-milhoes-startups/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Startup connection and investment form",
+      "url": "https://ventures.grupoboticario.com.br/conecte-se-conosco",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Grupo Boticário Ventures"
+  ]
+}
+---
 # Grupo Boticário Ventures
 
 Grupo Boticário Ventures is Grupo Boticário's corporate venture unit for

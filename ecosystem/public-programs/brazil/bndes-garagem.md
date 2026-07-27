@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:bndes-garagem:en",
+  "entity_id": "public_program:bndes-garagem",
+  "slug": "bndes-garagem",
+  "name": "BNDES Garagem",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "A página oficial prevê cem negócios por ano até 2028 e distribui R$ 915 mil em premiações no ciclo.",
+  "aliases": [],
+  "operator": "[Banco Nacional de Desenvolvimento Econômico e Social](bndes.md) (`agency-bndes`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://garagem.bndes.gov.br/",
+  "founder_route": "https://garagem.bndes.gov.br/",
+  "sources": [
+    {
+      "title": "BNDES Garagem",
+      "url": "https://garagem.bndes.gov.br/",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "BNDES Garagem"
+  ]
+}
+---
 # BNDES Garagem
 
 - **Entity ID:** `program-bndes-garagem`

@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:ema-ventures:en",
+  "entity_id": "fund:ema-ventures",
+  "slug": "ema-ventures",
+  "name": "EMA Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "EMA Ventures is an investment organization focused on Technology and women-led companies in Spanish-speaking Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology",
+    "women_led_companies"
+  ],
+  "official_website": "https://ema.ventures/",
+  "founder_route": "https://ema.ventures/get-funded/",
+  "sources": [
+    {
+      "title": "Official thesis and team",
+      "url": "https://ema.ventures/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Official founder application",
+      "url": "https://ema.ventures/get-funded/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "EMA Ventures"
+  ]
+}
+---
 # EMA Ventures
 
 EMA Ventures is an investment organization focused on Technology and women-led companies in Spanish-speaking Latin America.

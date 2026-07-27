@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:salkantay-ventures:en",
+  "entity_id": "fund:salkantay-ventures",
+  "slug": "salkantay-ventures",
+  "name": "Salkantay Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Salkantay Ventures is an early-stage fund backing technology companies that address social, economic, and environmental challenges in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "impact_technology"
+  ],
+  "official_website": "https://www.salkantay.vc/",
+  "founder_route": "https://www.salkantay.vc/contact",
+  "sources": [
+    {
+      "title": "Salkantay thesis and portfolio",
+      "url": "https://www.salkantay.vc/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Startup submission and contact",
+      "url": "https://www.salkantay.vc/contact",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-25",
+  "protected_terms": [
+    "Salkantay Ventures"
+  ]
+}
+---
 # Salkantay Ventures
 
 Salkantay Ventures is an early-stage fund backing technology companies that

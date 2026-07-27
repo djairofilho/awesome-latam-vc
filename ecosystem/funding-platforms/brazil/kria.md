@@ -1,3 +1,50 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "funding_platform:kria:en",
+  "entity_id": "funding_platform:kria",
+  "slug": "kria",
+  "name": "Kria",
+  "entity_type": "funding_platform",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "The platform provides a structured route for founders using these instruments: equity crowdfunding, debt crowdfunding.",
+  "aliases": [],
+  "operator": "KRIA INVESTIMENTOS LTDA. (`op-kria`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://www.kria.vc/",
+  "founder_route": "https://www.kria.vc/quero-captar",
+  "sources": [
+    {
+      "title": "Cadastro de plataformas de crowdfunding — Comissão de Valores Mobiliários",
+      "url": "https://dados.cvm.gov.br/dados/CROWDFUNDING/CAD/DADOS/cad_crowdfunding.zip",
+      "kind": "official_regulator"
+    },
+    {
+      "title": "Quero Captar - Kria — Kria",
+      "url": "https://www.kria.vc/quero-captar",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Kria"
+  ]
+}
+---
 # Kria
 
 <!-- platform-id: plat-kria -->

@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:itau-ventures:en",
+  "entity_id": "fund:itau-ventures",
+  "slug": "itau-ventures",
+  "name": "Itaú Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Itaú Ventures is Itaú Unibanco's corporate venture capital fund for strategic innovation in financial services and adjacent technologies.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "BR",
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "financial_services",
+    "adjacent_technologies"
+  ],
+  "official_website": "https://www.itau.com.br/ventures",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Investment thesis and official portfolio",
+      "url": "https://www.itau.com.br/ventures",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Official launch, fund size, geography, and initial ticket",
+      "url": "https://www.itau.com.br/relacoes-com-investidores/noticias/itau-unibanco-lanca-itau-ventures-seu-novo-fundo-de-corporate-venture-capital/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Itaú Ventures"
+  ]
+}
+---
 # Itaú Ventures
 
 Itaú Ventures is Itaú Unibanco's corporate venture capital fund for strategic

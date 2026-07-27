@@ -1,3 +1,62 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:vox-capital:en",
+  "entity_id": "fund:vox-capital",
+  "slug": "vox-capital",
+  "name": "Vox Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Vox Capital is a Brazilian impact-investment manager backing technology companies that combine scalable growth with measurable social or environmental outcomes.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "seed",
+    "series_a",
+    "series_b"
+  ],
+  "focuses": [
+    "impact_technology"
+  ],
+  "official_website": "https://novo.voxcapital.com.br/",
+  "founder_route": "https://us-dealflow.edda.co/form/form-widget/embed/JHCd0OfYurL3mBrBzhsV/vox_capital",
+  "sources": [
+    {
+      "title": "Vox venture capital strategy",
+      "url": "https://novo.voxcapital.com.br/venture-capital/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Official portfolio",
+      "url": "https://novo.voxcapital.com.br/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Impact thesis",
+      "url": "https://novo.voxcapital.com.br/impacto/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Startup submission",
+      "url": "https://us-dealflow.edda.co/form/form-widget/embed/JHCd0OfYurL3mBrBzhsV/vox_capital",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-25",
+  "protected_terms": [
+    "Vox Capital"
+  ]
+}
+---
 # Vox Capital
 
 Vox Capital is a Brazilian impact-investment manager backing technology

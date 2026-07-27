@@ -199,6 +199,37 @@ def git_file_text(root: Path, base_ref: str, relative_path: str) -> str | None:
     return result.stdout if result.returncode == 0 else None
 
 
+def markdown_body(text: str) -> str:
+    """Return Markdown content without JSON/YAML front matter."""
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    lines = normalized.splitlines(keepends=True)
+    if not lines or lines[0].strip() != "---":
+        return normalized
+    closing_index = next(
+        (
+            index
+            for index, line in enumerate(lines[1:], start=1)
+            if line.strip() == "---"
+        ),
+        None,
+    )
+    if closing_index is None:
+        return normalized
+    return "".join(lines[closing_index + 1 :]).lstrip("\n")
+
+
+def profile_body_changed(root: Path, base_ref: str, relative_path: str) -> bool:
+    """Return whether a profile's Markdown body differs from the base revision."""
+    base_text = git_file_text(root, base_ref, relative_path)
+    if base_text is None:
+        return True
+    try:
+        current_text = read_utf8(root / relative_path)
+    except (OSError, ValueError):
+        return True
+    return markdown_body(current_text) != markdown_body(base_text)
+
+
 def validate_profile(path: Path, display_path: str) -> list[str]:
     errors: list[str] = []
     try:
@@ -351,7 +382,12 @@ def validate_repository(root: Path, base_ref: str) -> list[str]:
         if is_fund_profile_path(path) and (root / path).exists()
     )
     for relative_path in changed_profiles:
-        errors.extend(validate_profile(root / relative_path, relative_path))
+        if relative_path in added or profile_body_changed(
+            root,
+            base_ref,
+            relative_path,
+        ):
+            errors.extend(validate_profile(root / relative_path, relative_path))
 
     added_accelerators = sorted(
         path for path in added if is_accelerator_profile_path(path)

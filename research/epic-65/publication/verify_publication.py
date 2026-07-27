@@ -64,7 +64,16 @@ def canonical_hash(value: object) -> str:
 
 
 def normalized_hash(path: Path) -> str:
-    payload = path.read_bytes().replace(b"\r\n", b"\n")
+    payload = path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def profile_hash(path: Path) -> str:
+    payload = path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    if payload.startswith(b"---\n"):
+        closing = payload.find(b"\n---\n", 4)
+        if closing != -1:
+            payload = payload[closing + 5 :].lstrip(b"\n")
     return hashlib.sha256(payload).hexdigest()
 
 
@@ -268,7 +277,7 @@ def validate(root: Path = ROOT) -> list[str]:
             errors.append(f"hash de entrada inválido: {name}")
     for path_text, digest in manifest["profile_hashes"].items():
         path = root / path_text
-        if not path.is_file() or normalized_hash(path) != digest:
+        if not path.is_file() or profile_hash(path) != digest:
             errors.append(f"hash de perfil inválido: {path_text}")
     if normalized_hash(catalog / "README.md") != manifest["index_hash"]:
         errors.append("hash do índice inválido")

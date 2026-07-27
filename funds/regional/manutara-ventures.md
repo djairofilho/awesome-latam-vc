@@ -1,3 +1,62 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:manutara-ventures:en",
+  "entity_id": "fund:manutara-ventures",
+  "slug": "manutara-ventures",
+  "name": "Manutara Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Manutara Ventures is an investment organization focused on Technology in Chile and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "CL",
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://manutaraventures.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://manutaraventures.com/companies",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://manutaraventures.com/companies/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://manutaraventures.com/about/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://manutaraventures.com/portfolio-item/sabe/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Manutara Ventures"
+  ]
+}
+---
 # Manutara Ventures
 
 Manutara Ventures is an investment organization focused on Technology in Chile and Latin America.

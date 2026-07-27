@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:fapesp-pipe:en",
+  "entity_id": "public_program:fapesp-pipe",
+  "slug": "fapesp-pipe",
+  "name": "Pesquisa Inovativa em Pequenas Empresas",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "A FAPESP informa que recebe propostas PIPE Fase 1, Fase 2 e PIPE Invest em fluxo contínuo ao longo do ano e divulga limites de até R$ 300 mil e R$ 1,5 milhão conforme a fase.",
+  "aliases": [
+    "PIPE"
+  ],
+  "operator": "[Fundação de Amparo à Pesquisa do Estado de São Paulo](fapesp.md) (`agency-fapesp`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://fapesp.br/pipe/",
+  "founder_route": "https://fapesp.br/pipe/faq",
+  "sources": [
+    {
+      "title": "Perguntas frequentes - PIPE",
+      "url": "https://fapesp.br/pipe/faq",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Pesquisa Inovativa em Pequenas Empresas"
+  ]
+}
+---
 # Pesquisa Inovativa em Pequenas Empresas
 
 - **Entity ID:** `program-fapesp-pipe`

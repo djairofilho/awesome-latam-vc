@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:spectra-investimentos:en",
+  "entity_id": "fund:spectra-investimentos",
+  "slug": "spectra-investimentos",
+  "name": "Spectra Investimentos",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Spectra Investimentos is a Latin American alternative-investment manager that invests through primary fund commitments, co-investments, and secondary transactions.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "BR",
+    "LATAM"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "alternative_investments",
+    "venture_capital"
+  ],
+  "official_website": "https://spectrainvest.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Official investment model and strategies",
+      "url": "https://spectrainvest.com/en/home/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Official Portuguese website",
+      "url": "https://spectrainvest.com/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Spectra Investimentos"
+  ]
+}
+---
 # Spectra Investimentos
 
 Spectra Investimentos is a Latin American alternative-investment manager that

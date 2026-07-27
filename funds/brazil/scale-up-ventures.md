@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:scale-up-ventures:en",
+  "entity_id": "fund:scale-up-ventures",
+  "slug": "scale-up-ventures",
+  "name": "Scale-Up Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Scale-Up Ventures is an investment organization focused on Endeavor network companies in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "endeavor_network_companies"
+  ],
+  "official_website": "https://endeavor.org.br/scale-up-ventures",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://endeavor.org.br/scale-up-ventures",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Scale-Up Ventures"
+  ]
+}
+---
 # Scale-Up Ventures
 
 Scale-Up Ventures is an investment organization focused on Endeavor network companies in Brazil.

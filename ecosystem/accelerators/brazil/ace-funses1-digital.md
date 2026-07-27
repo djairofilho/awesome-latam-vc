@@ -1,3 +1,47 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:ace-funses1-digital:en",
+  "entity_id": "accelerator:ace-funses1-digital",
+  "slug": "ace-funses1-digital",
+  "name": "Aceleração Digital FUNSES1",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Aceleração Digital FUNSES1 is a structured acceleration program operated by ACE Ventures.",
+  "aliases": [
+    "FUNSES1"
+  ],
+  "operator": "ACE Ventures",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://aceventures.com.br/aceleracao-digital/",
+  "founder_route": "https://aceventures.com.br/aceleracao-digital/",
+  "sources": [
+    {
+      "title": "Aceleração Digital FUNSES1",
+      "url": "https://aceventures.com.br/aceleracao-digital/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Aceleração Digital FUNSES1"
+  ]
+}
+---
 # Aceleração Digital FUNSES1
 
 - **Website:** https://aceventures.com.br/aceleracao-digital/

@@ -1,3 +1,56 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:dgf-investimentos:en",
+  "entity_id": "fund:dgf-investimentos",
+  "slug": "dgf-investimentos",
+  "name": "DGF Investimentos",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "DGF Investimentos is an investment organization focused on High-growth technology companies in Brazil and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "BR",
+    "LATAM"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "high_growth_technology_companies"
+  ],
+  "official_website": "https://www.dgf.com.br/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.dgf.com.br/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://www.dgf.com.br/about-us",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://www.dgf.com.br/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "DGF Investimentos"
+  ]
+}
+---
 # DGF Investimentos
 
 DGF Investimentos is an investment organization focused on High-growth technology companies in Brazil and Latin America.

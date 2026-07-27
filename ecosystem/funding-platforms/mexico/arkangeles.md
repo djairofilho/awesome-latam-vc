@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "funding_platform:arkangeles:en",
+  "entity_id": "funding_platform:arkangeles",
+  "slug": "arkangeles",
+  "name": "Arkangeles",
+  "entity_type": "funding_platform",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "The platform provides a structured route for founders using these instruments: equity crowdfunding.",
+  "aliases": [],
+  "operator": "ANGELES EN ARK, S.A.P.I. DE C.V., Institución de Financiamiento Colectivo (`op-angeles-en-ark`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "MX"
+  },
+  "countries_covered": [
+    "CO",
+    "MX"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://arkangeles.com/",
+  "founder_route": "https://arkangeles.com/",
+  "sources": [
+    {
+      "title": "Arkangeles — Invierte en startups de Latinoamérica — Arkangeles",
+      "url": "https://arkangeles.com/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Instituciones de Financiamiento Colectivo — Comisión Nacional Bancaria y de Valores",
+      "url": "https://www.cnbv.gob.mx/Entidades-Autorizadas/Paginas/FinanciamientoColectivo.aspx",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Arkangeles"
+  ]
+}
+---
 # Arkangeles
 
 <!-- platform-id: plat-arkangeles -->

@@ -1,3 +1,52 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:ignia:en",
+  "entity_id": "fund:ignia",
+  "slug": "ignia",
+  "name": "IGNIA",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "IGNIA is an investment organization focused on Technology and inclusive growth in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "technology",
+    "inclusive_growth"
+  ],
+  "official_website": "https://www.ignia.vc/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.ignia.vc/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://www.ignia.vc/about",
+      "kind": "official_thesis"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "IGNIA"
+  ]
+}
+---
 # IGNIA
 
 IGNIA is an investment organization focused on Technology and inclusive growth in Latin America.

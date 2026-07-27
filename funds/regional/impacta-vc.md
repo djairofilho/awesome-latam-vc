@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:impacta-vc:en",
+  "entity_id": "fund:impacta-vc",
+  "slug": "impacta-vc",
+  "name": "Impacta VC",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Impacta VC is a Chile-based venture capital firm backing impact-driven founders across Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed"
+  ],
+  "focuses": [
+    "social",
+    "environmental_impact"
+  ],
+  "official_website": "https://www.impacta.vc/",
+  "founder_route": "https://www.impacta.vc/",
+  "sources": [
+    {
+      "title": "Impacta VC investment profile, portfolio, and application",
+      "url": "https://www.impacta.vc/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Impacta VC"
+  ]
+}
+---
 # Impacta VC
 
 Impacta VC is a Chile-based venture capital firm backing impact-driven founders across Latin America.

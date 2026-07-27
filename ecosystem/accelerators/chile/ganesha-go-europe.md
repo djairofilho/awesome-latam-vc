@@ -1,3 +1,53 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:ganesha-go-europe:en",
+  "entity_id": "accelerator:ganesha-go-europe",
+  "slug": "ganesha-go-europe",
+  "name": "The Ganesha Lab, Go Europe Connect",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "The Ganesha Lab, Go Europe Connect is a structured acceleration program operated by The Ganesha Lab.",
+  "aliases": [
+    "The Ganesha Lab",
+    "Go Europe Connect 2026"
+  ],
+  "operator": "The Ganesha Lab",
+  "base_geography": {
+    "kind": "country",
+    "code": "CL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://theganeshalab.com/go-europe-connect-2026/",
+  "founder_route": "https://forms.office.com/pages/responsepage.aspx?id=1bCPJMkQPUitABqAub20sthbAhhbSulAjPd-GERpdGBUN1oxWlg2U0dTRDhHRlVLQUVBOFhaVFJWWCQlQCN0PWcu&lang=en-US&route=shorturl",
+  "sources": [
+    {
+      "title": "Our programs",
+      "url": "https://theganeshalab.com/programs/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Go Europe Connect 2026",
+      "url": "https://theganeshalab.com/go-europe-connect-2026/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "The Ganesha Lab, Go Europe Connect"
+  ]
+}
+---
 # The Ganesha Lab, Go Europe Connect
 
 - **Website:** https://theganeshalab.com/go-europe-connect-2026/

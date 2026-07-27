@@ -1,3 +1,60 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:redpoint-eventures:en",
+  "entity_id": "fund:redpoint-eventures",
+  "slug": "redpoint-eventures",
+  "name": "Redpoint eventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Redpoint eventures is an investment organization focused on Technology in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://rpev.com.br/",
+  "founder_route": "https://rpev.com.br/contact/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://rpev.com.br/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://rpev.com.br/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://rpev.com.br/contact/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://rpev.com.br/portfolio/?lang=pt-br",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Redpoint eventures"
+  ]
+}
+---
 # Redpoint eventures
 
 Redpoint eventures is an investment organization focused on Technology in Brazil.

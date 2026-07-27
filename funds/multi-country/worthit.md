@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:worthit:en",
+  "entity_id": "fund:worthit",
+  "slug": "worthit",
+  "name": "Worthit",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Worthit is an investment organization focused on B2B SaaS and AI in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed"
+  ],
+  "focuses": [
+    "b2b_saas",
+    "ai"
+  ],
+  "official_website": "https://www.worthit.vc/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://www.worthit.vc/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Worthit"
+  ]
+}
+---
 # Worthit
 
 Worthit is an investment organization focused on B2B SaaS and AI in Latin America.

@@ -1,3 +1,64 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:bossa-invest-bossanova:en",
+  "entity_id": "fund:bossa-invest-bossanova",
+  "slug": "bossa-invest-bossanova",
+  "name": "Bossa Invest (Bossanova)",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Bossa Invest (Bossanova) is an investment organization focused on B2B and B2B2C technology in Brazil.",
+  "aliases": [
+    "Bossanova"
+  ],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "b2b",
+    "b2b2c_technology"
+  ],
+  "official_website": "https://bossainvest.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://bossainvest.com/quem-somos",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://bossainvest.com/quem-somos/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://bossainvest.com/investir-agora/",
+      "kind": "official_website"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://bossainvest.com/receber-investimento/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Bossa Invest (Bossanova)"
+  ]
+}
+---
 # Bossa Invest (Bossanova)
 
 Bossa Invest (Bossanova) is an investment organization focused on B2B and B2B2C technology in Brazil.

@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:start-up-chile:en",
+  "entity_id": "public_program:start-up-chile",
+  "slug": "start-up-chile",
+  "name": "Start-Up Chile",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "A nova geração BIG 12 foi anunciada em julho de 2026 após nova seleção internacional.",
+  "aliases": [],
+  "operator": "[Corporación de Fomento de la Producción](corfo.md) (`agency-corfo`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "CL"
+  },
+  "countries_covered": [
+    "CL"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://startupchile.org/en/apply/",
+  "founder_route": "https://startupchile.org/en/apply/",
+  "sources": [
+    {
+      "title": "BIG 12: get to know the new batch",
+      "url": "https://startupchile.org/en/blog/big-12-get-to-know-the-new-batch/",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Start-Up Chile"
+  ]
+}
+---
 # Start-Up Chile
 
 - **Entity ID:** `program-start-up-chile`

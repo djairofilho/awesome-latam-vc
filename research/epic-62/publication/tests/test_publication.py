@@ -26,6 +26,37 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
+def stable_sha256(path: Path) -> str:
+    payload = path.read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def profile_sha256(path: Path) -> str:
+    text = path.read_text(encoding="utf-8").replace("\r\n", "\n").replace(
+        "\r",
+        "\n",
+    )
+    lines = text.splitlines(keepends=True)
+    if lines and lines[0].strip() == "---":
+        closing_index = next(
+            index
+            for index, line in enumerate(lines[1:], start=1)
+            if line.strip() == "---"
+        )
+        text = "".join(lines[closing_index + 1 :]).lstrip("\n")
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def frozen_hash(path: Path) -> str:
+    relative = path.relative_to(ROOT).as_posix()
+    if (
+        relative.startswith("ecosystem/accelerators/")
+        and path.name != "README.md"
+    ):
+        return profile_sha256(path)
+    return stable_sha256(path)
+
+
 def jsonl(path: Path) -> list[dict]:
     return [
         json.loads(line)
@@ -81,7 +112,7 @@ class PublicationTests(unittest.TestCase):
             )
             self.assertGreater(batch["sub_issue"], 0)
             self.assertEqual(
-                sha256(ROOT / batch["body_path"]),
+                stable_sha256(ROOT / batch["body_path"]),
                 batch["body_sha256"],
             )
 
@@ -184,12 +215,12 @@ class PublicationTests(unittest.TestCase):
 
     def test_manifest_and_checksum_hashes_match_files(self) -> None:
         for relative, expected in self.manifest["output_hashes"].items():
-            self.assertEqual(expected, sha256(ROOT / relative), relative)
+            self.assertEqual(expected, frozen_hash(ROOT / relative), relative)
         for line in (PUBLICATION / "sha256sums.txt").read_text(
             encoding="utf-8"
         ).splitlines():
             expected, relative = line.split("  ", 1)
-            self.assertEqual(expected, sha256(ROOT / relative), relative)
+            self.assertEqual(expected, frozen_hash(ROOT / relative), relative)
 
     def test_generation_is_idempotent(self) -> None:
         tracked = [
@@ -199,13 +230,13 @@ class PublicationTests(unittest.TestCase):
             PUBLICATION / "publication-manifest.json",
             PUBLICATION / "sha256sums.txt",
         ]
-        before = {path: sha256(path) for path in tracked}
+        before = {path: frozen_hash(path) for path in tracked}
         subprocess.run(
             [sys.executable, str(PUBLICATION / "build_publication.py")],
             cwd=ROOT,
             check=True,
         )
-        after = {path: sha256(path) for path in tracked}
+        after = {path: frozen_hash(path) for path in tracked}
         self.assertEqual(before, after)
 
     def test_utf8_has_no_mojibake_markers(self) -> None:

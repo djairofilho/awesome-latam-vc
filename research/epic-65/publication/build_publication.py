@@ -81,6 +81,39 @@ def normalized_hash(path: Path) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
+def split_front_matter(payload: bytes) -> tuple[bytes, bytes]:
+    normalized = payload.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    lines = normalized.splitlines(keepends=True)
+    if not lines or lines[0].strip() != b"---":
+        return b"", normalized
+    closing_index = next(
+        (
+            index
+            for index, line in enumerate(lines[1:], start=1)
+            if line.strip() == b"---"
+        ),
+        None,
+    )
+    if closing_index is None:
+        return b"", normalized
+    return (
+        b"".join(lines[: closing_index + 1]),
+        b"".join(lines[closing_index + 1 :]).lstrip(b"\n"),
+    )
+
+
+def profile_payload(path: Path, body: bytes) -> bytes:
+    front_matter = b""
+    if path.is_file():
+        front_matter, _existing_body = split_front_matter(path.read_bytes())
+    return front_matter + body.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
+def profile_hash(payload: bytes) -> str:
+    _front_matter, body = split_front_matter(payload)
+    return hashlib.sha256(body).hexdigest()
+
+
 def aliases_line(aliases: list[str]) -> str:
     return ", ".join(aliases) if aliases else "None recorded"
 
@@ -361,9 +394,10 @@ def build() -> tuple[dict[Path, bytes], dict[str, Any]]:
                 path_by_id,
                 batch_by_id[entity_id],
             )
-        payload = text.encode("utf-8")
-        outputs[path_by_id[entity_id]] = payload
-        profile_hashes[profile["path"]] = hashlib.sha256(payload).hexdigest()
+        path = path_by_id[entity_id]
+        payload = profile_payload(path, text.encode("utf-8"))
+        outputs[path] = payload
+        profile_hashes[profile["path"]] = profile_hash(payload)
     index_text = render_index(profiles, agency_by_id, program_by_id)
     outputs[INDEX] = index_text.encode("utf-8")
     manifest = {
@@ -420,11 +454,12 @@ def main() -> int:
     for path, payload in outputs.items():
         if args.check:
             current = (
-                path.read_bytes().replace(b"\r\n", b"\n")
+                path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
                 if path.is_file()
                 else None
             )
-            if current != payload:
+            expected = payload.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+            if current != expected:
                 drift.append(path.relative_to(ROOT).as_posix())
         else:
             path.parent.mkdir(parents=True, exist_ok=True)

@@ -1,3 +1,51 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:honey-island-capital:en",
+  "entity_id": "fund:honey-island-capital",
+  "slug": "honey-island-capital",
+  "name": "Honey Island Capital",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Honey Island Capital is an investment organization focused on Fintech and technology in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "fintech",
+    "technology"
+  ],
+  "official_website": "https://honeyisland.capital/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://honeyisland.capital/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fund website",
+      "url": "https://honeyisland.capital/wp-content/uploads/2026/04/HI-Capital-Demonstracoes-Financeiras-2025-sintetico-pdf-D4Sign.pdf",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Honey Island Capital"
+  ]
+}
+---
 # Honey Island Capital
 
 Honey Island Capital is an investment organization focused on Fintech and technology in Brazil.

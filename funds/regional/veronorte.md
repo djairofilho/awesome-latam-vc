@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:veronorte:en",
+  "entity_id": "fund:veronorte",
+  "slug": "veronorte",
+  "name": "Veronorte",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Veronorte is a thesis-driven investment organization that backs venture funds and companies connected to sustainable development and wellbeing in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "sustainability",
+    "wellbeing"
+  ],
+  "official_website": "https://veronorte.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Official investment model, thesis pillars, and highlighted portfolio companies",
+      "url": "https://veronorte.com/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Veronorte"
+  ]
+}
+---
 # Veronorte
 
 Veronorte is a thesis-driven investment organization that backs venture funds

@@ -1,3 +1,63 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:fen-ventures:en",
+  "entity_id": "fund:fen-ventures",
+  "slug": "fen-ventures",
+  "name": "Fen Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Fen Ventures is an investment organization focused on Fintech, SaaS, and sustainability in Spanish-speaking Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "fintech",
+    "saas",
+    "sustainability"
+  ],
+  "official_website": "https://fenventures.com/",
+  "founder_route": "https://fenventures.com/contact/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://fenventures.com/portfolio/admoai/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://fenventures.com/about-us/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://fenventures.com/portfolio_/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://fenventures.com/contact/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Fen Ventures"
+  ]
+}
+---
 # Fen Ventures
 
 Fen Ventures is an investment organization focused on Fintech, SaaS, and sustainability in Spanish-speaking Latin America.

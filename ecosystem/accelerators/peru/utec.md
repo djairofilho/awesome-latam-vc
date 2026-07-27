@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "accelerator:utec:en",
+  "entity_id": "accelerator:utec",
+  "slug": "utec",
+  "name": "Aceleradora UTEC Ventures",
+  "entity_type": "accelerator",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Aceleradora UTEC Ventures is a structured acceleration program operated by UTEC Ventures.",
+  "aliases": [],
+  "operator": "UTEC Ventures",
+  "base_geography": {
+    "kind": "country",
+    "code": "PE"
+  },
+  "countries_covered": [
+    "PE"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://utecventures.com/startups/aceleradora-uv",
+  "founder_route": "https://utecventures.com/startups/aceleradora-uv",
+  "sources": [
+    {
+      "title": "Aceleradora UTEC Ventures - 15G",
+      "url": "https://utecventures.com/startups/aceleradora-uv",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Aceleradora UTEC Ventures"
+  ]
+}
+---
 # Aceleradora UTEC Ventures
 
 - **Website:** https://utecventures.com/startups/aceleradora-uv

@@ -1,3 +1,62 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:500-latam-500-global:en",
+  "entity_id": "fund:500-latam-500-global",
+  "slug": "500-latam-500-global",
+  "name": "500 LatAm (500 Global)",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "500 LatAm is 500 Global's early-stage strategy for technology companies founded in Spanish-speaking Latin America.",
+  "aliases": [],
+  "operator": "500 Global",
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://500.co/latam",
+  "founder_route": "https://latam.aplica.500.co/en/sites/latam",
+  "sources": [
+    {
+      "title": "500 LatAm strategy",
+      "url": "https://500.co/latam",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Current investment offer and application",
+      "url": "https://latam.aplica.500.co/en/sites/latam",
+      "kind": "official_application"
+    },
+    {
+      "title": "500 LatAm FAQ",
+      "url": "https://latam.aplica.500.co/es/faq",
+      "kind": "secondary"
+    },
+    {
+      "title": "Official portfolio",
+      "url": "https://500.co/latam-companies",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-25",
+  "protected_terms": [
+    "500 LatAm (500 Global)"
+  ]
+}
+---
 # 500 LatAm (500 Global)
 
 500 LatAm is 500 Global's early-stage strategy for technology companies founded

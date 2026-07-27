@@ -1,3 +1,47 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:randon-ventures-rv:en",
+  "entity_id": "fund:randon-ventures-rv",
+  "slug": "randon-ventures-rv",
+  "name": "Randon Ventures (RV)",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Randon Ventures, now branded RV, is Randoncorp's startup investment and acceleration company.",
+  "aliases": [
+    "RV"
+  ],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "growth"
+  ],
+  "focuses": [
+    "financial_solutions_aligned_with_randoncorp_s_strategic_businesses"
+  ],
+  "official_website": "https://www.randoncorp.com/pt/blog/rv-amplia-portfolio-com-dois-novos-investimentos-em-solucoes-financeiras/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "RV investments in Guarda and Sinky",
+      "url": "https://www.randoncorp.com/pt/blog/rv-amplia-portfolio-com-dois-novos-investimentos-em-solucoes-financeiras/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Randon Ventures (RV)"
+  ]
+}
+---
 # Randon Ventures (RV)
 
 Randon Ventures, now branded RV, is Randoncorp's startup investment and

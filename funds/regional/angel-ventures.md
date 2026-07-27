@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:angel-ventures:en",
+  "entity_id": "fund:angel-ventures",
+  "slug": "angel-ventures",
+  "name": "Angel Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Angel Ventures is an investment organization focused on Technology, sector agnostic in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology",
+    "sector_agnostic"
+  ],
+  "official_website": "https://www.angelventures.vc/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.angelventures.vc/portfolio",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Angel Ventures"
+  ]
+}
+---
 # Angel Ventures
 
 Angel Ventures is an investment organization focused on Technology, sector agnostic in Latin America.

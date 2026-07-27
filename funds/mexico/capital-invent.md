@@ -1,3 +1,49 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:capital-invent:en",
+  "entity_id": "fund:capital-invent",
+  "slug": "capital-invent",
+  "name": "Capital Invent",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Capital Invent is an investment organization focused on Marketplaces, e-commerce, fintech, mobile, and SaaS in Mexico.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "MX"
+  },
+  "countries_covered": [
+    "MX"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "marketplaces",
+    "e_commerce",
+    "fintech",
+    "mobile",
+    "saas"
+  ],
+  "official_website": "https://capitalinvent.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Previously listed source; unavailable during verification",
+      "url": "https://www.linkedin.com/company/capital-invent",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Capital Invent"
+  ]
+}
+---
 # Capital Invent
 
 Capital Invent is an investment organization focused on Marketplaces, e-commerce, fintech, mobile, and SaaS in Mexico.

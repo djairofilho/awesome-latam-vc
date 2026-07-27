@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:innventure:en",
+  "entity_id": "fund:innventure",
+  "slug": "innventure",
+  "name": "Innventure",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Innventure is an Argentina-based venture capital fund specializing in Latin American AgriFoodTech.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "agtech",
+    "agrifoodtech"
+  ],
+  "official_website": "https://innventure.com.ar/",
+  "founder_route": "https://innventure.com.ar/",
+  "sources": [
+    {
+      "title": "Investment thesis, metrics, and application",
+      "url": "https://innventure.com.ar/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Innventure"
+  ]
+}
+---
 # Innventure
 
 Innventure is an Argentina-based venture capital fund specializing in Latin American AgriFoodTech.

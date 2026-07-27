@@ -1,3 +1,61 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:the-yield-lab-latam:en",
+  "entity_id": "fund:the-yield-lab-latam",
+  "slug": "the-yield-lab-latam",
+  "name": "The Yield Lab LATAM",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "The Yield Lab LATAM is an investment organization focused on Agri-food technology in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "agri_food_technology"
+  ],
+  "official_website": "https://theyieldlablatam.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://theyieldlablatam.com/companies/atech/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://theyieldlablatam.com/pt-br/companies/tech/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://theyieldlablatam.com/es/companies/tech/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://theyieldlablatam.com/about-us/",
+      "kind": "official_thesis"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "The Yield Lab LATAM"
+  ]
+}
+---
 # The Yield Lab LATAM
 
 The Yield Lab LATAM is an investment organization focused on Agri-food technology in Latin America.

@@ -1,3 +1,55 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "funding_platform:crowder:en",
+  "entity_id": "funding_platform:crowder",
+  "slug": "crowder",
+  "name": "Crowder",
+  "entity_type": "funding_platform",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "The platform provides a structured route for founders using these instruments: equity crowdfunding, debt crowdfunding, convertible instruments.",
+  "aliases": [],
+  "operator": "CROWDER PLATAFORMA DE FINANCIAMIENTO COLECTIVO S.A. (`op-crowder-uruguay`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "UY"
+  },
+  "countries_covered": [
+    "UY"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://crowder.fund/",
+  "founder_route": "https://docs.crowder.fund/d08efa00-6be6-431e-ace6-6377e1cd1cd0_Informaci__n_a_presentar_por_Emisores.pdf",
+  "sources": [
+    {
+      "title": "Información a presentar por emisores — Crowder",
+      "url": "https://docs.crowder.fund/d08efa00-6be6-431e-ace6-6377e1cd1cd0_Informaci__n_a_presentar_por_Emisores.pdf",
+      "kind": "official_application"
+    },
+    {
+      "title": "Información de institución 4261 — Banco Central del Uruguay",
+      "url": "https://www.bcu.gub.uy/Servicios-Financieros-SSF/Paginas/InformacionInstitucion.aspx?nroinst=4261",
+      "kind": "official_regulator"
+    },
+    {
+      "title": "Información de institución 4261 — Banco Central del Uruguay",
+      "url": "https://www.bcu.gub.uy/Servicios-Financieros-SSF/Paginas/InformacionInstitucion.aspx?nroinst=4261",
+      "kind": "official_regulator"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Crowder"
+  ]
+}
+---
 # Crowder
 
 <!-- platform-id: plat-crowder-uruguay -->

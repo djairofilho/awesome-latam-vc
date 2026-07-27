@@ -1,3 +1,49 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:hi-ventures-allvp:en",
+  "entity_id": "fund:hi-ventures-allvp",
+  "slug": "hi-ventures-allvp",
+  "name": "Hi Ventures (ex-ALLVP)",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Hi Ventures (ex-ALLVP) is an investment organization focused on AI and technology in Latin America.",
+  "aliases": [
+    "ALLVP"
+  ],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "ai",
+    "technology"
+  ],
+  "official_website": "https://www.hi.vc/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.hi.vc/portfolio",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Hi Ventures (ex-ALLVP)"
+  ]
+}
+---
 # Hi Ventures (ex-ALLVP)
 
 Hi Ventures (ex-ALLVP) is an investment organization focused on AI and technology in Latin America.

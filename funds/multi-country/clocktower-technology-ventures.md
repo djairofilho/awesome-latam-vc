@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:clocktower-technology-ventures:en",
+  "entity_id": "fund:clocktower-technology-ventures",
+  "slug": "clocktower-technology-ventures",
+  "name": "Clocktower Technology Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Clocktower Technology Ventures is an investment organization focused on Financial technology in Global, including Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "financial_technology"
+  ],
+  "official_website": "https://www.clocktowerventures.com/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Previously listed source; unavailable during verification",
+      "url": "https://www.clocktowerventures.com/list-of-all-companies",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Clocktower Technology Ventures"
+  ]
+}
+---
 # Clocktower Technology Ventures
 
 Clocktower Technology Ventures is an investment organization focused on Financial technology in Global, including Latin America.

@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:bndes-fundo-clima-servicos-inovacao-verdes:en",
+  "entity_id": "public_program:bndes-fundo-clima-servicos-inovacao-verdes",
+  "slug": "bndes-fundo-clima-servicos-inovacao-verdes",
+  "name": "Fundo Clima - Serviços e Inovação Verdes",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "A modalidade oferece financiamento a pessoas jurídicas, inclui startups de inovação climática e mantém solicitação pelo Portal do Cliente; informa mínimo de R$ 20 milhões, máximo de R$ 500 milhões e participação do BNDES de até 80%.",
+  "aliases": [],
+  "operator": "[Banco Nacional de Desenvolvimento Econômico e Social](bndes.md) (`agency-bndes`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/fundo-clima/servicos-inovacao-verdes",
+  "founder_route": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/fundo-clima/servicos-inovacao-verdes",
+  "sources": [
+    {
+      "title": "Fundo Clima - Serviços e inovação verdes",
+      "url": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/fundo-clima/servicos-inovacao-verdes",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Fundo Clima - Serviços e Inovação Verdes"
+  ]
+}
+---
 # Fundo Clima - Serviços e Inovação Verdes
 
 - **Entity ID:** `program-bndes-fundo-clima-servicos-inovacao-verdes`

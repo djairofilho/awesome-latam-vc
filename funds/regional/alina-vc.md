@@ -1,3 +1,45 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:alina-vc:en",
+  "entity_id": "fund:alina-vc",
+  "slug": "alina-vc",
+  "name": "Alina VC",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Alina VC is an Argentina-based venture capital firm investing in early-stage Future of Work startups across Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "future_of_work_technology"
+  ],
+  "official_website": "https://alina.vc/",
+  "founder_route": "https://alina.vc/",
+  "sources": [
+    {
+      "title": "Investment thesis, portfolio, and application",
+      "url": "https://alina.vc/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Alina VC"
+  ]
+}
+---
 # Alina VC
 
 Alina VC is an Argentina-based venture capital firm investing in early-stage Future of Work startups across Latin America.

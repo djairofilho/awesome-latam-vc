@@ -1,3 +1,47 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:alexia-ventures:en",
+  "entity_id": "fund:alexia-ventures",
+  "slug": "alexia-ventures",
+  "name": "Alexia Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Alexia Ventures is an investment organization focused on Intelligent software and applied AI in Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "intelligent_software",
+    "applied_ai"
+  ],
+  "official_website": "https://www.alexia.vc/",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://www.alexia.vc/",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Alexia Ventures"
+  ]
+}
+---
 # Alexia Ventures
 
 Alexia Ventures is an investment organization focused on Intelligent software and applied AI in Latin America.

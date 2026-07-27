@@ -1,3 +1,56 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:qed-investors:en",
+  "entity_id": "fund:qed-investors",
+  "slug": "qed-investors",
+  "name": "QED Investors",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "QED Investors is a global venture capital firm dedicated exclusively to fintech and financial-services innovation.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "GLOBAL",
+    "LATAM"
+  ],
+  "stages": [
+    "multi_stage"
+  ],
+  "focuses": [
+    "fintech"
+  ],
+  "official_website": "https://www.qedinvestors.com/",
+  "founder_route": "https://www.qedinvestors.com/",
+  "sources": [
+    {
+      "title": "QED overview, FAQ, and pitch form",
+      "url": "https://www.qedinvestors.com/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official portfolio",
+      "url": "https://www.qedinvestors.com/companies",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Fontes by QED",
+      "url": "https://www.qedinvestors.com/blog/learn-more-about-fontes",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-25",
+  "protected_terms": [
+    "QED Investors"
+  ]
+}
+---
 # QED Investors
 
 QED Investors is a global venture capital firm dedicated exclusively to fintech

@@ -1,3 +1,65 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "angel_network:gvangels:en",
+  "entity_id": "angel_network:gvangels",
+  "slug": "gvangels",
+  "name": "GVAngels",
+  "entity_type": "angel_network",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "July 2026",
+  "aliases": [],
+  "operator": "GVAngels, a nonprofit FGV alumni association",
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "angel"
+  ],
+  "focuses": [
+    "not_disclosed"
+  ],
+  "official_website": "https://gvangels.com.br/",
+  "founder_route": "https://app.dealum.com/#/company/application/new/53851/usveyzos5n2gm9hdm324ngpeix7uu9g7",
+  "sources": [
+    {
+      "title": "About GVAngels",
+      "url": "https://gvangels.com.br/quem-somos",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "GVAngels FAQ and member decision process",
+      "url": "https://gvangels.com.br/faq",
+      "kind": "official_website"
+    },
+    {
+      "title": "GVAngels investment thesis and application",
+      "url": "https://gvangels.com.br/conheca-nossa-tese",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official startup application",
+      "url": "https://app.dealum.com/#/company/application/new/53851/usveyzos5n2gm9hdm324ngpeix7uu9g7",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official July 2026 activity",
+      "url": "https://gvangels.com.br/blog/postagem/investimento-anjo",
+      "kind": "official_activity"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "GVAngels"
+  ]
+}
+---
 # GVAngels
 
 - **Type:** Alumni angel-investment network

@@ -1,3 +1,56 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:sp-ventures:en",
+  "entity_id": "fund:sp-ventures",
+  "slug": "sp-ventures",
+  "name": "SP Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "SP Ventures is a Latin American venture capital firm focused on technologies at the intersection of food security and climate resilience.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "agfoodtech",
+    "climatetech"
+  ],
+  "official_website": "https://spventures.com.br/",
+  "founder_route": "https://spventures.com.br/contato/",
+  "sources": [
+    {
+      "title": "SP Ventures website and thesis",
+      "url": "https://spventures.com.br/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Official portfolio",
+      "url": "https://spventures.com.br/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Pitch submission form",
+      "url": "https://spventures.com.br/contato/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-25",
+  "protected_terms": [
+    "SP Ventures"
+  ]
+}
+---
 # SP Ventures
 
 SP Ventures is a Latin American venture capital firm focused on technologies at

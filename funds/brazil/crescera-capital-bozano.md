@@ -1,3 +1,58 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:crescera-capital-bozano:en",
+  "entity_id": "fund:crescera-capital-bozano",
+  "slug": "crescera-capital-bozano",
+  "name": "Crescera Capital (ex-Bozano)",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Crescera Capital (ex-Bozano) is an investment organization focused on Technology and high-growth companies in Brazil.",
+  "aliases": [
+    "Bozano"
+  ],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "growth"
+  ],
+  "focuses": [
+    "technology",
+    "high_growth_companies"
+  ],
+  "official_website": "https://crescera.com/",
+  "founder_route": "https://crescera.com/en/contact/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://crescera.com/en/portfolio-2/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://crescera.com/portfolio/",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://crescera.com/en/contact/",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Crescera Capital (ex-Bozano)"
+  ]
+}
+---
 # Crescera Capital (ex-Bozano)
 
 Crescera Capital (ex-Bozano) is an investment organization focused on Technology and high-growth companies in Brazil.

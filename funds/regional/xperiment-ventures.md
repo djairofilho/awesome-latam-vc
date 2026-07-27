@@ -1,3 +1,60 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:xperiment-ventures:en",
+  "entity_id": "fund:xperiment-ventures",
+  "slug": "xperiment-ventures",
+  "name": "Xperiment Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Xperiment Ventures is an Argentina-based early-stage investor and venture studio focused on digitalizing and decarbonizing nature-based supply chains.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "AR",
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "agriculture",
+    "food",
+    "natural_resources",
+    "bioeconomy",
+    "climate_technology"
+  ],
+  "official_website": "https://xperiment.co/",
+  "founder_route": "https://xperiment.co/ventures/",
+  "sources": [
+    {
+      "title": "Xperiment investment thesis",
+      "url": "https://xperiment.co/",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Xperiment Ventures",
+      "url": "https://xperiment.co/ventures/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Xperiment companies",
+      "url": "https://xperiment.co/companies/",
+      "kind": "official_portfolio"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Xperiment Ventures"
+  ]
+}
+---
 # Xperiment Ventures
 
 Xperiment Ventures is an Argentina-based early-stage investor and venture studio focused on digitalizing and decarbonizing nature-based supply chains.

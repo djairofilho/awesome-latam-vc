@@ -1,3 +1,56 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:ventiur:en",
+  "entity_id": "fund:ventiur",
+  "slug": "ventiur",
+  "name": "Ventiur",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Ventiur is an investment organization focused on Technology startups in Brazil.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "technology_startups"
+  ],
+  "official_website": "https://ventiur.net/",
+  "founder_route": "https://ventiur.net/",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://ventiur.net/#portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Investment thesis and startup route",
+      "url": "https://ventiur.net/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Terms for startup applications",
+      "url": "https://ventiur.net/termosdeuso",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Ventiur"
+  ]
+}
+---
 # Ventiur
 
 Ventiur is an investment organization focused on Technology startups in Brazil.

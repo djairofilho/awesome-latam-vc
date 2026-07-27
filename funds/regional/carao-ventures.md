@@ -1,3 +1,50 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:carao-ventures:en",
+  "entity_id": "fund:carao-ventures",
+  "slug": "carao-ventures",
+  "name": "Carao Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Carao Ventures is an investment organization focused on Technology in Central America and Latin America.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.caraov.com/",
+  "founder_route": "https://www.caraov.com/contacto",
+  "sources": [
+    {
+      "title": "Portfolio",
+      "url": "https://www.caraov.com/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://www.caraov.com/contacto",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Carao Ventures"
+  ]
+}
+---
 # Carao Ventures
 
 Carao Ventures is an investment organization focused on Technology in Central America and Latin America.

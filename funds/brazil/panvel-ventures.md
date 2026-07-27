@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:panvel-ventures:en",
+  "entity_id": "fund:panvel-ventures",
+  "slug": "panvel-ventures",
+  "name": "Panvel Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Panvel Ventures is Grupo Panvel's corporate venture capital program for startups strategically connected to its health and retail businesses.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "health",
+    "wellbeing",
+    "customer_experience",
+    "operational_intelligence"
+  ],
+  "official_website": "https://www.grupopanvel.com.br/pt/innovation",
+  "founder_route": null,
+  "sources": [
+    {
+      "title": "Grupo Panvel innovation and CVC programs",
+      "url": "https://www.grupopanvel.com.br/pt/innovation",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Panvel Ventures"
+  ]
+}
+---
 # Panvel Ventures
 
 Panvel Ventures is Grupo Panvel's corporate venture capital program for

@@ -1,3 +1,56 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:arapy:en",
+  "entity_id": "fund:arapy",
+  "slug": "arapy",
+  "name": "Arapy",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Arapy is an impact investment vehicle managed by Fundepar for innovative Brazilian businesses addressing the United Nations Sustainable Development Goals.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "BR"
+  },
+  "countries_covered": [
+    "BR"
+  ],
+  "stages": [
+    "not_disclosed"
+  ],
+  "focuses": [
+    "positive_social",
+    "environmental_impact_aligned_with_the_un_sustainable_development_goals"
+  ],
+  "official_website": "https://fundepar.com.br/fundos-e-programas/arapy/",
+  "founder_route": "https://fundepar.com.br/formulario-de-inscricao-arapy/",
+  "sources": [
+    {
+      "title": "Arapy program and application criteria",
+      "url": "https://fundepar.com.br/fundos-e-programas/arapy/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Official application form",
+      "url": "https://fundepar.com.br/formulario-de-inscricao-arapy/",
+      "kind": "official_application"
+    },
+    {
+      "title": "Fundep update on Arapy's first investment",
+      "url": "https://www.fundep.ufmg.br/noticias/315",
+      "kind": "secondary"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Arapy"
+  ]
+}
+---
 # Arapy
 
 Arapy is an impact investment vehicle managed by Fundepar for innovative

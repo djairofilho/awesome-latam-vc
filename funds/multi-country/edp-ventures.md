@@ -1,3 +1,53 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:edp-ventures:en",
+  "entity_id": "fund:edp-ventures",
+  "slug": "edp-ventures",
+  "name": "EDP Ventures",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "EDP Ventures is EDP's corporate venture capital arm for early-stage technology companies advancing the energy transition.",
+  "aliases": [],
+  "operator": null,
+  "base_geography": {
+    "kind": "global",
+    "code": "GLOBAL"
+  },
+  "countries_covered": [
+    "GLOBAL"
+  ],
+  "stages": [
+    "seed",
+    "series_a",
+    "series_b"
+  ],
+  "focuses": [
+    "energy_transition",
+    "energy_technology"
+  ],
+  "official_website": "https://edp.com/en/innovation/venture-investments",
+  "founder_route": "https://edp.com/en/innovation/venture-investments",
+  "sources": [
+    {
+      "title": "EDP venture investments",
+      "url": "https://edp.com/en/innovation/venture-investments",
+      "kind": "official_application"
+    },
+    {
+      "title": "EDP commitment to energy-transition startups",
+      "url": "https://edp.com/en/media/news/edp-invest-100-million-euros-energy-transition-startups",
+      "kind": "official_website"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "EDP Ventures"
+  ]
+}
+---
 # EDP Ventures
 
 EDP Ventures is EDP's corporate venture capital arm for early-stage technology

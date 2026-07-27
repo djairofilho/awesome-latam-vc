@@ -1,3 +1,53 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:secihti-desarrollo-tecnologico-innovacion:en",
+  "entity_id": "public_program:secihti-desarrollo-tecnologico-innovacion",
+  "slug": "secihti-desarrollo-tecnologico-innovacion",
+  "name": "Proyectos de Desarrollo Tecnológico, Innovación y Fortalecimiento de Infraestructura",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "El programa otorga apoyos públicos a micro y pequeñas empresas científicas y tecnológicas; los montos y aportaciones concurrentes dependen del capítulo y sus términos de referencia.",
+  "aliases": [
+    "Programa Presupuestario F003"
+  ],
+  "operator": "[Secretaría de Ciencia, Humanidades, Tecnología e Innovación](secihti.md) (`agency-secihti`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "MX"
+  },
+  "countries_covered": [
+    "MX"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://www.secihti.mx/convocatoria_categoria/desarrollo-tecnologico-vinculacion-e-innovacion/",
+  "founder_route": "https://proyectos.secihti.mx/",
+  "sources": [
+    {
+      "title": "Proyectos de desarrollo tecnológico, innovación y fortalecimiento de infraestructura 2026",
+      "url": "https://secihti.mx/wp-content/uploads/2026/03/Convocatoria_2026_SDTVI-20260325T144042.pdf",
+      "kind": "official_program"
+    },
+    {
+      "title": "Convocatorias de Desarrollo Tecnológico, Vinculación e Innovación",
+      "url": "https://www.secihti.mx/convocatoria_categoria/desarrollo-tecnologico-vinculacion-e-innovacion/",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Proyectos de Desarrollo Tecnológico, Innovación y Fortalecimiento de Infraestructura"
+  ]
+}
+---
 # Proyectos de Desarrollo Tecnológico, Innovación y Fortalecimiento de Infraestructura
 
 - **Entity ID:** `program-secihti-desarrollo-tecnologico-innovacion`

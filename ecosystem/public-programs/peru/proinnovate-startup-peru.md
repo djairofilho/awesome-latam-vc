@@ -1,3 +1,46 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:proinnovate-startup-peru:en",
+  "entity_id": "public_program:proinnovate-startup-peru",
+  "slug": "proinnovate-startup-peru",
+  "name": "StartUp Perú",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "A página atualizada em março de 2026 define a iniciativa nacional, confirma cofinanciamento com capital semente e lista múltiplas modalidades da 13ª geração, comprovando recorrência recente.",
+  "aliases": [],
+  "operator": "[Programa Nacional de Innovación y Desarrollo Productivo](proinnovate.md) (`agency-proinnovate`)",
+  "base_geography": {
+    "kind": "country",
+    "code": "PE"
+  },
+  "countries_covered": [
+    "PE"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://www.gob.pe/institucion/proinnovate/campa%C3%B1as/4434-startup-peru",
+  "founder_route": "https://startup.proinnovate.gob.pe/concursos/emprendimientos-innovadores/",
+  "sources": [
+    {
+      "title": "StartUp Perú",
+      "url": "https://www.gob.pe/institucion/proinnovate/campa%C3%B1as/4434-startup-peru",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "StartUp Perú"
+  ]
+}
+---
 # StartUp Perú
 
 - **Entity ID:** `program-proinnovate-startup-peru`

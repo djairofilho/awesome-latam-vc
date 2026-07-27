@@ -1,3 +1,48 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "public_program:anii:en",
+  "entity_id": "public_program:anii",
+  "slug": "anii",
+  "name": "Agencia Nacional de Investigación e Innovación",
+  "entity_type": "public_program",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "A ANII lista rotas permanentes para empreendimentos inovadores e startups.",
+  "aliases": [
+    "ANII"
+  ],
+  "operator": null,
+  "base_geography": {
+    "kind": "country",
+    "code": "UY"
+  },
+  "countries_covered": [
+    "NOT_DISCLOSED"
+  ],
+  "stages": [
+    "not_applicable"
+  ],
+  "focuses": [
+    "entrepreneurship",
+    "innovation"
+  ],
+  "official_website": "https://anii.org.uy/",
+  "founder_route": "https://anii.org.uy/apoyos/emprendimientos/",
+  "sources": [
+    {
+      "title": "Apoyos a emprendimientos",
+      "url": "https://anii.org.uy/apoyos/emprendimientos/",
+      "kind": "official_program"
+    }
+  ],
+  "last_verified": "2026-07-27",
+  "protected_terms": [
+    "Agencia Nacional de Investigación e Innovación"
+  ]
+}
+---
 # Agencia Nacional de Investigación e Innovación
 
 - **Entity ID:** `agency-anii`

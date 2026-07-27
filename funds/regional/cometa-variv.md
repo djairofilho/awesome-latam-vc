@@ -1,3 +1,64 @@
+---
+{
+  "schema_version": "1.0",
+  "id": "fund:cometa-variv:en",
+  "entity_id": "fund:cometa-variv",
+  "slug": "cometa-variv",
+  "name": "Cometa (ex-Variv)",
+  "entity_type": "fund",
+  "locale": "en",
+  "translation_of": null,
+  "translation_status": "canonical",
+  "summary": "Cometa (ex-Variv) is an investment organization focused on Technology in Spanish-speaking Latin America.",
+  "aliases": [
+    "Variv"
+  ],
+  "operator": null,
+  "base_geography": {
+    "kind": "region",
+    "code": "LATAM"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "stages": [
+    "pre_seed",
+    "seed",
+    "series_a"
+  ],
+  "focuses": [
+    "technology"
+  ],
+  "official_website": "https://www.cometa.vc/",
+  "founder_route": "https://www.cometa.vc/contact",
+  "sources": [
+    {
+      "title": "Fund website",
+      "url": "https://www.cometa.vc/partners/atani",
+      "kind": "official_website"
+    },
+    {
+      "title": "Portfolio",
+      "url": "https://www.cometa.vc/portfolio",
+      "kind": "official_portfolio"
+    },
+    {
+      "title": "About or investment thesis",
+      "url": "https://www.cometa.vc/about",
+      "kind": "official_thesis"
+    },
+    {
+      "title": "Contact or application page",
+      "url": "https://www.cometa.vc/contact",
+      "kind": "official_application"
+    }
+  ],
+  "last_verified": "2026-07-26",
+  "protected_terms": [
+    "Cometa (ex-Variv)"
+  ]
+}
+---
 # Cometa (ex-Variv)
 
 Cometa (ex-Variv) is an investment organization focused on Technology in Spanish-speaking Latin America.
