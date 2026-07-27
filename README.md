@@ -71,6 +71,8 @@ The index is optimized for quick comparison. All fund profiles use the enriched 
 | [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed and Seed | Technology startups | Brazil |
 | [DGF Investimentos](funds/brazil/dgf-investimentos.md) | Multi-stage | High-growth technology companies | Brazil and Latin America |
 | [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed and Seed | Technology | Brazil |
+| [Fundo inovabra I](funds/brazil/fundo-inovabra-i.md) | Series A and Series B | Technology across financial and non-financial sectors | Global |
+| [Gerdau Next Ventures](funds/brazil/gerdau-next-ventures.md) | Not publicly disclosed | Construction, mobility, sustainability, and technology | Not publicly disclosed |
 | [Honey Island Capital](funds/brazil/honey-island-capital.md) | Not publicly disclosed | Fintech and technology | Brazil |
 | [Indicator Capital](funds/brazil/indicator-capital.md) | Pre-seed and Seed | Deep tech | Latin America |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed and Seed | Software and technology | Brazil |
@@ -78,12 +80,17 @@ The index is optimized for quick comparison. All fund profiles use the enriched 
 | [KPTL](funds/brazil/kptl.md) | Multi-stage | Deep tech, health, bioeconomy, and technology | Brazil |
 | [Monashees](funds/brazil/monashees.md) | Not publicly disclosed | Technology | Latin America to global markets |
 | [Oria Capital](funds/brazil/oria-capital.md) | Not publicly disclosed | B2B software | Brazil |
+| [Panvel Ventures](funds/brazil/panvel-ventures.md) | Not publicly disclosed | Health and wellbeing, customer experience, and operational intelligence | Not publicly disclosed |
 | [Primus Ventures](funds/brazil/primus-ventures.md) | Pre-seed and Seed | B2B technology | Southern Brazil |
+| [Randon Ventures (RV)](funds/brazil/randon-ventures-rv.md) | Growth | Financial solutions and strategic businesses | Brazil |
+| [RD Saúde Ventures](funds/brazil/rd-saude-ventures.md) | Not publicly disclosed | Health, wellbeing, and pharmacy retail | Brazil |
 | [Redpoint eventures](funds/brazil/redpoint-eventures.md) | Multi-stage | Technology | Brazil |
 | [Scale-Up Ventures](funds/brazil/scale-up-ventures.md) | Seed and Series A | Endeavor network companies | Brazil |
+| [SLC Ventures](funds/brazil/slc-ventures.md) | Not publicly disclosed | Agribusiness technology and sustainable agriculture | Not publicly disclosed |
 | [Spectra Investimentos](funds/brazil/spectra-investimentos.md) | Multi-stage | Alternative investments, including venture capital | Brazil and Latin America |
 | [TM3 Capital](funds/brazil/tm3-capital.md) | Not publicly disclosed | Not publicly disclosed | Not publicly disclosed |
 | [Ventiur](funds/brazil/ventiur.md) | Pre-seed and Seed | Technology startups | Brazil |
+| [Vivo Ventures](funds/brazil/vivo-ventures.md) | Series A, Series B, and Growth | Education, energy, health, financial services, smart home, and entertainment | Brazil |
 | [Vox Capital](funds/brazil/vox-capital.md) | Seed, Series A, and Series B | Impact technology | Brazil |
 
 ## Chile
