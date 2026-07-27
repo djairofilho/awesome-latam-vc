@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "checked_on": "2026-07-27",
+  "property_url": "https://djairofilho.github.io/awesome-latam-vc/",
+  "sitemap_url": "https://djairofilho.github.io/awesome-latam-vc/sitemap.xml",
+  "robots_url": "https://djairofilho.github.io/awesome-latam-vc/robots.txt",
+  "public_endpoints": {
+    "homepage_http_status": 200,
+    "sitemap_http_status": 200,
+    "robots_http_status": 200
+  },
+  "providers": {
+    "google_search_console": {
+      "verification_method": "html_meta_tag",
+      "repository_variable": "GOOGLE_SITE_VERIFICATION",
+      "verification_status": "pending_authenticated_owner",
+      "sitemap_status": "not_submitted_property_not_configured",
+      "connector_status": "specific_connector_unavailable",
+      "browser_session_status": "authenticated_property_not_configured",
+      "required_manual_action": "The responsible owner must confirm which account should own the property, then add the URL-prefix property, issue the verification value, deploy it and confirm verification before submitting the sitemap."
+    },
+    "bing_webmaster_tools": {
+      "verification_method": "html_meta_tag",
+      "repository_variable": "BING_SITE_VERIFICATION",
+      "verification_status": "pending_authenticated_owner",
+      "sitemap_status": "not_submitted_no_authenticated_session",
+      "connector_status": "specific_connector_unavailable",
+      "browser_session_status": "not_authenticated",
+      "required_manual_action": "An authenticated owner must add the site, issue the verification value, deploy it and confirm verification before submitting the sitemap."
+    }
+  },
+  "privacy": {
+    "analytics": false,
+    "tracking_pixels": false,
+    "visitor_cookies": false,
+    "credential_values_committed": false
+  },
+  "limitations": [
+    "Public HTTP availability does not prove provider ownership verification.",
+    "A reachable sitemap does not prove that a provider accepted or processed it.",
+    "No provider token, property identifier or authenticated state was invented."
+  ]
+}

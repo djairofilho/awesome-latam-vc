@@ -29,10 +29,16 @@ const profileRoots = [
   "ecosystem/public-programs",
 ];
 
-function build(environment) {
+function build(environment, publicVariables = {}) {
   execFileSync(process.execPath, [astroCli, "build"], {
     cwd: root,
-    env: { ...process.env, PUBLIC_SITE_ENV: environment },
+    env: {
+      ...process.env,
+      PUBLIC_SITE_ENV: environment,
+      PUBLIC_GOOGLE_SITE_VERIFICATION: "",
+      PUBLIC_BING_SITE_VERIFICATION: "",
+      ...publicVariables,
+    },
     stdio: "inherit",
   });
   execFileSync(process.execPath, [pagefindCli], {
@@ -193,6 +199,11 @@ assert(
 assert(
   !productionHtml.includes('name="robots" content="noindex'),
   "production output must remain indexable",
+);
+assert(
+  !productionHtml.includes("google-site-verification") &&
+    !productionHtml.includes("msvalidate.01"),
+  "verification tags must be absent until public repository variables are set",
 );
 assert(
   !/(?:window\.location|location\.replace|http-equiv="refresh")/i.test(
@@ -443,6 +454,25 @@ execFileSync(process.execPath, [seoAudit], {
   cwd: root,
   stdio: "inherit",
 });
+
+build("production", {
+  PUBLIC_GOOGLE_SITE_VERIFICATION: "public-google-verification-test",
+  PUBLIC_BING_SITE_VERIFICATION: "public-bing-verification-test",
+});
+assert(
+  indexHtml().includes(
+    'name="google-site-verification" content="public-google-verification-test"',
+  ) &&
+    indexHtml().includes(
+      'name="msvalidate.01" content="public-bing-verification-test"',
+    ),
+  "the public root must render configured verification tags",
+);
+assert(
+  !routeHtml("en").includes("google-site-verification") &&
+    !routeHtml("en").includes("msvalidate.01"),
+  "verification tags must be limited to the public root",
+);
 
 build("production");
 const second = snapshot();
