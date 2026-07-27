@@ -71,6 +71,8 @@ O índice foi otimizado para comparação rápida. Todos os perfis de fundos usa
 | [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed e Seed | Startups de tecnologia | Brasil |
 | [DGF Investimentos](funds/brazil/dgf-investimentos.md) | Multiestágio | Empresas de tecnologia de alto crescimento | Brasil e América Latina |
 | [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed e Seed | Tecnologia | Brasil |
+| [Fundo inovabra I](funds/brazil/fundo-inovabra-i.md) | Séries A e B | Tecnologia nos setores financeiro e não financeiro | Global |
+| [Gerdau Next Ventures](funds/brazil/gerdau-next-ventures.md) | Não divulgado publicamente | Construção, mobilidade, sustentabilidade e tecnologia | Não divulgado publicamente |
 | [Honey Island Capital](funds/brazil/honey-island-capital.md) | Não divulgado publicamente | Fintech e tecnologia | Brasil |
 | [Indicator Capital](funds/brazil/indicator-capital.md) | Pre-seed e Seed | Deep tech | América Latina |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed e Seed | Software e tecnologia | Brasil |
@@ -78,12 +80,17 @@ O índice foi otimizado para comparação rápida. Todos os perfis de fundos usa
 | [KPTL](funds/brazil/kptl.md) | Multiestágio | Deep tech, saúde, bioeconomia e tecnologia | Brasil |
 | [Monashees](funds/brazil/monashees.md) | Não divulgado publicamente | Tecnologia | América Latina para o mundo |
 | [Oria Capital](funds/brazil/oria-capital.md) | Não divulgado publicamente | Software B2B | Brasil |
+| [Panvel Ventures](funds/brazil/panvel-ventures.md) | Não divulgado publicamente | Saúde e bem-estar, experiência do cliente e inteligência operacional | Não divulgado publicamente |
 | [Primus Ventures](funds/brazil/primus-ventures.md) | Pre-seed e Seed | Tecnologia B2B | Sul do Brasil |
+| [Randon Ventures (RV)](funds/brazil/randon-ventures-rv.md) | Growth | Soluções financeiras e negócios estratégicos | Brasil |
+| [RD Saúde Ventures](funds/brazil/rd-saude-ventures.md) | Não divulgado publicamente | Saúde, bem-estar e varejo farmacêutico | Brasil |
 | [Redpoint eventures](funds/brazil/redpoint-eventures.md) | Multiestágio | Tecnologia | Brasil |
 | [Scale-Up Ventures](funds/brazil/scale-up-ventures.md) | Seed e Série A | Empresas da rede Endeavor | Brasil |
+| [SLC Ventures](funds/brazil/slc-ventures.md) | Não divulgado publicamente | Tecnologia para o agronegócio e agricultura sustentável | Não divulgado publicamente |
 | [Spectra Investimentos](funds/brazil/spectra-investimentos.md) | Multiestágio | Investimentos alternativos, incluindo venture capital | Brasil e América Latina |
 | [TM3 Capital](funds/brazil/tm3-capital.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
 | [Ventiur](funds/brazil/ventiur.md) | Pre-seed e Seed | Startups de tecnologia | Brasil |
+| [Vivo Ventures](funds/brazil/vivo-ventures.md) | Série A, Série B e Growth | Educação, energia, saúde, serviços financeiros, casa inteligente e entretenimento | Brasil |
 | [Vox Capital](funds/brazil/vox-capital.md) | Seed, Série A e Série B | Tecnologia de impacto | Brasil |
 
 ## Chile
