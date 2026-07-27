@@ -1,6 +1,6 @@
 # Issue 21 — fundos regionais e setoriais do Brasil
 
-Segunda onda da matriz reproduzível `região x tese` da
+Auditoria concluída da matriz reproduzível `região x tese` da
 [#21](https://github.com/djairofilho/awesome-latam-vc/issues/21).
 
 ## Recorte
@@ -11,49 +11,57 @@ Segunda onda da matriz reproduzível `região x tese` da
 - Teses: IA, deep tech, climate tech, bioeconomia, agtech, healthtech, fintech
   e impacto.
 - Total: 40 células.
-- Executadas acumuladas: 9 células.
-- Executadas nesta onda: Centro-Oeste/agtech, Centro-Oeste/climate tech,
-  Sudeste fora de SP/RJ/deep tech, Sudeste fora de SP/RJ/impacto,
-  Nordeste/climate tech e Norte/bioeconomia.
-- Na fila: 31 células.
+- Executadas: 40 células.
+- Na fila: 0 células.
 
-A matriz completa está em [coverage-matrix.jsonl](coverage-matrix.jsonl). Uma
-célula em `fila` contém consultas planejadas, mas não representa pesquisa
-executada nem cobertura.
+A matriz completa está em [coverage-matrix.jsonl](coverage-matrix.jsonl). Cada
+célula registra consultas, fontes percorridas, resultado, lacunas e próxima
+ação. `executada` significa que a busca limitada foi concluída, não que um
+investidor especializado necessariamente foi encontrado.
 
-## Resultado da segunda onda
+## Resultado consolidado
 
-| Célula | Resultado |
-| --- | --- |
-| Centro-Oeste/agtech | VivaTerra declara capital seed e growth para AgTech e opera o AgroValley MS, mas ainda não há aporte concluído comprovado. |
-| Centro-Oeste/climate tech | A mesma gestora declara tese Climate-Tech; o acordo regional comprova operação de ecossistema, não investimento. |
-| Sudeste fora de SP/RJ/deep tech | Fundepar foi validada como investidora de empresas tecnológicas originadas em universidades e centros de pesquisa. |
-| Sudeste fora de SP/RJ/impacto | Arapy realizou o primeiro investimento em 2026 e continua analisando propostas. |
-| Nordeste/climate tech | IN3 investe em negócios socioambientais do Norte e Nordeste, inclusive energia limpa e agricultura sustentável, sem especialização climática exclusiva. |
-| Norte/bioeconomia | Sinergia publica faixa, participação, estágio e seleção para startups da bioeconomia amazônica, mas falta evidência datada de atividade recente. |
+| Região | Achados mais fortes | Lacunas principais |
+| --- | --- | --- |
+| Norte | AMAZ em impacto e clima; Sinergia em bioeconomia | Sem gestor especializado confirmado em IA, deep tech ou healthtech |
+| Nordeste | FIP Nordeste em agtech, healthtech, fintech e climate tech; IN3 em impacto | IA e deep tech aparecem como tecnologia ampla, sem tese especializada |
+| Centro-Oeste | VivaTerra declara AgTech e Climate-Tech e opera o AgroValley MS | Falta aporte concluído da VivaTerra; demais teses sem gestor de VC confirmado |
+| Sudeste fora de SP/RJ | Fundepar em deep tech e Arapy em impacto e clima | IA, bioeconomia, agtech e fintech sem tese regional especializada confirmada |
+| Sul | Sul Ventures declara agtech, healthtech, fintech, energia e tecnologia | Identidade entre Primus, Catarina Capital e veículo exige revisão; deep tech, bioeconomia e impacto permanecem lacunas |
 
-Foram registrados doze candidatos nas duas ondas:
+Foram registrados doze candidatos:
 
-- seis `elegível`;
-- seis `evidência insuficiente`, incluindo uma colisão de identidade com o
-  baseline e três casos que exigem confirmação de atividade ou aporte.
+- sete `elegível`;
+- cinco `evidência insuficiente`, incluindo a identidade de Sul Ventures, a
+  atividade de Cventures e Seed4Science, a operação da AMZ Venture Capital e o
+  primeiro aporte da VivaTerra.
 
 Hubs, associações e eventos foram mantidos apenas no inventário de descoberta.
 ACATE, Porto Digital e FIINSA não foram tratados como investidores.
 
-## Limitações e próximas ações
+## Método e limites
+
+- A execução foi dividida em três ondas com 3, 6 e 31 tarefas.
+- Foram priorizadas fontes oficiais do candidato e fontes institucionais
+  primárias. Resultados setoriais de portfólio não foram convertidos
+  automaticamente em tese.
+- Hubs, aceleração sem aporte, grants, crédito e fundos de desenvolvimento foram
+  usados somente para descoberta ou documentação de lacunas.
+- A ausência de candidato significa apenas que a busca limitada e reproduzível
+  não confirmou evidência suficiente até a data de corte.
+
+## Próximas ações
 
 - Resolver a identidade entre Primus Ventures, Sul Ventures, Catarina Capital e
   Cventures sem unir automaticamente gestor e veículo.
-- Encontrar fonte oficial que combine explicitamente Nordeste e bioeconomia; o
-  fundo regional encontrado não basta para afirmar essa tese.
 - Confirmar entidade, atividade recente e acesso externo da AMZ Venture
   Capital.
-- Confirmar o primeiro aporte da VivaTerra, atualizar o Seed4Science e validar
-  atividade recente e estrutura jurídica da Sinergia Investimentos.
+- Confirmar o primeiro aporte da VivaTerra e atualizar a atividade do
+  Seed4Science.
 - Separar gestoras e veículos na publicação: Fundepar, Seed4Science e Arapy não
   devem ser fundidos automaticamente.
-- Executar as 31 células restantes antes de alegar cobertura da matriz.
+- Publicar somente os sete elegíveis após revisão editorial e deduplicação
+  final.
 
 As fontes ACATE e Porto Digital declaram `ai-train=no` e
 `use=reference` em `robots.txt`. Elas foram usadas somente para referência e
@@ -68,4 +76,4 @@ priorização, evidência ou decisão.
   efetivamente percorridos.
 - [candidates.jsonl](candidates.jsonl): fila canônica e decisões.
 - [evidence.jsonl](evidence.jsonl): evidências oficiais e institucionais.
-- [run-manifest.jsonl](run-manifest.jsonl): execução das duas ondas.
+- [run-manifest.jsonl](run-manifest.jsonl): execução das três ondas.
