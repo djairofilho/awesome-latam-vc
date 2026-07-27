@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-16/schemas/run-manifest-record.schema.json",
+  "title": "Registro de manifesto da epic 16",
+  "oneOf": [
+    { "$ref": "#/$defs/run" },
+    { "$ref": "#/$defs/task" }
+  ],
+  "$defs": {
+    "common": {
+      "type": "object",
+      "properties": {
+        "schema_version": { "const": "1.0" },
+        "run_id": {
+          "type": "string",
+          "pattern": "^run-[a-z0-9][a-z0-9-]*$"
+        }
+      },
+      "required": ["schema_version", "run_id"]
+    },
+    "run": {
+      "allOf": [
+        { "$ref": "#/$defs/common" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schema_version",
+            "record_type",
+            "run_id",
+            "issues",
+            "contract_issue",
+            "cutoff_date",
+            "created_on",
+            "status",
+            "task_count",
+            "local_startup_dataset_used",
+            "scraping_performed",
+            "owner",
+            "notes"
+          ],
+          "properties": {
+            "schema_version": { "const": "1.0" },
+            "record_type": { "const": "run" },
+            "run_id": {
+              "type": "string",
+              "pattern": "^run-[a-z0-9][a-z0-9-]*$"
+            },
+            "issues": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "integer",
+                "minimum": 18,
+                "maximum": 29
+              }
+            },
+            "contract_issue": { "const": 17 },
+            "cutoff_date": { "type": "string", "format": "date" },
+            "created_on": { "type": "string", "format": "date" },
+            "status": {
+              "enum": ["planejada", "em execução", "concluída", "cancelada"]
+            },
+            "task_count": { "type": "integer", "minimum": 1 },
+            "local_startup_dataset_used": { "const": false },
+            "scraping_performed": { "type": "boolean" },
+            "owner": { "type": "string", "minLength": 1 },
+            "notes": { "type": ["string", "null"], "minLength": 1 }
+          }
+        }
+      ]
+    },
+    "task": {
+      "allOf": [
+        { "$ref": "#/$defs/common" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schema_version",
+            "record_type",
+            "run_id",
+            "task_id",
+            "issue",
+            "url",
+            "category",
+            "partition",
+            "priority",
+            "status",
+            "owner",
+            "next_action",
+            "last_error"
+          ],
+          "properties": {
+            "schema_version": { "const": "1.0" },
+            "record_type": { "const": "task" },
+            "run_id": {
+              "type": "string",
+              "pattern": "^run-[a-z0-9][a-z0-9-]*$"
+            },
+            "task_id": {
+              "type": "string",
+              "pattern": "^task-[a-z0-9][a-z0-9-]*$"
+            },
+            "issue": { "type": "integer", "minimum": 18, "maximum": 29 },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https?://"
+            },
+            "category": { "type": "string", "minLength": 1 },
+            "partition": { "type": "string", "minLength": 1 },
+            "priority": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "status": {
+              "enum": [
+                "todo",
+                "leased",
+                "extracted",
+                "verified",
+                "done",
+                "blocked"
+              ]
+            },
+            "owner": { "type": ["string", "null"], "minLength": 1 },
+            "next_action": { "type": ["string", "null"], "minLength": 1 },
+            "last_error": { "type": ["string", "null"], "minLength": 1 }
+          }
+        }
+      ]
+    }
+  }
+}

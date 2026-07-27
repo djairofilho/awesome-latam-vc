@@ -3,6 +3,13 @@
 *.xls
 *.csv
 
+# Research runtime
+.work/
+
+# Python
+__pycache__/
+*.py[cod]
+
 # OS
 Thumbs.db
 .DS_Store
