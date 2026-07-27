@@ -16,7 +16,7 @@ Una lista curada de fondos de Venture Capital que invierten en América Latina.
 
 ---
 
-El índice está optimizado para una comparación rápida y actualmente reúne 133 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
+El índice está optimizado para una comparación rápida y actualmente reúne 143 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
 
 ## Pan-Latinoamérica (sede en la región)
 
@@ -34,11 +34,13 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 | [BuenTrip Ventures](funds/regional/buentrip-ventures.md) | No divulgado públicamente | Software B2B | América Latina y las Américas |
 | [Caravela Capital](funds/regional/caravela-capital.md) | Pre-seed y Seed | Tecnología | América Latina |
 | [Caricaco Ventures](funds/regional/caricaco-ventures.md) | No divulgado públicamente | Software e inteligencia artificial | América Central y República Dominicana |
+| [Chile Ventures](funds/regional/chile-ventures.md) | No divulgado públicamente | Tecnología de ingresos recurrentes | Chile y América Latina |
 | [Cometa (ex-Variv)](funds/regional/cometa-variv.md) | Pre-seed, Seed y Serie A | Tecnología | América Latina hispanohablante |
 | [Dalus Capital](funds/regional/dalus-capital.md) | No divulgado públicamente | Tecnología | América Latina |
 | [EWA Capital](funds/regional/ewa-capital.md) | Seed y Serie A | Tecnología con enfoque de género e inclusión | América Latina hispanohablante |
 | [Hi Ventures (ex-ALLVP)](funds/regional/hi-ventures-allvp.md) | Pre-seed y Seed | IA y tecnología | América Latina |
 | [IGNIA](funds/regional/ignia.md) | Seed y Serie A | Tecnología y crecimiento inclusivo | América Latina |
+| [Impacta VC](funds/regional/impacta-vc.md) | Seed | Impacto social y ambiental | América Latina |
 | [Innogen Capital Ventures](funds/regional/innogen-capital-ventures.md) | Pre-seed, Seed y Serie A | Tecnología en etapa inicial | Norte de América Latina |
 | [iThink VC](funds/regional/ithink-vc.md) | Pre-seed y Seed | Tecnología para problemas estructurales | Paraguay, Perú, Ecuador, Bolivia y Uruguay |
 | [Kalei Ventures](funds/regional/kalei-ventures.md) | Pre-seed y Seed | Tecnología habilitada por IA | América Latina |
@@ -55,11 +57,15 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 | [Polymath Ventures](funds/regional/polymath-ventures.md) | Pre-seed y Seed | Negocios centrados en las personas | América Latina |
 | [QED Investors](funds/regional/qed-investors.md) | Multietapa | Fintech | Global, incluida América Latina |
 | [Salkantay Ventures](funds/regional/salkantay-ventures.md) | Pre-seed, Seed y Serie A | Tecnología de impacto | América Latina hispanohablante |
+| [SF500](funds/regional/sf500.md) | No divulgado públicamente | Startups de base científica y biotecnología | Argentina y América Latina |
 | [SoftBank Latin America Fund](funds/regional/softbank-latin-america-fund.md) | Growth | Tecnología | América Latina |
 | [Soma Capital](funds/regional/soma-capital.md) | Seed | Tecnología, agnóstico a sectores | Global, incluida América Latina |
 | [SP Ventures](funds/regional/sp-ventures.md) | No divulgado públicamente | AgFoodTech y ClimateTech | América Latina |
+| [Sunna Ventures](funds/regional/sunna-ventures.md) | Pre-seed, Seed y Serie A | Tecnología climática y descarbonización industrial | América Latina y América del Norte |
+| [Taram Capital](funds/regional/taram-capital.md) | Seed y Serie A | Software e infraestructura B2B AI-first | América Latina |
 | [The Yield Lab LATAM](funds/regional/the-yield-lab-latam.md) | Pre-seed y Seed | Tecnología agroalimentaria | América Latina |
 | [Wollef Ventures (ex-Jaguar)](funds/regional/wollef-ventures-jaguar.md) | Pre-seed y Seed | Tecnología | América Latina |
+| [Xperiment Ventures](funds/regional/xperiment-ventures.md) | No divulgado públicamente | Tecnología para cadenas de suministro basadas en la naturaleza | Argentina y América Latina |
 
 ## Argentina
 
@@ -126,9 +132,12 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
+| [CMPC Ventures](funds/chile/cmpc-ventures.md) | No divulgado públicamente | Materiales renovables y modelos de negocio circulares | Global |
 | [Fen Ventures](funds/chile/fen-ventures.md) | Pre-seed y Seed | Fintech, SaaS y sostenibilidad | América Latina hispanohablante |
 | [Genesis Ventures](funds/chile/genesis-ventures.md) | Multietapa | Tecnología, energía y bienes raíces | Chile y América Latina |
+| [Invexor Venture Partners](funds/chile/invexor-venture-partners.md) | Pre-seed, Seed y Serie A | Startups de tecnología innovadora | Chile y Estados Unidos |
 | [Manutara Ventures](funds/chile/manutara-ventures.md) | Seed y Serie A | Tecnología | Chile y América Latina |
+| [Südlich Capital](funds/chile/sudlich-capital.md) | No divulgado públicamente | Ciencia y tecnología de alimentos | Sur de Chile |
 
 ## Colombia
 
@@ -187,6 +196,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 | [Norte Ventures](funds/multi-country/norte-ventures.md) | No divulgado públicamente | Tecnología, agnóstico a sectores | América Latina |
 | [ONEVC](funds/multi-country/onevc.md) | Seed | Tecnología | América Latina |
 | [Pant3ra Venture Fund](funds/multi-country/pant3ra-venture-fund.md) | Pre-seed y Seed | Movilidad, logística, e-commerce y fintech | México, Estados Unidos y América Latina |
+| [Qualcomm Ventures](funds/multi-country/qualcomm-ventures.md) | Multietapa | IA, automotriz, móvil, enterprise y sistemas inteligentes | Global, incluida América Latina |
 | [Quona Capital](funds/multi-country/quona-capital.md) | Seed, Serie A y Serie B | Fintech e inclusión financiera | Mercados emergentes, incluida América Latina |
 | [Redwood Ventures](funds/multi-country/redwood-ventures.md) | Seed y Serie A | Tecnología, agnóstico a sectores | América Latina |
 | [Shima Capital](funds/multi-country/shima-capital.md) | Pre-seed y Seed | Web3 y blockchain | Global |
