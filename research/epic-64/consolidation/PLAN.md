@@ -32,9 +32,11 @@ unidades distintas dentro do candidato canônico.
 
 ## Gates
 
-- 38 candidatos, 62 evidências, 117 fontes e 20 países antes e depois;
+- linha de base regional de 38 candidatos, 62 evidências, 117 fontes e 20
+  países, com adições somente após adjudicação documentada de transferências;
 - zero IDs/referências órfãs, decisões nulas ou duplicatas conhecidas;
 - relatório before/after e hashes SHA-256;
 - gerador idempotente e validação da epic #64 aprovada;
-- revisão independente de 100% dos elegíveis, pendências e fronteiras;
+- revisão independente de 100% dos elegíveis, `other_category` e transferências
+  recebidas/enviadas, além de amostra determinística mínima de 20% dos demais;
 - manifesto somente congelado após a resolução das divergências.

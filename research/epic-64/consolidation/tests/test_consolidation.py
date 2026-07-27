@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import hashlib
 import json
+import math
 import subprocess
 import sys
 import unittest
@@ -26,6 +28,7 @@ class ConsolidationTests(unittest.TestCase):
         cls.evidence = read_jsonl("evidence.jsonl")
         cls.sources = read_jsonl("source-inventory.jsonl")
         cls.coverage = read_jsonl("coverage-matrix.jsonl")
+        cls.review = read_jsonl("independent-review.jsonl")
         cls.manifest_rows = read_jsonl("run-manifest.jsonl")
         cls.manifest = json.loads(
             (ROOT / "consolidation-manifest.json").read_text(encoding="utf-8")
@@ -38,9 +41,9 @@ class ConsolidationTests(unittest.TestCase):
         )
 
     def test_expected_counts_and_unique_ids(self) -> None:
-        self.assertEqual(38, len(self.candidates))
-        self.assertEqual(62, len(self.evidence))
-        self.assertEqual(117, len(self.sources))
+        self.assertEqual(39, len(self.candidates))
+        self.assertEqual(63, len(self.evidence))
+        self.assertEqual(118, len(self.sources))
         self.assertEqual(20, len(self.coverage))
         for rows, field in (
             (self.candidates, "platform_id"),
@@ -57,7 +60,7 @@ class ConsolidationTests(unittest.TestCase):
             for row in self.candidates
             if row["decision"] == "insufficient_evidence"
         ]
-        self.assertEqual(17, len(pending))
+        self.assertEqual(18, len(pending))
         self.assertTrue(all(row["owner"] and row["next_action"] for row in pending))
 
     def test_nested_identities_are_unique(self) -> None:
@@ -111,9 +114,11 @@ class ConsolidationTests(unittest.TestCase):
         incoming = self.resolutions["incoming_angel_transfers"]
         self.assertEqual(6, len(outgoing))
         self.assertTrue(all(row["canonical_destination"] for row in outgoing))
-        self.assertTrue(all(row["target_platform_id"] for row in incoming))
-        pending = [row for row in incoming if not row["materialized"]]
-        self.assertTrue(all(row["owner"] and row["next_action"] for row in pending))
+        self.assertEqual(3, len(incoming))
+        self.assertTrue(all(row["canonical_destination"] for row in incoming))
+        self.assertTrue(all(row["adjudication"] for row in incoming))
+        self.assertFalse(any(row["owner"] or row["next_action"] for row in incoming))
+        self.assertEqual(1, sum(row["materialized"] for row in incoming))
 
     def test_single_manifest_run(self) -> None:
         runs = [row for row in self.manifest_rows if row["record_type"] == "run"]
@@ -122,9 +127,84 @@ class ConsolidationTests(unittest.TestCase):
         self.assertEqual(runs[0]["task_count"], len(tasks))
         self.assertEqual([90, 91, 92, 93], runs[0]["issues"])
 
-    def test_manifest_waits_for_independent_review(self) -> None:
-        self.assertEqual("provisional", self.manifest["status"])
-        self.assertEqual("pending", self.manifest["independent_review_status"])
+    def test_independent_review_covers_required_populations(self) -> None:
+        groups = {}
+        for row in self.review:
+            groups.setdefault(row["review_group"], []).append(row)
+        eligible = {
+            row["platform_id"]
+            for row in self.candidates
+            if row["decision"] == "eligible"
+        }
+        other = {
+            row["platform_id"]
+            for row in self.candidates
+            if row["decision"] == "other_category"
+        }
+        self.assertEqual(
+            eligible,
+            {row["subject_id"] for row in groups["eligible"]},
+        )
+        self.assertEqual(
+            other,
+            {row["subject_id"] for row in groups["other_category"]},
+        )
+        self.assertEqual(
+            other,
+            {row["subject_id"] for row in groups["outgoing_transfer"]},
+        )
+        self.assertEqual(3, len(groups["incoming_transfer"]))
+        self.assertTrue(all(row["resolved"] for row in self.review))
+
+    def test_remaining_sample_is_deterministic_and_at_least_twenty_percent(self) -> None:
+        covered = {
+            row["subject_id"]
+            for row in self.review
+            if row["review_group"] in {"eligible", "other_category"}
+        }
+        incoming_targets = {
+            row["target_platform_id"]
+            for row in self.resolutions["incoming_angel_transfers"]
+            if row["target_platform_id"]
+        }
+        population = sorted(
+            row["platform_id"]
+            for row in self.candidates
+            if row["platform_id"] not in covered | incoming_targets
+        )
+        expected_size = math.ceil(len(population) * 0.20)
+        expected = [
+            platform_id
+            for _, platform_id in sorted(
+                (
+                    hashlib.sha256(platform_id.encode("utf-8")).hexdigest(),
+                    platform_id,
+                )
+                for platform_id in population
+            )[:expected_size]
+        ]
+        actual = [
+            row["subject_id"]
+            for row in self.review
+            if row["review_group"] == "deterministic_sample"
+        ]
+        self.assertEqual(set(expected), set(actual))
+        self.assertEqual(expected, self.manifest["independent_review"]["sample_ids"])
+        self.assertGreaterEqual(len(actual) / len(population), 0.20)
+
+    def test_manifest_is_frozen_without_open_high_divergence(self) -> None:
+        self.assertEqual("frozen", self.manifest["status"])
+        self.assertEqual("complete", self.manifest["independent_review_status"])
+        self.assertEqual(
+            0,
+            self.manifest["independent_review"]["unresolved_high_divergences"],
+        )
+        self.assertEqual(len(self.review), self.manifest["independent_review"]["review_count"])
+
+    def test_manifest_hashes_match_reviewed_outputs(self) -> None:
+        for filename, expected in self.manifest["output_hashes"].items():
+            actual = hashlib.sha256((ROOT / filename).read_bytes()).hexdigest()
+            self.assertEqual(expected, actual, filename)
 
     def test_generator_has_no_drift(self) -> None:
         result = subprocess.run(

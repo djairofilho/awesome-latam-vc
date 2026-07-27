@@ -1,9 +1,9 @@
 {
   "after_counts": {
-    "candidates": 38,
+    "candidates": 39,
     "countries": 20,
-    "evidence": 62,
-    "sources": 117,
+    "evidence": 63,
+    "sources": 118,
     "tasks": 93
   },
   "before_counts": {
@@ -37,11 +37,31 @@
     "eligible": 9,
     "excluded": 4,
     "inactive": 2,
-    "insufficient_evidence": 17,
+    "insufficient_evidence": 18,
     "other_category": 6
   },
   "incoming_angel_transfers": 3,
-  "independent_review_status": "pending",
+  "independent_review": {
+    "eligible_population": 9,
+    "incoming_population": 3,
+    "other_category_population": 6,
+    "outgoing_population": 6,
+    "remaining_population": 23,
+    "resolved_high_divergences": 5,
+    "review_count": 29,
+    "sample_algorithm": "Ordenar por (sha256(platform_id UTF-8), platform_id) e selecionar ceil(população * 0,20).",
+    "sample_ids": [
+      "plat-nexoos-paraguay",
+      "plat-terrenta",
+      "plat-jompeame",
+      "plat-zafen",
+      "plat-hagamosla"
+    ],
+    "sample_rate": 0.21739130434782608,
+    "sample_size": 5,
+    "unresolved_high_divergences": 0
+  },
+  "independent_review_status": "complete",
   "input_hashes": {
     "research/epic-64/andean/candidates.jsonl": "d0dd0f7c5de8f115ffd149007c330d8b974f00a68aa16a30ac518a4068a0e964",
     "research/epic-64/andean/coverage-matrix.jsonl": "7aa66ecb1de36a984548d06a47a55dba79972c7e0d136e17e4f2186701a5c6cd",
@@ -65,17 +85,19 @@
     "research/epic-64/southern-cone/source-inventory.jsonl": "66d2b414635ab3662a325109d2d93fdfb4946b359a6e8ef802839abe689b05bc"
   },
   "issue": 94,
-  "materialized_incoming_transfers": 0,
+  "materialized_incoming_transfers": 1,
   "outgoing_category_resolutions": 6,
   "output_hashes": {
-    "candidates.jsonl": "6ed3fe7e3cfda5d3aa22f2af3dd63da90420d4061c4c9fb0d9fb9ee2b8c078cc",
-    "category-resolutions.json": "6a3517d7b4e85431a4e49c1bcf2db707fcec46ed87c54064d5f0707b9336c9aa",
+    "INDEPENDENT_REVIEW.md": "29e1f6f6a1a2d7dbf3e9e1ddb1e4e774d1f2aa5eb5cf67edf1dde5bdabcf62f3",
+    "candidates.jsonl": "71216a50eb4297eb07c9d818a5a478210e34de6f36a98c637e38ebce046cd38a",
+    "category-resolutions.json": "10d6e6e49d1586a206b283ff4bda9087cb93edc88edd9a517206e7d9ee875127",
     "coverage-matrix.jsonl": "ef8839a61549a89bb8c12b8a608bb612c555a2c74b2e29cc0988de295ffac781",
-    "deduplication-report.json": "f3d20bd7140012acabac19c2713d42ed4243cbda726633d32a4c504a3735c95e",
-    "evidence.jsonl": "f1e815c4797821b2cda854667ae7f5aac199e57f9341db41094d090e4f2a38db",
-    "run-manifest.jsonl": "5e564058041b3d3e06f711164f53cf456ea2f2efa9a2c9d6c16b84d1150472b0",
-    "source-inventory.jsonl": "2c72b4e0ff28c4f68bd9f417e382b98051a27e15919dd86968f90715d26fa47d"
+    "deduplication-report.json": "d7683d52aba33b76d8ed506b36b541b37aa2fbb6caecbd3d868c93574e88cc53",
+    "evidence.jsonl": "a9e480821d74d5821d8b57c340cccff4368a24c7938a1af9686ce05450621d6d",
+    "independent-review.jsonl": "ef02763e513ffc9c94b36c97d20e56ebfb84f61510df8389fd21b52f22fa1877",
+    "run-manifest.jsonl": "2293e67cc9cc68440e92f2690dad67a70f6f689f087f61041470ada82bf2df0f",
+    "source-inventory.jsonl": "a364647696b97c21bdf7bbceb9ef9cc8a2d009a21cd83c4296187dc30f070c7e"
   },
   "schema_version": "1.0",
-  "status": "provisional"
+  "status": "frozen"
 }
