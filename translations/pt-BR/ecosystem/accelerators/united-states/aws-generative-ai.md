@@ -73,7 +73,7 @@ fechado entre ciclos.
 
 ## Indicadores de atividade
 
-Evidência oficial datada de 2025-10-07 confirma atividade dentro da janela de revisão de dois anos (24-month).
+Evidência oficial datada de 2025-10-07 confirma atividade dentro da janela de revisão de 24 meses.
 
 ## Fontes
 
