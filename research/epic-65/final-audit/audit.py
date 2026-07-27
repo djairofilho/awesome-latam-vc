@@ -67,6 +67,15 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(normalized_bytes(path)).hexdigest()
 
 
+def profile_sha256(path: Path) -> str:
+    payload = normalized_bytes(path).replace(b"\r", b"\n")
+    if payload.startswith(b"---\n"):
+        closing = payload.find(b"\n---\n", 4)
+        if closing != -1:
+            payload = payload[closing + 5 :].lstrip(b"\n")
+    return hashlib.sha256(payload).hexdigest()
+
+
 def canonical_hash(value: Any) -> str:
     payload = json.dumps(
         value,
@@ -409,7 +418,7 @@ def audit(root: Path = ROOT) -> dict[str, Any]:
             hash_errors.append(f"{batch['batch_id']}: hash do lote inválido")
     for relative, expected in publication_manifest["profile_hashes"].items():
         path = root / relative
-        if not path.is_file() or sha256(path) != expected:
+        if not path.is_file() or profile_sha256(path) != expected:
             hash_errors.append(f"perfil com hash inválido: {relative}")
     if sha256(catalog / "README.md") != publication_manifest["index_hash"]:
         hash_errors.append("índice canônico com hash inválido")
@@ -593,8 +602,11 @@ def audit(root: Path = ROOT) -> dict[str, Any]:
     ]
     input_paths += [root / row["path"] for row in profiles]
     input_paths += sorted((epic / "schemas").glob("*.json"))
+    profile_paths = {root / row["path"] for row in profiles}
     input_hashes = {
-        path.relative_to(root).as_posix(): sha256(path)
+        path.relative_to(root).as_posix(): (
+            profile_sha256(path) if path in profile_paths else sha256(path)
+        )
         for path in sorted(set(input_paths))
     }
     findings.sort(key=lambda row: (row["severity"], row["check_id"], row["message"]))
