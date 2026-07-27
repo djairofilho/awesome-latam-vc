@@ -38,3 +38,7 @@ python -m unittest discover -s tools/seo_geo/tests -v
 Adding a field is a schema change. Consumers should reject unknown
 `schema_version` values and may use the dataset date as a snapshot version.
 The generator validates all source profiles before writing either format.
+
+The static site publishes the committed bytes at `/data/entities.json` and
+`/data/entities.csv` under its configured base path. Its `Dataset` JSON-LD
+points to those downloads and carries the same version, date, and CC0 license.
