@@ -97,6 +97,9 @@ for (const { route, html } of indexable) {
   const title = singleValue(html, /<title>([^<]+)<\/title>/g, "title", route);
   const description = meta(html, "name", "description", route);
   const canonicalUrlValue = canonical(html, route);
+  const localeScope = route.match(/^\/(en|pt-br|es)(?:\/|$)/)?.[1] ?? "global";
+  const titleKey = `${localeScope}\0${title}`;
+  const descriptionKey = `${localeScope}\0${description}`;
   assert(title.trim() === title && title.length >= 20 && title.length <= 70,
     `${route} title must be unique, trimmed and 20-70 characters`);
   assert(
@@ -109,17 +112,20 @@ for (const { route, html } of indexable) {
     canonicalUrlValue === canonicalUrl(route),
     `${route} canonical does not match its public URL`,
   );
-  assert(!titles.has(title), `${route} duplicates title from ${titles.get(title)}`);
   assert(
-    !descriptions.has(description),
-    `${route} duplicates description from ${descriptions.get(description)}`,
+    !titles.has(titleKey),
+    `${route} duplicates title from ${titles.get(titleKey)}`,
+  );
+  assert(
+    !descriptions.has(descriptionKey),
+    `${route} duplicates description from ${descriptions.get(descriptionKey)}`,
   );
   assert(
     !canonicals.has(canonicalUrlValue),
     `${route} duplicates canonical from ${canonicals.get(canonicalUrlValue)}`,
   );
-  titles.set(title, route);
-  descriptions.set(description, route);
+  titles.set(titleKey, route);
+  descriptions.set(descriptionKey, route);
   canonicals.set(canonicalUrlValue, route);
 
   assert(meta(html, "property", "og:title", route) === title,

@@ -278,6 +278,15 @@ def validate_internal_links(root: Path, readme: Path, text: str) -> list[str]:
             errors.append(f"{display_path}: link sai do repositório: {target}")
             continue
         if not candidate.exists():
+            relative_candidate = candidate.relative_to(root.resolve())
+            parts = relative_candidate.parts
+            canonical_fallback = (
+                root.joinpath(*parts[2:])
+                if len(parts) > 2 and parts[0] == "translations"
+                else None
+            )
+            if canonical_fallback is not None and canonical_fallback.exists():
+                continue
             errors.append(f"{display_path}: link interno inexistente: {target}")
     return errors
 
