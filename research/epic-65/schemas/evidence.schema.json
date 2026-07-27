@@ -14,6 +14,7 @@
     "publisher",
     "source_type",
     "published_on",
+    "observed_on",
     "accessed_on",
     "claims",
     "locator",
@@ -39,6 +40,7 @@
     "publisher": { "type": "string", "minLength": 1 },
     "source_type": { "const": "oficial" },
     "published_on": { "type": ["string", "null"], "format": "date" },
+    "observed_on": { "type": "string", "format": "date" },
     "accessed_on": { "type": "string", "format": "date" },
     "claims": {
       "type": "array",

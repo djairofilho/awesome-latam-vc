@@ -8,7 +8,7 @@ import json
 import sys
 from calendar import monthrange
 from datetime import date
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Iterable
 
 from jsonschema import Draft202012Validator, FormatChecker
@@ -95,6 +95,76 @@ def call_is_open_on_capture(call: dict) -> bool:
     return True
 
 
+def is_safe_profile_path(value: object) -> bool:
+    if not isinstance(value, str):
+        return value is None
+    path = PurePosixPath(value)
+    raw_parts = value.split("/")
+    return (
+        not path.is_absolute()
+        and ".." not in raw_parts
+        and "." not in raw_parts
+        and len(path.parts) >= 4
+        and path.parts[:2] == ("ecosystem", "public-programs")
+        and path.suffix == ".md"
+    )
+
+
+def canonical_reference_errors(
+    bundle: Path,
+    filename: str,
+    records: dict[str, dict],
+    canonical_field: str,
+    duplicate_decision: str,
+) -> list[str]:
+    errors: list[str] = []
+    graph: dict[str, str] = {}
+    for record_id, record in records.items():
+        canonical_id = record.get(canonical_field)
+        if record.get("decision") == duplicate_decision and not isinstance(
+            canonical_id,
+            str,
+        ):
+            errors.append(
+                f"{bundle}/{filename}: {record_id} duplicado sem {canonical_field}"
+            )
+            continue
+        if not isinstance(canonical_id, str):
+            continue
+        if canonical_id == record_id:
+            errors.append(
+                f"{bundle}/{filename}: {record_id} aponta para si em {canonical_field}"
+            )
+            continue
+        if canonical_id not in records:
+            errors.append(
+                f"{bundle}/{filename}: {record_id} aponta para {canonical_field} "
+                f"inexistente: {canonical_id}"
+            )
+            continue
+        graph[record_id] = canonical_id
+
+    reported_cycles: set[tuple[str, ...]] = set()
+    for start in graph:
+        trail: list[str] = []
+        positions: dict[str, int] = {}
+        current = start
+        while current in graph:
+            if current in positions:
+                cycle = tuple(sorted(trail[positions[current] :]))
+                if cycle not in reported_cycles:
+                    reported_cycles.add(cycle)
+                    errors.append(
+                        f"{bundle}/{filename}: ciclo em {canonical_field}: "
+                        + " -> ".join(cycle)
+                    )
+                break
+            positions[current] = len(trail)
+            trail.append(current)
+            current = graph[current]
+    return errors
+
+
 def validate_bundle(bundle: Path) -> list[str]:
     errors: list[str] = []
     schemas: dict[str, dict] = {}
@@ -165,13 +235,20 @@ def validate_bundle(bundle: Path) -> list[str]:
                 f"não corresponde a {subject_id}"
             )
         published_on = evidence.get("published_on")
+        observed_on = evidence.get("observed_on")
         accessed_on = evidence.get("accessed_on")
         published_date = parse_date(published_on)
+        observed_date = parse_date(observed_on)
         accessed_date = parse_date(accessed_on)
         if published_date and accessed_date and published_date > accessed_date:
             errors.append(
                 f"{bundle}/evidence.jsonl: {evidence.get('evidence_id')} "
                 "tem publicação posterior ao acesso"
+            )
+        if observed_date and accessed_date and observed_date > accessed_date:
+            errors.append(
+                f"{bundle}/evidence.jsonl: {evidence.get('evidence_id')} "
+                "tem observação posterior ao acesso"
             )
 
     def check_evidence_links(filename: str, id_field: str) -> None:
@@ -200,6 +277,31 @@ def validate_bundle(bundle: Path) -> list[str]:
     agencies = indexes["agencies.jsonl"]
     programs = indexes["programs.jsonl"]
     calls = indexes["calls.jsonl"]
+    errors.extend(
+        canonical_reference_errors(
+            bundle,
+            "agencies.jsonl",
+            agencies,
+            "canonical_agency_id",
+            "duplicada",
+        )
+    )
+    errors.extend(
+        canonical_reference_errors(
+            bundle,
+            "programs.jsonl",
+            programs,
+            "canonical_program_id",
+            "duplicado",
+        )
+    )
+    for filename in ("agencies.jsonl", "programs.jsonl"):
+        for record in records[filename]:
+            profile = record.get("canonical_profile")
+            if not is_safe_profile_path(profile):
+                errors.append(
+                    f"{bundle}/{filename}: canonical_profile inseguro: {profile}"
+                )
 
     manifest = records["run-manifest.jsonl"]
     run_rows = [record for record in manifest if record.get("record_type") == "run"]
@@ -221,6 +323,17 @@ def validate_bundle(bundle: Path) -> list[str]:
             errors.append(
                 f"{bundle}/run-manifest.jsonl: há tarefas de outro run_id"
             )
+        if run.get("status") == "concluída":
+            unfinished = [
+                task.get("task_id")
+                for task in task_rows
+                if task.get("status") in {"todo", "em execução"}
+            ]
+            if unfinished:
+                errors.append(
+                    f"{bundle}/run-manifest.jsonl: run concluída contém tarefas "
+                    f"não finalizadas: {unfinished}"
+                )
         task_ids = [task.get("task_id") for task in task_rows]
         if len(task_ids) != len(set(task_ids)):
             errors.append(
@@ -232,6 +345,19 @@ def validate_bundle(bundle: Path) -> list[str]:
             worker_id = task.get("worker_id")
             if not isinstance(shard_path, str) or not isinstance(worker_id, str):
                 continue
+            path = PurePosixPath(shard_path)
+            raw_parts = shard_path.rstrip("/").split("/")
+            if (
+                path.is_absolute()
+                or "." in raw_parts
+                or ".." in raw_parts
+                or len(path.parts) != 5
+                or path.parts[:2] != ("research", "epic-65")
+                or path.parts[3] != "shards"
+            ):
+                errors.append(
+                    f"{bundle}/run-manifest.jsonl: shard_path inseguro: {shard_path}"
+                )
             previous_owner = shard_owners.get(shard_path)
             if previous_owner is not None:
                 errors.append(
@@ -245,6 +371,40 @@ def validate_bundle(bundle: Path) -> list[str]:
                     )
             else:
                 shard_owners[shard_path] = worker_id
+
+        coverage_pairs = [
+            (record.get("country"), record.get("source_type"))
+            for record in records["coverage-matrix.jsonl"]
+        ]
+        task_pairs = [
+            (record.get("country"), record.get("source_type"))
+            for record in task_rows
+        ]
+        for label, pairs in (
+            ("coverage-matrix.jsonl", coverage_pairs),
+            ("run-manifest.jsonl", task_pairs),
+        ):
+            duplicates = sorted(
+                (pair for pair in set(pairs) if pairs.count(pair) > 1),
+                key=repr,
+            )
+            if duplicates:
+                errors.append(
+                    f"{bundle}/{label}: país × source_type duplicado: {duplicates}"
+                )
+        missing_tasks = sorted(
+            set(coverage_pairs) - set(task_pairs),
+            key=repr,
+        )
+        missing_coverage = sorted(
+            set(task_pairs) - set(coverage_pairs),
+            key=repr,
+        )
+        if missing_tasks or missing_coverage:
+            errors.append(
+                f"{bundle}: cobertura e tarefas divergem; "
+                f"sem tarefa={missing_tasks}, sem cobertura={missing_coverage}"
+            )
 
     for agency in records["agencies.jsonl"]:
         agency_id = agency.get("agency_id")
@@ -288,10 +448,10 @@ def validate_bundle(bundle: Path) -> list[str]:
         if agency.get("research_status") in {"descoberta", "em pesquisa"} or agency.get(
             "decision"
         ) == "evidência insuficiente":
-            if not (agency.get("owner") or agency.get("next_action")):
+            if not (agency.get("owner") and agency.get("next_action")):
                 errors.append(
                     f"{bundle}/agencies.jsonl: {agency_id} pendente sem responsável "
-                    "ou próxima ação"
+                    "e próxima ação"
                 )
 
     for program in records["programs.jsonl"]:
@@ -336,6 +496,32 @@ def validate_bundle(bundle: Path) -> list[str]:
                 )
             signal = program.get("latest_official_signal_on")
             assessed = program.get("assessed_on")
+            activity_basis = program.get("activity_basis")
+            signal_evidence = [
+                evidence
+                for evidence_id in program.get("official_evidence_ids", [])
+                if (evidence := evidences.get(evidence_id))
+                and "atividade do programa" in confirmed_claims(evidence)
+                and evidence.get("observed_on") == signal
+            ]
+            if not signal_evidence:
+                errors.append(
+                    f"{bundle}/programs.jsonl: {program_id} tem sinal oficial sem "
+                    "evidência de atividade observada na mesma data"
+                )
+            if activity_basis == "recorrência oficial em 24 meses" and not any(
+                "recorrência" in confirmed_claims(evidence)
+                for evidence in signal_evidence
+            ):
+                errors.append(
+                    f"{bundle}/programs.jsonl: {program_id} tem recorrência sem "
+                    "evidência confirmada observada na data do sinal"
+                )
+            if activity_basis == "intake permanente" and signal != assessed:
+                errors.append(
+                    f"{bundle}/programs.jsonl: {program_id} usa intake permanente "
+                    "sem observação oficial na data de avaliação"
+                )
             signal_date = parse_date(signal)
             assessed_date = parse_date(assessed)
             if signal_date and assessed_date:
@@ -349,15 +535,19 @@ def validate_bundle(bundle: Path) -> list[str]:
                         f"{bundle}/programs.jsonl: {program_id} não possui sinal "
                         "oficial nos 24 meses anteriores à avaliação"
                     )
-            if program.get("activity_basis") == "chamada aberta":
-                has_open_call = any(
-                    call_is_open_on_capture(calls.get(call_id, {}))
+            if activity_basis == "chamada aberta":
+                open_calls = [
+                    calls.get(call_id, {})
                     for call_id in program.get("call_ids", [])
+                    if call_is_open_on_capture(calls.get(call_id, {}))
+                ]
+                has_open_call_at_signal = any(
+                    call.get("captured_on") == signal for call in open_calls
                 )
-                if not has_open_call:
+                if not has_open_call_at_signal:
                     errors.append(
                         f"{bundle}/programs.jsonl: {program_id} usa chamada aberta "
-                        "sem call_id aberta e temporalmente válida vinculada"
+                        "sem call_id aberta capturada na data do sinal"
                     )
             if program.get("program_status") == "fechado agora, recorrente" and (
                 program.get("activity_basis") != "recorrência oficial em 24 meses"
@@ -375,10 +565,10 @@ def validate_bundle(bundle: Path) -> list[str]:
         if program.get("research_status") in {"descoberto", "em pesquisa"} or program.get(
             "decision"
         ) == "evidência insuficiente":
-            if not (program.get("owner") or program.get("next_action")):
+            if not (program.get("owner") and program.get("next_action")):
                 errors.append(
                     f"{bundle}/programs.jsonl: {program_id} pendente sem responsável "
-                    "ou próxima ação"
+                    "e próxima ação"
                 )
 
     for call in records["calls.jsonl"]:
@@ -434,15 +624,20 @@ def validate_bundle(bundle: Path) -> list[str]:
                 f"{bundle}/calls.jsonl: {call_id} continua prevista na data "
                 "ou após a abertura"
             )
-        if call.get("call_status") in {"aberta", "fechada"}:
-            claims = set()
+        if call.get("call_status") in {"aberta", "fechada", "prevista"}:
+            status_evidence = []
             for evidence_id in call.get("official_evidence_ids", []):
                 if evidence_id in evidences:
-                    claims.update(confirmed_claims(evidences[evidence_id]))
-            if "status da chamada" not in claims:
+                    evidence = evidences[evidence_id]
+                    if (
+                        "status da chamada" in confirmed_claims(evidence)
+                        and evidence.get("observed_on") == captured_on
+                    ):
+                        status_evidence.append(evidence)
+            if not status_evidence:
                 errors.append(
                     f"{bundle}/calls.jsonl: {call_id} tem status afirmado sem "
-                    "evidência oficial confirmada"
+                    "evidência oficial confirmada observada na data da captura"
                 )
 
     return sorted(set(errors))

@@ -43,7 +43,8 @@ agency_id
 O mesmo órgão pode ter vários programas. O mesmo programa pode ter várias
 chamadas ao longo do tempo. Marcas, siglas e traduções ficam em `aliases`; elas
 não geram novos IDs. Duplicatas apontam para `canonical_agency_id` ou
-`canonical_program_id`.
+`canonical_program_id` existente no mesmo bundle. Autorreferências, ciclos e
+caminhos de perfil com segmentos `.` ou `..` são inválidos.
 
 ## Status separados
 
@@ -77,8 +78,12 @@ Um programa elegível usa exatamente uma base de atividade:
 - `recorrência oficial em 24 meses`.
 
 `latest_official_signal_on` registra a data do sinal e `assessed_on` registra a
-data de avaliação. O validador rejeita sinal posterior à avaliação ou anterior
-à janela de 24 meses.
+data de avaliação. A evidência correspondente registra a data do evento ou da
+observação em `observed_on`; o validador exige que ela coincida com o sinal. Para
+`intake permanente`, o intake precisa ser observado na data da avaliação. Para
+recorrência, a mesma data deve possuir afirmação oficial confirmada de
+recorrência. O validador rejeita sinal posterior à avaliação ou anterior à
+janela de 24 meses.
 
 O status de uma chamada é um retrato em `captured_on`. Uma chamada `aberta` não
 pode ter sido capturada antes de `opened_on` nem depois de `closes_on`, quando
@@ -114,7 +119,7 @@ caso:
 - capacitação, mentoria ou aceleração sem benefício financeiro;
 - veículo privado apresentado apenas em parceria com governo.
 
-Toda decisão negativa exige `reason`. Pendências devem indicar `owner` ou
+Toda decisão negativa exige `reason`. Pendências devem indicar `owner` e
 `next_action`.
 
 ## Matriz país por fonte
@@ -166,6 +171,8 @@ não registra valores.
 
 Cada evidência pertence a uma única entidade por `subject_type` e `subject_id`.
 Os registros elegíveis precisam de evidências vinculadas à mesma entidade.
+`published_on` registra a publicação, quando conhecida; `observed_on` registra
+a data do evento ou da observação oficial; `accessed_on` registra a consulta.
 
 Para um programa elegível, evidências oficiais devem confirmar:
 
@@ -191,6 +198,9 @@ reduz os shards de forma determinística, resolve IDs e verifica referências. O
 `task_count` do manifesto deve coincidir com a quantidade de tarefas. Uma tarefa
 `bloqueada` exige motivo e próxima ação. Cada `shard_path` pertence a uma única
 tarefa e a um único `worker_id`; caminhos repetidos no manifesto são inválidos.
+Segmentos `.` e `..` são proibidos. Cada par país × tipo de fonte aparece uma
+única vez na matriz e em uma tarefa correspondente. Uma execução `concluída`
+não pode manter tarefas `todo` ou `em execução`.
 
 ## Fronteiras com outros catálogos
 

@@ -77,7 +77,7 @@
         },
         "shard_path": {
           "type": "string",
-          "pattern": "^research/epic-65/[^/]+/shards/[^/]+/$"
+          "pattern": "^research/epic-65/[a-z0-9][a-z0-9-]*/shards/[a-z0-9][a-z0-9-]*/$"
         },
         "status": { "enum": ["todo", "em execução", "done", "bloqueada"] },
         "reason": { "type": ["string", "null"], "minLength": 1 },

@@ -141,7 +141,7 @@
     },
     "canonical_profile": {
       "type": ["string", "null"],
-      "pattern": "^ecosystem/public-programs/.+\\.md$"
+      "pattern": "^ecosystem/public-programs/[a-z0-9][a-z0-9-]*(?:/[a-z0-9][a-z0-9-]*)*\\.md$"
     },
     "reason": { "type": ["string", "null"], "minLength": 1 },
     "owner": { "type": ["string", "null"], "minLength": 1 },
@@ -192,10 +192,7 @@
     {
       "if": { "properties": { "decision": { "const": "duplicado" } } },
       "then": {
-        "anyOf": [
-          { "properties": { "canonical_program_id": { "type": "string" } } },
-          { "properties": { "canonical_profile": { "type": "string" } } }
-        ]
+        "properties": { "canonical_program_id": { "type": "string" } }
       }
     },
     {
