@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-64/schemas/coverage-record.schema.json",
+  "title": "Linha da matriz país por fonte da epic 64",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "country", "regional_issue", "sources"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "country": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "regional_issue": { "type": "integer", "minimum": 90, "maximum": 93 },
+    "sources": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_category",
+          "status",
+          "source_id",
+          "gap_reason",
+          "owner",
+          "next_action"
+        ],
+        "properties": {
+          "source_category": {
+            "enum": ["regulator", "public_ecosystem", "official_platform", "discovery"]
+          },
+          "status": { "enum": ["planned", "complete", "gap_justified"] },
+          "source_id": {
+            "type": ["string", "null"],
+            "pattern": "^src-[a-z0-9][a-z0-9-]*$"
+          },
+          "gap_reason": { "type": ["string", "null"], "minLength": 1 },
+          "owner": { "type": ["string", "null"], "minLength": 1 },
+          "next_action": { "type": ["string", "null"], "minLength": 1 }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": { "status": { "const": "complete" } },
+              "required": ["status"]
+            },
+            "then": { "properties": { "source_id": { "type": "string" } } }
+          },
+          {
+            "if": {
+              "properties": { "status": { "const": "gap_justified" } },
+              "required": ["status"]
+            },
+            "then": {
+              "properties": {
+                "gap_reason": { "type": "string" },
+                "owner": { "type": "string" },
+                "next_action": { "type": "string" }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

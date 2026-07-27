@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Iterable, Sequence
 
 try:
+    from .angel_validation import validate_epic_63
     from .accelerator_validation import (
         is_accelerator_profile_path,
         validate_accelerator_index,
@@ -20,7 +21,9 @@ try:
         validate_epic_62,
     )
     from .public_program_validation import validate_epic_65
+    from .platform_validation import validate_epic_64
 except ImportError:  # Allow `python tools/research/validate.py`.
+    from angel_validation import validate_epic_63
     from accelerator_validation import (
         is_accelerator_profile_path,
         validate_accelerator_index,
@@ -28,6 +31,7 @@ except ImportError:  # Allow `python tools/research/validate.py`.
         validate_epic_62,
     )
     from public_program_validation import validate_epic_65
+    from platform_validation import validate_epic_64
 
 
 README_NAMES = ("README.md", "README.pt.md", "README.es.md")
@@ -57,7 +61,19 @@ REQUIRED_PROFILE_SECTIONS = (
     "Portfolio signals",
     "Sources",
 )
-MOJIBAKE_MARKERS = ("Ã", "Â", "�", "\x07", "\\`")
+MOJIBAKE_MARKERS = (
+    "Ã",
+    "Â",
+    "�",
+    "â€",
+    "â„",
+    "â™",
+    "âœ",
+    "â”",
+    "ðŸ",
+    "\x07",
+    "\\`",
+)
 
 
 @dataclass(frozen=True)
@@ -351,6 +367,8 @@ def validate_repository(root: Path, base_ref: str) -> list[str]:
 
     errors.extend(validate_accelerator_index(root))
     errors.extend(validate_epic_62(root))
+    errors.extend(validate_epic_63(root))
+    errors.extend(validate_epic_64(root))
     errors.extend(validate_epic_65(root))
 
     # Source code intentionally contains the marker literals used by this check.

@@ -158,11 +158,13 @@ class ProfileValidationTests(unittest.TestCase):
         self.assertEqual([], errors)
 
     def test_detects_mojibake(self) -> None:
-        with tempfile.TemporaryDirectory() as directory:
-            path = Path(directory) / "bad.md"
-            path.write_text("programaÃ§Ã£o", encoding="utf-8")
-            errors = validate_mojibake(path, "bad.md")
-        self.assertTrue(errors)
+        for broken_text in ("programaÃ§Ã£o", "Texto â€œquebradoâ€"):
+            with self.subTest(text=broken_text):
+                with tempfile.TemporaryDirectory() as directory:
+                    path = Path(directory) / "bad.md"
+                    path.write_text(broken_text, encoding="utf-8")
+                    errors = validate_mojibake(path, "bad.md")
+                self.assertTrue(errors)
 
 
 if __name__ == "__main__":
