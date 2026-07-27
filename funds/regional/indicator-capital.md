@@ -6,6 +6,8 @@ Indicator Capital is an investment organization focused on Deep tech in Latin Am
 
 - **Website:** https://indicator.capital/
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Deep tech

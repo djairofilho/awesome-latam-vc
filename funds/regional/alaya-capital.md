@@ -7,6 +7,8 @@ technology teams with regional and global growth ambitions.
 
 - **Website:** https://alaya-capital.com/
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Digital transformation
@@ -16,7 +18,7 @@ technology teams with regional and global growth ambitions.
 - **Business models:** B2B SaaS, fintech, data and analytics, Industry 4.0,
   e-commerce, logistics, edtech, foodtech, agtech, proptech, and consumer apps
 - **Portfolio size:** Not publicly disclosed on the reviewed thesis page
-- **Selected companies in the local dataset:** 123Seguro, Aquabyte, Avancargo,
+- **Selected companies:** 123Seguro, Aquabyte, Avancargo,
   Betterfly, and Lemon
 - **Submit a startup:** https://alaya-capital.com/apply-old/
 
