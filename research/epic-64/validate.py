@@ -58,6 +58,14 @@ OFFICIAL_TYPES = {
     "official_document",
 }
 REGULATORY_TYPES = {"official_regulator", "official_document"}
+SUBJECT_PREFIXES = {
+    "operator": "op-",
+    "brand": "brand-",
+    "platform": "plat-",
+    "product": "prod-",
+    "offer": "offer-",
+    "regulatory_record": "reg-",
+}
 
 
 def read_json(path: Path) -> dict[str, Any]:
@@ -179,6 +187,18 @@ def confirmed_claim(evidence: dict[str, Any], field: str) -> bool:
     )
 
 
+def duplicate_values(values: Iterable[Any]) -> list[str]:
+    seen: set[str] = set()
+    duplicates: set[str] = set()
+    for value in values:
+        if not isinstance(value, str):
+            continue
+        if value in seen:
+            duplicates.add(value)
+        seen.add(value)
+    return sorted(duplicates)
+
+
 def validate_candidate_invariants(
     dataset: Path,
     loaded: dict[str, list[dict[str, Any]]],
@@ -204,14 +224,34 @@ def validate_candidate_invariants(
         errors,
     )
     entity_ids: set[str] = set()
+    regulatory_records: dict[str, tuple[str, dict[str, Any]]] = {}
+
+    for candidate in candidates:
+        platform_id = candidate.get("platform_id")
+        for record in candidate.get("regulatory_records", []):
+            regulatory_id = record.get("regulatory_id")
+            if isinstance(platform_id, str) and isinstance(regulatory_id, str):
+                regulatory_records[regulatory_id] = (platform_id, record)
 
     for index, evidence in enumerate(loaded["evidence.jsonl"]):
-        if confirmed_claim(evidence, "regulatory_status") and (
-            evidence.get("source_type") not in REGULATORY_TYPES
+        if not confirmed_claim(evidence, "regulatory_status"):
+            continue
+        label = record_label(dataset / "evidence.jsonl", index)
+        regulatory = regulatory_records.get(evidence.get("subject_id"))
+        if evidence.get("source_type") not in REGULATORY_TYPES:
+            errors.append(
+                f"{label}: alegação regulatória exige regulador ou documento oficial"
+            )
+        if evidence.get("subject_type") != "regulatory_record" or not regulatory:
+            errors.append(
+                f"{label}: alegação regulatória deve apontar para um registro regulatório"
+            )
+        elif (
+            evidence.get("platform_id") != regulatory[0]
+            or evidence.get("evidence_id") != regulatory[1].get("evidence_id")
         ):
             errors.append(
-                f"{record_label(dataset / 'evidence.jsonl', index)}: "
-                "alegação regulatória exige regulador ou documento oficial"
+                f"{label}: alegação regulatória não corresponde ao registro referenciado"
             )
 
     for index, candidate in enumerate(candidates):
@@ -230,6 +270,15 @@ def validate_candidate_invariants(
             record.get("regulatory_id")
             for record in candidate.get("regulatory_records", [])
         }
+        nested_ids = (
+            ("product_id", candidate.get("products", [])),
+            ("offer_id", candidate.get("offers", [])),
+            ("regulatory_id", candidate.get("regulatory_records", [])),
+        )
+        for key, records in nested_ids:
+            duplicates = duplicate_values(record.get(key) for record in records)
+            if duplicates:
+                errors.append(f"{label}: {key} duplicado: {duplicates}")
         current_ids = (
             {platform_id, operator_id, brand_id}
             | product_ids
@@ -331,6 +380,14 @@ def validate_candidate_invariants(
 
     for index, evidence in enumerate(loaded["evidence.jsonl"]):
         label = record_label(dataset / "evidence.jsonl", index)
+        expected_prefix = SUBJECT_PREFIXES.get(evidence.get("subject_type"))
+        if expected_prefix and not str(evidence.get("subject_id", "")).startswith(
+            expected_prefix
+        ):
+            errors.append(
+                f"{label}: subject_id não corresponde a subject_type "
+                f"{evidence.get('subject_type')}"
+            )
         if evidence.get("platform_id") not in platforms:
             errors.append(f"{label}: plataforma órfã: {evidence.get('platform_id')}")
         if evidence.get("subject_id") not in entity_ids:
@@ -375,15 +432,14 @@ def validate_dates(
             and confirmed_claim(evidences[evidence_id], "recent_activity")
         ]
         if not any(
-            evidence.get("published_on")
-            and activity_floor
-            <= date.fromisoformat(evidence["published_on"])
-            <= cutoff
+            evidence.get("source_type") in OFFICIAL_TYPES
+            and evidence.get("observed_on") == activity_value
             for evidence in activity_sources
         ):
             errors.append(
                 f"{record_label(dataset / 'candidates.jsonl', index)}: "
-                "evidência de atividade sem data dentro da janela de 24 meses"
+                "last_official_activity_on não corresponde à evidência oficial "
+                "de atividade"
             )
 
     for index, evidence in enumerate(loaded["evidence.jsonl"]):
@@ -404,8 +460,10 @@ def validate_coverage(
     expected_countries: set[str] | None = None,
 ) -> None:
     countries: set[str] = set()
-    source_ids = {
-        record.get("source_id") for record in loaded["source-inventory.jsonl"]
+    sources = {
+        record.get("source_id"): record
+        for record in loaded["source-inventory.jsonl"]
+        if isinstance(record.get("source_id"), str)
     }
     for index, record in enumerate(loaded["coverage-matrix.jsonl"]):
         label = record_label(dataset / "coverage-matrix.jsonl", index)
@@ -422,8 +480,22 @@ def validate_coverage(
             )
         for source in record.get("sources", []):
             source_id = source.get("source_id")
-            if source.get("status") == "complete" and source_id not in source_ids:
+            if source.get("status") != "complete":
+                continue
+            inventory_record = sources.get(source_id)
+            if not inventory_record:
                 errors.append(f"{label}: fonte concluída não inventariada: {source_id}")
+                continue
+            if inventory_record.get("country") != country:
+                errors.append(
+                    f"{label}: fonte concluída {source_id} pertence a outro país"
+                )
+            if inventory_record.get("source_category") != source.get(
+                "source_category"
+            ):
+                errors.append(
+                    f"{label}: fonte concluída {source_id} pertence a outra categoria"
+                )
     if expected_countries is not None and countries != expected_countries:
         errors.append(
             f"{dataset / 'coverage-matrix.jsonl'}: países divergentes; "

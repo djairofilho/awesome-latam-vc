@@ -104,12 +104,13 @@ Cada evidência registra:
 
 - sujeito e ID ao qual se aplica;
 - URL, publicador e tipo de fonte;
-- data de publicação, quando disponível, e data de acesso;
+- data de publicação, quando disponível, data observada do evento e data de acesso;
 - alegações confirmadas, refutadas ou não divulgadas;
 - localizador e resumo factual parafraseado.
 
-Uma atividade somente é recente quando sua data está entre a data de corte e
-os 24 meses anteriores. Não infira atividade atual de uma oferta antiga.
+Uma atividade somente é recente quando `observed_on` está entre a data de corte
+e os 24 meses anteriores e coincide com `last_official_activity_on`. Não infira
+atividade atual da publicação de uma página nem de uma oferta antiga.
 
 ## Matriz país por tipo de fonte
 
@@ -195,6 +196,7 @@ O validador verifica JSON Schema e também:
 - oferta permanentemente inelegível como perfil;
 - quatro tipos de fonte por país;
 - fontes concluídas presentes no inventário;
+- país e categoria das fontes concluídas iguais aos da célula de cobertura;
 - `task_count`, `run_id` e IDs de tarefa consistentes;
 - ausência do campo `direct_investment`.
 

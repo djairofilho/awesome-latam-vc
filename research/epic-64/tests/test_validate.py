@@ -89,6 +89,16 @@ class ContractValidationTests(unittest.TestCase):
         errors = self.validate_mutation(mutate)
         self.assertTrue(any("janela de 24 meses" in error for error in errors))
 
+    def test_activity_date_must_match_official_evidence(self) -> None:
+        def mutate(bundle: dict[str, list[dict]]) -> None:
+            bundle["candidates.jsonl"][0]["last_official_activity_on"] = "2026-02-01"
+
+        errors = self.validate_mutation(mutate)
+        self.assertTrue(
+            any("não corresponde à evidência oficial" in error for error in errors),
+            errors,
+        )
+
     def test_coverage_requires_every_source_category(self) -> None:
         def mutate(bundle: dict[str, list[dict]]) -> None:
             bundle["coverage-matrix.jsonl"][0]["sources"].pop()
@@ -96,6 +106,76 @@ class ContractValidationTests(unittest.TestCase):
         errors = self.validate_mutation(mutate)
         self.assertTrue(errors)
         self.assertTrue(any("coverage-matrix.jsonl" in error for error in errors))
+
+    def test_complete_coverage_source_must_match_country_and_category(self) -> None:
+        def mutate(bundle: dict[str, list[dict]]) -> None:
+            source = bundle["source-inventory.jsonl"][0]
+            source["country"] = "MX"
+            source["source_category"] = "discovery"
+
+        errors = self.validate_mutation(mutate)
+        self.assertTrue(any("outro país" in error for error in errors), errors)
+        self.assertTrue(any("outra categoria" in error for error in errors), errors)
+
+    def test_rejects_duplicate_nested_entity_ids(self) -> None:
+        cases = (
+            ("products", "product_id"),
+            ("offers", "offer_id"),
+            ("regulatory_records", "regulatory_id"),
+        )
+        for collection, key in cases:
+            with self.subTest(collection=collection):
+                def mutate(
+                    bundle: dict[str, list[dict]],
+                    collection: str = collection,
+                ) -> None:
+                    records = bundle["candidates.jsonl"][0][collection]
+                    records.append(copy.deepcopy(records[0]))
+
+                errors = self.validate_mutation(mutate)
+                self.assertTrue(
+                    any(
+                        f"{key} duplicado" in error
+                        or (
+                            collection == "regulatory_records"
+                            and "non-unique elements" in error
+                        )
+                        for error in errors
+                    ),
+                    errors,
+                )
+
+    def test_evidence_subject_type_must_match_subject_id(self) -> None:
+        def mutate(bundle: dict[str, list[dict]]) -> None:
+            evidence = bundle["evidence.jsonl"][1]
+            evidence["subject_type"] = "operator"
+
+        errors = self.validate_mutation(mutate)
+        self.assertTrue(any("subject_id" in error for error in errors), errors)
+
+    def test_regulatory_claim_must_reference_declared_record(self) -> None:
+        def mutate(bundle: dict[str, list[dict]]) -> None:
+            evidence = copy.deepcopy(bundle["evidence.jsonl"][2])
+            evidence["evidence_id"] = "ev-regulatoria-solta"
+            evidence["subject_type"] = "platform"
+            evidence["subject_id"] = "plat-exemplo"
+            bundle["evidence.jsonl"].append(evidence)
+
+        errors = self.validate_mutation(mutate)
+        self.assertTrue(
+            any(
+                "deve apontar para um registro regulatório" in error
+                for error in errors
+            ),
+            errors,
+        )
+
+    def test_complete_http_source_requires_cache_key(self) -> None:
+        def mutate(bundle: dict[str, list[dict]]) -> None:
+            bundle["source-inventory.jsonl"][0]["cache_key"] = None
+
+        errors = self.validate_mutation(mutate)
+        self.assertTrue(any("cache_key" in error for error in errors), errors)
 
     def test_blocked_task_requires_owner_reason_and_next_action(self) -> None:
         def mutate(bundle: dict[str, list[dict]]) -> None:

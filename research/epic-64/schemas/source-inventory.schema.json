@@ -76,6 +76,20 @@
           "result": { "const": "unavailable" }
         }
       }
+    },
+    {
+      "if": {
+        "properties": {
+          "access_method": { "enum": ["http", "browser"] },
+          "result": { "const": "complete" }
+        },
+        "required": ["access_method", "result"]
+      },
+      "then": {
+        "properties": {
+          "cache_key": { "type": "string" }
+        }
+      }
     }
   ]
 }

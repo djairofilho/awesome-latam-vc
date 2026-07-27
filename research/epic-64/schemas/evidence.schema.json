@@ -15,6 +15,7 @@
     "publisher",
     "source_type",
     "published_on",
+    "observed_on",
     "accessed_on",
     "claims",
     "locator",
@@ -57,6 +58,10 @@
       "type": ["string", "null"],
       "format": "date"
     },
+    "observed_on": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
     "accessed_on": { "type": "string", "format": "date" },
     "claims": {
       "type": "array",
@@ -87,5 +92,67 @@
     },
     "locator": { "type": "string", "minLength": 1 },
     "summary": { "type": "string", "minLength": 1 }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "subject_type": { "const": "operator" } },
+        "required": ["subject_type"]
+      },
+      "then": { "properties": { "subject_id": { "pattern": "^op-" } } }
+    },
+    {
+      "if": {
+        "properties": { "subject_type": { "const": "brand" } },
+        "required": ["subject_type"]
+      },
+      "then": { "properties": { "subject_id": { "pattern": "^brand-" } } }
+    },
+    {
+      "if": {
+        "properties": { "subject_type": { "const": "platform" } },
+        "required": ["subject_type"]
+      },
+      "then": { "properties": { "subject_id": { "pattern": "^plat-" } } }
+    },
+    {
+      "if": {
+        "properties": { "subject_type": { "const": "product" } },
+        "required": ["subject_type"]
+      },
+      "then": { "properties": { "subject_id": { "pattern": "^prod-" } } }
+    },
+    {
+      "if": {
+        "properties": { "subject_type": { "const": "offer" } },
+        "required": ["subject_type"]
+      },
+      "then": { "properties": { "subject_id": { "pattern": "^offer-" } } }
+    },
+    {
+      "if": {
+        "properties": { "subject_type": { "const": "regulatory_record" } },
+        "required": ["subject_type"]
+      },
+      "then": { "properties": { "subject_id": { "pattern": "^reg-" } } }
+    },
+    {
+      "if": {
+        "properties": {
+          "claims": {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "field": { "const": "recent_activity" },
+                "finding": { "const": "confirmed" }
+              },
+              "required": ["field", "finding"]
+            }
+          }
+        },
+        "required": ["claims"]
+      },
+      "then": { "properties": { "observed_on": { "type": "string" } } }
+    }
+  ]
 }
