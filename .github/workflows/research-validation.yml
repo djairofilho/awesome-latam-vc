@@ -60,6 +60,7 @@ jobs:
         run: |
           python -m unittest discover -s tools/research/tests -v
           python -m unittest discover -s research/epic-63/tests -v
+          python -m unittest discover -s research/epic-64/tests -v
 
       - name: Check translated index synchronization
         run: python tools/research/generate_indexes.py --check
