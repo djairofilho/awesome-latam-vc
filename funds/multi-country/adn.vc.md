@@ -1,33 +1,36 @@
 # ADN.VC
 
-ADN.VC is an investment organization focused on Technology in Central America and Latin America.
+ADN.VC is a United States-based venture capital firm investing in early-stage fintech and proptech startups across Latin America.
 
 ## Investment profile
 
 - **Website:** https://adn.vc/
 - **Fund type:** Venture capital
-- **Stage at entry:** Not publicly disclosed
-- **Follow-on stages:** Not publicly disclosed in the reviewed sources
-- **Focus:** Technology
-- **Geography:** Central America and Latin America
-- **Initial check:** Not publicly disclosed in the reviewed sources
-- **Investment role:** Not publicly disclosed in the reviewed sources
-- **Business models:** Technology-enabled companies; specific B2B/B2C constraints not publicly disclosed
-- **Portfolio size:** Not publicly disclosed in the reviewed sources
-- **Selected companies:** Not publicly disclosed in the reviewed sources
-- **Submit a startup:** Not publicly disclosed in the reviewed sources
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
+- **Stage at entry:** Pre-seed and Seed
+- **Follow-on stages:** Not publicly disclosed
+- **Focus:** Fintech, proptech, and contech
+- **Geography:** Latin America, with portfolio presence in Mexico, Colombia, Peru, Chile, and Argentina
+- **Initial check:** US$40,000
+- **Investment role:** Not publicly disclosed
+- **Business models:** Technology-enabled financial services, real estate, and construction
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** WiseCricket, nufi, UIN, Skyblue Analytics, and Lebane
+- **Submit a startup:** https://adn.vc/
 
 ## Declared thesis
 
-The reviewed source presents ADN.VC as investing in Technology across Central America and Latin America. It does not publicly specify an entry stage that can be normalized without inference.
+ADN.VC states that it invests in pre-seed and seed fintech, proptech, and contech startups in Latin America. Its current site discloses an initial US$40,000 investment and follow-on capital of up to US$110,000.
 
 ## Portfolio signals
 
-The local project dataset does not currently contain companies associated with ADN.VC. No portfolio pattern is inferred from that absence.
+The official portfolio shows companies serving financial-services, real-estate, and construction markets in several Latin American countries. This observation is based only on ADN.VC's public portfolio and does not expand its declared mandate.
 
 ## Sources
 
-- [Portfolio](https://adn.vc/portafolio/)
-- [Fund website](https://adn.vc/aiero_project_category/investment-infra/)
+- [Investment thesis and pitch channel](https://adn.vc/)
+- [Official portfolio](https://adn.vc/portafolio/)
+- [Fund I overview](https://adn.vc/%F0%9F%A7%AC-adn-vc-newsletter-015/)
 
-**Last verified:** 2026-07-26
+**Last verified:** 2026-07-27
