@@ -109,7 +109,7 @@
         "partition": { "type": "string", "minLength": 1 },
         "shard_path": {
           "type": "string",
-          "pattern": "^research/epic-63/.+/shards/[a-z0-9][a-z0-9-]*/$"
+          "pattern": "^research/epic-63/[a-z0-9][a-z0-9-]*/shards/[a-z0-9][a-z0-9-]*/$"
         },
         "priority": { "type": "integer", "minimum": 1, "maximum": 5 },
         "status": {
@@ -129,7 +129,17 @@
       "allOf": [
         {
           "if": {
-            "properties": { "status": { "enum": ["todo", "blocked"] } }
+            "properties": {
+              "status": {
+                "enum": [
+                  "todo",
+                  "leased",
+                  "extracted",
+                  "verified",
+                  "blocked"
+                ]
+              }
+            }
           },
           "then": {
             "properties": {

@@ -8,7 +8,7 @@ import sys
 from calendar import monthrange
 from dataclasses import dataclass
 from datetime import date
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any, Iterable
 
 from jsonschema import Draft202012Validator, FormatChecker
@@ -23,7 +23,13 @@ FILES = {
     "coverage-matrix.jsonl": "coverage-record.schema.json",
     "run-manifest.jsonl": "run-manifest-record.schema.json",
 }
-MOJIBAKE_MARKERS = ("Ã", "Â", "�")
+MOJIBAKE_MARKERS = ("Ã", "Â", "�", "â€", "â„", "â™", "âœ", "â”", "ðŸ")
+CHAPTER_AUTONOMY_CLAIMS = {
+    "autonomia de seleção",
+    "autonomia de decisão",
+    "autonomia geográfica",
+    "autonomia de atividade recente",
+}
 ROUTED_DECISIONS = {
     "encaminhado-para-funds",
     "encaminhado-para-aceleradoras",
@@ -49,7 +55,10 @@ def read_jsonl(path: Path) -> tuple[list[Record], list[str]]:
     if not path.is_file():
         return records, [f"{path.name}: arquivo obrigatório ausente"]
 
-    text = path.read_text(encoding="utf-8")
+    try:
+        text = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError) as exc:
+        return records, [f"{path.name}: leitura UTF-8 falhou: {exc}"]
     for marker in MOJIBAKE_MARKERS:
         if marker in text:
             errors.append(f"{path.name}: possível mojibake encontrado: {marker!r}")
@@ -137,6 +146,55 @@ def subtract_months(value: date, months: int) -> date:
     return date(year, month, day)
 
 
+def parse_date(value: Any) -> date | None:
+    if not isinstance(value, str):
+        return None
+    try:
+        return date.fromisoformat(value)
+    except ValueError:
+        return None
+
+
+def is_safe_repository_path(value: Any, roots: set[str]) -> bool:
+    if not isinstance(value, str) or "\\" in value:
+        return False
+    path = PurePosixPath(value)
+    return (
+        not path.is_absolute()
+        and path.parts
+        and path.parts[0] in roots
+        and all(part not in {"", ".", ".."} for part in path.parts)
+    )
+
+
+def validate_reference_cycles(
+    candidates: dict[str, Record],
+    field: str,
+) -> list[str]:
+    errors: list[str] = []
+    completed: set[str] = set()
+    for start in candidates:
+        if start in completed:
+            continue
+        positions: dict[str, int] = {}
+        path: list[str] = []
+        current: str | None = start
+        while current in candidates and current not in completed:
+            if current in positions:
+                cycle = path[positions[current]:] + [current]
+                errors.append(
+                    f"{candidates[current].location}: ciclo em {field}: "
+                    + " -> ".join(cycle)
+                )
+                break
+            positions[current] = len(path)
+            path.append(current)
+            target = candidates[current].data.get(field)
+            current = target if isinstance(target, str) else None
+        completed.update(path)
+    return errors
+
+
 def validate_candidate_relations(
     candidates: dict[str, Record],
     evidence: dict[str, Record],
@@ -157,6 +215,26 @@ def validate_candidate_relations(
                     f"{record.location}: network_id não deriva do domínio "
                     f"normalizado {domain!r}"
                 )
+
+        discovered = parse_date(item.get("discovered_on"))
+        cutoff = parse_date(item.get("cutoff_date"))
+        if discovered and cutoff and discovered > cutoff:
+            errors.append(
+                f"{record.location}: discovered_on posterior a cutoff_date"
+            )
+
+        canonical_profile = item.get("canonical_profile")
+        if canonical_profile and not is_safe_repository_path(
+            canonical_profile, {"funds", "ecosystem"}
+        ):
+            errors.append(
+                f"{record.location}: canonical_profile deve permanecer em "
+                "funds/ ou ecosystem/"
+            )
+        if item.get("already_listed") and not canonical_profile:
+            errors.append(
+                f"{record.location}: already_listed exige canonical_profile"
+            )
 
         for source_id in item.get("discovery_source_ids", []):
             if source_id not in sources:
@@ -216,6 +294,13 @@ def validate_candidate_relations(
             errors.append(
                 f"{record.location}: capítulo alias decidido deve ser duplicado"
             )
+        if item.get("chapter_identity") == "alias":
+            target = candidates.get(item.get("canonical_network_id"))
+            if target and target.data.get("chapter_identity") == "alias":
+                errors.append(
+                    f"{record.location}: alias deve apontar diretamente para "
+                    "um registro canônico que não seja alias"
+                )
 
         claims = confirmed_official_claims(record, evidence)
         if decision == "elegível":
@@ -227,10 +312,16 @@ def validate_candidate_relations(
                     )
             activity_date = item.get("activity_evidence_date")
             if activity_date:
-                activity_value = date.fromisoformat(activity_date)
-                cutoff = date.fromisoformat(item["cutoff_date"])
-                oldest = subtract_months(cutoff, 24)
-                if activity_value < oldest or activity_value > cutoff:
+                activity_value = parse_date(activity_date)
+                cutoff = parse_date(item.get("cutoff_date"))
+                if (
+                    activity_value
+                    and cutoff
+                    and (
+                        activity_value < subtract_months(cutoff, 24)
+                        or activity_value > cutoff
+                    )
+                ):
                     errors.append(
                         f"{record.location}: atividade fora da janela de 24 "
                         "meses"
@@ -247,18 +338,31 @@ def validate_candidate_relations(
                     )
 
         if item.get("chapter_identity") == "standalone":
-            if "autonomia de capítulo" not in claims:
+            missing_autonomy = sorted(CHAPTER_AUTONOMY_CLAIMS - claims.keys())
+            if missing_autonomy:
                 errors.append(
                     f"{record.location}: capítulo standalone sem evidência "
-                    "oficial de autonomia"
+                    f"oficial das autonomias: {missing_autonomy}"
                 )
 
+    errors.extend(validate_reference_cycles(candidates, "parent_network_id"))
+    errors.extend(validate_reference_cycles(candidates, "canonical_network_id"))
+
     for record in evidence.values():
-        if record.data.get("network_id") not in candidates:
+        candidate = candidates.get(record.data.get("network_id"))
+        if candidate is None:
             errors.append(
                 f"{record.location}: network_id inexistente: "
                 f"{record.data.get('network_id')}"
             )
+        else:
+            accessed = parse_date(record.data.get("accessed_on"))
+            cutoff = parse_date(candidate.data.get("cutoff_date"))
+            if accessed and cutoff and accessed > cutoff:
+                errors.append(
+                    f"{record.location}: accessed_on posterior ao cutoff_date "
+                    "do candidato"
+                )
         published = record.data.get("published_on")
         if published and published > record.data.get("accessed_on", ""):
             errors.append(
@@ -299,6 +403,10 @@ def validate_coverage(
                 errors.append(
                     f"{record.location}: geografia não coincide com {source_id}"
                 )
+            elif source.data.get("issue") != item.get("issue"):
+                errors.append(
+                    f"{record.location}: issue não coincide com {source_id}"
+                )
     return errors
 
 
@@ -335,6 +443,50 @@ def validate_manifest(records: list[Record]) -> list[str]:
     return errors
 
 
+def validate_run_scope(
+    manifests: list[Record],
+    candidates: list[Record],
+    sources: list[Record],
+    coverage: list[Record],
+) -> list[str]:
+    runs = [
+        record
+        for record in manifests
+        if record.data.get("record_type") == "run"
+    ]
+    if len(runs) != 1:
+        return []
+    run = runs[0]
+    run_issues = set(run.data.get("issues", []))
+    run_cutoff = parse_date(run.data.get("cutoff_date"))
+    errors: list[str] = []
+
+    for record in candidates:
+        cutoff = parse_date(record.data.get("cutoff_date"))
+        if cutoff and run_cutoff and cutoff != run_cutoff:
+            errors.append(
+                f"{record.location}: cutoff_date não coincide com o manifesto"
+            )
+
+    for record in sources:
+        if record.data.get("issue") not in run_issues:
+            errors.append(
+                f"{record.location}: issue da fonte não consta no run"
+            )
+        accessed = parse_date(record.data.get("accessed_on"))
+        if accessed and run_cutoff and accessed > run_cutoff:
+            errors.append(
+                f"{record.location}: accessed_on posterior ao cutoff_date do run"
+            )
+
+    for record in coverage:
+        if record.data.get("issue") not in run_issues:
+            errors.append(
+                f"{record.location}: issue da cobertura não consta no run"
+            )
+    return errors
+
+
 def validate_directory(directory: Path) -> list[str]:
     all_records: dict[str, list[Record]] = {}
     errors: list[str] = []
@@ -362,6 +514,14 @@ def validate_directory(directory: Path) -> list[str]:
         validate_coverage(all_records["coverage-matrix.jsonl"], sources)
     )
     errors.extend(validate_manifest(all_records["run-manifest.jsonl"]))
+    errors.extend(
+        validate_run_scope(
+            all_records["run-manifest.jsonl"],
+            all_records["candidates.jsonl"],
+            all_records["source-inventory.jsonl"],
+            all_records["coverage-matrix.jsonl"],
+        )
+    )
     return errors
 
 

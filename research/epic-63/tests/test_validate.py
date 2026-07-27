@@ -39,6 +39,14 @@ def rewrite_record(
     )
 
 
+def append_record(path: Path, record: dict[str, Any]) -> None:
+    with path.open("a", encoding="utf-8") as stream:
+        stream.write(
+            json.dumps(record, ensure_ascii=False, separators=(",", ":"))
+            + "\n"
+        )
+
+
 class ContractValidationTests(unittest.TestCase):
     def validate_copy(
         self,
@@ -183,6 +191,215 @@ class ContractValidationTests(unittest.TestCase):
 
         errors = self.validate_copy(mutate=mutate)
         self.assertTrue(any("célula duplicada" in error for error in errors))
+
+    def test_chapter_cannot_use_not_applicable_identity(self) -> None:
+        def mutate(directory: Path) -> None:
+            rewrite_record(
+                directory / "candidates.jsonl",
+                0,
+                lambda item: item.update(
+                    entity_type="capítulo",
+                    chapter_identity="não aplicável",
+                ),
+            )
+
+        errors = self.validate_copy(mutate=mutate)
+        self.assertTrue(any("chapter_identity" in error for error in errors))
+
+    def test_aliases_cannot_form_cycles(self) -> None:
+        def mutate(directory: Path) -> None:
+            rewrite_record(
+                directory / "candidates.jsonl",
+                0,
+                lambda item: item.update(
+                    entity_type="capítulo",
+                    chapter_identity="alias",
+                    canonical_network_id="ang-example-org--sao-paulo",
+                    decision="duplicado",
+                    reason="Ciclo propositalmente inválido.",
+                ),
+            )
+
+        errors = self.validate_copy(mutate=mutate)
+        self.assertTrue(
+            any(
+                "registro canônico que não seja alias" in error
+                or "ciclo em canonical_network_id" in error
+                for error in errors
+            ),
+            errors,
+        )
+
+    def test_standalone_chapter_requires_atomic_autonomy_claims(self) -> None:
+        def mutate(directory: Path) -> None:
+            rewrite_record(
+                directory / "candidates.jsonl",
+                1,
+                lambda item: item.update(
+                    chapter_identity="standalone",
+                    canonical_network_id=None,
+                    chapter_autonomy={
+                        "selection": True,
+                        "decision": True,
+                        "geography": True,
+                        "recent_activity": True,
+                    },
+                    official_evidence_ids=["ev-example-autonomy"],
+                ),
+            )
+            append_record(
+                directory / "evidence.jsonl",
+                {
+                    "schema_version": "1.0",
+                    "evidence_id": "ev-example-autonomy",
+                    "network_id": "ang-example-org--sao-paulo",
+                    "url": "https://example.org/sao-paulo/autonomy",
+                    "title": "Autonomia do capítulo",
+                    "publisher": "Rede Exemplo São Paulo",
+                    "source_type": "oficial",
+                    "published_on": "2026-07-01",
+                    "accessed_on": "2026-07-27",
+                    "claims": [
+                        {
+                            "field": "autonomia de seleção",
+                            "finding": "confirmado",
+                        }
+                    ],
+                    "locator": "Seção de governança",
+                    "summary": "O capítulo confirma apenas seleção própria.",
+                },
+            )
+
+        errors = self.validate_copy(mutate=mutate)
+        self.assertTrue(any("autonomias" in error for error in errors), errors)
+
+    def test_active_tasks_require_owner_and_next_action(self) -> None:
+        for status in ("leased", "extracted", "verified"):
+            with self.subTest(status=status):
+                def mutate(directory: Path, task_status: str = status) -> None:
+                    rewrite_record(
+                        directory / "run-manifest.jsonl",
+                        1,
+                        lambda item: item.update(
+                            status=task_status,
+                            owner=None,
+                            next_action=None,
+                        ),
+                    )
+
+                errors = self.validate_copy(mutate=mutate)
+                self.assertTrue(any("owner" in error for error in errors), errors)
+                self.assertTrue(
+                    any("next_action" in error for error in errors),
+                    errors,
+                )
+
+    def test_repository_paths_reject_traversal(self) -> None:
+        def mutate_profile(directory: Path) -> None:
+            rewrite_record(
+                directory / "candidates.jsonl",
+                0,
+                lambda item: item.update(
+                    status="publicado",
+                    canonical_profile="funds/../../README.md",
+                ),
+            )
+
+        def mutate_shard(directory: Path) -> None:
+            rewrite_record(
+                directory / "run-manifest.jsonl",
+                1,
+                lambda item: item.update(
+                    shard_path=(
+                        "research/epic-63/../../fora/shards/worker-1/"
+                    )
+                ),
+            )
+
+        for mutate in (mutate_profile, mutate_shard):
+            with self.subTest(mutation=mutate.__name__):
+                errors = self.validate_copy(mutate=mutate)
+                self.assertTrue(errors, f"{mutate.__name__} deveria ser inválido")
+
+    def test_dates_domains_and_cross_issue_references_are_consistent(self) -> None:
+        mutations: tuple[
+            tuple[str, str, Callable[[Path], None]],
+            ...,
+        ] = (
+            (
+                "discovered_after_cutoff",
+                "discovered_on posterior",
+                lambda directory: rewrite_record(
+                    directory / "candidates.jsonl",
+                    0,
+                    lambda item: item.update(discovered_on="2027-07-27"),
+                ),
+            ),
+            (
+                "unnormalized_www_domain",
+                "canonical_domain",
+                lambda directory: (
+                    rewrite_record(
+                        directory / "candidates.jsonl",
+                        0,
+                        lambda item: item.update(
+                            network_id="ang-www-example-org",
+                            canonical_domain="www.example.org",
+                        ),
+                    ),
+                    rewrite_record(
+                        directory / "evidence.jsonl",
+                        0,
+                        lambda item: item.update(
+                            network_id="ang-www-example-org"
+                        ),
+                    ),
+                ),
+            ),
+            (
+                "coverage_issue_mismatch",
+                "issue não coincide",
+                lambda directory: rewrite_record(
+                    directory / "coverage-matrix.jsonl",
+                    0,
+                    lambda item: item.update(issue=88),
+                ),
+            ),
+            (
+                "listed_without_profile",
+                "already_listed exige",
+                lambda directory: rewrite_record(
+                    directory / "candidates.jsonl",
+                    0,
+                    lambda item: item.update(already_listed=True),
+                ),
+            ),
+        )
+        for name, expected, mutate in mutations:
+            with self.subTest(case=name):
+                errors = self.validate_copy(mutate=mutate)
+                self.assertTrue(
+                    any(expected in error for error in errors),
+                    errors,
+                )
+
+    def test_detects_common_smart_quote_mojibake(self) -> None:
+        def mutate(directory: Path) -> None:
+            rewrite_record(
+                directory / "source-inventory.jsonl",
+                0,
+                lambda item: item.update(
+                    notes="Texto quebrado â€œassimâ€"
+                ),
+            )
+
+        errors = self.validate_copy(mutate=mutate)
+        self.assertTrue(any("mojibake" in error for error in errors), errors)
+
+    def test_documentation_uses_the_schema_access_field(self) -> None:
+        readme = (EPIC_ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertNotIn("access_status", readme)
+        self.assertIn('external_access: "aberto"', readme)
 
 
 if __name__ == "__main__":

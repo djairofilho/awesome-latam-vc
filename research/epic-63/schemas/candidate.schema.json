@@ -47,7 +47,7 @@
     "name": { "type": "string", "minLength": 1 },
     "canonical_domain": {
       "type": ["string", "null"],
-      "pattern": "^[a-z0-9.-]+\\.[a-z]{2,}$"
+      "pattern": "^(?!www\\.)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z]{2,63}$"
     },
     "official_site": {
       "type": ["string", "null"],
@@ -166,7 +166,7 @@
     "already_listed": { "type": "boolean" },
     "canonical_profile": {
       "type": ["string", "null"],
-      "pattern": "^(funds|ecosystem)/.+\\.md$"
+      "pattern": "^(funds|ecosystem)/[a-z0-9][a-z0-9_-]*(/[a-z0-9][a-z0-9_-]*)*\\.md$"
     },
     "status": {
       "enum": ["descoberto", "em pesquisa", "decidido", "publicado"]
@@ -307,6 +307,14 @@
       }
     },
     {
+      "if": { "properties": { "entity_type": { "const": "capítulo" } } },
+      "then": {
+        "properties": {
+          "chapter_identity": { "enum": ["alias", "standalone"] }
+        }
+      }
+    },
+    {
       "if": {
         "properties": { "chapter_identity": { "const": "standalone" } }
       },
@@ -332,6 +340,9 @@
       },
       "then": {
         "properties": {
+          "entity_type": {
+            "not": { "const": "capítulo" }
+          },
           "parent_network_id": { "type": "null" },
           "chapter_autonomy": {
             "properties": {

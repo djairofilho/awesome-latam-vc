@@ -57,7 +57,13 @@ As quatro flags de `chapter_autonomy` precisam ser `true` e
 `parent_network_id` precisa apontar para a matriz. Se algum ponto não for
 comprovado, use `chapter_identity: "alias"` e
 `canonical_network_id` com o ID da matriz. Um alias pode permanecer em pesquisa,
-mas só pode ser decidido como `duplicado`.
+mas só pode ser decidido como `duplicado`. O destino canônico precisa ser um
+registro que não seja alias; cadeias e ciclos de aliases são inválidos.
+
+As evidências de autonomia usam quatro afirmações atômicas:
+`autonomia de seleção`, `autonomia de decisão`, `autonomia geográfica` e
+`autonomia de atividade recente`. Uma afirmação genérica de autonomia não
+substitui nenhuma delas.
 
 Aliases de nome, marca anterior e capítulo ficam em `aliases`. O nome canônico é
 o nome usado atualmente pela organização em fonte oficial.
@@ -119,7 +125,8 @@ exigem decisão. Toda decisão diferente de `elegível` exige `reason`.
 
 Qualquer registro pendente precisa de `owner` e `next_action`. Isso inclui
 status ainda não decidido, `evidência-insuficiente`, fonte parcial ou
-indisponível, tarefa bloqueada e célula de cobertura parcial ou pendente.
+indisponível, tarefa ainda não concluída e célula de cobertura parcial ou
+pendente.
 
 ## Elegibilidade e evidência
 
@@ -143,7 +150,7 @@ investimento, evento de pitches ou resultado operacional. Um formulário fechado
 entre ciclos não prova inatividade. Se houver recorrência oficial recente, use
 `entre-ciclos-recorrente`.
 
-`access_status: "aberto"` significa que founders externos podem apresentar uma
+`external_access: "aberto"` significa que founders externos podem apresentar uma
 startup. `explícito-américa-latina` confirma também o recorte regional.
 Processo apenas por indicação ou só para membros não é tratado como acesso
 externo. Ausência pública vira `não confirmado`, nunca uma inferência positiva.
