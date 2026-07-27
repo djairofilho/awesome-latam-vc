@@ -35,6 +35,18 @@ ENGLISH_MARKDOWN = re.compile(
     r"Last verified):\*\*)",
     re.MULTILINE,
 )
+STRAY_ENGLISH_CONNECTOR = re.compile(r"\b(?:as|at)\b", re.IGNORECASE)
+DOUBLE_INTERNAL_SPACE = re.compile(r"(?<=\S) {2,}(?=\S)")
+UNGRAMMATICAL_DISCLOSURE = re.compile(r"\bNo divulgado\b", re.IGNORECASE)
+PROTECTED_OFFICIAL_PHRASES = ("PIPE Invest", "Equity")
+BARE_REFERENCE = re.compile(
+    r"(?<![\w@])(?:"
+    r"(?:[a-z0-9-]+\.)+[a-z]{2,}"
+    r"|(?:funds|accelerators|public-programs|angel-networks|"
+    r"funding-platforms)/[\w./:-]+"
+    r")(?:[/?#][^\s;,)]+)?",
+    re.IGNORECASE,
+)
 KNOWN_CALQUES = (
     "revisión congelada",
     "señales portfolio",
@@ -61,6 +73,8 @@ def prose_without_protected_sources(body: str, metadata: dict) -> str:
             f"[{source['title']}]({source['url']})",
             "",
         )
+    for phrase in PROTECTED_OFFICIAL_PHRASES:
+        cleaned = cleaned.replace(phrase, "")
     identity_terms = [
         metadata.get("name"),
         metadata.get("operator"),
@@ -69,12 +83,30 @@ def prose_without_protected_sources(body: str, metadata: dict) -> str:
     ]
     for term in filter(None, identity_terms):
         cleaned = cleaned.replace(term, "")
+    cleaned = re.sub(r"`[^`\n]+`", "", cleaned)
+    cleaned = BARE_REFERENCE.sub("", cleaned)
     return re.sub(r"https://[^\s)>]+", "", cleaned)
+
+
+def style_text_without_sources(body: str, metadata: dict) -> str:
+    """Keep names for spacing checks while excluding source titles and URLs."""
+    cleaned = body
+    for source in metadata["sources"]:
+        cleaned = cleaned.replace(
+            f"[{source['title']}]({source['url']})",
+            "[fuente]",
+        )
+    return re.sub(r"https://[^\s)>]+", "[url]", cleaned)
 
 
 def validate(path: Path) -> list[str]:
     metadata, body = parse(path)
     prose = prose_without_protected_sources(body, metadata)
+    style_text = (
+        metadata.get("summary", "")
+        + "\n"
+        + style_text_without_sources(body, metadata)
+    )
     errors = []
     if MOJIBAKE.search(prose):
         errors.append("contains mojibake")
@@ -86,6 +118,12 @@ def validate(path: Path) -> list[str]:
         errors.append("contains an untranslated English heading or label")
     if ENGLISH_PROSE.search(prose):
         errors.append("contains an unequivocal English fragment")
+    if STRAY_ENGLISH_CONNECTOR.search(prose):
+        errors.append("contains a stray English connector")
+    if DOUBLE_INTERNAL_SPACE.search(style_text):
+        errors.append("contains a repeated internal space")
+    if UNGRAMMATICAL_DISCLOSURE.search(prose):
+        errors.append("contains ungrammatical disclosure wording")
     folded = prose.casefold()
     for phrase in KNOWN_CALQUES:
         if phrase in folded:
