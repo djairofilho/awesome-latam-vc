@@ -29,8 +29,8 @@
   "founder_route": null,
   "sources": [
     {
-      "title": "Previously listed source; unavailable during verification",
-      "url": "https://www.linkedin.com/company/tm3-capital/",
+      "title": "TM3 Capital — LinkedIn",
+      "url": "https://www.linkedin.com/company/tm3capital/",
       "kind": "secondary"
     }
   ],
@@ -69,6 +69,6 @@ The local project dataset contains 22 companies associated with TM3 Capital. Its
 
 ## Sources
 
-- [Previously listed source; unavailable during verification](https://www.linkedin.com/company/tm3-capital/)
+- [TM3 Capital — LinkedIn](https://www.linkedin.com/company/tm3capital/)
 
 **Last verified:** 2026-07-26
