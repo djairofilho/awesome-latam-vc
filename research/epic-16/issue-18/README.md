@@ -1,129 +1,98 @@
 # Auditoria pública da Endeavor e da ABVCAP
 
-Este diretório registra a primeira onda da
+Este diretório registra o fechamento da
 [#18](https://github.com/djairofilho/awesome-latam-vc/issues/18), conforme o
 contrato da #17. A data de corte e de acesso é 2026-07-27.
 
-## Resultado
+## Resultado final
 
-- 9 fontes ou recortes inventariados.
-- 5 recortes concluídos.
-- 3 recortes parciais.
-- 1 área autenticada indisponível para esta coleta.
-- 234 ocorrências de organizações no recorte concluído.
-- 228 candidatos canônicos após deduplicação entre as fontes.
-- 20 candidatos já possuem perfil no baseline.
-- 208 candidatos permanecem como `descoberto`, sem decisão de elegibilidade.
-- 15 candidatos estrangeiros ausentes foram roteados para a fila da #24.
+- 18 fontes ou recortes inventariados.
+- 13 fontes concluídas.
+- 4 fontes parciais.
+- 1 área autenticada indisponível e fora do escopo autorizado.
+- 248 ocorrências nas fontes de diretório: 29 da Endeavor, 205 do HTML da
+  ABVCAP e 14 nomes adicionais no PDF após deduplicação.
+- 242 candidatos canônicos.
+- 5 candidatos `elegível`.
+- 21 candidatos `duplicado`.
+- 126 candidatos com `evidência insuficiente`.
+- 90 candidatos `excluído`: 75 prestadores de serviços sem atuação investidora
+  comprovada e 15 entidades estrangeiras fora do recorte Brasil.
+- Nenhum candidato permaneceu sem decisão.
 
-As 234 ocorrências vieram de:
+Os cinco elegíveis são Ahead Ventures, MSW Capital, Fundepar, Raio Capital e
+Invest Tech. Honey Island Capital também teve investimento direto, atividade
+recente e acesso externo confirmados, mas ficou como `duplicado` porque o perfil
+já existe no baseline.
 
-| Recorte | Ocorrências |
-| --- | ---: |
-| Endeavor, patrocinadores e colaboradores | 29 |
-| ABVCAP, gestores | 104 |
-| ABVCAP, investidores | 27 |
-| ABVCAP, prestadores de serviço | 65 |
-| ABVCAP, gestores iniciantes | 9 |
-
-O arquivo [candidates.jsonl](candidates.jsonl) contém a fila canônica. O arquivo
-[foreign-candidates.jsonl](foreign-candidates.jsonl) é uma visão derivada para
-a #24. Ele inclui apenas entidades estrangeiras identificadas de forma
-conservadora pelo nome e domínio presentes no diretório. O país-base e a
-estratégia para a América Latina ainda precisam de confirmação oficial.
-
-## Recorte executado
+## Recorte percorrido
 
 Na Endeavor, a coleta percorreu a página pública completa do Mapa de Acesso a
 Capital. Foram registrados 2 patrocinadores e 28 colaboradores únicos. EY
 aparece nas duas seções e foi deduplicada. O formulário de conteúdo exclusivo
 não foi preenchido.
 
-Na ABVCAP, a coleta percorreu os quatro blocos completos da página pública
-`Nossos Membros`, expostos pela API pública do WordPress. As 205 entradas e
-seus links foram registradas. Organizações com o mesmo domínio não foram
-unidas automaticamente. Isso preserva gestores, veículos e entidades
-distintas que compartilham um site.
+Na ABVCAP, a coleta percorreu os quatro blocos públicos de membros expostos pela
+API WordPress: 104 gestores, 27 investidores, 65 prestadores de serviços e 9
+gestores iniciantes. O catálogo, o corpo das 49 publicações e o corpo dos 53
+eventos também foram percorridos. As páginas de eventos expuseram 20 links
+externos não sociais: 17 responderam, 2 retornaram HTTP 404 e 1 entrou em loop
+de redirecionamento. Os links acessíveis eram páginas de inscrição ou de
+organização de eventos e não acrescentaram gestores.
 
-O catálogo público enumerou 49 publicações e 53 eventos. Somente os metadados
-foram percorridos nesta onda. Os corpos, anexos e páginas externas permanecem
-pendentes. A lista completa de membros em PDF também permanece pendente de
-comparação com o HTML.
+O PDF oficial de membros, gerado em 17/07/2026, possui 8 páginas e 231
+associações distribuídas entre apoiadores, gestores, gestores iniciantes,
+investidores e prestadores. A comparação com o HTML identificou mudanças de
+categoria, uma razão social alternativa da Valora e 14 nomes ausentes da fila
+anterior. Os 12 novos prestadores foram excluídos do recorte de investidores.
+BLUINVEST permaneceu com evidência insuficiente. Honey Island foi vinculada ao
+perfil canônico existente.
+
+## Decisões
+
+Diretórios foram usados somente para descoberta e classificação do recorte.
+Uma decisão `elegível` exigiu site controlado pelo candidato, investimento
+direto, atividade recente e acesso externo para fundadores. Contato
+institucional genérico não foi suficiente.
+
+Prestadores identificados apenas nessa categoria foram marcados como
+`excluído`. Entidades com país-base estrangeiro também foram excluídas do
+recorte Brasil e preservadas em [foreign-candidates.jsonl](foreign-candidates.jsonl).
+Os demais candidatos sem prova oficial suficiente receberam
+`evidência insuficiente`, motivo explícito, responsável e próxima ação. Essa
+decisão não afirma inatividade nem ausência de investimento.
 
 ## Deduplicação
 
-O baseline foi importado pelo normalizador do repositório. A comparação usou:
+O baseline foi importado pelo normalizador do repositório. A comparação usou
+domínio oficial normalizado, aliases e perfil canônico. Organizações com o
+mesmo domínio não foram unidas automaticamente quando representavam entidades
+distintas. Mudanças de razão social claramente associadas ao mesmo domínio e à
+mesma marca foram preservadas em `aliases`.
 
-1. domínio oficial normalizado;
-2. alias normalizado;
-3. perfil canônico já associado ao domínio ou alias.
+O PDF foi ligado como fonte de descoberta a todos os candidatos da ABVCAP que
+ele confirmou. Os 231 vínculos de categoria correspondem a 218 candidatos
+canônicos após a deduplicação entre categorias e razões sociais.
 
-Quando duas ocorrências apontaram para o mesmo perfil do baseline, elas foram
-mescladas no mesmo candidato e os nomes adicionais foram preservados em
-`aliases`. Nomes idênticos em categorias diferentes da ABVCAP também foram
-mesclados. Um domínio compartilhado, sozinho, não uniu entidades novas.
+## Evidências e limitações
 
-Diretórios foram tratados somente como descoberta. Os 208 candidatos novos não
-foram marcados como elegíveis. Cada um possui uma próxima ação para validar
-investimento direto, atividade recente e acesso de fundadores no site oficial.
+O arquivo [evidence.jsonl](evidence.jsonl) contém 16 registros oficiais para os
+9 candidatos submetidos a validação individual. As ausências de prova oficial
+nos demais registros não foram preenchidas com inferências.
 
-## Evidências
+As quatro fontes parciais são:
 
-Esta onda não gerou `evidence.jsonl`. Nenhuma página controlada pelo candidato
-foi percorrida para comprovar investimento direto. Endeavor e ABVCAP são fontes
-oficiais sobre seus próprios diretórios, mas continuam sendo fontes de terceiro
-para a elegibilidade de cada candidato.
+- ACE Outlier Capital, sem canal público inequívoco para fundadores.
+- Eqwow Ventures, sem atividade recente datada ou canal de candidatura claro.
+- Kortex Ventures, sem canal público inequívoco para fundadores.
+- Eventos da ABVCAP, com dois links externos em HTTP 404 e um link em loop de
+  redirecionamento.
 
-## Lacunas e fila restante
+A área autenticada da ABVCAP não foi acessada. Ela permanece indisponível até
+existir autorização explícita e acesso legítimo.
 
-- Percorrer os corpos das 49 publicações em shards por item.
-- Percorrer os corpos e páginas externas dos 53 eventos em shards por item.
-- Extrair o PDF de membros e comparar suas entradas com as 205 entradas do
-  HTML.
-- Validar os 208 candidatos descobertos em sites oficiais.
-- Confirmar país-base e atuação latino-americana dos 15 candidatos roteados
-  para a #24.
-- Manter a área autenticada fora da coleta até existir autorização explícita e
-  acesso legítimo.
-
-O [source-inventory.jsonl](source-inventory.jsonl) registra URL, recorte, hash
-quando disponível, resultado, responsável e próxima ação. O
-[run-manifest.jsonl](run-manifest.jsonl) mantém as tarefas concluídas e a fila
-restante. A execução continua como `em execução` porque três shards públicos
-permanecem abertos.
-
+O [source-inventory.jsonl](source-inventory.jsonl) registra URL, recorte,
+resultado, hash quando disponível e limitações. O
+[run-manifest.jsonl](run-manifest.jsonl) registra as tarefas e seu fechamento.
 O arquivo local de startups não foi usado para descoberta, priorização,
 comprovação ou decisão.
-
-## Validação antecipada, onda 1
-
-Um primeiro shard de 8 gestores brasileiros de alta probabilidade foi validado
-antes da varredura dos demais candidatos. A seleção priorizou gestores e gestores
-iniciantes da ABVCAP, domínio oficial acessível e nomes claramente ligados a
-venture capital. Prestadores, entidades estrangeiras e sobreposições com as
-issues #19, #20 e #21 ficaram fora do shard.
-
-O resultado foi:
-
-- 5 candidatos `elegível`: Ahead Ventures, MSW Capital, Fundepar, Raio Capital
-  e Invest Tech.
-- 3 candidatos com `evidência insuficiente`: ACE Outlier Capital, Eqwow
-  Ventures e Kortex Ventures.
-- 15 registros de evidência oficial.
-- 8 novos recortes no inventário de fontes.
-
-As decisões elegíveis exigiram, em conjunto, entidade investidora, investimento
-direto, atividade recente e acesso externo para fundadores. O e-mail específico
-para captação, o formulário de inscrição ou a candidatura identificada no aviso
-do formulário serviram como acesso externo. Contato institucional genérico não
-foi suficiente.
-
-ACE Outlier e Kortex permaneceram pendentes porque não foi localizado um canal
-público inequívoco para propostas de startups. Eqwow permaneceu pendente porque
-o portfólio não permite confirmar atividade nos últimos 24 meses e os contatos
-publicados não são descritos como canal de candidatura. Esses registros mantêm
-responsável e próxima ação para uma onda posterior.
-
-O arquivo [evidence.jsonl](evidence.jsonl) registra as páginas oficiais e as
-afirmações verificadas. Os registros anteriores de descoberta e suas fontes
-foram preservados. O arquivo local de startups não foi usado nesta validação.
