@@ -6,6 +6,8 @@ Endeavor Catalyst is an investment organization focused on Endeavor network comp
 
 - **Website:** https://endeavor.org/catalyst/
 - **Fund type:** Co-investment fund
+- **Direct startup investment:** Yes
+- **Open to external founders:** No
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Endeavor network companies
@@ -13,13 +15,16 @@ Endeavor Catalyst is an investment organization focused on Endeavor network comp
 - **Initial check:** Not publicly disclosed in the reviewed sources
 - **Investment role:** Rules-based co-investor in rounds led by qualified institutional investors
 - **Business models:** Not publicly disclosed in the reviewed sources
-- **Portfolio size:** 382 companies captured in the local project dataset; this is not an official portfolio count
+- **Portfolio size:** More than 405 investments across more than 35 markets, according to the official website
 - **Selected companies:** 54gene, 99 Minutos, ABC da Construção, ADDI, AeroSafe Global
-- **Submit a startup:** [Contact or application page](https://endeavor.org/entrepreneur-experience/apply/)
+- **Submit a startup:** No direct fund application; founders may [apply to the Endeavor network](https://endeavor.org/entrepreneur-experience/apply/)
 
 ## Declared thesis
 
-The reviewed source presents Endeavor Catalyst as investing in Endeavor network companies across Global, with entry at Multi-stage. Details not stated by the fund are marked as not publicly disclosed rather than inferred from portfolio composition.
+Endeavor Catalyst is a rules-based co-investment fund that invests exclusively
+in companies led by Endeavor Entrepreneurs when their rounds are led by
+qualified institutional investors. Applying to the Endeavor network is a
+separate process and does not constitute a direct application to the fund.
 
 ## Portfolio signals
 
@@ -27,7 +32,7 @@ The local project dataset contains 382 companies associated with Endeavor Cataly
 
 ## Sources
 
-- [Fund website](https://endeavor.org/catalyst/)
+- [Investment model, eligibility, and official investment count](https://endeavor.org/catalyst/)
 - [Contact or application page](https://endeavor.org/entrepreneur-experience/apply/)
 - [Portfolio](https://endeavor.org/entrepreneur-companies/)
 - [About or investment thesis](https://endeavor.org/about-us/)

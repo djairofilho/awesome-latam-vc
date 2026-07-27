@@ -1,25 +1,31 @@
-# Axon Partners + Ventures EPM
+# Ventures EPM
 
-Axon Partners + Ventures EPM is an investment organization focused on Technology and strategic innovation in Colombia and Latin America.
+Ventures EPM is Grupo EPM's corporate venture program. Its active private
+capital fund is professionally managed by Axon Partners Group.
 
 ## Investment profile
 
-- **Website:** https://www.epm.com.co/
+- **Website:** https://www.epm.com.co/institucional/innovacion/programa-ventures-epm/
 - **Fund type:** Corporate venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
-- **Focus:** Technology and strategic innovation
+- **Focus:** Public-service technology
 - **Geography:** Colombia and Latin America
 - **Initial check:** Not publicly disclosed in the reviewed sources
-- **Investment role:** Not publicly disclosed in the reviewed sources
-- **Business models:** Technology-enabled companies; specific B2B/B2C constraints not publicly disclosed
-- **Portfolio size:** 19 companies captured in the local project dataset; this is not an official portfolio count
+- **Investment role:** Strategic investor through private capital funds; Axon Partners Group manages the active Fund II
+- **Business models:** Technology-enabled companies with demonstrated products and market traction
+- **Portfolio size:** 30 companies supported since 2013; this includes the liquidated Fund I and active Fund II
 - **Selected companies:** Batx, Build To Zero, Energiot, ERCO, Hepta
-- **Submit a startup:** Not publicly disclosed in the reviewed sources
+- **Submit a startup:** No current application form was found; [program contacts](https://www.epm.com.co/institucional/innovacion/ventures-epm/) are public
 
 ## Declared thesis
 
-The reviewed source presents Axon Partners + Ventures EPM as investing in Technology and strategic innovation across Colombia and Latin America. It does not publicly specify an entry stage that can be normalized without inference.
+Ventures EPM invests in companies and projects with applied science or
+technology that can improve public services or create strategic products,
+services, and markets for Grupo EPM. Fund II seeks companies with market
+traction, demonstrated viable products, and high growth potential.
 
 ## Portfolio signals
 
@@ -28,5 +34,9 @@ The local project dataset contains 19 companies associated with Axon Partners + 
 ## Sources
 
 - [Portfolio](https://www.epm.com.co/content/dam/epm/institucional/sala-de-prensa-epm/noticias-y-novedades/noticias-y-novedades/batx-la-nueva-startup-que-ingresa-a-ventures-epm/VenturesEPM-PortafolioEmpresasInvertidas.pdf)
+- [Ventures EPM program](https://www.epm.com.co/institucional/innovacion/programa-ventures-epm/)
+- [Fund II investment profile](https://www.epm.com.co/institucional/innovacion/programa-ventures-epm/fondo-de-capital-privado-ii/)
+- [Current fund manager and program history](https://www.epm.com.co/institucional/sala-de-prensa/noticias-y-novedades/batx-startup-se-une-a-ventures-epm)
+- [Program contacts](https://www.epm.com.co/institucional/innovacion/ventures-epm/)
 
 **Last verified:** 2026-07-26

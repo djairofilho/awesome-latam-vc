@@ -1,25 +1,31 @@
-# Itau Ventures
+# Itaú Ventures
 
-Itau Ventures is an investment organization focused on Financial services and adjacent technologies in Brazil and Latin America.
+Itaú Ventures is Itaú Unibanco's corporate venture capital fund for strategic
+innovation in financial services and adjacent technologies.
 
 ## Investment profile
 
 - **Website:** https://www.itau.com.br/ventures
 - **Fund type:** Corporate venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Financial services and adjacent technologies
 - **Geography:** Brazil and Latin America
-- **Initial check:** Not publicly disclosed in the reviewed sources
-- **Investment role:** Not publicly disclosed in the reviewed sources
-- **Business models:** Not publicly disclosed in the reviewed sources
-- **Portfolio size:** 8 companies captured in the local project dataset; this is not an official portfolio count
-- **Selected companies:** Digibee, Kanastra, Liqi, Monkey, Nagro
+- **Initial check:** From BRL 20 million
+- **Investment role:** Active strategic investor and long-term partner
+- **Business models:** Payments, credit, insurance, capital markets, digital assets, financial infrastructure, back-office, AI, cybersecurity, automation, and data infrastructure
+- **Portfolio size:** 8 companies displayed on the official website
+- **Selected companies:** Digibee, Kanastra, Liqi, Monkey, Nagro, Paketá, Saks, and Tenchi Security
 - **Submit a startup:** Not publicly disclosed in the reviewed sources
 
 ## Declared thesis
 
-The reviewed source presents Itau Ventures as investing in Financial services and adjacent technologies across Brazil and Latin America. It does not publicly specify an entry stage that can be normalized without inference.
+Itaú Ventures invests in companies with strategic synergy with Itaú across
+three pillars: core banking, beyond banking, and technology. The fund has a
+global and continuous outlook, while its launch announcement specifically
+identifies Brazilian and Latin American startups as targets.
 
 ## Portfolio signals
 
@@ -27,6 +33,7 @@ The local project dataset contains 8 companies associated with Itau Ventures. It
 
 ## Sources
 
-- [Previously listed source; unavailable during verification](https://www.itau.com.br/ventures)
+- [Investment thesis and official portfolio](https://www.itau.com.br/ventures)
+- [Official launch, fund size, geography, and initial ticket](https://www.itau.com.br/relacoes-com-investidores/noticias/itau-unibanco-lanca-itau-ventures-seu-novo-fundo-de-corporate-venture-capital/)
 
 **Last verified:** 2026-07-26

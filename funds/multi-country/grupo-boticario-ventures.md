@@ -1,32 +1,45 @@
-# Grupo Boticario Ventures
+# Grupo Boticário Ventures
 
-Grupo Boticario Ventures is an investment organization focused on Beauty and retail in Brazil and Latin America.
+Grupo Boticário Ventures is Grupo Boticário's corporate venture unit for
+beauty and retail innovation.
 
 ## Investment profile
 
 - **Website:** https://ventures.grupoboticario.com.br/
 - **Fund type:** Corporate venture capital
-- **Stage at entry:** Not publicly disclosed
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
+- **Stage at entry:** Seed and Series A
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Beauty and retail
-- **Geography:** Brazil and Latin America
-- **Initial check:** Not publicly disclosed in the reviewed sources
+- **Geography:** Brazil and global
+- **Initial check:** USD 1 million to USD 2 million, with flexibility by opportunity
 - **Investment role:** Minority investor, with ownership of up to 20%
-- **Business models:** Not publicly disclosed in the reviewed sources
-- **Portfolio size:** 1 companies captured in the local project dataset; this is not an official portfolio count
+- **Business models:** Beautytech, biotech, retailtech, fintech, and beauty or wellness brands
+- **Portfolio size:** 2 startups invested, according to the official website
 - **Selected companies:** Haut.AI
-- **Submit a startup:** Not publicly disclosed in the reviewed sources
+- **Submit a startup:** [Investment application](https://ventures.grupoboticario.com.br/investimento)
 
 ## Declared thesis
 
-The reviewed source presents Grupo Boticario Ventures as investing in Beauty and retail across Brazil and Latin America. It does not publicly specify an entry stage that can be normalized without inference.
+Grupo Boticário Ventures makes minority investments in Brazilian and
+international startups that can anticipate trends and create strategic value
+for its beauty and retail ecosystem. Investment is separate from its free,
+equity-free acceleration program.
 
 ## Portfolio signals
 
-The local project dataset contains 1 companies associated with Grupo Boticario Ventures. Its most frequent sector labels are Tecnologia e serviços digitais, and its most frequent company countries are Brazil. These are observations from an incomplete local collection, not the fund's declared mandate or official portfolio size.
+The local project dataset contains 1 company associated with Grupo Boticário
+Ventures. Its most frequent sector label is Tecnologia e serviços digitais,
+and its most frequent company country is Brazil. These are observations from
+an incomplete local collection, not the fund's declared mandate or official
+portfolio size.
 
 ## Sources
 
-- [Previously listed source; unavailable during verification](https://ventures.grupoboticario.com.br/investimento)
+- [Corporate venture initiatives and official investment count](https://ventures.grupoboticario.com.br/)
+- [Investment criteria, portfolio, and application](https://ventures.grupoboticario.com.br/investimento)
+- [Official CVC announcement, stage, ticket, and thesis](https://www.grupoboticario.com.br/midia/grupo-boticario-investe-100-milhoes-startups/)
+- [Startup connection and investment form](https://ventures.grupoboticario.com.br/conecte-se-conosco)
 
 **Last verified:** 2026-07-26
