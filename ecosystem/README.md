@@ -2,14 +2,20 @@
 
 This directory covers organizations that can help founders access capital but
 are not venture capital funds. They are intentionally kept outside the main fund
-tables and do not count toward the project's total of 101 direct-investor
-profiles.
+tables and do not count toward the project's direct-investor total.
 
 ## Categories
 
-- [Angel networks](angels.md)
-- [Equity crowdfunding and investment platforms](crowdfunding.md)
-- [Government programs](government-programs.md)
+- [Accelerators](accelerators/README.md)
+- [Angel networks](angel-networks/README.md)
+- [Funding platforms](funding-platforms/README.md)
+- [Public programs](public-programs/README.md)
+
+Each category contains individual organization profiles grouped by geographic
+base. Country directories contain organizations based in that country.
+`regional/` is reserved for organizations based in Latin America with explicit
+regional reach. `multi-country/` is reserved for organizations based outside
+Latin America with an explicit regional presence.
 
 ## Inclusion criteria
 
@@ -30,6 +36,8 @@ an observed pattern as an official mandate.
 Angel clubs and networks belong here even when their members invest directly.
 The main fund index is reserved for organizations that deploy capital through a
 recurring institutional, corporate, co-investment, accelerator, or studio
-investment program.
+investment program. Accelerators without a qualifying recurring investment
+vehicle, funding platforms, and public programs remain in their respective
+ecosystem categories.
 
 This directory is a curated starting point, not an exhaustive directory.

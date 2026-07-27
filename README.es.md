@@ -221,9 +221,10 @@ Estas organizaciones pueden ayudar a fundadores a acceder a capital, pero no
 son fondos de VC y, por eso, permanecen fuera de las tablas principales. Consulta
 el [alcance y los criterios de inclusión](ecosystem/README.md).
 
-- [Redes de inversionistas ángeles](ecosystem/angels.md)
-- [Crowdfunding de inversión y plataformas](ecosystem/crowdfunding.md)
-- [Programas gubernamentales](ecosystem/government-programs.md)
+- [Aceleradoras](ecosystem/accelerators/README.md)
+- [Redes de inversionistas ángeles](ecosystem/angel-networks/README.md)
+- [Plataformas de financiación](ecosystem/funding-platforms/README.md)
+- [Programas públicos](ecosystem/public-programs/README.md)
 
 ## Contribuyendo
 

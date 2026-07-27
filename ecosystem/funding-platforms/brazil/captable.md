@@ -1,10 +1,4 @@
-# Equity crowdfunding and investment platforms
-
-These platforms connect companies seeking capital with multiple investors. They
-are intermediaries or marketplaces, not venture capital funds, and each public
-offer can have different instruments, terms, and risks.
-
-## Captable
+# Captable
 
 - **Type:** Investment platform offering equity crowdfunding, private
   fundraising, matchmaking, and debt operations
@@ -18,7 +12,7 @@ Brazilian securities regulator, private introductions to investors, institutiona
 matchmaking, and debt products. Companies are evaluated before an offering is
 made available; eligibility and terms depend on the specific operation.
 
-### Sources
+## Sources
 
 - [Captable platform and investment process](https://captable.com.br/)
 - [Fundraising formats and founder application](https://captable.com.br/quero-captar)
