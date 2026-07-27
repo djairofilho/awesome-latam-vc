@@ -1,17 +1,21 @@
 # Spectra Investimentos
 
-Spectra Investimentos is an investment organization focused on Alternative investments, including venture capital in Brazil and Latin America.
+Spectra Investimentos is a Latin American alternative-investment manager that
+invests through primary fund commitments, co-investments, and secondary
+transactions.
 
 ## Investment profile
 
 - **Website:** https://spectrainvest.com/
-- **Fund type:** Fund of funds
+- **Fund type:** Fund investor and co-investor
+- **Direct startup investment:** Yes, through disclosed co-investments
+- **Open to external founders:** Not publicly disclosed in the reviewed sources
 - **Stage at entry:** Multi-stage
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Alternative investments, including venture capital
 - **Geography:** Brazil and Latin America
 - **Initial check:** Not publicly disclosed in the reviewed sources
-- **Investment role:** Not publicly disclosed in the reviewed sources
+- **Investment role:** Primary fund investor, co-investor, and secondary investor
 - **Business models:** Not publicly disclosed in the reviewed sources
 - **Portfolio size:** 7 companies captured in the local project dataset; this is not an official portfolio count
 - **Selected companies:** 99, ABC da Construção, addi.com, La Haus, Nubank
@@ -19,7 +23,11 @@ Spectra Investimentos is an investment organization focused on Alternative inves
 
 ## Declared thesis
 
-The reviewed source presents Spectra Investimentos as investing in Alternative investments, including venture capital across Brazil and Latin America, with entry at Multi-stage. Details not stated by the fund are marked as not publicly disclosed rather than inferred from portfolio composition.
+Spectra states that it invests across private-market strategies with specialized
+managers through primary investments and co-investments and also executes
+secondary transactions. Venture capital is one of several disclosed strategies.
+The reviewed sources do not publish a route for founders to submit companies
+directly.
 
 ## Portfolio signals
 
@@ -27,9 +35,7 @@ The local project dataset contains 7 companies associated with Spectra Investime
 
 ## Sources
 
-- [Fund website](https://spectrainvest.com/)
-- [Fund website](https://spectrainvest.com/estudo/investimentos-de-corporate-venture-capital-no-brasil/)
-- [About or investment thesis](https://spectrainvest.com/estudo/legal-guide-about-mexican-search-funds-2/)
-- [Fund website](https://spectrainvest.com/carta_do_gestor/investment-letter-2024/)
+- [Official investment model and strategies](https://spectrainvest.com/en/home/)
+- [Official Portuguese website](https://spectrainvest.com/)
 
 **Last verified:** 2026-07-26

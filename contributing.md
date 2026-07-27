@@ -20,12 +20,11 @@ Use one of these normalized fund types:
 - `Venture capital`
 - `Corporate venture capital`
 - `Co-investment fund`
-- `Fund of funds`
+- `Fund investor and co-investor`
 - `Fund investor and direct investor`
-- `Venture studio`
+- `Venture studio and venture capital`
 - `Venture builder and venture capital`
 - `Accelerator and venture capital`
-- `Angel investment network`
 - `Not publicly disclosed`
 
 Fund type and geography are separate classifications. Place a fund under the
@@ -34,6 +33,19 @@ and explicitly invests across the region, or under `multi-country/` when it is
 based outside Latin America and has a regional investment presence. Do not
 create geographic sections for investor types such as corporate venture capital
 or fund of funds.
+
+Keep an organization in `funds/` only when current official sources confirm that
+it invests capital directly in startups through a recurring fund, corporate
+venture program, co-investment vehicle, accelerator fund, or studio fund. Move
+organizations that only connect investors and founders, invest only in other
+funds, operate crowdfunding platforms, or provide public support programs to
+`ecosystem/`.
+
+For hybrid organizations, distinguish investment activity from acceleration,
+company building, community, or advisory services. If direct startup investment
+or access for external founders cannot be verified, use
+`Not publicly disclosed` and record the missing evidence instead of inferring
+an answer.
 
 - `Pre-seed`
 - `Seed`
@@ -60,6 +72,8 @@ A short, factual description.
 
 - **Website:** https://example.com/
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Concise description of the declared sector or thesis
@@ -106,6 +120,9 @@ If a fund's information is outdated (website, name, focus), please submit a pull
 - Keep descriptions concise and factual.
 - Classify fund type from current official sources. Do not infer it from the
   previous directory, the fund's name, or portfolio composition.
+- Confirm direct startup investment and whether external founders can apply from
+  current official sources. A portfolio alone does not establish the
+  organization's current operating model.
 - Do not infer a fund's official thesis, check size, stage, or lead preference
   from third-party databases or portfolio composition.
 - Keep declared thesis information separate from observed portfolio patterns.

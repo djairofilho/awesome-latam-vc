@@ -106,7 +106,6 @@ O índice foi otimizado para comparação rápida. Todos os perfis de fundos usa
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
-| [AngelHub VC](funds/mexico/angelhub-vc.md) | Pre-seed e Seed | Tecnologia, agnóstico a setores | México e América Latina |
 | [Capital Invent](funds/mexico/capital-invent.md) | Não divulgado publicamente | Marketplaces, e-commerce, fintech, mobile e SaaS | México |
 | [Dux Capital](funds/mexico/dux-capital.md) | Pre-seed e Seed | Tecnologia e fundadores sub-representados | México, América Latina e Estados Unidos |
 

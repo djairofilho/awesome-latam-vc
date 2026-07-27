@@ -106,7 +106,6 @@ The index is optimized for quick comparison. All fund profiles use the enriched 
 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
-| [AngelHub VC](funds/mexico/angelhub-vc.md) | Pre-seed and Seed | Technology, sector agnostic | Mexico and Latin America |
 | [Capital Invent](funds/mexico/capital-invent.md) | Not publicly disclosed | Marketplaces, e-commerce, fintech, mobile, and SaaS | Mexico |
 | [Dux Capital](funds/mexico/dux-capital.md) | Pre-seed and Seed | Technology and underrepresented founders | Mexico, Latin America, and the United States |
 
