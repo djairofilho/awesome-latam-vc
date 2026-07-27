@@ -11,7 +11,7 @@
       "batch_hash": "5784c0682655b738feefb43b0ec864168d4013c1efa0b7d8704b68dad4046875",
       "batch_id": "public-programs-01",
       "branch": "agent/issue-103-public-programs-batch-01",
-      "issue_number": null,
+      "issue_number": 145,
       "owner": "djairofilho",
       "profiles": [
         {
@@ -80,7 +80,7 @@
       "batch_hash": "90a01b9ed5adf3211cfbe3c2fd75688e352135f507d97c1725a4ae3cc5473522",
       "batch_id": "public-programs-02",
       "branch": "agent/issue-103-public-programs-batch-02",
-      "issue_number": null,
+      "issue_number": 146,
       "owner": "djairofilho",
       "profiles": [
         {
@@ -149,7 +149,7 @@
       "batch_hash": "f2c3edfa9bbcffd0bf33593a80063a29d310854abf8a53def43250b78d7ec40d",
       "batch_id": "public-programs-03",
       "branch": "agent/issue-103-public-programs-batch-03",
-      "issue_number": null,
+      "issue_number": 147,
       "owner": "djairofilho",
       "profiles": [
         {
