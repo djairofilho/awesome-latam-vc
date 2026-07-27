@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-65/schemas/coverage.schema.json",
+  "title": "Linha da matriz país por fonte da epic 65",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "coverage_id",
+    "country",
+    "source_type",
+    "source_name",
+    "initial_url",
+    "scope_walked",
+    "accessed_on",
+    "result",
+    "reason",
+    "owner",
+    "next_action",
+    "notes"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "coverage_id": {
+      "type": "string",
+      "pattern": "^coverage-[a-z0-9][a-z0-9-]*$"
+    },
+    "country": { "type": "string", "minLength": 2 },
+    "source_type": {
+      "enum": [
+        "agência de inovação",
+        "ministério responsável",
+        "banco público de desenvolvimento",
+        "portal oficial de chamadas",
+        "fonte subnacional oficial"
+      ]
+    },
+    "source_name": { "type": "string", "minLength": 1 },
+    "initial_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "scope_walked": { "type": "string", "minLength": 1 },
+    "accessed_on": { "type": "string", "format": "date" },
+    "result": { "enum": ["concluída", "parcial", "indisponível"] },
+    "reason": { "type": ["string", "null"], "minLength": 1 },
+    "owner": { "type": ["string", "null"], "minLength": 1 },
+    "next_action": { "type": ["string", "null"], "minLength": 1 },
+    "notes": { "type": ["string", "null"], "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "result": { "enum": ["parcial", "indisponível"] }
+        }
+      },
+      "then": {
+        "properties": {
+          "reason": { "type": "string" },
+          "owner": { "type": "string" },
+          "next_action": { "type": "string" }
+        }
+      }
+    }
+  ]
+}
