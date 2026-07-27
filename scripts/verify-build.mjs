@@ -1,10 +1,23 @@
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import {
+  existsSync,
+  readdirSync,
+  readFileSync,
+  statSync,
+} from "node:fs";
 import { join, relative } from "node:path";
 
 const root = process.cwd();
 const astroCli = join(root, "node_modules", "astro", "bin", "astro.mjs");
+const pagefindCli = join(
+  root,
+  "node_modules",
+  "pagefind",
+  "lib",
+  "runner",
+  "bin.cjs",
+);
 const seoAudit = join(root, "scripts", "verify-seo.mjs");
 const siteSmoke = join(root, "scripts", "smoke-site.mjs");
 const dist = join(root, "dist");
@@ -28,6 +41,11 @@ function build(environment, publicVariables = {}) {
     },
     stdio: "inherit",
   });
+  execFileSync(process.execPath, [pagefindCli], {
+    cwd: root,
+    env: { ...process.env, PUBLIC_SITE_ENV: environment },
+    stdio: "inherit",
+  });
 }
 
 function files(directory) {
@@ -39,12 +57,60 @@ function files(directory) {
     .sort();
 }
 
+function stableJson(value) {
+  if (Array.isArray(value)) {
+    return value.map(stableJson);
+  }
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value)
+        .sort(([left], [right]) => left.localeCompare(right))
+        .map(([key, nested]) => [key, stableJson(nested)]),
+    );
+  }
+  return value;
+}
+
+function stablePagefindEntry(value) {
+  return {
+    ...value,
+    languages: Object.fromEntries(
+      Object.entries(value.languages ?? {}).map(([language, details]) => [
+        language,
+        {
+          wasm: details.wasm,
+          page_count: details.page_count,
+        },
+      ]),
+    ),
+  };
+}
+
 function snapshot() {
   return Object.fromEntries(
-    files(dist).map((path) => [
-      relative(dist, path).replaceAll("\\", "/"),
-      createHash("sha256").update(readFileSync(path)).digest("hex"),
-    ]),
+    files(dist).flatMap((path) => {
+      const relativePath = relative(dist, path).replaceAll("\\", "/");
+      if (
+        /^pagefind\/filter\/.+\.pf_filter$/.test(relativePath) ||
+        /^pagefind\/pagefind\..+\.pf_meta$/.test(relativePath)
+      ) {
+        return [];
+      }
+      const payload =
+        relativePath === "pagefind/pagefind-entry.json"
+          ? JSON.stringify(
+              stableJson(
+                stablePagefindEntry(
+                  JSON.parse(readFileSync(path, "utf8")),
+                ),
+              ),
+            )
+          : readFileSync(path);
+      return [[
+        relativePath,
+        createHash("sha256").update(payload).digest("hex"),
+      ]];
+    }),
   );
 }
 
@@ -77,6 +143,9 @@ const first = snapshot();
 const productionHtml = indexHtml();
 const compatibilityCatalogHtml = routeHtml("catalog");
 const notFoundHtml = readFileSync(join(dist, "404.html"), "utf8");
+const pagefindEntry = JSON.parse(
+  readFileSync(join(dist, "pagefind", "pagefind-entry.json"), "utf8"),
+);
 const localeRoutes = {
   en: "en",
   "pt-BR": "pt-br",
@@ -114,6 +183,24 @@ const sourceProfileCount = profileRoots
   ).length;
 const entityDocument = JSON.parse(
   readFileSync(join(root, "data", "entities.json"), "utf8"),
+);
+const profileSlug = (entity) =>
+  entity.source_profile.split("/").at(-1).replace(/\.md$/, "");
+const profilePages = files(dist)
+  .filter((path) => /[\\/]profiles[\\/].+[\\/]index\.html$/.test(path))
+  .map((path) => ({
+    path,
+    html: readFileSync(path, "utf8"),
+  }));
+const indexedProfileCounts = Object.fromEntries(
+  profilePages
+    .filter(({ html }) => html.includes("data-pagefind-body"))
+    .reduce((counts, { html }) => {
+      const language = html.match(/<html lang="([^"]+)"/)?.[1].toLowerCase();
+      assert(language, "an indexed profile page has no document language");
+      counts.set(language, (counts.get(language) ?? 0) + 1);
+      return counts;
+    }, new Map()),
 );
 const websiteGraph = jsonLd(productionHtml);
 const catalogGraph = jsonLd(catalogHtml);
@@ -192,7 +279,7 @@ for (const [locale, segment] of Object.entries(localeRoutes)) {
     );
   }
   const renderedProfileCount = (
-    catalog.match(/data-profile-id=/g) ?? []
+    catalog.match(/data-directory-id=/g) ?? []
   ).length;
   assert(
     renderedProfileCount === sourceProfileCount,
@@ -247,6 +334,83 @@ assert(
   sourceProfileCount === entityDocument.dataset.entity_count,
   "site profile count and structured export count differ",
 );
+assert(
+  JSON.stringify(Object.keys(pagefindEntry.languages).sort()) ===
+    JSON.stringify(Object.keys(indexedProfileCounts).sort()),
+  "Pagefind languages must match the locales with reviewed profile bodies",
+);
+for (const [language, count] of Object.entries(indexedProfileCounts)) {
+  assert(
+    pagefindEntry.languages[language]?.hash &&
+      pagefindEntry.languages[language]?.page_count === count,
+    `${language} Pagefind index does not match its reviewed profile pages`,
+  );
+}
+assert(
+  pagefindEntry.languages.en?.page_count === sourceProfileCount,
+  "the canonical English Pagefind index must contain every profile",
+);
+const sampleSlug = profileSlug(entityDocument.entities[0]);
+const englishProfile = routeHtml("en", "profiles", sampleSlug);
+const portugueseFallbackProfile = routeHtml(
+  "pt-br",
+  "profiles",
+  sampleSlug,
+);
+assert(
+  englishProfile.includes("data-pagefind-body") &&
+    !englishProfile.includes('name="robots" content="noindex'),
+  "canonical English profiles must be indexable by Pagefind and robots",
+);
+assert(
+  !portugueseFallbackProfile.includes("data-pagefind-body") &&
+    portugueseFallbackProfile.includes(
+      'name="robots" content="noindex, nofollow"',
+    ) &&
+    portugueseFallbackProfile.includes(
+      `rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/en/profiles/${sampleSlug}/"`,
+    ),
+  "untranslated profile fallbacks must remain outside search and canonicalize to English",
+);
+assert(
+  profilePages.length === sourceProfileCount * Object.keys(localeRoutes).length,
+  "every canonical profile must have a navigable route in every locale",
+);
+const expectedCountries = new Set(
+  entityDocument.entities
+    .flatMap((entity) => [
+      entity.base_geography?.code,
+      ...(entity.countries_covered ?? []),
+    ])
+    .filter((code) => /^[A-Z]{2}$/.test(code)),
+);
+for (const segment of Object.values(localeRoutes)) {
+  for (const country of expectedCountries) {
+    assert(
+      existsSync(
+        join(dist, segment, "countries", country.toLowerCase(), "index.html"),
+      ),
+      `${segment} is missing the non-empty ${country} country landing`,
+    );
+  }
+  for (const category of [
+    "fund",
+    "accelerator",
+    "angel_network",
+    "funding_platform",
+    "public_program",
+  ]) {
+    assert(
+      existsSync(join(dist, segment, "categories", category, "index.html")),
+      `${segment} is missing the non-empty ${category} category landing`,
+    );
+  }
+  assert(
+    !existsSync(join(dist, segment, "stages")) &&
+      !existsSync(join(dist, segment, "focuses")),
+    `${segment} emitted stage or focus landings without editorial introductions`,
+  );
+}
 assert(
   JSON.stringify(websiteGraph["@graph"].map((node) => node["@type"])) ===
     JSON.stringify(["WebSite"]),
@@ -337,9 +501,13 @@ assert(
 
 build("production");
 const second = snapshot();
+const changedFiles = [...new Set([
+  ...Object.keys(first),
+  ...Object.keys(second),
+])].filter((path) => first[path] !== second[path]);
 assert(
   JSON.stringify(first) === JSON.stringify(second),
-  "two clean production builds produced different files",
+  `two clean production builds produced different files: ${changedFiles.join(", ")}`,
 );
 
 build("preview");

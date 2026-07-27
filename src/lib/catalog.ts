@@ -51,10 +51,16 @@ export function catalogItem(entry: CollectionEntry<"profiles">) {
   const country = parts.at(-2)?.replaceAll("-", " ") ?? "regional";
   return {
     id: entry.data.entity_id ?? sourcePath.replace(/\.md$/, ""),
+    slug: entry.data.slug ?? sourcePath.split("/").at(-1)?.replace(/\.md$/, ""),
     name: entry.data.name ?? fallbackName(entry),
     summary: entry.data.summary,
+    aliases: entry.data.aliases ?? [],
     category,
     country,
+    baseGeography: entry.data.base_geography,
+    countriesCovered: entry.data.countries_covered ?? [],
+    stages: entry.data.stages ?? [],
+    focuses: entry.data.focuses ?? [],
     sourcePath,
     sourceUrl: `https://github.com/djairofilho/awesome-latam-vc/blob/main/${sourcePath
       .split("/")
@@ -66,6 +72,9 @@ export function catalogItem(entry: CollectionEntry<"profiles">) {
       .join("/")}`,
     operator: entry.data.operator,
     officialWebsite: entry.data.official_website,
+    founderRoute: entry.data.founder_route,
+    sources: entry.data.sources ?? [],
+    lastVerified: entry.data.last_verified,
     hasStructuredMetadata: Boolean(entry.data.entity_id),
   };
 }
@@ -96,8 +105,10 @@ export function localizedCatalogItems(
     return [
       {
         ...catalogItem(entry),
+        contentEntryId: entry.id,
         contentLocale,
         isFallback: contentLocale !== locale,
+        availableLocales: [...variants.keys()].sort(),
       },
     ];
   });

@@ -8,20 +8,21 @@ import {
   socialLocale,
 } from "../src/lib/seo.mjs";
 
-test("indexable route inventory excludes aliases, filters and errors", () => {
-  assert.deepEqual(indexablePaths(), [
-    "/",
-    "/en/",
-    "/pt-br/",
-    "/es/",
-    "/en/catalog/",
-    "/pt-br/catalog/",
-    "/es/catalog/",
-  ]);
+test("indexable route inventory includes profiles and curated landings", () => {
+  const paths = indexablePaths();
+  assert.ok(paths.includes("/en/profiles/kaszek/"));
+  assert.ok(paths.includes("/pt-br/categories/fund/"));
+  assert.ok(paths.includes("/es/countries/br/"));
+  assert.ok(paths.includes("/en/about/methodology/"));
+  assert.ok(!paths.includes("/pt-br/about/methodology/"));
+  assert.ok(!paths.includes("/pt-br/profiles/kaszek/"));
   for (const path of indexablePaths()) {
     assert.doesNotMatch(path, /[?#]/);
   }
-  assert.doesNotMatch(indexablePaths().join("\n"), /(?:^|\n)\/catalog\/|404/);
+  assert.doesNotMatch(
+    indexablePaths().join("\n"),
+    /(?:^|\n)\/catalog\/|404|\/stages\/|\/focuses\//,
+  );
 });
 
 test("sitemap is multilingual, absolute and deterministic", () => {
@@ -29,7 +30,10 @@ test("sitemap is multilingual, absolute and deterministic", () => {
   const second = sitemapXml();
   assert.equal(first, second);
   assert.match(first, /xmlns:xhtml="http:\/\/www\.w3\.org\/1999\/xhtml"/);
-  assert.equal((first.match(/<loc>/g) ?? []).length, 7);
+  assert.equal(
+    (first.match(/<loc>/g) ?? []).length,
+    indexablePaths().length,
+  );
   for (const path of indexablePaths()) {
     assert.match(
       first,
@@ -39,9 +43,12 @@ test("sitemap is multilingual, absolute and deterministic", () => {
     );
   }
   for (const group of indexableRouteGroups()) {
-    for (const hreflang of ["en", "pt-BR", "es", "x-default"]) {
-      assert.ok(group.alternates[hreflang]);
-    }
+    assert.ok(group.alternates.en);
+    assert.ok(group.alternates["x-default"]);
+    assert.equal(
+      Object.keys(group.alternates).length,
+      group.paths.length + (group.suffix === "/" ? 0 : 1),
+    );
   }
 });
 

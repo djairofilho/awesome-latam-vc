@@ -69,6 +69,12 @@ page with the sitemap, checks social metadata and reciprocal alternatives,
 smokes generated links, and starts a local preview to verify public URL status
 codes plus the custom 404 response.
 
+The build runs Astro first and Pagefind second. Pagefind reads the generated
+`<html lang>` values and creates an isolated index for each locale; do not set
+`force_language`, because that would merge EN, PT-BR, and ES. The browser bundle
+is published under the GitHub Pages base path at
+`/awesome-latam-vc/pagefind/`.
+
 ## GitHub Pages deployment
 
 Pull requests run `.github/workflows/site-build.yml`. They validate preview

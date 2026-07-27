@@ -1,14 +1,18 @@
 ---
 import { getCollection } from "astro:content";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import DirectoryExplorer from "../../components/DirectoryExplorer.astro";
 import type { Locale } from "../../i18n/ui";
 import { strings } from "../../i18n/ui";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { localizedCatalogItems } from "../../lib/catalog";
 import {
-  categories,
-  localizedCatalogItems,
-  type Category,
-} from "../../lib/catalog";
+  categoryRouteSuffix,
+  countryDisplayName,
+  countryRouteSuffix,
+  directoryCountryCodes,
+  directoryRecordForProfile,
+} from "../../lib/directory-routes.mjs";
 import {
   localeDetails,
   locales,
@@ -38,11 +42,41 @@ const profiles = localizedCatalogItems(
   await getCollection("profiles"),
   locale,
 ).sort((left, right) => left.name.localeCompare(right.name, locale));
-const grouped = categories.map((category) => ({
-  category: category as Category,
-  label: labels.categoryLabels[category],
-  profiles: profiles.filter((profile) => profile.category === category),
+const records = profiles.map((profile) =>
+  directoryRecordForProfile(profile, locale),
+);
+const populatedCategories = Object.entries(labels.categoryLabels)
+  .map(([category, label]) => ({
+    category,
+    label,
+    count: records.filter(({ entity_type }) =>
+      entity_type.includes(category),
+    ).length,
+  }))
+  .filter(({ count }) => count > 0);
+const countries = directoryCountryCodes(records).map((country) => ({
+  code: country,
+  label: countryDisplayName(locale, country),
+  count: records.filter(({ geography }) => geography.includes(country)).length,
 }));
+const explorerLabels = {
+  heading: labels.directoryHeading,
+  searchLabel: labels.searchLabel,
+  searchPlaceholder: labels.searchPlaceholder,
+  clearFilters: labels.clearFilters,
+  submitSearch: labels.submitSearch,
+  facetLabels: labels.facetLabels,
+  valueLabels: labels.categoryLabels,
+  initialResults: labels.resultCount.replace(
+    "{count}",
+    String(records.length),
+  ),
+  resultCount: labels.resultCount,
+  loading: labels.loadingResults,
+  noResults: labels.noResults,
+  error: labels.searchError,
+  noScript: labels.noScript,
+};
 const catalogPath = localizedRoute(locale, "/catalog/");
 const structuredData = [
   datasetJsonLd(profiles.length, catalogPath, locale),
@@ -75,41 +109,39 @@ const structuredData = [
     <p>{labels.catalogIntro}</p>
   </header>
 
-  <nav class="catalog-jump" aria-label={labels.jumpNavigation}>
-    {
-      grouped.map(({ category, label, profiles: entries }) => (
-        <a href={`#${category}`}>
-          {label} <span>{entries.length}</span>
-        </a>
-      ))
-    }
-  </nav>
+  <div class="landing-navigation">
+    <nav aria-labelledby="category-landings-heading">
+      <h2 id="category-landings-heading">{labels.browseCategories}</h2>
+      <ul>
+        {
+          populatedCategories.map(({ category, label, count }) => (
+            <li>
+              <a href={localizedHref(locale, categoryRouteSuffix(category))}>
+                <span>{label}</span>
+                <span>{count}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
 
-  <div class="catalog-groups">
-    {
-      grouped.map(({ category, label, profiles: entries }) => (
-        <section id={category} aria-labelledby={`${category}-heading`}>
-          <header>
-            <h2 id={`${category}-heading`}>{label}</h2>
-            <p>
-              {entries.length} {labels.profilePlural}
-            </p>
-          </header>
-          <ul class="profile-list">
-            {entries.map((profile) => (
-              <li data-profile-id={profile.id}>
-                <a href={profile.sourceUrl}>
-                  <strong>{profile.name}</strong>
-                  <span>{profile.country}</span>
-                  <span class="source-label">
-                    {labels.sourceLabel} <span aria-hidden="true">↗</span>
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))
-    }
+    <nav aria-labelledby="country-landings-heading">
+      <h2 id="country-landings-heading">{labels.browseCountries}</h2>
+      <ul>
+        {
+          countries.map(({ code, label, count }) => (
+            <li>
+              <a href={localizedHref(locale, countryRouteSuffix(code))}>
+                <span>{label}</span>
+                <span>{count}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
   </div>
+
+  <DirectoryExplorer records={records} labels={explorerLabels} />
 </BaseLayout>

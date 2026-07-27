@@ -1,0 +1,154 @@
+---
+import {
+  FACET_DIMENSIONS,
+  deriveFacetCounts,
+  deriveFacetValues,
+  directoryParameterName,
+} from "../lib/directory.mjs";
+
+interface DirectoryRecord {
+  id: string;
+  name: string;
+  summary: string;
+  href: string;
+  entity_type: string[];
+  geography: string[];
+  stage: string[];
+  focus: string[];
+  searchText?: string;
+}
+
+interface Labels {
+  heading: string;
+  searchLabel: string;
+  searchPlaceholder: string;
+  clearFilters: string;
+  submitSearch: string;
+  facetLabels: Record<string, string>;
+  valueLabels?: Record<string, string>;
+  initialResults: string;
+  resultCount: string;
+  loading: string;
+  noResults: string;
+  error: string;
+  noScript: string;
+}
+
+interface Props {
+  id?: string;
+  records: DirectoryRecord[];
+  labels: Labels;
+}
+
+const {
+  id = "directory",
+  records,
+  labels,
+} = Astro.props;
+const facets = deriveFacetValues(records);
+const counts = deriveFacetCounts(records);
+const valueLabel = (value: string) => labels.valueLabels?.[value] ?? value;
+---
+
+<directory-explorer
+  class="directory-explorer"
+  data-results-template={labels.resultCount}
+  data-loading-message={labels.loading}
+  data-empty-message={labels.noResults}
+  data-error-message={labels.error}
+>
+  <form
+    class="directory-controls"
+    role="search"
+    aria-labelledby={`${id}-heading`}
+    data-directory-form
+    data-pagefind-ignore="all"
+  >
+    <div class="directory-search">
+      <h2 id={`${id}-heading`}>{labels.heading}</h2>
+      <label for={`${id}-query`}>{labels.searchLabel}</label>
+      <input
+        id={`${id}-query`}
+        name="q"
+        type="search"
+        placeholder={labels.searchPlaceholder}
+        autocomplete="off"
+        enterkeyhint="search"
+      />
+      <button class="directory-submit" type="submit">
+        {labels.submitSearch}
+      </button>
+    </div>
+
+    <div class="directory-facets">
+      {
+        FACET_DIMENSIONS.map((dimension) => (
+          <details>
+            <summary>{labels.facetLabels[dimension]}</summary>
+            <fieldset>
+              <legend class="visually-hidden">
+                {labels.facetLabels[dimension]}
+              </legend>
+              {facets[dimension].map((value, index) => {
+                const optionId = `${id}-${dimension}-${index}`;
+                return (
+                  <label>
+                    <input
+                      id={optionId}
+                      type="checkbox"
+                      name={directoryParameterName(dimension)}
+                      value={value}
+                    />
+                    <span>{valueLabel(value)}</span>
+                    <span
+                      class="facet-count"
+                      aria-hidden="true"
+                      data-facet-count={`${dimension}:${value}`}
+                    >
+                      {counts[dimension][value]}
+                    </span>
+                  </label>
+                );
+              })}
+            </fieldset>
+          </details>
+        ))
+      }
+    </div>
+
+    <button class="directory-clear" type="reset">{labels.clearFilters}</button>
+  </form>
+
+  <output
+    class="directory-status"
+    aria-live="polite"
+    aria-atomic="true"
+    data-directory-status
+  >
+    {labels.initialResults}
+  </output>
+
+  <ol class="directory-results" aria-busy="false" data-directory-results>
+    {
+      records.map((record) => (
+        <li
+          data-directory-record={JSON.stringify(record)}
+          data-directory-id={record.id}
+        >
+          <a href={record.href}>
+            <strong>{record.name}</strong>
+            {record.summary && <span>{record.summary}</span>}
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+
+  <noscript>
+    <p class="directory-noscript">{labels.noScript}</p>
+  </noscript>
+</directory-explorer>
+
+<script>
+  import "../scripts/directory-explorer.mjs";
+</script>

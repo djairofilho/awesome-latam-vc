@@ -1,0 +1,93 @@
+---
+import { getCollection } from "astro:content";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
+import ProfileLinkList from "../../../components/ProfileLinkList.astro";
+import type { Locale } from "../../../i18n/ui";
+import { strings } from "../../../i18n/ui";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { localizedCatalogItems } from "../../../lib/catalog";
+import {
+  countryDisplayName,
+  countryRouteSuffix,
+  directoryCountryCodes,
+  directoryRecordForProfile,
+} from "../../../lib/directory-routes.mjs";
+import {
+  localeDetails,
+  locales,
+  localizedHref,
+  localizedRoute,
+} from "../../../lib/i18n.mjs";
+import { seoTitle } from "../../../lib/seo.mjs";
+import { breadcrumbListJsonLd } from "../../../lib/structured-data.mjs";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("profiles");
+  return (locales as Locale[]).flatMap((locale) => {
+    const records = localizedCatalogItems(entries, locale).map((profile) =>
+      directoryRecordForProfile(profile, locale),
+    );
+    return directoryCountryCodes(records).map((country) => ({
+      params: {
+        locale: localeDetails(locale).route_segment,
+        country: country.toLocaleLowerCase(),
+      },
+      props: {
+        locale,
+        country,
+        records: records.filter(({ geography }) =>
+          geography.includes(country),
+        ),
+      },
+    }));
+  });
+}
+
+interface Props {
+  locale: Locale;
+  country: string;
+  records: ReturnType<typeof directoryRecordForProfile>[];
+}
+
+const { locale, country, records: unsortedRecords } = Astro.props as Props;
+const labels = strings(locale);
+const countryName = countryDisplayName(locale, country);
+const routeSuffix = countryRouteSuffix(country);
+const route = localizedRoute(locale, routeSuffix);
+const records = unsortedRecords.sort((left, right) =>
+  left.name.localeCompare(right.name, locale),
+);
+---
+
+<BaseLayout
+  title={seoTitle(
+    labels.countryLandingTitle(countryName),
+    labels.languageName,
+  )}
+  description={labels.countryLandingDescription(countryName)}
+  canonicalPath={route}
+  routeSuffix={routeSuffix}
+  locale={locale}
+  structuredData={[
+    breadcrumbListJsonLd([
+      { name: labels.home, path: localizedRoute(locale, "/") },
+      { name: labels.catalog, path: localizedRoute(locale, "/catalog/") },
+      { name: countryName, path: route },
+    ]),
+  ]}
+>
+  <Breadcrumbs
+    ariaLabel={labels.breadcrumbNavigation}
+    items={[
+      { label: labels.home, href: localizedHref(locale, "/") },
+      { label: labels.catalog, href: localizedHref(locale, "/catalog/") },
+      { label: countryName },
+    ]}
+  />
+  <header class="page-intro landing-intro">
+    <p class="eyebrow">{labels.browseCountries}</p>
+    <h1>{countryName}</h1>
+    <p>{labels.resultCount.replace("{count}", String(records.length))}</p>
+  </header>
+  <ProfileLinkList profiles={records} />
+</BaseLayout>

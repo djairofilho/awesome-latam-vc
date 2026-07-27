@@ -1,0 +1,42 @@
+---
+interface Props {
+  profile: {
+    aliases: string[];
+    category: string;
+    baseGeography?: { code: string };
+    countriesCovered: string[];
+    stages: string[];
+    focuses: string[];
+  };
+}
+
+const { profile } = Astro.props;
+const geographies = [
+  ...new Set([
+    profile.baseGeography?.code,
+    ...profile.countriesCovered,
+  ].filter(Boolean)),
+];
+---
+
+<div hidden aria-hidden="true">
+  {profile.aliases.length > 0 && (
+    <span data-pagefind-meta="aliases">{profile.aliases.join(", ")}</span>
+  )}
+  <span data-pagefind-filter="entity_type">{profile.category}</span>
+  {
+    geographies.map((geography) => (
+      <span data-pagefind-filter="geography">{geography}</span>
+    ))
+  }
+  {
+    profile.stages.map((stage) => (
+      <span data-pagefind-filter="stage">{stage}</span>
+    ))
+  }
+  {
+    profile.focuses.map((focus) => (
+      <span data-pagefind-filter="focus">{focus}</span>
+    ))
+  }
+</div>
