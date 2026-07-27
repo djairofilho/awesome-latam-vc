@@ -1,0 +1,70 @@
+{
+  "batch_artifact_hash": "8f732d6e93238a4678c7b1895a5c009e4e5f2b5c7cd1af2302e426e6bae1af04",
+  "batch_count": 1,
+  "batch_hash": "cdb068e4ba3c2769da4c65b8653dfb73ae2f0d6332ed56867283f28ac119b174",
+  "batch_size": 10,
+  "branches": [
+    "agent/issue-87-angels-publication"
+  ],
+  "cutoff_date": "2026-07-27",
+  "eligible_count": 11,
+  "excluded_network_ids": [
+    "ang-hub-udep-pe--pad"
+  ],
+  "expected_batch_count": 1,
+  "hash_algorithm": "sha256",
+  "index_hashes": {
+    "README.es.md": "e74e08c7341200191ed8f2a6f3beac82abac26a91ac9035743a477bea53fc12f",
+    "README.pt.md": "670a9b5b57e45d3305f460a07098ef1b2ea9c60568d704478b62572cffe249f4",
+    "ecosystem/angel-networks/README.es.md": "47d273df8d95fd5dcd8012662476ea76ab54712e8c7071de83114386fde18904",
+    "ecosystem/angel-networks/README.md": "06949ab76f91571d6f393afed67ed8977149ec3b4cb8b8998d1b6c9ee4fbfda3",
+    "ecosystem/angel-networks/README.pt.md": "1493140bf25aa587b964f88a3aed92eeb3b0c13e70a6a3b83da618312bd509c4"
+  },
+  "issue": 87,
+  "newly_published_count": 6,
+  "not_published_count": 33,
+  "not_published_decision_counts": {
+    "duplicado": 2,
+    "encaminhado-para-aceleradoras": 2,
+    "encaminhado-para-funds": 4,
+    "encaminhado-para-plataformas": 5,
+    "encaminhado-para-programas-públicos": 1,
+    "evidência-insuficiente": 16,
+    "excluído": 1,
+    "inativo": 2
+  },
+  "parent_epic": 63,
+  "preserved_count": 5,
+  "preserved_profile_hashes": {
+    "ecosystem/angel-networks/brazil/anjos-do-brasil.md": "fde59e782c380897cc3dbb4d89a6d0bddf6dc707d78b1a8fd9d07c47fe393855",
+    "ecosystem/angel-networks/brazil/br-angels.md": "3d4af538919ba801ef08ad1c397338b32a1db772646908d19d8a9b50fd70fdd6",
+    "ecosystem/angel-networks/brazil/gvangels.md": "5a8be14e026537880a7762bc0c8a0c140dc92676cc5e9346759c05bdd0453b7a",
+    "ecosystem/angel-networks/brazil/urca-angels.md": "7f39aa519c591dd502445a1460f98544d9f0a2a77fbcc1eadbc297beae9c5b35",
+    "ecosystem/angel-networks/mexico/angelhub.md": "5c965d867b5098bb933b73baad3f6932716e27404a9a5cfcff3eb6136f2cdb99"
+  },
+  "profile_hashes": {
+    "ecosystem/angel-networks/argentina/business-angels-club.md": "4aa00790c5c41b08256f3622ec343a3a888781cbb5f0c326f0fe99bbd8f48a88",
+    "ecosystem/angel-networks/brazil/curitiba-angels.md": "05c7259f899a971ccaf6490acb8ec34ab9c7af839361758beeafaa08be6ff3df",
+    "ecosystem/angel-networks/brazil/puc-angels.md": "60b936cbc3b882e5e0a3c242f2224a7e471daa6c31b920c14c60b65cc26bd826",
+    "ecosystem/angel-networks/chile/red-angeles-uc.md": "5a67d1a236d6740f80d1bfff9f57442cb65a4adcde81581f56dc9dc35d8de1dd",
+    "ecosystem/angel-networks/dominican-republic/enlaces.md": "62c4e98497fcc144de848601fb374ddd11f591f503ac45daa9c80d49021f6f1d",
+    "ecosystem/angel-networks/jamaica/firstangels-caribbean.md": "d766f9835d33f7fb8262fa0dbfd7372646f8603aa4035f3ad8993a198d134599"
+  },
+  "schema_version": "1.0",
+  "source_hashes": {
+    "candidates.jsonl": "e6bffe81f90ae36649dd5f0bee3148e53d76a070a9e809362e419f64a317e12b",
+    "consolidation-manifest.json": "3cf86053814c9c57fe995e7c602ffe58201b6ebf082bc331d36ba6515c7ec1dd",
+    "evidence.jsonl": "5373fa48e1985ce2dbbd6e78a48e539fea0609fe668b7d1b6a11131cf4f4efaf",
+    "independent-review.jsonl": "a47bb7f86048dde4914ab4d2dff7474cb668466e3f26be86be07c5bc25fafb62",
+    "publication-queue.jsonl": "1d372fd37a61cf26c1f3cee75df0485c9f3e4277e0b90b5d255d206cccc354cd",
+    "review-divergences.json": "b979228bb00882112a02f0ce63bcb4f2c99a50212a89b04c282e0b987ce59c1d"
+  },
+  "source_independent_review_status": "complete",
+  "source_issue": 86,
+  "source_queue_status": "frozen",
+  "source_unresolved_high_divergences": 0,
+  "status": "complete",
+  "sub_issues": [
+    159
+  ]
+}

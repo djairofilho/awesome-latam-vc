@@ -222,7 +222,7 @@ son fondos de VC y, por eso, permanecen fuera de las tablas principales. Consult
 el [alcance y los criterios de inclusión](ecosystem/README.md).
 
 - [Aceleradoras](ecosystem/accelerators/README.md)
-- [Redes de inversionistas ángeles](ecosystem/angel-networks/README.md)
+- [Redes de inversionistas ángeles](ecosystem/angel-networks/README.es.md)
 - [Plataformas de financiación](ecosystem/funding-platforms/README.es.md)
 - [Programas públicos](ecosystem/public-programs/README.md)
 
