@@ -17,10 +17,11 @@ KIND_TO_FILENAME = {
     "manifest": "run-manifest.jsonl",
     "sources": "source-inventory.jsonl",
 }
-ID_FIELD_BY_KIND = {
-    "coverage": "coverage_id",
-    "evidence": "evidence_id",
-    "sources": "source_id",
+ID_FIELDS_BY_KIND = {
+    "candidates": ("candidate_id", "network_id", "platform_id"),
+    "coverage": ("coverage_id", "country"),
+    "evidence": ("evidence_id",),
+    "sources": ("source_id",),
 }
 
 
@@ -48,20 +49,21 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
 def _record_key(kind: str, record: dict[str, Any]) -> str:
     if kind == "manifest":
         record_type = record.get("record_type")
-        field = "run_id" if record_type == "run" else "task_id"
-    elif kind == "candidates":
-        for candidate_field in ("candidate_id", "network_id"):
-            value = record.get(candidate_field)
-            if isinstance(value, str) and value:
-                return f"{kind}:{value}"
-        raise ValueError(
-            "candidates record is missing string key candidate_id or network_id"
-        )
+        fields = ("run_id",) if record_type == "run" else ("task_id",)
     else:
-        field = ID_FIELD_BY_KIND[kind]
-    value = record.get(field)
-    if not isinstance(value, str) or not value:
-        raise ValueError(f"{kind} record is missing string key {field}")
+        fields = ID_FIELDS_BY_KIND[kind]
+    field = next(
+        (
+            candidate
+            for candidate in fields
+            if isinstance(record.get(candidate), str) and record[candidate]
+        ),
+        None,
+    )
+    if field is None:
+        expected = " or ".join(fields)
+        raise ValueError(f"{kind} record is missing string key {expected}")
+    value = record[field]
     return f"{record.get('record_type', kind)}:{value}"
 
 
