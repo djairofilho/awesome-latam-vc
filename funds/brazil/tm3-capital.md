@@ -55,6 +55,8 @@ TM3 Capital is an investment organization listed in this directory; its current 
 - **Initial check:** Not publicly disclosed in the reviewed sources
 - **Investment role:** Not publicly disclosed in the reviewed sources
 - **Business models:** Not publicly disclosed in the reviewed sources
+- **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Portfolio size:** 22 companies captured in the local project dataset; this is not an official portfolio count
 - **Selected companies:** a55, Actiz, Aevo, AMcom, Archa
 - **Submit a startup:** Not publicly disclosed in the reviewed sources

@@ -55,6 +55,8 @@ QAPU Ventures is an investment organization listed in this directory; its curren
 - **Initial check:** Not publicly disclosed in the reviewed sources
 - **Investment role:** Not publicly disclosed in the reviewed sources
 - **Business models:** Not publicly disclosed in the reviewed sources
+- **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Portfolio size:** 9 companies captured in the local project dataset; this is not an official portfolio count
 - **Selected companies:** Aflore, Alfred, Almaya, Avify, Beecuick
 - **Submit a startup:** Not publicly disclosed in the reviewed sources
