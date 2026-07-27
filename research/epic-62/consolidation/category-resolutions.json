@@ -1,0 +1,373 @@
+{
+  "cross_category_resolutions": [
+    {
+      "accelerator_decision": "elegível",
+      "candidate_id": "accel-ace-amazonia-impacto",
+      "canonical_destination": "funds/brazil/ace-ventures.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "evidência-insuficiente",
+      "candidate_id": "accel-ace-for-doers",
+      "canonical_destination": "funds/brazil/ace-ventures.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "elegível",
+      "candidate_id": "accel-ace-funses1-digital",
+      "canonical_destination": "funds/brazil/ace-ventures.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-acelera-divinopolis",
+      "canonical_destination": "epic-65:program/program-acelera-divinopolis",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-acre-for-startups",
+      "canonical_destination": "epic-65:program/program-acre-for-startups",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-and-agroinnovatec",
+      "canonical_destination": "epic-65:program/program-agroinnovatec",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "evidência-insuficiente",
+      "candidate_id": "accel-and-buentrip",
+      "canonical_destination": "funds/regional/buentrip-ventures.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-and-emprendimiento-digital",
+      "canonical_destination": "epic-65:program/program-emprendimiento-digital",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-and-startup-peru",
+      "canonical_destination": "research/epic-65/andean/programs.jsonl#program-proinnovate-startup-peru",
+      "destination_status": "materializado",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "elegível",
+      "candidate_id": "accel-and-utec",
+      "canonical_destination": "funds/regional/utec-ventures.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-bndes-garagem",
+      "canonical_destination": "epic-65:program/program-bndes-garagem",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-brde-labs-rs",
+      "canonical_destination": "epic-65:program/program-brde-labs-rs",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "elegível",
+      "candidate_id": "accel-capital-empreendedor-rj",
+      "canonical_destination": "research/epic-65/brazil/programs.jsonl#program-sebrae-capital-empreendedor",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "elegível",
+      "candidate_id": "accel-darwin-scale",
+      "canonical_destination": "funds/brazil/darwin-startups.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-finep-mulheres-inovadoras",
+      "canonical_destination": "epic-65:program/program-finep-mulheres-inovadoras",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "elegível",
+      "candidate_id": "accel-foreign-500-global-flagship",
+      "canonical_destination": "funds/regional/500-latam-500-global.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-funds",
+      "candidate_id": "accel-foreign-antler-singapore",
+      "canonical_destination": "funds/:antler.co#global-venture-capital",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "elegível",
+      "candidate_id": "accel-gb-ventures",
+      "canonical_destination": "funds/brazil/grupo-boticario-ventures.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "elegível",
+      "candidate_id": "accel-mxcac-500-latam",
+      "canonical_destination": "funds/regional/500-latam-500-global.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-funds",
+      "candidate_id": "accel-mxcac-carao",
+      "canonical_destination": "funds/regional/carao-ventures.md",
+      "destination_status": "materializado",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-mxcac-cenpromype",
+      "canonical_destination": "epic-65:program/program-cenpromype",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "elegível",
+      "candidate_id": "accel-mxcac-parallel18",
+      "canonical_destination": "funds/regional/parallel18-ventures.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-sc-anii-sprintuy",
+      "canonical_destination": "epic-65:program/program-anii-sprintuy",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-funds",
+      "candidate_id": "accel-sc-cites",
+      "canonical_destination": "funds/regional/cites.md",
+      "destination_status": "materializado",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "elegível",
+      "candidate_id": "accel-sc-grid-transform",
+      "canonical_destination": "funds/multi-country/gridx.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-sc-incubate",
+      "canonical_destination": "epic-65:program/program-incubate",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-sc-mic-reinventa",
+      "canonical_destination": "epic-65:program/program-mic-reinventa",
+      "destination_status": "fila-canônica",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "evidência-insuficiente",
+      "candidate_id": "accel-sc-platanus",
+      "canonical_destination": "funds/:platanus.ventures#investment-vehicle",
+      "destination_status": "fila-canônica",
+      "relationship": "unidades-distintas"
+    },
+    {
+      "accelerator_decision": "encaminhado-para-outra-epic",
+      "candidate_id": "accel-sc-startup-chile",
+      "canonical_destination": "research/epic-65/southern-cone/programs.jsonl#program-start-up-chile",
+      "destination_status": "materializado",
+      "relationship": "encaminhado"
+    },
+    {
+      "accelerator_decision": "evidência-insuficiente",
+      "candidate_id": "accel-ventiur-acelera-impacto",
+      "canonical_destination": "funds/brazil/ventiur.md",
+      "destination_status": "materializado",
+      "relationship": "unidades-distintas"
+    }
+  ],
+  "cutoff_date": "2026-07-27",
+  "issue": 76,
+  "schema_version": "1.0",
+  "vehicle_resolutions": [
+    {
+      "candidate_id": "accel-acelera-divinopolis",
+      "canonical_destination": "funds/:divinopolis.mg.gov.br#acelera-benefits",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "divinopolis.mg.gov.br#acelera-benefits",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-acre-for-startups",
+      "canonical_destination": "funds/:sebrae.com.br#acre-startup-scholarship",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "sebrae.com.br#acre-startup-scholarship",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-and-rockstart",
+      "canonical_destination": "funds/:rockstart.com#investment-vehicle",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "rockstart.com#investment-vehicle",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-bndes-garagem",
+      "canonical_destination": "funds/:bndes.gov.br#garagem-awards",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "bndes.gov.br#garagem-awards",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-brde-labs-rs",
+      "canonical_destination": "funds/:brde.com.br#brde-labs-awards",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "brde.com.br#brde-labs-awards",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-finep-mulheres-inovadoras",
+      "canonical_destination": "funds/:finep.gov.br#mulheres-inovadoras-awards",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "finep.gov.br#mulheres-inovadoras-awards",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-foreign-500-global-flagship",
+      "canonical_destination": "funds/regional/500-latam-500-global.md",
+      "destination_status": "materializado",
+      "investment_vehicle_id": "500.co#flagship-funds",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-foreign-alchemist-flagship",
+      "canonical_destination": "funds/:alchemistaccelerator.com#investment-vehicle",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "alchemistaccelerator.com#investment-vehicle",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-foreign-antler-singapore",
+      "canonical_destination": "funds/:antler.co#global-venture-capital",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "antler.co#global-venture-capital",
+      "relationship": "entidade-encaminhada"
+    },
+    {
+      "candidate_id": "accel-foreign-berkeley-skydeck",
+      "canonical_destination": "funds/:skydeck.berkeley.edu#skydeck-fund",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "skydeck.berkeley.edu#skydeck-fund",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-foreign-techstars-anywhere",
+      "canonical_destination": "funds/:techstars.com#investment-vehicle",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "techstars.com#investment-vehicle",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-foreign-y-combinator",
+      "canonical_destination": "funds/:ycombinator.com#investment-vehicle",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "ycombinator.com#investment-vehicle",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-ganesha-go-europe",
+      "canonical_destination": "funds/:theganeshalab.com#ganesha-fund",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "theganeshalab.com#ganesha-fund",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-mxcac-500-latam",
+      "canonical_destination": "funds/regional/500-latam-500-global.md",
+      "destination_status": "materializado",
+      "investment_vehicle_id": "500.co#investment-vehicle",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-mxcac-alterna",
+      "canonical_destination": "funds/:alterna.pro#investment-vehicle",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "alterna.pro#investment-vehicle",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-mxcac-carao",
+      "canonical_destination": "funds/regional/carao-ventures.md",
+      "destination_status": "materializado",
+      "investment_vehicle_id": "caraov.com#investment-vehicle",
+      "relationship": "entidade-encaminhada"
+    },
+    {
+      "candidate_id": "accel-sc-cites",
+      "canonical_destination": "funds/regional/cites.md",
+      "destination_status": "materializado",
+      "investment_vehicle_id": "cites-gss.com#venture-capital",
+      "relationship": "entidade-encaminhada"
+    },
+    {
+      "candidate_id": "accel-sc-grid-transform",
+      "canonical_destination": "funds/multi-country/gridx.md",
+      "destination_status": "materializado",
+      "investment_vehicle_id": "gridexponential.com#investment-vehicle",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-sc-magical",
+      "canonical_destination": "funds/:magicalstartups.com#venture-capital",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "magicalstartups.com#venture-capital",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-sc-platanus",
+      "canonical_destination": "funds/:platanus.ventures#investment-vehicle",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "platanus.ventures#investment-vehicle",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-ventiur-acelera-impacto",
+      "canonical_destination": "funds/brazil/ventiur.md",
+      "destination_status": "materializado",
+      "investment_vehicle_id": "ventiur.net#investment-vehicles",
+      "relationship": "programa-e-veículo-distintos"
+    },
+    {
+      "candidate_id": "accel-wow",
+      "canonical_destination": "funds/:wow.ac#wow-investment-network",
+      "destination_status": "não-publicado",
+      "investment_vehicle_id": "wow.ac#wow-investment-network",
+      "relationship": "programa-e-veículo-distintos"
+    }
+  ]
+}

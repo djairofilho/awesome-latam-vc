@@ -1,0 +1,1456 @@
+[
+  {
+    "candidate_id": "accel-ace-amazonia-impacto",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-ace-for-doers",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-ace-funses1-digital",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-acelera-divinopolis",
+    "canonical_destination": "epic-65:program/program-acelera-divinopolis",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "Epic #65, public startup funding programs",
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para epic-65:program/program-acelera-divinopolis."
+    ],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-acre-for-startups",
+    "canonical_destination": "epic-65:program/program-acre-for-startups",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "Epic #65, public startup funding programs",
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para epic-65:program/program-acre-for-startups."
+    ],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-aceleradora-100",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-agroinnovatec",
+    "canonical_destination": "epic-65:program/program-agroinnovatec",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "epic-65",
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para epic-65:program/program-agroinnovatec."
+    ],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-buentrip",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-emprendimiento-digital",
+    "canonical_destination": "epic-65:program/program-emprendimiento-digital",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "epic-65",
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para epic-65:program/program-emprendimiento-digital."
+    ],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-iesa",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-impact-hub-caracas",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-impaqto",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-innovalab",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-liquid",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-rockstart",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "epic-75",
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Encaminhamento interno sem destino convertido em pendência."
+    ],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-solydes",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-startup-peru",
+    "canonical_destination": "research/epic-65/andean/programs.jsonl#program-proinnovate-startup-peru",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "epic-65",
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para research/epic-65/andean/programs.jsonl#program-proinnovate-startup-peru."
+    ],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-utec",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-and-wayra-venezuela",
+    "canonical_destination": null,
+    "final_decision": "inativo",
+    "input_decisions": [
+      {
+        "decision": "inativo",
+        "destination": null,
+        "run": "andean"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean"
+    ]
+  },
+  {
+    "candidate_id": "accel-bndes-garagem",
+    "canonical_destination": "epic-65:program/program-bndes-garagem",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "Epic #65, public startup funding programs",
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para epic-65:program/program-bndes-garagem."
+    ],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-boost",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "pilot"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "pilot",
+    "source_runs": [
+      "pilot"
+    ]
+  },
+  {
+    "candidate_id": "accel-brde-labs-rs",
+    "canonical_destination": "epic-65:program/program-brde-labs-rs",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "Epic #65, public startup funding programs",
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para epic-65:program/program-brde-labs-rs."
+    ],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-capital-empreendedor-rj",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-cibersons",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "pilot"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "pilot",
+    "source_runs": [
+      "pilot"
+    ]
+  },
+  {
+    "candidate_id": "accel-darwin-scale",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-dasa-pulsa",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-finep-mulheres-inovadoras",
+    "canonical_destination": "epic-65:program/program-finep-mulheres-inovadoras",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "Epic #65, public startup funding programs",
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para epic-65:program/program-finep-mulheres-inovadoras."
+    ],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-500-global-flagship",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-alchemist-flagship",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-antler-singapore",
+    "canonical_destination": "funds/:antler.co#global-venture-capital",
+    "final_decision": "encaminhado-para-funds",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-funds",
+        "destination": "funds/",
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino de fundo normalizado para funds/:antler.co#global-venture-capital."
+    ],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-aws-generative-ai",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-berkeley-skydeck",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-founder-institute-latam",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-google-ai-cybersecurity-latam",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-microsoft-founders-hub",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-nvidia-inception",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-seedstars-lif-caf-rural-tech",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-techstars-anywhere",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-foreign-y-combinator",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "foreign"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "foreign",
+    "source_runs": [
+      "foreign"
+    ]
+  },
+  {
+    "candidate_id": "accel-ganesha-go-europe",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "pilot"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "pilot",
+    "source_runs": [
+      "pilot"
+    ]
+  },
+  {
+    "candidate_id": "accel-gb-ventures",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-google-for-startups-brazil",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "Issue #75, foreign operators with explicit Latin American access",
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Encaminhamento interno removido: a evidência regional já satisfaz categoria, atividade, acesso externo e geografia."
+    ],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-inovativa-brasil",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-kruger-labs",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "andean"
+      },
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "pilot"
+      }
+    ],
+    "merged_occurrences": 2,
+    "resolution_notes": [],
+    "selected_run": "andean",
+    "source_runs": [
+      "andean",
+      "pilot"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-500-latam",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-alterna",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-banj",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-beltraide",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-carao",
+    "canonical_destination": "funds/regional/carao-ventures.md",
+    "final_decision": "encaminhado-para-funds",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-funds",
+        "destination": "funds/carao-ventures",
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino de fundo normalizado para funds/regional/carao-ventures.md."
+    ],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-cenpromype",
+    "canonical_destination": "epic-65:program/program-cenpromype",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "epic-65",
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para epic-65:program/program-cenpromype."
+    ],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-ciudad-saber",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-cree-banreservas",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-cubaemprende",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-honduras-digital",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-masschallenge",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-new-ventures",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-parallel18",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-mxcac-sparklabs",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "epic-75",
+        "run": "mexico-cac"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Encaminhamento interno sem destino convertido em pendência."
+    ],
+    "selected_run": "mexico-cac",
+    "source_runs": [
+      "mexico-cac"
+    ]
+  },
+  {
+    "candidate_id": "accel-oxigenio",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "brazil"
+      },
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "pilot"
+      }
+    ],
+    "merged_occurrences": 2,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil",
+      "pilot"
+    ]
+  },
+  {
+    "candidate_id": "accel-quintessa-operator",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-anii-sprintuy",
+    "canonical_destination": "epic-65:program/program-anii-sprintuy",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "epic-65",
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para epic-65:program/program-anii-sprintuy."
+    ],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-cites",
+    "canonical_destination": "funds/regional/cites.md",
+    "final_decision": "encaminhado-para-funds",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-funds",
+        "destination": "funds/",
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino de fundo normalizado para funds/regional/cites.md."
+    ],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-grid-transform",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-incubate",
+    "canonical_destination": "epic-65:program/program-incubate",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "epic-65",
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para epic-65:program/program-incubate."
+    ],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-incuna",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-ingenio",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-koga",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-magical",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-mic-reinventa",
+    "canonical_destination": "epic-65:program/program-mic-reinventa",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "epic-65",
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para epic-65:program/program-mic-reinventa."
+    ],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-platanus",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-startup-chile",
+    "canonical_destination": "research/epic-65/southern-cone/programs.jsonl#program-start-up-chile",
+    "final_decision": "encaminhado-para-outra-epic",
+    "input_decisions": [
+      {
+        "decision": "encaminhado-para-outra-epic",
+        "destination": "epic-65",
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [
+      "Destino público normalizado para research/epic-65/southern-cone/programs.jsonl#program-start-up-chile."
+    ],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-sc-thaleslab",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "southern-cone"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "southern-cone",
+    "source_runs": [
+      "southern-cone"
+    ]
+  },
+  {
+    "candidate_id": "accel-softville-agora",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-startuplab-dasa",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "pilot"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "pilot",
+    "source_runs": [
+      "pilot"
+    ]
+  },
+  {
+    "candidate_id": "accel-tecnoparq-acelera",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-ventiur-acelera-impacto",
+    "canonical_destination": null,
+    "final_decision": "evidência-insuficiente",
+    "input_decisions": [
+      {
+        "decision": "evidência-insuficiente",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  },
+  {
+    "candidate_id": "accel-wepartner",
+    "canonical_destination": null,
+    "final_decision": "excluído",
+    "input_decisions": [
+      {
+        "decision": "excluído",
+        "destination": null,
+        "run": "pilot"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "pilot",
+    "source_runs": [
+      "pilot"
+    ]
+  },
+  {
+    "candidate_id": "accel-wow",
+    "canonical_destination": null,
+    "final_decision": "elegível",
+    "input_decisions": [
+      {
+        "decision": "elegível",
+        "destination": null,
+        "run": "brazil"
+      }
+    ],
+    "merged_occurrences": 1,
+    "resolution_notes": [],
+    "selected_run": "brazil",
+    "source_runs": [
+      "brazil"
+    ]
+  }
+]
