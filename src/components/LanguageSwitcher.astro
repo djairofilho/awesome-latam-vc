@@ -1,0 +1,36 @@
+---
+import type { Locale } from "../i18n/ui";
+import { strings } from "../i18n/ui";
+import {
+  localeDetails,
+  locales,
+  localizedHref,
+} from "../lib/i18n.mjs";
+
+interface Props {
+  currentLocale?: Locale;
+  routeSuffix?: string;
+}
+
+const { currentLocale, routeSuffix = "/" } = Astro.props;
+const labels = strings(currentLocale ?? "en");
+---
+
+<nav class="language-switcher" aria-label={labels.languageNavigation}>
+  <span aria-hidden="true">A/文</span>
+  <ul>
+    {
+      locales.map((locale) => (
+        <li>
+          <a
+            href={localizedHref(locale, routeSuffix)}
+            lang={localeDetails(locale).html_lang}
+            aria-current={locale === currentLocale ? "page" : undefined}
+          >
+            {localeDetails(locale).label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

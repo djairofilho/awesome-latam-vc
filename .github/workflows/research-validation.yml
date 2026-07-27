@@ -8,6 +8,7 @@ on:
       - "data/**"
       - "research/epic-*/**"
       - "research/seo-geo/**"
+      - "translations/**"
       - "tools/research/**"
       - "tools/seo_geo/**"
       - "requirements-research.txt"
@@ -24,6 +25,7 @@ on:
       - "data/**"
       - "research/epic-*/**"
       - "research/seo-geo/**"
+      - "translations/**"
       - "tools/research/**"
       - "tools/seo_geo/**"
       - "requirements-research.txt"
@@ -76,6 +78,9 @@ jobs:
 
       - name: Validate editorial content
         run: python tools/seo_geo/validate_editorial.py
+
+      - name: Validate locale routes and translation associations
+        run: python tools/seo_geo/validate_i18n.py
 
       - name: Check translated index synchronization
         run: python tools/research/generate_indexes.py --check
