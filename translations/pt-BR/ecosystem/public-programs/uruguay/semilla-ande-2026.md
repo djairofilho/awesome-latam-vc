@@ -57,7 +57,7 @@
 
 ANR de até UYU 1 milhão, execução de 12 meses e janela de inscrições com cortes periódicos.
 
-O estado aberto abaixo está limitado ao instantâneo de 2026-07-27. Os fundadores devem verificar a rota oficial antes de se candidatar.
+O estado aberto abaixo está limitado ao instantâneo registrado. Os fundadores devem verificar a rota oficial antes de se candidatar.
 
 ## Relação com a agência
 
