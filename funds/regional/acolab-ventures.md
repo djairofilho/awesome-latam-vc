@@ -9,7 +9,7 @@ startups that can strengthen the steel value chain.
 - **Fund type:** Corporate venture capital
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
-- **Stage at entry:** Validated product and at least BRL 30,000 in monthly revenue
+- **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Steel, construction, industrial productivity, logistics, digitalization, and sustainability
 - **Geography:** Latin America

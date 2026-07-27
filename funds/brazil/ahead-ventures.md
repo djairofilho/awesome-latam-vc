@@ -10,7 +10,7 @@ and operates investment programs for corporations.
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Seed and Series A
-- **Follow-on stages:** Series B and Series C
+- **Follow-on stages:** Series B and Growth
 - **Focus:** Sectors aligned with each corporate client's strategic thesis
 - **Geography:** Brazil
 - **Initial check:** Not publicly disclosed

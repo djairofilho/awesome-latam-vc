@@ -9,8 +9,8 @@ companies advancing the energy transition.
 - **Fund type:** Corporate venture capital
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
-- **Stage at entry:** Seed to Series B
-- **Follow-on stages:** Later-round follow-ons are possible
+- **Stage at entry:** Seed, Series A, and Series B
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Energy transition and energy technology
 - **Geography:** Global
 - **Initial check:** EUR 1 million to EUR 10 million

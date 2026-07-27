@@ -9,7 +9,7 @@ innovative businesses addressing social and environmental challenges.
 - **Fund type:** Venture capital
 - **Direct startup investment:** Yes
 - **Open to external founders:** Not publicly disclosed
-- **Stage at entry:** Early stage
+- **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Social and environmental impact
 - **Geography:** Northern and Northeastern Brazil

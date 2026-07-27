@@ -23,7 +23,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
 | [500 LatAm (500 Global)](funds/regional/500-latam-500-global.md) | Pre-seed y Seed | Tecnología, agnóstico por sector | América Latina hispanohablante |
-| [Açolab Ventures](funds/regional/acolab-ventures.md) | Producto validado e ingresos operativos | Innovación y sostenibilidad en la cadena del acero | América Latina |
+| [Açolab Ventures](funds/regional/acolab-ventures.md) | No divulgado públicamente | Innovación y sostenibilidad en la cadena del acero | América Latina |
 | [Actions Capital (ex-K50 Ventures)](funds/regional/actions-capital-k50-ventures.md) | Pre-seed y Seed | Tecnología | América Latina |
 | [Alina VC](funds/regional/alina-vc.md) | No divulgado públicamente | Tecnología para el futuro del trabajo | América Latina |
 | [ALIVE Ventures](funds/regional/alive-ventures.md) | Seed y Serie A | Tecnología de impacto e inclusión económica | Colombia, Perú y América Latina |
@@ -104,13 +104,13 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 | [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed y Seed | Startups tecnológicas | Brasil |
 | [DGF Investimentos](funds/brazil/dgf-investimentos.md) | Multietapa | Empresas tecnológicas de alto crecimiento | Brasil y América Latina |
 | [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed y Seed | Tecnología | Brasil |
-| [Eurofarma Ventures](funds/brazil/eurofarma-ventures.md) | Descubrimiento y desarrollo en etapa inicial | Biotecnología, descubrimiento de fármacos y terapias avanzadas | Global |
+| [Eurofarma Ventures](funds/brazil/eurofarma-ventures.md) | No divulgado públicamente | Biotecnología, descubrimiento de fármacos y terapias avanzadas | Global |
 | [FIP Nordeste Capital Semente](funds/brazil/fip-nordeste-capital-semente.md) | Pre-seed y Seed | Startups tecnológicas regionales | Nordeste de Brasil, norte de Minas Gerais y Espírito Santo |
 | [Fundepar](funds/brazil/fundepar.md) | No divulgado públicamente | Tecnología, innovación de base científica e impacto | Brasil |
 | [Fundo inovabra I](funds/brazil/fundo-inovabra-i.md) | Series A y B | Tecnología en los sectores financiero y no financiero | Global |
 | [Gerdau Next Ventures](funds/brazil/gerdau-next-ventures.md) | No divulgado públicamente | Construcción, movilidad, sostenibilidad y tecnología | No divulgado públicamente |
 | [Honey Island Capital](funds/brazil/honey-island-capital.md) | No divulgado públicamente | Fintech y tecnología | Brasil |
-| [IN3](funds/brazil/in3.md) | Etapa inicial | Impacto social y ambiental | Norte y Nordeste de Brasil |
+| [IN3](funds/brazil/in3.md) | No divulgado públicamente | Impacto social y ambiental | Norte y Nordeste de Brasil |
 | [Indicator Capital](funds/brazil/indicator-capital.md) | Pre-seed y Seed | Deep tech | América Latina |
 | [Invest Tech](funds/brazil/invest-tech.md) | Seed | Empresas B2B habilitadas por tecnología | Brasil |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed y Seed | Software y tecnología | Brasil |
@@ -184,7 +184,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 | [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | No divulgado públicamente | Tecnología financiera | Global, incluida América Latina |
 | [devlabs](funds/multi-country/devlabs.md) | Pre-seed y Seed | Software escalable globalmente | América Latina y Estados Unidos |
 | [DILA Capital](funds/multi-country/dila-capital.md) | Seed y Serie A | Tecnología | América Latina hispanohablante y Estados Unidos |
-| [EDP Ventures](funds/multi-country/edp-ventures.md) | Seed a Serie B | Transición energética y tecnología para energía | Global |
+| [EDP Ventures](funds/multi-country/edp-ventures.md) | Seed, Serie A y Serie B | Transición energética y tecnología para energía | Global |
 | [Endeavor Catalyst](funds/multi-country/endeavor-catalyst.md) | Multietapa | Empresas de la red Endeavor | Global |
 | [FJ Labs](funds/multi-country/fj-labs.md) | Pre-seed y Seed | Marketplaces y efectos de red | Global |
 | [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Pre-seed y Seed | Tecnología, agnóstico a sectores | Global, incluida América Latina |

@@ -9,7 +9,7 @@ breakthrough drug research and development.
 - **Fund type:** Corporate venture capital
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
-- **Stage at entry:** Early discovery and development
+- **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Biotechnology, drug discovery, and advanced therapies
 - **Geography:** Global
