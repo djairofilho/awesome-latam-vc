@@ -39,6 +39,11 @@ FUND_LINK_RE = re.compile(
     r"^\| \[([^\]]+)\]\((funds/[^)]+\.md)\) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$"
 )
 MARKDOWN_LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+FENCED_CODE_RE = re.compile(
+    r"^(```|~~~)[^\n]*\n.*?^\1[ \t]*$",
+    re.MULTILINE | re.DOTALL,
+)
+INLINE_CODE_RE = re.compile(r"(?<!`)`[^`\n]*`(?!`)")
 REQUIRED_PROFILE_FIELDS = (
     "Website",
     "Fund type",
@@ -229,7 +234,9 @@ def validate_profile(path: Path, display_path: str) -> list[str]:
 def validate_internal_links(root: Path, readme: Path, text: str) -> list[str]:
     errors: list[str] = []
     display_path = readme.relative_to(root).as_posix()
-    for target in MARKDOWN_LINK_RE.findall(text):
+    prose = FENCED_CODE_RE.sub("", text)
+    prose = INLINE_CODE_RE.sub("", prose)
+    for target in MARKDOWN_LINK_RE.findall(prose):
         clean_target = target.strip().split("#", 1)[0]
         if not clean_target or re.match(r"^[a-z][a-z0-9+.-]*:", clean_target, re.I):
             continue

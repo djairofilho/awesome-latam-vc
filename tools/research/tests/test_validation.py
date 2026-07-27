@@ -116,6 +116,29 @@ class ProfileValidationTests(unittest.TestCase):
                 ),
             )
 
+    def test_ignores_example_links_inside_code(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            readme = root / "contributing.md"
+            text = (
+                "```markdown\n"
+                "[Example](funds/region/example.md)\n"
+                "```\n\n"
+                "Use `[Inline](missing.md)` as a literal.\n"
+            )
+            readme.write_text(text, encoding="utf-8")
+            self.assertEqual([], validate_internal_links(root, readme, text))
+
+    def test_still_reports_missing_links_in_prose(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            readme = root / "README.md"
+            text = "[Missing](missing.md)\n"
+            readme.write_text(text, encoding="utf-8")
+            errors = validate_internal_links(root, readme, text)
+            self.assertEqual(1, len(errors))
+            self.assertIn("missing.md", errors[0])
+
     def test_reports_missing_enriched_fields(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "fund.md"
