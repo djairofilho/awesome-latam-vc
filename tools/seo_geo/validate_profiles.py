@@ -34,7 +34,9 @@ REPOSITORY_PATH_RE = re.compile(
 FENCED_CODE_RE = re.compile(r"```[^\n]*\n(.*?)```", re.DOTALL)
 INLINE_CODE_RE = re.compile(r"(?<!`)`([^`\n]+)`(?!`)")
 ISO_DATE_RE = re.compile(r"(?<!\d)\d{4}-\d{2}-\d{2}(?!\d)")
-NUMBER_RE = re.compile(r"(?<![\w-])\d+(?:[.,]\d+)*(?:%|x)?(?![\w-])")
+NUMBER_RE = re.compile(
+    r"(?<![\w-])\d+(?:[.,]\d+)*(?:%|x)?(?:(?=-[A-Za-z])|(?![\w-]))"
+)
 CURRENCY_CODE_RE = re.compile(
     r"(?<![A-Z])(?:USD|BRL|MXN|ARS|CLP|COP|PEN|UYU|PYG|BOB|CRC|DOP|GTQ|HNL)(?![A-Z])"
 )
@@ -210,7 +212,10 @@ def protected_body_tokens(body: str) -> dict[str, Counter[str]]:
         ),
         "inline_code": Counter(INLINE_CODE_RE.findall(body_without_fences)),
         "fenced_code": Counter(block.rstrip("\r\n") for block in fenced_blocks),
-        "iso_dates": Counter(ISO_DATE_RE.findall(body)),
+        # A translated sentence may avoid repeating a date that remains present
+        # elsewhere in the profile. Preserve the exact date inventory without
+        # forcing source-language repetition.
+        "iso_dates": Counter(set(ISO_DATE_RE.findall(body))),
         "numbers": Counter(NUMBER_RE.findall(body)),
         "currency_codes": Counter(CURRENCY_CODE_RE.findall(body)),
         "currency_symbols": Counter(CURRENCY_SYMBOL_RE.findall(body)),
