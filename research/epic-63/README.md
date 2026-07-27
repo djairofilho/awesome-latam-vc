@@ -195,7 +195,10 @@ research/epic-63/<frente>/shards/<worker-id>/
 
 Não há append concorrente em arquivos compartilhados. O consolidador é o único
 escritor dos artefatos canônicos. Tarefas são idempotentes, recebem lease e podem
-ser repetidas sem duplicar registros.
+ser repetidas sem duplicar registros. Cada tarefa possui `shard_path` exclusivo;
+owners e workers não compartilham diretórios de escrita. Uma execução
+`concluída` contém apenas tarefas `done` ou `blocked`, sendo que bloqueios
+preservam responsável, próxima ação e erro.
 
 ## Regras de scraping
 
@@ -229,7 +232,9 @@ O validador verifica schemas e invariantes entre arquivos:
 - alias e duplicado com destino canônico;
 - datas de publicação anteriores ou iguais ao acesso;
 - manifesto com `task_count` correto e tarefas da mesma execução;
-- matriz sem células duplicadas e com fontes existentes.
+- manifesto concluído sem tarefas intermediárias e com shards exclusivos;
+- matriz sem células duplicadas e com fontes existentes;
+- célula concluída vinculada somente a fontes concluídas.
 
 O diretório [examples](examples) contém uma rede fictícia baseada em
 `example.org`. Ele demonstra o formato sem afirmar uma pesquisa real.

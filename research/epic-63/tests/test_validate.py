@@ -401,6 +401,74 @@ class ContractValidationTests(unittest.TestCase):
         self.assertNotIn("access_status", readme)
         self.assertIn('external_access: "aberto"', readme)
 
+    def test_tasks_cannot_share_shard_path(self) -> None:
+        def mutate(directory: Path) -> None:
+            path = directory / "run-manifest.jsonl"
+            rewrite_record(
+                path,
+                0,
+                lambda item: item.update(task_count=2),
+            )
+            records = [
+                json.loads(line)
+                for line in path.read_text(encoding="utf-8").splitlines()
+            ]
+            duplicate = dict(records[1])
+            duplicate.update(
+                task_id="task-example-duplicate",
+                owner="outro-worker",
+            )
+            append_record(path, duplicate)
+
+        errors = self.validate_copy(mutate=mutate)
+        self.assertTrue(
+            any("shard_path duplicado" in error for error in errors),
+            errors,
+        )
+
+    def test_completed_run_rejects_intermediate_task_status(self) -> None:
+        for status in ("todo", "leased", "extracted", "verified"):
+            with self.subTest(status=status):
+                def mutate(directory: Path, task_status: str = status) -> None:
+                    rewrite_record(
+                        directory / "run-manifest.jsonl",
+                        1,
+                        lambda item: item.update(
+                            status=task_status,
+                            next_action="Concluir a tarefa.",
+                        ),
+                    )
+
+                errors = self.validate_copy(mutate=mutate)
+                self.assertTrue(
+                    any("run concluída contém tarefa" in error for error in errors),
+                    errors,
+                )
+
+    def test_completed_coverage_requires_completed_sources(self) -> None:
+        for result in ("parcial", "indisponível"):
+            with self.subTest(result=result):
+                def mutate(directory: Path, source_result: str = result) -> None:
+                    rewrite_record(
+                        directory / "source-inventory.jsonl",
+                        0,
+                        lambda item: item.update(
+                            result=source_result,
+                            reason="Fonte propositalmente incompleta.",
+                            next_action="Concluir a verificação da fonte.",
+                        ),
+                    )
+
+                errors = self.validate_copy(mutate=mutate)
+                self.assertTrue(
+                    any(
+                        "cobertura concluída depende de fonte não concluída"
+                        in error
+                        for error in errors
+                    ),
+                    errors,
+                )
+
 
 if __name__ == "__main__":
     unittest.main()

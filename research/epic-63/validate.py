@@ -407,6 +407,14 @@ def validate_coverage(
                 errors.append(
                     f"{record.location}: issue não coincide com {source_id}"
                 )
+            elif (
+                item.get("status") == "concluída"
+                and source.data.get("result") != "concluída"
+            ):
+                errors.append(
+                    f"{record.location}: cobertura concluída depende de fonte "
+                    f"não concluída: {source_id}"
+                )
     return errors
 
 
@@ -439,7 +447,16 @@ def validate_manifest(records: list[Record]) -> list[str]:
             errors.append(
                 f"{task.location}: issue da tarefa não consta no run"
             )
+        if (
+            run.data.get("status") == "concluída"
+            and task.data.get("status") not in {"done", "blocked"}
+        ):
+            errors.append(
+                f"{task.location}: run concluída contém tarefa "
+                f"{task.data.get('status')}"
+            )
     index_unique(tasks, "task_id", errors)
+    index_unique(tasks, "shard_path", errors)
     return errors
 
 
