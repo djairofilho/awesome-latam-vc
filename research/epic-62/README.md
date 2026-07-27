@@ -92,6 +92,7 @@ Os estados de atividade são:
 O estado de candidatura é separado:
 
 - `open`;
+- `closed`;
 - `closed_between_cycles`;
 - `invite_only`;
 - `not_publicly_disclosed`;
