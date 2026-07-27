@@ -6,6 +6,7 @@ Uma lista curada de fundos de Venture Capital que investem na América Latina.
 
 - [Pan-América Latina (sede na região)](#pan-américa-latina-sede-na-região)
 - [Argentina](#argentina)
+- [Bolívia](#bolívia)
 - [Brasil](#brasil)
 - [Chile](#chile)
 - [Colômbia](#colômbia)
@@ -15,7 +16,7 @@ Uma lista curada de fundos de Venture Capital que investem na América Latina.
 
 ---
 
-O índice foi otimizado para comparação rápida e atualmente reúne 123 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
+O índice foi otimizado para comparação rápida e atualmente reúne 133 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
 
 ## Pan-América Latina (sede na região)
 
@@ -29,19 +30,27 @@ O índice foi otimizado para comparação rápida e atualmente reúne 123 fundos
 | [Angel Ventures](funds/regional/angel-ventures.md) | Não divulgado publicamente | Tecnologia, agnóstico a setores | América Latina |
 | [Avalancha Ventures](funds/regional/avalancha-ventures.md) | Não divulgado publicamente | Tecnologia | América Latina |
 | [B Venture Capital](funds/regional/b-venture-capital.md) | Seed e Série A | Tecnologia | América Latina |
+| [Babasú Ventures](funds/regional/babasu-ventures.md) | Pre-seed e Seed | Tecnologia, agnóstico a setores | Bolívia, Equador, Peru, Paraguai e Uruguai |
+| [BuenTrip Ventures](funds/regional/buentrip-ventures.md) | Não divulgado publicamente | Software B2B | América Latina e Américas |
 | [Caravela Capital](funds/regional/caravela-capital.md) | Pre-seed e Seed | Tecnologia | América Latina |
+| [Caricaco Ventures](funds/regional/caricaco-ventures.md) | Não divulgado publicamente | Software e inteligência artificial | América Central e República Dominicana |
 | [Cometa (ex-Variv)](funds/regional/cometa-variv.md) | Pre-seed, Seed e Série A | Tecnologia | América Latina hispânica |
 | [Dalus Capital](funds/regional/dalus-capital.md) | Não divulgado publicamente | Tecnologia | América Latina |
+| [EWA Capital](funds/regional/ewa-capital.md) | Seed e Série A | Tecnologia com enfoque de gênero e inclusão | América Latina de língua espanhola |
 | [Hi Ventures (ex-ALLVP)](funds/regional/hi-ventures-allvp.md) | Pre-seed e Seed | IA e tecnologia | América Latina |
 | [IGNIA](funds/regional/ignia.md) | Seed e Série A | Tecnologia e crescimento inclusivo | América Latina |
+| [Innogen Capital Ventures](funds/regional/innogen-capital-ventures.md) | Pre-seed, Seed e Série A | Tecnologia em estágio inicial | Norte da América Latina |
+| [iThink VC](funds/regional/ithink-vc.md) | Pre-seed e Seed | Tecnologia para problemas estruturais | Paraguai, Peru, Equador, Bolívia e Uruguai |
 | [Kalei Ventures](funds/regional/kalei-ventures.md) | Pre-seed e Seed | Tecnologia habilitada por IA | América Latina |
 | [Kaszek](funds/regional/kaszek.md) | Multiestágio | Tecnologia | América Latina |
 | [Kayyak Ventures](funds/regional/kayyak-ventures.md) | Seed, Série A e Série B | Tecnologia | América Latina |
 | [Magma Partners](funds/regional/magma-partners.md) | Pre-seed, Seed e Série A | Tecnologia | América Latina |
 | [MAYA Capital](funds/regional/maya-capital.md) | Pre-seed e Seed | Tecnologia | América Latina |
+| [Morro Ventures](funds/regional/morro-ventures.md) | Não divulgado publicamente | Startups de tecnologia do Caribe | Caribe e América Latina |
 | [Nazca](funds/regional/nazca.md) | Multiestágio | Tecnologia | América Latina |
 | [Newtopia VC](funds/regional/newtopia-vc.md) | Não divulgado publicamente | Tecnologia, agnóstico a setores | América Latina |
 | [NXTP Ventures](funds/regional/nxtp-ventures.md) | Seed e Série A | Tecnologia B2B | América Latina |
+| [Parallel18 Ventures](funds/regional/parallel18-ventures.md) | Não divulgado publicamente | Startups de tecnologia | Porto Rico e mercados internacionais |
 | [Picus Capital](funds/regional/picus-capital.md) | Pre-seed, Seed e Série A | Tecnologia, agnóstico a setores | Global, incluindo a América Latina |
 | [Polymath Ventures](funds/regional/polymath-ventures.md) | Pre-seed e Seed | Negócios centrados nas pessoas | América Latina |
 | [QED Investors](funds/regional/qed-investors.md) | Multiestágio | Fintech | Global, incluindo a América Latina |
@@ -57,6 +66,12 @@ O índice foi otimizado para comparação rápida e atualmente reúne 123 fundos
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
 | [Alaya Capital](funds/argentina/alaya-capital.md) | Seed e Série A | Transformação digital | América Latina |
+
+## Bolívia
+
+| Fundo | Estágio | Foco | Geografia |
+| --- | --- | --- | --- |
+| [Escalatec](funds/bolivia/escalatec.md) | Não divulgado publicamente | Tecnologia em estágio inicial | Bolívia |
 
 ## Brasil
 
@@ -166,6 +181,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 123 fundos
 | [Kuiper](funds/multi-country/kuiper.md) | Não divulgado publicamente | Tecnologia | América Latina e Estados Unidos |
 | [Latitud Ventures](funds/multi-country/latitud-ventures.md) | Pre-seed e Seed | Tecnologia, agnóstico a setores | América Latina |
 | [Lotux](funds/multi-country/lotux.md) | Pre-seed | Fintech, insurtech, logística, comércio, educação e saúde | América Latina |
+| [MatterScale Ventures](funds/multi-country/matterscale-ventures.md) | Pre-seed, Seed e Série A | Serviços acessíveis habilitados por tecnologia | Américas, incluindo a América Latina |
 | [Mindset Ventures](funds/multi-country/mindset-ventures.md) | Seed e Série A | Tecnologia B2B | América Latina e Estados Unidos |
 | [New Ventures Capital](funds/multi-country/new-ventures-capital.md) | Seed e Série A | Empreendedorismo de impacto | América Latina |
 | [Norte Ventures](funds/multi-country/norte-ventures.md) | Não divulgado publicamente | Tecnologia, agnóstico a setores | América Latina |
