@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-63/schemas/coverage-record.schema.json",
+  "title": "Célula da matriz de cobertura da epic 63",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "coverage_id",
+    "issue",
+    "geography",
+    "source_category",
+    "source_ids",
+    "status",
+    "candidate_count",
+    "reason",
+    "owner",
+    "next_action"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "coverage_id": {
+      "type": "string",
+      "pattern": "^cov-[a-z0-9][a-z0-9-]*$"
+    },
+    "issue": { "type": "integer", "minimum": 81, "maximum": 88 },
+    "geography": { "type": "string", "minLength": 1 },
+    "source_category": {
+      "enum": [
+        "site oficial",
+        "associação",
+        "universidade",
+        "diretório",
+        "notícia",
+        "perfil institucional",
+        "busca"
+      ]
+    },
+    "source_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^src-[a-z0-9][a-z0-9-]*$"
+      }
+    },
+    "status": { "enum": ["pendente", "parcial", "concluída", "não aplicável"] },
+    "candidate_count": { "type": "integer", "minimum": 0 },
+    "reason": { "type": ["string", "null"], "minLength": 1 },
+    "owner": { "type": ["string", "null"], "minLength": 1 },
+    "next_action": { "type": ["string", "null"], "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "status": { "enum": ["pendente", "parcial"] } }
+      },
+      "then": {
+        "properties": {
+          "reason": { "type": "string" },
+          "owner": { "type": "string" },
+          "next_action": { "type": "string" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "status": { "const": "concluída" } }
+      },
+      "then": { "properties": { "source_ids": { "minItems": 1 } } }
+    },
+    {
+      "if": {
+        "properties": { "status": { "const": "não aplicável" } }
+      },
+      "then": { "properties": { "reason": { "type": "string" } } }
+    }
+  ]
+}
