@@ -1,0 +1,162 @@
+[
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "barrilete.vc",
+    "url": "https://barrilete.vc/robots.txt",
+    "status": 200,
+    "final_url": "https://barrilete.vc/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "beltraide.bz",
+    "url": "https://beltraide.bz/robots.txt",
+    "status": 200,
+    "final_url": "https://beltraide.bz/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "carib-export.com",
+    "url": "https://carib-export.com/robots.txt",
+    "status": 200,
+    "final_url": "https://carib-export.com/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "ccsn.org.ni",
+    "url": "https://ccsn.org.ni/robots.txt",
+    "status": null,
+    "final_url": null,
+    "result": "network-error",
+    "error": "fetch failed",
+    "policy": "não confirmado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "ciudaddelsaber.org",
+    "url": "https://ciudaddelsaber.org/robots.txt",
+    "status": 200,
+    "final_url": "https://ciudaddelsaber.org/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "costaricaangels.com",
+    "url": "https://costaricaangels.com/robots.txt",
+    "status": null,
+    "final_url": null,
+    "result": "network-error",
+    "error": "fetch failed",
+    "policy": "não confirmado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "enlaces.org.do",
+    "url": "https://enlaces.org.do/robots.txt",
+    "status": 200,
+    "final_url": "https://enlaces.org.do/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "firstangelscaribbean.com",
+    "url": "https://firstangelscaribbean.com/robots.txt",
+    "status": 200,
+    "final_url": "https://firstangelscaribbean.com/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "hondurasdigitalchallenge.com",
+    "url": "https://hondurasdigitalchallenge.com/robots.txt",
+    "status": 200,
+    "final_url": "https://hondurasdigitalchallenge.com/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "innovacion.gob.sv",
+    "url": "https://innovacion.gob.sv/robots.txt",
+    "status": 404,
+    "final_url": "https://innovacion.gob.sv/robots.txt",
+    "result": "http-error",
+    "error": null,
+    "policy": "não confirmado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "linkedin.com",
+    "url": "https://www.linkedin.com/robots.txt",
+    "status": null,
+    "final_url": null,
+    "result": "skipped",
+    "error": null,
+    "policy": "não requisitado: duas coletas oficiais já consumiram o limite do domínio"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "parquetec.org",
+    "url": "https://parquetec.org/robots.txt",
+    "status": 200,
+    "final_url": "https://parquetec.org/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "trigen.ventures",
+    "url": "https://trigen.ventures/robots.txt",
+    "status": 200,
+    "final_url": "https://trigen.ventures/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "ventureclublatam.com",
+    "url": "https://ventureclublatam.com/robots.txt",
+    "status": 200,
+    "final_url": "https://ventureclublatam.com/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "win.gt",
+    "url": "https://win.gt/robots.txt",
+    "status": 200,
+    "final_url": "https://win.gt/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "domain": "winverz.com",
+    "url": "https://winverz.com/robots.txt",
+    "status": 200,
+    "final_url": "https://winverz.com/robots.txt",
+    "result": "ok",
+    "error": null,
+    "policy": "consultado"
+  }
+]
