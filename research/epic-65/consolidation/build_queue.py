@@ -336,7 +336,7 @@ def apply_independent_decisions(
     finep = agencies["agency-finep"]
     finep.update(
         {
-            "route_url": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras",
+            "route_url": "https://www.finep.gov.br/chamadas-publicas/chamadapublica/781",
             "decision": "elegível",
             "reason": None,
             "owner": None,
@@ -349,7 +349,7 @@ def apply_independent_decisions(
     finep_evidence.update(
         {
             "url": finep["route_url"],
-            "title": "Programa Mulheres Inovadoras",
+            "title": "Prêmio Mulheres Inovadoras 7ª Edição — 2026",
             "locator": "Página permanente e histórico de edições",
             "summary": (
                 "A Finep mantém uma rota recorrente para startups lideradas por "
@@ -485,7 +485,7 @@ def apply_independent_decisions(
             "program-finep-mulheres-inovadoras",
             "agency-finep",
             "Programa Mulheres Inovadoras",
-            "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras",
+            "https://www.finep.gov.br/chamadas-publicas/chamadapublica/781",
             ["Brasil"],
             "recorrente",
             ["subvenção"],
@@ -558,8 +558,8 @@ def apply_independent_decisions(
         ),
         official_evidence(
             "evidence-program-finep-mulheres-inovadoras", "program", "program-finep-mulheres-inovadoras",
-            "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras",
-            "Programa Mulheres Inovadoras", "Finep",
+            "https://www.finep.gov.br/chamadas-publicas/chamadapublica/781",
+            "Prêmio Mulheres Inovadoras 7ª Edição — 2026", "Finep",
             [("benefício financeiro", confirmed), ("rota para startups", confirmed), ("atividade do programa", confirmed), ("recorrência", confirmed), ("valor", confirmed)],
             "A página permanente registra a sétima edição, seis edições anteriores e prêmios de R$ 60 mil a R$ 120 mil.",
         ),

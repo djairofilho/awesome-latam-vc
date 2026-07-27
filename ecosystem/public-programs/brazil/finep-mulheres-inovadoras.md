@@ -69,6 +69,6 @@ No temporary call is attached to the frozen eligible record. Use the official fo
 
 ## Official sources
 
-- [Prêmio Mulheres Inovadoras 7ª Edição — 2026](https://www.finep.gov.br/chamadas-publicas/chamadapublica/781) — A página registra a sétima edição, seis edições anteriores e prêmios de R$ 60 mil a R$ 120 mil. (`evidence-program-finep-mulheres-inovadoras`)
+- [Prêmio Mulheres Inovadoras 7ª Edição — 2026](https://www.finep.gov.br/chamadas-publicas/chamadapublica/781) — A página permanente registra a sétima edição, seis edições anteriores e prêmios de R$ 60 mil a R$ 120 mil. (`evidence-program-finep-mulheres-inovadoras`)
 
 **Last verified:** 2026-07-27

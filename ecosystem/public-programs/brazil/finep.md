@@ -63,6 +63,6 @@ This agency profile represents the stable public route. Program-specific benefit
 
 ## Official sources
 
-- [Prêmio Mulheres Inovadoras 7ª Edição — 2026](https://www.finep.gov.br/chamadas-publicas/chamadapublica/781) — A Finep registra a sétima edição do programa para startups lideradas por mulheres. (`evidence-agency-finep`)
+- [Prêmio Mulheres Inovadoras 7ª Edição — 2026](https://www.finep.gov.br/chamadas-publicas/chamadapublica/781) — A Finep mantém uma rota recorrente para startups lideradas por mulheres, com premiação financeira e sete edições até 2026. (`evidence-agency-finep`)
 
 **Last verified:** 2026-07-27
