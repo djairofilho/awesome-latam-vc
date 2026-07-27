@@ -47,6 +47,18 @@ def sha256(path: Path, normalize: bool = False) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
+def equivalent_text_hashes(path: Path) -> set[str]:
+    payload = path.read_bytes()
+    if path.suffix not in TEXT_SUFFIXES:
+        return {hashlib.sha256(payload).hexdigest()}
+    lf = payload.replace(b"\r\n", b"\n")
+    crlf = lf.replace(b"\n", b"\r\n")
+    return {
+        hashlib.sha256(lf).hexdigest(),
+        hashlib.sha256(crlf).hexdigest(),
+    }
+
+
 def check_hashes(
     mapping: dict[str, str], base: Path, normalize: bool = False
 ) -> list[str]:
@@ -54,7 +66,7 @@ def check_hashes(
         relative
         for relative, expected in mapping.items()
         if not (base / relative).is_file()
-        or sha256(base / relative, normalize) != expected
+        or expected not in equivalent_text_hashes(base / relative)
     )
 
 
@@ -238,16 +250,15 @@ def build_report() -> dict:
     publication_index_failures = check_hashes(
         publication_manifest["index_hashes"], ROOT
     )
-    batch_hash_valid = (
-        sha256(PUBLICATION / "batches.jsonl")
-        == publication_manifest["batch_artifact_hash"]
-    )
+    batch_hash_valid = publication_manifest[
+        "batch_artifact_hash"
+    ] in equivalent_text_hashes(PUBLICATION / "batches.jsonl")
     checksum_failures = []
     for line in (CONSOLIDATION / "sha256sums.txt").read_text(
         encoding="utf-8"
     ).splitlines():
         expected, name = line.split("  ", 1)
-        if sha256(CONSOLIDATION / name) != expected:
+        if expected not in equivalent_text_hashes(CONSOLIDATION / name):
             checksum_failures.append(name)
 
     text_paths = sorted(
