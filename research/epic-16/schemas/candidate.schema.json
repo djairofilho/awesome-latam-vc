@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-16/schemas/candidate.schema.json",
+  "title": "Candidato da epic 16",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "name",
+    "canonical_domain",
+    "official_site",
+    "entity_type",
+    "base_country",
+    "declared_geography",
+    "aliases",
+    "canonical_candidate_id",
+    "discovery_source_ids",
+    "discovered_on",
+    "already_listed",
+    "canonical_profile",
+    "direct_investment",
+    "official_evidence_ids",
+    "evidence_date",
+    "recent_activity",
+    "external_founders_access",
+    "status",
+    "decision",
+    "reason",
+    "owner",
+    "next_action"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^cand-[a-z0-9][a-z0-9-]*$"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "canonical_domain": {
+      "type": ["string", "null"],
+      "pattern": "^[a-z0-9.-]+\\.[a-z]{2,}$"
+    },
+    "official_site": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "entity_type": {
+      "enum": [
+        "gestor",
+        "veículo",
+        "programa corporativo",
+        "organização",
+        "desconhecido"
+      ]
+    },
+    "base_country": { "type": ["string", "null"] },
+    "declared_geography": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "canonical_candidate_id": {
+      "type": ["string", "null"],
+      "pattern": "^cand-[a-z0-9][a-z0-9-]*$"
+    },
+    "discovery_source_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^src-[a-z0-9][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    },
+    "discovered_on": { "type": "string", "format": "date" },
+    "already_listed": { "type": "boolean" },
+    "canonical_profile": {
+      "type": ["string", "null"],
+      "pattern": "^(funds|ecosystem)/.+\\.md$"
+    },
+    "direct_investment": { "type": ["boolean", "null"] },
+    "official_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    },
+    "evidence_date": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "recent_activity": { "type": ["boolean", "null"] },
+    "external_founders_access": { "type": ["boolean", "null"] },
+    "status": {
+      "enum": ["descoberto", "em pesquisa", "decidido", "publicado"]
+    },
+    "decision": {
+      "type": ["string", "null"],
+      "enum": [
+        "elegível",
+        "duplicado",
+        "ecossistema",
+        "inativo",
+        "evidência insuficiente",
+        "excluído",
+        null
+      ]
+    },
+    "reason": { "type": ["string", "null"], "minLength": 1 },
+    "owner": { "type": ["string", "null"], "minLength": 1 },
+    "next_action": { "type": ["string", "null"], "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": { "enum": ["descoberto", "em pesquisa"] }
+        }
+      },
+      "then": { "properties": { "decision": { "type": "null" } } }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": { "enum": ["decidido", "publicado"] }
+        }
+      },
+      "then": { "properties": { "decision": { "type": "string" } } }
+    },
+    {
+      "if": { "properties": { "decision": { "const": "elegível" } } },
+      "then": {
+        "properties": {
+          "official_site": { "type": "string" },
+          "direct_investment": { "const": true },
+          "official_evidence_ids": { "minItems": 1 },
+          "evidence_date": { "type": "string" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "decision": { "const": "duplicado" } } },
+      "then": {
+        "anyOf": [
+          { "properties": { "canonical_profile": { "type": "string" } } },
+          {
+            "properties": {
+              "canonical_candidate_id": { "type": "string" }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "enum": [
+              "duplicado",
+              "ecossistema",
+              "inativo",
+              "evidência insuficiente",
+              "excluído"
+            ]
+          }
+        }
+      },
+      "then": { "properties": { "reason": { "type": "string" } } }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": { "const": "evidência insuficiente" }
+        }
+      },
+      "then": {
+        "anyOf": [
+          { "properties": { "owner": { "type": "string" } } },
+          { "properties": { "next_action": { "type": "string" } } }
+        ]
+      }
+    }
+  ]
+}

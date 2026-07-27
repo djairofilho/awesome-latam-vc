@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-16/schemas/source-inventory.schema.json",
+  "title": "Fonte inventariada da epic 16",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_id",
+    "issue",
+    "source",
+    "initial_url",
+    "category",
+    "scope_walked",
+    "accessed_on",
+    "result",
+    "reason",
+    "owner",
+    "next_action",
+    "notes"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "source_id": {
+      "type": "string",
+      "pattern": "^src-[a-z0-9][a-z0-9-]*$"
+    },
+    "issue": { "type": "integer", "minimum": 18, "maximum": 29 },
+    "source": { "type": "string", "minLength": 1 },
+    "initial_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "category": { "type": "string", "minLength": 1 },
+    "scope_walked": { "type": "string", "minLength": 1 },
+    "accessed_on": { "type": "string", "format": "date" },
+    "result": { "enum": ["concluída", "parcial", "indisponível"] },
+    "reason": { "type": ["string", "null"], "minLength": 1 },
+    "owner": { "type": ["string", "null"], "minLength": 1 },
+    "next_action": { "type": ["string", "null"], "minLength": 1 },
+    "notes": { "type": ["string", "null"], "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "result": { "enum": ["parcial", "indisponível"] }
+        }
+      },
+      "then": {
+        "properties": {
+          "reason": { "type": "string" },
+          "owner": { "type": "string" },
+          "next_action": { "type": "string" }
+        }
+      }
+    }
+  ]
+}
