@@ -42,7 +42,6 @@ The index is optimized for quick comparison and currently covers 152 funds. All 
 | [Draper Cygnus](funds/regional/draper-cygnus.md) | Seed and Series A | Deep tech | Latin American founders building globally |
 | [EWA Capital](funds/regional/ewa-capital.md) | Seed and Series A | Gender-smart technology and inclusion | Spanish-speaking Latin America |
 | [Galicia Ventures](funds/regional/galicia-ventures.md) | Pre-seed, Seed, Series A, and Series B | Fintech, insurtech, agtech, disruptive technology, and B2B models | Latin America |
-| [Globant Ventures](funds/regional/globant-ventures.md) | Seed and Series A | Artificial intelligence, blockchain, and the Future of Work | Global |
 | [GLOCAL Latam](funds/regional/glocal-latam.md) | Not publicly disclosed | AgriFoodTech and ClimateTech | Latin America |
 | [Hi Ventures (ex-ALLVP)](funds/regional/hi-ventures-allvp.md) | Pre-seed and Seed | AI and technology | Latin America |
 | [IGNIA](funds/regional/ignia.md) | Seed and Series A | Technology and inclusive growth | Latin America |
@@ -80,6 +79,7 @@ The index is optimized for quick comparison and currently covers 152 funds. All 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
 | [Alaya Capital](funds/argentina/alaya-capital.md) | Seed and Series A | Digital transformation | Latin America |
+| [Globant Ventures](funds/argentina/globant-ventures.md) | Seed and Series A | Artificial intelligence, blockchain, and the Future of Work | Global |
 
 ## Bolivia
 
