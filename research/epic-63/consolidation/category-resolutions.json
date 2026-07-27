@@ -1,0 +1,147 @@
+{
+  "incoming_baseline_profiles": [
+    {
+      "canonical_profile": "ecosystem/angel-networks/mexico/angelhub.md",
+      "materialized": true,
+      "network_id": "ang-angelhub-mx",
+      "source": "catalog-baseline"
+    },
+    {
+      "canonical_profile": "ecosystem/angel-networks/brazil/anjos-do-brasil.md",
+      "materialized": true,
+      "network_id": "ang-anjosdobrasil-net",
+      "source": "catalog-baseline"
+    },
+    {
+      "canonical_profile": "ecosystem/angel-networks/brazil/br-angels.md",
+      "materialized": true,
+      "network_id": "ang-brangels-global",
+      "source": "catalog-baseline"
+    },
+    {
+      "canonical_profile": "ecosystem/angel-networks/brazil/gvangels.md",
+      "materialized": true,
+      "network_id": "ang-gvangels-com-br",
+      "source": "catalog-baseline"
+    },
+    {
+      "canonical_profile": "ecosystem/angel-networks/brazil/urca-angels.md",
+      "materialized": true,
+      "network_id": "ang-urcaangels-com",
+      "source": "catalog-baseline"
+    }
+  ],
+  "incoming_cross_epic_transfers": [],
+  "issue": 86,
+  "outgoing_category_resolutions": [
+    {
+      "canonical_destination": "ecosystem/funding-platforms/red-chilena-de-inversiones.md",
+      "destination_status": "queued-with-explicit-target",
+      "source_decision": "encaminhado-para-plataformas",
+      "source_name": "Red Chilena de Inversiones",
+      "source_network_id": "ang-angelinvestmentnetwork-cl",
+      "target_category": "epic-64",
+      "target_id": "plat-red-chilena-de-inversiones"
+    },
+    {
+      "canonical_destination": "ecosystem/funding-platforms/red-colombiana-de-inversiones.md",
+      "destination_status": "queued-with-explicit-target",
+      "source_decision": "encaminhado-para-plataformas",
+      "source_name": "Red Colombiana de Inversiones",
+      "source_network_id": "ang-angelinvestmentnetwork-com-co",
+      "target_category": "epic-64",
+      "target_id": "plat-red-colombiana-de-inversiones"
+    },
+    {
+      "canonical_destination": "ecosystem/funding-platforms/red-uruguaya-de-inversiones.md",
+      "destination_status": "queued-with-explicit-target",
+      "source_decision": "encaminhado-para-plataformas",
+      "source_name": "Red Uruguaya de Inversiones",
+      "source_network_id": "ang-angelinvestmentnetwork-uy",
+      "target_category": "epic-64",
+      "target_id": "plat-red-uruguaya-de-inversiones"
+    },
+    {
+      "canonical_destination": "funds/regional/barrilete-ventures.md",
+      "destination_status": "queued-with-explicit-target",
+      "source_decision": "encaminhado-para-funds",
+      "source_name": "Barrilete Ventures",
+      "source_network_id": "ang-barrilete-vc",
+      "target_category": "funds",
+      "target_id": "fund-profile:barrilete-ventures"
+    },
+    {
+      "canonical_destination": "funds/brazil/bossa-invest-bossanova.md",
+      "destination_status": "materialized",
+      "source_decision": "encaminhado-para-funds",
+      "source_name": "Bossa Invest",
+      "source_network_id": "ang-bossainvest-com",
+      "target_category": "funds",
+      "target_id": "fund-profile:bossa-invest"
+    },
+    {
+      "canonical_destination": "ecosystem/funding-platforms/regional/caribbean-business-angel-network.md",
+      "destination_status": "queued-with-explicit-target",
+      "source_decision": "encaminhado-para-plataformas",
+      "source_name": "Caribbean Business Angel Network",
+      "source_network_id": "ang-carib-export-com--caribbean-business-angel-network",
+      "target_category": "epic-64",
+      "target_id": "plat-caribbean-business-angel-network"
+    },
+    {
+      "canonical_destination": "ecosystem/accelerators/honduras/honduras-digital-challenge.md",
+      "destination_status": "queued-with-explicit-target",
+      "source_decision": "encaminhado-para-aceleradoras",
+      "source_name": "Honduras Digital Challenge",
+      "source_network_id": "ang-hondurasdigitalchallenge-com",
+      "target_category": "epic-62",
+      "target_id": "accel-mxcac-honduras-digital"
+    },
+    {
+      "canonical_destination": "ecosystem/accelerators/costa-rica/parquetec.md",
+      "destination_status": "queued-with-explicit-target",
+      "source_decision": "encaminhado-para-aceleradoras",
+      "source_name": "ParqueTec",
+      "source_network_id": "ang-parquetec-org",
+      "target_category": "epic-62",
+      "target_id": "accel-mxcac-parquetec"
+    },
+    {
+      "canonical_destination": "funds/regional/invertup.md",
+      "destination_status": "queued-with-explicit-target",
+      "source_decision": "encaminhado-para-funds",
+      "source_name": "Invertup",
+      "source_network_id": "ang-parquetec-org--invertup",
+      "target_category": "funds",
+      "target_id": "fund-profile:invertup"
+    },
+    {
+      "canonical_destination": "ecosystem/public-programs/uruguay/red-inversores-apep.md",
+      "destination_status": "queued-with-explicit-target",
+      "source_decision": "encaminhado-para-programas-públicos",
+      "source_name": "Red de Inversores APEP",
+      "source_network_id": "ang-uruguayxxi-gub-uy--apep",
+      "target_category": "epic-65",
+      "target_id": "program-red-inversores-apep"
+    },
+    {
+      "canonical_destination": "funds/regional/venture-club-latam.md",
+      "destination_status": "queued-with-explicit-target",
+      "source_decision": "encaminhado-para-funds",
+      "source_name": "Venture Club Latam",
+      "source_network_id": "ang-ventureclublatam-com",
+      "target_category": "funds",
+      "target_id": "fund-profile:venture-club-latam"
+    },
+    {
+      "canonical_destination": "ecosystem/funding-platforms/guatemala/winverz.md",
+      "destination_status": "queued-with-explicit-target",
+      "source_decision": "encaminhado-para-plataformas",
+      "source_name": "Winverz",
+      "source_network_id": "ang-winverz-com",
+      "target_category": "epic-64",
+      "target_id": "plat-winverz"
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,74 @@
+{
+  "issue": 86,
+  "resolutions": [
+    {
+      "canonical_network_id": "ang-anjosdobrasil-net",
+      "reason": "O MIA declara integração à Anjos do Brasil e não comprova autonomia publicável.",
+      "resolution": "alias",
+      "resolution_id": "identity-mia-anjos-do-brasil",
+      "subject_ids": [
+        "ang-mulheresinvestidoras-net",
+        "ang-anjosdobrasil-net"
+      ]
+    },
+    {
+      "canonical_network_id": "ang-businessangelsclub-org",
+      "reason": "O capítulo não comprova as quatro autonomias exigidas.",
+      "resolution": "chapter-alias",
+      "resolution_id": "identity-bac-mar-del-plata",
+      "subject_ids": [
+        "ang-businessangelsclub-org--mar-del-plata",
+        "ang-businessangelsclub-org"
+      ]
+    },
+    {
+      "canonical_network_id": "ang-firstangelscaribbean-com",
+      "reason": "FirstAngels Jamaica é marca anterior da rede caribenha, não candidato separado.",
+      "resolution": "brand-alias",
+      "resolution_id": "identity-firstangels-jamaica",
+      "subject_ids": [
+        "ang-firstangelscaribbean-com"
+      ]
+    },
+    {
+      "canonical_network_id": null,
+      "reason": "Os domínios nacionais são produtos regionais distintos do mesmo modelo de plataforma e preservam destinos próprios na epic #64.",
+      "resolution": "distinct-country-products",
+      "resolution_id": "identity-angel-investment-network-products",
+      "subject_ids": [
+        "ang-angelinvestmentnetwork-cl",
+        "ang-angelinvestmentnetwork-com-co",
+        "ang-angelinvestmentnetwork-uy"
+      ]
+    },
+    {
+      "canonical_network_id": null,
+      "reason": "ParqueTec é aceleradora; Costa Rica Angels é uma rede hospedada com decisão própria ainda insuficiente.",
+      "resolution": "operator-and-hosted-unit-distinct",
+      "resolution_id": "identity-parquetec-costa-rica-angels",
+      "subject_ids": [
+        "ang-parquetec-org",
+        "ang-parquetec-org--costa-rica-angels"
+      ]
+    },
+    {
+      "canonical_network_id": "ang-brangels-global",
+      "reason": "O veículo agrupado é ator de capital e não substitui a identidade da rede.",
+      "resolution": "network-and-vehicle-distinct",
+      "resolution_id": "identity-br-angels-vehicle",
+      "subject_ids": [
+        "ang-brangels-global"
+      ]
+    },
+    {
+      "canonical_network_id": "ang-theboardperu-com",
+      "reason": "Rede e fundo aparecem na mesma operação, sem prova para separar unidades canônicas.",
+      "resolution": "hybrid-retained-insufficient",
+      "resolution_id": "identity-the-board-hybrid",
+      "subject_ids": [
+        "ang-theboardperu-com"
+      ]
+    }
+  ],
+  "schema_version": "1.0"
+}
