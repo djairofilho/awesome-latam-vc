@@ -8,8 +8,12 @@ Programs and their operators or investment vehicles remain separate units.
 Capital, instrument, equity, duration and stage are reported only when official
 sources publish them.
 
-These 20 profiles are the first two deterministic publication batches frozen
-by the independent review of epic #62 and verified on 2026-07-27.
+The 26 profiles below were frozen by the independent review of epic #62 and
+verified on 2026-07-27.
+
+## Argentina
+
+- [GRIDX Transform](argentina/grid-transform.md)
 
 ## Brazil
 
@@ -19,10 +23,14 @@ by the independent review of epic #62 and verified on 2026-07-27.
 - [Darwin Scale](brazil/darwin-scale.md)
 - [Programa de Aceleração GB Ventures](brazil/gb-ventures.md)
 - [InovAtiva Brasil](brazil/inovativa-brasil.md)
+- [tecnoPARQ Acelera](brazil/tecnoparq-acelera.md)
+- [Acelera Impacto](brazil/ventiur-acelera-impacto.md)
+- [WOW Acceleration Program](brazil/wow.md)
 
 ## Chile
 
 - [The Ganesha Lab, Go Europe Connect](chile/ganesha-go-europe.md)
+- [Magical Accelerator](chile/magical.md)
 
 ## Colombia
 
@@ -39,6 +47,10 @@ by the independent review of epic #62 and verified on 2026-07-27.
 ## Peru
 
 - [Aceleradora UTEC Ventures](peru/utec.md)
+
+## Puerto Rico
+
+- [P18](puerto-rico/parallel18.md)
 
 ## Switzerland
 

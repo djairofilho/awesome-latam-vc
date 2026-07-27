@@ -1,0 +1,105 @@
+{
+  "batch_count": 3,
+  "batches": [
+    {
+      "batch_id": "batch-01",
+      "body_path": "research/epic-62/publication/batches/batch-01.md",
+      "body_sha256": "0ca8c62a50fe475b9c44ae0985ed8ccff91d9016c62b4449e64642238eab05ac",
+      "branch": "agent/issue-78-accelerators-publication",
+      "candidate_ids": [
+        "accel-ace-amazonia-impacto",
+        "accel-ace-funses1-digital",
+        "accel-and-innovalab",
+        "accel-and-utec",
+        "accel-boost",
+        "accel-capital-empreendedor-rj",
+        "accel-darwin-scale",
+        "accel-foreign-500-global-flagship",
+        "accel-foreign-alchemist-flagship",
+        "accel-foreign-aws-generative-ai"
+      ],
+      "owner": "djairofilho",
+      "profile_count": 10,
+      "profile_paths": [
+        "ecosystem/accelerators/brazil/ace-amazonia-impacto.md",
+        "ecosystem/accelerators/brazil/ace-funses1-digital.md",
+        "ecosystem/accelerators/colombia/innovalab.md",
+        "ecosystem/accelerators/peru/utec.md",
+        "ecosystem/accelerators/dominican-republic/boost.md",
+        "ecosystem/accelerators/brazil/capital-empreendedor-rj.md",
+        "ecosystem/accelerators/brazil/darwin-scale.md",
+        "ecosystem/accelerators/united-states/500-global-flagship.md",
+        "ecosystem/accelerators/united-states/alchemist-flagship.md",
+        "ecosystem/accelerators/united-states/aws-generative-ai.md"
+      ],
+      "sub_issue": 155,
+      "sub_issue_url": "https://github.com/djairofilho/awesome-latam-vc/issues/155"
+    },
+    {
+      "batch_id": "batch-02",
+      "body_path": "research/epic-62/publication/batches/batch-02.md",
+      "body_sha256": "80d43ffb11c9caffda0544f9a93abfc8b010ba40ecd3742ed907dda010213dc4",
+      "branch": "agent/issue-78-accelerators-publication",
+      "candidate_ids": [
+        "accel-foreign-berkeley-skydeck",
+        "accel-foreign-founder-institute-latam",
+        "accel-foreign-google-ai-cybersecurity-latam",
+        "accel-foreign-seedstars-lif-caf-rural-tech",
+        "accel-foreign-y-combinator",
+        "accel-ganesha-go-europe",
+        "accel-gb-ventures",
+        "accel-google-for-startups-brazil",
+        "accel-inovativa-brasil",
+        "accel-mxcac-500-latam"
+      ],
+      "owner": "djairofilho",
+      "profile_count": 10,
+      "profile_paths": [
+        "ecosystem/accelerators/united-states/berkeley-skydeck.md",
+        "ecosystem/accelerators/united-states/founder-institute-latam.md",
+        "ecosystem/accelerators/united-states/google-ai-cybersecurity-latam.md",
+        "ecosystem/accelerators/switzerland/seedstars-lif-caf-rural-tech.md",
+        "ecosystem/accelerators/united-states/y-combinator.md",
+        "ecosystem/accelerators/chile/ganesha-go-europe.md",
+        "ecosystem/accelerators/brazil/gb-ventures.md",
+        "ecosystem/accelerators/united-states/google-for-startups-brazil.md",
+        "ecosystem/accelerators/brazil/inovativa-brasil.md",
+        "ecosystem/accelerators/mexico/500-latam.md"
+      ],
+      "sub_issue": 156,
+      "sub_issue_url": "https://github.com/djairofilho/awesome-latam-vc/issues/156"
+    },
+    {
+      "batch_id": "batch-03",
+      "body_path": "research/epic-62/publication/batches/batch-03.md",
+      "body_sha256": "51375d2708712de08efa5f760dd7e53aa1c3200a90d02e4af228f6d4e2532d78",
+      "branch": "agent/issue-78-accelerators-publication",
+      "candidate_ids": [
+        "accel-mxcac-parallel18",
+        "accel-sc-grid-transform",
+        "accel-sc-magical",
+        "accel-tecnoparq-acelera",
+        "accel-ventiur-acelera-impacto",
+        "accel-wow"
+      ],
+      "owner": "djairofilho",
+      "profile_count": 6,
+      "profile_paths": [
+        "ecosystem/accelerators/puerto-rico/parallel18.md",
+        "ecosystem/accelerators/argentina/grid-transform.md",
+        "ecosystem/accelerators/chile/magical.md",
+        "ecosystem/accelerators/brazil/tecnoparq-acelera.md",
+        "ecosystem/accelerators/brazil/ventiur-acelera-impacto.md",
+        "ecosystem/accelerators/brazil/wow.md"
+      ],
+      "sub_issue": 157,
+      "sub_issue_url": "https://github.com/djairofilho/awesome-latam-vc/issues/157"
+    }
+  ],
+  "candidate_count": 26,
+  "issue": 78,
+  "schema_version": "1.0",
+  "source_issue": 77,
+  "source_manifest": "research/epic-62/independent-review/publishable-manifest.json",
+  "source_manifest_sha256": "52da16cfc931aa3c1a1304dbee575a7b805e0db03ca2f96a75e5f4c79604adc2"
+}
