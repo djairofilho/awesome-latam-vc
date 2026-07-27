@@ -52,7 +52,7 @@ const profiles = defineCollection({
       countries_covered: z.array(z.string()).optional(),
       stages: z.array(z.string()).optional(),
       focuses: z.array(z.string()).optional(),
-      official_website: z.url().optional(),
+      official_website: z.url().nullable().optional(),
       founder_route: z.url().nullable().optional(),
       sources: z.array(source).optional(),
       last_verified: z.string().optional(),

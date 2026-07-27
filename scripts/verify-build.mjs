@@ -6,6 +6,13 @@ import { join, relative } from "node:path";
 const root = process.cwd();
 const astroCli = join(root, "node_modules", "astro", "bin", "astro.mjs");
 const dist = join(root, "dist");
+const profileRoots = [
+  "funds",
+  "ecosystem/accelerators",
+  "ecosystem/angel-networks",
+  "ecosystem/funding-platforms",
+  "ecosystem/public-programs",
+];
 
 function build(environment) {
   execFileSync(process.execPath, [astroCli, "build"], {
@@ -48,6 +55,16 @@ const first = snapshot();
 const productionHtml = indexHtml();
 const catalogHtml = readFileSync(join(dist, "catalog", "index.html"), "utf8");
 const notFoundHtml = readFileSync(join(dist, "404.html"), "utf8");
+const sourceProfileCount = profileRoots
+  .flatMap((directory) => files(join(root, directory)))
+  .filter(
+    (path) =>
+      path.endsWith(".md") &&
+      !/^README(?:\.[^.]+)?\.md$/i.test(path.split(/[\\/]/).at(-1)),
+  ).length;
+const renderedProfileCount = (
+  catalogHtml.match(/View canonical Markdown/g) ?? []
+).length;
 assert(
   productionHtml.includes(
     '<link rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/">',
@@ -67,6 +84,10 @@ assert(
     '<link rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/catalog/">',
   ),
   "catalog canonical is missing or incorrect",
+);
+assert(
+  renderedProfileCount === sourceProfileCount,
+  `catalog rendered ${renderedProfileCount} of ${sourceProfileCount} canonical profiles`,
 );
 assert(
   notFoundHtml.includes('name="robots" content="noindex, nofollow"'),
@@ -92,5 +113,5 @@ assert(
 
 build("production");
 console.log(
-  `Verified ${Object.keys(first).length} deterministic static files under /awesome-latam-vc/.`,
+  `Verified ${sourceProfileCount} profiles and ${Object.keys(first).length} deterministic static files under /awesome-latam-vc/.`,
 );
