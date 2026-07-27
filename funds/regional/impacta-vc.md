@@ -9,7 +9,7 @@ Impacta VC is a Chile-based venture capital firm backing impact-driven founders 
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Seed
-- **Follow-on stages:** Pre-Series A, with follow-on investments of up to US$1 million
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Social and environmental impact
 - **Geography:** Latin America
 - **Initial check:** US$100,000 to US$500,000; the site states a US$300,000 average Seed investment

@@ -9,7 +9,7 @@ Chile Ventures is a Chile-based venture capital firm that invests in recurring-r
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Not publicly disclosed
-- **Follow-on stages:** Yes; the fund states that it invests more when companies progress as expected
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Technology startups with recurring revenue through SaaS, subscriptions, or licenses
 - **Geography:** Chile and Latin America
 - **Initial check:** US$50,000 to US$1 million

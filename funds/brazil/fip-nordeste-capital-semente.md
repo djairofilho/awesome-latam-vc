@@ -40,7 +40,6 @@ the reviewed sources do not provide a reliable public portfolio count.
 
 - [FIP Nordeste Capital Semente website](https://www.fipnordeste.com/)
 - [Banco do Nordeste fund announcement](https://www.bnb.gov.br/imprensa/noticias/-/asset_publisher/QGdgGhxvRtMv/content/bnb-finep-e-sebrae-lan%C3%A7am-fundos-financeiros-para-startups-e-mulheres-empreendedoras/44540)
-- [Finep report on the fund's regional startup program](https://www.finep.gov.br/en/noticias/todas-noticias/7076-finep-conexoes-integracao-de-instrumentos-de-subvencao-credito-e-investimentos-em-prol-da-inovacao-na-regiao-nordeste)
 - [Triaxis Capital official updates](https://www.linkedin.com/company/triaxis-capital)
 
 **Last verified:** 2026-07-27

@@ -10,7 +10,7 @@ scaling through Puerto Rico.
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Not publicly disclosed
-- **Follow-on stages:** Yes
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Technology-driven startups with global scaling potential
 - **Geography:** Puerto Rico and international startups
 - **Initial check:** Not publicly disclosed
