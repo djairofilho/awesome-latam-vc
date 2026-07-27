@@ -223,7 +223,7 @@ el [alcance y los criterios de inclusión](ecosystem/README.md).
 
 - [Aceleradoras](ecosystem/accelerators/README.md)
 - [Redes de inversionistas ángeles](ecosystem/angel-networks/README.md)
-- [Plataformas de financiación](ecosystem/funding-platforms/README.md)
+- [Plataformas de financiación](ecosystem/funding-platforms/README.es.md)
 - [Programas públicos](ecosystem/public-programs/README.md)
 
 ## Contribuyendo
