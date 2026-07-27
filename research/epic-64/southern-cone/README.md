@@ -16,7 +16,8 @@ Foram decididos oito candidatos, sem perfis publicados:
   Afluenta Argentina, por ser crédito P2P genérico;
 - **inativo:** Nexoos Paraguay, sem domínio oficial ou atividade paraguaia
   recente verificável;
-- **outra categoria:** KOGA, incubadora/aceleradora pertencente à epic #62.
+- **outra categoria:** KOGA, encaminhada à auditoria de aceleradoras da epic
+  #62, onde também foi excluída por não operar programa próprio de seleção.
 
 A matriz contém uma lacuna justificada: nenhuma plataforma oficial ativa pôde
 ser confirmada no Paraguai. O domínio histórico da Nexoos permaneceu
@@ -33,6 +34,8 @@ As fronteiras foram resolvidas assim:
 
 - fundos e associações de venture capital encontrados por ARCAP, ACVC e URUCAP
   não foram tratados como plataformas;
+- Afluenta aparece apenas como empresa investida no perfil do fundo IGNIA; isso
+  não transforma sua rota P2P em fundo nem altera a exclusão nesta auditoria;
 - Broota Ventures é uma rota de aceleração da epic #62, distinta da plataforma
   permanente da Broota;
 - redes de anjos da epic #63 não foram convertidas em plataformas;
