@@ -1,0 +1,14 @@
+{
+  "canonical_candidates": 39,
+  "issue": 94,
+  "pass_1_domain_brand": {
+    "records_scanned": 39,
+    "unresolved_groups": []
+  },
+  "pass_2_legal_regulatory": {
+    "legal_name_unresolved_groups": [],
+    "records_scanned": 39,
+    "regulatory_unresolved_groups": []
+  },
+  "schema_version": "1.0"
+}
