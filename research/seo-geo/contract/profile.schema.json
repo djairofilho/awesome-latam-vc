@@ -117,7 +117,8 @@
             "enum": [
               "LATAM",
               "CARIBBEAN",
-              "GLOBAL"
+              "GLOBAL",
+              "NOT_DISCLOSED"
             ]
           }
         ]
@@ -151,7 +152,10 @@
       }
     },
     "official_website": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "uri",
       "pattern": "^https://"
     },

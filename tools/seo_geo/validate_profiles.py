@@ -30,6 +30,37 @@ CURRENCY_CODE_RE = re.compile(
     r"(?<![A-Z])(?:USD|BRL|MXN|ARS|CLP|COP|PEN|UYU|PYG|BOB|CRC|DOP|GTQ|HNL)(?![A-Z])"
 )
 CURRENCY_SYMBOL_RE = re.compile(r"(?:US\$|R\$|\$|€|£)")
+HEADING_RE = re.compile(r"^#\s+(.+?)\s*$", re.MULTILINE)
+VISIBLE_FIELD_RE = re.compile(
+    r"^-\s+\*\*(?P<field>[^:*]+):\*\*\s*(?P<value>.*)$",
+    re.MULTILINE,
+)
+SOURCE_SECTION_RE = re.compile(
+    r"^## Sources\s*$\n(?P<section>.*?)(?=^\*\*Last verified:\*\*|\Z)",
+    re.MULTILINE | re.DOTALL,
+)
+SOURCE_LINK_RE = re.compile(r"^-\s+\[([^\]]+)\]\((https://[^)]+)\)", re.MULTILINE)
+LAST_VERIFIED_RE = re.compile(
+    r"^\*\*Last verified:\*\*\s+(\d{4}-\d{2}-\d{2})\s*$",
+    re.MULTILINE,
+)
+LATAM_COUNTRY_CODES = {
+    "AR",
+    "BO",
+    "BR",
+    "CL",
+    "CO",
+    "CR",
+    "DO",
+    "EC",
+    "GT",
+    "MX",
+    "PA",
+    "PE",
+    "PR",
+    "PY",
+    "UY",
+}
 
 
 @dataclass(frozen=True)
@@ -125,9 +156,19 @@ def validate_semantics(profile: Profile) -> list[str]:
         )
 
     base = metadata.get("base_geography", {})
+    countries_covered = set(metadata.get("countries_covered", []))
+    aggregate_covers_base = (
+        "GLOBAL" in countries_covered
+        or (
+            "LATAM" in countries_covered
+            and base.get("code") in LATAM_COUNTRY_CODES
+        )
+    )
     if (
         base.get("kind") == "country"
-        and base.get("code") not in metadata.get("countries_covered", [])
+        and base.get("code") not in countries_covered
+        and "NOT_DISCLOSED" not in countries_covered
+        and not aggregate_covers_base
     ):
         errors.append(
             f"{profile.display_path}: base country must be present in countries_covered"
@@ -188,11 +229,95 @@ def validate_translation(
     return errors
 
 
-def validate_collection(profiles: Sequence[Profile], schema: dict, enums: dict) -> list[str]:
+def catalog_profile_paths() -> list[Path]:
+    paths = [
+        path.resolve()
+        for path in (REPOSITORY_ROOT / "funds").rglob("*.md")
+        if path.name != "README.md"
+    ]
+    paths.extend(
+        path.resolve()
+        for path in (REPOSITORY_ROOT / "ecosystem").rglob("*.md")
+        if not path.name.startswith("README")
+    )
+    return sorted(paths)
+
+
+def validate_catalog_correspondence(profile: Profile) -> list[str]:
+    errors: list[str] = []
+    metadata = profile.metadata
+    heading = HEADING_RE.search(profile.body)
+    if not heading or heading.group(1) != metadata.get("name"):
+        errors.append(
+            f"{profile.display_path}: H1 must equal metadata name"
+        )
+
+    fields = {
+        match.group("field"): match.group("value").strip()
+        for match in VISIBLE_FIELD_RE.finditer(profile.body)
+    }
+    website = metadata.get("official_website")
+    visible_website = fields.get("Website", "")
+    if website is None:
+        if not visible_website.startswith("Not publicly disclosed"):
+            errors.append(
+                f"{profile.display_path}: null official_website requires an "
+                "explicit Not publicly disclosed Website field"
+            )
+    elif website not in profile.body:
+        errors.append(
+            f"{profile.display_path}: official_website is absent from body"
+        )
+
+    founder_route = metadata.get("founder_route")
+    if founder_route is not None and founder_route not in profile.body:
+        errors.append(
+            f"{profile.display_path}: founder_route is absent from body"
+        )
+
+    source_match = SOURCE_SECTION_RE.search(profile.body)
+    visible_sources = (
+        SOURCE_LINK_RE.findall(source_match.group("section"))
+        if source_match
+        else []
+    )
+    metadata_sources = [
+        (source["title"], source["url"])
+        for source in metadata.get("sources", [])
+        if isinstance(source, dict)
+        and isinstance(source.get("title"), str)
+        and isinstance(source.get("url"), str)
+    ]
+    if visible_sources != metadata_sources:
+        errors.append(
+            f"{profile.display_path}: metadata sources must exactly match the "
+            "visible Sources section"
+        )
+
+    verified_match = LAST_VERIFIED_RE.search(profile.body)
+    if not verified_match or verified_match.group(1) != metadata.get("last_verified"):
+        errors.append(
+            f"{profile.display_path}: metadata last_verified must equal the "
+            "visible Last verified date"
+        )
+    if metadata.get("locale") != "en":
+        errors.append(f"{profile.display_path}: canonical catalog locale must be en")
+    return errors
+
+
+def validate_collection(
+    profiles: Sequence[Profile],
+    schema: dict,
+    enums: dict,
+    *,
+    catalog_correspondence: bool = False,
+) -> list[str]:
     errors: list[str] = []
     for profile in profiles:
         errors.extend(validate_schema(profile, schema))
         errors.extend(validate_semantics(profile))
+        if catalog_correspondence:
+            errors.extend(validate_catalog_correspondence(profile))
 
     ids: dict[str, list[Profile]] = defaultdict(list)
     entity_locales: dict[tuple[str, str], list[Profile]] = defaultdict(list)
@@ -256,7 +381,9 @@ def discover_markdown(paths: Sequence[Path]) -> list[Path]:
     return sorted(discovered)
 
 
-def validate_paths(paths: Sequence[Path]) -> list[str]:
+def validate_paths(
+    paths: Sequence[Path], *, catalog_correspondence: bool = False
+) -> list[str]:
     schema, enums = read_contract()
     errors: list[str] = []
     profiles: list[Profile] = []
@@ -272,7 +399,14 @@ def validate_paths(paths: Sequence[Path]) -> list[str]:
             profiles.append(parse_profile(path))
         except (OSError, UnicodeDecodeError, ValueError) as exc:
             errors.append(f"{path.as_posix()}: {exc}")
-    errors.extend(validate_collection(profiles, schema, enums))
+    errors.extend(
+        validate_collection(
+            profiles,
+            schema,
+            enums,
+            catalog_correspondence=catalog_correspondence,
+        )
+    )
     return sorted(set(errors))
 
 
@@ -280,16 +414,28 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "paths",
-        nargs="+",
+        nargs="*",
         type=Path,
         help="Markdown profile files or directories",
+    )
+    parser.add_argument(
+        "--catalog",
+        action="store_true",
+        help="Validate every canonical profile under funds/ and ecosystem/.",
     )
     return parser
 
 
 def main(argv: Iterable[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
-    errors = validate_paths(args.paths)
+    if args.catalog and args.paths:
+        print("--catalog cannot be combined with explicit paths", file=sys.stderr)
+        return 2
+    if not args.catalog and not args.paths:
+        print("provide profile paths or use --catalog", file=sys.stderr)
+        return 2
+    paths = catalog_profile_paths() if args.catalog else args.paths
+    errors = validate_paths(paths, catalog_correspondence=args.catalog)
     if errors:
         print("SEO/GEO profile validation failed:", file=sys.stderr)
         for error in errors:
