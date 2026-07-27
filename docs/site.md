@@ -32,6 +32,29 @@ Every localized page must set its matching HTML `lang`, canonical URL and
 available `hreflang` alternatives. A fallback profile must be `noindex`, use
 the English canonical and omit unavailable locale alternatives.
 
+## Technical SEO policy
+
+The generated `/sitemap.xml` contains only canonical, indexable HTML routes.
+It excludes the `/catalog/` compatibility alias, the 404 document, preview
+builds, query-string filter states and data downloads. `/robots.txt` allows
+crawling and advertises the absolute production sitemap URL.
+
+Every indexable page must have one unique title and description, one
+self-referencing absolute canonical, reciprocal locale alternatives, and
+matching Open Graph and Twitter metadata. Visible breadcrumbs and their
+`BreadcrumbList` JSON-LD must describe the same hierarchy.
+
+GitHub Markdown remains the source record and is linked as evidence; it is not
+declared as the canonical URL of a site page. Filter combinations do not create
+indexable URLs. Compatibility or duplicate HTML routes are `noindex` and point
+to the selected canonical.
+
+Entity IDs and slugs stay stable across languages. If a slug must change, add a
+static compatibility page at the old route with `noindex` and a canonical link
+to the new route, then update locale switching, breadcrumbs and the sitemap in
+the same change. GitHub Pages cannot provide arbitrary server-side redirects,
+so an old URL must never silently become a 404 during an intentional rename.
+
 ## Validation
 
 ```text
@@ -41,7 +64,10 @@ npm run verify
 The command checks TypeScript and Astro templates, runs unit tests, builds
 production twice to detect nondeterminism, verifies canonical and base-prefixed
 URLs, confirms that preview output contains `noindex`, and audits the generated
-HTML for document and accessibility errors.
+HTML for document and accessibility errors. It also compares every indexable
+page with the sitemap, checks social metadata and reciprocal alternatives,
+smokes generated links, and starts a local preview to verify public URL status
+codes plus the custom 404 response.
 
 The build runs Astro first and Pagefind second. Pagefind reads the generated
 `<html lang>` values and creates an isolated index for each locale; do not set

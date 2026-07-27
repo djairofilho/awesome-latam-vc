@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import DirectoryExplorer from "../../components/DirectoryExplorer.astro";
 import type { Locale } from "../../i18n/ui";
 import { strings } from "../../i18n/ui";
@@ -95,6 +96,13 @@ const structuredData = [
   locale={locale}
   structuredData={structuredData}
 >
+  <Breadcrumbs
+    ariaLabel={labels.breadcrumbNavigation}
+    items={[
+      { label: labels.home, href: localizedHref(locale, "/") },
+      { label: labels.catalog },
+    ]}
+  />
   <header class="page-intro">
     <p class="eyebrow">{labels.catalogKicker}</p>
     <h1>{labels.profileCount(profiles.length)}</h1>

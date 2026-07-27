@@ -55,3 +55,17 @@ export function profileHistoryUrl(sourcePath) {
     .map(encodeURIComponent)
     .join("/")}`;
 }
+
+export function profileMarkdownHref(href) {
+  const match = String(href).match(/([^/#]+)\.md(#[^#]*)?$/);
+  if (!match) {
+    return href;
+  }
+  const slug = match[1]
+    .normalize("NFKD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLocaleLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  return `../${slug}/${match[2] ?? ""}`;
+}

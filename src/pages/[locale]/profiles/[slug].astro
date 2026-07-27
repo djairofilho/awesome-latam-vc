@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import ProfileIndexMetadata from "../../../components/ProfileIndexMetadata.astro";
 import type { Locale } from "../../../i18n/ui";
 import { strings } from "../../../i18n/ui";
@@ -15,6 +16,7 @@ import {
   localizedHref,
   localizedRoute,
 } from "../../../lib/i18n.mjs";
+import { seoDescription, seoTitle } from "../../../lib/seo.mjs";
 import {
   breadcrumbListJsonLd,
   organizationJsonLd,
@@ -63,15 +65,15 @@ const geography = [
   profile.baseGeography?.code,
   ...profile.countriesCovered,
 ].filter(Boolean);
-const documentTitle =
-  profile.name.length > 69
-    ? `${profile.name.slice(0, 68).trimEnd()}…`
-    : profile.name;
 ---
 
 <BaseLayout
-  title={documentTitle}
-  description={profile.summary ?? labels.catalogDescription}
+  title={seoTitle(profile.name, labels.languageName)}
+  description={seoDescription(
+    profile.name,
+    profile.summary,
+    labels.catalogDescription,
+  )}
   canonicalPath={canonicalPath}
   routeSuffix={routeSuffix}
   locale={locale}
@@ -79,6 +81,14 @@ const documentTitle =
   noindex={profile.isFallback}
   structuredData={structuredData}
 >
+  <Breadcrumbs
+    ariaLabel={labels.breadcrumbNavigation}
+    items={[
+      { label: labels.home, href: localizedHref(locale, "/") },
+      { label: labels.catalog, href: localizedHref(locale, "/catalog/") },
+      { label: profile.name },
+    ]}
+  />
   <article
     class="profile-detail"
     lang={profile.contentLocale}

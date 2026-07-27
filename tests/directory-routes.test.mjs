@@ -6,6 +6,7 @@ import {
   countryRouteSuffix,
   directoryCountryCodes,
   directoryRecordForProfile,
+  profileMarkdownHref,
   profileHistoryUrl,
   profileRouteSuffix,
 } from "../src/lib/directory-routes.mjs";
@@ -45,5 +46,16 @@ test("profile history links encode every canonical path segment", () => {
   assert.equal(
     profileHistoryUrl("funds/brasil/fundo com espaço.md"),
     "https://github.com/djairofilho/awesome-latam-vc/commits/main/funds/brasil/fundo%20com%20espa%C3%A7o.md",
+  );
+});
+
+test("profile Markdown links resolve to localized profile routes", () => {
+  assert.equal(
+    profileMarkdownHref("../brazil/a.b.seed-ventures.md#evidence"),
+    "../a-b-seed-ventures/#evidence",
+  );
+  assert.equal(
+    profileMarkdownHref("https://example.com/source"),
+    "https://example.com/source",
   );
 });

@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import Breadcrumbs from "../../../components/Breadcrumbs.astro";
 import ProfileLinkList from "../../../components/ProfileLinkList.astro";
 import type { Locale } from "../../../i18n/ui";
 import { strings } from "../../../i18n/ui";
@@ -14,8 +15,10 @@ import {
 import {
   localeDetails,
   locales,
+  localizedHref,
   localizedRoute,
 } from "../../../lib/i18n.mjs";
+import { seoTitle } from "../../../lib/seo.mjs";
 import { breadcrumbListJsonLd } from "../../../lib/structured-data.mjs";
 
 export async function getStaticPaths() {
@@ -57,7 +60,10 @@ const records = unsortedRecords.sort((left, right) =>
 ---
 
 <BaseLayout
-  title={labels.countryLandingTitle(countryName)}
+  title={seoTitle(
+    labels.countryLandingTitle(countryName),
+    labels.languageName,
+  )}
   description={labels.countryLandingDescription(countryName)}
   canonicalPath={route}
   routeSuffix={routeSuffix}
@@ -70,6 +76,14 @@ const records = unsortedRecords.sort((left, right) =>
     ]),
   ]}
 >
+  <Breadcrumbs
+    ariaLabel={labels.breadcrumbNavigation}
+    items={[
+      { label: labels.home, href: localizedHref(locale, "/") },
+      { label: labels.catalog, href: localizedHref(locale, "/catalog/") },
+      { label: countryName },
+    ]}
+  />
   <header class="page-intro landing-intro">
     <p class="eyebrow">{labels.browseCountries}</p>
     <h1>{countryName}</h1>
