@@ -29,10 +29,12 @@ COUNTRY_DIRECTORIES = {
     "brazil": "BR",
     "chile": "CL",
     "colombia": "CO",
+    "dominican-republic": "DO",
     "ecuador": "EC",
     "mexico": "MX",
     "peru": "PE",
     "uruguay": "UY",
+    "united-states": "US",
 }
 COUNTRY_TERMS = {
     "Argentina": "AR",
@@ -239,7 +241,7 @@ def stages_for(entity_type: str, value: str | None) -> list[str]:
         return ["angel"]
     if entity_type == "public_program":
         return ["not_applicable"]
-    if entity_type != "fund":
+    if entity_type not in {"accelerator", "fund"}:
         return ["not_disclosed"]
     if not value or value.startswith("Not publicly disclosed"):
         return ["not_disclosed"]
@@ -400,7 +402,8 @@ def aliases_and_operator(
     visible_aliases = fields.get("Aliases")
     if (
         visible_aliases
-        and visible_aliases.casefold() not in {"none", "none recorded"}
+        and visible_aliases.casefold()
+        not in {"none", "none published", "none recorded"}
     ):
         aliases.extend(
             alias.strip()
@@ -429,7 +432,7 @@ def build_metadata(path: Path, body: str) -> tuple[dict[str, Any], list[str]]:
     route_field = (
         fields.get("Submit a startup")
         if entity_type == "fund"
-        else fields.get("Founder route")
+        else fields.get("Founder route") or fields.get("Apply")
     )
     founder_route = extract_https(route_field)
     geography = fields.get("Geography")
@@ -441,7 +444,7 @@ def build_metadata(path: Path, body: str) -> tuple[dict[str, Any], list[str]]:
     aliases, operator = aliases_and_operator(slug, entity_type, fields)
     if operator is None:
         notes.append("operator:not_disclosed")
-    stage_value = fields.get("Stage at entry")
+    stage_value = fields.get("Stage at entry") or fields.get("Stage")
     stages = stages_for(entity_type, stage_value)
     if stages == ["not_disclosed"]:
         notes.append("stages:not_disclosed")
