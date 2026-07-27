@@ -5,6 +5,8 @@ import { join, relative } from "node:path";
 
 const root = process.cwd();
 const astroCli = join(root, "node_modules", "astro", "bin", "astro.mjs");
+const seoAudit = join(root, "scripts", "verify-seo.mjs");
+const siteSmoke = join(root, "scripts", "smoke-site.mjs");
 const dist = join(root, "dist");
 const profileRoots = [
   "funds",
@@ -248,6 +250,10 @@ assert(
   ),
   "root-relative asset or link escaped the configured base path",
 );
+execFileSync(process.execPath, [seoAudit], {
+  cwd: root,
+  stdio: "inherit",
+});
 
 build("production");
 const second = snapshot();
@@ -263,6 +269,10 @@ assert(
 );
 
 build("production");
+execFileSync(process.execPath, [siteSmoke], {
+  cwd: root,
+  stdio: "inherit",
+});
 console.log(
   `Verified ${sourceProfileCount} profiles and ${Object.keys(first).length} deterministic static files under /awesome-latam-vc/.`,
 );

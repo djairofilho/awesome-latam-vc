@@ -477,6 +477,33 @@ h2 {
   border-bottom: 1px solid var(--line);
 }
 
+.breadcrumbs {
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li + li::before {
+  margin-right: 0.55rem;
+  color: var(--line);
+  content: "/";
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: var(--ink);
+  font-weight: 650;
+}
+
 .page-intro h1,
 .not-found h1 {
   max-width: 16ch;
@@ -583,6 +610,15 @@ h2 {
 
 .not-found .button {
   margin-top: 2rem;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 footer {

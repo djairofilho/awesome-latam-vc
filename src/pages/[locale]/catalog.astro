@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import type { Locale } from "../../i18n/ui";
 import { strings } from "../../i18n/ui";
 import BaseLayout from "../../layouts/BaseLayout.astro";
@@ -11,6 +12,7 @@ import {
 import {
   localeDetails,
   locales,
+  localizedHref,
   localizedRoute,
 } from "../../lib/i18n.mjs";
 import {
@@ -60,6 +62,13 @@ const structuredData = [
   locale={locale}
   structuredData={structuredData}
 >
+  <Breadcrumbs
+    ariaLabel={labels.breadcrumbNavigation}
+    items={[
+      { label: labels.home, href: localizedHref(locale, "/") },
+      { label: labels.catalog },
+    ]}
+  />
   <header class="page-intro">
     <p class="eyebrow">{labels.catalogKicker}</p>
     <h1>{labels.profileCount(profiles.length)}</h1>
