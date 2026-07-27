@@ -58,6 +58,8 @@ export function catalogItem(entry: CollectionEntry<"profiles">) {
       .split("/")
       .map(encodeURIComponent)
       .join("/")}`,
+    operator: entry.data.operator,
+    officialWebsite: entry.data.official_website,
     hasStructuredMetadata: Boolean(entry.data.entity_id),
   };
 }

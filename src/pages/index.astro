@@ -5,6 +5,7 @@ import {
   locales,
   localizedHref,
 } from "../lib/i18n.mjs";
+import { webSiteJsonLd } from "../lib/structured-data.mjs";
 ---
 
 <BaseLayout
@@ -12,6 +13,7 @@ import {
   description="Choose English, Portuguese or Spanish to browse the open Latin American funding directory."
   canonicalPath="/"
   routeSuffix="/"
+  structuredData={[webSiteJsonLd()]}
 >
   <section class="language-landing" aria-labelledby="language-heading">
     <p class="language-mark" aria-hidden="true">EN · PT-BR · ES</p>

@@ -54,6 +54,16 @@ function routeHtml(...segments) {
   return readFileSync(join(dist, ...segments, "index.html"), "utf8");
 }
 
+function jsonLd(html) {
+  const matches = [
+    ...html.matchAll(
+      /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
+    ),
+  ];
+  assert(matches.length === 1, "page must contain exactly one JSON-LD block");
+  return JSON.parse(matches[0][1]);
+}
+
 build("production");
 const first = snapshot();
 const productionHtml = indexHtml();
@@ -76,6 +86,7 @@ const localizedCatalogHtml = Object.fromEntries(
     routeHtml(segment, "catalog"),
   ]),
 );
+const catalogHtml = localizedCatalogHtml.en;
 const sourceProfileCount = profileRoots
   .flatMap((directory) => files(join(root, directory)))
   .filter(
@@ -83,6 +94,25 @@ const sourceProfileCount = profileRoots
       path.endsWith(".md") &&
       !/^README(?:\.[^.]+)?\.md$/i.test(path.split(/[\\/]/).at(-1)),
   ).length;
+const renderedProfileCount = (
+  catalogHtml.match(/data-profile-id=/g) ?? []
+).length;
+const entityDocument = JSON.parse(
+  readFileSync(join(root, "data", "entities.json"), "utf8"),
+);
+const websiteGraph = jsonLd(productionHtml);
+const catalogGraph = jsonLd(catalogHtml);
+const catalogTypes = catalogGraph["@graph"].map((node) => node["@type"]);
+const expectedOrganizationCount = entityDocument.entities.filter(
+  (entity) => entity.entity_type !== "public_program",
+).length;
+const expectedGovernmentOrganizationCount = entityDocument.entities.filter(
+  (entity) =>
+    entity.entity_type === "public_program" && entity.operator === null,
+).length;
+const organizationNodes = catalogGraph["@graph"].filter((node) =>
+  ["Organization", "GovernmentOrganization"].includes(node["@type"]),
+);
 assert(
   productionHtml.includes(
     '<link rel="canonical" href="https://djairofilho.github.io/awesome-latam-vc/">',
@@ -153,6 +183,64 @@ for (const [locale, segment] of Object.entries(localeRoutes)) {
     `${locale} output contains a root-relative link outside the Pages base`,
   );
 }
+assert(
+  sourceProfileCount === entityDocument.dataset.entity_count,
+  "site profile count and structured export count differ",
+);
+assert(
+  JSON.stringify(websiteGraph["@graph"].map((node) => node["@type"])) ===
+    JSON.stringify(["WebSite"]),
+  "home JSON-LD must contain one WebSite node",
+);
+assert(
+  catalogTypes.includes("Dataset") &&
+    catalogTypes.includes("BreadcrumbList") &&
+    catalogTypes.includes("Organization") &&
+    catalogTypes.includes("GovernmentOrganization"),
+  "catalog JSON-LD is missing a required semantic type",
+);
+assert(
+  catalogTypes.every((type) =>
+    [
+      "Dataset",
+      "BreadcrumbList",
+      "Organization",
+      "GovernmentOrganization",
+    ].includes(type),
+  ),
+  "catalog JSON-LD contains an unsupported top-level type",
+);
+assert(
+  catalogTypes.filter((type) => type === "Organization").length ===
+    expectedOrganizationCount &&
+    catalogTypes.filter((type) => type === "GovernmentOrganization").length ===
+      expectedGovernmentOrganizationCount,
+  "organization JSON-LD counts diverge from canonical entity semantics",
+);
+assert(
+  new Set(organizationNodes.map((node) => node["@id"])).size ===
+    organizationNodes.length,
+  "organization JSON-LD contains duplicate identifiers",
+);
+const datasetNode = catalogGraph["@graph"].find(
+  (node) => node["@type"] === "Dataset",
+);
+assert(
+  datasetNode.variableMeasured?.value === entityDocument.dataset.entity_count &&
+    datasetNode.version === entityDocument.dataset.version &&
+    datasetNode.dateModified === entityDocument.dataset.date &&
+    datasetNode.license === entityDocument.dataset.license_url,
+  "Dataset JSON-LD diverges from the structured export metadata",
+);
+assert(
+  readFileSync(join(dist, "data", "entities.json")).equals(
+    readFileSync(join(root, "data", "entities.json")),
+  ) &&
+    readFileSync(join(dist, "data", "entities.csv")).equals(
+      readFileSync(join(root, "data", "entities.csv")),
+    ),
+  "published dataset downloads differ from committed exports",
+);
 assert(
   notFoundHtml.includes('name="robots" content="noindex, nofollow"'),
   "the 404 page must remain noindex in production",

@@ -10,6 +10,7 @@ import {
   localizedHref,
 } from "../lib/i18n.mjs";
 import { canonicalUrl, withBase } from "../lib/paths.mjs";
+import { serializeJsonLd } from "../lib/structured-data.mjs";
 
 interface Props {
   title: string;
@@ -19,6 +20,7 @@ interface Props {
   routeSuffix?: string;
   emitAlternates?: boolean;
   noindex?: boolean;
+  structuredData?: Array<Record<string, unknown> | null>;
 }
 
 const {
@@ -29,6 +31,7 @@ const {
   routeSuffix = "/",
   emitAlternates = true,
   noindex = false,
+  structuredData = [],
 } = Astro.props;
 const preview = import.meta.env.PUBLIC_SITE_ENV === "preview";
 const canonical = canonicalUrl(canonicalPath);
@@ -40,6 +43,9 @@ const homeHref = locale ? localizedHref(locale, "/") : withBase("/");
 const catalogHref = locale
   ? localizedHref(locale, "/catalog/")
   : withBase("/catalog/");
+const jsonLd = structuredData.length
+  ? serializeJsonLd(structuredData)
+  : undefined;
 ---
 
 <!doctype html>
@@ -56,6 +62,15 @@ const catalogHref = locale
       ))
     }
     <meta name="generator" content={Astro.generator} />
+    {
+      jsonLd && (
+        <script
+          is:inline
+          type="application/ld+json"
+          set:html={jsonLd}
+        />
+      )
+    }
     <title>{title}</title>
   </head>
   <body>
