@@ -15,13 +15,14 @@ A curated list of Venture Capital funds investing in Latin America.
 
 ---
 
-The index is optimized for quick comparison and currently covers 116 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
+The index is optimized for quick comparison and currently covers 123 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
 
 ## Pan-Latin America (LatAm based)
 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
 | [500 LatAm (500 Global)](funds/regional/500-latam-500-global.md) | Pre-seed and Seed | Technology, sector agnostic | Spanish-speaking Latin America |
+| [Açolab Ventures](funds/regional/acolab-ventures.md) | Validated product and operating revenue | Steel value-chain innovation and sustainability | Latin America |
 | [Actions Capital (ex-K50 Ventures)](funds/regional/actions-capital-k50-ventures.md) | Pre-seed and Seed | Technology | Latin America |
 | [ALIVE Ventures](funds/regional/alive-ventures.md) | Seed and Series A | Impact technology and economic inclusion | Colombia, Peru, and Latin America |
 | [Amplifica Capital](funds/regional/amplifica-capital.md) | Pre-seed, Seed, and Series A | Inclusion, digital access, and climate technology | Latin America |
@@ -64,6 +65,7 @@ The index is optimized for quick comparison and currently covers 116 funds. All 
 | [A.B.Seed Ventures](funds/brazil/a.b.seed-ventures.md) | Pre-seed and Seed | B2B software | Brazil |
 | [ACE Ventures](funds/brazil/ace-ventures.md) | Seed and Series A | Technology | Brazil |
 | [Ahead Ventures](funds/brazil/ahead-ventures.md) | Seed and Series A | Corporate strategic theses | Brazil |
+| [AMAZ](funds/brazil/amaz.md) | Not publicly disclosed | Amazon bioeconomy, conservation, and climate impact | Brazilian Amazon |
 | [Arapy](funds/brazil/arapy.md) | Not publicly disclosed | Impact aligned with the UN Sustainable Development Goals | Brazil |
 | [Astella](funds/brazil/astella.md) | Pre-seed, Seed, and Series A | Technology, sector agnostic | Brazil |
 | [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Pre-seed and Seed | B2B and B2B2C technology | Brazil |
@@ -73,11 +75,13 @@ The index is optimized for quick comparison and currently covers 116 funds. All 
 | [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed and Seed | Technology startups | Brazil |
 | [DGF Investimentos](funds/brazil/dgf-investimentos.md) | Multi-stage | High-growth technology companies | Brazil and Latin America |
 | [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed and Seed | Technology | Brazil |
+| [Eurofarma Ventures](funds/brazil/eurofarma-ventures.md) | Early discovery and development | Biotechnology, drug discovery, and advanced therapies | Global |
 | [FIP Nordeste Capital Semente](funds/brazil/fip-nordeste-capital-semente.md) | Pre-seed and Seed | Regional technology startups | Northeast Brazil, northern Minas Gerais, and Espírito Santo |
 | [Fundepar](funds/brazil/fundepar.md) | Not publicly disclosed | Technology, science-based innovation, and impact | Brazil |
 | [Fundo inovabra I](funds/brazil/fundo-inovabra-i.md) | Series A and Series B | Technology across financial and non-financial sectors | Global |
 | [Gerdau Next Ventures](funds/brazil/gerdau-next-ventures.md) | Not publicly disclosed | Construction, mobility, sustainability, and technology | Not publicly disclosed |
 | [Honey Island Capital](funds/brazil/honey-island-capital.md) | Not publicly disclosed | Fintech and technology | Brazil |
+| [IN3](funds/brazil/in3.md) | Early stage | Social and environmental impact | Northern and Northeastern Brazil |
 | [Indicator Capital](funds/brazil/indicator-capital.md) | Pre-seed and Seed | Deep tech | Latin America |
 | [Invest Tech](funds/brazil/invest-tech.md) | Seed | Technology-enabled B2B companies | Brazil |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed and Seed | Software and technology | Brazil |
@@ -92,7 +96,9 @@ The index is optimized for quick comparison and currently covers 116 funds. All 
 | [Randon Ventures (RV)](funds/brazil/randon-ventures-rv.md) | Growth | Financial solutions and strategic businesses | Brazil |
 | [RD Saúde Ventures](funds/brazil/rd-saude-ventures.md) | Not publicly disclosed | Health, wellbeing, and pharmacy retail | Brazil |
 | [Redpoint eventures](funds/brazil/redpoint-eventures.md) | Multi-stage | Technology | Brazil |
+| [RX Ventures](funds/brazil/rx-ventures.md) | Seed and Series A | Fashion, retail, lifestyle, and responsible brands | Global |
 | [Scale-Up Ventures](funds/brazil/scale-up-ventures.md) | Seed and Series A | Endeavor network companies | Brazil |
+| [Sinergia Investimentos](funds/brazil/sinergia-investimentos.md) | Pre-seed and Seed | Amazon bioeconomy and regenerative businesses | Brazilian Amazon |
 | [SLC Ventures](funds/brazil/slc-ventures.md) | Not publicly disclosed | Agribusiness technology and sustainable agriculture | Not publicly disclosed |
 | [Spectra Investimentos](funds/brazil/spectra-investimentos.md) | Multi-stage | Alternative investments, including venture capital | Brazil and Latin America |
 | [TM3 Capital](funds/brazil/tm3-capital.md) | Not publicly disclosed | Not publicly disclosed | Not publicly disclosed |
@@ -145,6 +151,7 @@ The index is optimized for quick comparison and currently covers 116 funds. All 
 | [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | Not publicly disclosed | Financial technology | Global, including Latin America |
 | [devlabs](funds/multi-country/devlabs.md) | Pre-seed and Seed | Globally scalable software | Latin America and the United States |
 | [DILA Capital](funds/multi-country/dila-capital.md) | Seed and Series A | Technology | Spanish-speaking Latin America and the United States |
+| [EDP Ventures](funds/multi-country/edp-ventures.md) | Seed to Series B | Energy transition and energy technology | Global |
 | [Endeavor Catalyst](funds/multi-country/endeavor-catalyst.md) | Multi-stage | Endeavor network companies | Global |
 | [FJ Labs](funds/multi-country/fj-labs.md) | Pre-seed and Seed | Marketplaces and network effects | Global |
 | [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Pre-seed and Seed | Technology, sector agnostic | Global, including Latin America |
