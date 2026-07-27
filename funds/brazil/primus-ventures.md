@@ -54,6 +54,8 @@ Primus Ventures is an investment organization focused on B2B technology in South
 
 - **Website:** https://www.primusvc.com.br/
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed in the reviewed sources
 - **Stage at entry:** Pre-seed and Seed
 - **Follow-on stages:** Yes; up to R$10 million including follow-ons
 - **Focus:** B2B technology

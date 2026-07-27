@@ -52,6 +52,8 @@ Capital Invent is an investment organization focused on Marketplaces, e-commerce
 
 - **Website:** Not publicly disclosed
 - **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed in the reviewed sources
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
 - **Focus:** Marketplaces, e-commerce, fintech, mobile, and SaaS

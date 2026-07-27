@@ -52,6 +52,8 @@ Capital Invent es una organización de inversión centrada en marketplaces, come
 
 - **Sitio web:** No se divulga públicamente
 - **Tipo de fondo:** Capital de riesgo
+- **Inversión directa en startups:** Sí
+- **Abierto a fundadores externos:** No se divulga públicamente en las fuentes revisadas
 - **Etapa de entrada:** No se divulga públicamente
 - **Etapas posteriores:** No se divulga públicamente en las fuentes revisadas
 - **Enfoque:** Mercados, comercio electrónico, fintech, móvil y SaaS
