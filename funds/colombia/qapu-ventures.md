@@ -25,12 +25,12 @@
   "focuses": [
     "not_disclosed"
   ],
-  "official_website": "https://qapu.ventures/",
+  "official_website": "https://www.linkedin.com/company/qapu/",
   "founder_route": null,
   "sources": [
     {
-      "title": "Previously listed source; unavailable during verification",
-      "url": "https://qapu.ventures/",
+      "title": "QAPU Ventures — LinkedIn",
+      "url": "https://www.linkedin.com/company/qapu/",
       "kind": "secondary"
     }
   ],
@@ -46,7 +46,7 @@ QAPU Ventures is an investment organization listed in this directory; its curren
 
 ## Investment profile
 
-- **Website:** https://qapu.ventures/ (unavailable during verification)
+- **Website:** https://www.linkedin.com/company/qapu/
 - **Fund type:** Venture capital
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed in the reviewed sources
@@ -55,6 +55,8 @@ QAPU Ventures is an investment organization listed in this directory; its curren
 - **Initial check:** Not publicly disclosed in the reviewed sources
 - **Investment role:** Not publicly disclosed in the reviewed sources
 - **Business models:** Not publicly disclosed in the reviewed sources
+- **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Portfolio size:** 9 companies captured in the local project dataset; this is not an official portfolio count
 - **Selected companies:** Aflore, Alfred, Almaya, Avify, Beecuick
 - **Submit a startup:** Not publicly disclosed in the reviewed sources
@@ -69,6 +71,6 @@ The local project dataset contains 9 companies associated with QAPU Ventures. It
 
 ## Sources
 
-- [Previously listed source; unavailable during verification](https://qapu.ventures/)
+- [QAPU Ventures — LinkedIn](https://www.linkedin.com/company/qapu/)
 
 **Last verified:** 2026-07-26

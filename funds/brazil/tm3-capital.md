@@ -29,8 +29,8 @@
   "founder_route": null,
   "sources": [
     {
-      "title": "Previously listed source; unavailable during verification",
-      "url": "https://www.linkedin.com/company/tm3-capital/",
+      "title": "TM3 Capital — LinkedIn",
+      "url": "https://www.linkedin.com/company/tm3capital/",
       "kind": "secondary"
     }
   ],
@@ -55,6 +55,8 @@ TM3 Capital is an investment organization listed in this directory; its current 
 - **Initial check:** Not publicly disclosed in the reviewed sources
 - **Investment role:** Not publicly disclosed in the reviewed sources
 - **Business models:** Not publicly disclosed in the reviewed sources
+- **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Portfolio size:** 22 companies captured in the local project dataset; this is not an official portfolio count
 - **Selected companies:** a55, Actiz, Aevo, AMcom, Archa
 - **Submit a startup:** Not publicly disclosed in the reviewed sources
@@ -69,6 +71,6 @@ The local project dataset contains 22 companies associated with TM3 Capital. Its
 
 ## Sources
 
-- [Previously listed source; unavailable during verification](https://www.linkedin.com/company/tm3-capital/)
+- [TM3 Capital — LinkedIn](https://www.linkedin.com/company/tm3capital/)
 
 **Last verified:** 2026-07-26

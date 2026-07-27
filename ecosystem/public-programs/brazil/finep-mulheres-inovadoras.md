@@ -26,12 +26,12 @@
     "entrepreneurship",
     "innovation"
   ],
-  "official_website": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras",
-  "founder_route": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras",
+  "official_website": "https://www.finep.gov.br/chamadas-publicas/chamadapublica/781",
+  "founder_route": "https://www.finep.gov.br/chamadas-publicas/chamadapublica/781",
   "sources": [
     {
-      "title": "Programa Mulheres Inovadoras",
-      "url": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras",
+      "title": "Prêmio Mulheres Inovadoras 7ª Edição — 2026",
+      "url": "https://www.finep.gov.br/chamadas-publicas/chamadapublica/781",
       "kind": "official_program"
     }
   ],
@@ -47,12 +47,12 @@
 - **Entity type:** Public funding program
 - **Operator:** [Financiadora de Estudos e Projetos](finep.md) (`agency-finep`)
 - **Aliases:** None recorded
-- **Official page:** https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras
+- **Official page:** https://www.finep.gov.br/chamadas-publicas/chamadapublica/781
 - **Geography:** Brasil
 - **Financial support:** grant or non-repayable funding
 - **Program status:** Currently closed, officially recurring
 - **Activity basis:** official recurrence within 24 months
-- **Founder route:** https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras
+- **Founder route:** https://www.finep.gov.br/chamadas-publicas/chamadapublica/781
 - **Publication batch:** `public-programs-03`
 
 A página permanente registra a sétima edição, seis edições anteriores e prêmios de R$ 60 mil a R$ 120 mil.
@@ -69,6 +69,6 @@ No temporary call is attached to the frozen eligible record. Use the official fo
 
 ## Official sources
 
-- [Programa Mulheres Inovadoras](https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras) — A página permanente registra a sétima edição, seis edições anteriores e prêmios de R$ 60 mil a R$ 120 mil. (`evidence-program-finep-mulheres-inovadoras`)
+- [Prêmio Mulheres Inovadoras 7ª Edição — 2026](https://www.finep.gov.br/chamadas-publicas/chamadapublica/781) — A página permanente registra a sétima edição, seis edições anteriores e prêmios de R$ 60 mil a R$ 120 mil. (`evidence-program-finep-mulheres-inovadoras`)
 
 **Last verified:** 2026-07-27

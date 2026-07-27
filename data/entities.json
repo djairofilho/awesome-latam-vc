@@ -5897,14 +5897,14 @@
       "founder_route": null,
       "id": "fund:qapu-ventures",
       "name": "QAPU Ventures",
-      "official_website": "https://qapu.ventures/",
+      "official_website": "https://www.linkedin.com/company/qapu/",
       "operator": null,
       "source_profile": "funds/colombia/qapu-ventures.md",
       "sources": [
         {
           "kind": "secondary",
-          "title": "Previously listed source; unavailable during verification",
-          "url": "https://qapu.ventures/"
+          "title": "QAPU Ventures — LinkedIn",
+          "url": "https://www.linkedin.com/company/qapu/"
         }
       ],
       "stages": [
@@ -6995,8 +6995,8 @@
       "sources": [
         {
           "kind": "secondary",
-          "title": "Previously listed source; unavailable during verification",
-          "url": "https://www.linkedin.com/company/tm3-capital/"
+          "title": "TM3 Capital — LinkedIn",
+          "url": "https://www.linkedin.com/company/tm3capital/"
         }
       ],
       "stages": [
@@ -8617,7 +8617,7 @@
         "entrepreneurship",
         "innovation"
       ],
-      "founder_route": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras",
+      "founder_route": "https://www.finep.gov.br/chamadas-publicas/chamadapublica/781",
       "id": "public_program:finep",
       "name": "Financiadora de Estudos e Projetos",
       "official_website": "https://www.finep.gov.br/",
@@ -8626,8 +8626,8 @@
       "sources": [
         {
           "kind": "official_program",
-          "title": "Programa Mulheres Inovadoras",
-          "url": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras"
+          "title": "Prêmio Mulheres Inovadoras 7ª Edição — 2026",
+          "url": "https://www.finep.gov.br/chamadas-publicas/chamadapublica/781"
         }
       ],
       "stages": [
@@ -8650,17 +8650,17 @@
         "entrepreneurship",
         "innovation"
       ],
-      "founder_route": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras",
+      "founder_route": "https://www.finep.gov.br/chamadas-publicas/chamadapublica/781",
       "id": "public_program:finep-mulheres-inovadoras",
       "name": "Programa Mulheres Inovadoras",
-      "official_website": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras",
+      "official_website": "https://www.finep.gov.br/chamadas-publicas/chamadapublica/781",
       "operator": "[Financiadora de Estudos e Projetos](finep.md) (`agency-finep`)",
       "source_profile": "ecosystem/public-programs/brazil/finep-mulheres-inovadoras.md",
       "sources": [
         {
           "kind": "official_program",
-          "title": "Programa Mulheres Inovadoras",
-          "url": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/mulheresinovadoras"
+          "title": "Prêmio Mulheres Inovadoras 7ª Edição — 2026",
+          "url": "https://www.finep.gov.br/chamadas-publicas/chamadapublica/781"
         }
       ],
       "stages": [
