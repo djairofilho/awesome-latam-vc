@@ -52,7 +52,7 @@ Alexia Ventures é uma organização de investimento focada em software intelige
 - **Tipo de fundo:** Venture capital
 - **Estágio de entrada:** Seed e Series A
 - **Estágios seguintes:** Não divulgado publicamente nas fontes consultadas
-- **Foco:** Software inteligente e aplicado AI
+- **Foco:** Software inteligente e IA aplicada
 - **Geografia:** América Latina
 - **Cheque inicial:** Não divulgado publicamente nas fontes consultadas
 - **Papel no investimento:** Não divulgado publicamente nas fontes consultadas
