@@ -1,19 +1,26 @@
 # Urca Angels
 
-- **Type:** Angel-investment network
+- **Type:** Alumni-oriented angel-investment network
+- **Operator:** Urca Angels
 - **Website:** https://www.urcaangels.com/
 - **Geography:** Brazil
 - **Stage:** Pre-seed and Seed
 - **Disclosed investment size:** R$300,000 to R$3 million per investment
 - **Founder route:** Use the pitch section on the official website or email
   `contact@urcaangels.com`
+- **Recent activity:** Announced its second investment of 2025 in April 2025
 
 Urca Angels is a Brazilian network formed primarily by Instituto Militar de
-Engenharia alumni. Members invest individually in early-stage technology
-startups. The network explicitly states that it is not a venture fund.
+Engenharia alumni. The network receives pitches and coordinates analysis and
+due diligence. Individual members decide whether to participate and supply
+their own capital. The network explicitly states that it is not a venture fund.
+
+The official site also discloses a R$10,000 to R$100,000 range per angel. It
+does not disclose a standard instrument or investment terms.
 
 ## Sources
 
 - [Urca Angels overview, criteria, portfolio, and pitch process](https://www.urcaangels.com/)
+- [Official April 2025 investment activity](https://pt.linkedin.com/posts/urcaangels_coalize-de-solu%C3%A7%C3%B5es-para-gest%C3%A3o-de-rh-e-activity-7322380522268123137-9Up6)
 
-**Last verified:** 2026-07-26
+**Last verified:** 2026-07-27

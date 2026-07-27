@@ -1,18 +1,28 @@
 # BR Angels
 
 - **Type:** Private angel-investment network
+- **Operator:** BR Angels
 - **Website:** https://www.brangels.global/
 - **Geography:** Brazil, with a stated Latin American and global outlook
 - **Founder route:** https://app.pipefy.com/public/form/sevD52HK
+- **Recent activity:** Announced a new investee in November 2025
 
-BR Angels was formed in 2019 and brings together CEOs and senior executives who
-provide capital, mentoring, and professional expertise. Its founder materials
-state an initial interest in B2B, B2B2C, and B2C businesses and describe a
-portfolio of more than 30 startups.
+BR Angels receives startup applications and uses screening, evaluation groups,
+committees, and recurring pitch events. Its official startup journey says
+member investors decide through batch voting or bookbuilding. Members provide
+capital and support.
+
+The same official material also discloses pooled FIP and offshore structures.
+Those vehicles are recorded as an additional source of capital, but they do not
+erase the separately disclosed member-led network model. This profile therefore
+does not represent BR Angels as a single venture fund. A round-specific amount
+and possible legal structures mentioned by the organization are not treated as
+a standard check or universal terms.
 
 ## Sources
 
 - [BR Angels startup journey and application](https://startup.brangels.com.br/)
 - [Official startup application](https://app.pipefy.com/public/form/sevD52HK)
+- [Official November 2025 investment activity](https://brangels.global/greentable-nova-investida-brangels/)
 
-**Last verified:** 2026-07-26
+**Last verified:** 2026-07-27
