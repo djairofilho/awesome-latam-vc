@@ -12,6 +12,13 @@ const STATE_KEYS = {
   focus: "focus",
 };
 
+export function directoryParameterName(dimension) {
+  if (!FACET_DIMENSIONS.includes(dimension)) {
+    throw new TypeError(`Unsupported facet dimension: ${dimension}`);
+  }
+  return STATE_KEYS[dimension];
+}
+
 export function foldSearchText(value = "") {
   return value
     .normalize("NFD")

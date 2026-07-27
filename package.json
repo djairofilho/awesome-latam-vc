@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && npm run index",
+    "index": "pagefind",
     "preview": "astro preview",
     "check": "astro check",
     "test": "node --test tests/*.test.mjs",
@@ -25,6 +26,7 @@
     "@astrojs/check": "0.9.9",
     "@types/node": "26.1.1",
     "html-validate": "11.5.6",
+    "pagefind": "1.5.2",
     "typescript": "6.0.3"
   }
 }

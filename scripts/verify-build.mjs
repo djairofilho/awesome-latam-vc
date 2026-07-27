@@ -5,6 +5,14 @@ import { join, relative } from "node:path";
 
 const root = process.cwd();
 const astroCli = join(root, "node_modules", "astro", "bin", "astro.mjs");
+const pagefindCli = join(
+  root,
+  "node_modules",
+  "pagefind",
+  "lib",
+  "runner",
+  "bin.cjs",
+);
 const dist = join(root, "dist");
 const profileRoots = [
   "funds",
@@ -16,6 +24,11 @@ const profileRoots = [
 
 function build(environment) {
   execFileSync(process.execPath, [astroCli, "build"], {
+    cwd: root,
+    env: { ...process.env, PUBLIC_SITE_ENV: environment },
+    stdio: "inherit",
+  });
+  execFileSync(process.execPath, [pagefindCli], {
     cwd: root,
     env: { ...process.env, PUBLIC_SITE_ENV: environment },
     stdio: "inherit",
@@ -65,6 +78,9 @@ const first = snapshot();
 const productionHtml = indexHtml();
 const catalogHtml = readFileSync(join(dist, "catalog", "index.html"), "utf8");
 const notFoundHtml = readFileSync(join(dist, "404.html"), "utf8");
+const pagefindEntry = JSON.parse(
+  readFileSync(join(dist, "pagefind", "pagefind-entry.json"), "utf8"),
+);
 const sourceProfileCount = profileRoots
   .flatMap((directory) => files(join(root, directory)))
   .filter(
@@ -118,6 +134,10 @@ assert(
 assert(
   sourceProfileCount === entityDocument.dataset.entity_count,
   "site profile count and structured export count differ",
+);
+assert(
+  pagefindEntry.languages?.en?.hash,
+  "Pagefind must emit a language-specific English index",
 );
 assert(
   JSON.stringify(websiteGraph["@graph"].map((node) => node["@type"])) ===
