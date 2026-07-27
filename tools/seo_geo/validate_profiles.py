@@ -166,7 +166,8 @@ def validate_semantics(profile: Profile) -> list[str]:
         )
     )
     if (
-        base.get("kind") == "country"
+        metadata.get("entity_type") != "accelerator"
+        and base.get("kind") == "country"
         and base.get("code") not in countries_covered
         and "NOT_DISCLOSED" not in countries_covered
         and not aggregate_covers_base

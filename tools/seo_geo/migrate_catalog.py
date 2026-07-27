@@ -33,6 +33,8 @@ COUNTRY_DIRECTORIES = {
     "ecuador": "EC",
     "mexico": "MX",
     "peru": "PE",
+    "puerto-rico": "PR",
+    "switzerland": "CH",
     "uruguay": "UY",
     "united-states": "US",
 }
