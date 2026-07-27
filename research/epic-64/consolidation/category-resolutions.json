@@ -1,0 +1,77 @@
+{
+  "incoming_angel_transfers": [
+    {
+      "adjudication": "materialized-insufficient-evidence",
+      "canonical_destination": "research/epic-64/consolidation/candidates.jsonl#plat-red-colombiana-de-inversiones",
+      "materialized": true,
+      "next_action": null,
+      "owner": null,
+      "proposed_profile": "ecosystem/funding-platforms/red-colombiana-de-inversiones.md",
+      "resolution": "A rota comercial atual foi confirmada, mas a identidade jurídica do operador e uma data oficial de atividade permanecem não divulgadas.",
+      "source_epic": 63,
+      "source_name": "Red Colombiana de Inversiones",
+      "source_network_id": "ang-angelinvestmentnetwork-com-co",
+      "target_platform_id": "plat-red-colombiana-de-inversiones"
+    },
+    {
+      "adjudication": "rejected-by-platform-contract",
+      "canonical_destination": "out-of-scope:investor-infrastructure-without-founder-route",
+      "materialized": false,
+      "next_action": null,
+      "owner": null,
+      "proposed_profile": "ecosystem/funding-platforms/regional/caribbean-business-angel-network.md",
+      "resolution": "A fonte descreve infraestrutura para grupos, syndicates, fundos e investidores, sem rota estruturada para founders.",
+      "source_epic": 63,
+      "source_name": "Caribbean Business Angel Network",
+      "source_network_id": "ang-carib-export-com--caribbean-business-angel-network",
+      "target_platform_id": null
+    },
+    {
+      "adjudication": "rejected-by-platform-contract",
+      "canonical_destination": "out-of-scope:no-structured-founder-funding-route",
+      "materialized": false,
+      "next_action": null,
+      "owner": null,
+      "proposed_profile": "ecosystem/funding-platforms/guatemala/winverz.md",
+      "resolution": "A atividade atual é de eventos e articulação do ecossistema; a única descrição de Angel List é de 2020 e não expõe fluxo de captação.",
+      "source_epic": 63,
+      "source_name": "Winverz",
+      "source_network_id": "ang-winverz-com",
+      "target_platform_id": null
+    }
+  ],
+  "issue": 94,
+  "outgoing_category_resolutions": [
+    {
+      "canonical_destination": "epic-62:program/auge-ucr",
+      "platform_decision": "other_category",
+      "platform_id": "plat-auge-ucr"
+    },
+    {
+      "canonical_destination": "research/epic-62/consolidation/candidates.jsonl#accel-sc-koga",
+      "platform_decision": "other_category",
+      "platform_id": "plat-koga-impact-lab"
+    },
+    {
+      "canonical_destination": "epic-62:program/open-angels",
+      "platform_decision": "other_category",
+      "platform_id": "plat-open-angels"
+    },
+    {
+      "canonical_destination": "epic-62:program/pitch-day-pandolab",
+      "platform_decision": "other_category",
+      "platform_id": "plat-pitch-day"
+    },
+    {
+      "canonical_destination": "epic-62:program/sambil-emprende",
+      "platform_decision": "other_category",
+      "platform_id": "plat-sambil-emprende"
+    },
+    {
+      "canonical_destination": "research/epic-62/consolidation/candidates.jsonl#accel-ventiur-acelera-impacto",
+      "platform_decision": "other_category",
+      "platform_id": "plat-ventiur"
+    }
+  ],
+  "schema_version": "1.0"
+}

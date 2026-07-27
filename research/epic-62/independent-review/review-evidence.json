@@ -1,0 +1,114 @@
+[
+  {
+    "accessed_on": "2026-07-27",
+    "candidate_id": "accel-foreign-founder-institute-latam",
+    "claims": [
+      {
+        "field": "investment_vehicle",
+        "finding": "confirmed"
+      },
+      {
+        "field": "program_identity",
+        "finding": "confirmed"
+      }
+    ],
+    "entity_id": "fi.co#founder-capital",
+    "evidence_id": "ev-accel-review-founder-institute-vehicle",
+    "locator": "Seções Founder Capital e A Network Invested in Your Success.",
+    "published_on": null,
+    "publisher": "Founder Institute",
+    "schema_version": "1.0",
+    "source_type": "official",
+    "summary": "A página separa o programa Core do fundo global Founder Capital, que realiza os primeiros cheques em participantes promissores.",
+    "title": "Founder Institute Core Program",
+    "url": "https://fi.co/core/14694"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "candidate_id": "accel-inovativa-brasil",
+    "claims": [
+      {
+        "field": "structured_program",
+        "finding": "confirmed"
+      },
+      {
+        "field": "activity",
+        "finding": "confirmed"
+      },
+      {
+        "field": "external_access",
+        "finding": "confirmed"
+      },
+      {
+        "field": "latam_access",
+        "finding": "confirmed"
+      },
+      {
+        "field": "application_route",
+        "finding": "confirmed"
+      }
+    ],
+    "entity_id": "inovativa.online#inovativa-brasil",
+    "evidence_id": "ev-accel-review-inovativa-recurrence",
+    "locator": "Resposta sobre ciclos, formulário e startups aceitas.",
+    "published_on": "2024-12-17",
+    "publisher": "Ministério do Desenvolvimento, Indústria, Comércio e Serviços",
+    "schema_version": "1.0",
+    "source_type": "official",
+    "summary": "O MDIC documenta ciclos geralmente em fevereiro e julho e inscrições para projetos e startups de todo o Brasil; a fonte permanece válida dentro da janela de 24 meses.",
+    "title": "Quem pode se inscrever nos programas InovAtiva",
+    "url": "https://www.gov.br/mdic/pt-br/acesso-a-informacao/perguntas-frequentes-faq/secretaria-de-desenvolvimento-industrial-inovacao-comercio-e-servicos/quem-pode-se-inscrever-e"
+  },
+  {
+    "accessed_on": "2026-07-27",
+    "candidate_id": "accel-ventiur-acelera-impacto",
+    "claims": [
+      {
+        "field": "operator_identity",
+        "finding": "confirmed"
+      },
+      {
+        "field": "program_identity",
+        "finding": "confirmed"
+      },
+      {
+        "field": "structured_program",
+        "finding": "confirmed"
+      },
+      {
+        "field": "activity",
+        "finding": "confirmed"
+      },
+      {
+        "field": "external_access",
+        "finding": "confirmed"
+      },
+      {
+        "field": "latam_access",
+        "finding": "confirmed"
+      },
+      {
+        "field": "application_route",
+        "finding": "confirmed"
+      },
+      {
+        "field": "duration",
+        "finding": "confirmed"
+      },
+      {
+        "field": "investment_vehicle",
+        "finding": "confirmed"
+      }
+    ],
+    "entity_id": "ventiur.net#acelera-impacto",
+    "evidence_id": "ev-accel-review-ventiur-calendar",
+    "locator": "Seções O que é, Etapas do Programa e Próximas datas.",
+    "published_on": null,
+    "publisher": "Ventiur",
+    "schema_version": "1.0",
+    "source_type": "official",
+    "summary": "A fonte oficial publica seleção externa, nove meses de aceleração e cronograma de março a outubro de 2025, dentro da janela de atividade do contrato.",
+    "title": "Acelera Impacto",
+    "url": "https://conteudo.ventiur.net/acelera-impacto"
+  }
+]

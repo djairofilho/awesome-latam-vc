@@ -1,0 +1,169 @@
+{
+  "consolidation_issue": 76,
+  "contract_issue": 68,
+  "cutoff_date": "2026-07-27",
+  "excluded_sample": {
+    "algorithm": "sha256(candidate_id + \"|issue-77|2026-07-27\"), ascending",
+    "minimum_rate": 0.2,
+    "minimum_size": 4,
+    "selected": [
+      {
+        "candidate_id": "accel-and-liquid",
+        "selection_hash": "02603a2a174bdc742ea313c9159a335666238ca5dbc91265ff49297f50d6734e"
+      },
+      {
+        "candidate_id": "accel-dasa-pulsa",
+        "selection_hash": "209cc3979b7ac9411bd55cba1a9e082d8c71688b0c13d7803450c1f74034263b"
+      },
+      {
+        "candidate_id": "accel-and-impact-hub-caracas",
+        "selection_hash": "3a4fcee6162acd65013bfdd1220dfcf28e47dbb2619ff6f6e6716923dd771789"
+      },
+      {
+        "candidate_id": "accel-mxcac-honduras-digital",
+        "selection_hash": "3df3ad68f8235f5004bce086086c692c2f43d9902bca825a97e5b639353bc637"
+      }
+    ]
+  },
+  "hash_algorithm": "sha256-lf",
+  "issue": 77,
+  "mandatory_groups": {
+    "cross_category": [
+      "accel-ace-amazonia-impacto",
+      "accel-ace-for-doers",
+      "accel-ace-funses1-digital",
+      "accel-acelera-divinopolis",
+      "accel-acre-for-startups",
+      "accel-and-agroinnovatec",
+      "accel-and-buentrip",
+      "accel-and-emprendimiento-digital",
+      "accel-and-startup-peru",
+      "accel-and-utec",
+      "accel-bndes-garagem",
+      "accel-brde-labs-rs",
+      "accel-capital-empreendedor-rj",
+      "accel-darwin-scale",
+      "accel-finep-mulheres-inovadoras",
+      "accel-foreign-500-global-flagship",
+      "accel-foreign-antler-singapore",
+      "accel-gb-ventures",
+      "accel-mxcac-500-latam",
+      "accel-mxcac-carao",
+      "accel-mxcac-cenpromype",
+      "accel-mxcac-parallel18",
+      "accel-sc-anii-sprintuy",
+      "accel-sc-cites",
+      "accel-sc-grid-transform",
+      "accel-sc-incubate",
+      "accel-sc-mic-reinventa",
+      "accel-sc-platanus",
+      "accel-sc-startup-chile",
+      "accel-ventiur-acelera-impacto"
+    ],
+    "eligible": [
+      "accel-ace-amazonia-impacto",
+      "accel-ace-funses1-digital",
+      "accel-and-innovalab",
+      "accel-and-utec",
+      "accel-boost",
+      "accel-capital-empreendedor-rj",
+      "accel-darwin-scale",
+      "accel-foreign-500-global-flagship",
+      "accel-foreign-alchemist-flagship",
+      "accel-foreign-aws-generative-ai",
+      "accel-foreign-berkeley-skydeck",
+      "accel-foreign-founder-institute-latam",
+      "accel-foreign-google-ai-cybersecurity-latam",
+      "accel-foreign-seedstars-lif-caf-rural-tech",
+      "accel-foreign-y-combinator",
+      "accel-ganesha-go-europe",
+      "accel-gb-ventures",
+      "accel-google-for-startups-brazil",
+      "accel-inovativa-brasil",
+      "accel-mxcac-500-latam",
+      "accel-mxcac-parallel18",
+      "accel-sc-grid-transform",
+      "accel-sc-magical",
+      "accel-tecnoparq-acelera",
+      "accel-wow"
+    ],
+    "routed": [
+      "accel-acelera-divinopolis",
+      "accel-acre-for-startups",
+      "accel-and-agroinnovatec",
+      "accel-and-emprendimiento-digital",
+      "accel-and-startup-peru",
+      "accel-bndes-garagem",
+      "accel-brde-labs-rs",
+      "accel-finep-mulheres-inovadoras",
+      "accel-foreign-antler-singapore",
+      "accel-mxcac-carao",
+      "accel-mxcac-cenpromype",
+      "accel-sc-anii-sprintuy",
+      "accel-sc-cites",
+      "accel-sc-incubate",
+      "accel-sc-mic-reinventa",
+      "accel-sc-startup-chile"
+    ],
+    "vehicles": [
+      "accel-acelera-divinopolis",
+      "accel-acre-for-startups",
+      "accel-and-rockstart",
+      "accel-bndes-garagem",
+      "accel-brde-labs-rs",
+      "accel-finep-mulheres-inovadoras",
+      "accel-foreign-500-global-flagship",
+      "accel-foreign-alchemist-flagship",
+      "accel-foreign-antler-singapore",
+      "accel-foreign-berkeley-skydeck",
+      "accel-foreign-techstars-anywhere",
+      "accel-foreign-y-combinator",
+      "accel-ganesha-go-europe",
+      "accel-mxcac-500-latam",
+      "accel-mxcac-alterna",
+      "accel-mxcac-carao",
+      "accel-sc-cites",
+      "accel-sc-grid-transform",
+      "accel-sc-magical",
+      "accel-sc-platanus",
+      "accel-ventiur-acelera-impacto",
+      "accel-wow"
+    ]
+  },
+  "notes": "Revisão independente concluída. Uma decisão foi reaberta, três divergências foram resolvidas e nenhum perfil foi criado.",
+  "output_hashes": {
+    "cross-catalog-checks.json": "d8f112b4a203a1ae53f4d0fcd7185cc01fe6046934920bf13191337a3ccae62b",
+    "divergences.json": "70aa1e46b2dd00d00ac97fb374aad934a1a93064e6573633d2e9473ee4a85887",
+    "publishable-manifest.json": "846d110b11bcfde8b5080d97781a3b848d5e4b9933e8beb7eb2d2254d678435e",
+    "review-evidence.json": "889548f2895cddeed45aca920ace37d8beff04fbbef3152e582da182716c0550",
+    "review-results.json": "37c45d8b5d3e2317bd8d8f405ce0b80f18b07428ca7ceeafa07d71aa1848a579"
+  },
+  "population_counts": {
+    "canonical_candidates": 78,
+    "cross_category_resolutions": 30,
+    "eligible": 25,
+    "excluded": 17,
+    "mandatory_unique_candidates": 52,
+    "routed": 16,
+    "vehicle_resolutions": 22
+  },
+  "resolved_counts": {
+    "confirmed": 48,
+    "confirmed_with_additional_evidence": 1,
+    "confirmed_with_resolution": 2,
+    "publishable_candidates": 26,
+    "reopened": 1,
+    "resolved_divergences": 3,
+    "reviewed_unique_candidates": 52
+  },
+  "schema_version": "1.0",
+  "source_hashes": {
+    "candidates.jsonl": "d114887306d8fb26dea79918eebe60d8e63b9fa05709c49c316b0dffaf06f509",
+    "category-resolutions.json": "e05bd2c47251d19b992a52651af52b2f16e8b251392d7f23f5f19e3a583a545a",
+    "consolidation-manifest.json": "635488018e37ec3ec6db5f4616bc4f0e9c49ea044f37ed3ee71dc6ce7da72c68",
+    "evidence.jsonl": "f19d50bdd33a5794499e7710f4bf88ed73dca7e7c1906fcc7fe0807f6df6894b",
+    "registry-index.json": "8bbe41f4c1077b03cce9a7d9bc1f43ad6b2728b1c23e84bf04292488cb516218",
+    "source-inventory.jsonl": "b27ab93f68a6a26ffcd7d96e4fd1b41ab790d23dad52684d814f1e75dff38994"
+  },
+  "status": "complete"
+}

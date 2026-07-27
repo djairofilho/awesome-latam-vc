@@ -1,0 +1,40 @@
+{
+  "captured_on": "2026-07-27",
+  "repository": "djairofilho/awesome-latam-vc",
+  "repository_url": "https://github.com/djairofilho/awesome-latam-vc",
+  "visibility": "public",
+  "default_branch": "main",
+  "snapshot_commit": "62bb4285448690ecf18bf2075fe3fbdda8de8f69",
+  "homepage_url": null,
+  "github_pages": {
+    "configured": false,
+    "evidence": "GET /repos/djairofilho/awesome-latam-vc/pages returned HTTP 404",
+    "checked_on": "2026-07-27"
+  },
+  "site_implementation": {
+    "package_json_present": false,
+    "astro_config_present": false,
+    "pages_workflow_present": false,
+    "active_workflows": [
+      ".github/workflows/research-validation.yml"
+    ]
+  },
+  "public_surfaces": [
+    {
+      "kind": "repository",
+      "url": "https://github.com/djairofilho/awesome-latam-vc"
+    },
+    {
+      "kind": "english_readme",
+      "url": "https://github.com/djairofilho/awesome-latam-vc/blob/main/README.md"
+    },
+    {
+      "kind": "portuguese_readme",
+      "url": "https://github.com/djairofilho/awesome-latam-vc/blob/main/README.pt.md"
+    },
+    {
+      "kind": "spanish_readme",
+      "url": "https://github.com/djairofilho/awesome-latam-vc/blob/main/README.es.md"
+    }
+  ]
+}

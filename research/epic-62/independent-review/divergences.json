@@ -1,0 +1,41 @@
+[
+  {
+    "candidate_id": "accel-foreign-founder-institute-latam",
+    "divergence_id": "div-issue77-founder-institute-vehicle",
+    "evidence_ids": [
+      "ev-accel-review-founder-institute-vehicle"
+    ],
+    "finding": "A consolidação manteve o programa elegível, mas não registrou o fundo Founder Capital como veículo separado.",
+    "resolution": "Manter a elegibilidade do programa e criar encaminhamento de backlog funds/:fi.co#founder-capital sem contar o aporte duas vezes.",
+    "resolved_decision": "elegível",
+    "schema_version": "1.0",
+    "severity": "medium",
+    "status": "resolved"
+  },
+  {
+    "candidate_id": "accel-mxcac-honduras-digital",
+    "divergence_id": "div-issue77-honduras-digital-boundary",
+    "evidence_ids": [
+      "ev-accel-mxcac-honduras-digital"
+    ],
+    "finding": "A epic #63 encaminha o Startup Challenge para aceleradoras, enquanto a consolidação da epic #62 o exclui.",
+    "resolution": "Manter excluído na epic #62. A fonte descreve desafio por edição, e o contrato #68 exclui desafio pontual; o encaminhamento da epic #63 é descoberta de fronteira, não decisão de elegibilidade.",
+    "resolved_decision": "excluído",
+    "schema_version": "1.0",
+    "severity": "medium",
+    "status": "resolved"
+  },
+  {
+    "candidate_id": "accel-ventiur-acelera-impacto",
+    "divergence_id": "div-issue77-ventiur-activity",
+    "evidence_ids": [
+      "ev-accel-review-ventiur-calendar"
+    ],
+    "finding": "A consolidação afirmou que a página não publicava data, mas a fonte oficial contém cronograma explícito de março a outubro de 2025.",
+    "resolution": "Reabrir evidência-insuficiente e decidir elegível; programa, seleção externa, acesso brasileiro e atividade dentro de 24 meses estão confirmados.",
+    "resolved_decision": "elegível",
+    "schema_version": "1.0",
+    "severity": "high",
+    "status": "resolved"
+  }
+]
