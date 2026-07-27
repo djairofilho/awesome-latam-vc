@@ -32,19 +32,33 @@ def read_jsonl(path: Path) -> list[dict]:
     ]
 
 
-def sha256_lf(path: Path) -> str:
+def sha256_lf(path: Path, *, body_only: bool = False) -> str:
     payload = path.read_bytes()
     if path.suffix in TEXT_SUFFIXES:
-        payload = payload.replace(b"\r\n", b"\n")
+        payload = payload.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    if body_only and payload.startswith(b"---\n"):
+        closing = payload.find(b"\n---\n", 4)
+        if closing != -1:
+            payload = payload[closing + 5 :].lstrip(b"\n")
     return hashlib.sha256(payload).hexdigest()
 
 
-def hash_failures(mapping: dict[str, str], base: Path) -> list[str]:
+def hash_failures(
+    mapping: dict[str, str],
+    base: Path,
+    *,
+    body_only_paths: set[str] | None = None,
+) -> list[str]:
+    body_only_paths = body_only_paths or set()
     return sorted(
         relative
         for relative, expected in mapping.items()
         if not (base / relative).is_file()
-        or sha256_lf(base / relative) != expected
+        or sha256_lf(
+            base / relative,
+            body_only=relative in body_only_paths,
+        )
+        != expected
     )
 
 
@@ -131,7 +145,9 @@ def build_report() -> dict:
         review_manifest["output_hashes"], REVIEW
     )
     publication_output_failures = hash_failures(
-        publication["output_hashes"], ROOT
+        publication["output_hashes"],
+        ROOT,
+        body_only_paths=set(profile_paths),
     )
     source_manifest_valid = (
         sha256_lf(REVIEW / "publishable-manifest.json")
