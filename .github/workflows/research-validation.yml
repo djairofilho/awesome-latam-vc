@@ -1,0 +1,59 @@
+name: Research validation
+
+on:
+  pull_request:
+    paths:
+      - "funds/**"
+      - "research/epic-16/**"
+      - "tools/research/**"
+      - "README.md"
+      - "README.pt.md"
+      - "README.es.md"
+      - ".github/workflows/research-validation.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "funds/**"
+      - "research/epic-16/**"
+      - "tools/research/**"
+      - "README.md"
+      - "README.pt.md"
+      - "README.es.md"
+      - ".github/workflows/research-validation.yml"
+  workflow_dispatch:
+    inputs:
+      base_ref:
+        description: Git revision used as the validation baseline
+        required: false
+        default: "HEAD^"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate profiles and indexes
+    runs-on: ubuntu-latest
+    env:
+      BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before || inputs.base_ref || 'HEAD^' }}
+
+    steps:
+      - name: Check out repository history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tools/research/tests -v
+
+      - name: Check translated index synchronization
+        run: python tools/research/generate_indexes.py --check
+
+      - name: Validate changed research artifacts
+        run: python tools/research/validate.py --base-ref "$BASE_REF"
