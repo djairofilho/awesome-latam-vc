@@ -84,6 +84,52 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def stable_sha256(path: Path) -> str:
+    payload = path.read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def split_front_matter(text: str) -> tuple[str, str]:
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    lines = normalized.splitlines(keepends=True)
+    if not lines or lines[0].strip() != "---":
+        return "", normalized
+    closing_index = next(
+        (
+            index
+            for index, line in enumerate(lines[1:], start=1)
+            if line.strip() == "---"
+        ),
+        None,
+    )
+    if closing_index is None:
+        return "", normalized
+    return (
+        "".join(lines[: closing_index + 1]),
+        "".join(lines[closing_index + 1 :]).lstrip("\n"),
+    )
+
+
+def profile_sha256(path: Path) -> str:
+    _front_matter, body = split_front_matter(
+        path.read_text(encoding="utf-8")
+    )
+    return hashlib.sha256(body.encode("utf-8")).hexdigest()
+
+
+def write_profile(path: Path, body: str) -> None:
+    front_matter = ""
+    if path.is_file():
+        front_matter, _existing_body = split_front_matter(
+            path.read_text(encoding="utf-8")
+        )
+    path.write_text(
+        f"{front_matter}{body}",
+        encoding="utf-8",
+        newline="\n",
+    )
+
+
 def read_jsonl(path: Path) -> list[dict]:
     return [
         json.loads(line)
@@ -119,7 +165,7 @@ def parse_batches() -> list[dict]:
                 "sub_issue": issue["number"],
                 "sub_issue_url": issue["url"],
                 "body_path": path.relative_to(REPOSITORY).as_posix(),
-                "body_sha256": sha256(path),
+                "body_sha256": stable_sha256(path),
                 "candidate_ids": [candidate_id for candidate_id, _ in rows],
                 "profile_paths": [profile_path for _, profile_path in rows],
                 "profile_count": len(rows),
@@ -390,17 +436,16 @@ def main() -> None:
         profile_path = path_by_id[candidate_id]
         destination = REPOSITORY / profile_path
         destination.parent.mkdir(parents=True, exist_ok=True)
-        destination.write_text(
+        write_profile(
+            destination,
             profile_text(candidate, review, linked_evidence),
-            encoding="utf-8",
-            newline="\n",
         )
         profiles.append(
             {
                 "candidate_id": candidate_id,
                 "name": candidate["name"],
                 "profile_path": profile_path,
-                "profile_sha256": sha256(destination),
+                "profile_sha256": profile_sha256(destination),
                 "official_evidence_ids": review["official_evidence_ids"],
                 "investment_vehicle_id": candidate.get("investment_vehicle_id"),
                 "aliases": candidate["aliases"],
@@ -439,8 +484,8 @@ def main() -> None:
         "decision_filter": ["elegível"],
         "profiles": profiles,
         "output_hashes": {
-            "ecosystem/accelerators/README.md": sha256(index_path),
-            "research/epic-62/publication/frozen-batches.json": sha256(
+            "ecosystem/accelerators/README.md": stable_sha256(index_path),
+            "research/epic-62/publication/frozen-batches.json": stable_sha256(
                 ROOT / "frozen-batches.json"
             ),
             **{
@@ -464,8 +509,13 @@ def main() -> None:
         "research/epic-62/publication/frozen-batches.json",
         "research/epic-62/publication/publication-manifest.json",
     ]
+    profile_paths = {item["profile_path"] for item in profiles}
     (ROOT / "sha256sums.txt").write_text(
-        "".join(f"{sha256(REPOSITORY / path)}  {path}\n" for path in hashed),
+        "".join(
+            f"{profile_sha256(REPOSITORY / path) if path in profile_paths else stable_sha256(REPOSITORY / path)}"
+            f"  {path}\n"
+            for path in hashed
+        ),
         encoding="utf-8",
         newline="\n",
     )
