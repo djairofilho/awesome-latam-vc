@@ -1,6 +1,6 @@
 {
   "artifact_hashes": {
-    "research/epic-250/colombia/baseline/catalog-baseline.jsonl": "20b6d7d4b8f8a72b8418e991d4d86445b2311f667d9db74c1aece0a51af40d9a",
+    "research/epic-250/colombia/baseline/catalog-baseline.jsonl": "b75ecdc634eff42a6ff1bd026194ef041952b3b7052c742e745e43af30ad5b7c",
     "research/epic-250/colombia/baseline/prior-candidates.jsonl": "6785f6653b10d38fd58b13aaa37fa06564253e6f287c00fd965c2e88668d0ee6",
     "research/epic-250/colombia/candidates.jsonl": "ac8b55bdaeeacc19cf324441f99b4ef3da3f4ff6131177eb5e685c9510699485",
     "research/epic-250/colombia/contract.json": "684564014017c3d273694fb4b9ed65dd3c21665436d97729d44ed275fb449bd7",
@@ -12,7 +12,7 @@
   },
   "counts": {
     "candidates": 13,
-    "catalog_baseline": 182,
+    "catalog_baseline": 184,
     "duplicates": 3,
     "eligible": 2,
     "insufficient_evidence": 5,
