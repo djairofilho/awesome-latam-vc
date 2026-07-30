@@ -186,6 +186,8 @@ dump_json(OUT / "coverage-matrix.json", coverage)
 excluded = sorted(row["candidate_id"] for row in candidate_rows if row["decision"] == "insufficient_evidence")
 sample_size = max(1, (len(excluded) + 4) // 5)
 review = {
+    "reviewer": "integrator",
+    "reviewed_on": CUTOFF,
     "method": "SHA-256 lexical order over candidate_id; first ceil(20%) exclusions",
     "blind_families": ["blind_fund_launch", "independent_map"],
     "blind_finding": "ABSeed Colombia expansion",
@@ -254,6 +256,8 @@ for profile in eligible_profiles:
         if path.exists():
             profile_hashes[localized] = digest(path)
 audit = {
+    "reviewer": "integrator",
+    "reviewed_on": CUTOFF,
     "cutoff": CUTOFF,
     "published_eligible_count": len(eligible_profiles),
     "expected_profile_files": len(eligible_profiles) * 3,

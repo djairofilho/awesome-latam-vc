@@ -13,5 +13,7 @@
     "translations/pt-BR/funds/colombia/simma-capital.md": "8c5d45f96f8b42c85da8417cc65a5f897d5c9efb9e5bcbfe00535cc7a8956fc6"
   },
   "published_eligible_count": 2,
-  "regulatory_query_percent_of_candidates": 7.7
+  "regulatory_query_percent_of_candidates": 7.7,
+  "reviewed_on": "2026-07-30",
+  "reviewer": "integrator"
 }
