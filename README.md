@@ -116,10 +116,14 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | [AMAZ](funds/brazil/amaz.md) | Not publicly disclosed | Amazon bioeconomy, conservation, and climate impact | Brazilian Amazon |
 | [Arapy](funds/brazil/arapy.md) | Not publicly disclosed | Impact aligned with the UN Sustainable Development Goals | Brazil |
 | [Astella](funds/brazil/astella.md) | Pre-seed, Seed, and Series A | Technology, sector agnostic | Brazil |
+| [Barn Investimentos](funds/brazil/barn-investimentos.md) | Not publicly disclosed | Greentech | Brazil and Latin America |
+| [BB Ventures](funds/brazil/bb-ventures.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
+| [BluStone Capital](funds/brazil/blustone-capital.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Pre-seed and Seed | B2B and B2B2C technology | Brazil |
 | [Canastra Ventures](funds/brazil/canastra-ventures.md) | Pre-seed | AI-first startups | Brazil and global |
 | [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Growth | Technology and high-growth companies | Brazil |
 | [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed and Seed | Technology startups | Brazil |
+| [DNA Capital](funds/brazil/dna-capital.md) | Not publicly disclosed | Healthcare | Brazil and the United States |
 | [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed and Seed | Technology | Brazil |
 | [Entrypoint](funds/brazil/entrypoint.md) | Pre-seed | Technology startups | Brazil |
 | [Eurofarma Ventures](funds/brazil/eurofarma-ventures.md) | Not publicly disclosed | Biotechnology, drug discovery, and advanced therapies | Global |
@@ -136,7 +140,9 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | [MSW Capital](funds/brazil/msw-capital.md) | Seed | Technology aligned with corporate innovation | Brazil |
 | [Oria Capital](funds/brazil/oria-capital.md) | Not publicly disclosed | B2B software | Brazil |
 | [Panvel Ventures](funds/brazil/panvel-ventures.md) | Not publicly disclosed | Health and wellbeing, customer experience, and operational intelligence | Not publicly disclosed |
+| [Parallax Ventures](funds/brazil/parallax-ventures.md) | Not publicly disclosed | Fintech | Brazil |
 | [Primus Ventures](funds/brazil/primus-ventures.md) | Pre-seed and Seed | B2B technology | Southern Brazil |
+| [Quartzo Capital](funds/brazil/quartzo-capital.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Raio Capital](funds/brazil/raio-capital.md) | Not publicly disclosed | Technology-enabled value-chain efficiency | Brazil |
 | [Randon Ventures (RV)](funds/brazil/randon-ventures-rv.md) | Growth | Financial solutions and strategic businesses | Brazil |
 | [RD Saúde Ventures](funds/brazil/rd-saude-ventures.md) | Not publicly disclosed | Health, wellbeing, and pharmacy retail | Brazil |
@@ -182,8 +188,11 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
+| [1616V](funds/multi-country/1616v.md) | Not publicly disclosed | Not publicly disclosed | Latin America and the United States |
+| [17-Sigma](funds/multi-country/17-sigma.md) | Not publicly disclosed | Not publicly disclosed | Latin America |
 | [ADN.VC](funds/multi-country/adn.vc.md) | Pre-seed and Seed | Fintech, proptech, and contech | Latin America |
 | [Alexia Ventures](funds/multi-country/alexia-ventures.md) | Seed and Series A | Intelligent software and applied AI | Latin America |
+| [BASF Venture Capital GmbH](funds/multi-country/basf-venture-capital.md) | Not publicly disclosed | Not publicly disclosed | Global, including Brazil |
 | [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | Not publicly disclosed | Financial technology | Global, including Latin America |
 | [devlabs](funds/multi-country/devlabs.md) | Pre-seed and Seed | Globally scalable software | Latin America and the United States |
 | [DILA Capital](funds/multi-country/dila-capital.md) | Seed and Series A | Technology | Spanish-speaking Latin America and the United States |

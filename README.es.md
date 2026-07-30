@@ -116,10 +116,14 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 | [AMAZ](funds/brazil/amaz.md) | No divulgado públicamente | Bioeconomía amazónica, conservación e impacto climático | Amazonía brasileña |
 | [Arapy](funds/brazil/arapy.md) | No divulgado públicamente | Impacto alineado con los Objetivos de Desarrollo Sostenible de la ONU | Brasil |
 | [Astella](funds/brazil/astella.md) | Pre-seed, Seed y Serie A | Tecnología, agnóstico a sectores | Brasil |
+| [Barn Investimentos](funds/brazil/barn-investimentos.md) | No divulgado públicamente | Greentech | Brasil y América Latina |
+| [BB Ventures](funds/brazil/bb-ventures.md) | No divulgado públicamente | No divulgado públicamente | Brasil |
+| [BluStone Capital](funds/brazil/blustone-capital.md) | No divulgado públicamente | No divulgado públicamente | Brasil |
 | [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Pre-seed y Seed | Tecnología B2B y B2B2C | Brasil |
 | [Canastra Ventures](funds/brazil/canastra-ventures.md) | Pre-seed | Startups AI-first | Brasil y global |
 | [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Growth | Tecnología y empresas de alto crecimiento | Brasil |
 | [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed y Seed | Startups tecnológicas | Brasil |
+| [DNA Capital](funds/brazil/dna-capital.md) | No divulgado públicamente | Salud | Brasil y Estados Unidos |
 | [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed y Seed | Tecnología | Brasil |
 | [Entrypoint](funds/brazil/entrypoint.md) | Pre-seed | Startups tecnológicas | Brasil |
 | [Eurofarma Ventures](funds/brazil/eurofarma-ventures.md) | No divulgado públicamente | Biotecnología, descubrimiento de fármacos y terapias avanzadas | Global |
@@ -136,7 +140,9 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 | [MSW Capital](funds/brazil/msw-capital.md) | Seed | Tecnología alineada con la innovación corporativa | Brasil |
 | [Oria Capital](funds/brazil/oria-capital.md) | No divulgado públicamente | Software B2B | Brasil |
 | [Panvel Ventures](funds/brazil/panvel-ventures.md) | No divulgado públicamente | Salud y bienestar, experiencia del cliente e inteligencia operacional | No divulgado públicamente |
+| [Parallax Ventures](funds/brazil/parallax-ventures.md) | No divulgado públicamente | Fintech | Brasil |
 | [Primus Ventures](funds/brazil/primus-ventures.md) | Pre-seed y Seed | Tecnología B2B | Sur de Brasil |
+| [Quartzo Capital](funds/brazil/quartzo-capital.md) | No divulgado públicamente | No divulgado públicamente | Brasil |
 | [Raio Capital](funds/brazil/raio-capital.md) | No divulgado públicamente | Eficiencia en cadenas de valor habilitada por tecnología | Brasil |
 | [Randon Ventures (RV)](funds/brazil/randon-ventures-rv.md) | Growth | Soluciones financieras y negocios estratégicos | Brasil |
 | [RD Saúde Ventures](funds/brazil/rd-saude-ventures.md) | No divulgado públicamente | Salud, bienestar y comercio farmacéutico | Brasil |
@@ -182,8 +188,11 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
+| [1616V](funds/multi-country/1616v.md) | No divulgado públicamente | No divulgado públicamente | América Latina y Estados Unidos |
+| [17-Sigma](funds/multi-country/17-sigma.md) | No divulgado públicamente | No divulgado públicamente | América Latina |
 | [ADN.VC](funds/multi-country/adn.vc.md) | Pre-seed y Seed | Fintech, proptech y contech | América Latina |
 | [Alexia Ventures](funds/multi-country/alexia-ventures.md) | Seed y Serie A | Software inteligente e IA aplicada | América Latina |
+| [BASF Venture Capital GmbH](funds/multi-country/basf-venture-capital.md) | No divulgado públicamente | No divulgado públicamente | Global, incluido Brasil |
 | [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | No divulgado públicamente | Tecnología financiera | Global, incluida América Latina |
 | [devlabs](funds/multi-country/devlabs.md) | Pre-seed y Seed | Software escalable globalmente | América Latina y Estados Unidos |
 | [DILA Capital](funds/multi-country/dila-capital.md) | Seed y Serie A | Tecnología | América Latina hispanohablante y Estados Unidos |
