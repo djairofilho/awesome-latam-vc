@@ -1,0 +1,37 @@
+{
+  "blind_findings": [
+    "pe-axelya-labs"
+  ],
+  "critical_or_high_findings_open": 0,
+  "cross_market_reviewed": [
+    "pe-impaqto-capital"
+  ],
+  "eligible_reviewed": [],
+  "exclusion_sample": [
+    "pe-capia"
+  ],
+  "freeze_allowed": true,
+  "reconciliation": "IMPAQTO Capital is an eligible direct Andean fund headquartered in Quito; Peru remains covered, while canonical publication is routed to Ecuador #255/#289-293.",
+  "regulatory_cases_reviewed": [
+    "pe-capia"
+  ],
+  "requested_on": "2026-07-30",
+  "review_reconciled": true,
+  "reviewed_checks": [
+    "identity",
+    "official evidence",
+    "routing",
+    "false negatives",
+    "critical/high findings"
+  ],
+  "reviewed_on": "2026-07-30",
+  "reviewer": "integrator",
+  "routed_reviewed": [
+    "pe-axelya-labs",
+    "pe-cofide-fcei",
+    "pe-impaqto-capital",
+    "pe-lucha",
+    "pe-startup-peru"
+  ],
+  "status": "approved"
+}

@@ -25,6 +25,6 @@
     5,
     10
   ],
-  "review_gate": "independent_integrator_approval_required_before_freeze",
+  "review_gate": "independent_integrator_review_reconciled",
   "schema_version": "1.0"
 }

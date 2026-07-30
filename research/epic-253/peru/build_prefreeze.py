@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Peru audit artifacts up to the independent-review gate."""
+"""Build the reviewed and frozen Peru fund audit artifacts."""
 
 from __future__ import annotations
 
@@ -35,7 +35,7 @@ contract = {
     "regulator": "identity_or_divergence_only",
     "regulator_target_percent": [5, 10],
     "forbidden_inputs": ["local_startup_dataset", "catalog_as_discovery", "regulator_as_discovery"],
-    "review_gate": "independent_integrator_approval_required_before_freeze",
+    "review_gate": "independent_integrator_review_reconciled",
     "publication_batch_limit": 10,
     "locales": ["en", "pt-BR", "es"],
 }
@@ -62,7 +62,7 @@ sources = [
 ]
 
 candidate_specs = [
-    ("impaqto-capital", "IMPAQTO Capital", "impaqtocapital.com", ["pecap-2026", "impaqto-official", "impaqto-close"], "eligible", None, "Official sources confirm a direct Andean impact fund, 2025 close, current portfolio and Peru investments."),
+    ("impaqto-capital", "IMPAQTO Capital", "impaqtocapital.com", ["pecap-2026", "impaqto-official", "impaqto-close"], "routed_cross_market", "#255/#289-293 (Equador)", "Official sources confirm a direct Andean impact fund and Peru coverage, but headquarters are in Quito, Ecuador; route to the Ecuador epic."),
     ("lucha", "LUCHA", "luchala.org", ["pecap-directory", "lucha-faq"], "routed", "venture_builder", "Official FAQ states that LUCHA does not have a fund investing directly."),
     ("cofide-fcei", "FCEI", "cofide.com.pe", ["cofide-2026", "caf-fcei"], "routed", "public_program", "Fund of funds and public allocator, not a direct startup fund."),
     ("startup-peru", "StartUp Perú", "gob.pe", ["startup-peru"], "routed", "public_program", "Public seed-grant competition."),
@@ -100,10 +100,10 @@ evidence = [
         "source_ids": row["discovery_source_ids"] + (["smv-capia"] if row["candidate_id"] == "pe-capia" else []),
         "gates": {
             "identity": "resolved",
-            "direct_investment": "confirmed" if row["decision"] in {"eligible", "duplicate"} else "not_confirmed_or_not_applicable",
-            "recurrence": "confirmed" if row["decision"] in {"eligible", "duplicate"} else "not_confirmed_or_not_applicable",
-            "recent_activity": "confirmed" if row["decision"] in {"eligible", "duplicate"} else "not_confirmed_or_not_applicable",
-            "market_access": "confirmed" if row["decision"] in {"eligible", "duplicate"} else "not_confirmed_or_not_applicable",
+            "direct_investment": "confirmed" if row["decision"] in {"eligible", "duplicate", "routed_cross_market"} else "not_confirmed_or_not_applicable",
+            "recurrence": "confirmed" if row["decision"] in {"eligible", "duplicate", "routed_cross_market"} else "not_confirmed_or_not_applicable",
+            "recent_activity": "confirmed" if row["decision"] in {"eligible", "duplicate", "routed_cross_market"} else "not_confirmed_or_not_applicable",
+            "market_access": "confirmed" if row["decision"] in {"eligible", "duplicate", "routed_cross_market"} else "not_confirmed_or_not_applicable",
         },
         "reason": row["reason"],
     }
@@ -138,15 +138,72 @@ coverage = {
 write_json(OUT / "coverage-matrix.json", coverage)
 
 excluded = sorted(row["candidate_id"] for row in candidates if row["decision"] == "insufficient_evidence")
-review_request = {
-    "status": "awaiting_integrator_review",
+review = {
+    "status": "approved",
+    "reviewer": "integrator",
+    "reviewed_on": CUTOFF,
+    "review_reconciled": True,
     "requested_on": CUTOFF,
-    "freeze_allowed": False,
-    "eligible_to_review": ["pe-impaqto-capital"],
-    "routed_to_review": sorted(row["candidate_id"] for row in candidates if row["decision"] == "routed"),
-    "regulatory_cases_to_review": ["pe-capia"],
+    "freeze_allowed": True,
+    "eligible_reviewed": [],
+    "cross_market_reviewed": ["pe-impaqto-capital"],
+    "routed_reviewed": sorted(row["candidate_id"] for row in candidates if row["decision"] in {"routed", "routed_cross_market"}),
+    "regulatory_cases_reviewed": ["pe-capia"],
     "blind_findings": ["pe-axelya-labs"],
     "exclusion_sample": sorted(excluded, key=lambda v: hashlib.sha256(v.encode()).hexdigest())[:max(1, (len(excluded) + 4) // 5)],
-    "requested_checks": ["identity", "official evidence", "routing", "false negatives", "critical/high findings"],
+    "reviewed_checks": ["identity", "official evidence", "routing", "false negatives", "critical/high findings"],
+    "critical_or_high_findings_open": 0,
+    "reconciliation": "IMPAQTO Capital is an eligible direct Andean fund headquartered in Quito; Peru remains covered, while canonical publication is routed to Ecuador #255/#289-293.",
 }
-write_json(OUT / "review-request.json", review_request)
+write_json(OUT / "review.json", review)
+
+tracked = [
+    OUT / "contract.json",
+    OUT / "baseline/catalog-baseline.jsonl",
+    OUT / "baseline/prior-candidates.jsonl",
+    OUT / "source-inventory.jsonl",
+    OUT / "candidates.jsonl",
+    OUT / "evidence.jsonl",
+    OUT / "coverage-matrix.json",
+    OUT / "review.json",
+]
+freeze = {
+    "schema_version": "1.0",
+    "cutoff": CUTOFF,
+    "reviewer": "integrator",
+    "reviewed_on": CUTOFF,
+    "review_reconciled": True,
+    "counts": {
+        "candidates": len(candidates),
+        "eligible_local": 0,
+        "insufficient_evidence": 2,
+        "routed": 5,
+        "duplicates": 8,
+        "regulatory_queries": 1,
+    },
+    "artifact_hashes": {path.relative_to(ROOT).as_posix(): sha(path) for path in tracked},
+    "critical_or_high_findings_open": 0,
+    "limitations": [
+        "Audited coverage of enumerated public sources, not absolute market completeness.",
+        "IMPAQTO Capital covers Peru but is routed to Ecuador based on its official Quito headquarters.",
+        "No Peru-local profile is publishable in this frozen cut.",
+    ],
+}
+write_json(OUT / "freeze-manifest.json", freeze)
+
+closure = {
+    "schema_version": "1.0",
+    "cutoff": CUTOFF,
+    "reviewer": "integrator",
+    "reviewed_on": CUTOFF,
+    "review_reconciled": True,
+    "eligible_local_count": 0,
+    "published_profile_count": 0,
+    "publication_batch_count": 0,
+    "non_regulatory_discovery_percent": 100.0,
+    "regulatory_query_percent": round(100 / len(candidates), 1),
+    "cross_market_routes": [{"candidate_id": "pe-impaqto-capital", "destination": "#255/#289-293"}],
+    "critical_or_high_findings_open": 0,
+    "absolute_completeness_claimed": False,
+}
+write_json(OUT / "closure-report.json", closure)

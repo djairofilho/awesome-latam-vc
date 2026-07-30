@@ -28,19 +28,32 @@ class PeruPrefreezeTest(unittest.TestCase):
         self.assertLessEqual(ratio, 10)
 
     def test_every_candidate_has_decision(self):
-        allowed = {"eligible", "insufficient_evidence", "routed", "duplicate"}
+        allowed = {"eligible", "insufficient_evidence", "routed", "routed_cross_market", "duplicate"}
         self.assertTrue(all(row["decision"] in allowed for row in rows("candidates.jsonl")))
 
-    def test_freeze_and_publication_are_blocked(self):
-        request = json.loads((AUDIT / "review-request.json").read_text(encoding="utf-8"))
-        self.assertEqual("awaiting_integrator_review", request["status"])
-        self.assertFalse(request["freeze_allowed"])
-        self.assertFalse((AUDIT / "freeze-manifest.json").exists())
+    def test_review_is_reconciled_and_freeze_exists(self):
+        review = json.loads((AUDIT / "review.json").read_text(encoding="utf-8"))
+        self.assertEqual("approved", review["status"])
+        self.assertTrue(review["freeze_allowed"])
+        self.assertTrue(review["review_reconciled"])
+        self.assertTrue((AUDIT / "freeze-manifest.json").exists())
         self.assertFalse((AUDIT / "publication").exists())
 
-    def test_only_expected_eligible(self):
+    def test_no_local_eligible_and_impaqto_is_routed(self):
         eligible = [row["candidate_id"] for row in rows("candidates.jsonl") if row["decision"] == "eligible"]
-        self.assertEqual(["pe-impaqto-capital"], eligible)
+        self.assertEqual([], eligible)
+        impaqto = next(row for row in rows("candidates.jsonl") if row["candidate_id"] == "pe-impaqto-capital")
+        self.assertEqual("routed_cross_market", impaqto["decision"])
+        self.assertIn("#255", impaqto["canonical_destination"])
+
+    def test_terminal_counts(self):
+        counts = {}
+        for row in rows("candidates.jsonl"):
+            counts[row["decision"]] = counts.get(row["decision"], 0) + 1
+        self.assertEqual(2, counts["insufficient_evidence"])
+        self.assertEqual(4, counts["routed"])
+        self.assertEqual(1, counts["routed_cross_market"])
+        self.assertEqual(8, counts["duplicate"])
 
     def test_new_artifacts_have_no_mojibake(self):
         for path in list(AUDIT.rglob("*.json")) + list(AUDIT.rglob("*.jsonl")):
