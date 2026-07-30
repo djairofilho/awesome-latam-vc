@@ -1,0 +1,42 @@
+{
+  "blind_findings_to_review": [
+    "ec-drivum",
+    "ec-fundacion-crisfe",
+    "ec-593-capital-partners",
+    "ec-fonquito"
+  ],
+  "deterministic_exclusion_sample": [
+    "ec-593-capital-partners",
+    "ec-telefunken-capital"
+  ],
+  "eligible_to_review": [
+    "ec-impaqto-capital"
+  ],
+  "freeze_allowed": false,
+  "proposed_freeze": {
+    "eligible": [
+      "ec-impaqto-capital"
+    ],
+    "publication_batch_count": 1,
+    "publication_batch_limit": 10
+  },
+  "regulatory_cases_to_review": [
+    "ec-creas-ecuador"
+  ],
+  "requested_on": "2026-07-30",
+  "required_checks": [
+    "identity",
+    "official evidence",
+    "routing",
+    "false negatives",
+    "critical or high inconsistencies"
+  ],
+  "routed_to_review": [
+    "ec-endeavor-ecuador",
+    "ec-kruger-labs",
+    "ec-startups-ventures",
+    "ec-fundacion-crisfe",
+    "ec-fonquito"
+  ],
+  "status": "pending_independent_review"
+}

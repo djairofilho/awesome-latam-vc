@@ -1,0 +1,36 @@
+{
+  "cutoff": "2026-07-30",
+  "discovery": "non_regulatory_only",
+  "forbidden_inputs": [
+    "local_startup_dataset",
+    "catalog_as_discovery",
+    "regulator_as_discovery"
+  ],
+  "gates": [
+    "direct_investment",
+    "recurrence",
+    "recent_activity",
+    "market_access",
+    "official_evidence"
+  ],
+  "locales": [
+    "en",
+    "pt-BR",
+    "es"
+  ],
+  "market": "EC",
+  "publication_batch_limit": 10,
+  "regulator": "identity_or_divergence_only",
+  "regulator_target_percent": [
+    5,
+    10
+  ],
+  "review_gate": "independent_integrator_review_required_before_freeze",
+  "schema_version": "1.0",
+  "terminal_decisions": [
+    "eligible",
+    "insufficient_evidence",
+    "routed",
+    "duplicate"
+  ]
+}

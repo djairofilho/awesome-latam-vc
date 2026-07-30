@@ -1,0 +1,62 @@
+{
+  "audited_non_regulatory_handoffs": 1,
+  "blind_search": {
+    "candidate_list_disclosed_to_searcher": false,
+    "new_findings": [
+      "ec-drivum",
+      "ec-fundacion-crisfe",
+      "ec-593-capital-partners",
+      "ec-fonquito"
+    ],
+    "new_source_families": [
+      "blind_ecosystem_map",
+      "blind_sector_report",
+      "municipal_program"
+    ]
+  },
+  "candidate_count": 15,
+  "limitation": "Audited coverage of the enumerated public sources, not absolute market completeness.",
+  "marginal_passes": [
+    {
+      "cumulative": 7,
+      "families": [
+        "industry_association"
+      ],
+      "new_candidates": 7,
+      "pass": 1
+    },
+    {
+      "cumulative": 11,
+      "families": [
+        "industry_news",
+        "fund_news",
+        "regional_platform"
+      ],
+      "new_candidates": 4,
+      "pass": 2
+    },
+    {
+      "cumulative": 15,
+      "families": [
+        "blind_ecosystem_map",
+        "blind_sector_report",
+        "historical_ecosystem_study",
+        "municipal_program"
+      ],
+      "new_candidates": 4,
+      "pass": 3
+    },
+    {
+      "cumulative": 15,
+      "families": [
+        "official_thesis_portfolio",
+        "official_accelerator"
+      ],
+      "new_candidates": 0,
+      "pass": 4
+    }
+  ],
+  "new_non_regulatory_discoveries": 14,
+  "regulatory_percent": 6.7,
+  "regulatory_queries": 1
+}
