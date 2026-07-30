@@ -51,21 +51,28 @@ CV iDEXO is a Brazilian corporate venture capital vehicle with a direct investme
 
 ## Investment profile
 
-- **Official page:** https://api.mziq.com/mzfilemanager/v2/d/d3be5d49-62e7-4def-a3e1-ab25ff09f153/6f68bd5d-b48f-f806-7e1d-8261e809845b?origin=2
+
+- **Website:** Not publicly disclosed
 - **Fund type:** Corporate venture capital vehicle
 - **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Not publicly disclosed
 - **Geography:** Brazil
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 The reviewed TOTVS document identifies CV iDEXO as a corporate venture capital vehicle with a direct portfolio and Brazilian operations. It does not disclose a normalized stage, sector mandate, check size, or founder submission route.
 
-## Observed signals
+## Portfolio signals
 
 An official CV iDEXO announcement dated 2025-02-25 identified the vehicle's participation in Malga's funding round. This transaction confirms activity but does not establish a broader investment mandate.
 

@@ -46,21 +46,28 @@ Positive Ventures is a São Paulo-based impact venture capital firm that makes d
 
 ## Investment profile
 
+
 - **Website:** https://positive.ventures/
 - **Fund type:** Impact venture capital
 - **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Impact investing
 - **Geography:** Brazil
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 Positive Ventures describes itself as an impact venture capital manager with direct capital and a recurring portfolio. The reviewed report confirms operations in São Paulo but does not disclose a normalized entry stage, individual check, or founder submission route.
 
-## Observed signals
+## Portfolio signals
 
 The Positive Impact Report 2025, published on 2026-06-30, documents the firm's activity during 2025. The report is used as an activity signal rather than evidence of a specific stage or check size.
 

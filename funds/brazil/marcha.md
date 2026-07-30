@@ -52,21 +52,28 @@ Marcha is a Brazilian university venture capital organization that invests direc
 
 ## Investment profile
 
+
 - **Website:** https://www.linkedin.com/company/marcha-s-a
 - **Fund type:** University venture capital
 - **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Not publicly disclosed
 - **Geography:** Brazil
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 Tecnopuc presents Marcha as a Brazilian university venture capital organization that invests in startups in its ecosystem. The reviewed sources do not disclose a normalized stage, sector mandate, check size, or founder submission route.
 
-## Observed signals
+## Portfolio signals
 
 Tecnopuc documented Marcha's activity with PureAI on 2025-04-04. This institutional observation confirms investment activity but is not used to infer an artificial intelligence sector mandate.
 

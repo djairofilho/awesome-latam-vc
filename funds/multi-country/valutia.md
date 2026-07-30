@@ -52,21 +52,28 @@ Valutia is a Portugal-based investment firm that makes direct investments in ent
 
 ## Investment profile
 
+
 - **Website:** https://www.valutia.com/
 - **Fund type:** Venture investment
 - **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Not publicly disclosed
 - **Geography:** Portugal and Brazil
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 Valutia states that it invests in entrepreneurs from Portugal and Brazil. The reviewed source reports 28 investments but does not disclose a normalized stage, sector mandate, individual check, or founder submission route.
 
-## Observed signals
+## Portfolio signals
 
 Valutia announced its participation in Wehandle's funding round on 2025-09-09 and described the company's expansion in Brazil and Chile. This transaction confirms activity and Brazilian access without expanding the declared investment geography.
 

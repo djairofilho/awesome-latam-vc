@@ -52,21 +52,28 @@ Lightrock is a global growth and venture investor with a direct portfolio and an
 
 ## Investment profile
 
+
 - **Website:** https://www.lightrock.com/
 - **Fund type:** Growth and venture investment
 - **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed in the normalized taxonomy
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Not publicly disclosed
 - **Geography:** Global, including Brazil
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 Lightrock describes a global growth and venture investment strategy with a direct portfolio. The reviewed material confirms Brazilian portfolio companies and a dedicated Brazil strategy but does not disclose a normalized entry stage, sector mandate, check size, or founder submission route.
 
-## Observed signals
+## Portfolio signals
 
 Lightrock's portfolio material includes Agrolend and Buser in Brazil. On 2026-02-05, Lightrock announced a BRL 50 million commitment from Desenvolve SP to its Brazil strategy. These are observed access and activity signals, not a complete portfolio count.
 
