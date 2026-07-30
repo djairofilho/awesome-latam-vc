@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "epic": 207,
+  "issue": 209,
+  "cutoff_date": "2026-07-30",
+  "status": "complete",
+  "canonical_candidate_count": 1,
+  "cvm_consulted_candidate_count": 0,
+  "cvm_query_rate": 0,
+  "non_cvm_task_share": 1,
+  "decision_counts": {"eligible": 1},
+  "limitations": ["Synthetic example; it does not claim real market coverage."],
+  "generated_on": "2026-07-30"
+}

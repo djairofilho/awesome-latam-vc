@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-207/schemas/review-sample.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "review_id", "candidate_id", "review_group", "selection_algorithm", "reviewer", "reviewed_on", "original_decision", "final_decision", "resolved", "severity", "notes"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "review_id": {"type": "string", "pattern": "^review-fund-br-[a-z0-9][a-z0-9-]*$"},
+    "candidate_id": {"type": "string", "pattern": "^fund-br-[a-z0-9][a-z0-9-]*$"},
+    "review_group": {"enum": ["eligible", "routed", "hybrid", "cvm_consulted", "deterministic_exclusion_sample", "blind_search"]},
+    "selection_algorithm": {"type": "string", "minLength": 1},
+    "reviewer": {"type": "string", "minLength": 1},
+    "reviewed_on": {"type": "string", "format": "date"},
+    "original_decision": {"type": "string", "minLength": 1},
+    "final_decision": {"type": "string", "minLength": 1},
+    "resolved": {"type": "boolean"},
+    "severity": {"enum": ["none", "low", "medium", "high", "critical"]},
+    "notes": {"type": ["string", "null"], "minLength": 1}
+  }
+}

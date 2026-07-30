@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-207/schemas/source-inventory.schema.json",
+  "title": "Brazil funds source inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "source_id", "issue", "source", "initial_url", "source_family", "source_disposition", "research_channel", "is_cvm", "discovery_allowed", "prior_source_ids", "scope_walked", "accessed_on", "robots_status", "access_method", "cache_key", "result", "reason", "owner", "next_action", "notes"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "source_id": {"type": "string", "pattern": "^src-fund-br-[a-z0-9][a-z0-9-]*$"},
+    "issue": {"type": "integer", "minimum": 208, "maximum": 224},
+    "source": {"type": "string", "minLength": 1},
+    "initial_url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "source_family": {"enum": ["allocators", "rounds", "launches", "events", "sector_maps", "regional_sources", "official_portfolios", "foreign_access", "cvm"]},
+    "source_disposition": {"enum": ["prior_source", "new_source", "benchmark_only", "blocked"]},
+    "research_channel": {"enum": ["non_cvm", "cvm"]},
+    "is_cvm": {"type": "boolean"},
+    "discovery_allowed": {"type": "boolean"},
+    "prior_source_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "scope_walked": {"type": "string", "minLength": 1},
+    "accessed_on": {"type": "string", "format": "date"},
+    "robots_status": {"enum": ["allowed", "disallowed", "unavailable", "not_applicable"]},
+    "access_method": {"enum": ["http", "browser", "manual", "not_accessed"]},
+    "cache_key": {"type": ["string", "null"], "minLength": 1},
+    "result": {"enum": ["complete", "partial", "unavailable", "gap_justified"]},
+    "reason": {"type": ["string", "null"], "minLength": 1},
+    "owner": {"type": ["string", "null"], "minLength": 1},
+    "next_action": {"type": ["string", "null"], "minLength": 1},
+    "notes": {"type": ["string", "null"], "minLength": 1}
+  },
+  "allOf": [
+    {"if": {"required": ["is_cvm"], "properties": {"is_cvm": {"const": true}}}, "then": {"properties": {"source_family": {"const": "cvm"}, "research_channel": {"const": "cvm"}, "discovery_allowed": {"const": false}}}},
+    {"if": {"required": ["result"], "properties": {"result": {"enum": ["partial", "unavailable", "gap_justified"]}}}, "then": {"properties": {"reason": {"type": "string"}, "owner": {"type": "string"}, "next_action": {"type": "string"}}}},
+    {"if": {"required": ["robots_status"], "properties": {"robots_status": {"const": "disallowed"}}}, "then": {"properties": {"access_method": {"const": "not_accessed"}, "result": {"enum": ["unavailable", "gap_justified"]}}}}
+  ]
+}

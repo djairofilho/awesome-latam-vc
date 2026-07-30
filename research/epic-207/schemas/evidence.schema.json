@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-207/schemas/evidence.schema.json",
+  "title": "Brazil funds evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "evidence_id", "candidate_id", "subject_type", "subject_id", "url", "title", "publisher", "source_class", "source_type", "cvm_query_id", "published_on", "observed_on", "accessed_on", "claims", "locator", "summary"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "evidence_id": {"type": "string", "pattern": "^ev-fund-br-[a-z0-9][a-z0-9-]*$"},
+    "candidate_id": {"type": "string", "pattern": "^fund-br-[a-z0-9][a-z0-9-]*$"},
+    "subject_type": {"enum": ["candidate", "brand", "manager", "vehicle", "program"]},
+    "subject_id": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "title": {"type": "string", "minLength": 1},
+    "publisher": {"type": "string", "minLength": 1},
+    "source_class": {"enum": ["official", "third_party", "cvm"]},
+    "source_type": {"enum": ["official_website", "official_thesis", "official_portfolio", "official_application", "official_announcement", "official_filing", "official_regulator", "official_document", "news", "directory", "event", "sector_map", "institutional_allocator"]},
+    "cvm_query_id": {"type": ["string", "null"], "pattern": "^cvm-query-fund-br-[a-z0-9][a-z0-9-]*$"},
+    "published_on": {"type": ["string", "null"], "format": "date"},
+    "observed_on": {"type": ["string", "null"], "format": "date"},
+    "accessed_on": {"type": "string", "format": "date"},
+    "claims": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["field", "finding"], "properties": {"field": {"enum": ["identity", "direct_startup_investment", "recurring_vc", "activity", "brazil_access", "legal_identity", "manager_vehicle_relation", "regulatory_divergence"]}, "finding": {"enum": ["confirmed", "contradictory", "inconclusive", "not_disclosed"]}}}},
+    "locator": {"type": "string", "minLength": 1},
+    "summary": {"type": "string", "minLength": 1}
+  },
+  "allOf": [
+    {"if": {"required": ["source_class"], "properties": {"source_class": {"const": "cvm"}}}, "then": {"properties": {"source_type": {"const": "official_regulator"}, "cvm_query_id": {"type": "string"}, "claims": {"items": {"properties": {"field": {"enum": ["legal_identity", "manager_vehicle_relation", "regulatory_divergence"]}}}}}}},
+    {"if": {"required": ["source_class"], "properties": {"source_class": {"enum": ["official", "third_party"]}}}, "then": {"properties": {"cvm_query_id": {"type": "null"}}}}
+  ]
+}
