@@ -10,8 +10,8 @@
   "expected_batch_count": 1,
   "hash_algorithm": "sha256",
   "index_hashes": {
-    "README.es.md": "efa74e99e447c3652a234fe461aec2d70ffefa319f8b5da4786e6059b765fefc",
-    "README.pt.md": "ea4fa2b620c1df059d0563f53c90c6c4269d0981b11692201949726bb6283dc9",
+    "README.es.md": "233ab4f9c14c928c6544e2e226da94622f478acd1b2b1181f447eb06e8ab415b",
+    "README.pt.md": "9711c150eb3582a323c20c54e7f840c91e67e39f396bef064078282b8a7c46fd",
     "ecosystem/funding-platforms/README.es.md": "657c43df611997ac7a485db325beb873e5b7b6ce85075f27829c4a303822603b",
     "ecosystem/funding-platforms/README.md": "25d2f6339dd0377f4181c517663df85a126a3ec64b5b411575b8a5009cc89a22",
     "ecosystem/funding-platforms/README.pt.md": "08709fce49b4839a56d36e6b96a426012b9b5cf77a4157d42c774068be2cb7bd"

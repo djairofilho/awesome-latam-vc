@@ -230,6 +230,13 @@ fundos de VC e, por isso, permanecem fora das tabelas principais. Consulte o
 
 Contribuicoes sao bem-vindas. Leia as [diretrizes de contribuicao](contributing.md) antes de enviar um pull request.
 
+## Licença
+
+Catálogos, perfis, traduções, conjuntos de dados e conteúdo editorial estão
+disponíveis sob a [CC0 1.0 Universal](LICENSE-CC0). O código do site, scripts,
+testes e ferramentas estão disponíveis sob a [Licença MIT](LICENSE-MIT).
+Consulte a [política completa de licenciamento](LICENSE).
+
 ## Apoie o projeto
 
 Este projeto é gratuito e open source. Se ele for útil para você, considere apoiar sua manutenção pelo [GitHub Sponsors](https://github.com/sponsors/djairofilho).

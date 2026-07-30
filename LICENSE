@@ -1,10 +1,53 @@
-Creative Commons Zero v1.0 Universal
+# Repository licensing
 
-The Creative Commons CC0 Public Domain Dedication waives copyright
-interest in a work you've created and dedicates it to the world-wide
-public domain. Use CC0 to opt out of copyright entirely and ensure your
-work has the widest reach. As with the Unlicense and typical software
-licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense.
+Awesome LatAm VC uses separate licenses for its open catalog and its software.
 
-The full text of the CC0 1.0 Universal license can be found at:
-https://creativecommons.org/publicdomain/zero/1.0/legalcode
+## Catalog, profiles, and data: CC0 1.0 Universal
+
+The project's original catalog, profiles, translations, datasets, research
+records, and editorial content are dedicated to the public domain under the
+CC0 1.0 Universal Public Domain Dedication.
+
+This includes:
+
+- `funds/`;
+- `ecosystem/`;
+- `translations/`;
+- `data/`;
+- `docs/`;
+- Markdown documentation;
+- non-code research artifacts such as plans, reports, schemas, JSON, JSONL,
+  CSV, and other collected or generated data.
+
+See [LICENSE-CC0](LICENSE-CC0).
+
+## Site code, scripts, and tools: MIT
+
+The project's original software is released under the MIT License.
+
+This includes:
+
+- `src/`;
+- `scripts/`;
+- `tools/`;
+- `tests/`;
+- `.github/workflows/`;
+- site assets and implementation files under `public/`;
+- source code and tests inside `research/`;
+- root build, package, dependency, and tool configuration files.
+
+See [LICENSE-MIT](LICENSE-MIT).
+
+## Scope and precedence
+
+An explicit license or SPDX notice in a file overrides the rules above. When a
+file combines software and catalog material, the license stated in that file
+controls. If no explicit notice exists, the path and material-type rules above
+apply.
+
+These licenses cover only original work contributed to Awesome LatAm VC.
+Third-party websites, source titles, trademarks, organization names, and linked
+materials remain subject to their respective owners' rights.
+
+Versions previously published under CC0 remain available under the terms that
+applied when they were published.

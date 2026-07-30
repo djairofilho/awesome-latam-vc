@@ -230,6 +230,14 @@ el [alcance y los criterios de inclusión](ecosystem/README.md).
 
 Las contribuciones son bienvenidas. Lee las [guias de contribucion](contributing.md) antes de enviar un pull request.
 
+## Licencia
+
+Los catálogos, perfiles, traducciones, conjuntos de datos y el contenido
+editorial están disponibles bajo [CC0 1.0 Universal](LICENSE-CC0). El código del
+sitio, los scripts, las pruebas y las herramientas están disponibles bajo la
+[Licencia MIT](LICENSE-MIT). Consulta la
+[política completa de licencias](LICENSE).
+
 ## Apoya el proyecto
 
 Este proyecto es gratuito y de código abierto. Si te resulta útil, considera apoyar su mantenimiento a través de [GitHub Sponsors](https://github.com/sponsors/djairofilho).

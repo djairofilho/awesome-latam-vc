@@ -187,3 +187,16 @@ python tools/seo_geo/validate_profiles.py path/to/localized/profile/directory
 4. Ensure your changes follow the format guidelines above.
 5. Link to the official sources that validate the entry. Use third-party sources
    only when no official source exists and identify them as secondary.
+
+## Licensing contributions
+
+By contributing original work, you agree that it will be made available under
+the license that applies to its scope:
+
+- catalog entries, profiles, translations, datasets, research records, and
+  editorial content use CC0 1.0 Universal;
+- site code, scripts, tests, automation, and tools use the MIT License.
+
+See the [repository licensing policy](LICENSE) for the complete path and
+material-type rules. Do not submit third-party material unless its terms permit
+redistribution under the applicable project license.

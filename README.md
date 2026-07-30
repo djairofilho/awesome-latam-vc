@@ -230,6 +230,13 @@ they remain outside the main tables. See the
 
 Contributions are welcome. Please read the [contribution guidelines](contributing.md) before submitting a pull request.
 
+## License
+
+Catalogs, profiles, translations, datasets, and editorial content are available
+under [CC0 1.0 Universal](LICENSE-CC0). Site code, scripts, tests, and tools are
+available under the [MIT License](LICENSE-MIT). See the complete
+[repository licensing policy](LICENSE).
+
 ## Support the project
 
 This project is free and open source. If you find it useful, consider supporting its maintenance through [GitHub Sponsors](https://github.com/sponsors/djairofilho).
