@@ -22,6 +22,7 @@ try:
     )
     from .public_program_validation import validate_epic_65
     from .platform_validation import validate_epic_64
+    from .fund_reaudit_validation import validate_epic_207
 except ImportError:  # Allow `python tools/research/validate.py`.
     from angel_validation import validate_epic_63
     from accelerator_validation import (
@@ -32,6 +33,7 @@ except ImportError:  # Allow `python tools/research/validate.py`.
     )
     from public_program_validation import validate_epic_65
     from platform_validation import validate_epic_64
+    from fund_reaudit_validation import validate_epic_207
 
 
 README_NAMES = ("README.md", "README.pt.md", "README.es.md")
@@ -422,6 +424,7 @@ def validate_repository(root: Path, base_ref: str) -> list[str]:
     errors.extend(validate_epic_63(root))
     errors.extend(validate_epic_64(root))
     errors.extend(validate_epic_65(root))
+    errors.extend(validate_epic_207(root))
 
     # Source code intentionally contains the marker literals used by this check.
     # Scan authored/research content, not the validator implementation itself.

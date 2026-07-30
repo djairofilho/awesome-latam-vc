@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-207/schemas/audit-report.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "epic", "issue", "cutoff_date", "status", "canonical_candidate_count", "cvm_consulted_candidate_count", "cvm_query_rate", "non_cvm_task_share", "decision_counts", "limitations", "generated_on"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "epic": {"const": 207},
+    "issue": {"type": "integer", "minimum": 209, "maximum": 224},
+    "cutoff_date": {"type": "string", "format": "date"},
+    "status": {"enum": ["planned", "running", "complete", "frozen"]},
+    "canonical_candidate_count": {"type": "integer", "minimum": 0},
+    "cvm_consulted_candidate_count": {"type": "integer", "minimum": 0},
+    "cvm_query_rate": {"type": "number", "minimum": 0, "maximum": 0.1},
+    "non_cvm_task_share": {"type": "number", "minimum": 0.9, "maximum": 1},
+    "decision_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "generated_on": {"type": "string", "format": "date"}
+  }
+}

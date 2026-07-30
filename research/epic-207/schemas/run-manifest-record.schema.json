@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-207/schemas/run-manifest-record.schema.json",
+  "title": "Brazil funds run manifest record",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "record_type", "run_id", "issues", "contract_issue", "cutoff_date", "created_on", "status", "task_count", "coordinator", "scraping_performed", "hash_algorithm", "artifact_hashes", "notes"],
+      "properties": {
+        "schema_version": {"const": "1.0"},
+        "record_type": {"const": "run"},
+        "run_id": {"type": "string", "pattern": "^run-fund-br-[a-z0-9][a-z0-9-]*$"},
+        "issues": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "integer", "minimum": 209, "maximum": 224}},
+        "contract_issue": {"const": 208},
+        "cutoff_date": {"type": "string", "format": "date"},
+        "created_on": {"type": "string", "format": "date"},
+        "status": {"enum": ["planned", "running", "completed", "frozen", "cancelled"]},
+        "task_count": {"type": "integer", "minimum": 1},
+        "coordinator": {"type": "string", "minLength": 1},
+        "scraping_performed": {"type": "boolean"},
+        "hash_algorithm": {"type": ["string", "null"], "enum": ["sha256", null]},
+        "artifact_hashes": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "source-inventory.jsonl": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+            "candidates.jsonl": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+            "evidence.jsonl": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+            "identity-resolution.jsonl": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+            "coverage-matrix.jsonl": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+            "cvm-query-log.jsonl": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+            "review-sample.jsonl": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+          }
+        },
+        "notes": {"type": ["string", "null"], "minLength": 1}
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "record_type", "run_id", "task_id", "issue", "phase", "source_family", "research_channel", "worker_id", "shard_path", "status", "reason", "owner", "next_action"],
+      "properties": {
+        "schema_version": {"const": "1.0"},
+        "record_type": {"const": "task"},
+        "run_id": {"type": "string", "pattern": "^run-fund-br-[a-z0-9][a-z0-9-]*$"},
+        "task_id": {"type": "string", "pattern": "^task-fund-br-[a-z0-9][a-z0-9-]*$"},
+        "issue": {"type": "integer", "minimum": 209, "maximum": 224},
+        "phase": {"enum": ["baseline", "discovery", "validation", "adjudication", "review", "audit"]},
+        "source_family": {"enum": ["allocators", "rounds", "launches", "events", "sector_maps", "regional_sources", "official_portfolios", "foreign_access", "cvm", "not_applicable"]},
+        "research_channel": {"enum": ["non_cvm", "cvm", "not_applicable"]},
+        "worker_id": {"type": "string", "pattern": "^worker-[a-z0-9][a-z0-9-]*$"},
+        "shard_path": {"type": "string", "pattern": "^research/epic-207/brazil/shards/worker-[a-z0-9][a-z0-9-]*$"},
+        "status": {"enum": ["todo", "leased", "running", "done", "blocked"]},
+        "reason": {"type": ["string", "null"], "minLength": 1},
+        "owner": {"type": ["string", "null"], "minLength": 1},
+        "next_action": {"type": ["string", "null"], "minLength": 1}
+      }
+    }
+  ]
+}

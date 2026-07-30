@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-207/schemas/cvm-query.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "query_id", "candidate_id", "question", "searched_identifier", "reference", "accessed_on", "minimum_fact", "divergence", "outcome", "confirmed_claims", "owner", "next_action"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "query_id": {"type": "string", "pattern": "^cvm-query-fund-br-[a-z0-9][a-z0-9-]*$"},
+    "candidate_id": {"type": "string", "pattern": "^fund-br-[a-z0-9][a-z0-9-]*$"},
+    "question": {"type": "string", "minLength": 1},
+    "searched_identifier": {"type": "string", "minLength": 1},
+    "reference": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "accessed_on": {"type": "string", "format": "date"},
+    "minimum_fact": {"type": "string", "minLength": 1},
+    "divergence": {"type": ["string", "null"], "minLength": 1},
+    "outcome": {"type": "string", "minLength": 1},
+    "confirmed_claims": {"type": "array", "uniqueItems": true, "items": {"enum": ["legal_identity", "manager_vehicle_relation", "regulatory_divergence"]}},
+    "owner": {"type": "string", "minLength": 1},
+    "next_action": {"type": ["string", "null"], "minLength": 1}
+  }
+}

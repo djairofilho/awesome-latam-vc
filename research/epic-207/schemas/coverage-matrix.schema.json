@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/djairofilho/awesome-latam-vc/research/epic-207/schemas/coverage-matrix.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "coverage_id", "issue", "source_family", "geography_scope", "source_ids", "planned_sources", "completed_sources", "candidate_ids", "status", "reason", "owner", "next_action"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "coverage_id": {"type": "string", "pattern": "^coverage-fund-br-[a-z0-9][a-z0-9-]*$"},
+    "issue": {"type": "integer", "minimum": 209, "maximum": 224},
+    "source_family": {"enum": ["allocators", "rounds", "launches", "events", "sector_maps", "regional_sources", "official_portfolios", "foreign_access", "cvm"]},
+    "geography_scope": {"enum": ["brazil", "foreign_access_brazil"]},
+    "source_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^src-fund-br-[a-z0-9][a-z0-9-]*$"}},
+    "planned_sources": {"type": "integer", "minimum": 0},
+    "completed_sources": {"type": "integer", "minimum": 0},
+    "candidate_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^fund-br-[a-z0-9][a-z0-9-]*$"}},
+    "status": {"enum": ["planned", "running", "complete", "gap_justified"]},
+    "reason": {"type": ["string", "null"], "minLength": 1},
+    "owner": {"type": ["string", "null"], "minLength": 1},
+    "next_action": {"type": ["string", "null"], "minLength": 1}
+  }
+}
