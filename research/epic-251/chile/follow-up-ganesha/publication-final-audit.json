@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "epic": 251,
+  "issue": 273,
+  "candidate_id": "fund-cl-the-ganesha-fund",
+  "status": "pass",
+  "cutoff_date": "2026-07-30",
+  "completed_on": "2026-07-30",
+  "review": {
+    "status": "completed",
+    "result": "approved",
+    "reviewer": "integrator",
+    "reviewed_on": "2026-07-30",
+    "evidence_count": 8,
+    "critical_findings_open": 0,
+    "high_findings_open": 0,
+    "publication_authorized": true,
+    "review_sha256": "dfcb3f2d3bbc3c9499cfc9c3379bf42a878d7769ed1b643af110f9912c4fa118",
+    "evidence_sha256": "21c7507eaf1d34c028b84104f8808e6e7eeeffcf8c684affb46947eaa6218957"
+  },
+  "identity": {
+    "canonical_name": "The Ganesha Fund",
+    "operator": "The Ganesha Lab",
+    "catalog_base": "CL",
+    "operator_city": "Santiago",
+    "vehicle_legal_name": "The Ganesha Lab Fund I LP",
+    "vehicle_jurisdiction": "US-DE",
+    "countries_covered": [
+      "LATAM"
+    ],
+    "accelerator_entity": "accelerator:ganesha-go-europe",
+    "cross_catalog_relationship": "same_operator_distinct_entity"
+  },
+  "regulatory_usage": {
+    "discovery": 0,
+    "eligibility": 0,
+    "identity_or_divergence": 0,
+    "cmf_queries": 0
+  },
+  "publication": {
+    "canonical_profile": "funds/chile/the-ganesha-fund.md",
+    "pt_br_profile": "translations/pt-BR/funds/chile/the-ganesha-fund.md",
+    "es_profile": "translations/es/funds/chile/the-ganesha-fund.md",
+    "translation_status": "complete",
+    "profile_hashes": {
+      "funds/chile/the-ganesha-fund.md": "c5d338b75618c8f1b60ce762d7b638c1c5bbfb63a22a98137317028aeb543f75",
+      "translations/pt-BR/funds/chile/the-ganesha-fund.md": "569014a244ac1072205afbb7b20ec42932562a75cd8e2feda30539e5fb636173",
+      "translations/es/funds/chile/the-ganesha-fund.md": "a19edcf4f268393879e7eb5edf2574cc6ed4a3c2eb8c4cfe96ad243a0af227e5"
+    }
+  },
+  "catalog_after_publication": {
+    "entities": 277,
+    "funds": 202,
+    "entities_json_sha256": "8f19e2c01d63d4dc17593ce18e1bf366278a2e88b14c73bede5aa5f583b76d94",
+    "entities_csv_sha256": "0fbe767fbb02812a1b176967392ab7b22b726fa6785bc3fe38ae1771ddb9c22f"
+  },
+  "validation": {
+    "research_contract": "pass",
+    "profile_contract": "pass",
+    "editorial_contract": "pass",
+    "structured_exports_deterministic": true,
+    "python_tests": {
+      "passed": 55,
+      "failed": 0
+    },
+    "node_tests": {
+      "passed": 40,
+      "failed": 0
+    },
+    "astro_check": {
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    },
+    "utf8_scan": "pass",
+    "diff_check": "pass"
+  },
+  "integrity": {
+    "fund_and_accelerator_separated": true,
+    "operator_and_vehicle_geographies_separated": true,
+    "all_locales_complete": true,
+    "indexes_updated": true,
+    "exports_updated": true,
+    "issues_closed": false
+  },
+  "notes": [
+    "The Decile-hosted official root currently redirects interactive visitors to sign-in; the audit limits fund-landing claims to its public indexed content and corroborates direct and recurring investment through other official and institutional sources.",
+    "This follow-up corrects a country-boundary false negative. It does not claim totality of the Chilean market."
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "blind_search": {
+    "candidate_list_withheld": true,
+    "families": [
+      "blind_academic",
+      "blind_independent_database"
+    ],
+    "new_eligible_after_reconciliation": 0,
+    "new_findings": [
+      "uy-myelin-vc",
+      "uy-arche-company",
+      "uy-prosperitas-capital-partners"
+    ]
+  },
+  "canonical_candidates": 36,
+  "cutoff": "2026-07-30",
+  "decision_counts": {
+    "duplicate": 13,
+    "eligible": 5,
+    "insufficient_evidence": 4,
+    "routed": 14
+  },
+  "family_yield": [
+    {
+      "family": "allocator_profile",
+      "new_names_observed": 2,
+      "sources_walked": 6
+    },
+    {
+      "family": "blind_academic",
+      "new_names_observed": 3,
+      "sources_walked": 1
+    },
+    {
+      "family": "blind_independent_database",
+      "new_names_observed": 2,
+      "sources_walked": 1
+    },
+    {
+      "family": "industry_association",
+      "new_names_observed": 4,
+      "sources_walked": 1
+    },
+    {
+      "family": "industry_directory",
+      "new_names_observed": 18,
+      "sources_walked": 1
+    },
+    {
+      "family": "institutional_allocator",
+      "new_names_observed": 8,
+      "sources_walked": 1
+    },
+    {
+      "family": "institutional_map",
+      "new_names_observed": 8,
+      "sources_walked": 1
+    },
+    {
+      "family": "investor_survey",
+      "new_names_observed": 0,
+      "sources_walked": 1
+    },
+    {
+      "family": "official_domain",
+      "new_names_observed": 0,
+      "sources_walked": 1
+    },
+    {
+      "family": "official_identity",
+      "new_names_observed": 0,
+      "sources_walked": 2
+    },
+    {
+      "family": "official_portfolio",
+      "new_names_observed": 0,
+      "sources_walked": 9
+    },
+    {
+      "family": "official_program",
+      "new_names_observed": 0,
+      "sources_walked": 2
+    },
+    {
+      "family": "official_thesis",
+      "new_names_observed": 0,
+      "sources_walked": 6
+    },
+    {
+      "family": "public_company_profile",
+      "new_names_observed": 0,
+      "sources_walked": 1
+    }
+  ],
+  "limitation": "Audited coverage of the walked public sources, not a claim of absolute market completeness.",
+  "marginal_passes": [
+    {
+      "cumulative": 22,
+      "families": [
+        "industry_directory",
+        "institutional_map"
+      ],
+      "new_canonical_candidates": 22,
+      "pass": 1
+    },
+    {
+      "cumulative": 30,
+      "families": [
+        "institutional_allocator"
+      ],
+      "new_canonical_candidates": 8,
+      "pass": 2
+    },
+    {
+      "cumulative": 33,
+      "families": [
+        "allocator_profile",
+        "official_portfolio",
+        "official_thesis"
+      ],
+      "new_canonical_candidates": 3,
+      "pass": 3
+    },
+    {
+      "cumulative": 36,
+      "families": [
+        "blind_academic",
+        "blind_independent_database"
+      ],
+      "new_canonical_candidates": 3,
+      "pass": 4
+    },
+    {
+      "cumulative": 36,
+      "families": [
+        "saturation_recheck"
+      ],
+      "new_canonical_candidates": 0,
+      "pass": 5
+    }
+  ],
+  "non_regulatory_discovery_count": 36,
+  "non_regulatory_discovery_percent": 100.0,
+  "regulatory_queries": 2,
+  "regulatory_query_percent_of_candidates": 5.6,
+  "schema_version": "1.0"
+}

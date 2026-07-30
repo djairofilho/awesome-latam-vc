@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 280,
+    "entity_count": 286,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -3924,6 +3924,41 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "UY",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "UY"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "software",
+        "artificial_intelligence"
+      ],
+      "founder_route": "https://www.eagerventures.io/#contact",
+      "id": "fund:eager-ventures",
+      "name": "Eager Ventures",
+      "official_website": "https://www.eagerventures.io/",
+      "operator": null,
+      "source_profile": "funds/uruguay/eager-ventures.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Eager Ventures",
+          "url": "https://www.eagerventures.io/"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Eager Ventures is a Uruguay-based early-stage investor combining financial investment with product and engineering support.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "GLOBAL",
         "kind": "global"
       },
@@ -5073,6 +5108,48 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "UY",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "UY",
+        "AR",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "artificial_intelligence",
+        "fintech"
+      ],
+      "founder_route": "https://ic-ventures.vc/#contacto",
+      "id": "fund:ic-ventures",
+      "name": "IC Ventures",
+      "official_website": "https://ic-ventures.vc/",
+      "operator": null,
+      "source_profile": "funds/uruguay/ic-ventures.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "IC Ventures",
+          "url": "https://ic-ventures.vc/"
+        },
+        {
+          "kind": "official_program",
+          "title": "ANII: IC Ventures",
+          "url": "https://anii.org.uy/emprendimientos/fondos-de-capital-riesgo/165/ic-ventures/"
+        }
+      ],
+      "stages": [
+        "seed",
+        "series_a"
+      ],
+      "summary": "IC Ventures is a Montevideo-based private fund investing in Latin American technology startups at seed and pre-Series A.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "GLOBAL",
         "kind": "global"
       },
@@ -6115,6 +6192,56 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "UY",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "UY",
+        "GLOBAL"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "life_sciences",
+        "one_health",
+        "biotechnology"
+      ],
+      "founder_route": "https://labplus.uy/start-ups/",
+      "id": "fund:labplus-venture-fund",
+      "name": "LAB+ Venture Fund",
+      "official_website": "https://labplus.uy/",
+      "operator": null,
+      "source_profile": "funds/uruguay/labplus-venture-fund.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "ANII: LAB+ Venture Fund",
+          "url": "https://anii.org.uy/emprendimientos/organizaciones-de-capital-emprendedor/540/lab-venture-fund/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "LAB+ portfolio",
+          "url": "https://labplus.uy/portfolio/"
+        },
+        {
+          "kind": "official_application",
+          "title": "LAB+ start-ups",
+          "url": "https://labplus.uy/start-ups/"
+        },
+        {
+          "kind": "official_thesis",
+          "title": "Qué hacemos",
+          "url": "https://labplus.uy/es/que-hacemos/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "LAB+ Venture Fund is a Montevideo life-sciences vehicle created through collaboration between Institut Pasteur de Montevideo and FICUS Advisory.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "GLOBAL",
         "kind": "global"
       },
@@ -6646,6 +6773,52 @@
       ],
       "summary": "Morro Ventures is a Puerto Rico-based early-stage investor serving the Caribbean and Latin America.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "UY",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "UY",
+        "LATAM",
+        "ES"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "human_connection",
+        "impact",
+        "technology"
+      ],
+      "founder_route": "https://mrpink.vc/contacto",
+      "id": "fund:mrpink-vc",
+      "name": "MrPink VC",
+      "official_website": "https://mrpink.vc/",
+      "operator": null,
+      "source_profile": "funds/uruguay/mrpink-vc.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "MrPink VC",
+          "url": "https://mrpink.vc/"
+        },
+        {
+          "kind": "official_thesis",
+          "title": "Nuestra tesis",
+          "url": "https://mrpink.vc/tesis"
+        },
+        {
+          "kind": "official_application",
+          "title": "Contacto",
+          "url": "https://mrpink.vc/contacto"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "MrPink VC is a Uruguay-based early-stage venture capital manager focused on startups that strengthen human connection.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -8780,6 +8953,72 @@
       "verified_on": "2026-07-26"
     },
     {
+      "aliases": [
+        "The Ganesha Lab Fund",
+        "The Ganesha Lab Fund I LP"
+      ],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "biotech",
+        "human_health",
+        "planetary_health",
+        "agtech",
+        "foodtech",
+        "medtech"
+      ],
+      "founder_route": "https://theganeshafund.decilehub.com/",
+      "id": "fund:the-ganesha-fund",
+      "name": "The Ganesha Fund",
+      "official_website": "https://theganeshafund.decilehub.com/",
+      "operator": "The Ganesha Lab",
+      "source_profile": "funds/chile/the-ganesha-fund.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "The Ganesha Fund official landing",
+          "url": "https://theganeshafund.decilehub.com/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "The Ganesha Fund launch and vehicle identity",
+          "url": "https://theganeshalab.com/2023-a-year-of-expansion-and-consolidation/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "The Ganesha Lab investment in Amplify Dynamics",
+          "url": "https://theganeshalab.com/es/the-ganesha-lab-invests-in-amplify-dynamics-to-drive-innovation-in-lipid-nanoparticles-purification-technology/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Go Europe Connect 2026 investment pipeline",
+          "url": "https://theganeshalab.com/es/go-europe-connect-2026/"
+        },
+        {
+          "kind": "official_program",
+          "title": "ANII venture-capital organization registry",
+          "url": "https://anii.org.uy/emprendimientos/organizaciones-de-capital-emprendedor/"
+        },
+        {
+          "kind": "secondary",
+          "title": "Uruguay Innovation Hub co-investment in TELL",
+          "url": "https://www.aegu.org.uy/post/uruguay-innovation-hub-concret%C3%B3-su-segunda-coinversi%C3%B3n-cu%C3%A1l-fue-la-startup-seleccionada-para-recib"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "The Ganesha Fund is an early-stage biotech fund operated by Chile-based The Ganesha Lab for startups originating in Latin America.",
+      "verified_on": "2026-07-30"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "LATAM",
@@ -8858,6 +9097,51 @@
       ],
       "summary": "TM3 Capital is an investment organization listed in this directory; its current investment mandate could not be verified.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "UY",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "UY",
+        "AR",
+        "US",
+        "IL",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "proptech",
+        "entertainment",
+        "education",
+        "biotechnology",
+        "impact"
+      ],
+      "founder_route": "https://anii.org.uy/emprendimientos/fondos-de-capital-riesgo/169/tokai-ventures/",
+      "id": "fund:tokai-ventures",
+      "name": "Tokai Ventures",
+      "official_website": "https://www.tokaiventures.com/",
+      "operator": null,
+      "source_profile": "funds/uruguay/tokai-ventures.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "ANII: Tokai Ventures",
+          "url": "https://anii.org.uy/emprendimientos/fondos-de-capital-riesgo/169/tokai-ventures/"
+        },
+        {
+          "kind": "secondary",
+          "title": "URUCAP member directory 2025",
+          "url": "https://drive.google.com/file/d/1tGvZhIUVvhKVyWO4Y2L64LZEvJZinDLK/view"
+        }
+      ],
+      "stages": [
+        "seed"
+      ],
+      "summary": "Tokai Ventures is a Montevideo-based seed and venture capital fund investing across Uruguay and international markets.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],

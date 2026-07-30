@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "fund-cl-the-ganesha-fund",
+  "name": "The Ganesha Fund",
+  "aliases": [
+    "The Ganesha Lab Fund",
+    "The Ganesha Lab Fund I LP"
+  ],
+  "entity_type": "fund",
+  "operator": "The Ganesha Lab",
+  "operator_base_geography": {
+    "kind": "country",
+    "code": "CL",
+    "city": "Santiago"
+  },
+  "vehicle_jurisdiction": {
+    "country": "US",
+    "subdivision": "US-DE"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "fund_type": "Venture capital",
+  "stages": [
+    "pre_seed",
+    "seed"
+  ],
+  "focuses": [
+    "biotech",
+    "human health",
+    "planetary health",
+    "agtech",
+    "foodtech",
+    "medtech"
+  ],
+  "official_site": "https://theganeshafund.decilehub.com/",
+  "application_route": "https://theganeshafund.decilehub.com/",
+  "destination": "funds/chile/the-ganesha-fund.md",
+  "discovery_channel": "non_regulatory",
+  "regulator_used_for_discovery": false,
+  "regulator_used_for_eligibility": false,
+  "evidence_ids": [
+    "ev-cl-ganesha-01",
+    "ev-cl-ganesha-02",
+    "ev-cl-ganesha-03",
+    "ev-cl-ganesha-04",
+    "ev-cl-ganesha-05",
+    "ev-cl-ganesha-06",
+    "ev-cl-ganesha-07",
+    "ev-cl-ganesha-08"
+  ],
+  "decision": "eligible",
+  "status": "decided",
+  "reason": "Official sources establish a recurring early-stage fund, direct investments, a current investment pipeline, LATAM focus, external founder access, a Chile-based operating manager, and a separately identified Delaware vehicle."
+}

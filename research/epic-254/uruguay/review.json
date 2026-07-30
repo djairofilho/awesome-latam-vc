@@ -1,0 +1,45 @@
+{
+  "critical_or_high_findings_open": 0,
+  "eligible_review_required": [
+    "uy-eager-ventures",
+    "uy-ic-ventures",
+    "uy-labplus-venture-fund",
+    "uy-mrpink-vc",
+    "uy-tokai-ventures"
+  ],
+  "exclusion_population": 17,
+  "exclusion_population_source": "candidates.jsonl decisions duplicate or insufficient_evidence",
+  "exclusion_sample": [
+    "uy-ewa-capital",
+    "uy-gridx",
+    "uy-draco-capital",
+    "uy-prosperitas-capital-partners"
+  ],
+  "exclusion_sample_rule": "SHA-256(candidate_id), ascending; first ceil(population/5)",
+  "regulatory_cases_review_required": [
+    "uy-skywalker",
+    "uy-zorzal"
+  ],
+  "requested_on": "2026-07-30",
+  "review_reconciled": true,
+  "reviewed_on": "2026-07-30",
+  "reviewer": "integrator",
+  "routed_review_required": [
+    "uy-beta-impacto",
+    "uy-cibersons",
+    "uy-draper-startup-house",
+    "uy-labplus",
+    "uy-myelin-vc",
+    "uy-ourcrowd-latam-labs",
+    "uy-primary-x",
+    "uy-rou-partners",
+    "uy-saasholic",
+    "uy-thaleslab",
+    "uy-the-ganesha-fund",
+    "uy-tritemus-fund",
+    "uy-white-lions",
+    "uy-zorzal"
+  ],
+  "schema_version": "1.0",
+  "status": "approved"
+}

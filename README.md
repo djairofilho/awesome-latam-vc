@@ -14,11 +14,12 @@ A curated list of Venture Capital funds investing in Latin America.
 - [Paraguay](#paraguay)
 - [Peru](#peru)
 - [Venezuela](#venezuela)
+- [Uruguay](#uruguay)
 - [Global with LatAm Presence](#global-with-latam-presence)
 
 ---
 
-The index is optimized for quick comparison and currently covers 205 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
+The index is optimized for quick comparison and currently covers 211 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
 
 ## Pan-Latin America (LatAm based)
 
@@ -194,6 +195,7 @@ The index is optimized for quick comparison and currently covers 205 funds. All 
 | [SQM Lithium Ventures](funds/chile/sqm-lithium-ventures.md) | Not publicly disclosed | Lithium, energy transition, mobility, and water technology | Global |
 | [Südlich Capital](funds/chile/sudlich-capital.md) | Not publicly disclosed | Science and food technology | Southern Chile |
 | [Tantauco Ventures](funds/chile/tantauco-ventures.md) | Not publicly disclosed | Technology, sector agnostic | Latin America |
+| [The Ganesha Fund](funds/chile/the-ganesha-fund.md) | Pre-seed and Seed | Biotech, human health, planetary health, agtech, foodtech, and medtech | Latin America |
 | [Venturance](funds/chile/venturance.md) | Seed and Series A | Biotechnology, medical devices, foodtech, agritech, and retail technology | Latin America |
 | [WeBoost](funds/chile/weboost.md) | Not publicly disclosed | Technology and regional scaling | Latin America |
 
@@ -225,6 +227,16 @@ The index is optimized for quick comparison and currently covers 205 funds. All 
 | --- | --- | --- | --- |
 | [Cibersons](funds/regional/cibersons.md) | Pre-seed, Seed, and Series A | Technology, sector agnostic | Latin America and the United States |
 | [iThink VC](funds/regional/ithink-vc.md) | Pre-seed and Seed | Technology solving structural problems | Paraguay, Peru, Ecuador, Bolivia, and Uruguay |
+
+## Uruguay
+
+| Fund | Stage | Focus | Geography |
+| --- | --- | --- | --- |
+| [Eager Ventures](funds/uruguay/eager-ventures.md) | Pre-seed and Seed | Technology, software, and artificial intelligence | Uruguay |
+| [IC Ventures](funds/uruguay/ic-ventures.md) | Seed and Pre-Series A | Technology, artificial intelligence, and fintech | Uruguay, Argentina, and Latin America |
+| [LAB+ Venture Fund](funds/uruguay/labplus-venture-fund.md) | Not publicly disclosed | Life sciences, One Health, and biotechnology | Uruguay and global |
+| [MrPink VC](funds/uruguay/mrpink-vc.md) | Early stage | Human connection, impact, and technology | Uruguay, Latin America, and Spain |
+| [Tokai Ventures](funds/uruguay/tokai-ventures.md) | Seed | Proptech, entertainment, education, biotechnology, and impact | Uruguay, Argentina, the United States, Israel, and Latin America |
 
 ## Venezuela
 

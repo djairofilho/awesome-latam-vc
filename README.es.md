@@ -14,11 +14,12 @@ Una lista curada de fondos de Venture Capital que invierten en América Latina.
 - [Paraguay](#paraguay)
 - [Perú](#perú)
 - [Venezuela](#venezuela)
+- [Uruguay](#uruguay)
 - [Global con presencia en América Latina](#global-con-presencia-en-américa-latina)
 
 ---
 
-El índice está optimizado para una comparación rápida y actualmente reúne 205 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
+El índice está optimizado para una comparación rápida y actualmente reúne 211 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
 
 ## Pan-Latinoamérica (sede en la región)
 
@@ -194,6 +195,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [SQM Lithium Ventures](funds/chile/sqm-lithium-ventures.md) | No divulgado públicamente | Litio, transición energética, movilidad y tecnología hídrica | Global |
 | [Südlich Capital](funds/chile/sudlich-capital.md) | No divulgado públicamente | Ciencia y tecnología de alimentos | Sur de Chile |
 | [Tantauco Ventures](funds/chile/tantauco-ventures.md) | No divulgado públicamente | Tecnología, sin restricción sectorial | América Latina |
+| [The Ganesha Fund](funds/chile/the-ganesha-fund.md) | Pre-seed y Seed | Biotecnología, salud humana, salud planetaria, agtech, foodtech y medtech | América Latina |
 | [Venturance](funds/chile/venturance.md) | Seed y Serie A | Biotecnología, dispositivos médicos, foodtech, agritech y tecnología para retail | América Latina |
 | [WeBoost](funds/chile/weboost.md) | No divulgado públicamente | Tecnología y expansión regional | América Latina |
 
@@ -225,6 +227,16 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | --- | --- | --- | --- |
 | [Cibersons](funds/regional/cibersons.md) | Pre-semilla, Semilla y Serie A | Tecnología, agnóstico por sector | América Latina y Estados Unidos |
 | [iThink VC](funds/regional/ithink-vc.md) | Pre-semilla y Semilla | Tecnología para problemas estructurales | Paraguay, Perú, Ecuador, Bolivia y Uruguay |
+
+## Uruguay
+
+| Fondo | Etapa | Enfoque | Geografía |
+| --- | --- | --- | --- |
+| [Eager Ventures](funds/uruguay/eager-ventures.md) | Pre-seed y Seed | Tecnología, software e inteligencia artificial | Uruguay |
+| [IC Ventures](funds/uruguay/ic-ventures.md) | Seed y Pre-Serie A | Tecnología, inteligencia artificial y fintech | Uruguay, Argentina y América Latina |
+| [LAB+ Venture Fund](funds/uruguay/labplus-venture-fund.md) | No divulgado públicamente | Ciencias de la vida, Una Salud y biotecnología | Uruguay y global |
+| [MrPink VC](funds/uruguay/mrpink-vc.md) | Etapa temprana | Conexión humana, impacto y tecnología | Uruguay, América Latina y España |
+| [Tokai Ventures](funds/uruguay/tokai-ventures.md) | Seed | Proptech, entretenimiento, educación, biotecnología e impacto | Uruguay, Argentina, Estados Unidos, Israel y América Latina |
 
 ## Venezuela
 
