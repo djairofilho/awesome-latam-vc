@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "status": "awaiting_independent_review",
+  "reviewer_must_not_receive_candidate_list_before_blind_search": true,
+  "territories": ["DO", "PR", "CU", "HT"],
+  "blind_search_vocabulary": {
+    "DO": ["fondo de capital emprendedor", "capital de riesgo", "inversión semilla", "gestora"],
+    "PR": ["venture fund", "capital emprendedor", "VCAP", "fondo semilla"],
+    "CU": ["capital de riesgo", "fondo para emprendimientos", "inversión en mipymes", "financiamiento innovador"],
+    "HT": ["fonds de capital-risque", "capital d'amorçage", "investissement startup", "diaspora investment fund"]
+  },
+  "review_checks": [
+    "Run the blind searches and record all new leads before opening candidates.jsonl.",
+    "Challenge every eligible and update_existing action against the contract.",
+    "Verify that routed and excluded entities were not silently discarded.",
+    "Verify that two regulator queries served identity only.",
+    "Verify the regulator-query share is between 5% and 10%.",
+    "Approve or reject saturation and the proposed freeze."
+  ],
+  "proposed_freeze": {
+    "new_eligible": ["cand-258-venture-do"],
+    "profile_updates": ["cand-258-caricaco", "cand-258-parallel18-vcap", "cand-258-morro", "cand-258-innogen"],
+    "publication_batch_count": 1,
+    "publication_action_count": 5
+  }
+}
