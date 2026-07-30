@@ -16,7 +16,7 @@ Una lista curada de fondos de Venture Capital que invierten en América Latina.
 
 ---
 
-El índice está optimizado para una comparación rápida y actualmente reúne 152 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
+El índice está optimizado para una comparación rápida y actualmente reúne 154 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
 
 ## Pan-Latinoamérica (sede en la región)
 
@@ -121,6 +121,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 | [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Growth | Tecnología y empresas de alto crecimiento | Brasil |
 | [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed y Seed | Startups tecnológicas | Brasil |
 | [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed y Seed | Tecnología | Brasil |
+| [Entrypoint](funds/brazil/entrypoint.md) | Pre-seed | Startups tecnológicas | Brasil |
 | [Eurofarma Ventures](funds/brazil/eurofarma-ventures.md) | No divulgado públicamente | Biotecnología, descubrimiento de fármacos y terapias avanzadas | Global |
 | [FIP Nordeste Capital Semente](funds/brazil/fip-nordeste-capital-semente.md) | Pre-seed y Seed | Startups tecnológicas regionales | Nordeste de Brasil, norte de Minas Gerais y Espírito Santo |
 | [Fundepar](funds/brazil/fundepar.md) | No divulgado públicamente | Tecnología, innovación de base científica e impacto | Brasil |
@@ -190,6 +191,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 | [EDP Ventures](funds/multi-country/edp-ventures.md) | Seed, Serie A y Serie B | Transición energética y tecnología para energía | Global |
 | [Endeavor Catalyst](funds/multi-country/endeavor-catalyst.md) | Multietapa | Empresas de la red Endeavor | Global |
 | [FJ Labs](funds/multi-country/fj-labs.md) | Pre-seed y Seed | Marketplaces y efectos de red | Global |
+| [Flourish Ventures](funds/multi-country/flourish-ventures.md) | No divulgado públicamente | Salud financiera y servicios financieros | Global, incluida América Latina |
 | [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Pre-seed y Seed | Tecnología, agnóstico a sectores | Global, incluida América Latina |
 | [GRIDX](funds/multi-country/gridx.md) | Pre-seed | Ciencias de la vida y biotecnología | América Latina al mundo |
 | [Igah Ventures (Patria)](funds/multi-country/igah-ventures-patria.md) | Multietapa | Empresas de alto crecimiento | Brasil y América Latina |

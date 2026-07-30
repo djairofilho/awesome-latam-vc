@@ -16,7 +16,7 @@ A curated list of Venture Capital funds investing in Latin America.
 
 ---
 
-The index is optimized for quick comparison and currently covers 152 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
+The index is optimized for quick comparison and currently covers 154 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
 
 ## Pan-Latin America (LatAm based)
 
@@ -121,6 +121,7 @@ The index is optimized for quick comparison and currently covers 152 funds. All 
 | [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Growth | Technology and high-growth companies | Brazil |
 | [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed and Seed | Technology startups | Brazil |
 | [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed and Seed | Technology | Brazil |
+| [Entrypoint](funds/brazil/entrypoint.md) | Pre-seed | Technology startups | Brazil |
 | [Eurofarma Ventures](funds/brazil/eurofarma-ventures.md) | Not publicly disclosed | Biotechnology, drug discovery, and advanced therapies | Global |
 | [FIP Nordeste Capital Semente](funds/brazil/fip-nordeste-capital-semente.md) | Pre-seed and Seed | Regional technology startups | Northeast Brazil, northern Minas Gerais, and Espírito Santo |
 | [Fundepar](funds/brazil/fundepar.md) | Not publicly disclosed | Technology, science-based innovation, and impact | Brazil |
@@ -190,6 +191,7 @@ The index is optimized for quick comparison and currently covers 152 funds. All 
 | [EDP Ventures](funds/multi-country/edp-ventures.md) | Seed, Series A, and Series B | Energy transition and energy technology | Global |
 | [Endeavor Catalyst](funds/multi-country/endeavor-catalyst.md) | Multi-stage | Endeavor network companies | Global |
 | [FJ Labs](funds/multi-country/fj-labs.md) | Pre-seed and Seed | Marketplaces and network effects | Global |
+| [Flourish Ventures](funds/multi-country/flourish-ventures.md) | Not publicly disclosed | Financial health and financial services | Global, including Latin America |
 | [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Pre-seed and Seed | Technology, sector agnostic | Global, including Latin America |
 | [GRIDX](funds/multi-country/gridx.md) | Pre-seed | Life sciences & biotech | Latin America to global markets |
 | [Igah Ventures (Patria)](funds/multi-country/igah-ventures-patria.md) | Multi-stage | High-growth companies | Brazil and Latin America |
