@@ -1,0 +1,205 @@
+{
+  "blind_findings": {
+    "final_pass": [
+      "fund-br-221-positive-ventures",
+      "fund-br-221-lightrock",
+      "fund-br-221-marcha",
+      "fund-br-221-cv-idexo",
+      "fund-br-221-link-ventures",
+      "fund-br-221-startvc",
+      "fund-br-221-3c-invest",
+      "fund-br-221-uniangels",
+      "fund-br-221-insper-angels",
+      "fund-br-221-csn-inova-ventures",
+      "fund-br-221-vibra-ventures",
+      "fund-br-221-copel-ventures-i",
+      "fund-br-221-bb-ventures",
+      "fund-br-221-basf-venture-capital",
+      "fund-br-221-carbyne-investimentos",
+      "fund-br-221-ita-angels",
+      "fund-br-221-foks"
+    ],
+    "initial": [
+      "fund-br-l4-venture-builder",
+      "fund-br-213-quartzo-capital",
+      "fund-br-221-hiker-ventures",
+      "fund-br-221-grao-vc",
+      "fund-br-221-valutia",
+      "fund-br-221-blustone-capital",
+      "fund-br-221-honey-island-by-4um",
+      "fund-br-221-broom-ventures",
+      "fund-br-221-venture-hub",
+      "fund-br-221-fundepar"
+    ]
+  },
+  "confirmed_routes": {
+    "fund-br-214-agroven": "epic-63-angel-networks",
+    "fund-br-214-ipe-investe": "epic-62-accelerators"
+  },
+  "corrections": {
+    "agroven_direct_claim_aligned_to_member_investment": true,
+    "undated_activity_downgraded": [
+      "ev-fund-br-214-ipe-investe-official",
+      "ev-fund-br-214-jatoba-official",
+      "ev-fund-br-214-parallax-official",
+      "ev-fund-br-l4-official"
+    ],
+    "vehicle_names_removed_from_aliases": [
+      "fund-br-210-dna-capital",
+      "fund-br-214-jatoba-impacto-amazonia",
+      "fund-br-mundi-ventures-latam"
+    ],
+    "vinci_generic_manager_removed": true
+  },
+  "cumulative_discovery_curve": [
+    {
+      "candidates": 7,
+      "eligible": 1,
+      "pass": 1
+    },
+    {
+      "candidates": 19,
+      "eligible": 5,
+      "pass": 2
+    },
+    {
+      "candidates": 25,
+      "eligible": 8,
+      "pass": 3
+    },
+    {
+      "candidates": 40,
+      "eligible": 9,
+      "pass": 4
+    },
+    {
+      "candidates": 48,
+      "eligible": 11,
+      "pass": 5
+    },
+    {
+      "candidates": 51,
+      "eligible": 14,
+      "pass": 6
+    }
+  ],
+  "cutoff_date": "2026-07-30",
+  "cvm_review": {
+    "candidate_ids": [
+      "fund-br-213-vinci-partners",
+      "fund-br-214-jatoba-impacto-amazonia"
+    ],
+    "decision_changes": 0,
+    "eligibility_use": false
+  },
+  "epic": 207,
+  "final_bundle": {
+    "candidate_rows": 76,
+    "canonical_candidates": 63,
+    "decision_counts": {
+      "duplicate": 13,
+      "eligible": 27,
+      "insufficient_evidence": 28,
+      "routed_accelerators": 3,
+      "routed_angel_networks": 4,
+      "routed_funding_platforms": 1
+    }
+  },
+  "generated_on": "2026-07-30",
+  "issue": 221,
+  "original_bundle": {
+    "candidate_rows": 51,
+    "canonical_candidates": 40,
+    "decision_counts": {
+      "duplicate": 11,
+      "eligible": 14,
+      "insufficient_evidence": 24,
+      "routed_accelerators": 1,
+      "routed_angel_networks": 1
+    }
+  },
+  "review_coverage": {
+    "cvm_cases_reviewed": 2,
+    "final_eligible_reviewed": 27,
+    "final_routed_reviewed": 8,
+    "original_eligible_confirmed": 14,
+    "review_rows": 70,
+    "sha_insufficient_sample_reviewed": 6
+  },
+  "saturation_passes": [
+    {
+      "candidate_yield": 0,
+      "documents_reviewed": 2,
+      "eligible_yield": 0,
+      "name": "spin-offs e licenciamento acadêmico",
+      "source_ids": [
+        "src-fund-br-221-saturation-ctit-spin-offs",
+        "src-fund-br-221-saturation-unicamp-kasco"
+      ]
+    },
+    {
+      "candidate_yield": 0,
+      "documents_reviewed": 2,
+      "eligible_yield": 0,
+      "name": "prêmios de inovação e programas de fornecedores",
+      "source_ids": [
+        "src-fund-br-221-saturation-petrobras-supplier-award",
+        "src-fund-br-221-saturation-fieb-veracel-suppliers"
+      ]
+    },
+    {
+      "candidate_yield": 4,
+      "documents_reviewed": 4,
+      "eligible_yield": 1,
+      "name": "CVCs, redes e programas em fontes corporativas e universitárias",
+      "source_ids": [
+        "src-fund-br-221-basf-vc-brazil",
+        "src-fund-br-221-carbyne-fucape",
+        "src-fund-br-221-ita-angels-insper",
+        "src-fund-br-221-foks-insper-demoday"
+      ]
+    }
+  ],
+  "schema_version": "1.0",
+  "sha_sample": {
+    "algorithm": "seis menores SHA-256 de candidate_id entre os 28 insufficient_evidence finais",
+    "candidate_ids": [
+      "fund-br-nido-vc",
+      "fund-br-213-30n-ventures",
+      "fund-br-lightspeed",
+      "fund-br-221-carbyne-investimentos",
+      "fund-br-sororite-ventures",
+      "fund-br-221-link-ventures"
+    ],
+    "confirmed": 6
+  },
+  "single_source_reviews": {
+    "candidate_ids": [
+      "fund-br-210-dna-capital",
+      "fund-br-210-monashees",
+      "fund-br-213-astella",
+      "fund-br-213-canary",
+      "fund-br-213-caravela-capital",
+      "fund-br-213-lean-vc",
+      "fund-br-213-maromar-investimentos",
+      "fund-br-213-santa-maria-investment-group",
+      "fund-br-213-triaxis-capital",
+      "fund-br-213-vinci-partners",
+      "fund-br-accion-ventures",
+      "fund-br-antler",
+      "fund-br-bff",
+      "fund-br-farout",
+      "fund-br-four-rivers",
+      "fund-br-parceiro-ventures",
+      "fund-br-prosus-ventures"
+    ],
+    "count": 17,
+    "review_result": "Os 17 casos foram relidos; a condição de fonte única permanece explicitada como limitação, sem uso indevido de review_group."
+  },
+  "source_overlap": {
+    "one_discovery_family": 44,
+    "population": 51,
+    "two_or_more_discovery_families": 7
+  },
+  "status": "complete"
+}
