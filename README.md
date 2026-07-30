@@ -105,9 +105,11 @@ The index is optimized for quick comparison and currently covers 213 funds. All 
 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
+| [Beta Impacto](funds/argentina/beta-impacto.md) | Pre-seed | Impact, climate technology, agriculture, and energy transition | Argentina and Latin America |
 | [BYMA Ventures](funds/argentina/byma-ventures.md) | Not publicly disclosed | Fintech, market infrastructure, and cybersecurity | Argentina and Latin America |
 | [Embarca Ventures](funds/argentina/embarca-ventures.md) | Not publicly disclosed | Technology | Argentina and Latin America |
 | [Globant Ventures](funds/argentina/globant-ventures.md) | Seed and Series A | Artificial intelligence, blockchain, and the Future of Work | Global |
+| [Primary X](funds/argentina/primary-x.md) | Pre-seed, Seed, and Series A | Fintech, crypto, and agrifintech | Argentina and Uruguay |
 | [Sancor Seguros Ventures](funds/argentina/sancor-seguros-ventures.md) | Not publicly disclosed | Insurtech and technology | Argentina and Latin America |
 | [SHEFA Holding](funds/argentina/shefa-holding.md) | Not publicly disclosed | Real estate technology and agtech | Argentina and Latin America |
 
@@ -168,6 +170,7 @@ The index is optimized for quick comparison and currently covers 213 funds. All 
 | [RD Saúde Ventures](funds/brazil/rd-saude-ventures.md) | Not publicly disclosed | Health, wellbeing, and pharmacy retail | Brazil |
 | [Redpoint eventures](funds/brazil/redpoint-eventures.md) | Multi-stage | Technology | Brazil |
 | [RX Ventures](funds/brazil/rx-ventures.md) | Seed and Series A | Fashion, retail, lifestyle, and responsible brands | Global |
+| [SaaSholic](funds/brazil/saasholic.md) | Pre-seed and Seed | SaaS, AI-SaaS, and B2B software | Brazil and Latin America |
 | [Scale-Up Ventures](funds/brazil/scale-up-ventures.md) | Seed and Series A | Endeavor network companies | Brazil |
 | [Sinergia Investimentos](funds/brazil/sinergia-investimentos.md) | Pre-seed and Seed | Amazon bioeconomy and regenerative businesses | Brazilian Amazon |
 | [SLC Ventures](funds/brazil/slc-ventures.md) | Not publicly disclosed | Agribusiness technology and sustainable agriculture | Not publicly disclosed |

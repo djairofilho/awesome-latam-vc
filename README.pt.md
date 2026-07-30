@@ -105,9 +105,11 @@ O índice foi otimizado para comparação rápida e atualmente reúne 213 fundos
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
+| [Beta Impacto](funds/argentina/beta-impacto.md) | Pre-seed | Impacto, tecnologia climática, agricultura e transição energética | Argentina e América Latina |
 | [BYMA Ventures](funds/argentina/byma-ventures.md) | Não divulgado publicamente | Fintech, infraestrutura de mercado e cibersegurança | Argentina e América Latina |
 | [Embarca Ventures](funds/argentina/embarca-ventures.md) | Não divulgado publicamente | Tecnologia | Argentina e América Latina |
 | [Globant Ventures](funds/argentina/globant-ventures.md) | Seed e Série A | Inteligência artificial, blockchain e futuro do trabalho | Global |
+| [Primary X](funds/argentina/primary-x.md) | Pre-seed, Seed e Série A | Fintech, cripto e agrifintech | Argentina e Uruguai |
 | [Sancor Seguros Ventures](funds/argentina/sancor-seguros-ventures.md) | Não divulgado publicamente | Insurtech e tecnologia | Argentina e América Latina |
 | [SHEFA Holding](funds/argentina/shefa-holding.md) | Não divulgado publicamente | Tecnologia imobiliária e agtech | Argentina e América Latina |
 
@@ -168,6 +170,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 213 fundos
 | [RD Saúde Ventures](funds/brazil/rd-saude-ventures.md) | Não divulgado publicamente | Saúde, bem-estar e varejo farmacêutico | Brasil |
 | [Redpoint eventures](funds/brazil/redpoint-eventures.md) | Multiestágio | Tecnologia | Brasil |
 | [RX Ventures](funds/brazil/rx-ventures.md) | Seed e Série A | Moda, varejo, lifestyle e marcas responsáveis | Global |
+| [SaaSholic](funds/brazil/saasholic.md) | Pre-seed e Seed | SaaS, AI-SaaS e software B2B | Brasil e América Latina |
 | [Scale-Up Ventures](funds/brazil/scale-up-ventures.md) | Seed e Série A | Empresas da rede Endeavor | Brasil |
 | [Sinergia Investimentos](funds/brazil/sinergia-investimentos.md) | Pre-seed e Seed | Bioeconomia amazônica e negócios regenerativos | Amazônia brasileira |
 | [SLC Ventures](funds/brazil/slc-ventures.md) | Não divulgado publicamente | Tecnologia para o agronegócio e agricultura sustentável | Não divulgado publicamente |

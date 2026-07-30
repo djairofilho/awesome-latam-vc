@@ -1,0 +1,29 @@
+{
+  "artifact_hashes": {
+    "research/epic-248/transverse-handoffs/candidates.jsonl": "dfce6cdf1c0db7a7e50b88e744f1417b1fabd239f2c2e25d1a33d4e820aa4668",
+    "research/epic-248/transverse-handoffs/contract.json": "5a3ec4b5e9093b69b6f968814f675d88a9f4133c4b2aa6888dad63269a8026a5",
+    "research/epic-248/transverse-handoffs/coverage-matrix.json": "5774457df6dc4b8dc8c8579c2fb88d264c813a169736156d09ab3cad35ad4b5a",
+    "research/epic-248/transverse-handoffs/evidence.jsonl": "60c8767db13db342d3ca6beda2d3eb1a8f5a160ae303562b760dd19a14da1510",
+    "research/epic-248/transverse-handoffs/prefreeze-manifest.json": "935cca6003b494a4af6fa044eceafb873ebefcab554363280ff8826d958ba15f",
+    "research/epic-248/transverse-handoffs/regulator-query-log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/epic-248/transverse-handoffs/review-request.json": "787d3c95257cb13dbb4d36e4b408c1b858169651207dcf3cc1b25894cc6a2ce5",
+    "research/epic-248/transverse-handoffs/review.json": "0d0cb92a44a59ffa6a8a3d7e500d46423007686d4261d4cce47658299a699991",
+    "research/epic-248/transverse-handoffs/source-inventory.jsonl": "7a1f25552a33753fbc3fea197e02b8022107f718ac9d82639fbbba890bd0684d"
+  },
+  "beta_impacto_limitation": "The current official pages describe portfolio operations but do not expose portfolio company names as machine-readable text.",
+  "critical_open": 0,
+  "cutoff": "2026-07-30",
+  "eligible_ids": [
+    "ar-beta-impacto",
+    "ar-primary-x",
+    "br-saasholic"
+  ],
+  "high_open": 0,
+  "localized_profile_count": 9,
+  "publication_batch_count": 1,
+  "publication_batch_limit": 10,
+  "review_reconciled": true,
+  "reviewer": "integrator",
+  "schema_version": "1.0",
+  "status": "frozen"
+}
