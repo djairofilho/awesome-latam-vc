@@ -50,8 +50,10 @@ companies building solutions for small and medium-sized businesses.
 
 ## Investment profile
 
+
 - **Website:** https://blog.bancobs2.com.br/banco-bs2-fundo-de-cvc-solucoes-pmes/
 - **Fund type:** Corporate venture capital
+- **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
 - **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
@@ -61,7 +63,7 @@ companies building solutions for small and medium-sized businesses.
 - **Initial check:** Not publicly disclosed
 - **Investment role:** Not publicly disclosed
 - **Business models:** Not publicly disclosed
-- **Target portfolio size:** 12 to 15 companies
+- **Portfolio size:** Not publicly disclosed
 - **Selected companies:** Bloxs and Somos Young
 - **Submit a startup:** Not publicly disclosed
 

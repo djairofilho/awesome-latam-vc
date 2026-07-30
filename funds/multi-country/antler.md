@@ -59,8 +59,10 @@ operation, direct startup investments, and an open founder application route.
 
 ## Investment profile
 
+
 - **Website:** https://www.antler.co/
 - **Fund type:** Venture capital
+- **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Not publicly disclosed in the frozen evidence
@@ -70,7 +72,7 @@ operation, direct startup investments, and an open founder application route.
 - **Initial check:** Not publicly disclosed in the frozen evidence
 - **Investment role:** Not publicly disclosed
 - **Business models:** Not publicly disclosed
-- **Brazil portfolio size:** More than 30 companies
+- **Portfolio size:** Not publicly disclosed
 - **Selected companies:** Not publicly disclosed in the frozen evidence
 - **Submit a startup:** https://www.antler.co/location/brazil
 

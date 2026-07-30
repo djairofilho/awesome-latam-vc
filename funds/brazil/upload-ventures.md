@@ -60,8 +60,10 @@ and growth-stage companies across Latin America, including Brazil.
 
 ## Investment profile
 
+
 - **Website:** https://www.upload.ventures/
 - **Fund type:** Venture capital
+- **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
 - **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Multi-stage, spanning early and growth

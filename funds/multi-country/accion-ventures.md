@@ -62,6 +62,7 @@ with recurring startup investments and verified access to founders in Brazil.
 
 ## Investment profile
 
+
 - **Website:** https://www.accion.org/how-we-work/investment-strategies/accion-impact-management/accion-ventures/
 - **Fund type:** Venture capital
 - **Operator:** Accion Impact Management
@@ -75,7 +76,7 @@ with recurring startup investments and verified access to founders in Brazil.
 - **Investment role:** Not publicly disclosed
 - **Business models:** Not publicly disclosed
 - **Portfolio size:** More than 80 startup investments
-- **Selected Brazilian companies:** Four are presented on the official page
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** https://www.accion.org/how-we-work/investment-strategies/accion-impact-management/accion-ventures/
 
 ## Declared thesis

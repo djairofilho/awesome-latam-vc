@@ -64,6 +64,7 @@ Latin America strategy and multiple portfolio companies in Brazil.
 
 ## Investment profile
 
+
 - **Website:** https://www.prosus.com/prosus-ventures
 - **Fund type:** Venture capital
 - **Operator:** Prosus N.V.
@@ -77,7 +78,7 @@ Latin America strategy and multiple portfolio companies in Brazil.
 - **Investment role:** Not publicly disclosed as a general policy
 - **Business models:** Not publicly disclosed in the frozen evidence
 - **Portfolio size:** Not publicly disclosed
-- **Selected Brazilian companies:** Azos, Kovi, Lastro, Mevo, and VOA Health
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis

@@ -53,8 +53,10 @@ in 2023 with capital from B3 and a portfolio of direct company investments.
 
 ## Investment profile
 
+
 - **Website:** https://www.l4vb.com/
 - **Fund type:** Independent single-LP growth fund
+- **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
 - **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Growth

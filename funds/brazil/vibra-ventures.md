@@ -52,8 +52,10 @@ created in 2022 with a BRL 150 million capital commitment.
 
 ## Investment profile
 
+
 - **Website:** https://vibraenergia.com.br/
 - **Fund type:** Corporate venture capital
+- **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
 - **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed

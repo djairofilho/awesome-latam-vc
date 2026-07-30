@@ -58,8 +58,10 @@ Brazil.
 
 ## Investment profile
 
+
 - **Website:** https://www.mundiventures.com/
 - **Fund type:** Venture capital
+- **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
 - **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Early growth
@@ -70,7 +72,7 @@ Brazil.
 - **Investment role:** Not publicly disclosed
 - **Business models:** Not publicly disclosed
 - **Portfolio size:** More than 70 companies supported since 2015
-- **Selected Brazilian company:** Sami
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
