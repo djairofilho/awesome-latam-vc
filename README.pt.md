@@ -11,12 +11,14 @@ Uma lista curada de fundos de Venture Capital que investem na América Latina.
 - [Chile](#chile)
 - [Colômbia](#colômbia)
 - [México](#méxico)
+- [Paraguai](#paraguai)
 - [Peru](#peru)
+- [Venezuela](#venezuela)
 - [Global com presença na América Latina](#global-com-presença-na-américa-latina)
 
 ---
 
-O índice foi otimizado para comparação rápida e atualmente reúne 201 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
+O índice foi otimizado para comparação rápida e atualmente reúne 205 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
 
 ## Pan-América Latina (sede na região)
 
@@ -40,12 +42,14 @@ O índice foi otimizado para comparação rápida e atualmente reúne 201 fundos
 | [Caravela Capital](funds/regional/caravela-capital.md) | Pre-seed e Seed | Tecnologia | América Latina |
 | [Caricaco Ventures](funds/regional/caricaco-ventures.md) | Não divulgado publicamente | Software e inteligência artificial | América Central e República Dominicana |
 | [Chile Ventures](funds/regional/chile-ventures.md) | Não divulgado publicamente | Tecnologia de receita recorrente | Chile e América Latina |
+| [Cibersons](funds/regional/cibersons.md) | Pre-seed, Seed e Série A | Tecnologia, agnóstico por setor | América Latina e Estados Unidos |
 | [CITES](funds/regional/cites.md) | Pre-seed, Seed e Série A | Deep tech de base científica | Argentina e América Latina |
 | [Cometa (ex-Variv)](funds/regional/cometa-variv.md) | Pre-seed, Seed e Série A | Tecnologia | América Latina hispânica |
 | [Dalus Capital](funds/regional/dalus-capital.md) | Não divulgado publicamente | Tecnologia | América Latina |
 | [DGF Investimentos](funds/regional/dgf-investimentos.md) | Multiestágio | Empresas de tecnologia de alto crescimento | Brasil e América Latina |
 | [Draper Cygnus](funds/regional/draper-cygnus.md) | Seed e Série A | Deep tech | Fundadores latino-americanos com atuação global |
 | [EMA Ventures](funds/regional/ema-ventures.md) | Pre-seed e Seed | Tecnologia e empresas lideradas por mulheres | América Latina hispânica |
+| [Epakon Capital](funds/regional/epakon-capital.md) | Pre-seed e Seed | Fintech, inteligência artificial e tecnologia | Estados Unidos e América Latina, incluindo a Venezuela |
 | [EWA Capital](funds/regional/ewa-capital.md) | Seed e Série A | Tecnologia com enfoque de gênero e inclusão | América Latina de língua espanhola |
 | [Fen Ventures](funds/regional/fen-ventures.md) | Pre-seed e Seed | Fintech, SaaS e sustentabilidade | América Latina hispânica |
 | [Galicia Ventures](funds/regional/galicia-ventures.md) | Pre-seed, Seed, Série A e Série B | Fintech, insurtech, agtech, tecnologia disruptiva e modelos B2B | América Latina |
@@ -94,6 +98,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 201 fundos
 | [Winnipeg Capital](funds/regional/winnipeg-capital.md) | Não divulgado publicamente | Empresas de tecnologia escaláveis | América Latina |
 | [Wollef Ventures (ex-Jaguar)](funds/regional/wollef-ventures-jaguar.md) | Pre-seed e Seed | Tecnologia | América Latina |
 | [Xperiment Ventures](funds/regional/xperiment-ventures.md) | Não divulgado publicamente | Tecnologia para cadeias de suprimento baseadas na natureza | Argentina e América Latina |
+| [Yango Ventures](funds/regional/yango-ventures.md) | Seed, Série A e Série B | Fintech, B2B SaaS, online-to-offline e inteligência artificial | América Latina e outros mercados emergentes; acesso explícito à Bolívia |
 
 ## Argentina
 
@@ -213,6 +218,19 @@ O índice foi otimizado para comparação rápida e atualmente reúne 201 fundos
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
 | [GRPP Ventures](funds/peru/rpp-ventures.md) | Não divulgado publicamente | Tecnologia escalável | Peru |
+
+## Paraguai
+
+| Fundo | Estágio | Foco | Geografia |
+| --- | --- | --- | --- |
+| [Cibersons](funds/regional/cibersons.md) | Pre-seed, Seed e Série A | Tecnologia, agnóstico por setor | América Latina e Estados Unidos |
+| [iThink VC](funds/regional/ithink-vc.md) | Pre-seed e Seed | Tecnologia para problemas estruturais | Paraguai, Peru, Equador, Bolívia e Uruguai |
+
+## Venezuela
+
+| Fundo | Estágio | Foco | Geografia |
+| --- | --- | --- | --- |
+| [Impulsa VC](funds/venezuela/impulsa-vc.md) | Não divulgado publicamente | Tecnologia e estruturação financeira | Venezuela |
 
 ## Global com presença na América Latina
 
