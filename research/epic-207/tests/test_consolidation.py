@@ -96,6 +96,32 @@ class ConsolidationBuilderTests(unittest.TestCase):
             )
         )
 
+    def test_frozen_profiles_are_ignored_but_unknown_additions_fail(self) -> None:
+        guards = set(self.builder.POST_BASELINE_GUARDS)
+        frozen = self.builder.frozen_publication_paths()
+        baseline = {"funds/brazil/existing.md"}
+        current = baseline | guards | frozen
+
+        self.assertEqual(27, len(frozen))
+        self.assertEqual(
+            guards,
+            self.builder.guarded_catalog_delta_paths(
+                baseline,
+                current,
+                frozen,
+            ),
+        )
+
+        with self.assertRaisesRegex(
+            ValueError,
+            "delta pós-baseline inesperado",
+        ):
+            self.builder.guarded_catalog_delta_paths(
+                baseline,
+                current | {"funds/brazil/not-frozen.md"},
+                frozen,
+            )
+
     def test_exact_duplicates_have_canonical_destinations(self) -> None:
         candidates = {
             record["candidate_id"]: record for record in self.candidates

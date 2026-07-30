@@ -71,6 +71,7 @@ POST_BASELINE_GUARDS = {
     "funds/brazil/entrypoint.md": "Entrypoint",
     "funds/multi-country/flourish-ventures.md": "Flourish Ventures",
 }
+FREEZE_MANIFEST = BRAZIL / "freeze-manifest.json"
 
 
 def compact_json(value: Any) -> str:
@@ -574,6 +575,31 @@ def _profile_name(path: Path) -> str:
     return json.loads("\n".join(lines[1:closing]))["name"]
 
 
+def frozen_publication_paths() -> set[str]:
+    if not FREEZE_MANIFEST.is_file():
+        return set()
+    manifest = json.loads(FREEZE_MANIFEST.read_text(encoding="utf-8"))
+    return {
+        candidate["destination"]
+        for batch in manifest["publication"]["batches"]
+        for candidate in batch["candidates"]
+    }
+
+
+def guarded_catalog_delta_paths(
+    baseline: set[str],
+    current: set[str],
+    published: set[str],
+) -> set[str]:
+    delta = current - baseline - published
+    if delta != set(POST_BASELINE_GUARDS):
+        raise ValueError(
+            "delta pós-baseline inesperado: "
+            f"esperado={sorted(POST_BASELINE_GUARDS)}, atual={sorted(delta)}"
+        )
+    return delta
+
+
 def current_catalog_delta() -> list[dict[str, Any]]:
     baseline = {
         record["profile_path"]
@@ -586,12 +612,11 @@ def current_catalog_delta() -> list[dict[str, Any]]:
         for path in (REPO_ROOT / "funds").rglob("*.md")
         if path.name != "README.md"
     }
-    delta = current - baseline
-    if delta != set(POST_BASELINE_GUARDS):
-        raise ValueError(
-            "delta pós-baseline inesperado: "
-            f"esperado={sorted(POST_BASELINE_GUARDS)}, atual={sorted(delta)}"
-        )
+    delta = guarded_catalog_delta_paths(
+        baseline,
+        current,
+        frozen_publication_paths(),
+    )
     rows = []
     for relative in sorted(delta):
         path = REPO_ROOT / relative
