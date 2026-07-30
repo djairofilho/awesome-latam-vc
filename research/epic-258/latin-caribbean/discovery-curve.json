@@ -1,25 +1,27 @@
 {
   "schema_version": "1.0",
-  "canonical_candidates": 24,
+  "canonical_candidates": 53,
   "waves": [
     {"wave": 1, "families": ["round and investment news", "fund launches and closings"], "new_candidates": 7},
     {"wave": 2, "families": ["institutional investors and allocators", "events and ecosystem maps"], "new_candidates": 10},
     {"wave": 3, "families": ["official portfolios", "regional and diaspora sources"], "new_candidates": 7},
-    {"wave": 4, "families": ["targeted validation and alternate vocabulary"], "new_candidates": 0}
+    {"wave": 4, "families": ["independent blind search with alternate vocabulary"], "new_candidates": 29},
+    {"wave": 5, "families": ["blind-lead reconciliation and targeted validation"], "new_candidates": 0}
   ],
   "terminal_decisions": {
-    "eligible": 1,
-    "duplicate": 6,
-    "routed": 10,
-    "excluded": 3,
-    "insufficient_evidence": 4
+    "eligible": 2,
+    "duplicate": 7,
+    "routed": 25,
+    "excluded": 9,
+    "insufficient_evidence": 10
   },
   "publication_actions": {
-    "create": 1,
+    "create": 2,
     "update_existing": 4,
-    "none": 19
+    "none": 47
   },
   "regulator_queries": 2,
-  "regulator_query_share": 0.0833,
-  "saturation_signal": "The final search wave produced no new canonical candidates. Independent blind search remains required before freeze."
+  "regulator_query_share": 0.0377,
+  "regulator_target_status": "below_target_after_blind_expansion; no artificial regulator queries added",
+  "saturation_signal": "The independent blind wave expanded the universe by 29, and full reconciliation produced no further canonical candidate. Final approval remains required before freeze."
 }
