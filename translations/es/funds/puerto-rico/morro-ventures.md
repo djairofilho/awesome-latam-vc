@@ -13,8 +13,8 @@
   "aliases": [],
   "operator": null,
   "base_geography": {
-    "kind": "region",
-    "code": "LATAM"
+    "kind": "country",
+    "code": "PR"
   },
   "countries_covered": [
     "CARIBBEAN",
@@ -41,7 +41,7 @@
       "kind": "official_website"
     }
   ],
-  "last_verified": "2026-07-27",
+  "last_verified": "2026-07-30",
   "protected_terms": [
     "Morro Ventures"
   ]
@@ -81,4 +81,4 @@ La página oficial confirma que el fondo realiza inversiones directas y relacion
 - [Morro Ventures](https://morroventures.com/)
 - [Morro Ventures Caribbean Fund](https://morroventures.com/morro-fund-ii/)
 
-**Última verificación:** 2026-07-27
+**Última verificación:** 2026-07-30

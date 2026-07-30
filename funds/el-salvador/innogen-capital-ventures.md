@@ -13,13 +13,14 @@
   "aliases": [],
   "operator": null,
   "base_geography": {
-    "kind": "region",
-    "code": "LATAM"
+    "kind": "country",
+    "code": "SV"
   },
   "countries_covered": [
     "CARIBBEAN",
     "CO",
-    "MX"
+    "MX",
+    "SV"
   ],
   "stages": [
     "pre_seed",
@@ -53,7 +54,7 @@
       "kind": "official_portfolio"
     }
   ],
-  "last_verified": "2026-07-27",
+  "last_verified": "2026-07-30",
   "protected_terms": [
     "Innogen Capital Ventures"
   ]
@@ -73,7 +74,7 @@ northern Latin America.
 - **Stage at entry:** Pre-seed, Seed, and Series A
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Financial inclusion, healthcare, retail, logistics, proptech, and agtech
-- **Geography:** Mexico, Colombia, Central America, and the Caribbean
+- **Geography:** Mexico, Colombia, El Salvador, Central America, and the Caribbean
 - **Initial check:** USD 25,000 to USD 1 million
 - **Investment role:** Not publicly disclosed
 - **Business models:** High-impact technology companies
@@ -100,4 +101,4 @@ Honduras.
 - [Boxful portfolio entry](https://innogencapital.com/es/startup/boxful1/)
 - [Ginih portfolio entry](https://innogencapital.com/es/startup/ginih/)
 
-**Last verified:** 2026-07-27
+**Last verified:** 2026-07-30
