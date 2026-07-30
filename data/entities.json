@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 262,
+    "entity_count": 264,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -5956,6 +5956,45 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "CO",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "b2b",
+        "scalable_technology"
+      ],
+      "founder_route": "https://www.marathonvc.com/",
+      "id": "fund:marathon-ventures",
+      "name": "Marathon Ventures",
+      "official_website": "https://www.marathonvc.com/",
+      "operator": null,
+      "source_profile": "funds/colombia/marathon-ventures.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "Marathon Ventures thesis, team, portfolio and founder route",
+          "url": "https://www.marathonvc.com/"
+        },
+        {
+          "kind": "secondary",
+          "title": "Colombia-origin venture capital investor map",
+          "url": "https://www.startuplinks.world/reportes/inversionistas-de-venture-capital-originarios-de-colombia"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Marathon Ventures backs early-stage founders building B2B technology companies in Latin America.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "BR",
         "kind": "country"
       },
@@ -7651,6 +7690,46 @@
       ],
       "summary": "Shima Capital is an investment organization focused on Web3 and blockchain in Global.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "CO",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CO",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "scalable_technology",
+        "fintech"
+      ],
+      "founder_route": "https://www.simmacapital.com/",
+      "id": "fund:simma-capital",
+      "name": "Simma Capital",
+      "official_website": "https://www.simmacapital.com/",
+      "operator": null,
+      "source_profile": "funds/colombia/simma-capital.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "Simma Capital investment strategies and portfolio",
+          "url": "https://www.simmacapital.com/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Bancóldex and Ruta N invest in Simma Fintech +",
+          "url": "https://www.bancoldex.com/es/noticias/bancoldex-y-ruta-n-invierten-en-simma-fintech"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Simma Capital invests in early-stage technology startups connected to Latin America.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
