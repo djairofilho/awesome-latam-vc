@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "cutoff_date": "2026-07-30",
-  "source_commit": "ead18f2c439b0a9e238a83b809cc4b2eb650cd57",
+  "source_commit": "ce120a3abee89da09c212c2282ca074619bae01b",
   "catalog": {
-    "entities_total": 282,
-    "funds_total": 207,
+    "entities_total": 286,
+    "funds_total": 211,
     "scope_matches": 10,
     "scope_funds": 5,
     "scope_non_funds": 5,
-    "entities_json_sha256": "2a140ead2b11da70615aaaf64f8d9ec904dcc86090e911ac9b9ab31584b30a14",
+    "entities_json_sha256": "6e149d9e0fd32b1cd98b700ea4c91bf5acff84b8ff9a45f74db0363381b2cd93",
     "baseline_sha256": "a1d1f3264f7f3fd73a0e41b85eabc42b75f36980c3a81250d6c77999dc1272cb"
   },
   "historical_delta": {
@@ -25,6 +25,6 @@
     "Baseline matches are excluded from discovery yield.",
     "A Caribbean regional label does not prove access to each in-scope territory.",
     "Historical candidates may be revalidated but cannot be counted as new discoveries.",
-    "Baseline was regenerated on ead18f2c after the Uruguay publication; no in-scope baseline entity changed."
+    "Baseline was regenerated on ce120a3 after the BPV publication; no in-scope baseline entity changed."
   ]
 }

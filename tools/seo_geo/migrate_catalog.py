@@ -40,6 +40,7 @@ COUNTRY_DIRECTORIES = {
     "switzerland": "CH",
     "uruguay": "UY",
     "united-states": "US",
+    "venezuela": "VE",
 }
 COUNTRY_TERMS = {
     "Argentina": "AR",
@@ -63,6 +64,7 @@ COUNTRY_TERMS = {
     "Puerto Rico": "PR",
     "United States": "US",
     "Uruguay": "UY",
+    "Venezuela": "VE",
 }
 DISPLAY_NAME_OVERRIDES = {
     "500-latam-500-global": {

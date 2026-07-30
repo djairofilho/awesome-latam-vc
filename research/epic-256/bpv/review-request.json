@@ -1,0 +1,61 @@
+{
+  "base_geography_checks": {
+    "py-cibersons": {
+      "not_inferred_from": [
+        "founder nationality",
+        "BOCAP membership",
+        "Uruguay handoff"
+      ],
+      "proposed_base": "PY",
+      "supporting_sources": [
+        "lavca-cibersons",
+        "mic-cibersons",
+        "urucap-cibersons"
+      ]
+    }
+  },
+  "blind_findings_to_review": [
+    "bo-yango-ventures",
+    "ve-plus58",
+    "ve-avila"
+  ],
+  "candidate_count": 20,
+  "deterministic_exclusion_sample": [
+    "py-fiip",
+    "ve-plus58"
+  ],
+  "eligible_to_review": [
+    "py-cibersons",
+    "bo-yango-ventures",
+    "ve-impulsa",
+    "ve-epakon"
+  ],
+  "freeze_allowed": false,
+  "proposed_freeze": {
+    "eligible": [
+      "py-cibersons",
+      "bo-yango-ventures",
+      "ve-impulsa",
+      "ve-epakon"
+    ],
+    "publication_batch_count": 1,
+    "publication_batch_limit": 10
+  },
+  "regulatory_cases_to_review": [
+    "ve-impulsa"
+  ],
+  "requested_on": "2026-07-30",
+  "routed_to_review": [
+    "bo-bdp-startup",
+    "bo-aceleratec",
+    "bo-bocap",
+    "py-parcapy",
+    "py-riiap",
+    "py-lan",
+    "py-h2o",
+    "py-innovandopy",
+    "ve-venecapital"
+  ],
+  "schema_version": "1.0",
+  "status": "pending_independent_review"
+}
