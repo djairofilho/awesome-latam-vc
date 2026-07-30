@@ -1,0 +1,197 @@
+{
+  "batch_id": "publication-batch-03",
+  "batch_ordinal": 3,
+  "candidate_count": 9,
+  "cutoff_date": "2026-07-30",
+  "epic": 207,
+  "freeze_issue": 222,
+  "freeze_manifest_sha256": "4609745e229c67c647e199cce6ef10cf58dc82b1fcfba2e0748b20cfafd303bd",
+  "frozen_batch_sha256": "9e5609a39f369be5b7ba07ec6dee942f4eefa00e8f574f504ea9327f330458c7",
+  "hash_algorithm": "sha256",
+  "integrity": {
+    "all_profile_hashes_present": true,
+    "candidate_ids_unique": true,
+    "destinations_unique": true,
+    "localized_paths_unique": true,
+    "one_candidate_to_three_locales": true
+  },
+  "issue": 243,
+  "limitations": "Este manifesto prova correspondência com o lote congelado e os arquivos publicados; não altera os artefatos centrais da pesquisa.",
+  "parent_issue": 223,
+  "profile_file_count": 27,
+  "profiles": [
+    {
+      "candidate_id": "fund-br-221-vibra-ventures",
+      "destination": "funds/brazil/vibra-ventures.md",
+      "name": "Vibra Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/vibra-ventures.md",
+          "sha256": "76b1a109b24ee0165de1ff7650c65e2cb395b1739deda4b70d9bd2257f05f848"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/vibra-ventures.md",
+          "sha256": "fd90a212d981232b25fdb97621829e0a6308a67db9319d1cf2a42f4c476134dd"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/vibra-ventures.md",
+          "sha256": "b7489efb8092ff591589cacf857ddde39726e076d37e88e53dbb217c088214ae"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-accion-ventures",
+      "destination": "funds/multi-country/accion-ventures.md",
+      "name": "Accion Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/multi-country/accion-ventures.md",
+          "sha256": "b3770c57dc5aebf0ecf420d58edeef72258437447cb1c4a9d35c161a4bc546ab"
+        },
+        "es": {
+          "path": "translations/es/funds/multi-country/accion-ventures.md",
+          "sha256": "5b1ee7ccaa6c0431b50f046a88a1c4060966690967cf37a9bccdce6163240069"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/multi-country/accion-ventures.md",
+          "sha256": "ce965ebfae289be2e957f4a6b4d8b8414cef18591efa138a2b7f004be764f4cb"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-antler",
+      "destination": "funds/multi-country/antler.md",
+      "name": "Antler",
+      "profiles": {
+        "en": {
+          "path": "funds/multi-country/antler.md",
+          "sha256": "494dce55502714e30e6fd5d29dce6bbfb1fd98d6cc86bdc25c890cd7b695aeba"
+        },
+        "es": {
+          "path": "translations/es/funds/multi-country/antler.md",
+          "sha256": "c4d30b59e7c40d33a544a71a5aacb90a28e93f7ec2977f3cc2701fffe13bf6ce"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/multi-country/antler.md",
+          "sha256": "16c3219e5d524df37ce00d326144e1d1d50ef0bb4e96b63e9c87620e0a5d4939"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-bs2-ventures",
+      "destination": "funds/brazil/bs2-ventures.md",
+      "name": "BS2 Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/bs2-ventures.md",
+          "sha256": "fb9ebded195d6853776fec7ee1867e033ec2800782e861fcf8fed75e7a030e56"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/bs2-ventures.md",
+          "sha256": "4e16231fa429f32fc7ee49ba1aaaaf5549c0f1d0f532d25dc01b928cb6a57d33"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/bs2-ventures.md",
+          "sha256": "f3def4d4175646fa550d73b03f76568e60d0e6c516d8acd15f89c011bce2ebc7"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-l4-venture-builder",
+      "destination": "funds/brazil/l4-venture-builder.md",
+      "name": "L4 Venture Builder",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/l4-venture-builder.md",
+          "sha256": "f1c30eebca672955e3d3b313fee410b91d036f9c4fb889343ca88083965f80d1"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/l4-venture-builder.md",
+          "sha256": "fa7dabd4a4bdd88f3df9725dcad539c5b0eee1d84bca17369e97e6655962757e"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/l4-venture-builder.md",
+          "sha256": "b12d08f82d8ca322bda265f883e96e35959b1f8422eca4604dc7d002e41c6c59"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-mundi-ventures-latam",
+      "destination": "funds/multi-country/mundi-ventures.md",
+      "name": "Mundi Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/multi-country/mundi-ventures.md",
+          "sha256": "0cd027c885008ffee6f563c1954647b762a5a1829272746192e26278311223bd"
+        },
+        "es": {
+          "path": "translations/es/funds/multi-country/mundi-ventures.md",
+          "sha256": "edb3cbc5b4987eb82c076e65084708364a03e2a443a80cfbb5b596794c7771c7"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/multi-country/mundi-ventures.md",
+          "sha256": "6af61a9680140482f05afb32fd643d58dcbc8df60e301cc1e7a29781859c6626"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-parceiro-ventures",
+      "destination": "funds/multi-country/parceiro-ventures.md",
+      "name": "Parceiro Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/multi-country/parceiro-ventures.md",
+          "sha256": "e7b1aed443db674bdc23d075f201133e369942f77fe565da36abfce2673ce28d"
+        },
+        "es": {
+          "path": "translations/es/funds/multi-country/parceiro-ventures.md",
+          "sha256": "b62fa5b13438c66343b1abf512098ccc5380f142c9a1949290ded3ee6463506b"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/multi-country/parceiro-ventures.md",
+          "sha256": "ca46e61e70ade0b1b2e159d0f6f64e139e4bce35b098c76dd7bf106e039c9ca7"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-prosus-ventures",
+      "destination": "funds/multi-country/prosus-ventures.md",
+      "name": "Prosus Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/multi-country/prosus-ventures.md",
+          "sha256": "07927a4dd7275743a170cacdfcd66a8458ab8a2587acc9759e1b2ba60d064f26"
+        },
+        "es": {
+          "path": "translations/es/funds/multi-country/prosus-ventures.md",
+          "sha256": "2a4afa49cd7bed3beb360cd9ea938cc26a883d99762aaad2e53365ce7dfa10e7"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/multi-country/prosus-ventures.md",
+          "sha256": "d3db6b3109061e347586e4c07a975e149c4379b6930ecd1751dbba0e7a315018"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-upload-ventures",
+      "destination": "funds/brazil/upload-ventures.md",
+      "name": "Upload Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/upload-ventures.md",
+          "sha256": "1f80b73afb70b3fa1deed97e5f2645312df155bef6049f48d584d53881a58a86"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/upload-ventures.md",
+          "sha256": "1819d22a78a1c56812dcc287f25ae5a542d65cae6e1ad87c55aca52d4f5c069a"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/upload-ventures.md",
+          "sha256": "b2f6f91756c6fd7a279c1610b7dcbbed3e369054c0933670c3fece22f4685e44"
+        }
+      }
+    }
+  ],
+  "published_on": "2026-07-30",
+  "schema_version": "1.0"
+}
