@@ -1,0 +1,38 @@
+{
+  "candidate_count": 15,
+  "limitation": "Audited coverage of the enumerated sources, not absolute market completeness.",
+  "marginal_passes": [
+    {
+      "cumulative": 11,
+      "families": [
+        "industry_directory",
+        "sector_report",
+        "institutional_allocator"
+      ],
+      "new_candidates": 11,
+      "pass": 1
+    },
+    {
+      "cumulative": 14,
+      "families": [
+        "fund_news",
+        "official_portfolio",
+        "official_identity"
+      ],
+      "new_candidates": 3,
+      "pass": 2
+    },
+    {
+      "cumulative": 15,
+      "families": [
+        "blind_venture_builder",
+        "blind_investor_map"
+      ],
+      "new_candidates": 1,
+      "pass": 3
+    }
+  ],
+  "non_regulatory_discovery_percent": 100.0,
+  "regulatory_percent": 6.7,
+  "regulatory_queries": 1
+}
