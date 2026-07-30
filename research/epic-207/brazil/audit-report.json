@@ -1,0 +1,19 @@
+{
+  "canonical_candidate_count": 49,
+  "cutoff_date": "2026-07-30",
+  "cvm_consulted_candidate_count": 0,
+  "cvm_query_rate": 0,
+  "decision_counts": {},
+  "epic": 207,
+  "generated_on": "2026-07-30",
+  "issue": 216,
+  "limitations": [
+    "A issue #216 resolve identidade e não decide elegibilidade.",
+    "Entrypoint e Flourish Ventures foram publicados após o baseline; são guardas de catálogo e não entram como candidatos nem serão republicados.",
+    "O schema de evidence não possui source_id; vínculos entre fonte e evidência permanecem inferíveis por URL, título e publicador.",
+    "Clusters marcados unresolved ou distinct_vehicle exigem revisão sem fusão automática de gestora, marca e veículo."
+  ],
+  "non_cvm_task_share": 1,
+  "schema_version": "1.0",
+  "status": "running"
+}
