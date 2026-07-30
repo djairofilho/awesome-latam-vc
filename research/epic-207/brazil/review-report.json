@@ -123,8 +123,8 @@
     "final_eligible_reviewed": 27,
     "final_routed_reviewed": 8,
     "original_eligible_confirmed": 14,
-    "review_rows": 69,
-    "sha_insufficient_sample_reviewed": 5
+    "review_rows": 70,
+    "sha_insufficient_sample_reviewed": 6
   },
   "saturation_passes": [
     {
@@ -162,15 +162,16 @@
   ],
   "schema_version": "1.0",
   "sha_sample": {
-    "algorithm": "cinco menores SHA-256 de candidate_id entre os 24 insufficient_evidence originais",
+    "algorithm": "seis menores SHA-256 de candidate_id entre os 28 insufficient_evidence finais",
     "candidate_ids": [
       "fund-br-nido-vc",
       "fund-br-213-30n-ventures",
       "fund-br-lightspeed",
+      "fund-br-221-carbyne-investimentos",
       "fund-br-sororite-ventures",
-      "fund-br-214-lh-invest"
+      "fund-br-221-link-ventures"
     ],
-    "confirmed": 5
+    "confirmed": 6
   },
   "single_source_reviews": {
     "candidate_ids": [

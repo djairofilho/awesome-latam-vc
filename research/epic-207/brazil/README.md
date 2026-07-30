@@ -31,7 +31,7 @@ O bundle final contém 76 linhas de candidato e 63 identidades canônicas:
 | `insufficient_evidence` | 28 |
 
 A amostra de revisão cobre todos os 27 elegíveis, todos os oito roteados, os
-dois candidatos consultados na CVM, cinco insuficientes escolhidos pelos
+dois candidatos consultados na CVM, seis insuficientes escolhidos pelos
 menores hashes SHA-256 e os achados das buscas cegas e passagens finais.
 
 ## CVM e origem

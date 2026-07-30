@@ -91,23 +91,21 @@ class ReviewBuilderTests(unittest.TestCase):
             self.assertEqual(activity["finding"], "inconclusive")
             self.assertIsNone(evidence[evidence_id]["observed_on"])
 
-    def test_sha_sample_matches_smallest_original_digests(self) -> None:
-        base = self.builder.load_module(
-            self.builder.BASE_BUILDER,
-            "epic_207_adjudicated_sha_test",
-        ).build_artifacts()
+    def test_sha_sample_matches_smallest_final_digests(self) -> None:
         insufficient = [
             item["candidate_id"]
-            for item in records(base["candidates.jsonl"])
+            for item in records(self.artifacts["candidates.jsonl"])
             if item["decision"] == "insufficient_evidence"
         ]
+        self.assertEqual(len(insufficient), 28)
         expected = tuple(sorted(
             insufficient,
             key=lambda candidate_id: __import__("hashlib").sha256(
                 candidate_id.encode("utf-8")
             ).hexdigest(),
-        )[:5])
+        )[:6])
         self.assertEqual(self.builder.SHA_SAMPLE, expected)
+        self.assertGreaterEqual(len(expected) / len(insufficient), 0.20)
 
 
 if __name__ == "__main__":

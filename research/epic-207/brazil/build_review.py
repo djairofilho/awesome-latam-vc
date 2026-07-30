@@ -42,8 +42,9 @@ SHA_SAMPLE = (
     "fund-br-nido-vc",
     "fund-br-213-30n-ventures",
     "fund-br-lightspeed",
+    "fund-br-221-carbyne-investimentos",
     "fund-br-sororite-ventures",
-    "fund-br-214-lh-invest",
+    "fund-br-221-link-ventures",
 )
 INITIAL_BLIND = (
     "fund-br-l4-venture-builder",
@@ -294,8 +295,10 @@ def build_reviews(
             item,
             "deterministic_exclusion_sample",
             f"sha-{candidate_id.removeprefix('fund-br-')}",
-            "cinco menores SHA-256 de candidate_id entre os 24 insufficient_evidence originais",
-            original_index[candidate_id]["decision"],
+            "seis menores SHA-256 de candidate_id entre os 28 insufficient_evidence finais",
+            original_index.get(candidate_id, {}).get(
+                "decision", "not_in_issue_220_bundle"
+            ),
             "A insuficiência de evidência foi confirmada.",
         ))
     for candidate_id in (*INITIAL_BLIND, *FINAL_PASS_FINDINGS):
@@ -326,7 +329,7 @@ def run_manifest(
     run["artifact_hashes"] = hashes
     run["notes"] = (
         "A issue #221 revisou 100% dos elegíveis e roteados, os dois casos CVM, "
-        "uma amostra SHA-256 de cinco insuficientes e achados de buscas cegas. "
+        "uma amostra SHA-256 de seis insuficientes e achados de buscas cegas. "
         "Nenhuma descoberta teve CVM ou baseline como origem."
     )
     rows.append({
@@ -443,7 +446,7 @@ def review_report(
             "eligibility_use": False,
         },
         "sha_sample": {
-            "algorithm": "cinco menores SHA-256 de candidate_id entre os 24 insufficient_evidence originais",
+            "algorithm": "seis menores SHA-256 de candidate_id entre os 28 insufficient_evidence finais",
             "candidate_ids": list(SHA_SAMPLE),
             "confirmed": len(SHA_SAMPLE),
         },
