@@ -1,0 +1,88 @@
+{
+  "artifact_hashes": {
+    "catalog-baseline.jsonl": "be81bbc994921fa3a0aa9a0cff7afffbd79c5bf35172b95cc4f9716ea9c3138f",
+    "identity-index.jsonl": "31d361b376d4eb69c8de3937ad49a0b31f5f0d2b51627db386d7e39a76e37587",
+    "pending-changes.jsonl": "dfffb927450741054479796d75fec46ac6f3c6a49f5b5d338284f71670ca6bb3",
+    "prior-candidates.jsonl": "da8ab617f851347c0232319f1eb30e71dfb09b310cf4f905393530243b82f5ff",
+    "prior-sources.jsonl": "09bba61ebfae5f29780f92d299b1c1c475abab0f044dde96b697fd9b5c603179",
+    "queue-manifest.jsonl": "12db7ecede9aeffab504c977163b3fe87b2ff308b11991a1193f8ed2ce4982d7"
+  },
+  "baseline_commit": "876eb331f84371410ea442dbc1f457685e36a460",
+  "brazil_catalog": {
+    "alias_values": 3,
+    "profiles": 39,
+    "profiles_with_aliases": 3,
+    "profiles_with_identity_domain": 38,
+    "profiles_without_identity_domain": 1,
+    "unique_identity_domains": 37
+  },
+  "catalog": {
+    "alias_values": 7,
+    "brazil_directory_profiles": 39,
+    "collision_guard_profiles": 113,
+    "domain_collisions": {
+      "fundepar.com.br": [
+        "funds/brazil/arapy.md",
+        "funds/brazil/fundepar.md"
+      ],
+      "linkedin.com": [
+        "funds/colombia/qapu-ventures.md",
+        "funds/multi-country/pant3ra-venture-fund.md",
+        "funds/regional/velum-ventures.md"
+      ]
+    },
+    "profiles": 152,
+    "profiles_with_aliases": 7,
+    "profiles_with_identity_domain": 149,
+    "profiles_without_identity_domain": 3,
+    "unique_identity_domains": 146
+  },
+  "epic": 207,
+  "epic_16_memory": {
+    "candidate_decisions": {
+      "duplicado": 24,
+      "ecossistema": 9,
+      "elegível": 22,
+      "evidência insuficiente": 148,
+      "excluído": 93,
+      "inativo": 1
+    },
+    "candidates": 297,
+    "source_results": {
+      "concluída": 60,
+      "indisponível": 2,
+      "parcial": 30
+    },
+    "sources": 92,
+    "sources_by_issue": {
+      "18": 18,
+      "19": 9,
+      "20": 32,
+      "21": 33
+    }
+  },
+  "input_digest_sha256": "46244407854f742978ef0e4dd08a24fc364b37e0c46836aa9e27487023787604",
+  "issue": 209,
+  "offline_policy": {
+    "cvm_queries": 0,
+    "discovery_performed": false,
+    "network_access": false,
+    "pr_225_imported": false
+  },
+  "pending_changes": 1,
+  "queues": {
+    "catalog-br": 39,
+    "catalog-collision-guard": 113,
+    "prior-insufficient-domain-a": 42,
+    "prior-insufficient-domain-b": 42,
+    "prior-insufficient-domain-c": 42,
+    "prior-insufficient-no-domain": 22,
+    "prior-negative-memory": 103,
+    "prior-positive": 46,
+    "sources-issue-18": 18,
+    "sources-issue-19": 9,
+    "sources-issue-20": 32,
+    "sources-issue-21": 33
+  },
+  "schema_version": "1.0"
+}
