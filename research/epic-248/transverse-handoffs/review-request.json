@@ -1,0 +1,56 @@
+{
+  "base_geography_checks": {
+    "ar-beta-impacto": {
+      "limitation": "The base is tied to the Argentina organizations that created the fund, not to Uruguay market access.",
+      "proposed_base": "AR",
+      "supporting_sources": [
+        "beta-official",
+        "beta-xeibo",
+        "beta-anii"
+      ]
+    },
+    "ar-primary-x": {
+      "limitation": "Uruguay institutional access is not used as a headquarters signal.",
+      "proposed_base": "AR",
+      "supporting_sources": [
+        "primaryx-official",
+        "primaryx-a3-2025",
+        "primaryx-a3-2026"
+      ]
+    },
+    "br-saasholic": {
+      "limitation": "The São Paulo base comes from the company-controlled public profile, not ANII market access.",
+      "proposed_base": "BR",
+      "supporting_sources": [
+        "saasholic-company-profile",
+        "saasholic-official"
+      ]
+    }
+  },
+  "candidate_count": 3,
+  "eligible_to_review": [
+    "ar-beta-impacto",
+    "ar-primary-x",
+    "br-saasholic"
+  ],
+  "freeze_allowed": false,
+  "proposed_freeze": {
+    "eligible": [
+      "ar-beta-impacto",
+      "ar-primary-x",
+      "br-saasholic"
+    ],
+    "localized_profile_count": 9,
+    "publication_batch_count": 1,
+    "publication_batch_limit": 10
+  },
+  "regulatory_cases_to_review": [],
+  "requested_on": "2026-07-30",
+  "review_focus": [
+    "Challenge Beta Impacto recurrence and portfolio evidence given the absence of machine-readable portfolio names.",
+    "Confirm that each proposed base reflects headquarters or manager identity rather than Uruguay market access.",
+    "Confirm that no regulator lookup is necessary for identity resolution."
+  ],
+  "schema_version": "1.0",
+  "status": "pending_independent_review"
+}
