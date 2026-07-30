@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 285,
+    "entity_count": 289,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -3135,6 +3135,57 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "PY",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM",
+        "US"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "sector_agnostic"
+      ],
+      "founder_route": "https://www.cibersons.com/",
+      "id": "fund:cibersons",
+      "name": "Cibersons",
+      "official_website": "https://www.cibersons.com/",
+      "operator": null,
+      "source_profile": "funds/regional/cibersons.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Cibersons Ventures",
+          "url": "https://ccibils7.wixsite.com/cibersons/ventures"
+        },
+        {
+          "kind": "secondary",
+          "title": "Cibersons investor profile",
+          "url": "https://www.lavca.org/people/vivianne-bernardes-cibils/"
+        },
+        {
+          "kind": "secondary",
+          "title": "Cibersons Paraguay",
+          "url": "https://portalemprendedor.mic.gov.py/institucion.php?id=10"
+        },
+        {
+          "kind": "secondary",
+          "title": "URUCAP member directory",
+          "url": "https://urucap.org/wp-content/uploads/2024/09/Directorio-de-Socios-Agosto23-Agosto24.pdf"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed",
+        "series_a"
+      ],
+      "summary": "Cibersons is a Paraguay-based technology investment group backing early-stage startups in Latin America and the United States.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "LATAM",
         "kind": "region"
       },
@@ -4104,6 +4155,43 @@
         "pre_seed"
       ],
       "summary": "Entrypoint is a Brazilian pre-seed venture capital firm investing in technology startups with a functioning MVP and initial clients or proofs of concept.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "US",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM",
+        "US",
+        "VE"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "fintech",
+        "artificial_intelligence",
+        "technology"
+      ],
+      "founder_route": "https://epakon.com/",
+      "id": "fund:epakon-capital",
+      "name": "Epakon Capital",
+      "official_website": "https://epakon.com/",
+      "operator": null,
+      "source_profile": "funds/regional/epakon-capital.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Epakon Capital",
+          "url": "https://epakon.com/"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Epakon Capital backs pre-seed and seed technology founders in the United States and Latin America, including Venezuela.",
       "verified_on": "2026-07-30"
     },
     {
@@ -5248,6 +5336,51 @@
         "not_disclosed"
       ],
       "summary": "IMPAQTO Capital provides flexible impact financing to early-stage companies in the Andean region.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [
+        "Impulsa Venture Capital"
+      ],
+      "base_geography": {
+        "code": "VE",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "VE"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "financial_services"
+      ],
+      "founder_route": "https://www.impulsa.vc/contacto/",
+      "id": "fund:impulsa-vc",
+      "name": "Impulsa VC",
+      "official_website": "https://www.impulsa.vc/",
+      "operator": "Impulsa Venture Capital, C.A.",
+      "source_profile": "funds/venezuela/impulsa-vc.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Impulsa VC",
+          "url": "https://www.impulsa.vc/"
+        },
+        {
+          "kind": "official_website",
+          "title": "About Impulsa VC",
+          "url": "https://www.impulsa.vc/conocenos/"
+        },
+        {
+          "kind": "official_application",
+          "title": "Contact Impulsa VC",
+          "url": "https://www.impulsa.vc/contacto/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Impulsa VC provides early institutional capital and financial structuring to technology companies in Venezuela.",
       "verified_on": "2026-07-30"
     },
     {
@@ -9940,6 +10073,60 @@
       ],
       "summary": "Xperiment Ventures is an Argentina-based early-stage investor and venture studio focused on digitalizing and decarbonizing nature-based supply chains.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "AE",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "AE",
+        "BO",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "fintech",
+        "b2b_saas",
+        "online_to_offline",
+        "artificial_intelligence"
+      ],
+      "founder_route": "https://ventures.yango.com/contact-us",
+      "id": "fund:yango-ventures",
+      "name": "Yango Ventures",
+      "official_website": "https://ventures.yango.com/",
+      "operator": "Yango Group",
+      "source_profile": "funds/regional/yango-ventures.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Yango Ventures",
+          "url": "https://ventures.yango.com/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Yango Group launches corporate venture fund",
+          "url": "https://yango.com/en_int/news/yango-group-launches-corporate-venture-fund-to-support-young-entrepreneurs"
+        },
+        {
+          "kind": "official_application",
+          "title": "Yango Ventures contact",
+          "url": "https://ventures.yango.com/contact-us"
+        },
+        {
+          "kind": "secondary",
+          "title": "Yango Ventures launches in Bolivia",
+          "url": "https://www.economy.com.bo/articulo/business/yango-ventures-aterriza-bolivia-fondo-us-20-millones-impulsar-startups/20250408150455017851.html"
+        }
+      ],
+      "stages": [
+        "seed",
+        "series_a",
+        "series_b"
+      ],
+      "summary": "Yango Ventures is a Dubai-based corporate venture fund investing from Seed to Series B across emerging markets, including Latin America.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],

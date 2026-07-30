@@ -62,10 +62,12 @@ A InvertUP é um veículo privado da Costa Rica que oferece capital seed a um po
 - **Investimento direto em startups:** Sim
 - **Aberto a founders externos:** Sim
 - **Estágio de entrada:** seed
+- **Estágios de follow-on:** Não divulgados publicamente
 - **Foco:** sector agnostic, innovative companies
 - **Geografia:** CR
 - **Cheque inicial:** Not publicly disclosed
 - **Papel no investimento:** Seed investor; ParqueTec performs selection and support
+- **Modelos de negócio:** Não divulgados publicamente
 - **Tamanho do portfólio:** 7 startups on the reviewed official portfolio
 - **Empresas selecionadas:** Grab & Eat, Audazzio, Ainnova Tech, Tecnología Virtual
 - **Enviar uma startup:** https://www.parquetec.org/general-7

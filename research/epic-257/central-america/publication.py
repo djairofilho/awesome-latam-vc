@@ -116,6 +116,11 @@ PROFILES: dict[str, dict[str, Any]] = {
             "type": "Rolling fund with SPV-by-investment architecture",
             "check": "Not publicly disclosed",
             "role": "Structured early-stage investor with portfolio monitoring",
+            "business": {
+                "en": "B2B and B2B2C",
+                "pt-BR": "B2B e B2B2C",
+                "es": "B2B y B2B2C",
+            },
             "portfolio": "2 selected investments on the reviewed official site",
             "selected": "Sensify and Layrz",
         },
@@ -129,29 +134,32 @@ LABELS = {
     "en": {
         "profile": "Investment profile", "website": "Website", "type": "Fund type",
         "direct": "Direct startup investment", "external": "Open to external founders",
-        "entry": "Stage at entry", "focus": "Focus", "geo": "Geography",
-        "check": "Initial check", "role": "Investment role", "portfolio": "Portfolio size",
+        "entry": "Stage at entry", "follow_on": "Follow-on stages", "focus": "Focus", "geo": "Geography",
+        "check": "Initial check", "role": "Investment role", "business": "Business models", "portfolio": "Portfolio size",
         "selected": "Selected companies", "submit": "Submit a startup",
         "thesis": "Declared thesis", "signals": "Portfolio signals", "sources": "Sources",
         "verified": "Last verified", "yes": "Yes", "none": "No public route located",
+        "not_disclosed": "Not publicly disclosed",
     },
     "pt-BR": {
         "profile": "Perfil de investimento", "website": "Site", "type": "Tipo de fundo",
         "direct": "Investimento direto em startups", "external": "Aberto a founders externos",
-        "entry": "Estágio de entrada", "focus": "Foco", "geo": "Geografia",
-        "check": "Cheque inicial", "role": "Papel no investimento", "portfolio": "Tamanho do portfólio",
+        "entry": "Estágio de entrada", "follow_on": "Estágios de follow-on", "focus": "Foco", "geo": "Geografia",
+        "check": "Cheque inicial", "role": "Papel no investimento", "business": "Modelos de negócio", "portfolio": "Tamanho do portfólio",
         "selected": "Empresas selecionadas", "submit": "Enviar uma startup",
         "thesis": "Tese declarada", "signals": "Sinais de portfólio", "sources": "Fontes",
         "verified": "Última verificação", "yes": "Sim", "none": "Nenhuma rota pública localizada",
+        "not_disclosed": "Não divulgados publicamente",
     },
     "es": {
         "profile": "Perfil de inversión", "website": "Sitio web", "type": "Tipo de fondo",
         "direct": "Inversión directa en startups", "external": "Abierto a founders externos",
-        "entry": "Etapa de entrada", "focus": "Enfoque", "geo": "Geografía",
-        "check": "Cheque inicial", "role": "Rol de inversión", "portfolio": "Tamaño del portafolio",
+        "entry": "Etapa de entrada", "follow_on": "Etapas de seguimiento", "focus": "Enfoque", "geo": "Geografía",
+        "check": "Cheque inicial", "role": "Rol de inversión", "business": "Modelos de negocio", "portfolio": "Tamaño del portafolio",
         "selected": "Empresas seleccionadas", "submit": "Presentar una startup",
         "thesis": "Tesis declarada", "signals": "Señales del portafolio", "sources": "Fuentes",
         "verified": "Última verificación", "yes": "Sí", "none": "No se encontró una ruta pública",
+        "not_disclosed": "No divulgados públicamente",
     },
 }
 
@@ -192,6 +200,7 @@ def render(slug: str, profile: dict[str, Any], locale: str) -> str:
     countries = ", ".join(profile["countries"])
     route = profile["route"] or label["none"]
     facts = profile["facts"]
+    business = facts.get("business", {}).get(locale, label["not_disclosed"])
     return f"""---
 {front}
 ---
@@ -206,10 +215,12 @@ def render(slug: str, profile: dict[str, Any], locale: str) -> str:
 - **{label['direct']}:** {label['yes']}
 - **{label['external']}:** {label['yes'] if profile['route'] else label['none']}
 - **{label['entry']}:** {stages}
+- **{label['follow_on']}:** {label['not_disclosed']}
 - **{label['focus']}:** {focuses}
 - **{label['geo']}:** {countries}
 - **{label['check']}:** {facts['check']}
 - **{label['role']}:** {facts['role']}
+- **{label['business']}:** {business}
 - **{label['portfolio']}:** {facts['portfolio']}
 - **{label['selected']}:** {facts['selected']}
 - **{label['submit']}:** {route}

@@ -67,10 +67,12 @@ A Infinita VC é um fundo de venture capital early-stage sediado em Próspera, R
 - **Investimento direto em startups:** Sim
 - **Aberto a founders externos:** Nenhuma rota pública localizada
 - **Estágio de entrada:** seed
+- **Estágios de follow-on:** Não divulgados publicamente
 - **Foco:** biotechnology, hardware, robotics, fintech, web3
 - **Geografia:** HN, LATAM, US
 - **Cheque inicial:** Not publicly disclosed
 - **Papel no investimento:** Investor focused on regulatory and market-entry constraints
+- **Modelos de negócio:** Não divulgados publicamente
 - **Tamanho do portfólio:** Not presented as an official current total
 - **Empresas selecionadas:** Yendou; other current holdings not disclosed as an official list
 - **Enviar uma startup:** Nenhuma rota pública localizada

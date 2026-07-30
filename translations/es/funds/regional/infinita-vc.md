@@ -67,10 +67,12 @@ Infinita VC es un fondo de capital de riesgo en etapa temprana con sede en Prós
 - **Inversión directa en startups:** Sí
 - **Abierto a founders externos:** No se encontró una ruta pública
 - **Etapa de entrada:** seed
+- **Etapas de seguimiento:** No divulgados públicamente
 - **Enfoque:** biotechnology, hardware, robotics, fintech, web3
 - **Geografía:** HN, LATAM, US
 - **Cheque inicial:** Not publicly disclosed
 - **Rol de inversión:** Investor focused on regulatory and market-entry constraints
+- **Modelos de negocio:** No divulgados públicamente
 - **Tamaño del portafolio:** Not presented as an official current total
 - **Empresas seleccionadas:** Yendou; other current holdings not disclosed as an official list
 - **Presentar una startup:** No se encontró una ruta pública

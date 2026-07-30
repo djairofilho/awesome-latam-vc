@@ -57,10 +57,12 @@ Venture Club Latam is a Panama-based early-stage investment platform using a rol
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** pre seed, seed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** artificial intelligence, saas, iot, enterprise software, climate
 - **Geography:** PA, LATAM
 - **Initial check:** Not publicly disclosed
 - **Investment role:** Structured early-stage investor with portfolio monitoring
+- **Business models:** B2B and B2B2C
 - **Portfolio size:** 2 selected investments on the reviewed official site
 - **Selected companies:** Sensify and Layrz
 - **Submit a startup:** https://ventureclublatam.com/

@@ -11,13 +11,15 @@ A curated list of Venture Capital funds investing in Latin America.
 - [Chile](#chile)
 - [Colombia](#colombia)
 - [Mexico](#mexico)
+- [Paraguay](#paraguay)
 - [Peru](#peru)
+- [Venezuela](#venezuela)
 - [Uruguay](#uruguay)
 - [Global with LatAm Presence](#global-with-latam-presence)
 
 ---
 
-The index is optimized for quick comparison and currently covers 207 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
+The index is optimized for quick comparison and currently covers 211 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
 
 ## Pan-Latin America (LatAm based)
 
@@ -41,12 +43,14 @@ The index is optimized for quick comparison and currently covers 207 funds. All 
 | [Caravela Capital](funds/regional/caravela-capital.md) | Pre-seed and Seed | Technology | Latin America |
 | [Caricaco Ventures](funds/regional/caricaco-ventures.md) | Not publicly disclosed | Software and artificial intelligence | Central America and the Dominican Republic |
 | [Chile Ventures](funds/regional/chile-ventures.md) | Not publicly disclosed | Recurring-revenue technology | Chile and Latin America |
+| [Cibersons](funds/regional/cibersons.md) | Pre-seed, Seed, and Series A | Technology, sector agnostic | Latin America and the United States |
 | [CITES](funds/regional/cites.md) | Pre-seed, Seed, and Series A | Science-based deep tech | Argentina and Latin America |
 | [Cometa (ex-Variv)](funds/regional/cometa-variv.md) | Pre-seed, Seed, and Series A | Technology | Spanish-speaking Latin America |
 | [Dalus Capital](funds/regional/dalus-capital.md) | Not publicly disclosed | Technology | Latin America |
 | [DGF Investimentos](funds/regional/dgf-investimentos.md) | Multi-stage | High-growth technology companies | Brazil and Latin America |
 | [Draper Cygnus](funds/regional/draper-cygnus.md) | Seed and Series A | Deep tech | Latin American founders building globally |
 | [EMA Ventures](funds/regional/ema-ventures.md) | Pre-seed and Seed | Technology and women-led companies | Spanish-speaking Latin America |
+| [Epakon Capital](funds/regional/epakon-capital.md) | Pre-seed and Seed | Fintech, artificial intelligence, and technology | United States and Latin America, including Venezuela |
 | [EWA Capital](funds/regional/ewa-capital.md) | Seed and Series A | Gender-smart technology and inclusion | Spanish-speaking Latin America |
 | [Fen Ventures](funds/regional/fen-ventures.md) | Pre-seed and Seed | Fintech, SaaS, and sustainability | Spanish-speaking Latin America |
 | [Galicia Ventures](funds/regional/galicia-ventures.md) | Pre-seed, Seed, Series A, and Series B | Fintech, insurtech, agtech, disruptive technology, and B2B models | Latin America |
@@ -57,8 +61,10 @@ The index is optimized for quick comparison and currently covers 207 funds. All 
 | [Impacta VC](funds/regional/impacta-vc.md) | Seed | Social and environmental impact | Latin America |
 | [IMPAQTO Capital](funds/regional/impaqto-capital.md) | Early stage; named rounds not disclosed | Social and environmental impact with a gender lens | Ecuador, Peru, Bolivia, Colombia, and Chile |
 | [Indicator Capital](funds/regional/indicator-capital.md) | Pre-seed and Seed | Deep tech | Latin America |
+| [Infinita VC](funds/regional/infinita-vc.md) | Seed | Biotechnology, hardware, robotics, fintech, and Web3 | Honduras, Latin America, and the United States |
 | [Innogen Capital Ventures](funds/regional/innogen-capital-ventures.md) | Pre-seed, Seed, and Series A | Early-stage technology | Northern Latin America |
 | [Innventure](funds/regional/innventure.md) | Not publicly disclosed | AgTech and AgriFoodTech | Latin America |
+| [InvertUP](funds/regional/invertup.md) | Seed | Innovative companies, sector agnostic | Costa Rica |
 | [Itaú Ventures](funds/regional/itau-ventures.md) | Not publicly disclosed | Financial services and adjacent technologies | Brazil and Latin America |
 | [iThink VC](funds/regional/ithink-vc.md) | Pre-seed and Seed | Technology solving structural problems | Paraguay, Peru, Ecuador, Bolivia, and Uruguay |
 | [Kalei Ventures](funds/regional/kalei-ventures.md) | Pre-seed and Seed | AI-enabled technology | Latin America |
@@ -90,11 +96,13 @@ The index is optimized for quick comparison and currently covers 207 funds. All 
 | [The Yield Lab LATAM](funds/regional/the-yield-lab-latam.md) | Pre-seed and Seed | Agri-food technology | Latin America |
 | [UTEC Ventures](funds/regional/utec-ventures.md) | Pre-seed and Seed | Science, technology, and deep tech | Peru and Latin America |
 | [Velum Ventures](funds/regional/velum-ventures.md) | Seed | Technology | Colombia and Latin America |
+| [Venture Club Latam](funds/regional/venture-club-latam.md) | Pre-seed and Seed | AI, SaaS, IoT, enterprise software, and climate | Panama and Latin America |
 | [Ventures EPM](funds/regional/axon-partners-ventures-epm.md) | Not publicly disclosed | Public-service technology | Colombia and Latin America |
 | [Veronorte](funds/regional/veronorte.md) | Multi-stage | Sustainability and wellbeing | Latin America |
 | [Winnipeg Capital](funds/regional/winnipeg-capital.md) | Not publicly disclosed | Scalable technology companies | Latin America |
 | [Wollef Ventures (ex-Jaguar)](funds/regional/wollef-ventures-jaguar.md) | Pre-seed and Seed | Technology | Latin America |
 | [Xperiment Ventures](funds/regional/xperiment-ventures.md) | Not publicly disclosed | Nature-based supply chain technology | Argentina and Latin America |
+| [Yango Ventures](funds/regional/yango-ventures.md) | Seed, Series A, and Series B | Fintech, B2B SaaS, online-to-offline, and artificial intelligence | Latin America and other emerging markets; explicit Bolivia access |
 
 ## Argentina
 
@@ -225,6 +233,12 @@ The index is optimized for quick comparison and currently covers 207 funds. All 
 | [LAB+ Venture Fund](funds/uruguay/labplus-venture-fund.md) | Not publicly disclosed | Life sciences, One Health, and biotechnology | Uruguay and global |
 | [MrPink VC](funds/uruguay/mrpink-vc.md) | Early stage | Human connection, impact, and technology | Uruguay, Latin America, and Spain |
 | [Tokai Ventures](funds/uruguay/tokai-ventures.md) | Seed | Proptech, entertainment, education, biotechnology, and impact | Uruguay, Argentina, the United States, Israel, and Latin America |
+
+## Venezuela
+
+| Fund | Stage | Focus | Geography |
+| --- | --- | --- | --- |
+| [Impulsa VC](funds/venezuela/impulsa-vc.md) | Not publicly disclosed | Technology and financial structuring | Venezuela |
 
 ## Global with LatAm Presence
 

@@ -67,10 +67,12 @@ Infinita VC is an early-stage venture capital fund based in Próspera, Roatán, 
 - **Direct startup investment:** Yes
 - **Open to external founders:** No public route located
 - **Stage at entry:** seed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** biotechnology, hardware, robotics, fintech, web3
 - **Geography:** HN, LATAM, US
 - **Initial check:** Not publicly disclosed
 - **Investment role:** Investor focused on regulatory and market-entry constraints
+- **Business models:** Not publicly disclosed
 - **Portfolio size:** Not presented as an official current total
 - **Selected companies:** Yendou; other current holdings not disclosed as an official list
 - **Submit a startup:** No public route located

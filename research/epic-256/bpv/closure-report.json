@@ -1,0 +1,20 @@
+{
+  "audited_coverage": true,
+  "candidate_count": 20,
+  "critical_or_high_findings_open": 0,
+  "cutoff": "2026-07-30",
+  "eligible_published": 4,
+  "issues": [
+    294,
+    295,
+    296,
+    297,
+    298
+  ],
+  "issues_closed": false,
+  "non_regulatory_discovery_percent": 100.0,
+  "publication_batches": 1,
+  "regulatory_case_percent": 5.0,
+  "schema_version": "1.0",
+  "status": "complete"
+}
