@@ -1,0 +1,28 @@
+{
+  "artifact_hashes": {
+    "research/epic-256/bpv/candidates.jsonl": "7dae62ad7a7ccf4c980bee1dde58b34d3c318efeeaf8b59c62f5430879e3192b",
+    "research/epic-256/bpv/contract.json": "a64d96d4dc48adde7ba530c5d8f81de4e703d1ce011cc14a6b3eb4796d414aad",
+    "research/epic-256/bpv/coverage-matrix.json": "1672f67043ed5dbd711ba00645ed8b831c5840a180ea9a22259c452552b203b4",
+    "research/epic-256/bpv/evidence.jsonl": "e413c1517c62ae7b04ccfa2b2afea96bbb70cb0039579f8dbdcded0742b152ee",
+    "research/epic-256/bpv/regulator-query-log.jsonl": "e93cf048a4646cbcb539c5c59a5ae68db72846976e92993a97f5c09a441bc12f",
+    "research/epic-256/bpv/review-request.json": "5b35d4aed9d2c8cb024128b5ce4d3acb63b16269ccb2b5a9663dad165d716740",
+    "research/epic-256/bpv/source-inventory.jsonl": "66524d924c3b5e8de3d222feb05a8c490b9dda5d8dae352a03fc79bde6506f8b"
+  },
+  "counts": {
+    "candidates": 20,
+    "duplicate": 3,
+    "eligible": 4,
+    "insufficient_evidence": 4,
+    "regulatory_queries": 1,
+    "routed": 9
+  },
+  "cutoff": "2026-07-30",
+  "freeze_allowed": false,
+  "limitations": [
+    "Audited coverage of enumerated public sources, not absolute market completeness.",
+    "Sparse public evidence remains a material limitation in all three markets.",
+    "The single regulator query concerns identity only and does not support discovery or eligibility."
+  ],
+  "schema_version": "1.0",
+  "status": "awaiting_independent_review"
+}
