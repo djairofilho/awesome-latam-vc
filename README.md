@@ -121,7 +121,10 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | [BluStone Capital](funds/brazil/blustone-capital.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Pre-seed and Seed | B2B and B2B2C technology | Brazil |
 | [Canastra Ventures](funds/brazil/canastra-ventures.md) | Pre-seed | AI-first startups | Brazil and global |
+| [Copel Ventures I](funds/brazil/copel-ventures-i.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Growth | Technology and high-growth companies | Brazil |
+| [CSN Inova Ventures](funds/brazil/csn-inova-ventures.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
+| [CV iDEXO](funds/brazil/cv-idexo.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Darwin Startups](funds/brazil/darwin-startups.md) | Pre-seed and Seed | Technology startups | Brazil |
 | [DNA Capital](funds/brazil/dna-capital.md) | Not publicly disclosed | Healthcare | Brazil and the United States |
 | [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed and Seed | Technology | Brazil |
@@ -131,16 +134,20 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | [Fundepar](funds/brazil/fundepar.md) | Not publicly disclosed | Technology, science-based innovation, and impact | Brazil |
 | [Fundo inovabra I](funds/brazil/fundo-inovabra-i.md) | Series A and Series B | Technology across financial and non-financial sectors | Global |
 | [Gerdau Next Ventures](funds/brazil/gerdau-next-ventures.md) | Not publicly disclosed | Construction, mobility, sustainability, and technology | Not publicly disclosed |
+| [Grão VC](funds/brazil/grao-vc.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Grupo Boticário Ventures](funds/brazil/grupo-boticario-ventures.md) | Seed and Series A | Beauty and retail | Brazil and global |
+| [Hiker Ventures](funds/brazil/hiker-ventures.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Honey Island Capital](funds/brazil/honey-island-capital.md) | Not publicly disclosed | Fintech and technology | Brazil |
 | [IN3](funds/brazil/in3.md) | Not publicly disclosed | Social and environmental impact | Northern and Northeastern Brazil |
 | [Invest Tech](funds/brazil/invest-tech.md) | Seed | Technology-enabled B2B companies | Brazil |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed and Seed | Software and technology | Brazil |
 | [KPTL](funds/brazil/kptl.md) | Multi-stage | Deep tech, health, bioeconomy, and technology | Brazil |
+| [Marcha](funds/brazil/marcha.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [MSW Capital](funds/brazil/msw-capital.md) | Seed | Technology aligned with corporate innovation | Brazil |
 | [Oria Capital](funds/brazil/oria-capital.md) | Not publicly disclosed | B2B software | Brazil |
 | [Panvel Ventures](funds/brazil/panvel-ventures.md) | Not publicly disclosed | Health and wellbeing, customer experience, and operational intelligence | Not publicly disclosed |
 | [Parallax Ventures](funds/brazil/parallax-ventures.md) | Not publicly disclosed | Fintech | Brazil |
+| [Positive Ventures](funds/brazil/positive-ventures.md) | Not publicly disclosed | Impact investing | Brazil |
 | [Primus Ventures](funds/brazil/primus-ventures.md) | Pre-seed and Seed | B2B technology | Southern Brazil |
 | [Quartzo Capital](funds/brazil/quartzo-capital.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Raio Capital](funds/brazil/raio-capital.md) | Not publicly disclosed | Technology-enabled value-chain efficiency | Brazil |
@@ -210,6 +217,7 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | [Kolab Ventures](funds/multi-country/kolab-ventures.md) | Not publicly disclosed | AI, fintech, and cross-border technology | Mexico and Latin America |
 | [Kuiper](funds/multi-country/kuiper.md) | Not publicly disclosed | Technology | Latin America and the United States |
 | [Latitud Ventures](funds/multi-country/latitud-ventures.md) | Pre-seed and Seed | Technology, sector agnostic | Latin America |
+| [Lightrock](funds/multi-country/lightrock.md) | Not publicly disclosed | Not publicly disclosed | Global, including Brazil |
 | [Lotux](funds/multi-country/lotux.md) | Pre-seed | Fintech, insurtech, logistics, commerce, education, and health | Latin America |
 | [MatterScale Ventures](funds/multi-country/matterscale-ventures.md) | Pre-seed, Seed, and Series A | Affordable technology-enabled services | The Americas, including Latin America |
 | [Mindset Ventures](funds/multi-country/mindset-ventures.md) | Seed and Series A | B2B technology | Latin America and the United States |
@@ -223,6 +231,7 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | [SOSV](funds/multi-country/sosv.md) | Pre-seed and Seed | Deep tech, climate, and health | Global, including Latin America |
 | [The Ark Fund](funds/multi-country/the-ark-fund.md) | Not publicly disclosed | Not publicly disclosed | Not publicly disclosed |
 | [Valor Capital Group](funds/multi-country/valor-capital-group.md) | Multi-stage | Technology | United States and Brazil, including Latin America |
+| [Valutia](funds/multi-country/valutia.md) | Not publicly disclosed | Not publicly disclosed | Portugal and Brazil |
 | [Wayra](funds/multi-country/wayra.md) | Multi-stage | Strategic technology | Brazil, Europe, and Latin America |
 | [Worthit](funds/multi-country/worthit.md) | Pre-seed | B2B SaaS and AI | Latin America |
 
