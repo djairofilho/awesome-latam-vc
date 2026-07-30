@@ -1,0 +1,164 @@
+{
+  "baseline_profile_matches": {
+    "candidate_rows": 10,
+    "profile_paths": [
+      "funds/brazil/astella.md",
+      "funds/brazil/primus-ventures.md",
+      "funds/brazil/triaxis-capital.md",
+      "funds/multi-country/quona-capital.md",
+      "funds/multi-country/valor-capital-group.md",
+      "funds/regional/canary.md",
+      "funds/regional/caravela-capital.md",
+      "funds/regional/monashees.md",
+      "funds/regional/sp-ventures.md"
+    ],
+    "unique_profiles": 9
+  },
+  "canonical_counts": {
+    "candidate_rows": 51,
+    "canonical_identities": 49,
+    "coverage_cells": 10,
+    "evidence": 69,
+    "identity_resolutions": 19,
+    "sources": 82
+  },
+  "core_artifact_hashes": {
+    "candidates.jsonl": "1887ab82ddffd4b13d5d44a23a7613416107d02bdb42cabbf8f4d85a0cef517a",
+    "coverage-matrix.jsonl": "b062d272e4f813aba652438725cbb21a15996f3e6074078fc3a3f1499c085ae7",
+    "cvm-query-log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence.jsonl": "e941cf5c1fc5f77984efa14c64c494e17d8b8be84baf072b3adb4b0103013769",
+    "identity-resolution.jsonl": "71287eb2d20d4882a1ee767d63e97fdfb4c32d24937cd50d7d92e2ea2ed88a0e",
+    "review-sample.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source-inventory.jsonl": "7e8084f87b8e33e43d03f4cca4300b56e2e028af174d57eebcd97c305d58b017"
+  },
+  "cutoff_date": "2026-07-30",
+  "epic": 207,
+  "evidence_class_counts": {
+    "official": 42,
+    "third_party": 27
+  },
+  "exact_duplicate_destinations": {
+    "fund-br-213-canary": "fund-br-210-canary",
+    "fund-br-213-sororite-ventures": "fund-br-sororite-ventures"
+  },
+  "generated_on": "2026-07-30",
+  "input_workers": [
+    "worker-210-allocators",
+    "worker-211-rounds",
+    "worker-212-launches",
+    "worker-213-events",
+    "worker-214-maps",
+    "worker-215-foreign-access"
+  ],
+  "issue": 216,
+  "post_baseline_catalog_delta": [
+    {
+      "candidate_created": false,
+      "included_in_validation_shards": false,
+      "name": "Entrypoint",
+      "profile_path": "funds/brazil/entrypoint.md",
+      "profile_sha256": "bf57a3d3319fe7c20f5348e5b068ed3f380088be95db39de70f4c633d52f5abc",
+      "treatment": "already_published_guard_only"
+    },
+    {
+      "candidate_created": false,
+      "included_in_validation_shards": false,
+      "name": "Flourish Ventures",
+      "profile_path": "funds/multi-country/flourish-ventures.md",
+      "profile_sha256": "51cbb6fada96d5d36b33ecf39591a49e3c68f5e08c441796785394a382aaf3bd",
+      "treatment": "already_published_guard_only"
+    }
+  ],
+  "raw_counts": {
+    "candidates": 51,
+    "coverage_rows": 22,
+    "evidence": 69,
+    "sources": 82
+  },
+  "schema_version": "1.0",
+  "source_result_counts": {
+    "complete": 75,
+    "partial": 6,
+    "unavailable": 1
+  },
+  "validation_shards": [
+    {
+      "artifact": "research/epic-207/brazil/validation-shards/issue-217/candidates.jsonl",
+      "candidate_count": 17,
+      "candidate_ids": [
+        "fund-br-17-sigma",
+        "fund-br-210-dna-capital",
+        "fund-br-213-astella",
+        "fund-br-213-caravela-capital",
+        "fund-br-213-lean-vc",
+        "fund-br-213-maromar-investimentos",
+        "fund-br-213-santa-maria-investment-group",
+        "fund-br-213-vinci-partners",
+        "fund-br-214-barn-investimentos",
+        "fund-br-214-rural-ventures",
+        "fund-br-accion-ventures",
+        "fund-br-antler",
+        "fund-br-big-bets",
+        "fund-br-firestreak-ventures",
+        "fund-br-l4-venture-builder",
+        "fund-br-prosus-ventures",
+        "fund-br-upload-ventures"
+      ],
+      "issue": 217,
+      "modulo": 0,
+      "sha256": "6ca3faa6c26db140053bb038153c6b46415c49487c729519576ba27cc8c47a1a"
+    },
+    {
+      "artifact": "research/epic-207/brazil/validation-shards/issue-218/candidates.jsonl",
+      "candidate_count": 19,
+      "candidate_ids": [
+        "fund-br-210-canary",
+        "fund-br-210-good-karma",
+        "fund-br-210-sp-ventures",
+        "fund-br-210-valor-capital-group",
+        "fund-br-213-30n-ventures",
+        "fund-br-213-fhe-ventures",
+        "fund-br-213-primus-ventures",
+        "fund-br-213-quartzo-capital",
+        "fund-br-213-sororite-ventures",
+        "fund-br-214-agroven",
+        "fund-br-214-ipe-investe",
+        "fund-br-214-jatoba-impacto-amazonia",
+        "fund-br-214-parallax-ventures",
+        "fund-br-bs2-ventures",
+        "fund-br-canaan",
+        "fund-br-lightspeed",
+        "fund-br-lux-capital",
+        "fund-br-mundi-ventures-latam",
+        "fund-br-sagol-holdings"
+      ],
+      "issue": 218,
+      "modulo": 1,
+      "sha256": "64d8a6f8cd58cca7105310208340b152b6e836781072c6f8128f089a76e12493"
+    },
+    {
+      "artifact": "research/epic-207/brazil/validation-shards/issue-219/candidates.jsonl",
+      "candidate_count": 15,
+      "candidate_ids": [
+        "fund-br-1616v",
+        "fund-br-210-monashees",
+        "fund-br-210-quona-capital",
+        "fund-br-213-amz-venture-capital",
+        "fund-br-213-canary",
+        "fund-br-213-seedstars",
+        "fund-br-213-triaxis-capital",
+        "fund-br-214-arar-capital",
+        "fund-br-214-lh-invest",
+        "fund-br-bff",
+        "fund-br-farout",
+        "fund-br-four-rivers",
+        "fund-br-nido-vc",
+        "fund-br-parceiro-ventures",
+        "fund-br-sororite-ventures"
+      ],
+      "issue": 219,
+      "modulo": 2,
+      "sha256": "1ae34376f536e630efd2e85cfe5d67b02c0c36fb824a81daa15478d21fd5bfea"
+    }
+  ]
+}

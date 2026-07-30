@@ -1,0 +1,86 @@
+{
+  "algorithm": "int(sha256(candidate_id), 16) % 3",
+  "candidate_count": 51,
+  "generated_on": "2026-07-30",
+  "queues": [
+    {
+      "artifact": "research/epic-207/brazil/validation-shards/issue-217/candidates.jsonl",
+      "candidate_count": 17,
+      "candidate_ids": [
+        "fund-br-17-sigma",
+        "fund-br-210-dna-capital",
+        "fund-br-213-astella",
+        "fund-br-213-caravela-capital",
+        "fund-br-213-lean-vc",
+        "fund-br-213-maromar-investimentos",
+        "fund-br-213-santa-maria-investment-group",
+        "fund-br-213-vinci-partners",
+        "fund-br-214-barn-investimentos",
+        "fund-br-214-rural-ventures",
+        "fund-br-accion-ventures",
+        "fund-br-antler",
+        "fund-br-big-bets",
+        "fund-br-firestreak-ventures",
+        "fund-br-l4-venture-builder",
+        "fund-br-prosus-ventures",
+        "fund-br-upload-ventures"
+      ],
+      "issue": 217,
+      "modulo": 0,
+      "sha256": "6ca3faa6c26db140053bb038153c6b46415c49487c729519576ba27cc8c47a1a"
+    },
+    {
+      "artifact": "research/epic-207/brazil/validation-shards/issue-218/candidates.jsonl",
+      "candidate_count": 19,
+      "candidate_ids": [
+        "fund-br-210-canary",
+        "fund-br-210-good-karma",
+        "fund-br-210-sp-ventures",
+        "fund-br-210-valor-capital-group",
+        "fund-br-213-30n-ventures",
+        "fund-br-213-fhe-ventures",
+        "fund-br-213-primus-ventures",
+        "fund-br-213-quartzo-capital",
+        "fund-br-213-sororite-ventures",
+        "fund-br-214-agroven",
+        "fund-br-214-ipe-investe",
+        "fund-br-214-jatoba-impacto-amazonia",
+        "fund-br-214-parallax-ventures",
+        "fund-br-bs2-ventures",
+        "fund-br-canaan",
+        "fund-br-lightspeed",
+        "fund-br-lux-capital",
+        "fund-br-mundi-ventures-latam",
+        "fund-br-sagol-holdings"
+      ],
+      "issue": 218,
+      "modulo": 1,
+      "sha256": "64d8a6f8cd58cca7105310208340b152b6e836781072c6f8128f089a76e12493"
+    },
+    {
+      "artifact": "research/epic-207/brazil/validation-shards/issue-219/candidates.jsonl",
+      "candidate_count": 15,
+      "candidate_ids": [
+        "fund-br-1616v",
+        "fund-br-210-monashees",
+        "fund-br-210-quona-capital",
+        "fund-br-213-amz-venture-capital",
+        "fund-br-213-canary",
+        "fund-br-213-seedstars",
+        "fund-br-213-triaxis-capital",
+        "fund-br-214-arar-capital",
+        "fund-br-214-lh-invest",
+        "fund-br-bff",
+        "fund-br-farout",
+        "fund-br-four-rivers",
+        "fund-br-nido-vc",
+        "fund-br-parceiro-ventures",
+        "fund-br-sororite-ventures"
+      ],
+      "issue": 219,
+      "modulo": 2,
+      "sha256": "1ae34376f536e630efd2e85cfe5d67b02c0c36fb824a81daa15478d21fd5bfea"
+    }
+  ],
+  "schema_version": "1.0"
+}
