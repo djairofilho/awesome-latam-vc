@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 269,
+    "entity_count": 281,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -1509,6 +1509,57 @@
     },
     {
       "aliases": [
+        "Abastible Tec"
+      ],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CL",
+        "CO",
+        "EC",
+        "ES",
+        "PE",
+        "PT"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "energy_intelligence",
+        "energy_efficiency",
+        "decarbonization"
+      ],
+      "founder_route": null,
+      "id": "fund:abastibletec",
+      "name": "AbastibleTec",
+      "official_website": "https://abastible.cl/lanzamiento-abastible-tec-innovacion-e-inteligencia-energetica/",
+      "operator": "Abastible",
+      "source_profile": "funds/chile/abastibletec.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "AbastibleTec launch and regional scope",
+          "url": "https://abastible.cl/lanzamiento-abastible-tec-innovacion-e-inteligencia-energetica/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "AbastibleTec first startup investment",
+          "url": "https://www.empresascopec.cl/en/noticia/abastibletec-completes-its-first-investment-in-startups/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "AbastibleTec second startup investment",
+          "url": "https://www.empresascopec.cl/en/noticia/abastibletec-selects-zensi-for-its-second-startup-investment/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "AbastibleTec is a Chile-based corporate investment unit backing energy-intelligence startups.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [
         "Accion Venture Lab"
       ],
       "base_geography": {
@@ -2518,6 +2569,55 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CL",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "fintech",
+        "insurtech",
+        "data",
+        "artificial_intelligence",
+        "wellness"
+      ],
+      "founder_route": "https://www.biceventures.com/en/pitch-your-startup",
+      "id": "fund:bice-ventures",
+      "name": "BICE Ventures",
+      "official_website": "https://www.biceventures.com/",
+      "operator": "Grupo BICE",
+      "source_profile": "funds/chile/bice-ventures.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "BICE Ventures official site and active portfolio",
+          "url": "https://www.biceventures.com/"
+        },
+        {
+          "kind": "official_application",
+          "title": "BICE Ventures founder application",
+          "url": "https://www.biceventures.com/en/pitch-your-startup"
+        },
+        {
+          "kind": "official_activity",
+          "title": "BICE Ventures activity in 2026",
+          "url": "https://www.bicecorp.com/noticias/bice-innova-reads-que-es-el-corporate-venture-capital-cvc"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed",
+        "series_a"
+      ],
+      "summary": "BICE Ventures is Grupo BICE's Chile-based corporate venture capital and company-building unit.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "BR",
         "kind": "country"
       },
@@ -2955,6 +3055,51 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CL"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "agrifood",
+        "pet_care",
+        "supply_chain",
+        "advanced_manufacturing"
+      ],
+      "founder_route": "https://www.carozzicorp.com/carozzi-ventures/",
+      "id": "fund:carozzi-ventures",
+      "name": "Carozzi Ventures",
+      "official_website": "https://www.carozzicorp.com/carozzi-ventures/",
+      "operator": "Empresas Carozzi",
+      "source_profile": "funds/chile/carozzi-ventures.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "Carozzi Ventures thesis and founder contact",
+          "url": "https://www.carozzicorp.com/carozzi-ventures/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Carozzi Ventures first investment",
+          "url": "https://www.carozzicorp.com/lanzamiento-sinergia-id/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Carozzi 2026 interim financial report",
+          "url": "https://www.carozzicorp.com/wp-content/uploads/2026/06/EFTrimestrales-31.03.2026-1.pdf"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Carozzi Ventures is the Chile-based corporate venture capital unit of food company Empresas Carozzi.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "LATAM",
         "kind": "region"
       },
@@ -3157,6 +3302,52 @@
       ],
       "summary": "Cometa (ex-Variv) is an investment organization focused on Technology in Spanish-speaking Latin America.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [
+        "Wind Ventures"
+      ],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "GLOBAL"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "energy",
+        "mobility",
+        "sustainability"
+      ],
+      "founder_route": null,
+      "id": "fund:copec-wind-ventures",
+      "name": "Copec Wind Ventures",
+      "official_website": "https://ww2.copec.cl/personas/informacion-oficial-de-copec",
+      "operator": "Copec",
+      "source_profile": "funds/chile/copec-wind-ventures.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Copec official corporate venture description",
+          "url": "https://ww2.copec.cl/personas/informacion-oficial-de-copec"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Copec Wind Ventures portfolio metrics",
+          "url": "https://ww2.copec.cl/personas/noticias/sostenibilidad/copec-wind-ventures-lidera-ranking-de-cvcs-en-chile"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Copec Wind Ventures investment in Optibus",
+          "url": "https://ww2.copec.cl/personas/noticias/sostenibilidad/copec-refuerza-su-compromiso-con-la-electromovilidad-e-invierte-en-optibus-startup-que-implementa-ia-para-el-desarrollo-de-transporte-sostenible"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Copec Wind Ventures is Copec's corporate venture capital unit investing globally in energy and mobility startups.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -5015,6 +5206,53 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "EC",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BO",
+        "CL",
+        "CO",
+        "EC",
+        "PE"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "social_and_environmental_impact",
+        "gender_lens"
+      ],
+      "founder_route": "https://airtable.com/app8iMZm0TA0zE1Dk/shrGNR0y7cKK9R9Gg",
+      "id": "fund:impaqto-capital",
+      "name": "IMPAQTO Capital",
+      "official_website": "https://www.impaqtocapital.com/es",
+      "operator": null,
+      "source_profile": "funds/regional/impaqto-capital.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "IMPAQTO Capital",
+          "url": "https://www.impaqtocapital.com/es"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Fund I final close announcement",
+          "url": "https://www.impaqtocapital.com/fund-i-final-close-announcement"
+        },
+        {
+          "kind": "official_application",
+          "title": "Startup interest form",
+          "url": "https://airtable.com/app8iMZm0TA0zE1Dk/shrGNR0y7cKK9R9Gg"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "IMPAQTO Capital provides flexible impact financing to early-stage companies in the Andean region.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "BR",
         "kind": "country"
       },
@@ -5901,6 +6139,49 @@
       ],
       "summary": "Latitud Ventures is an investment organization focused on Technology, sector agnostic in Latin America.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [
+        "Leap by Caja Los Andes"
+      ],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CL"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "social_impact",
+        "fintech",
+        "insurtech",
+        "wellness",
+        "security"
+      ],
+      "founder_route": null,
+      "id": "fund:leap-caja-los-andes",
+      "name": "Leap",
+      "official_website": "https://leap.cajalosandes.cl/",
+      "operator": "Caja Los Andes",
+      "source_profile": "funds/chile/leap-caja-los-andes.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Leap corporate venture capital and portfolio",
+          "url": "https://leap.cajalosandes.cl/"
+        },
+        {
+          "kind": "secondary",
+          "title": "Chile corporate venture activity in 2026",
+          "url": "https://fch.cl/noticias/deben-los-corporativos-jugar-bajo-las-reglas-del-venture-capital/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Leap is Caja Los Andes' Chile-based corporate venture capital platform for social-purpose startups.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -7002,6 +7283,51 @@
       "verified_on": "2026-07-26"
     },
     {
+      "aliases": [
+        "Platanus"
+      ],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "sector_agnostic"
+      ],
+      "founder_route": "https://platan.us/programa",
+      "id": "fund:platanus-ventures",
+      "name": "Platanus Ventures",
+      "official_website": "https://platan.us/",
+      "operator": null,
+      "source_profile": "funds/chile/platanus-ventures.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Platanus investment program and portfolio",
+          "url": "https://platan.us/"
+        },
+        {
+          "kind": "official_application",
+          "title": "Platanus 2026 founder application",
+          "url": "https://platan.us/programa"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Platanus 2026 Demo Day",
+          "url": "https://platan.us/demo_day"
+        }
+      ],
+      "stages": [
+        "pre_seed"
+      ],
+      "summary": "Platanus Ventures is a Chile-based accelerator and venture capital investor backing Latin American technology startups.",
+      "verified_on": "2026-07-30"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "LATAM",
@@ -7743,6 +8069,50 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "entertainment",
+        "media",
+        "creative_technology"
+      ],
+      "founder_route": null,
+      "id": "fund:screen-capital",
+      "name": "Screen Capital",
+      "official_website": "https://www.screencapital.com/",
+      "operator": null,
+      "source_profile": "funds/chile/screen-capital.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Screen Capital current company profile",
+          "url": "https://cl.linkedin.com/company/screen-capital-s-a"
+        },
+        {
+          "kind": "secondary",
+          "title": "Screen Capital funds directory",
+          "url": "https://acvc.cl/miembros/screen/"
+        },
+        {
+          "kind": "secondary",
+          "title": "Screen II investment in Umbra",
+          "url": "https://www.df.cl/mexicana-morbido-tv-alista-primera-multiplataforma-de-terror-y-fantasia"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Screen Capital is a Chile-based venture manager investing in audiovisual, entertainment, and media-technology businesses.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "LATAM",
         "kind": "region"
       },
@@ -8216,6 +8586,53 @@
       "verified_on": "2026-07-26"
     },
     {
+      "aliases": [
+        "SQMi Lithium Ventures"
+      ],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "GLOBAL"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "lithium",
+        "energy_transition",
+        "mobility",
+        "water"
+      ],
+      "founder_route": null,
+      "id": "fund:sqm-lithium-ventures",
+      "name": "SQM Lithium Ventures",
+      "official_website": "https://sqm.com/en/noticia/sqm-lanza-primer-programa-de-aceleracion-corporativa-enfocado-en-startups/",
+      "operator": "SQM",
+      "source_profile": "funds/chile/sqm-lithium-ventures.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "SQM launches its Chile-based corporate acceleration and venture initiative",
+          "url": "https://sqm.com/en/noticia/sqm-lanza-primer-programa-de-aceleracion-corporativa-enfocado-en-startups/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "SQMi investment in Kite Magnetics",
+          "url": "https://sqm-i.com/news/sustainability/sqmi-invests-to-improve-electrical-vehicle-efficiency/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "SQMi investment in Vok Bikes",
+          "url": "https://sqm-i.com/news/sustainability/sqmi-lithium-ventures-invests-in-e-transport/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "SQM Lithium Ventures is the corporate venture capital initiative of SQM's lithium business, launched from Chile to invest globally in technologies for lithium and the energy transition.",
+      "verified_on": "2026-07-30"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "CL",
@@ -8296,6 +8713,44 @@
       ],
       "summary": "Sunna Ventures is a Chile-based early-stage climate technology venture capital firm connecting Latin America with the global innovation ecosystem.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "sector_agnostic"
+      ],
+      "founder_route": "https://www.tantauco.vc/",
+      "id": "fund:tantauco-ventures",
+      "name": "Tantauco Ventures",
+      "official_website": "https://www.tantauco.vc/",
+      "operator": null,
+      "source_profile": "funds/chile/tantauco-ventures.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "Tantauco Ventures thesis and founder submission",
+          "url": "https://www.tantauco.vc/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Tantauco Ventures Scout Fund launch",
+          "url": "https://es.linkedin.com/posts/tantauco-ventures_en-nuestra-b%C3%BAsqueda-incansable-por-llegar-activity-7457060869605122048-623A"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Tantauco Ventures is a Chile-based early-stage venture capital firm investing across Latin America.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -8779,6 +9234,50 @@
       "verified_on": "2026-07-26"
     },
     {
+      "aliases": [
+        "Venturance Alternative Assets"
+      ],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "biotechnology",
+        "medical_devices",
+        "foodtech",
+        "agritech",
+        "retail_technology"
+      ],
+      "founder_route": null,
+      "id": "fund:venturance",
+      "name": "Venturance",
+      "official_website": "https://venturance.cl/venture-capital/",
+      "operator": null,
+      "source_profile": "funds/chile/venturance.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Venturance venture capital thesis and portfolio",
+          "url": "https://venturance.cl/venture-capital/"
+        },
+        {
+          "kind": "official_website",
+          "title": "Venturance official company site",
+          "url": "https://venturance.cl/"
+        }
+      ],
+      "stages": [
+        "seed",
+        "series_a"
+      ],
+      "summary": "Venturance is a Chile-based alternative asset manager investing in seed and Series A technology companies.",
+      "verified_on": "2026-07-30"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "CO",
@@ -9031,6 +9530,54 @@
       ],
       "summary": "Wayra is Telefónica's corporate venture capital and open-innovation platform, investing in startups that can generate strategic business with the group.",
       "verified_on": "2026-07-25"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "regional_scaling"
+      ],
+      "founder_route": "https://weboost.vc/apply/",
+      "id": "fund:weboost",
+      "name": "WeBoost",
+      "official_website": "https://weboost.vc/",
+      "operator": null,
+      "source_profile": "funds/chile/weboost.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "WeBoost thesis and investment range",
+          "url": "https://weboost.vc/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "WeBoost official portfolio",
+          "url": "https://weboost.vc/portfolio/"
+        },
+        {
+          "kind": "official_application",
+          "title": "WeBoost founder application",
+          "url": "https://weboost.vc/apply/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "WeBoost current media and fund activity",
+          "url": "https://weboost.vc/media/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "WeBoost is a Chile-based venture capital firm helping technology startups scale across Latin America.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],

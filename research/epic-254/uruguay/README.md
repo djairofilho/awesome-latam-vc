@@ -2,7 +2,7 @@
 
 Data de corte: `2026-07-30`. Esta é uma cobertura auditada das fontes percorridas, sem alegação de totalidade.
 
-- baseline congelado: 190 perfis;
+- baseline congelado: 202 perfis;
 - 34 fontes não regulatórias, todas com owner e estado terminal;
 - 36 candidatos: 5 elegíveis, 13 duplicatas, 14 encaminhados e 4 com evidência insuficiente;
 - 100% das origens de descoberta são não regulatórias;

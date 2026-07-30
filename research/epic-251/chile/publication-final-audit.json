@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "epic": 251,
+  "issue": 273,
+  "status": "pass",
+  "cutoff_date": "2026-07-30",
+  "completed_on": "2026-07-30",
+  "source_freeze": {
+    "commit": "8f20f64c02145bfacb732a21556453a1456fb076",
+    "merge_commit": "3f62e74db2df9f832bc31dfa2d44babcb849a2f4",
+    "manifest": "research/epic-251/chile/freeze-manifest.json",
+    "eligible": 11,
+    "critical_findings_open": 0,
+    "high_findings_open": 0
+  },
+  "publication": {
+    "eligible": 11,
+    "published": 11,
+    "batch_count": 2,
+    "batch_size_limit": 10,
+    "formula": "ceil(eligible / 10)",
+    "non_overlapping": true,
+    "batches": [
+      {
+        "batch_id": "chile-publication-01",
+        "count": 10,
+        "merge_commit": "47760449ff0ad47762c54c37c17e5ac73f0839b9",
+        "content_commit": "2e23efea330db3de2f857d9cc2bd956e392afa0b",
+        "editorial_fix_commit": "305847d58d16a45a698c3221f32b750382a9ff81",
+        "destinations": [
+          "funds/chile/abastibletec.md",
+          "funds/chile/bice-ventures.md",
+          "funds/chile/carozzi-ventures.md",
+          "funds/chile/copec-wind-ventures.md",
+          "funds/chile/leap-caja-los-andes.md",
+          "funds/chile/platanus-ventures.md",
+          "funds/chile/screen-capital.md",
+          "funds/chile/sqm-lithium-ventures.md",
+          "funds/chile/tantauco-ventures.md",
+          "funds/chile/venturance.md"
+        ]
+      },
+      {
+        "batch_id": "chile-publication-02",
+        "count": 1,
+        "content_commit": "eadda7b3dfda0b24f3da0fa8341f77ec01971ff5",
+        "data_commit": "83bef9e598a8f9aa87bbad3a0f8db594f3fa7bcd",
+        "destinations": [
+          "funds/chile/weboost.md"
+        ]
+      }
+    ]
+  },
+  "localization": {
+    "required_locales": [
+      "en",
+      "pt-BR",
+      "es"
+    ],
+    "canonical_profiles": 11,
+    "pt_br_profiles": 11,
+    "es_profiles": 11,
+    "translation_status": "complete"
+  },
+  "catalog_after_batch_2": {
+    "entities": 275,
+    "funds": 200,
+    "entities_json_sha256": "fea600e56ca3b38a755328d4c8d63be59877cd01cc6553b2457d65b5cf2cd141",
+    "entities_csv_sha256": "753fb9de5dcd5699eb2f0c35b5f93d5c653659cfba326255e1049a7f9ce0c249"
+  },
+  "published_profile_hashes": {
+    "funds/chile/abastibletec.md": "d4d24cc360a6672adae7c123e304309334091011832701bce1bcdb752612ca90",
+    "funds/chile/bice-ventures.md": "5e96479ff7b7bbf92e1e47de19e8ad0ffc43ab3180de0eb1b08de1d6c793073a",
+    "funds/chile/carozzi-ventures.md": "9d5eed7573ed93d7320825cb79fbf7059bbe0d2c6cc26f5fa260e512f722ce04",
+    "funds/chile/copec-wind-ventures.md": "28bfcc2dccb3353494511822237f61a2fc355c42d9328a157aa6f8e03a22febf",
+    "funds/chile/leap-caja-los-andes.md": "c7946ce25b7be16ae066a3e322a3f4bf7726b2fa30973a3ba7d592811ce72248",
+    "funds/chile/platanus-ventures.md": "9e8d2dfa53ab8e8781da63ebd1178dab7fe29b951688a7fcef79d90a51530a55",
+    "funds/chile/screen-capital.md": "7962a3e43d2f432b57b3b63b2cc28bc73ca2983e7300917d61487d164a2f579e",
+    "funds/chile/sqm-lithium-ventures.md": "2054bb72d1f4e7d7f1751e86c3a0b6a3e5496242536b1858fa878ac703660b0c",
+    "funds/chile/tantauco-ventures.md": "7a3c1d6baeeaaba3b73e8e19ec872ecab656616e9d34aa64f9919e11a3c2d037",
+    "funds/chile/venturance.md": "81c97b9577d892d2a7af5de0771f056c7a5a357fd999f079dbb7119b1b11bbc7",
+    "funds/chile/weboost.md": "ca109d5c96737520655f3a4687321d63636c63bc26f2a262b48bfd560ce80f4d"
+  },
+  "validation": {
+    "research_contract": "pass",
+    "profile_and_translation_contract": "pass",
+    "structured_exports_deterministic": true,
+    "python_tests": {
+      "passed": 55,
+      "failed": 0
+    },
+    "node_tests": {
+      "passed": 7,
+      "failed": 0
+    },
+    "utf8_scan": "pass",
+    "diff_check": "pass"
+  },
+  "integrity": {
+    "all_eligible_published": true,
+    "all_batches_within_limit": true,
+    "all_locales_complete": true,
+    "indexes_updated": true,
+    "exports_updated": true,
+    "critical_findings_open": 0,
+    "high_findings_open": 0
+  },
+  "notes": [
+    "Final publication hashes supersede the pre-publication profile hashes in the freeze manifest because the required editorial fields and Portfolio signals section were added without changing eligibility decisions.",
+    "This audit confirms publication of the frozen eligible set; it does not claim totality of the Chilean market."
+  ]
+}

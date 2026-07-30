@@ -12,11 +12,12 @@ A curated list of Venture Capital funds investing in Latin America.
 - [Colombia](#colombia)
 - [Mexico](#mexico)
 - [Peru](#peru)
+- [Uruguay](#uruguay)
 - [Global with LatAm Presence](#global-with-latam-presence)
 
 ---
 
-The index is optimized for quick comparison and currently covers 167 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
+The index is optimized for quick comparison and currently covers 206 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
 
 ## Pan-Latin America (LatAm based)
 
@@ -54,6 +55,7 @@ The index is optimized for quick comparison and currently covers 167 funds. All 
 | [Hi Ventures (ex-ALLVP)](funds/regional/hi-ventures-allvp.md) | Pre-seed and Seed | AI and technology | Latin America |
 | [IGNIA](funds/regional/ignia.md) | Seed and Series A | Technology and inclusive growth | Latin America |
 | [Impacta VC](funds/regional/impacta-vc.md) | Seed | Social and environmental impact | Latin America |
+| [IMPAQTO Capital](funds/regional/impaqto-capital.md) | Early stage; named rounds not disclosed | Social and environmental impact with a gender lens | Ecuador, Peru, Bolivia, Colombia, and Chile |
 | [Indicator Capital](funds/regional/indicator-capital.md) | Pre-seed and Seed | Deep tech | Latin America |
 | [Innogen Capital Ventures](funds/regional/innogen-capital-ventures.md) | Pre-seed, Seed, and Series A | Early-stage technology | Northern Latin America |
 | [Innventure](funds/regional/innventure.md) | Not publicly disclosed | AgTech and AgriFoodTech | Latin America |
@@ -176,9 +178,20 @@ The index is optimized for quick comparison and currently covers 167 funds. All 
 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
+| [AbastibleTec](funds/chile/abastibletec.md) | Not publicly disclosed | Energy intelligence, energy efficiency, and decarbonization | Chile, Colombia, Ecuador, Peru, Spain, and Portugal |
+| [BICE Ventures](funds/chile/bice-ventures.md) | Pre-seed, Seed, and Series A | Fintech, insurtech, data, artificial intelligence, and wellness | Chile and Latin America |
+| [Carozzi Ventures](funds/chile/carozzi-ventures.md) | Not publicly disclosed | Agrifood, pet care, supply chain, and advanced manufacturing | Chile |
 | [CMPC Ventures](funds/chile/cmpc-ventures.md) | Not publicly disclosed | Renewable materials and circular business models | Global |
+| [Copec Wind Ventures](funds/chile/copec-wind-ventures.md) | Not publicly disclosed | Energy, mobility, and sustainability | Global |
 | [Invexor Venture Partners](funds/chile/invexor-venture-partners.md) | Pre-seed, Seed, and Series A | Innovative technology startups | Chile and the United States |
+| [Leap](funds/chile/leap-caja-los-andes.md) | Not publicly disclosed | Social impact, fintech, insurtech, wellness, and security | Chile |
+| [Platanus Ventures](funds/chile/platanus-ventures.md) | Pre-seed | Technology, sector agnostic | Latin America |
+| [Screen Capital](funds/chile/screen-capital.md) | Not publicly disclosed | Entertainment, media, and creative technology | Latin America |
+| [SQM Lithium Ventures](funds/chile/sqm-lithium-ventures.md) | Not publicly disclosed | Lithium, energy transition, mobility, and water technology | Global |
 | [Südlich Capital](funds/chile/sudlich-capital.md) | Not publicly disclosed | Science and food technology | Southern Chile |
+| [Tantauco Ventures](funds/chile/tantauco-ventures.md) | Not publicly disclosed | Technology, sector agnostic | Latin America |
+| [Venturance](funds/chile/venturance.md) | Seed and Series A | Biotechnology, medical devices, foodtech, agritech, and retail technology | Latin America |
+| [WeBoost](funds/chile/weboost.md) | Not publicly disclosed | Technology and regional scaling | Latin America |
 
 ## Colombia
 

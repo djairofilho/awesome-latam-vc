@@ -12,11 +12,12 @@ Uma lista curada de fundos de Venture Capital que investem na América Latina.
 - [Colômbia](#colômbia)
 - [México](#méxico)
 - [Peru](#peru)
+- [Uruguai](#uruguai)
 - [Global com presença na América Latina](#global-com-presença-na-américa-latina)
 
 ---
 
-O índice foi otimizado para comparação rápida e atualmente reúne 167 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
+O índice foi otimizado para comparação rápida e atualmente reúne 206 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
 
 ## Pan-América Latina (sede na região)
 
@@ -54,6 +55,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 167 fundos
 | [Hi Ventures (ex-ALLVP)](funds/regional/hi-ventures-allvp.md) | Pre-seed e Seed | IA e tecnologia | América Latina |
 | [IGNIA](funds/regional/ignia.md) | Seed e Série A | Tecnologia e crescimento inclusivo | América Latina |
 | [Impacta VC](funds/regional/impacta-vc.md) | Seed | Impacto social e ambiental | América Latina |
+| [IMPAQTO Capital](funds/regional/impaqto-capital.md) | Estágio inicial; rodadas não divulgadas | Impacto social e ambiental com perspectiva de gênero | Equador, Peru, Bolívia, Colômbia e Chile |
 | [Indicator Capital](funds/regional/indicator-capital.md) | Pre-seed e Seed | Deep tech | América Latina |
 | [Innogen Capital Ventures](funds/regional/innogen-capital-ventures.md) | Pre-seed, Seed e Série A | Tecnologia em estágio inicial | Norte da América Latina |
 | [Innventure](funds/regional/innventure.md) | Não divulgado publicamente | AgTech e AgriFoodTech | América Latina |
@@ -176,9 +178,20 @@ O índice foi otimizado para comparação rápida e atualmente reúne 167 fundos
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
+| [AbastibleTec](funds/chile/abastibletec.md) | Não divulgado publicamente | Inteligência energética, eficiência energética e descarbonização | Chile, Colômbia, Equador, Peru, Espanha e Portugal |
+| [BICE Ventures](funds/chile/bice-ventures.md) | Pre-seed, Seed e Série A | Fintech, insurtech, dados, inteligência artificial e bem-estar | Chile e América Latina |
+| [Carozzi Ventures](funds/chile/carozzi-ventures.md) | Não divulgado publicamente | Alimentos, cuidados para pets, cadeia de suprimentos e manufatura avançada | Chile |
 | [CMPC Ventures](funds/chile/cmpc-ventures.md) | Não divulgado publicamente | Materiais renováveis e modelos de negócio circulares | Global |
+| [Copec Wind Ventures](funds/chile/copec-wind-ventures.md) | Não divulgado publicamente | Energia, mobilidade e sustentabilidade | Global |
 | [Invexor Venture Partners](funds/chile/invexor-venture-partners.md) | Pre-seed, Seed e Série A | Startups de tecnologia inovadora | Chile e Estados Unidos |
+| [Leap](funds/chile/leap-caja-los-andes.md) | Não divulgado publicamente | Impacto social, fintech, insurtech, bem-estar e segurança | Chile |
+| [Platanus Ventures](funds/chile/platanus-ventures.md) | Pre-seed | Tecnologia, sem restrição setorial | América Latina |
+| [Screen Capital](funds/chile/screen-capital.md) | Não divulgado publicamente | Entretenimento, mídia e tecnologia criativa | América Latina |
+| [SQM Lithium Ventures](funds/chile/sqm-lithium-ventures.md) | Não divulgado publicamente | Lítio, transição energética, mobilidade e tecnologia hídrica | Global |
 | [Südlich Capital](funds/chile/sudlich-capital.md) | Não divulgado publicamente | Ciência e tecnologia de alimentos | Sul do Chile |
+| [Tantauco Ventures](funds/chile/tantauco-ventures.md) | Não divulgado publicamente | Tecnologia, sem restrição setorial | América Latina |
+| [Venturance](funds/chile/venturance.md) | Seed e Série A | Biotecnologia, dispositivos médicos, foodtech, agritech e tecnologia para varejo | América Latina |
+| [WeBoost](funds/chile/weboost.md) | Não divulgado publicamente | Tecnologia e expansão regional | América Latina |
 
 ## Colômbia
 
