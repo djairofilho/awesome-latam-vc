@@ -16,7 +16,7 @@ Uma lista curada de fundos de Venture Capital que investem na América Latina.
 
 ---
 
-O índice foi otimizado para comparação rápida e atualmente reúne 154 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
+O índice foi otimizado para comparação rápida e atualmente reúne 156 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
 
 ## Pan-América Latina (sede na região)
 
@@ -188,6 +188,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 154 fundos
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
 | [Capital Invent](funds/mexico/capital-invent.md) | Não divulgado publicamente | Marketplaces, e-commerce, fintech, mobile e SaaS | México |
+| [FEMSA Ventures](funds/mexico/femsa-ventures.md) | Não divulgado publicamente | Varejo, bebidas e logística | México e América Latina |
 
 ## Peru
 
@@ -243,6 +244,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 154 fundos
 | [Valutia](funds/multi-country/valutia.md) | Não divulgado publicamente | Não divulgado publicamente | Portugal e Brasil |
 | [Wayra](funds/multi-country/wayra.md) | Multiestágio | Tecnologia estratégica | Brasil, Europa e América Latina |
 | [Worthit](funds/multi-country/worthit.md) | Pre-seed | SaaS B2B e IA | América Latina |
+| [Zacua Ventures](funds/multi-country/zacua-ventures.md) | Não divulgado publicamente | Tecnologia para construção e ambiente construído | Global, incluindo o México |
 
 ## Recursos relacionados do ecossistema
 
