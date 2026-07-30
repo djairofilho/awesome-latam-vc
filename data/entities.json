@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 274,
+    "entity_count": 275,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -9265,6 +9265,54 @@
       ],
       "summary": "Wayra is Telefónica's corporate venture capital and open-innovation platform, investing in startups that can generate strategic business with the group.",
       "verified_on": "2026-07-25"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "regional_scaling"
+      ],
+      "founder_route": "https://weboost.vc/apply/",
+      "id": "fund:weboost",
+      "name": "WeBoost",
+      "official_website": "https://weboost.vc/",
+      "operator": null,
+      "source_profile": "funds/chile/weboost.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "WeBoost thesis and investment range",
+          "url": "https://weboost.vc/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "WeBoost official portfolio",
+          "url": "https://weboost.vc/portfolio/"
+        },
+        {
+          "kind": "official_application",
+          "title": "WeBoost founder application",
+          "url": "https://weboost.vc/apply/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "WeBoost current media and fund activity",
+          "url": "https://weboost.vc/media/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "WeBoost is a Chile-based venture capital firm helping technology startups scale across Latin America.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
