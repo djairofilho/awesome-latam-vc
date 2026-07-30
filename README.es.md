@@ -16,7 +16,7 @@ Una lista curada de fondos de Venture Capital que invierten en América Latina.
 
 ---
 
-El índice está optimizado para una comparación rápida y actualmente reúne 201 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
+El índice está optimizado para una comparación rápida y actualmente reúne 202 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
 
 ## Pan-Latinoamérica (sede en la región)
 
@@ -189,6 +189,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [SQM Lithium Ventures](funds/chile/sqm-lithium-ventures.md) | No divulgado públicamente | Litio, transición energética, movilidad y tecnología hídrica | Global |
 | [Südlich Capital](funds/chile/sudlich-capital.md) | No divulgado públicamente | Ciencia y tecnología de alimentos | Sur de Chile |
 | [Tantauco Ventures](funds/chile/tantauco-ventures.md) | No divulgado públicamente | Tecnología, sin restricción sectorial | América Latina |
+| [The Ganesha Fund](funds/chile/the-ganesha-fund.md) | Pre-seed y Seed | Biotecnología, salud humana, salud planetaria, agtech, foodtech y medtech | América Latina |
 | [Venturance](funds/chile/venturance.md) | Seed y Serie A | Biotecnología, dispositivos médicos, foodtech, agritech y tecnología para retail | América Latina |
 | [WeBoost](funds/chile/weboost.md) | No divulgado públicamente | Tecnología y expansión regional | América Latina |
 

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "fund-cl-the-ganesha-fund",
+  "review_scope": [
+    "handoff origin",
+    "fund versus accelerator separation",
+    "operator and vehicle identity",
+    "base geography",
+    "LATAM access",
+    "direct and recurring investment",
+    "current activity",
+    "application route",
+    "canonical destination"
+  ],
+  "status": "completed",
+  "result": "approved",
+  "reviewer": "integrator",
+  "reviewed_on": "2026-07-30",
+  "evidence_ids_reviewed": [
+    "ev-cl-ganesha-01",
+    "ev-cl-ganesha-02",
+    "ev-cl-ganesha-03",
+    "ev-cl-ganesha-04",
+    "ev-cl-ganesha-05",
+    "ev-cl-ganesha-06",
+    "ev-cl-ganesha-07",
+    "ev-cl-ganesha-08"
+  ],
+  "findings": {
+    "critical_open": 0,
+    "high_open": 0
+  },
+  "publication_authorized": true,
+  "notes": "Independent review confirmed the handoff, entity separation, operator and vehicle identity, Chile catalog base, LATAM thesis, recurring activity, founder access, and canonical destination."
+}
