@@ -63,10 +63,14 @@ A Screen Capital é uma gestora chilena de venture capital que investe em negóc
 - **Investimento direto em startups:** Sim
 - **Aberto a founders externos:** Não divulgado publicamente
 - **Estágio de entrada:** Not publicly disclosed
+- **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Entertainment, media, and creative technology
 - **Geografia:** Latin America
 - **Cheque inicial:** Not publicly disclosed
-- **Portfólio:** Screen One and Screen II
+- **Papel no investimento:** Investidor direto
+- **Modelos de negócio:** Não divulgado publicamente
+- **Tamanho do portfólio:** Não divulgado publicamente
+- **Empresas selecionadas:** Umbra
 - **Atividade atual:** Screen II investment in Umbra confirmed in 2025
 - **Enviar uma startup:** Não divulgado publicamente
 
@@ -74,7 +78,7 @@ A Screen Capital é uma gestora chilena de venture capital que investe em negóc
 
 As fontes oficiais confirmam a tese de Screen Capital e seu modelo recorrente de investimento direto, sem ampliar os critérios além do que foi publicado.
 
-## Sinais observados
+## Sinais do portfólio
 
 O sinal observado registrado na auditoria é: Screen II investment in Umbra confirmed in 2025. Esse sinal não amplia a tese declarada.
 

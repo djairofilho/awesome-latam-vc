@@ -63,10 +63,14 @@ Screen Capital is a Chile-based venture manager investing in audiovisual, entert
 - **Direct startup investment:** Yes
 - **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Entertainment, media, and creative technology
 - **Geography:** Latin America
 - **Initial check:** Not publicly disclosed
-- **Portfolio:** Screen One and Screen II
+- **Investment role:** Direct investor
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Umbra
 - **Current activity:** Screen II investment in Umbra confirmed in 2025
 - **Submit a startup:** Not publicly disclosed
 
@@ -74,7 +78,7 @@ Screen Capital is a Chile-based venture manager investing in audiovisual, entert
 
 Official sources confirm Screen Capital's declared thesis and recurring direct-investment model without extending the criteria beyond published facts.
 
-## Observed signals
+## Portfolio signals
 
 The activity signal recorded by the audit is: Screen II investment in Umbra confirmed in 2025. This signal does not expand the declared thesis.
 

@@ -65,10 +65,14 @@ Carozzi Ventures es la unidad chilena de corporate venture capital de la empresa
 - **Inversión directa en startups:** Sí
 - **Abierto a founders externos:** Sí
 - **Etapa de entrada:** Not publicly disclosed
+- **Etapas posteriores:** No divulgado públicamente
 - **Foco:** Agrifood, pet care, supply chain, and advanced manufacturing
 - **Geografía:** Chile
 - **Cheque inicial:** Up to USD 1 million per initiative
-- **Portafolio:** Frankles and Neocrop Technologies
+- **Papel en la inversión:** Inversionista directo
+- **Modelos de negocio:** No divulgado públicamente
+- **Tamaño del portafolio:** 2 inversiones confirmadas en startups
+- **Empresas seleccionadas:** Sinergia ID y Neocrop
 - **Actividad actual:** Two direct startup investments confirmed by 2026
 - **Enviar una startup:** https://www.carozzicorp.com/carozzi-ventures/
 
@@ -76,7 +80,7 @@ Carozzi Ventures es la unidad chilena de corporate venture capital de la empresa
 
 Las fuentes oficiales confirman la tesis de Carozzi Ventures y su modelo recurrente de inversión directa, sin ampliar los criterios más allá de lo publicado.
 
-## Señales observadas
+## Señales del portafolio
 
 La señal observada registrada en la auditoría es: Two direct startup investments confirmed by 2026. Esta señal no amplía la tesis declarada.
 

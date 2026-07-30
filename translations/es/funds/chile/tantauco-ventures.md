@@ -57,10 +57,14 @@ Tantauco Ventures es una gestora chilena de venture capital early-stage que invi
 - **Inversión directa en startups:** Sí
 - **Abierto a founders externos:** Sí
 - **Etapa de entrada:** Not publicly disclosed
+- **Etapas posteriores:** No divulgado públicamente
 - **Foco:** Technology, sector agnostic
 - **Geografía:** Latin America
 - **Cheque inicial:** Not publicly disclosed
-- **Portafolio:** Not publicly disclosed
+- **Papel en la inversión:** Inversionista directo
+- **Modelos de negocio:** No divulgado públicamente
+- **Tamaño del portafolio:** No divulgado públicamente
+- **Empresas seleccionadas:** No divulgado públicamente
 - **Actividad actual:** Scout Fund launched in 2026
 - **Enviar una startup:** https://www.tantauco.vc/
 
@@ -68,7 +72,7 @@ Tantauco Ventures es una gestora chilena de venture capital early-stage que invi
 
 Las fuentes oficiales confirman la tesis de Tantauco Ventures y su modelo recurrente de inversión directa, sin ampliar los criterios más allá de lo publicado.
 
-## Señales observadas
+## Señales del portafolio
 
 La señal observada registrada en la auditoría es: Scout Fund launched in 2026. Esta señal no amplía la tesis declarada.
 

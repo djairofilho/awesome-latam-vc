@@ -57,10 +57,14 @@ Tantauco Ventures is a Chile-based early-stage venture capital firm investing ac
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Technology, sector agnostic
 - **Geography:** Latin America
 - **Initial check:** Not publicly disclosed
-- **Portfolio:** Not publicly disclosed
+- **Investment role:** Direct investor
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Current activity:** Scout Fund launched in 2026
 - **Submit a startup:** https://www.tantauco.vc/
 
@@ -68,7 +72,7 @@ Tantauco Ventures is a Chile-based early-stage venture capital firm investing ac
 
 Official sources confirm Tantauco Ventures's declared thesis and recurring direct-investment model without extending the criteria beyond published facts.
 
-## Observed signals
+## Portfolio signals
 
 The activity signal recorded by the audit is: Scout Fund launched in 2026. This signal does not expand the declared thesis.
 

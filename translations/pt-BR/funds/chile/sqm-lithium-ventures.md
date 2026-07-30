@@ -69,10 +69,14 @@ A SQM Lithium Ventures é a iniciativa de corporate venture capital do negócio 
 - **Investimento direto em startups:** Sim
 - **Aberto a founders externos:** Não divulgado publicamente
 - **Estágio de entrada:** Not publicly disclosed
+- **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Lithium, energy transition, mobility, and water technology
 - **Geografia:** Global
 - **Cheque inicial:** Not publicly disclosed
-- **Portfólio:** Global direct investments across mobility, materials, water, and battery recycling
+- **Papel no investimento:** Investidor direto
+- **Modelos de negócio:** Não divulgado publicamente
+- **Tamanho do portfólio:** Não divulgado publicamente
+- **Empresas selecionadas:** Kite Magnetics e Vok Bikes
 - **Atividade atual:** Direct investments in Kite Magnetics and Vok Bikes confirmed in 2025
 - **Enviar uma startup:** Não divulgado publicamente
 
@@ -80,7 +84,7 @@ A SQM Lithium Ventures é a iniciativa de corporate venture capital do negócio 
 
 As fontes oficiais confirmam a tese de SQM Lithium Ventures e seu modelo recorrente de investimento direto, sem ampliar os critérios além do que foi publicado.
 
-## Sinais observados
+## Sinais do portfólio
 
 O sinal observado registrado na auditoria é: Direct investments in Kite Magnetics and Vok Bikes confirmed in 2025. Esse sinal não amplia a tese declarada.
 

@@ -73,10 +73,14 @@ A AbastibleTec é uma unidade chilena de investimento corporativo que investe em
 - **Investimento direto em startups:** Sim
 - **Aberto a founders externos:** Não divulgado publicamente
 - **Estágio de entrada:** Not publicly disclosed
+- **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Energy intelligence, energy efficiency, and decarbonization
 - **Geografia:** Chile, Colombia, Ecuador, Peru, Spain, and Portugal
 - **Cheque inicial:** Not publicly disclosed
-- **Portfólio:** Bluetek and Zensi
+- **Papel no investimento:** Investidor direto
+- **Modelos de negócio:** Não divulgado publicamente
+- **Tamanho do portfólio:** 2 investimentos confirmados em startups
+- **Empresas selecionadas:** Bluetek e Zensi
 - **Atividade atual:** Two direct startup investments confirmed in 2026
 - **Enviar uma startup:** Não divulgado publicamente
 
@@ -84,7 +88,7 @@ A AbastibleTec é uma unidade chilena de investimento corporativo que investe em
 
 As fontes oficiais confirmam a tese de AbastibleTec e seu modelo recorrente de investimento direto, sem ampliar os critérios além do que foi publicado.
 
-## Sinais observados
+## Sinais do portfólio
 
 O sinal observado registrado na auditoria é: Two direct startup investments confirmed in 2026. Esse sinal não amplia a tese declarada.
 

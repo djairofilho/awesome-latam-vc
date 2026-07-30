@@ -65,10 +65,14 @@ A Venturance é uma gestora chilena de ativos alternativos que investe em empres
 - **Investimento direto em startups:** Sim
 - **Aberto a founders externos:** Não divulgado publicamente
 - **Estágio de entrada:** Seed and Series A
+- **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Biotechnology, medical devices, foodtech, agritech, and retail technology
 - **Geografia:** Latin America
 - **Cheque inicial:** Not publicly disclosed
-- **Portfólio:** FIP Alerce and Zentynel LP I
+- **Papel no investimento:** Investidor direto
+- **Modelos de negócio:** Não divulgado publicamente
+- **Tamanho do portfólio:** 2 investimentos ativos datados de 2025
+- **Empresas selecionadas:** HeXemBio e Asclepii
 - **Atividade atual:** Two active portfolio investments dated 2025
 - **Enviar uma startup:** Não divulgado publicamente
 
@@ -76,7 +80,7 @@ A Venturance é uma gestora chilena de ativos alternativos que investe em empres
 
 As fontes oficiais confirmam a tese de Venturance e seu modelo recorrente de investimento direto, sem ampliar os critérios além do que foi publicado.
 
-## Sinais observados
+## Sinais do portfólio
 
 O sinal observado registrado na auditoria é: Two active portfolio investments dated 2025. Esse sinal não amplia a tese declarada.
 

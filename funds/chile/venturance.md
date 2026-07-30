@@ -65,10 +65,14 @@ Venturance is a Chile-based alternative asset manager investing in seed and Seri
 - **Direct startup investment:** Yes
 - **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Seed and Series A
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Biotechnology, medical devices, foodtech, agritech, and retail technology
 - **Geography:** Latin America
 - **Initial check:** Not publicly disclosed
-- **Portfolio:** FIP Alerce and Zentynel LP I
+- **Investment role:** Direct investor
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** 2 active investments dated 2025
+- **Selected companies:** HeXemBio and Asclepii
 - **Current activity:** Two active portfolio investments dated 2025
 - **Submit a startup:** Not publicly disclosed
 
@@ -76,7 +80,7 @@ Venturance is a Chile-based alternative asset manager investing in seed and Seri
 
 Official sources confirm Venturance's declared thesis and recurring direct-investment model without extending the criteria beyond published facts.
 
-## Observed signals
+## Portfolio signals
 
 The activity signal recorded by the audit is: Two active portfolio investments dated 2025. This signal does not expand the declared thesis.
 

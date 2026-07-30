@@ -66,10 +66,14 @@ Platanus Ventures es una aceleradora e inversora de venture capital chilena que 
 - **Inversión directa en startups:** Sí
 - **Abierto a founders externos:** Sí
 - **Etapa de entrada:** Pre-seed
+- **Etapas posteriores:** No divulgado públicamente
 - **Foco:** Technology, sector agnostic
 - **Geografía:** Latin America
 - **Cheque inicial:** USD 200,000 for 7% equity
-- **Portafolio:** More than 90 startups on the reviewed official site
+- **Papel en la inversión:** Inversionista directo
+- **Modelos de negocio:** No divulgado públicamente
+- **Tamaño del portafolio:** Más de 90 startups
+- **Empresas seleccionadas:** No divulgado públicamente
 - **Actividad actual:** Two 2026 cohorts and an open dated application route
 - **Enviar una startup:** https://platan.us/programa
 
@@ -77,7 +81,7 @@ Platanus Ventures es una aceleradora e inversora de venture capital chilena que 
 
 Las fuentes oficiales confirman la tesis de Platanus Ventures y su modelo recurrente de inversión directa, sin ampliar los criterios más allá de lo publicado.
 
-## Señales observadas
+## Señales del portafolio
 
 La señal observada registrada en la auditoría es: Two 2026 cohorts and an open dated application route. Esta señal no amplía la tesis declarada.
 

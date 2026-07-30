@@ -69,10 +69,14 @@ BICE Ventures es la unidad chilena de corporate venture capital y company buildi
 - **Inversión directa en startups:** Sí
 - **Abierto a founders externos:** Sí
 - **Etapa de entrada:** Pre-seed, Seed, and Series A
+- **Etapas posteriores:** No divulgado públicamente
 - **Foco:** Fintech, insurtech, data, artificial intelligence, and wellness
 - **Geografía:** Chile and Latin America
 - **Cheque inicial:** Not publicly disclosed
-- **Portafolio:** Five active investments on the reviewed official site
+- **Papel en la inversión:** Inversionista directo
+- **Modelos de negocio:** No divulgado públicamente
+- **Tamaño del portafolio:** 5 inversiones activas
+- **Empresas seleccionadas:** No divulgado públicamente
 - **Actividad actual:** Active portfolio and open founder application verified in 2026
 - **Enviar una startup:** https://www.biceventures.com/en/pitch-your-startup
 
@@ -80,7 +84,7 @@ BICE Ventures es la unidad chilena de corporate venture capital y company buildi
 
 Las fuentes oficiales confirman la tesis de BICE Ventures y su modelo recurrente de inversión directa, sin ampliar los criterios más allá de lo publicado.
 
-## Señales observadas
+## Señales del portafolio
 
 La señal observada registrada en la auditoría es: Active portfolio and open founder application verified in 2026. Esta señal no amplía la tesis declarada.
 

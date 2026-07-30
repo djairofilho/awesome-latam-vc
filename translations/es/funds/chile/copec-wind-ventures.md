@@ -68,10 +68,14 @@ Copec Wind Ventures es la unidad de corporate venture capital de Copec que invie
 - **Inversión directa en startups:** Sí
 - **Abierto a founders externos:** No divulgado públicamente
 - **Etapa de entrada:** Not publicly disclosed
+- **Etapas posteriores:** No divulgado públicamente
 - **Foco:** Energy, mobility, and sustainability
 - **Geografía:** Global
 - **Cheque inicial:** Not publicly disclosed
-- **Portafolio:** 25 startups reported by Copec in 2025
+- **Papel en la inversión:** Inversionista directo
+- **Modelos de negocio:** No divulgado públicamente
+- **Tamaño del portafolio:** 25 startups reportadas por Copec en 2025
+- **Empresas seleccionadas:** Optibus
 - **Actividad actual:** Direct investment in Optibus confirmed in 2025
 - **Enviar una startup:** No divulgado públicamente
 
@@ -79,7 +83,7 @@ Copec Wind Ventures es la unidad de corporate venture capital de Copec que invie
 
 Las fuentes oficiales confirman la tesis de Copec Wind Ventures y su modelo recurrente de inversión directa, sin ampliar los criterios más allá de lo publicado.
 
-## Señales observadas
+## Señales del portafolio
 
 La señal observada registrada en la auditoría es: Direct investment in Optibus confirmed in 2025. Esta señal no amplía la tesis declarada.
 

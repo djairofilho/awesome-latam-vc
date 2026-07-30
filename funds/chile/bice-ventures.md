@@ -69,10 +69,14 @@ BICE Ventures is Grupo BICE's Chile-based corporate venture capital and company-
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Pre-seed, Seed, and Series A
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Fintech, insurtech, data, artificial intelligence, and wellness
 - **Geography:** Chile and Latin America
 - **Initial check:** Not publicly disclosed
-- **Portfolio:** Five active investments on the reviewed official site
+- **Investment role:** Direct investor
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** 5 active investments
+- **Selected companies:** Not publicly disclosed
 - **Current activity:** Active portfolio and open founder application verified in 2026
 - **Submit a startup:** https://www.biceventures.com/en/pitch-your-startup
 
@@ -80,7 +84,7 @@ BICE Ventures is Grupo BICE's Chile-based corporate venture capital and company-
 
 Official sources confirm BICE Ventures's declared thesis and recurring direct-investment model without extending the criteria beyond published facts.
 
-## Observed signals
+## Portfolio signals
 
 The activity signal recorded by the audit is: Active portfolio and open founder application verified in 2026. This signal does not expand the declared thesis.
 

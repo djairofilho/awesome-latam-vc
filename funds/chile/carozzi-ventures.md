@@ -65,10 +65,14 @@ Carozzi Ventures is the Chile-based corporate venture capital unit of food compa
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Agrifood, pet care, supply chain, and advanced manufacturing
 - **Geography:** Chile
 - **Initial check:** Up to USD 1 million per initiative
-- **Portfolio:** Frankles and Neocrop Technologies
+- **Investment role:** Direct investor
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** 2 confirmed startup investments
+- **Selected companies:** Sinergia ID and Neocrop
 - **Current activity:** Two direct startup investments confirmed by 2026
 - **Submit a startup:** https://www.carozzicorp.com/carozzi-ventures/
 
@@ -76,7 +80,7 @@ Carozzi Ventures is the Chile-based corporate venture capital unit of food compa
 
 Official sources confirm Carozzi Ventures's declared thesis and recurring direct-investment model without extending the criteria beyond published facts.
 
-## Observed signals
+## Portfolio signals
 
 The activity signal recorded by the audit is: Two direct startup investments confirmed by 2026. This signal does not expand the declared thesis.
 

@@ -65,10 +65,14 @@ A Leap é a plataforma chilena de corporate venture capital da Caja Los Andes pa
 - **Investimento direto em startups:** Sim
 - **Aberto a founders externos:** Não divulgado publicamente
 - **Estágio de entrada:** Not publicly disclosed
+- **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Social impact, fintech, insurtech, wellness, and security
 - **Geografia:** Chile
 - **Cheque inicial:** Not publicly disclosed
-- **Portfólio:** Betterfly, Soy Focus, and Soyio
+- **Papel no investimento:** Investidor direto
+- **Modelos de negócio:** Não divulgado publicamente
+- **Tamanho do portfólio:** 3 investimentos diretos divulgados
+- **Empresas selecionadas:** Betterfly, Soy Focus e Soyio
 - **Atividade atual:** Current direct-investment portfolio verified in 2026
 - **Enviar uma startup:** Não divulgado publicamente
 
@@ -76,7 +80,7 @@ A Leap é a plataforma chilena de corporate venture capital da Caja Los Andes pa
 
 As fontes oficiais confirmam a tese de Leap e seu modelo recorrente de investimento direto, sem ampliar os critérios além do que foi publicado.
 
-## Sinais observados
+## Sinais do portfólio
 
 O sinal observado registrado na auditoria é: Current direct-investment portfolio verified in 2026. Esse sinal não amplia a tese declarada.
 

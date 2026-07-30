@@ -66,10 +66,14 @@ Platanus Ventures is a Chile-based accelerator and venture capital investor back
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Pre-seed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Technology, sector agnostic
 - **Geography:** Latin America
 - **Initial check:** USD 200,000 for 7% equity
-- **Portfolio:** More than 90 startups on the reviewed official site
+- **Investment role:** Direct investor
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** More than 90 startups
+- **Selected companies:** Not publicly disclosed
 - **Current activity:** Two 2026 cohorts and an open dated application route
 - **Submit a startup:** https://platan.us/programa
 
@@ -77,7 +81,7 @@ Platanus Ventures is a Chile-based accelerator and venture capital investor back
 
 Official sources confirm Platanus Ventures's declared thesis and recurring direct-investment model without extending the criteria beyond published facts.
 
-## Observed signals
+## Portfolio signals
 
 The activity signal recorded by the audit is: Two 2026 cohorts and an open dated application route. This signal does not expand the declared thesis.
 

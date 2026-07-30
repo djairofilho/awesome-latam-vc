@@ -73,10 +73,14 @@ AbastibleTec is a Chile-based corporate investment unit backing energy-intellige
 - **Direct startup investment:** Yes
 - **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Energy intelligence, energy efficiency, and decarbonization
 - **Geography:** Chile, Colombia, Ecuador, Peru, Spain, and Portugal
 - **Initial check:** Not publicly disclosed
-- **Portfolio:** Bluetek and Zensi
+- **Investment role:** Direct investor
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** 2 confirmed startup investments
+- **Selected companies:** Bluetek and Zensi
 - **Current activity:** Two direct startup investments confirmed in 2026
 - **Submit a startup:** Not publicly disclosed
 
@@ -84,7 +88,7 @@ AbastibleTec is a Chile-based corporate investment unit backing energy-intellige
 
 Official sources confirm AbastibleTec's declared thesis and recurring direct-investment model without extending the criteria beyond published facts.
 
-## Observed signals
+## Portfolio signals
 
 The activity signal recorded by the audit is: Two direct startup investments confirmed in 2026. This signal does not expand the declared thesis.
 
