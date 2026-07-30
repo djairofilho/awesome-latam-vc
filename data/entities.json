@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 281,
+    "entity_count": 282,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -8818,6 +8818,72 @@
       ],
       "summary": "The Ark Fund is an investment organization listed in this directory; its current investment mandate could not be verified.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [
+        "The Ganesha Lab Fund",
+        "The Ganesha Lab Fund I LP"
+      ],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "biotech",
+        "human_health",
+        "planetary_health",
+        "agtech",
+        "foodtech",
+        "medtech"
+      ],
+      "founder_route": "https://theganeshafund.decilehub.com/",
+      "id": "fund:the-ganesha-fund",
+      "name": "The Ganesha Fund",
+      "official_website": "https://theganeshafund.decilehub.com/",
+      "operator": "The Ganesha Lab",
+      "source_profile": "funds/chile/the-ganesha-fund.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "The Ganesha Fund official landing",
+          "url": "https://theganeshafund.decilehub.com/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "The Ganesha Fund launch and vehicle identity",
+          "url": "https://theganeshalab.com/2023-a-year-of-expansion-and-consolidation/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "The Ganesha Lab investment in Amplify Dynamics",
+          "url": "https://theganeshalab.com/es/the-ganesha-lab-invests-in-amplify-dynamics-to-drive-innovation-in-lipid-nanoparticles-purification-technology/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Go Europe Connect 2026 investment pipeline",
+          "url": "https://theganeshalab.com/es/go-europe-connect-2026/"
+        },
+        {
+          "kind": "official_program",
+          "title": "ANII venture-capital organization registry",
+          "url": "https://anii.org.uy/emprendimientos/organizaciones-de-capital-emprendedor/"
+        },
+        {
+          "kind": "secondary",
+          "title": "Uruguay Innovation Hub co-investment in TELL",
+          "url": "https://www.aegu.org.uy/post/uruguay-innovation-hub-concret%C3%B3-su-segunda-coinversi%C3%B3n-cu%C3%A1l-fue-la-startup-seleccionada-para-recib"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "The Ganesha Fund is an early-stage biotech fund operated by Chile-based The Ganesha Lab for startups originating in Latin America.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],

@@ -5,7 +5,7 @@
     "funds/uruguay/labplus-venture-fund.md": "d268d7fe00f4da6574729250151885d6cf19cd9eeb37218a54204590c40ec26a",
     "funds/uruguay/mrpink-vc.md": "f6cae330bfb196b147b96ff007f0db7a051921a7ce2e13ba7ab346911036c2e0",
     "funds/uruguay/tokai-ventures.md": "59bbcb2ed6a0a3e8a2c506005b817c25c9d725a1bf3ab4153b19f36c6f3ce319",
-    "research/epic-254/uruguay/baseline/catalog-baseline.jsonl": "cff302fd19f29d26150faed36febd3ef8979c306c5c68b956818673802f8146a",
+    "research/epic-254/uruguay/baseline/catalog-baseline.jsonl": "4b8d8050f63cd3a0900be37ac0bde957a5d5b913a90f8b7a2e4a3652dae98d44",
     "research/epic-254/uruguay/baseline/prior-artifacts.jsonl": "021287a8b11d376ceca40167a5bc0849f9ed26407890e8d067f5e5d75738ea8f",
     "research/epic-254/uruguay/candidates.jsonl": "5b47b7b38535fee2c437bd03a4f98dfd0681003aa699837e07a878d697ff0d06",
     "research/epic-254/uruguay/contract.json": "8ff6f17beebce264fdf30ade0f27678d37d2ee52c45b481c989a13674e7ceeeb",
@@ -27,7 +27,7 @@
   },
   "counts": {
     "candidates": 36,
-    "catalog_baseline": 202,
+    "catalog_baseline": 203,
     "duplicate": 13,
     "eligible": 5,
     "insufficient_evidence": 4,
