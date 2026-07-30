@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 288,
+    "entity_count": 291,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -5526,6 +5526,54 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "HN",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "HN",
+        "LATAM",
+        "US"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "biotechnology",
+        "hardware",
+        "robotics",
+        "fintech",
+        "web3"
+      ],
+      "founder_route": null,
+      "id": "fund:infinita-vc",
+      "name": "Infinita VC",
+      "official_website": "https://infinitavc.com/",
+      "operator": null,
+      "source_profile": "funds/regional/infinita-vc.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Infinita VC official site",
+          "url": "https://infinitavc.com/defi2023"
+        },
+        {
+          "kind": "secondary",
+          "title": "Infinita VC public company profile",
+          "url": "https://www.linkedin.com/company/infinita-fund"
+        },
+        {
+          "kind": "secondary",
+          "title": "Yendou pre-seed round",
+          "url": "https://tech.eu/2024/02/28/berlin-based-startup-yendou-the-salesforce-for-life-sciences-rd-teams/"
+        }
+      ],
+      "stages": [
+        "seed"
+      ],
+      "summary": "Infinita VC is an early-stage venture capital fund based in Próspera, Roatán, investing in technologies constrained by regulatory bottlenecks.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "GLOBAL",
         "kind": "global"
       },
@@ -5696,6 +5744,49 @@
       ],
       "summary": "Invariantes Fund is an investment organization focused on Technology, sector agnostic in Latin America and the United States.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "CR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "sector_agnostic",
+        "innovative_companies"
+      ],
+      "founder_route": "https://www.parquetec.org/general-7",
+      "id": "fund:invertup",
+      "name": "InvertUP",
+      "official_website": "https://invertup.com/",
+      "operator": null,
+      "source_profile": "funds/regional/invertup.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "InvertUP",
+          "url": "https://invertup.com/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Portfolio & Prospects",
+          "url": "https://invertup.com/portfolio/"
+        },
+        {
+          "kind": "official_website",
+          "title": "Costa Rica Angels and InvertUP",
+          "url": "https://www.parquetec.org/general-7"
+        }
+      ],
+      "stages": [
+        "seed"
+      ],
+      "summary": "InvertUP is a Costa Rica-based private investment vehicle providing seed capital to a diversified portfolio of early-stage startups.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -9521,6 +9612,44 @@
         "series_a"
       ],
       "summary": "Venturance is a Chile-based alternative asset manager investing in seed and Series A technology companies.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "PA",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "PA",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "artificial_intelligence",
+        "saas",
+        "iot",
+        "enterprise_software",
+        "climate"
+      ],
+      "founder_route": "https://ventureclublatam.com/",
+      "id": "fund:venture-club-latam",
+      "name": "Venture Club Latam",
+      "official_website": "https://ventureclublatam.com/",
+      "operator": null,
+      "source_profile": "funds/regional/venture-club-latam.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Venture Club Latam",
+          "url": "https://ventureclublatam.com/"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Venture Club Latam is a Panama-based early-stage investment platform using a rolling fund and an SPV for each portfolio investment.",
       "verified_on": "2026-07-30"
     },
     {

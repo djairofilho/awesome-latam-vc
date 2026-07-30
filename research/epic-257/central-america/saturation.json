@@ -1,0 +1,29 @@
+{
+  "claims_totality": false,
+  "cutoff": "2026-07-30",
+  "method": "Two country-language blind-search rounds after source-family discovery; directories were leads only.",
+  "rounds": [
+    {
+      "new_candidate_ids": [
+        "ca-infinita",
+        "ca-corenest",
+        "ca-rivas-capital",
+        "ca-crvn-capital"
+      ],
+      "new_eligible_ids": [
+        "ca-infinita"
+      ],
+      "queries": 14,
+      "round": 1
+    },
+    {
+      "new_candidate_ids": [],
+      "new_eligible_ids": [],
+      "queries": 14,
+      "round": 2
+    }
+  ],
+  "schema_version": "1.0",
+  "terminal_reached": true,
+  "terminal_rule": "stop after a complete second round across all seven countries yields no new candidate"
+}

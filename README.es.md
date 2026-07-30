@@ -213,6 +213,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
 | [Caricaco Ventures](funds/costa-rica/caricaco-ventures.md) | No divulgado públicamente | Software e inteligencia artificial | Centroamérica y República Dominicana |
+| [InvertUP](funds/regional/invertup.md) | Semilla | Agnóstico por sector y empresas innovadoras | Costa Rica |
 
 ## República Dominicana
 
@@ -226,12 +227,24 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | --- | --- | --- | --- |
 | [Innogen Capital Ventures](funds/el-salvador/innogen-capital-ventures.md) | Presemilla, Semilla y Serie A | Tecnología en etapa temprana | Norte de América Latina |
 
+## Honduras
+
+| Fondo | Etapa | Enfoque | Geografía |
+| --- | --- | --- | --- |
+| [Infinita VC](funds/regional/infinita-vc.md) | Semilla | Biotecnología, hardware, robótica, fintech y Web3 | Honduras, América Latina y Estados Unidos |
+
 ## México
 
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
 | [Capital Invent](funds/mexico/capital-invent.md) | No divulgado públicamente | Marketplaces, e-commerce, fintech, móvil y SaaS | México |
 | [FEMSA Ventures](funds/mexico/femsa-ventures.md) | No divulgado públicamente | Retail, bebidas y logística | México y América Latina |
+
+## Panamá
+
+| Fondo | Etapa | Enfoque | Geografía |
+| --- | --- | --- | --- |
+| [Venture Club Latam](funds/regional/venture-club-latam.md) | Presemilla y Semilla | Inteligencia artificial, SaaS, IoT, software empresarial y clima | Panamá y América Latina |
 
 ## Perú
 

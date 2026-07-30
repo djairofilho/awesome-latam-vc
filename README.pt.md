@@ -213,6 +213,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 213 fundos
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
 | [Caricaco Ventures](funds/costa-rica/caricaco-ventures.md) | Não divulgado publicamente | Software e inteligência artificial | América Central e República Dominicana |
+| [InvertUP](funds/regional/invertup.md) | Seed | Agnóstico por setor e empresas inovadoras | Costa Rica |
 
 ## República Dominicana
 
@@ -226,12 +227,24 @@ O índice foi otimizado para comparação rápida e atualmente reúne 213 fundos
 | --- | --- | --- | --- |
 | [Innogen Capital Ventures](funds/el-salvador/innogen-capital-ventures.md) | Pré-seed, Seed e Série A | Tecnologia em estágio inicial | Norte da América Latina |
 
+## Honduras
+
+| Fundo | Estágio | Foco | Geografia |
+| --- | --- | --- | --- |
+| [Infinita VC](funds/regional/infinita-vc.md) | Seed | Biotecnologia, hardware, robótica, fintech e Web3 | Honduras, América Latina e Estados Unidos |
+
 ## México
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
 | [Capital Invent](funds/mexico/capital-invent.md) | Não divulgado publicamente | Marketplaces, e-commerce, fintech, mobile e SaaS | México |
 | [FEMSA Ventures](funds/mexico/femsa-ventures.md) | Não divulgado publicamente | Varejo, bebidas e logística | México e América Latina |
+
+## Panamá
+
+| Fundo | Estágio | Foco | Geografia |
+| --- | --- | --- | --- |
+| [Venture Club Latam](funds/regional/venture-club-latam.md) | Pre-seed e Seed | Inteligência artificial, SaaS, IoT, software empresarial e clima | Panamá e América Latina |
 
 ## Peru
 
