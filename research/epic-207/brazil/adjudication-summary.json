@@ -1,0 +1,55 @@
+{
+  "artifact_counts": {
+    "candidate_rows": 51,
+    "coverage_cells": 12,
+    "cvm_queries": 2,
+    "evidence": 128,
+    "identity_resolutions": 23,
+    "sources": 143
+  },
+  "candidate_overlay_count": 51,
+  "canonical_candidate_count": 40,
+  "core_artifact_hashes": {
+    "candidates.jsonl": "66393f5bc304d19873931d49f83d535a9204678401cabfb453bc0eac30b96578",
+    "coverage-matrix.jsonl": "ec9c95353112a3d1ba173a80c3ec2bed6eb91a5ec0adf77000e537f9358d757d",
+    "cvm-query-log.jsonl": "6bf2168b74dc4ef82502f10922e726483a86b1ad1998fa5657ae208d2d8684e8",
+    "evidence.jsonl": "94171f8b7427fe0908f783e873ca338143db7c2945b616798cd7940b4fae102b",
+    "identity-resolution.jsonl": "55c007b87a964bca0e9648e4716bd4225dfa1231fbeca3ec426b78fc110cf962",
+    "review-sample.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source-inventory.jsonl": "8861a75db41e7e6f9af1e776cf822bb5aad0892cec7f8d0014c1c8279a965ef0"
+  },
+  "cutoff_date": "2026-07-30",
+  "cvm": {
+    "consulted_candidate_count": 2,
+    "consulted_candidate_ids": [
+      "fund-br-213-vinci-partners",
+      "fund-br-214-jatoba-impacto-amazonia"
+    ],
+    "eligibility_use": false,
+    "query_rate": 0.05,
+    "task_count": 1
+  },
+  "decision_counts": {
+    "duplicate": 11,
+    "eligible": 14,
+    "insufficient_evidence": 24,
+    "routed_accelerators": 1,
+    "routed_angel_networks": 1
+  },
+  "epic": 207,
+  "generated_on": "2026-07-30",
+  "input_workers": [
+    "worker-217-validation",
+    "worker-218-validation",
+    "worker-219-validation",
+    "worker-220-adjudication"
+  ],
+  "issue": 220,
+  "research_tasks": {
+    "cvm": 1,
+    "non_cvm": 10,
+    "non_cvm_share": 0.9090909090909091,
+    "total": 11
+  },
+  "schema_version": "1.0"
+}
