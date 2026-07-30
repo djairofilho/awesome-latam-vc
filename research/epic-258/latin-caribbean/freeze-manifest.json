@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "status": "frozen",
+  "frozen_on": "2026-07-30",
+  "approved_by": "integrator /root",
+  "candidate_universe": 53,
+  "artifact_hashes": {
+    "candidates.jsonl": "f45c90c476166cf358e9d5ea853494711c1258f4e1aff0676ee24a4a8af39ee2",
+    "evidence.jsonl": "5c03092e9fe9d0e913ceb636b2fd83698fb2712c3016dbd50be7b3c5efcc40b7",
+    "identity-resolution.jsonl": "2d0dfeec6ab9304d5a87d01b32bb99f51a09390c5c931fe6b0adcc4ae450a64d",
+    "source-inventory.jsonl": "54d5e63a8abe75df9d7e8d19cbfcd7f0702b9ce59115e6eaf13b76047f69c8ef",
+    "blind-search.json": "860c9fd86ca967ce56e99ad4517c7e852bc7f6a8aa4fb29d4fd598d3b355363c"
+  },
+  "regulator_use": {
+    "queries": 2,
+    "share": 0.0377,
+    "eligibility_use": false,
+    "exception": "Below the planning target after blind-search expansion; no artificial queries."
+  },
+  "publication_batches": [
+    {
+      "batch": 1,
+      "action_count": 6,
+      "profile_file_count": 18,
+      "actions": [
+        {"candidate_id": "cand-258-venture-do", "action": "create", "destination": "funds/dominican-republic/venture-do.md"},
+        {"candidate_id": "cand-258-ato", "action": "create", "destination": "funds/puerto-rico/ato-ventures.md"},
+        {"candidate_id": "cand-258-caricaco", "action": "update_and_move", "destination": "funds/costa-rica/caricaco-ventures.md"},
+        {"candidate_id": "cand-258-parallel18-vcap", "action": "update_and_move", "destination": "funds/puerto-rico/parallel18-ventures.md"},
+        {"candidate_id": "cand-258-morro", "action": "update_and_move", "destination": "funds/puerto-rico/morro-ventures.md"},
+        {"candidate_id": "cand-258-innogen", "action": "update_and_move", "destination": "funds/el-salvador/innogen-capital-ventures.md"}
+      ]
+    }
+  ]
+}

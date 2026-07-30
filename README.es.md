@@ -10,16 +10,20 @@ Una lista curada de fondos de Venture Capital que invierten en América Latina.
 - [Brasil](#brasil)
 - [Chile](#chile)
 - [Colombia](#colombia)
+- [Costa Rica](#costa-rica)
+- [República Dominicana](#república-dominicana)
+- [El Salvador](#el-salvador)
 - [México](#méxico)
 - [Paraguay](#paraguay)
 - [Perú](#perú)
-- [Venezuela](#venezuela)
+- [Puerto Rico](#puerto-rico)
 - [Uruguay](#uruguay)
+- [Venezuela](#venezuela)
 - [Global con presencia en América Latina](#global-con-presencia-en-américa-latina)
 
 ---
 
-El índice está optimizado para una comparación rápida y actualmente reúne 211 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
+El índice está optimizado para una comparación rápida y actualmente reúne 213 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
 
 ## Pan-Latinoamérica (sede en la región)
 
@@ -41,7 +45,6 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [Canary](funds/regional/canary.md) | Pre-seed, Seed y Serie A | Agnóstico por sector | América Latina |
 | [Carao Ventures](funds/regional/carao-ventures.md) | No divulgado públicamente | Tecnología | Centroamérica y América Latina |
 | [Caravela Capital](funds/regional/caravela-capital.md) | Pre-seed y Seed | Tecnología | América Latina |
-| [Caricaco Ventures](funds/regional/caricaco-ventures.md) | No divulgado públicamente | Software e inteligencia artificial | América Central y República Dominicana |
 | [Chile Ventures](funds/regional/chile-ventures.md) | No divulgado públicamente | Tecnología de ingresos recurrentes | Chile y América Latina |
 | [Cibersons](funds/regional/cibersons.md) | Pre-semilla, Semilla y Serie A | Tecnología, agnóstico por sector | América Latina y Estados Unidos |
 | [CITES](funds/regional/cites.md) | Pre-seed, Seed y Serie A | Deep tech de base científica | Argentina y América Latina |
@@ -61,7 +64,6 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [Impacta VC](funds/regional/impacta-vc.md) | Seed | Impacto social y ambiental | América Latina |
 | [IMPAQTO Capital](funds/regional/impaqto-capital.md) | Etapa inicial; rondas no divulgadas | Impacto social y ambiental con perspectiva de género | Ecuador, Perú, Bolivia, Colombia y Chile |
 | [Indicator Capital](funds/regional/indicator-capital.md) | Pre-seed y Seed | Deep tech | América Latina |
-| [Innogen Capital Ventures](funds/regional/innogen-capital-ventures.md) | Pre-seed, Seed y Serie A | Tecnología en etapa inicial | Norte de América Latina |
 | [Innventure](funds/regional/innventure.md) | No divulgado públicamente | AgTech y AgriFoodTech | América Latina |
 | [Itaú Ventures](funds/regional/itau-ventures.md) | No divulgado públicamente | Servicios financieros y tecnologías adyacentes | Brasil y América Latina |
 | [iThink VC](funds/regional/ithink-vc.md) | Pre-seed y Seed | Tecnología para problemas estructurales | Paraguay, Perú, Ecuador, Bolivia y Uruguay |
@@ -74,12 +76,10 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [Manutara Ventures](funds/regional/manutara-ventures.md) | Seed y Serie A | Tecnología | Chile y América Latina |
 | [MAYA Capital](funds/regional/maya-capital.md) | Pre-seed y Seed | Tecnología | América Latina |
 | [Monashees](funds/regional/monashees.md) | No divulgado públicamente | Tecnología | América Latina al mundo |
-| [Morro Ventures](funds/regional/morro-ventures.md) | No divulgado públicamente | Startups tecnológicas del Caribe | Caribe y América Latina |
 | [Nazca](funds/regional/nazca.md) | Multietapa | Tecnología | América Latina |
 | [New Ventures Capital](funds/regional/new-ventures-capital.md) | Seed y Serie A | Emprendimiento de impacto | América Latina |
 | [Newtopia VC](funds/regional/newtopia-vc.md) | No divulgado públicamente | Tecnología, agnóstico a sectores | América Latina |
 | [NXTP Ventures](funds/regional/nxtp-ventures.md) | Seed y Serie A | Tecnología B2B | América Latina |
-| [Parallel18 Ventures](funds/regional/parallel18-ventures.md) | No divulgado públicamente | Startups tecnológicas | Puerto Rico y mercados internacionales |
 | [Picus Capital](funds/regional/picus-capital.md) | Pre-seed, Seed y Serie A | Tecnología, agnóstico a sectores | Global, incluida América Latina |
 | [Polymath Ventures](funds/regional/polymath-ventures.md) | Pre-seed y Seed | Negocios centrados en las personas | América Latina |
 | [QED Investors](funds/regional/qed-investors.md) | Multietapa | Fintech | Global, incluida América Latina |
@@ -208,6 +208,31 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [Simma Capital](funds/colombia/simma-capital.md) | Pre-seed y Seed | Tecnología escalable y fintech | Colombia y América Latina |
 | [Ventures Comfama](funds/colombia/ventures-comfama.md) | No divulgado públicamente | Tecnologías emergentes y modelos de negocio con impacto social | Colombia |
 
+## Costa Rica
+
+| Fondo | Etapa | Enfoque | Geografía |
+| --- | --- | --- | --- |
+| [Caricaco Ventures](funds/costa-rica/caricaco-ventures.md) | No divulgado públicamente | Software e inteligencia artificial | Centroamérica y República Dominicana |
+| [InvertUP](funds/regional/invertup.md) | Semilla | Agnóstico por sector y empresas innovadoras | Costa Rica |
+
+## República Dominicana
+
+| Fondo | Etapa | Enfoque | Geografía |
+| --- | --- | --- | --- |
+| [Venture.do](funds/dominican-republic/venture-do.md) | Presemilla y Semilla | Software B2B y SaaS | América Latina |
+
+## El Salvador
+
+| Fondo | Etapa | Enfoque | Geografía |
+| --- | --- | --- | --- |
+| [Innogen Capital Ventures](funds/el-salvador/innogen-capital-ventures.md) | Presemilla, Semilla y Serie A | Tecnología en etapa temprana | Norte de América Latina |
+
+## Honduras
+
+| Fondo | Etapa | Enfoque | Geografía |
+| --- | --- | --- | --- |
+| [Infinita VC](funds/regional/infinita-vc.md) | Semilla | Biotecnología, hardware, robótica, fintech y Web3 | Honduras, América Latina y Estados Unidos |
+
 ## México
 
 | Fondo | Etapa | Enfoque | Geografía |
@@ -215,11 +240,25 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [Capital Invent](funds/mexico/capital-invent.md) | No divulgado públicamente | Marketplaces, e-commerce, fintech, móvil y SaaS | México |
 | [FEMSA Ventures](funds/mexico/femsa-ventures.md) | No divulgado públicamente | Retail, bebidas y logística | México y América Latina |
 
+## Panamá
+
+| Fondo | Etapa | Enfoque | Geografía |
+| --- | --- | --- | --- |
+| [Venture Club Latam](funds/regional/venture-club-latam.md) | Presemilla y Semilla | Inteligencia artificial, SaaS, IoT, software empresarial y clima | Panamá y América Latina |
+
 ## Perú
 
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
 | [GRPP Ventures](funds/peru/rpp-ventures.md) | No divulgado públicamente | Tecnología escalable | Perú |
+
+## Puerto Rico
+
+| Fondo | Etapa | Enfoque | Geografía |
+| --- | --- | --- | --- |
+| [ATO Ventures](funds/puerto-rico/ato-ventures.md) | Presemilla y Semilla | Tecnología, salud y bienestar y medios digitales | Estados Unidos y América Latina |
+| [Morro Ventures](funds/puerto-rico/morro-ventures.md) | No divulgado públicamente | Startups tecnológicas del Caribe | Caribe y América Latina |
+| [Parallel18 Ventures](funds/puerto-rico/parallel18-ventures.md) | Presemilla, Semilla y Serie A | Agnóstico por sector e industrias estratégicas | Puerto Rico |
 
 ## Uruguay
 

@@ -13,13 +13,14 @@
   "aliases": [],
   "operator": null,
   "base_geography": {
-    "kind": "region",
-    "code": "LATAM"
+    "kind": "country",
+    "code": "SV"
   },
   "countries_covered": [
     "CARIBBEAN",
     "CO",
-    "MX"
+    "MX",
+    "SV"
   ],
   "stages": [
     "pre_seed",
@@ -53,7 +54,7 @@
       "kind": "official_portfolio"
     }
   ],
-  "last_verified": "2026-07-27",
+  "last_verified": "2026-07-30",
   "protected_terms": [
     "Innogen Capital Ventures"
   ]
@@ -72,7 +73,7 @@ Innogen Capital Ventures invierte en empresas tecnológicas de primera etapa en 
 - **Etapa de entrada:** presemilla, semilla y Serie A
 - **Etapas posteriores:** No se divulga públicamente
 - **Enfoque:** Inclusión financiera, asistencia sanitaria, venta al por menor, logística, proptech y agtech
-- **Geografía:** México, Colombia, Centroamérica y el Caribe
+- **Geografía:** México, Colombia, El Salvador, Centroamérica y el Caribe
 - **Inversión inicial:** USD 25,000 a USD 1 millón
 - **Rol de inversión:** No se divulga públicamente
 - **Modelos de negocio:** Empresas de tecnología de alto impacto
@@ -94,4 +95,4 @@ El sitio oficial informa 9 inversiones del Fondo I, 13 del Fondo II y 6 de Delta
 - [Boxful portfolio entry](https://innogencapital.com/es/startup/boxful1/)
 - [Ginih portfolio entry](https://innogencapital.com/es/startup/ginih/)
 
-**Última verificación:** 2026-07-27
+**Última verificación:** 2026-07-30
