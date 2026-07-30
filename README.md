@@ -180,7 +180,9 @@ The index is optimized for quick comparison and currently covers 156 funds. All 
 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
+| [Marathon Ventures](funds/colombia/marathon-ventures.md) | Pre-seed and Seed | B2B technology | Latin America |
 | [QAPU Ventures](funds/colombia/qapu-ventures.md) | Not publicly disclosed | Not publicly disclosed | Not publicly disclosed |
+| [Simma Capital](funds/colombia/simma-capital.md) | Pre-seed and Seed | Scalable technology and fintech | Colombia and Latin America |
 | [Ventures Comfama](funds/colombia/ventures-comfama.md) | Not publicly disclosed | Emerging technologies and socially impactful business models | Colombia |
 
 ## Mexico

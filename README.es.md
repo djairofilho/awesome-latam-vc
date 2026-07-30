@@ -180,7 +180,9 @@ El índice está optimizado para una comparación rápida y actualmente reúne 1
 
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
+| [Marathon Ventures](funds/colombia/marathon-ventures.md) | Pre-seed y Seed | Tecnología B2B | América Latina |
 | [QAPU Ventures](funds/colombia/qapu-ventures.md) | No divulgado públicamente | No divulgado públicamente | No divulgado públicamente |
+| [Simma Capital](funds/colombia/simma-capital.md) | Pre-seed y Seed | Tecnología escalable y fintech | Colombia y América Latina |
 | [Ventures Comfama](funds/colombia/ventures-comfama.md) | No divulgado públicamente | Tecnologías emergentes y modelos de negocio con impacto social | Colombia |
 
 ## México

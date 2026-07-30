@@ -51,7 +51,7 @@ class EntityExportTests(unittest.TestCase):
         self.assertEqual("CC0-1.0", self.document["dataset"]["license"])
         self.assertEqual("UTF-8", self.document["dataset"]["encoding"])
 
-    def test_all_256_profiles_are_exported_once_in_stable_order(self):
+    def test_all_258_profiles_are_exported_once_in_stable_order(self):
         entities = self.document["entities"]
         ids = [entity["id"] for entity in entities]
         profile_ids = sorted(

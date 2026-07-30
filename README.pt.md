@@ -180,7 +180,9 @@ O índice foi otimizado para comparação rápida e atualmente reúne 156 fundos
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
+| [Marathon Ventures](funds/colombia/marathon-ventures.md) | Pre-seed e Seed | Tecnologia B2B | América Latina |
 | [QAPU Ventures](funds/colombia/qapu-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
+| [Simma Capital](funds/colombia/simma-capital.md) | Pre-seed e Seed | Tecnologia escalável e fintech | Colômbia e América Latina |
 | [Ventures Comfama](funds/colombia/ventures-comfama.md) | Não divulgado publicamente | Tecnologias emergentes e modelos de negócio com impacto social | Colômbia |
 
 ## México
