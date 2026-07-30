@@ -1,0 +1,91 @@
+{
+  "candidate_counts": {
+    "duplicate": 3,
+    "eligible": 4,
+    "insufficient_evidence": 4,
+    "routed": 9
+  },
+  "cutoff": "2026-07-30",
+  "markets": {
+    "BO": {
+      "candidate_count": 8,
+      "eligible_count": 2,
+      "source_count": 8
+    },
+    "PY": {
+      "candidate_count": 10,
+      "eligible_count": 1,
+      "source_count": 9
+    },
+    "VE": {
+      "candidate_count": 5,
+      "eligible_count": 2,
+      "source_count": 8
+    }
+  },
+  "non_regulatory_discovery_percent": 100.0,
+  "regulatory_case_percent": 5.0,
+  "regulatory_query_count": 1,
+  "saturation_passes": [
+    {
+      "new_candidates": 2,
+      "pass": "sector_events_and_reports"
+    },
+    {
+      "new_candidates": 1,
+      "pass": "alternate_vocabulary_blind_search"
+    },
+    {
+      "new_candidates": 0,
+      "pass": "official_portfolio_reconciliation"
+    }
+  ],
+  "schema_version": "1.0",
+  "yield_curve": [
+    {
+      "cumulative_candidates": 11,
+      "family": "industry_association",
+      "marginal_candidates": 11
+    },
+    {
+      "cumulative_candidates": 11,
+      "family": "sector_diagnostic",
+      "marginal_candidates": 0
+    },
+    {
+      "cumulative_candidates": 12,
+      "family": "sector_event",
+      "marginal_candidates": 1
+    },
+    {
+      "cumulative_candidates": 13,
+      "family": "fund_news",
+      "marginal_candidates": 1
+    },
+    {
+      "cumulative_candidates": 14,
+      "family": "official_fund",
+      "marginal_candidates": 1
+    },
+    {
+      "cumulative_candidates": 16,
+      "family": "public_program",
+      "marginal_candidates": 2
+    },
+    {
+      "cumulative_candidates": 16,
+      "family": "regional_directory",
+      "marginal_candidates": 0
+    },
+    {
+      "cumulative_candidates": 19,
+      "family": "ecosystem_map",
+      "marginal_candidates": 3
+    },
+    {
+      "cumulative_candidates": 19,
+      "family": "investment_announcement",
+      "marginal_candidates": 0
+    }
+  ]
+}

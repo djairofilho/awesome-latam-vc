@@ -1,0 +1,48 @@
+{
+  "blind_findings_reviewed": [
+    "bo-yango-ventures",
+    "ve-plus58",
+    "ve-avila"
+  ],
+  "critical_or_high_findings_open": 0,
+  "critical_open": 0,
+  "eligible_reviewed": [
+    "py-cibersons",
+    "bo-yango-ventures",
+    "ve-impulsa",
+    "ve-epakon"
+  ],
+  "exclusion_sample_reviewed": [
+    "py-fiip",
+    "ve-plus58"
+  ],
+  "freeze_allowed": true,
+  "high_open": 0,
+  "publication_authorized": true,
+  "reconciliation": [
+    "Cibersons is a direct recurring investor with an official portfolio and strict Paraguay base explicitly corroborated by MIC, LAVCA and URUCAP.",
+    "Yango Ventures is a Dubai-based regional CVC with a LATAM thesis, founder route and explicit Bolivia access; it is not classified as Bolivia-based.",
+    "Impulsa VC is a Caracas-based direct startup investor with current portfolio evidence and an external contact route.",
+    "Epakon Capital is a United States-based regional fund with an open pitch route, current portfolio and explicit Venezuela activity.",
+    "+58 Ventures remains insufficient because its launch page does not establish recurring deployment or a current portfolio.",
+    "Avila VC does not establish an explicit Venezuela mandate; FIIP and Zeal Fund lack sufficient current official evidence."
+  ],
+  "regulatory_cases_reviewed": [
+    "ve-impulsa"
+  ],
+  "review_reconciled": true,
+  "reviewed_on": "2026-07-30",
+  "reviewer": "integrator",
+  "routed_reviewed": [
+    "bo-bdp-startup",
+    "bo-aceleratec",
+    "bo-bocap",
+    "py-parcapy",
+    "py-riiap",
+    "py-lan",
+    "py-h2o",
+    "py-innovandopy",
+    "ve-venecapital"
+  ],
+  "status": "approved"
+}

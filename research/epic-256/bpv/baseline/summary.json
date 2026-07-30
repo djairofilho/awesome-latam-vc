@@ -1,0 +1,8 @@
+{
+  "catalog_profile_count": 202,
+  "catalog_sha256": "1e93c27e57752fced307ff6ca43ff5df596a548aa735c5ceb9d3d17dd22e6e2f",
+  "cutoff": "2026-07-30",
+  "historical_candidate_count": 10,
+  "historical_sha256": "135d35830dd4bb9343654edc58b5a66f45c93f0bab1d16790ce6bf634e3452c2",
+  "schema_version": "1.0"
+}

@@ -1,0 +1,29 @@
+{
+  "batch_count": 1,
+  "batch_limit": 10,
+  "critical_or_high_findings_open": 0,
+  "cutoff": "2026-07-30",
+  "eligible_ids": [
+    "py-cibersons",
+    "bo-yango-ventures",
+    "ve-impulsa",
+    "ve-epakon"
+  ],
+  "localized_profile_count": 12,
+  "profile_hashes": {
+    "funds/regional/cibersons.md": "244cbb88348d1eaa978afba2b7266fc4ce2edefd539d21703e1f0efdf2ad208f",
+    "funds/regional/epakon-capital.md": "848a95281a62f29dad12a67ff06c98b08a1ef978f5fb5eae840f22d2ded636e5",
+    "funds/regional/yango-ventures.md": "56c998ee51218cb1ea82c277cf0ea96a58ec2fdf16cba06f92155a09683305e9",
+    "funds/venezuela/impulsa-vc.md": "ad5b20e779a36ebc1d798b2ebab5e7d32cccbe231ea6be43bcb7c8048b0fbaca",
+    "translations/es/funds/regional/cibersons.md": "abca41fde589821ae63d4cf709d3ef81c35209d7dd8d4f2f270b3f054288d007",
+    "translations/es/funds/regional/epakon-capital.md": "528c1193e417e078130e562fe751434f1896c414377dba29e20f9a3841e1b615",
+    "translations/es/funds/regional/yango-ventures.md": "225fe5342472ffbd2d511f8009e893daf783cb663380c12aa1c50539b5f47015",
+    "translations/es/funds/venezuela/impulsa-vc.md": "74dba5bcaac9d2095feb22757586d895c70cf99136db17ac9f8a9dbee0a43449",
+    "translations/pt-BR/funds/regional/cibersons.md": "92a532027cb866d084bfed6f864f25a24ca908087d507bb855fe5c07e7c17819",
+    "translations/pt-BR/funds/regional/epakon-capital.md": "381ddcae7f1c4e4d139bf48e944b522e73b6b57b4385edacc76c10cd6f10fb70",
+    "translations/pt-BR/funds/regional/yango-ventures.md": "e014dc281d996a0c8b19f7f915106492b4bf5b72b01a8b6e3920224e46a8c6d7",
+    "translations/pt-BR/funds/venezuela/impulsa-vc.md": "0cbab16aa6d12e202c601039eb4b2a694fd4243545703674842454629de498c7"
+  },
+  "published_profile_count": 4,
+  "schema_version": "1.0"
+}
