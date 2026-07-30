@@ -1,0 +1,31 @@
+{
+  "artifact_hashes": {
+    "research/epic-253/peru/baseline/catalog-baseline.jsonl": "8b8958808375a8147d03f4f6174062e666a8e2bcf3cc684de1f3cbee66fe7448",
+    "research/epic-253/peru/baseline/prior-candidates.jsonl": "fa94cde81593de2643920c0c2c624d32d09083d2d9315022d2478ac8ae7b9da9",
+    "research/epic-253/peru/candidates.jsonl": "939d9af4076dcf3db04fe645a9ff73bc79ca6c6f234a4690f0483946f8854349",
+    "research/epic-253/peru/contract.json": "4194c57548077e87ea300d6bb3e7dcaf05cec1b624a836f63472d8ff54508021",
+    "research/epic-253/peru/coverage-matrix.json": "ca8e77429938a9b8fb86ca8b65fa06db27a326a7399a3ff7bc3812713c64c17b",
+    "research/epic-253/peru/evidence.jsonl": "3bb4f5941761f421acdf52a9b2c456f8c6c403199fe87471cbf8f38077203a44",
+    "research/epic-253/peru/review.json": "570c04e7445f8d35a12c9396e511ab897e9c675ea9764a15ecb22a41e96735ac",
+    "research/epic-253/peru/source-inventory.jsonl": "0080e0438b34123742af1168807fd866ec341caadbb6599a52b4b871ce30b7c6"
+  },
+  "counts": {
+    "candidates": 15,
+    "duplicates": 8,
+    "eligible_local": 0,
+    "insufficient_evidence": 2,
+    "regulatory_queries": 1,
+    "routed": 5
+  },
+  "critical_or_high_findings_open": 0,
+  "cutoff": "2026-07-30",
+  "limitations": [
+    "Audited coverage of enumerated public sources, not absolute market completeness.",
+    "IMPAQTO Capital covers Peru but is routed to Ecuador based on its official Quito headquarters.",
+    "No Peru-local profile is publishable in this frozen cut."
+  ],
+  "review_reconciled": true,
+  "reviewed_on": "2026-07-30",
+  "reviewer": "integrator",
+  "schema_version": "1.0"
+}

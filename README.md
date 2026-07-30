@@ -16,7 +16,7 @@ A curated list of Venture Capital funds investing in Latin America.
 
 ---
 
-The index is optimized for quick comparison and currently covers 195 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
+The index is optimized for quick comparison and currently covers 199 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
 
 ## Pan-Latin America (LatAm based)
 
@@ -98,7 +98,11 @@ The index is optimized for quick comparison and currently covers 195 funds. All 
 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
+| [BYMA Ventures](funds/argentina/byma-ventures.md) | Not publicly disclosed | Fintech, market infrastructure, and cybersecurity | Argentina and Latin America |
+| [Embarca Ventures](funds/argentina/embarca-ventures.md) | Not publicly disclosed | Technology | Argentina and Latin America |
 | [Globant Ventures](funds/argentina/globant-ventures.md) | Seed and Series A | Artificial intelligence, blockchain, and the Future of Work | Global |
+| [Sancor Seguros Ventures](funds/argentina/sancor-seguros-ventures.md) | Not publicly disclosed | Insurtech and technology | Argentina and Latin America |
+| [SHEFA Holding](funds/argentina/shefa-holding.md) | Not publicly disclosed | Real estate technology and agtech | Argentina and Latin America |
 
 ## Bolivia
 

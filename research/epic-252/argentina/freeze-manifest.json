@@ -1,0 +1,76 @@
+{
+  "candidates": {
+    "decision_counts": {
+      "duplicate": 2,
+      "eligible": 4,
+      "insufficient_evidence": 1,
+      "routed_accelerators": 1
+    },
+    "rows": 8
+  },
+  "cutoff_date": "2026-07-30",
+  "epic": 252,
+  "issues": [
+    274,
+    275,
+    276,
+    277,
+    278
+  ],
+  "limitations": [
+    "Cobertura auditada; não representa totalidade do mercado argentino."
+  ],
+  "market": "Argentina",
+  "publication": {
+    "batch_count": 1,
+    "batch_size_limit": 10,
+    "candidates": [
+      {
+        "candidate_id": "fund-ar-byma-ventures",
+        "destination": "funds/argentina/byma-ventures.md"
+      },
+      {
+        "candidate_id": "fund-ar-embarca-ventures",
+        "destination": "funds/argentina/embarca-ventures.md"
+      },
+      {
+        "candidate_id": "fund-ar-sancor-seguros-ventures",
+        "destination": "funds/argentina/sancor-seguros-ventures.md"
+      },
+      {
+        "candidate_id": "fund-ar-shefa-holding",
+        "destination": "funds/argentina/shefa-holding.md"
+      }
+    ]
+  },
+  "regulatory": {
+    "eligibility_use": false,
+    "name": "Comisión Nacional de Valores de Argentina",
+    "queries": 0
+  },
+  "review": {
+    "blind_new_candidates": 2,
+    "blind_new_eligible": 0,
+    "critical_findings": 0,
+    "eligible_reviewed": 4,
+    "exclusion_population": 3,
+    "exclusion_sample_ids": [
+      "fund-ar-galicia-ventures"
+    ],
+    "exclusion_sample_reviewed": 1,
+    "exclusion_sample_rule": "sort candidate_id ascending and take ceil(population/3)",
+    "exclusion_sample_source": "candidates.jsonl decisions duplicate or insufficient_evidence",
+    "high_findings": 0,
+    "independent_review": "passed",
+    "review_reconciled": true,
+    "reviewed_on": "2026-07-30",
+    "reviewer": "integrator",
+    "routed_reviewed": 1
+  },
+  "schema_version": "1.0",
+  "sources": {
+    "non_regulatory_share": 1.0,
+    "planned": 12
+  },
+  "status": "frozen"
+}
