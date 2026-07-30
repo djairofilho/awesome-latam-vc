@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "fund-cl-the-ganesha-fund",
+  "resolution": "terminal",
+  "canonical_name": "The Ganesha Fund",
+  "canonical_destination": "funds/chile/the-ganesha-fund.md",
+  "operator": {
+    "name": "The Ganesha Lab",
+    "base_city": "Santiago",
+    "base_country": "CL",
+    "evidence_ids": [
+      "ev-cl-ganesha-03",
+      "ev-cl-ganesha-08"
+    ]
+  },
+  "investment_vehicle": {
+    "canonical_name": "The Ganesha Fund",
+    "legal_name": "The Ganesha Lab Fund I LP",
+    "jurisdiction": "US-DE",
+    "evidence_ids": [
+      "ev-cl-ganesha-02",
+      "ev-cl-ganesha-05"
+    ]
+  },
+  "catalog_geography_rule": "Use the geography of the active operating manager for the catalog path; preserve the legal vehicle jurisdiction as a separate fact.",
+  "catalog_base_geography": {
+    "kind": "country",
+    "code": "CL"
+  },
+  "countries_covered": [
+    "LATAM"
+  ],
+  "cross_catalog_resolution": {
+    "accelerator_entity_id": "accelerator:ganesha-go-europe",
+    "relationship": "same_operator_distinct_entity",
+    "fund_entity_id_if_published": "fund:the-ganesha-fund",
+    "notes": "Go Europe Connect is a structured accelerator program. The Ganesha Fund is a direct investment vehicle. Neither record is an alias of the other."
+  },
+  "identity_risks_resolved": [
+    "The Delaware vehicle does not relocate the Chile-based operating manager in the catalog.",
+    "The accelerator program is not duplicated as a fund.",
+    "The Ganesha Fund, The Ganesha Lab Fund, and The Ganesha Lab Fund I LP resolve to the same investment vehicle."
+  ]
+}
