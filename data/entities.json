@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 276,
+    "entity_count": 277,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -5125,6 +5125,53 @@
       ],
       "summary": "Impacta VC is a Chile-based venture capital firm backing impact-driven founders across Latin America.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "EC",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BO",
+        "CL",
+        "CO",
+        "EC",
+        "PE"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "social_and_environmental_impact",
+        "gender_lens"
+      ],
+      "founder_route": "https://airtable.com/app8iMZm0TA0zE1Dk/shrGNR0y7cKK9R9Gg",
+      "id": "fund:impaqto-capital",
+      "name": "IMPAQTO Capital",
+      "official_website": "https://www.impaqtocapital.com/es",
+      "operator": null,
+      "source_profile": "funds/regional/impaqto-capital.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "IMPAQTO Capital",
+          "url": "https://www.impaqtocapital.com/es"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Fund I final close announcement",
+          "url": "https://www.impaqtocapital.com/fund-i-final-close-announcement"
+        },
+        {
+          "kind": "official_application",
+          "title": "Startup interest form",
+          "url": "https://airtable.com/app8iMZm0TA0zE1Dk/shrGNR0y7cKK9R9Gg"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "IMPAQTO Capital provides flexible impact financing to early-stage companies in the Andean region.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],

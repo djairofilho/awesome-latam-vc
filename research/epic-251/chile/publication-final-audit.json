@@ -71,10 +71,10 @@
     "translation_status": "complete"
   },
   "catalog_after_follow_up": {
-    "entities": 276,
-    "funds": 201,
-    "entities_json_sha256": "9a8c5363f89a716948773e0f0e66bdd110747123f28d43795d2d7e1b17e51cc8",
-    "entities_csv_sha256": "663f79e5e4afd8aa29d06e68691fbac42c6d8bc640f79ac75e3bcf0557752825"
+    "entities": 277,
+    "funds": 202,
+    "entities_json_sha256": "8f19e2c01d63d4dc17593ce18e1bf366278a2e88b14c73bede5aa5f583b76d94",
+    "entities_csv_sha256": "0fbe767fbb02812a1b176967392ab7b22b726fa6785bc3fe38ae1771ddb9c22f"
   },
   "published_profile_hashes": {
     "funds/chile/abastibletec.md": "d4d24cc360a6672adae7c123e304309334091011832701bce1bcdb752612ca90",

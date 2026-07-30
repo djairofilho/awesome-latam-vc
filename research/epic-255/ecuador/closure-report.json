@@ -1,0 +1,15 @@
+{
+  "absolute_completeness_claimed": false,
+  "audited_non_regulatory_handoffs": 1,
+  "critical_or_high_findings_open": 0,
+  "cutoff": "2026-07-30",
+  "eligible_count": 1,
+  "new_non_regulatory_discoveries": 14,
+  "publication_batch_count": 1,
+  "published_profile_count": 1,
+  "regulatory_query_percent": 6.7,
+  "review_reconciled": true,
+  "reviewed_on": "2026-07-30",
+  "reviewer": "integrator",
+  "schema_version": "1.0"
+}
