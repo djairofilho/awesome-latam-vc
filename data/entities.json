@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 238,
+    "entity_count": 247,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -2997,6 +2997,38 @@
       "verified_on": "2026-07-26"
     },
     {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:copel-ventures-i",
+      "name": "Copel Ventures I",
+      "official_website": "https://www.copel.com/",
+      "operator": "Vox Capital",
+      "source_profile": "funds/brazil/copel-ventures-i.md",
+      "sources": [
+        {
+          "kind": "official_activity",
+          "title": "Copel invests in artificial intelligence startup for asset management",
+          "url": "https://www.copel.com/site/noticias/copel-investe-em-startup-de-inteligencia-artificial-para-a-gestao-de-ativos/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Copel Ventures I is a Brazilian corporate venture capital vehicle that makes direct startup investments in partnership with Vox Capital.",
+      "verified_on": "2026-07-30"
+    },
+    {
       "aliases": [
         "Bozano"
       ],
@@ -3040,6 +3072,75 @@
       ],
       "summary": "Crescera Capital (ex-Bozano) is an investment organization focused on Technology and high-growth companies in Brazil.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:csn-inova-ventures",
+      "name": "CSN Inova Ventures",
+      "official_website": "https://esg.csn.com.br/inovacao/",
+      "operator": null,
+      "source_profile": "funds/brazil/csn-inova-ventures.md",
+      "sources": [
+        {
+          "kind": "official_activity",
+          "title": "CSN Inova and SOSA form a partnership to advance innovation in Brazil",
+          "url": "https://esg.csn.com.br/news/csn-inova-e-sosa-firmam-parceria-para-impulsionar-inovacao-no-brasil/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "CSN Inova Ventures is a Brazilian corporate venture initiative that makes direct and recurring startup investments.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:cv-idexo",
+      "name": "CV iDEXO",
+      "official_website": "https://api.mziq.com/mzfilemanager/v2/d/d3be5d49-62e7-4def-a3e1-ab25ff09f153/6f68bd5d-b48f-f806-7e1d-8261e809845b?origin=2",
+      "operator": null,
+      "source_profile": "funds/brazil/cv-idexo.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "TOTVS institutional document — CV iDEXO",
+          "url": "https://api.mziq.com/mzfilemanager/v2/d/d3be5d49-62e7-4def-a3e1-ab25ff09f153/6f68bd5d-b48f-f806-7e1d-8261e809845b?origin=2"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Malga funding round",
+          "url": "https://pt.linkedin.com/posts/felipefornaziere_malga-marketplace-de-pagamentos-do-ecommerce-activity-7300210272747634688-Ov8O"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "CV iDEXO is a Brazilian corporate venture capital vehicle with a direct investment portfolio.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -4211,6 +4312,43 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:grao-vc",
+      "name": "Grão VC",
+      "official_website": "https://grao.vc/",
+      "operator": null,
+      "source_profile": "funds/brazil/grao-vc.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "About Grão",
+          "url": "https://grao.vc/a-grao/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Why did we invest in Stay?",
+          "url": "https://grao.vc/en/por-que-investimos-na-stay/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Grão VC is the venture capital arm of a Brazilian family office, investing directly in early-stage Brazilian startups.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "GLOBAL",
         "kind": "global"
       },
@@ -4337,6 +4475,43 @@
       ],
       "summary": "Hi Ventures (ex-ALLVP) is an investment organization focused on AI and technology in Latin America.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:hiker-ventures",
+      "name": "Hiker Ventures",
+      "official_website": "https://www.hiker.ventures/",
+      "operator": "AF Invest Administração de Recursos",
+      "source_profile": "funds/brazil/hiker-ventures.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Hiker Ventures",
+          "url": "https://www.hiker.ventures/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Datlo receives investment led by Hiker Ventures",
+          "url": "https://blog.datlo.com/datlo-recebe-aporte-hiker-ventures"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Hiker Ventures is AF Invest's Brazilian early-stage venture capital brand, investing its own capital directly in startups.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -5330,6 +5505,44 @@
         "kind": "global"
       },
       "countries_covered": [
+        "GLOBAL",
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:lightrock",
+      "name": "Lightrock",
+      "official_website": "https://www.lightrock.com/",
+      "operator": null,
+      "source_profile": "funds/multi-country/lightrock.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Private Equity",
+          "url": "https://www.lightrock.com/about/private-equity/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "State of São Paulo's development agency commits R$ 50 million to Lightrock",
+          "url": "https://www.lightrock.com/news/state-of-sao-paulo-s-development-agency-commits-r-50-million-to-lightrock/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Lightrock is a global growth and venture investor with a direct portfolio and an active investment strategy in Brazil.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "GLOBAL",
+        "kind": "global"
+      },
+      "countries_covered": [
         "LATAM"
       ],
       "entity_type": "fund",
@@ -5462,6 +5675,43 @@
       ],
       "summary": "Manutara Ventures is an investment organization focused on Technology in Chile and Latin America.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:marcha",
+      "name": "Marcha",
+      "official_website": "https://www.linkedin.com/company/marcha-s-a",
+      "operator": null,
+      "source_profile": "funds/brazil/marcha.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "Meet Marcha, Brazil's first University Venture Capital",
+          "url": "https://tecnopuc.pucrs.br/conheca-a-marcha-a-primeira-university-venture-capital-do-brasil-que-impulsiona-startups-no-tecnopuc/"
+        },
+        {
+          "kind": "official_program",
+          "title": "PureAI opens an investment round to expand AI infrastructure",
+          "url": "https://tecnopuc.pucrs.br/pureai-abre-rodada-de-captacao-de-investimento-para-impulsionar-infraestrutura-de-ia/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Marcha is a Brazilian university venture capital organization that invests directly in startups connected to Tecnopuc.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -6235,6 +6485,38 @@
       ],
       "summary": "Polymath Ventures combines a venture studio, a venture capital fund, and private credit for companies serving Latin America's emerging middle class.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "impact_investing"
+      ],
+      "founder_route": null,
+      "id": "fund:positive-ventures",
+      "name": "Positive Ventures",
+      "official_website": "https://positive.ventures/",
+      "operator": null,
+      "source_profile": "funds/brazil/positive-ventures.md",
+      "sources": [
+        {
+          "kind": "official_activity",
+          "title": "Positive Impact Report 2025",
+          "url": "https://www.positiveimpactreport25.com/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Positive Ventures is a São Paulo-based impact venture capital firm that makes direct and recurring startup investments.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -7569,6 +7851,44 @@
       ],
       "summary": "Valor Capital Group is an investment organization focused on Technology in United States and Brazil, including Latin America.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "PT",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "PT",
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:valutia",
+      "name": "Valutia",
+      "official_website": "https://www.valutia.com/",
+      "operator": null,
+      "source_profile": "funds/multi-country/valutia.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "About Valutia",
+          "url": "https://www.valutia.com/about"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Valutia — Wehandle funding round",
+          "url": "https://br.linkedin.com/company/valutia"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Valutia is a Portugal-based investment firm that makes direct investments in entrepreneurs from Portugal and Brazil.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
