@@ -17,6 +17,20 @@ AUDIT_ROOT = EPIC / "final-audit"
 
 MOJIBAKE_MARKERS = ("\u00c3", "\u00c2", "\ufffd", "\x07")
 TEXT_SUFFIXES = {".json", ".jsonl", ".md", ".py"}
+GLOBAL_INDEX_PROJECTIONS = {
+    "README.pt.md": (
+        "- [Aceleradoras](ecosystem/accelerators/README.md)",
+        "- [Redes de investidores-anjo](ecosystem/angel-networks/README.md)",
+        "- [Plataformas de captação](ecosystem/funding-platforms/README.pt.md)",
+        "- [Programas públicos](ecosystem/public-programs/README.md)",
+    ),
+    "README.es.md": (
+        "- [Aceleradoras](ecosystem/accelerators/README.md)",
+        "- [Redes de inversionistas ángeles](ecosystem/angel-networks/README.md)",
+        "- [Plataformas de financiación](ecosystem/funding-platforms/README.es.md)",
+        "- [Programas públicos](ecosystem/public-programs/README.md)",
+    ),
+}
 
 
 def read_json(path: Path) -> dict:
@@ -53,6 +67,37 @@ def check_hashes(
         for relative, expected in mapping.items()
         if not (base / relative).is_file()
         or sha256(base / relative, body_only=body_only) != expected
+    )
+
+
+def check_publication_indexes(mapping: dict[str, str]) -> list[str]:
+    """Freeze category indexes bytewise and global index entries semantically."""
+    failures = check_hashes(
+        {
+            relative: expected
+            for relative, expected in mapping.items()
+            if relative not in GLOBAL_INDEX_PROJECTIONS
+        },
+        ROOT,
+    )
+    for relative, expected_lines in GLOBAL_INDEX_PROJECTIONS.items():
+        path = ROOT / relative
+        if not path.is_file():
+            failures.append(relative)
+            continue
+        actual_lines = global_index_projection(
+            path.read_text(encoding="utf-8")
+        )
+        if actual_lines != expected_lines:
+            failures.append(relative)
+    return sorted(set(failures))
+
+
+def global_index_projection(text: str) -> tuple[str, ...]:
+    return tuple(
+        line
+        for line in text.splitlines()
+        if line.startswith("- [") and "](ecosystem/" in line
     )
 
 
@@ -116,8 +161,8 @@ def build_report() -> dict:
         ROOT,
         body_only=True,
     )
-    publication_index_failures = check_hashes(
-        publication_manifest["index_hashes"], ROOT
+    publication_index_failures = check_publication_indexes(
+        publication_manifest["index_hashes"]
     )
     batch_hash_valid = (
         sha256(PUBLICATION / "batches.jsonl")
