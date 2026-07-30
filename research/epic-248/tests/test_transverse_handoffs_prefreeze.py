@@ -99,6 +99,28 @@ class TransverseHandoffsPrefreezeTest(unittest.TestCase):
         self.assertEqual(self.manifest["status"], "awaiting_independent_review")
         self.assertFalse(self.manifest["freeze_allowed"])
 
+    def test_independent_review_authorizes_exact_batch(self):
+        review = read_json(AUDIT / "review.json")
+        freeze = read_json(AUDIT / "freeze-manifest.json")
+        expected = ["ar-beta-impacto", "ar-primary-x", "br-saasholic"]
+        self.assertEqual(review["status"], "approved")
+        self.assertTrue(review["review_reconciled"])
+        self.assertTrue(review["publication_authorized"])
+        self.assertEqual(review["critical_open"], 0)
+        self.assertEqual(review["high_open"], 0)
+        self.assertEqual(review["eligible_reviewed"], expected)
+        self.assertEqual(freeze["status"], "frozen")
+        self.assertTrue(freeze["review_reconciled"])
+        self.assertEqual(freeze["eligible_ids"], expected)
+        self.assertEqual(freeze["localized_profile_count"], 9)
+        self.assertIn("machine-readable", freeze["beta_impacto_limitation"])
+
+    def test_freeze_manifest_hashes(self):
+        freeze = read_json(AUDIT / "freeze-manifest.json")
+        for relative, expected in freeze["artifact_hashes"].items():
+            actual = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
+            self.assertEqual(actual, expected)
+
     def test_manifest_hashes(self):
         for relative, expected in self.manifest["artifact_hashes"].items():
             actual = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()

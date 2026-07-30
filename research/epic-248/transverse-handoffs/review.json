@@ -1,0 +1,31 @@
+{
+  "base_geography_reviewed": [
+    "ar-beta-impacto",
+    "ar-primary-x",
+    "br-saasholic"
+  ],
+  "critical_open": 0,
+  "eligible_reviewed": [
+    "ar-beta-impacto",
+    "ar-primary-x",
+    "br-saasholic"
+  ],
+  "findings": [
+    {
+      "candidate_id": "ar-beta-impacto",
+      "finding": "Official and institutional sources support a direct early-stage vehicle, Argentina base, active process and founder application. The absence of machine-readable portfolio company names remains disclosed but does not invalidate eligibility.",
+      "severity": "low",
+      "status": "accepted_limitation"
+    }
+  ],
+  "high_open": 0,
+  "publication_authorized": true,
+  "regulator_conclusion": "No lookup was justified because official and institutional sources resolved identity and base geography without a material divergence.",
+  "regulatory_cases_reviewed": [],
+  "requested_on": "2026-07-30",
+  "review_reconciled": true,
+  "reviewed_on": "2026-07-30",
+  "reviewer": "integrator",
+  "schema_version": "1.0",
+  "status": "approved"
+}
