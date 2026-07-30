@@ -71,9 +71,12 @@ startups in Latin America and the United States.
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Pre-seed, Seed, and Series A
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Technology, sector agnostic
 - **Geography:** Latin America and the United States
 - **Initial check:** Up to USD 500,000 in the reviewed industry directory
+- **Investment role:** Direct investor
+- **Business models:** Not publicly disclosed
 - **Portfolio size:** 39 investments across 13 countries in the reviewed directory
 - **Selected companies:** CargoX, DeltaX, Nuvocargo, Kiwibot, Tractian, Kushki, Terapify, and Global 66
 - **Submit a startup:** https://www.cibersons.com/
@@ -83,6 +86,13 @@ startups in Latin America and the United States.
 The manager invests in technology companies and other funds. Its official
 ventures page separates fund and startup investments and displays a broad
 technology portfolio.
+
+## Portfolio signals
+
+The reviewed official ventures page names startup investments across logistics,
+mobility, fintech, healthtech, and enterprise technology. The portfolio count
+and check ceiling come from the reviewed industry directory and are disclosed
+as such rather than presented as manager-published terms.
 
 ## Base geography
 

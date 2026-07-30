@@ -221,13 +221,6 @@ O índice foi otimizado para comparação rápida e atualmente reúne 211 fundos
 | --- | --- | --- | --- |
 | [GRPP Ventures](funds/peru/rpp-ventures.md) | Não divulgado publicamente | Tecnologia escalável | Peru |
 
-## Paraguai
-
-| Fundo | Estágio | Foco | Geografia |
-| --- | --- | --- | --- |
-| [Cibersons](funds/regional/cibersons.md) | Pre-seed, Seed e Série A | Tecnologia, agnóstico por setor | América Latina e Estados Unidos |
-| [iThink VC](funds/regional/ithink-vc.md) | Pre-seed e Seed | Tecnologia para problemas estruturais | Paraguai, Peru, Equador, Bolívia e Uruguai |
-
 ## Uruguai
 
 | Fundo | Estágio | Foco | Geografia |

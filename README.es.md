@@ -221,13 +221,6 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | --- | --- | --- | --- |
 | [GRPP Ventures](funds/peru/rpp-ventures.md) | No divulgado públicamente | Tecnología escalable | Perú |
 
-## Paraguay
-
-| Fondo | Etapa | Enfoque | Geografía |
-| --- | --- | --- | --- |
-| [Cibersons](funds/regional/cibersons.md) | Pre-semilla, Semilla y Serie A | Tecnología, agnóstico por sector | América Latina y Estados Unidos |
-| [iThink VC](funds/regional/ithink-vc.md) | Pre-semilla y Semilla | Tecnología para problemas estructurales | Paraguay, Perú, Ecuador, Bolivia y Uruguay |
-
 ## Uruguay
 
 | Fondo | Etapa | Enfoque | Geografía |

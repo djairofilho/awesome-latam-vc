@@ -66,9 +66,13 @@ technology companies in Venezuela.
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Technology and financial structuring
 - **Geography:** Venezuela
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Direct investor
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
 - **Selected companies:** The current site displays portfolio companies; its recent public activity includes Duwu
 - **Submit a startup:** https://www.impulsa.vc/contacto/
 

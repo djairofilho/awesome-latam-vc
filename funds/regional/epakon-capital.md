@@ -57,9 +57,12 @@ and Latin America, including Venezuela.
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Pre-seed and Seed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Fintech, artificial intelligence, and other technology companies
 - **Geography:** United States and Latin America
 - **Initial check:** USD 50,000 to USD 1 million
+- **Investment role:** Direct investor
+- **Business models:** Not publicly disclosed
 - **Portfolio size:** More than 40 companies
 - **Selected companies:** Cashea, Yummy, Stack AI, HeroUI, Mesh, Krece, Vikua, and MotoGo
 - **Submit a startup:** https://epakon.com/
@@ -69,6 +72,12 @@ and Latin America, including Venezuela.
 The fund backs early-stage founders in the United States and Latin America and
 publishes a direct pitch route. Its current portfolio and news show activity
 across Fintech, AI, consumer, logistics, biotechnology and aerospace.
+
+## Portfolio signals
+
+The current official portfolio reports dozens of companies and names
+investments including Cashea, Yummy, Stack AI, HeroUI, Mesh, Krece, Vikua, and
+MotoGo.
 
 ## Venezuela access
 

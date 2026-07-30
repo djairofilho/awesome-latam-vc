@@ -75,10 +75,15 @@ Series B across emerging markets, including Latin America.
 - **Direct startup investment:** Yes
 - **Open to external founders:** Yes
 - **Stage at entry:** Seed to Series B, with Series A as the preferred stage
+- **Follow-on stages:** Series B
 - **Focus:** Online-to-offline, Fintech, B2B SaaS, and artificial intelligence
 - **Geography:** Latin America and other emerging markets; explicit access in Bolivia
 - **Fund size:** USD 20 million at launch
+- **Initial check:** Not publicly disclosed
 - **Investment role:** Follow-on investor alongside a lead
+- **Business models:** B2B, B2C, and marketplace models
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** https://ventures.yango.com/contact-us
 
 ## Declared thesis

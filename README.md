@@ -221,13 +221,6 @@ The index is optimized for quick comparison and currently covers 211 funds. All 
 | --- | --- | --- | --- |
 | [GRPP Ventures](funds/peru/rpp-ventures.md) | Not publicly disclosed | Scalable technology | Peru |
 
-## Paraguay
-
-| Fund | Stage | Focus | Geography |
-| --- | --- | --- | --- |
-| [Cibersons](funds/regional/cibersons.md) | Pre-seed, Seed, and Series A | Technology, sector agnostic | Latin America and the United States |
-| [iThink VC](funds/regional/ithink-vc.md) | Pre-seed and Seed | Technology solving structural problems | Paraguay, Peru, Ecuador, Bolivia, and Uruguay |
-
 ## Uruguay
 
 | Fund | Stage | Focus | Geography |
