@@ -24,6 +24,8 @@ class LatinCaribbeanAuditTest(unittest.TestCase):
         self.assertTrue(all(row["decision"] in terminal for row in candidates))
         self.assertTrue(all(row["reason"] for row in candidates))
         self.assertTrue(all(set(row["discovery_source_ids"]) <= source_ids for row in candidates))
+        evidence_ids = {row["candidate_id"] for row in jsonl("evidence.jsonl")}
+        self.assertEqual({row["candidate_id"] for row in candidates}, evidence_ids)
 
     def test_blind_search_is_isolated_and_fully_reconciled(self):
         blind = json.loads((AUDIT / "blind-search.json").read_text(encoding="utf-8"))
