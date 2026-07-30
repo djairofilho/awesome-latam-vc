@@ -86,8 +86,8 @@ o Chile y un modelo de negocio regional y escalable.
 
 ## Señales de cartera
 
-El sitio oficial informa 12 inversiones en 4 países. En enero de 2025, IMPAQTO
-Capital anunció el cierre final de USD 2.1 millones del Fondo I, que ya había
+El sitio oficial informa 12 inversiones en 4 países. En enero de 2025,
+IMPAQTO Capital anunció el cierre final de USD 2.1 millones del Fondo I, que ya había
 invertido en 6 empresas con sede en Ecuador, Perú, Colombia y Bolivia.
 
 ## Fuentes
