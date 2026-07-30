@@ -1,0 +1,197 @@
+{
+  "batch_id": "publication-batch-02",
+  "batch_ordinal": 2,
+  "candidate_count": 9,
+  "cutoff_date": "2026-07-30",
+  "epic": 207,
+  "freeze_issue": 222,
+  "freeze_manifest_sha256": "4609745e229c67c647e199cce6ef10cf58dc82b1fcfba2e0748b20cfafd303bd",
+  "frozen_batch_sha256": "b01d1a3043106144b65c1acb25094f3ecf435a556075d9fbd2b7d210469fecc4",
+  "hash_algorithm": "sha256",
+  "integrity": {
+    "all_profile_hashes_present": true,
+    "candidate_ids_unique": true,
+    "destinations_unique": true,
+    "localized_paths_unique": true,
+    "one_candidate_to_three_locales": true
+  },
+  "issue": 242,
+  "limitations": "Este manifesto prova correspondência com o lote congelado e os arquivos publicados; não altera os artefatos centrais da pesquisa.",
+  "parent_issue": 223,
+  "profile_file_count": 27,
+  "profiles": [
+    {
+      "candidate_id": "fund-br-221-copel-ventures-i",
+      "destination": "funds/brazil/copel-ventures-i.md",
+      "name": "Copel Ventures I",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/copel-ventures-i.md",
+          "sha256": "8bae5a77b35d01d1ef680d4353233d29a404750d3618d1a1eddcacdc14a1a93e"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/copel-ventures-i.md",
+          "sha256": "cc4e274c92fe5131e56593e99a371428afda938d581ce984a497d8ad137668cf"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/copel-ventures-i.md",
+          "sha256": "0c7f3da2a103e1a969f0bb5b6260dca56e1a561279b68a7a12fff958e03c44cc"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-221-csn-inova-ventures",
+      "destination": "funds/brazil/csn-inova-ventures.md",
+      "name": "CSN Inova Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/csn-inova-ventures.md",
+          "sha256": "7e18fdfad5077e3d301f918d5469fba21df5b762a16cb066f0f266189eea4722"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/csn-inova-ventures.md",
+          "sha256": "79174a5c47a608794f15b36e3e1bc9a90bfb22635a20a18a00e88c0e2cd23a6a"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/csn-inova-ventures.md",
+          "sha256": "6182ac13d5d679b989a18e3e070941998c898188dab51258c116d1dd42c361b1"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-221-cv-idexo",
+      "destination": "funds/brazil/cv-idexo.md",
+      "name": "CV iDEXO",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/cv-idexo.md",
+          "sha256": "323284da52df7e89c8eae1b55a5666f1b5a754af73f8083bfb458fce583242e0"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/cv-idexo.md",
+          "sha256": "127215992cd4e512203df6cd48690ab68b2e822f517d2cdae726d14f552b906b"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/cv-idexo.md",
+          "sha256": "315491f4437668ca199e204f3e10ac70e20eff65beeffea3352d817c469fe4e4"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-221-grao-vc",
+      "destination": "funds/brazil/grao-vc.md",
+      "name": "Grão VC",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/grao-vc.md",
+          "sha256": "671d0e786fb82b727bf6d74bd6910fb12b105c2ec14207ce3885e398257f39df"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/grao-vc.md",
+          "sha256": "36e706b2cc0bc970a34379a4283e6988e2aaf8b83606b4c60caa462de9c8a3a5"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/grao-vc.md",
+          "sha256": "feb5e82d58a0277d678bfbacd64d1d7701950e88524d7273b1cd88a66a0347c1"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-221-hiker-ventures",
+      "destination": "funds/brazil/hiker-ventures.md",
+      "name": "Hiker Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/hiker-ventures.md",
+          "sha256": "52b7469df5c63622c6104f2519094a0bef1f3a7f3ddfc0e58f0046617a493504"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/hiker-ventures.md",
+          "sha256": "15919a367b37f4a774564086e99c77e75eae1b21d1b50ef4b5017537850c234e"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/hiker-ventures.md",
+          "sha256": "62077d38d28d6d98965cf74a5e2a5c5cb46ec81e4650742bea8dfc07fe6403ca"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-221-lightrock",
+      "destination": "funds/multi-country/lightrock.md",
+      "name": "Lightrock",
+      "profiles": {
+        "en": {
+          "path": "funds/multi-country/lightrock.md",
+          "sha256": "35632a645fdc48fce96d30120b803bb1be636123491835b49fc7645bd1e18c11"
+        },
+        "es": {
+          "path": "translations/es/funds/multi-country/lightrock.md",
+          "sha256": "ae5fc8fdda44dc3ad468cb88ed515adebaeadf052b7768381347b7d07d9eeba4"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/multi-country/lightrock.md",
+          "sha256": "46e8d6a6d22a75f0459413afc4e667f64af53c65285fb71d885a21298ed3e94a"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-221-marcha",
+      "destination": "funds/brazil/marcha.md",
+      "name": "Marcha",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/marcha.md",
+          "sha256": "60b7ce1f386a1f56332054cced67b553235078b050f572ca6f578d05587b8fa1"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/marcha.md",
+          "sha256": "3c156f3c657d1e3ab628eccf3d30d182fbe1a58209a752960aace19882ea3562"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/marcha.md",
+          "sha256": "cad5a18d994150da21033219f27b37773623857191b790cbeea09aa62acd4b96"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-221-positive-ventures",
+      "destination": "funds/brazil/positive-ventures.md",
+      "name": "Positive Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/positive-ventures.md",
+          "sha256": "ac8ce22e84eb98178e47f8300a38c56dc71ad96d928be7c63d946d2db0f31c4f"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/positive-ventures.md",
+          "sha256": "b74da9b866bb30cc69898cd6b1ab6f89892be24e7d21725c57ad98efe5ff5f89"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/positive-ventures.md",
+          "sha256": "6bc7724e10f2d4951c9c747120f3e43860462c1f64a1b2df424c62af50722b52"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-221-valutia",
+      "destination": "funds/multi-country/valutia.md",
+      "name": "Valutia",
+      "profiles": {
+        "en": {
+          "path": "funds/multi-country/valutia.md",
+          "sha256": "8e2d4252568f96bf9a4e04d0f8c82f5bb1a0e490beceb2d1ccbe7684d325dbee"
+        },
+        "es": {
+          "path": "translations/es/funds/multi-country/valutia.md",
+          "sha256": "18aa6bf705a3e8552f2578bc390596a758e34f86fe0743a08ad6ab96f8a793ff"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/multi-country/valutia.md",
+          "sha256": "ef7df81b7361223d5268007659498f7eb2036936f208731d0556cb0f3e9708f4"
+        }
+      }
+    }
+  ],
+  "published_on": "2026-07-30",
+  "schema_version": "1.0"
+}
