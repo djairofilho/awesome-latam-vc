@@ -20,6 +20,11 @@ def read_jsonl(path):
     ]
 
 
+def read_json_frontmatter(path):
+    raw = path.read_text(encoding="utf-8")
+    return json.loads(raw.split("---", 2)[1])
+
+
 class TransverseHandoffsPrefreezeTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -121,6 +126,35 @@ class TransverseHandoffsPrefreezeTest(unittest.TestCase):
             actual = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
             self.assertEqual(actual, expected)
 
+    def test_publication_matches_frozen_batch(self):
+        freeze = read_json(AUDIT / "freeze-manifest.json")
+        publication = read_json(AUDIT / "publication-report.json")
+        self.assertEqual(publication["status"], "published")
+        self.assertEqual(publication["eligible_ids"], freeze["eligible_ids"])
+        self.assertEqual(publication["canonical_profile_count"], 3)
+        self.assertEqual(publication["localized_profile_count"], 9)
+        self.assertTrue(publication["review_reconciled"])
+        self.assertEqual(publication["critical_open"], 0)
+        self.assertEqual(publication["high_open"], 0)
+
+    def test_publication_hashes_and_locales(self):
+        publication = read_json(AUDIT / "publication-report.json")
+        self.assertEqual(len(publication["profile_hashes"]), 9)
+        for relative, expected in publication["profile_hashes"].items():
+            path = ROOT / relative
+            self.assertTrue(path.is_file(), relative)
+            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), expected)
+        canonical = [
+            read_json_frontmatter(ROOT / "funds" / "argentina" / "beta-impacto.md"),
+            read_json_frontmatter(ROOT / "funds" / "argentina" / "primary-x.md"),
+            read_json_frontmatter(ROOT / "funds" / "brazil" / "saasholic.md"),
+        ]
+        self.assertEqual([row["locale"] for row in canonical], ["en", "en", "en"])
+        self.assertEqual(
+            [row["base_geography"]["code"] for row in canonical],
+            ["AR", "AR", "BR"],
+        )
+
     def test_manifest_hashes(self):
         for relative, expected in self.manifest["artifact_hashes"].items():
             actual = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
@@ -129,7 +163,7 @@ class TransverseHandoffsPrefreezeTest(unittest.TestCase):
     def test_no_mojibake(self):
         bad = ["Ãƒ", "Ã‚", "ï¿½", "^G", "�"]
         for path in AUDIT.rglob("*"):
-            if path.is_file():
+            if path.is_file() and path.suffix in {".py", ".md", ".json", ".jsonl"}:
                 text = path.read_text(encoding="utf-8")
                 self.assertFalse(any(token in text for token in bad), path)
 
