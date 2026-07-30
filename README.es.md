@@ -229,3 +229,7 @@ el [alcance y los criterios de inclusión](ecosystem/README.md).
 ## Contribuyendo
 
 Las contribuciones son bienvenidas. Lee las [guias de contribucion](contributing.md) antes de enviar un pull request.
+
+## Apoya el proyecto
+
+Este proyecto es gratuito y de código abierto. Si te resulta útil, considera apoyar su mantenimiento a través de [GitHub Sponsors](https://github.com/sponsors/djairofilho).

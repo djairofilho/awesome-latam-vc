@@ -229,3 +229,7 @@ they remain outside the main tables. See the
 ## Contributing
 
 Contributions are welcome. Please read the [contribution guidelines](contributing.md) before submitting a pull request.
+
+## Support the project
+
+This project is free and open source. If you find it useful, consider supporting its maintenance through [GitHub Sponsors](https://github.com/sponsors/djairofilho).

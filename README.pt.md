@@ -229,3 +229,7 @@ fundos de VC e, por isso, permanecem fora das tabelas principais. Consulte o
 ## Contribuindo
 
 Contribuicoes sao bem-vindas. Leia as [diretrizes de contribuicao](contributing.md) antes de enviar um pull request.
+
+## Apoie o projeto
+
+Este projeto é gratuito e open source. Se ele for útil para você, considere apoiar sua manutenção pelo [GitHub Sponsors](https://github.com/sponsors/djairofilho).
