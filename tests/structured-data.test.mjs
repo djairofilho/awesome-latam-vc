@@ -11,7 +11,7 @@ import {
 
 test("website and dataset use canonical GitHub Pages URLs", () => {
   const website = webSiteJsonLd();
-  const dataset = datasetJsonLd(227);
+  const dataset = datasetJsonLd(229);
 
   assert.equal(website["@type"], "WebSite");
   assert.equal(
@@ -22,7 +22,7 @@ test("website and dataset use canonical GitHub Pages URLs", () => {
   assert.deepEqual(dataset.variableMeasured, {
     "@type": "PropertyValue",
     name: "Entity count",
-    value: 227,
+    value: 229,
   });
   assert.equal(dataset.version, "2026-07-27");
   assert.equal(dataset.dateModified, "2026-07-27");

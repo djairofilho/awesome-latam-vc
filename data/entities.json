@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 227,
+    "entity_count": 229,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -3279,6 +3279,43 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology_startups"
+      ],
+      "founder_route": "https://airtable.com/appD4x694mYx8HTKc/pagi9EoW9lTCFKC7U/form",
+      "id": "fund:entrypoint",
+      "name": "Entrypoint",
+      "official_website": "https://entrypoint.vc/",
+      "operator": null,
+      "source_profile": "funds/brazil/entrypoint.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Investment thesis, criteria, check range, and founder support",
+          "url": "https://entrypoint.vc/"
+        },
+        {
+          "kind": "official_application",
+          "title": "Startup application",
+          "url": "https://airtable.com/appD4x694mYx8HTKc/pagi9EoW9lTCFKC7U/form"
+        }
+      ],
+      "stages": [
+        "pre_seed"
+      ],
+      "summary": "Entrypoint is a Brazilian pre-seed venture capital firm investing in technology startups with a functioning MVP and initial clients or proofs of concept.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "BO",
         "kind": "country"
       },
@@ -3523,6 +3560,52 @@
       ],
       "summary": "FJ Labs is an investment organization focused on Marketplaces and network effects in Global.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [
+        "Flourish VC"
+      ],
+      "base_geography": {
+        "code": "GLOBAL",
+        "kind": "global"
+      },
+      "countries_covered": [
+        "GLOBAL",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "financial_health",
+        "financial_services"
+      ],
+      "founder_route": null,
+      "id": "fund:flourish-ventures",
+      "name": "Flourish Ventures",
+      "official_website": "https://flourishventures.com/",
+      "operator": null,
+      "source_profile": "funds/multi-country/flourish-ventures.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Investment model and thesis",
+          "url": "https://flourishventures.com/how-we-work/"
+        },
+        {
+          "kind": "official_website",
+          "title": "Fund overview and geography",
+          "url": "https://flourishventures.com/about-us/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Latin America portfolio",
+          "url": "https://flourishventures.com/portfolio/latin-america/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Flourish Ventures is a global early-stage evergreen venture fund backing technology-enabled companies that improve financial health and prosperity.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
