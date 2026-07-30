@@ -120,6 +120,7 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | [BB Ventures](funds/brazil/bb-ventures.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [BluStone Capital](funds/brazil/blustone-capital.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Pre-seed and Seed | B2B and B2B2C technology | Brazil |
+| [BS2 Ventures](funds/brazil/bs2-ventures.md) | Not publicly disclosed | Solutions for small and medium-sized businesses | Brazil |
 | [Canastra Ventures](funds/brazil/canastra-ventures.md) | Pre-seed | AI-first startups | Brazil and global |
 | [Copel Ventures I](funds/brazil/copel-ventures-i.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Growth | Technology and high-growth companies | Brazil |
@@ -142,6 +143,7 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | [Invest Tech](funds/brazil/invest-tech.md) | Seed | Technology-enabled B2B companies | Brazil |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed and Seed | Software and technology | Brazil |
 | [KPTL](funds/brazil/kptl.md) | Multi-stage | Deep tech, health, bioeconomy, and technology | Brazil |
+| [L4 Venture Builder](funds/brazil/l4-venture-builder.md) | Growth | Not publicly disclosed | Primarily Brazil |
 | [Marcha](funds/brazil/marcha.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [MSW Capital](funds/brazil/msw-capital.md) | Seed | Technology aligned with corporate innovation | Brazil |
 | [Oria Capital](funds/brazil/oria-capital.md) | Not publicly disclosed | B2B software | Brazil |
@@ -160,7 +162,9 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | [SLC Ventures](funds/brazil/slc-ventures.md) | Not publicly disclosed | Agribusiness technology and sustainable agriculture | Not publicly disclosed |
 | [TM3 Capital](funds/brazil/tm3-capital.md) | Not publicly disclosed | Not publicly disclosed | Not publicly disclosed |
 | [Triaxis Capital](funds/brazil/triaxis-capital.md) | Not publicly disclosed | Innovative technology companies | Brazil |
+| [Upload Ventures](funds/brazil/upload-ventures.md) | Multi-stage | Not publicly disclosed | Latin America, including Brazil |
 | [Ventiur](funds/brazil/ventiur.md) | Pre-seed and Seed | Technology startups | Brazil |
+| [Vibra Ventures](funds/brazil/vibra-ventures.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Vivo Ventures](funds/brazil/vivo-ventures.md) | Series A, Series B, and Growth | Education, energy, health, financial services, smart home, and entertainment | Brazil |
 | [Vox Capital](funds/brazil/vox-capital.md) | Seed, Series A, and Series B | Impact technology | Brazil |
 
@@ -197,8 +201,10 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | --- | --- | --- | --- |
 | [1616V](funds/multi-country/1616v.md) | Not publicly disclosed | Not publicly disclosed | Latin America and the United States |
 | [17-Sigma](funds/multi-country/17-sigma.md) | Not publicly disclosed | Not publicly disclosed | Latin America |
+| [Accion Ventures](funds/multi-country/accion-ventures.md) | Not publicly disclosed | Not publicly disclosed | Brazil; broader coverage not publicly disclosed |
 | [ADN.VC](funds/multi-country/adn.vc.md) | Pre-seed and Seed | Fintech, proptech, and contech | Latin America |
 | [Alexia Ventures](funds/multi-country/alexia-ventures.md) | Seed and Series A | Intelligent software and applied AI | Latin America |
+| [Antler](funds/multi-country/antler.md) | Not publicly disclosed | Not publicly disclosed | Brazil; broader coverage not publicly disclosed |
 | [BASF Venture Capital GmbH](funds/multi-country/basf-venture-capital.md) | Not publicly disclosed | Not publicly disclosed | Global, including Brazil |
 | [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | Not publicly disclosed | Financial technology | Global, including Latin America |
 | [devlabs](funds/multi-country/devlabs.md) | Pre-seed and Seed | Globally scalable software | Latin America and the United States |
@@ -221,9 +227,12 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | [Lotux](funds/multi-country/lotux.md) | Pre-seed | Fintech, insurtech, logistics, commerce, education, and health | Latin America |
 | [MatterScale Ventures](funds/multi-country/matterscale-ventures.md) | Pre-seed, Seed, and Series A | Affordable technology-enabled services | The Americas, including Latin America |
 | [Mindset Ventures](funds/multi-country/mindset-ventures.md) | Seed and Series A | B2B technology | Latin America and the United States |
+| [Mundi Ventures](funds/multi-country/mundi-ventures.md) | Growth | Not publicly disclosed | Latin America and the Caribbean, including Brazil |
 | [Norte Ventures](funds/multi-country/norte-ventures.md) | Not publicly disclosed | Technology, sector agnostic | Latin America |
 | [ONEVC](funds/multi-country/onevc.md) | Seed | Technology | Latin America |
 | [Pant3ra Venture Fund](funds/multi-country/pant3ra-venture-fund.md) | Pre-seed and Seed | Mobility, logistics, e-commerce, and fintech | Mexico, the United States, and Latin America |
+| [Parceiro Ventures](funds/multi-country/parceiro-ventures.md) | Not publicly disclosed | Not publicly disclosed | Latin America, including Brazil |
+| [Prosus Ventures](funds/multi-country/prosus-ventures.md) | Not publicly disclosed | Not publicly disclosed | Latin America, including Brazil |
 | [Qualcomm Ventures](funds/multi-country/qualcomm-ventures.md) | Multi-stage | AI, automotive, mobile, enterprise, and smart systems | Global, including Latin America |
 | [Quona Capital](funds/multi-country/quona-capital.md) | Seed, Series A, and Series B | Fintech and financial inclusion | Emerging markets, including Latin America |
 | [Redwood Ventures](funds/multi-country/redwood-ventures.md) | Seed and Series A | Technology, sector agnostic | Latin America |

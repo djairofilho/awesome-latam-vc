@@ -120,6 +120,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 154 fundos
 | [BB Ventures](funds/brazil/bb-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | Brasil |
 | [BluStone Capital](funds/brazil/blustone-capital.md) | Não divulgado publicamente | Não divulgado publicamente | Brasil |
 | [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Pre-seed e Seed | Tecnologia B2B e B2B2C | Brasil |
+| [BS2 Ventures](funds/brazil/bs2-ventures.md) | Não divulgado publicamente | Soluções para pequenas e médias empresas | Brasil |
 | [Canastra Ventures](funds/brazil/canastra-ventures.md) | Pre-seed | Startups AI-first | Brasil e global |
 | [Copel Ventures I](funds/brazil/copel-ventures-i.md) | Não divulgado publicamente | Não divulgado publicamente | Brasil |
 | [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Growth | Tecnologia e empresas de alto crescimento | Brasil |
@@ -142,6 +143,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 154 fundos
 | [Invest Tech](funds/brazil/invest-tech.md) | Seed | Empresas B2B habilitadas por tecnologia | Brasil |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed e Seed | Software e tecnologia | Brasil |
 | [KPTL](funds/brazil/kptl.md) | Multiestágio | Deep tech, saúde, bioeconomia e tecnologia | Brasil |
+| [L4 Venture Builder](funds/brazil/l4-venture-builder.md) | Growth | Não divulgado publicamente | Principalmente Brasil |
 | [Marcha](funds/brazil/marcha.md) | Não divulgado publicamente | Não divulgado publicamente | Brasil |
 | [MSW Capital](funds/brazil/msw-capital.md) | Seed | Tecnologia alinhada à inovação corporativa | Brasil |
 | [Oria Capital](funds/brazil/oria-capital.md) | Não divulgado publicamente | Software B2B | Brasil |
@@ -160,7 +162,9 @@ O índice foi otimizado para comparação rápida e atualmente reúne 154 fundos
 | [SLC Ventures](funds/brazil/slc-ventures.md) | Não divulgado publicamente | Tecnologia para o agronegócio e agricultura sustentável | Não divulgado publicamente |
 | [TM3 Capital](funds/brazil/tm3-capital.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
 | [Triaxis Capital](funds/brazil/triaxis-capital.md) | Não divulgado publicamente | Empresas inovadoras de tecnologia | Brasil |
+| [Upload Ventures](funds/brazil/upload-ventures.md) | Multiestágio | Não divulgado publicamente | América Latina, incluindo o Brasil |
 | [Ventiur](funds/brazil/ventiur.md) | Pre-seed e Seed | Startups de tecnologia | Brasil |
+| [Vibra Ventures](funds/brazil/vibra-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | Brasil |
 | [Vivo Ventures](funds/brazil/vivo-ventures.md) | Série A, Série B e Growth | Educação, energia, saúde, serviços financeiros, casa inteligente e entretenimento | Brasil |
 | [Vox Capital](funds/brazil/vox-capital.md) | Seed, Série A e Série B | Tecnologia de impacto | Brasil |
 
@@ -197,8 +201,10 @@ O índice foi otimizado para comparação rápida e atualmente reúne 154 fundos
 | --- | --- | --- | --- |
 | [1616V](funds/multi-country/1616v.md) | Não divulgado publicamente | Não divulgado publicamente | América Latina e Estados Unidos |
 | [17-Sigma](funds/multi-country/17-sigma.md) | Não divulgado publicamente | Não divulgado publicamente | América Latina |
+| [Accion Ventures](funds/multi-country/accion-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | Brasil; cobertura mais ampla não divulgada publicamente |
 | [ADN.VC](funds/multi-country/adn.vc.md) | Pre-seed e Seed | Fintech, proptech e contech | América Latina |
 | [Alexia Ventures](funds/multi-country/alexia-ventures.md) | Seed e Série A | Software inteligente e IA aplicada | América Latina |
+| [Antler](funds/multi-country/antler.md) | Não divulgado publicamente | Não divulgado publicamente | Brasil; cobertura mais ampla não divulgada publicamente |
 | [BASF Venture Capital GmbH](funds/multi-country/basf-venture-capital.md) | Não divulgado publicamente | Não divulgado publicamente | Global, incluindo o Brasil |
 | [Clocktower Technology Ventures](funds/multi-country/clocktower-technology-ventures.md) | Não divulgado publicamente | Tecnologia financeira | Global, incluindo a América Latina |
 | [devlabs](funds/multi-country/devlabs.md) | Pre-seed e Seed | Software escalável globalmente | América Latina e Estados Unidos |
@@ -221,9 +227,12 @@ O índice foi otimizado para comparação rápida e atualmente reúne 154 fundos
 | [Lotux](funds/multi-country/lotux.md) | Pre-seed | Fintech, insurtech, logística, comércio, educação e saúde | América Latina |
 | [MatterScale Ventures](funds/multi-country/matterscale-ventures.md) | Pre-seed, Seed e Série A | Serviços acessíveis habilitados por tecnologia | Américas, incluindo a América Latina |
 | [Mindset Ventures](funds/multi-country/mindset-ventures.md) | Seed e Série A | Tecnologia B2B | América Latina e Estados Unidos |
+| [Mundi Ventures](funds/multi-country/mundi-ventures.md) | Growth | Não divulgado publicamente | América Latina e Caribe, incluindo o Brasil |
 | [Norte Ventures](funds/multi-country/norte-ventures.md) | Não divulgado publicamente | Tecnologia, agnóstico a setores | América Latina |
 | [ONEVC](funds/multi-country/onevc.md) | Seed | Tecnologia | América Latina |
 | [Pant3ra Venture Fund](funds/multi-country/pant3ra-venture-fund.md) | Pre-seed e Seed | Mobilidade, logística, e-commerce e fintech | México, Estados Unidos e América Latina |
+| [Parceiro Ventures](funds/multi-country/parceiro-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | América Latina, incluindo o Brasil |
+| [Prosus Ventures](funds/multi-country/prosus-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | América Latina, incluindo o Brasil |
 | [Qualcomm Ventures](funds/multi-country/qualcomm-ventures.md) | Multiestágio | IA, automotivo, mobile, enterprise e sistemas inteligentes | Global, incluindo a América Latina |
 | [Quona Capital](funds/multi-country/quona-capital.md) | Seed, Série A e Série B | Fintech e inclusão financeira | Mercados emergentes, incluindo a América Latina |
 | [Redwood Ventures](funds/multi-country/redwood-ventures.md) | Seed e Série A | Tecnologia, agnóstico a setores | América Latina |

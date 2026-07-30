@@ -51,17 +51,17 @@ class EntityExportTests(unittest.TestCase):
         self.assertEqual("CC0-1.0", self.document["dataset"]["license"])
         self.assertEqual("UTF-8", self.document["dataset"]["encoding"])
 
-    def test_all_247_profiles_are_exported_once_in_stable_order(self):
+    def test_all_256_profiles_are_exported_once_in_stable_order(self):
         entities = self.document["entities"]
         ids = [entity["id"] for entity in entities]
         profile_ids = sorted(
             profile.metadata["entity_id"] for profile in self.profiles
         )
-        self.assertEqual(247, len(entities))
+        self.assertEqual(256, len(entities))
         self.assertEqual(profile_ids, ids)
         self.assertEqual(ids, sorted(ids))
         self.assertEqual(len(ids), len(set(ids)))
-        self.assertEqual(247, self.document["dataset"]["entity_count"])
+        self.assertEqual(256, self.document["dataset"]["entity_count"])
 
     def test_json_and_csv_have_identical_ids_order_and_values(self):
         errors = generate_entities.validate_export_consistency(
