@@ -20,7 +20,7 @@ Paraguay base is supported directly by current LAVCA, Paraguayan Ministry of
 Industry and Commerce, and URUCAP location records. It is not inferred from
 founder nationality, BOCAP membership or the handoff's Uruguay origin.
 
-The current artifacts stop before freeze and publication. An independent
-integrator must reconcile the blind findings, every eligible and routed case,
-the regulator case, the deterministic exclusion sample and the Cibersons base
-geography before `freeze_allowed` can become true.
+The independent integrator reconciled the blind findings, every eligible and
+routed case, the regulator case, the deterministic exclusion sample and the
+Cibersons base geography. The approved freeze contains one publication batch
+with four funds and twelve equivalent localized profiles.

@@ -84,13 +84,20 @@ class BpvPrefreezeTest(unittest.TestCase):
         self.assertTrue(all(row["status"] in {"complete", "gap_justified"} for row in self.sources))
         self.assertTrue(all(row["url"] and row["family"] and row["scope"] and row["accessed_on"] for row in self.sources))
 
-    def test_prefreeze_cannot_publish(self):
+    def test_publication_requires_and_records_independent_review(self):
         self.assertEqual(self.request["status"], "pending_independent_review")
         self.assertFalse(self.request["freeze_allowed"])
-        self.assertEqual(self.manifest["status"], "awaiting_independent_review")
-        self.assertFalse(self.manifest["freeze_allowed"])
-        self.assertFalse((AUDIT / "freeze-manifest.json").exists())
-        self.assertFalse((AUDIT / "publication-report.json").exists())
+        review = read_json(AUDIT / "review.json")
+        freeze = read_json(AUDIT / "freeze-manifest.json")
+        publication = read_json(AUDIT / "publication-report.json")
+        self.assertTrue(review["review_reconciled"])
+        self.assertTrue(review["publication_authorized"])
+        self.assertEqual(review["critical_open"], 0)
+        self.assertEqual(review["high_open"], 0)
+        self.assertTrue(freeze["review_reconciled"])
+        self.assertEqual(publication["eligible_ids"], freeze["eligible_ids"])
+        self.assertEqual(publication["published_profile_count"], 4)
+        self.assertEqual(publication["localized_profile_count"], 12)
 
     def test_manifest_hashes(self):
         for relative, expected in self.manifest["artifact_hashes"].items():
