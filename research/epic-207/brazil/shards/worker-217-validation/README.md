@@ -20,7 +20,7 @@ Duplicatas: Astella, já publicada em `funds/brazil/astella.md`, e Caravela Capi
 1. A fila de entrada foi preservada por `candidate_id`, fontes de descoberta, aliases e IDs de marca, gestora, veículo e programa.
 2. Cada candidato foi confrontado com fontes oficiais atuais para os cinco gates: identidade, aporte direto, recorrência, atividade oficial na janela e relação explícita com o Brasil.
 3. Evidências anteriores foram revalidadas quando úteis. Fontes novas receberam IDs da issue #217; fontes bloqueadas também foram inventariadas.
-4. Data de acesso, rodapé anual e datas relativas de redes sociais não foram usados como prova de atividade. Cheque, estágio, tese, liderança e frequência não foram estimados.
+4. Data de acesso, candidatura aberta, publicação editorial, rodapé anual e datas relativas de redes sociais não foram usados como prova de atividade. Para Accion e Antler, o gate foi fechado respectivamente pelo anúncio oficial da rodada da BackChannel em 23 de março de 2026 e pelo anúncio oficial do BNDES sobre o Fundo Antler Brasil I em 16 de junho de 2026.
 5. Notícias e listas públicas serviram somente à descoberta. Nenhuma fonte da CVM foi consultada ou usada.
 
 ## Lacunas explícitas
