@@ -1,0 +1,25 @@
+{
+  "blind_families": [
+    "blind_fund_launch",
+    "independent_map"
+  ],
+  "blind_finding": "ABSeed Colombia expansion",
+  "blind_resolution": "duplicate of funds/brazil/a.b.seed-ventures.md",
+  "critical_or_high_findings_open": 0,
+  "eligible_reviewed": [
+    "co-marathon-ventures",
+    "co-simma-capital"
+  ],
+  "exclusion_sample": [
+    "co-vertical-partners"
+  ],
+  "method": "SHA-256 lexical order over candidate_id; first ceil(20%) exclusions",
+  "regulatory_cases_reviewed": [
+    "co-h20-capital-innovation"
+  ],
+  "routed_reviewed": [
+    "co-medellin-venture-capital",
+    "co-pacific-ventures-cali",
+    "co-rockstart"
+  ]
+}

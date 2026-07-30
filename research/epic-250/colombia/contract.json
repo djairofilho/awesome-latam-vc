@@ -1,0 +1,26 @@
+{
+  "cutoff": "2026-07-30",
+  "discovery_rule": "non_regulatory_only",
+  "eligible_gates": [
+    "direct_investment",
+    "recurrence",
+    "recent_activity",
+    "market_access",
+    "official_evidence"
+  ],
+  "excluded_discovery_inputs": [
+    "local_startup_dataset",
+    "regulatory_registry",
+    "existing_catalog"
+  ],
+  "market": "CO",
+  "publication_batch_limit": 10,
+  "regulator_ceiling_percent": 10,
+  "regulator_rule": "identity_or_divergence_only",
+  "required_locales": [
+    "en",
+    "pt-BR",
+    "es"
+  ],
+  "schema_version": "1.0"
+}

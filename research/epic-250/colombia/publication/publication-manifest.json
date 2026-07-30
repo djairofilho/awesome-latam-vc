@@ -1,0 +1,20 @@
+{
+  "batch_count": 1,
+  "batch_limit": 10,
+  "batches": [
+    {
+      "batch_id": "co-funds-01",
+      "profiles": [
+        "funds/colombia/marathon-ventures.md",
+        "funds/colombia/simma-capital.md"
+      ]
+    }
+  ],
+  "cutoff": "2026-07-30",
+  "eligible_count": 2,
+  "locales": [
+    "en",
+    "pt-BR",
+    "es"
+  ]
+}

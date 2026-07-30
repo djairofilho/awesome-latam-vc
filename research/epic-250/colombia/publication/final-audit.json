@@ -1,0 +1,17 @@
+{
+  "absolute_completeness_claimed": false,
+  "batch_limit_respected": true,
+  "cutoff": "2026-07-30",
+  "expected_profile_files": 6,
+  "non_regulatory_discovery_percent": 100.0,
+  "profile_hashes": {
+    "funds/colombia/marathon-ventures.md": "d439ccd076be049a4322e710767139500c4619f3eb158ece7a34e20da37da462",
+    "funds/colombia/simma-capital.md": "05c5340a2b1459429077bc3373c731f787ff235b1a9f214073d51341922951d6",
+    "translations/es/funds/colombia/marathon-ventures.md": "1664e66cf5034e69b5da96cce00ebb4118e8447fdbbc6825eb8551d86b32a0a9",
+    "translations/es/funds/colombia/simma-capital.md": "166a4c384d09cf10c096f72392377e8a6fe9359f6f6c744611664b4bbe0db8b0",
+    "translations/pt-BR/funds/colombia/marathon-ventures.md": "d6b2350a98979ae2d4d8bdb8e787dfd080546b4dc17c3a96047a03ff6cce2a32",
+    "translations/pt-BR/funds/colombia/simma-capital.md": "8c5d45f96f8b42c85da8417cc65a5f897d5c9efb9e5bcbfe00535cc7a8956fc6"
+  },
+  "published_eligible_count": 2,
+  "regulatory_query_percent_of_candidates": 7.7
+}
