@@ -10,7 +10,6 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REPOSITORY = ROOT.parents[1]
 BUILDER = ROOT / "brazil" / "build_frozen.py"
 
 
@@ -64,7 +63,7 @@ class FreezeBuilderTests(unittest.TestCase):
         destinations = [item["destination"] for item in eligible]
         self.assertEqual(len(destinations), len(set(destinations)))
         self.assertTrue(all(path.endswith(".md") for path in destinations))
-        self.assertFalse(any((REPOSITORY / path).exists() for path in destinations))
+        self.assertFalse(self.freeze["publication"]["published_at_freeze"])
         self.assertTrue(all(
             item["decision"] != "duplicate"
             or item["canonical_candidate_id"]

@@ -1,0 +1,197 @@
+{
+  "batch_id": "publication-batch-01",
+  "batch_ordinal": 1,
+  "candidate_count": 9,
+  "cutoff_date": "2026-07-30",
+  "epic": 207,
+  "freeze_issue": 222,
+  "freeze_manifest_sha256": "4609745e229c67c647e199cce6ef10cf58dc82b1fcfba2e0748b20cfafd303bd",
+  "frozen_batch_sha256": "7e397d3246d7c9fe1c31dc3555dce9c9d65f653f2d985b7497eecf07badd18a4",
+  "hash_algorithm": "sha256",
+  "integrity": {
+    "all_profile_hashes_present": true,
+    "candidate_ids_unique": true,
+    "destinations_unique": true,
+    "localized_paths_unique": true,
+    "one_candidate_to_three_locales": true
+  },
+  "issue": 241,
+  "limitations": "Este manifesto prova correspondência com o lote congelado e os arquivos publicados; não altera os artefatos centrais da pesquisa.",
+  "parent_issue": 223,
+  "profile_file_count": 27,
+  "profiles": [
+    {
+      "candidate_id": "fund-br-1616v",
+      "destination": "funds/multi-country/1616v.md",
+      "name": "1616V",
+      "profiles": {
+        "en": {
+          "path": "funds/multi-country/1616v.md",
+          "sha256": "af48c4589103012d592fd00c2a5af4824959df9623e5f5f7ca01394918410549"
+        },
+        "es": {
+          "path": "translations/es/funds/multi-country/1616v.md",
+          "sha256": "d7abd1352de289d8f14c9063b2c409d5849bb8813f84e8ab51dc6689b8915233"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/multi-country/1616v.md",
+          "sha256": "32ec400903af77db998076ec0d9b77f7669f4a77b078f59098e937eb198c4244"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-17-sigma",
+      "destination": "funds/multi-country/17-sigma.md",
+      "name": "17-Sigma",
+      "profiles": {
+        "en": {
+          "path": "funds/multi-country/17-sigma.md",
+          "sha256": "b1050a435e6cee9e7c624def7aaffe073a8c172ce74aec24a4a9036ed80b629b"
+        },
+        "es": {
+          "path": "translations/es/funds/multi-country/17-sigma.md",
+          "sha256": "22a266de98d1f025fc634cdfedf48ff84c5bf3d1663deec40d4b3fee4e5db61f"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/multi-country/17-sigma.md",
+          "sha256": "0c317efcc3a15da250300892364043949f074a5350030793343078540b664dc9"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-210-dna-capital",
+      "destination": "funds/brazil/dna-capital.md",
+      "name": "DNA Capital",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/dna-capital.md",
+          "sha256": "2ca025a0c6c5ace1b0b4748ff0c66325b30c8a3f73a7696ceeb887143ff61607"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/dna-capital.md",
+          "sha256": "310960814450c6683383a15e4c2fc96dd27bae5f029c98282d9d3614a279baa0"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/dna-capital.md",
+          "sha256": "8f5def44af632cda3937e46e741700ab4bb3743471448bd5ba57762a924fb8ef"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-213-quartzo-capital",
+      "destination": "funds/brazil/quartzo-capital.md",
+      "name": "Quartzo Capital",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/quartzo-capital.md",
+          "sha256": "f2af339039170ac9a31a7724106d275c3495e6241cc55922451876806658d049"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/quartzo-capital.md",
+          "sha256": "701dab08bf0cc78ada7e8ea75164ee3e7b3647dd95e26951c91a9e6ad9d2d5da"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/quartzo-capital.md",
+          "sha256": "2df5d5be828dcc5895afd45762cdb71445cada629e51101997ec5de48a103dad"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-214-barn-investimentos",
+      "destination": "funds/brazil/barn-investimentos.md",
+      "name": "Barn Investimentos",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/barn-investimentos.md",
+          "sha256": "b7040713d70e99125d1192651b804db7b5b9e1d87a3a69f7e8b89fc05040a5b2"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/barn-investimentos.md",
+          "sha256": "64d3f0863c9345fe1aa76906eb31ed6f211010f392525f75bfbf0d047773d328"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/barn-investimentos.md",
+          "sha256": "a13b51acf8f299c200293d74dd9da1f9aed8d4123dd962c39cbe1fd0c20ac134"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-214-parallax-ventures",
+      "destination": "funds/brazil/parallax-ventures.md",
+      "name": "Parallax Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/parallax-ventures.md",
+          "sha256": "62c0e1aa441907e32a0b4914eb7a4f80d17c5600e88010d2e2464fce8696c673"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/parallax-ventures.md",
+          "sha256": "bcd3bc276593f4f5e7905cdf45bd9b0b46e93ee694498842612d081682891114"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/parallax-ventures.md",
+          "sha256": "68785b9ae4c16ba38085f5bf4b19edb15cfeff4b3833b27d8fc0359b318b1cc1"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-221-basf-venture-capital",
+      "destination": "funds/multi-country/basf-venture-capital.md",
+      "name": "BASF Venture Capital GmbH",
+      "profiles": {
+        "en": {
+          "path": "funds/multi-country/basf-venture-capital.md",
+          "sha256": "5cbc2dceabe28ac59bdaaab7d323052a05168da076caed0e8ae8811696b2dba2"
+        },
+        "es": {
+          "path": "translations/es/funds/multi-country/basf-venture-capital.md",
+          "sha256": "ee67de21ebb7ec2340337570593038841a25fd61ee5b98f89234c39ada9f577b"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/multi-country/basf-venture-capital.md",
+          "sha256": "3bdd1efa94b7b6ceeb0dc86f8189b5699678a9c48747532931d0b3f959a6657b"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-221-bb-ventures",
+      "destination": "funds/brazil/bb-ventures.md",
+      "name": "BB Ventures",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/bb-ventures.md",
+          "sha256": "e72f87f49870cb60994b1f001d600db7881fde8d4fa40040d63d5e19f11c5014"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/bb-ventures.md",
+          "sha256": "e83fd463790187813f6b7eaf169b32f60a1e74ff5108580706c736f38eefd53a"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/bb-ventures.md",
+          "sha256": "4279054b48505307f768113fe697852ec51f2e12d9b33782d80c6b3f9977732a"
+        }
+      }
+    },
+    {
+      "candidate_id": "fund-br-221-blustone-capital",
+      "destination": "funds/brazil/blustone-capital.md",
+      "name": "BluStone Capital",
+      "profiles": {
+        "en": {
+          "path": "funds/brazil/blustone-capital.md",
+          "sha256": "fa3c704024b155c78182381e84d5b3f043085083f7569e60507b20ca6999da7f"
+        },
+        "es": {
+          "path": "translations/es/funds/brazil/blustone-capital.md",
+          "sha256": "42e523bccf62b966d6ea3d8a6210e77c2a7772dd53ede9e291da6669c57f9433"
+        },
+        "pt-BR": {
+          "path": "translations/pt-BR/funds/brazil/blustone-capital.md",
+          "sha256": "f61281b6731cea735eb88c2ff6d498d326f62a71ec998eeda3e1997b75ddce09"
+        }
+      }
+    }
+  ],
+  "published_on": "2026-07-30",
+  "schema_version": "1.0"
+}

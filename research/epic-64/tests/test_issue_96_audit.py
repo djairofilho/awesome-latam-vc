@@ -79,6 +79,27 @@ class FinalAuditTests(unittest.TestCase):
             all(not failures for failures in self.report["failures"].values())
         )
 
+    def test_global_index_projection_allows_unrelated_fund_rows_only(self) -> None:
+        for filename, expected in self.builder.GLOBAL_INDEX_PROJECTIONS.items():
+            self.assertEqual(
+                expected,
+                self.builder.global_index_projection(
+                    (self.builder.ROOT / filename).read_text(encoding="utf-8")
+                ),
+            )
+            self.assertNotEqual(
+                expected,
+                self.builder.global_index_projection(
+                    "\n".join((*expected[:2], expected[2] + " alterada", expected[3]))
+                ),
+            )
+            self.assertNotEqual(
+                expected,
+                self.builder.global_index_projection(
+                    "\n".join(reversed(expected))
+                ),
+            )
+
     def test_category_routes_and_review_are_closed(self) -> None:
         metrics = self.report["metrics"]
         self.assertEqual(3, metrics["incoming_category_transfers"])
