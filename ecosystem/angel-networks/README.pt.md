@@ -18,6 +18,8 @@ investem em conjunto.
 | [BR Angels](brazil/br-angels.md) | Rede de investimento-anjo | Brasil, América Latina, Global |
 | [Curitiba Angels](brazil/curitiba-angels.md) | Rede de investimento-anjo | Brasil |
 | [GVAngels](brazil/gvangels.md) | Rede alumni de investimento-anjo | Brasil |
+| [Insper Angels](brazil/insper-angels.md) | Rede alumni de investimento-anjo | Brasil |
+| [ITA Angels](brazil/ita-angels.md) | Pool de investimento-anjo | Brasil |
 | [PUC angels](brazil/puc-angels.md) | Rede de investimento-anjo | Brasil |
 | [Urca Angels](brazil/urca-angels.md) | Rede alumni de investimento-anjo | Brasil |
 

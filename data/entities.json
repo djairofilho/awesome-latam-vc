@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 286,
+    "entity_count": 288,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -1226,6 +1226,93 @@
       ],
       "summary": "July 2026",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "angel_network",
+      "focuses": [
+        "sector_agnostic"
+      ],
+      "founder_route": "https://airtable.com/apphgmjftgDDAJdcX/pagAuMKJXHBD2NuiI/form",
+      "id": "angel_network:insper-angels",
+      "name": "Insper Angels",
+      "official_website": "https://www.insperangels.com.br/",
+      "operator": "Insper Angels, an association formed and managed by Insper students and alumni",
+      "source_profile": "ecosystem/angel-networks/brazil/insper-angels.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "About Insper Angels",
+          "url": "https://www.insperangels.com.br/sobre"
+        },
+        {
+          "kind": "official_application",
+          "title": "Insper Angels startup application",
+          "url": "https://www.insperangels.com.br/startups"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Official January 2026 investment activity",
+          "url": "https://www.insper.edu.br/pt/conteudos/tecnologia/startup-de-bolsistas-do-insper-capta-r-12-milhao-na-primeira-rodada-de-investimentos"
+        }
+      ],
+      "stages": [
+        "angel"
+      ],
+      "summary": "An alumni angel-investment network that accepts startup applications.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "angel_network",
+      "focuses": [
+        "software",
+        "internet_of_things",
+        "healthtech",
+        "fintech",
+        "agtech",
+        "energytech",
+        "b2b_saas",
+        "cloud"
+      ],
+      "founder_route": null,
+      "id": "angel_network:ita-angels",
+      "name": "ITA Angels",
+      "official_website": null,
+      "operator": "Bossanova Investimentos",
+      "source_profile": "ecosystem/angel-networks/brazil/ita-angels.md",
+      "sources": [
+        {
+          "kind": "secondary",
+          "title": "ITA Angels thesis and operating model",
+          "url": "https://inovai.org.br/conheca-o-pool-de-investidores-anjo-ita-angels/"
+        },
+        {
+          "kind": "secondary",
+          "title": "January 2026 Insper report on the Passabot round",
+          "url": "https://www.insper.edu.br/pt/conteudos/tecnologia/startup-de-bolsistas-do-insper-capta-r-12-milhao-na-primeira-rodada-de-investimentos"
+        }
+      ],
+      "stages": [
+        "angel",
+        "pre_seed"
+      ],
+      "summary": "A technology-focused angel pool linked to the ITA community.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
