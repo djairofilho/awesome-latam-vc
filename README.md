@@ -16,7 +16,7 @@ A curated list of Venture Capital funds investing in Latin America.
 
 ---
 
-The index is optimized for quick comparison and currently covers 154 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
+The index is optimized for quick comparison and currently covers 156 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
 
 ## Pan-Latin America (LatAm based)
 
@@ -188,6 +188,7 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
 | [Capital Invent](funds/mexico/capital-invent.md) | Not publicly disclosed | Marketplaces, e-commerce, fintech, mobile, and SaaS | Mexico |
+| [FEMSA Ventures](funds/mexico/femsa-ventures.md) | Not publicly disclosed | Retail, beverages, and logistics | Mexico and Latin America |
 
 ## Peru
 
@@ -243,6 +244,7 @@ The index is optimized for quick comparison and currently covers 154 funds. All 
 | [Valutia](funds/multi-country/valutia.md) | Not publicly disclosed | Not publicly disclosed | Portugal and Brazil |
 | [Wayra](funds/multi-country/wayra.md) | Multi-stage | Strategic technology | Brazil, Europe, and Latin America |
 | [Worthit](funds/multi-country/worthit.md) | Pre-seed | B2B SaaS and AI | Latin America |
+| [Zacua Ventures](funds/multi-country/zacua-ventures.md) | Not publicly disclosed | Construction technology and the built environment | Global, including Mexico |
 
 ## Related ecosystem resources
 

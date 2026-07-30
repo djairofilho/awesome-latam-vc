@@ -1,0 +1,84 @@
+{
+  "baseline": {
+    "integrated_change": {
+      "commit": "5b3a4e0",
+      "profiles": [
+        "funds/brazil/entrypoint.md",
+        "funds/multi-country/flourish-ventures.md"
+      ],
+      "status": "baseline_integrated",
+      "treatment": "current_catalog_duplicates_and_deduplication_guards"
+    },
+    "profile_count": 6,
+    "profiles": [
+      "funds/mexico/capital-invent.md",
+      "funds/multi-country/adn.vc.md",
+      "funds/multi-country/impact-ventures-psm.md",
+      "funds/multi-country/kolab-ventures.md",
+      "funds/multi-country/pant3ra-venture-fund.md",
+      "funds/regional/innogen-capital-ventures.md"
+    ]
+  },
+  "candidates": {
+    "decision_counts": {
+      "duplicate": 2,
+      "eligible": 2,
+      "insufficient_evidence": 4
+    },
+    "rows": 8
+  },
+  "cutoff_date": "2026-07-30",
+  "epic": 249,
+  "issues": [
+    259,
+    260,
+    261,
+    262,
+    263
+  ],
+  "language": "cobertura auditada",
+  "limitations": [
+    "Cobertura auditada nas fontes registradas; não representa totalidade do mercado mexicano."
+  ],
+  "market": "Mexico",
+  "publication": {
+    "batch_count": 1,
+    "candidate_count": 2,
+    "profile_file_count": 6
+  },
+  "regulatory": {
+    "candidate_rate": 0.0,
+    "eligibility_use": false,
+    "queries": 0
+  },
+  "review": {
+    "blind_new_candidates": 3,
+    "blind_new_eligible": 0,
+    "critical_open": 0,
+    "eligible_coverage": 1.0,
+    "eligible_reviewed": 2,
+    "exclusion_population": 6,
+    "exclusion_sample_ids": [
+      "fund-mx-soldiers-field-angels",
+      "fund-mx-factor-capital"
+    ],
+    "exclusion_sample_rate": 0.3333333333333333,
+    "exclusion_sample_reviewed": 2,
+    "exclusion_sample_rule": "dois menores SHA-256 de candidate_id entre os seis não elegíveis",
+    "high_open": 0,
+    "regulatory_case_population": 0,
+    "regulatory_cases_reviewed": 0,
+    "routed_population": 0,
+    "routed_reviewed": 0,
+    "saturation": "low_marginal_yield"
+  },
+  "routes": {},
+  "schema_version": "1.0",
+  "sources": {
+    "complete": 10,
+    "discovery_non_regulatory_share": 1.0,
+    "gap_justified": 1,
+    "planned": 11
+  },
+  "status": "pass"
+}

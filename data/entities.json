@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 256,
+    "entity_count": 258,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -3912,6 +3912,46 @@
       ],
       "summary": "EWA Capital invests in early-stage technology companies with a gender-smart approach.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "MX",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "MX",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "retail",
+        "beverages",
+        "logistics"
+      ],
+      "founder_route": "https://www.femsaventures.com/startupjourney",
+      "id": "fund:femsa-ventures",
+      "name": "FEMSA Ventures",
+      "official_website": "https://www.femsaventures.com/",
+      "operator": null,
+      "source_profile": "funds/mexico/femsa-ventures.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "FEMSA Ventures",
+          "url": "https://www.femsaventures.com/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Why We Invested: Aloi",
+          "url": "https://www.femsaventures.com/blogs/why-we-invested-aloi/914"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "FEMSA Ventures is FEMSA's Mexico-based corporate venture capital arm, investing directly in startups that can scale through its Latin American businesses.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -8708,6 +8748,45 @@
       ],
       "summary": "Xperiment Ventures is an Argentina-based early-stage investor and venture studio focused on digitalizing and decarbonizing nature-based supply chains.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "GLOBAL",
+        "kind": "global"
+      },
+      "countries_covered": [
+        "GLOBAL",
+        "MX"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "construction_technology",
+        "built_environment"
+      ],
+      "founder_route": "https://zacuaventures.com/",
+      "id": "fund:zacua-ventures",
+      "name": "Zacua Ventures",
+      "official_website": "https://zacuaventures.com/",
+      "operator": null,
+      "source_profile": "funds/multi-country/zacua-ventures.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Zacua Ventures",
+          "url": "https://zacuaventures.com/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Zacua Ventures launches scout program",
+          "url": "https://zacuaventures.com/zacua-ventures-launches-scout-program/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Zacua Ventures is a global early-stage construction technology fund with a Mexico City presence, direct portfolio and public deck-submission route.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],

@@ -1,0 +1,45 @@
+{
+  "candidate_count": 8,
+  "cutoff_date": "2026-07-30",
+  "decision_counts": {
+    "duplicate": 2,
+    "eligible": 2,
+    "insufficient_evidence": 4
+  },
+  "epic": 249,
+  "issue": 262,
+  "limitations": [
+    "Cobertura auditada nas fontes registradas; não representa totalidade do mercado mexicano."
+  ],
+  "market": "Mexico",
+  "publication": {
+    "batch_count": 1,
+    "batch_size_limit": 10,
+    "candidates": [
+      {
+        "candidate_id": "fund-mx-femsa-ventures",
+        "destination": "funds/mexico/femsa-ventures.md"
+      },
+      {
+        "candidate_id": "fund-mx-zacua-ventures",
+        "destination": "funds/multi-country/zacua-ventures.md"
+      }
+    ],
+    "eligible_count": 2
+  },
+  "regulatory_queries": 0,
+  "review": {
+    "eligible_reviewed": 2,
+    "exclusion_population": 6,
+    "exclusion_sample_ids": [
+      "fund-mx-soldiers-field-angels",
+      "fund-mx-factor-capital"
+    ],
+    "exclusion_sample_reviewed": 2,
+    "exclusion_sample_rule": "dois menores SHA-256 de candidate_id entre os seis não elegíveis",
+    "regulatory_cases_reviewed": 0,
+    "routed_reviewed": 0
+  },
+  "schema_version": "1.0",
+  "status": "frozen"
+}
