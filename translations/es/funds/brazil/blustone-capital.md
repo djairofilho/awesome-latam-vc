@@ -55,17 +55,23 @@ BluStone Capital es una firma de capital de riesgo en etapa temprana con sede en
 - **Tipo de fondo:** Capital de riesgo
 - **Operador:** No divulgado públicamente
 - **Inversión directa en startups:** Sí
+- **Abierto a fundadores externos:** No divulgado públicamente
 - **Etapa de entrada:** Etapa temprana; no se divulga públicamente una etapa normalizada
+- **Etapas posteriores:** No divulgado públicamente
 - **Enfoque:** No divulgado públicamente
 - **Geografía:** Brasil
 - **Cheque inicial:** No divulgado públicamente
+- **Rol de inversión:** No divulgado públicamente
+- **Modelos de negocio:** No divulgado públicamente
+- **Tamaño de la cartera:** No divulgado públicamente
+- **Empresas seleccionadas:** No divulgado públicamente
 - **Postular una startup:** No divulgado públicamente
 
 ## Tesis declarada
 
 BluStone Capital se describe como una firma de capital de riesgo en etapa temprana con sede en São Paulo. Su sitio oficial informó dos fondos y catorce empresas en la cartera cuando fue consultado, pero no divulgó una etapa normalizada, un mandato sectorial, un cheque individual ni un canal para postulaciones de fundadores.
 
-## Señales observadas
+## Señales de cartera
 
 Canary confirmó la participación de BluStone Capital en la ronda de BRL 36 millones de Wehandle el 2025-09-09. Esta transacción confirma actividad y no se utiliza para inferir el alcance general de etapa o sector de BluStone Capital.
 

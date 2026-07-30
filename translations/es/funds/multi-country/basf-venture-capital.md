@@ -58,17 +58,23 @@ BASF Venture Capital GmbH es la unidad evergreen de capital de riesgo corporativ
 - **Tipo de fondo:** Capital de riesgo corporativo evergreen
 - **Operador:** BASF
 - **Inversión directa en startups:** Sí
+- **Abierto a fundadores externos:** No divulgado públicamente
 - **Etapa de entrada:** No divulgado públicamente
+- **Etapas posteriores:** No divulgado públicamente
 - **Enfoque:** No divulgado públicamente
 - **Geografía:** Global, incluido Brasil
 - **Cheque inicial:** No divulgado públicamente
+- **Rol de inversión:** No divulgado públicamente
+- **Modelos de negocio:** No divulgado públicamente
+- **Tamaño de la cartera:** No divulgado públicamente
+- **Empresas seleccionadas:** No divulgado públicamente
 - **Postular una startup:** No divulgado públicamente
 
 ## Tesis declarada
 
 BASF presenta a BASF Venture Capital GmbH como una unidad corporativa evergreen que realiza inversiones directas recurrentes en startups de todo el mundo. Su página brasileña y la responsabilidad regional en São Paulo confirman el acceso a Brasil, pero las fuentes consultadas no divulgan una etapa normalizada, un mandato sectorial, el tamaño del cheque ni un canal para postulaciones de fundadores.
 
-## Señales observadas
+## Señales de cartera
 
 BASF Venture Capital anunció su inversión en pH7 el 2025-12-04. Esta transacción confirma actividad reciente, pero no se utiliza para inferir un mandato sectorial o de etapa más amplio.
 

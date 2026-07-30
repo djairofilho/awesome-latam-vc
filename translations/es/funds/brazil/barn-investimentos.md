@@ -60,17 +60,23 @@ Barn Investimentos es una gestora brasileña de capital de riesgo que realiza in
 - **Tipo de fondo:** Capital de riesgo
 - **Operador:** No divulgado públicamente
 - **Inversión directa en startups:** Sí
+- **Abierto a fundadores externos:** No divulgado públicamente
 - **Etapa de entrada:** No divulgado públicamente
+- **Etapas posteriores:** No divulgado públicamente
 - **Enfoque:** Greentech
 - **Geografía:** Brasil y América Latina
 - **Cheque inicial:** No divulgado públicamente
+- **Rol de inversión:** No divulgado públicamente
+- **Modelos de negocio:** No divulgado públicamente
+- **Tamaño de la cartera:** No divulgado públicamente
+- **Empresas seleccionadas:** No divulgado públicamente
 - **Postular una startup:** No divulgado públicamente
 
 ## Tesis declarada
 
 Barn Invest se describe como una gestora brasileña de capital de riesgo dedicada a cuatro verticales de Greentech en América Latina. Su página oficial de tesis informó dieciséis empresas invertidas, doce de ellas activas, y exits al 2024-02-27, pero no divulgó una etapa de entrada normalizada, un cheque individual ni un canal para postulaciones de fundadores.
 
-## Señales observadas
+## Señales de cartera
 
 Barn Investimentos anunció su inversión en Splight el 2024-08-09 y vinculó la transacción con su tesis recurrente. Esta es una señal de actividad fechada, no un recuento actual de la cartera.
 

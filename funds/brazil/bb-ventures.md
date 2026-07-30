@@ -57,17 +57,23 @@ BB Ventures is Banco do Brasil's Brazilian corporate venture capital fund, manag
 - **Fund type:** Corporate venture capital fund
 - **Operator:** MSW Capital
 - **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Not publicly disclosed
 - **Geography:** Brazil
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** [Investimentos em Startups](https://www.bb.com.br/site/startups/)
 
 ## Declared thesis
 
 Banco do Brasil presents BB Ventures as a corporate venture capital fund managed by MSW Capital and distinct from BB Impacto. The reviewed portal provides a founder form but does not disclose a normalized entry stage, sector mandate, or individual check.
 
-## Observed signals
+## Portfolio signals
 
 The official portal reported four portfolio companies when reviewed. On 2025-08-14, Banco do Brasil documented BB Expenses, a solution created through BB Ventures in partnership with portfolio company Payfy. These are observed portfolio and activity signals, not a current portfolio total.
 

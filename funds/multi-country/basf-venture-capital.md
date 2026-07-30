@@ -58,17 +58,23 @@ BASF Venture Capital GmbH is BASF's Germany-based evergreen corporate venture un
 - **Fund type:** Evergreen corporate venture capital
 - **Operator:** BASF
 - **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Not publicly disclosed
 - **Geography:** Global, including Brazil
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 BASF presents BASF Venture Capital GmbH as an evergreen corporate unit making recurring direct investments in startups globally. Its Brazilian page and regional responsibility in São Paulo confirm access to Brazil, but the reviewed sources do not disclose a normalized stage, sector mandate, check size, or founder submission route.
 
-## Observed signals
+## Portfolio signals
 
 BASF Venture Capital announced its investment in pH7 on 2025-12-04. This transaction confirms recent activity but is not used to infer a broader sector or stage mandate.
 

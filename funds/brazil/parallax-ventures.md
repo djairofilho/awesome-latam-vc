@@ -63,17 +63,23 @@ Parallax Ventures is a São Paulo-based, fintech-first venture capital firm maki
 - **Fund type:** Venture capital
 - **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Fintech
 - **Geography:** Brazil
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 Parallax Ventures describes itself as fintech-first and reports operating from São Paulo since 2018. Its official pages present a recurring direct portfolio but do not disclose a normalized entry stage, individual check, or founder submission route.
 
-## Observed signals
+## Portfolio signals
 
 The official website reported fifteen portfolio companies when reviewed. A fund notice published on 2025-07-31 recorded a portfolio revaluation with a 2025-02-28 reference date, confirming activity without turning the website count into a current total.
 

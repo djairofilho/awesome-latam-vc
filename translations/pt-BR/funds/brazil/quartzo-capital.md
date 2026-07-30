@@ -60,17 +60,23 @@ Quartzo Capital é uma organização brasileira de venture capital com um portf�
 - **Tipo de fundo:** Venture capital
 - **Operador:** Quartzo Invest Ltda.
 - **Investimento direto em startups:** Sim, por meio de veículos geridos
+- **Aberto a fundadores externos:** Não divulgado publicamente
 - **Estágio de entrada:** Não divulgado publicamente
+- **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Não divulgado publicamente
 - **Geografia:** Brasil
 - **Cheque inicial:** Não divulgado publicamente
+- **Papel no investimento:** Não divulgado publicamente
+- **Modelos de negócio:** Não divulgado publicamente
+- **Tamanho do portfólio:** Não divulgado publicamente
+- **Empresas selecionadas:** Não divulgado publicamente
 - **Inscrever uma startup:** Não divulgado publicamente
 
 ## Tese declarada
 
 A Quartzo Capital informa mais de quinze anos de atividade, dez veículos de venture capital no Brasil, empresas de portfólio e exits. As fontes consultadas não divulgam estágio de entrada normalizado para toda a organização, mandato setorial, tamanho de cheque ou canal para candidaturas de fundadores.
 
-## Sinais observados
+## Sinais de portfólio
 
 Em 2025-03-07, a Quartzo Capital anunciou que o FUNSES1, veículo gerido pela Quartzo Invest Ltda., liderou a rodada Pre-seed da Loopia. Essa transação confirma atividade direta e não serve para atribuir Pre-seed como estágio geral de entrada da organização.
 

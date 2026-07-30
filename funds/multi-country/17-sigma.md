@@ -55,17 +55,23 @@
 - **Fund type:** Venture capital
 - **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Early stage; a normalized stage is not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Not publicly disclosed
 - **Geography:** Latin America; headquarters not publicly disclosed
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 17-Sigma describes itself as an early-stage fund and publishes a recurring portfolio across Latin America. Its website records an office in São Paulo but does not establish a country headquarters or disclose a normalized stage, sector mandate, check size, or exact founder submission route.
 
-## Observed signals
+## Portfolio signals
 
 Neofin announced on 2025-02-05 that 17-Sigma participated in its BRL 35 million Seed round. This transaction confirms activity in Brazil but is not used to assign Seed as the fund's general entry stage.
 

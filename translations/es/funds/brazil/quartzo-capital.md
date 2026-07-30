@@ -60,17 +60,23 @@ Quartzo Capital es una organización brasileña de capital de riesgo con una car
 - **Tipo de fondo:** Capital de riesgo
 - **Operador:** Quartzo Invest Ltda.
 - **Inversión directa en startups:** Sí, mediante vehículos gestionados
+- **Abierto a fundadores externos:** No divulgado públicamente
 - **Etapa de entrada:** No divulgado públicamente
+- **Etapas posteriores:** No divulgado públicamente
 - **Enfoque:** No divulgado públicamente
 - **Geografía:** Brasil
 - **Cheque inicial:** No divulgado públicamente
+- **Rol de inversión:** No divulgado públicamente
+- **Modelos de negocio:** No divulgado públicamente
+- **Tamaño de la cartera:** No divulgado públicamente
+- **Empresas seleccionadas:** No divulgado públicamente
 - **Postular una startup:** No divulgado públicamente
 
 ## Tesis declarada
 
 Quartzo Capital informa más de quince años de actividad, diez vehículos de capital de riesgo en Brasil, empresas de cartera y exits. Las fuentes consultadas no divulgan una etapa de entrada normalizada para toda la organización, un mandato sectorial, el tamaño del cheque ni un canal para postulaciones de fundadores.
 
-## Señales observadas
+## Señales de cartera
 
 El 2025-03-07, Quartzo Capital anunció que FUNSES1, un vehículo gestionado por Quartzo Invest Ltda., lideró la ronda Pre-seed de Loopia. Esta transacción confirma actividad directa y no se utiliza para asignar Pre-seed como etapa general de entrada de la organización.
 

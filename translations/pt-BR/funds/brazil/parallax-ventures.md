@@ -63,17 +63,23 @@ Parallax Ventures é uma gestora de venture capital sediada em São Paulo, com p
 - **Tipo de fundo:** Venture capital
 - **Operador:** Não divulgado publicamente
 - **Investimento direto em startups:** Sim
+- **Aberto a fundadores externos:** Não divulgado publicamente
 - **Estágio de entrada:** Não divulgado publicamente
+- **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Fintech
 - **Geografia:** Brasil
 - **Cheque inicial:** Não divulgado publicamente
+- **Papel no investimento:** Não divulgado publicamente
+- **Modelos de negócio:** Não divulgado publicamente
+- **Tamanho do portfólio:** Não divulgado publicamente
+- **Empresas selecionadas:** Não divulgado publicamente
 - **Inscrever uma startup:** Não divulgado publicamente
 
 ## Tese declarada
 
 A Parallax Ventures se descreve como uma gestora com prioridade para fintechs e informa que opera em São Paulo desde 2018. Suas páginas oficiais apresentam um portfólio direto recorrente, mas não divulgam estágio de entrada normalizado, cheque individual ou canal para candidaturas de fundadores.
 
-## Sinais observados
+## Sinais de portfólio
 
 O site oficial informou quinze empresas no portfólio quando consultado. Um aviso do fundo publicado em 2025-07-31 registrou uma reavaliação do portfólio com data de referência 2025-02-28, confirmando atividade sem transformar a contagem do site em total atual.
 

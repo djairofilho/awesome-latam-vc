@@ -55,17 +55,23 @@ BluStone Capital is a São Paulo-based early-stage venture capital firm with two
 - **Fund type:** Venture capital
 - **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Early stage; a normalized stage is not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Not publicly disclosed
 - **Geography:** Brazil
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 BluStone Capital describes itself as an early-stage venture capital firm based in São Paulo. Its official website reported two funds and fourteen portfolio companies when reviewed, but did not disclose a normalized stage, sector mandate, individual check, or founder submission route.
 
-## Observed signals
+## Portfolio signals
 
 Canary confirmed BluStone Capital's participation in Wehandle's BRL 36 million round on 2025-09-09. This transaction confirms activity and is not used to infer BluStone Capital's general stage or sector scope.
 

@@ -60,17 +60,23 @@ Quartzo Capital is a Brazilian venture capital organization with a recurring por
 - **Fund type:** Venture capital
 - **Operator:** Quartzo Invest Ltda.
 - **Direct startup investment:** Yes, through managed vehicles
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Not publicly disclosed
 - **Geography:** Brazil
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 Quartzo Capital reports more than fifteen years of activity, ten venture capital vehicles in Brazil, portfolio companies, and exits. The reviewed sources do not disclose a normalized organization-wide entry stage, sector mandate, check size, or founder submission route.
 
-## Observed signals
+## Portfolio signals
 
 On 2025-03-07, Quartzo Capital announced that FUNSES1, a vehicle managed by Quartzo Invest Ltda., led Loopia's Pre-seed round. This transaction confirms direct activity and is not used to assign Pre-seed as the organization's general entry stage.
 

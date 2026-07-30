@@ -57,17 +57,23 @@ DNA Capital é uma organização brasileira de investimentos que faz aportes rec
 - **Tipo de fundo:** Venture capital
 - **Operador:** Não divulgado publicamente
 - **Investimento direto em startups:** Sim
+- **Aberto a fundadores externos:** Não divulgado publicamente
 - **Estágio de entrada:** Não divulgado publicamente
+- **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Saúde
 - **Geografia:** Brasil e Estados Unidos
 - **Cheque inicial:** Não divulgado publicamente
+- **Papel no investimento:** Não divulgado publicamente
+- **Modelos de negócio:** Não divulgado publicamente
+- **Tamanho do portfólio:** Não divulgado publicamente
+- **Empresas selecionadas:** Não divulgado publicamente
 - **Inscrever uma startup:** Não divulgado publicamente
 
 ## Tese declarada
 
 A DNA Capital descreve uma estratégia de investimento focada em saúde no Brasil e nos Estados Unidos. Sua cronologia oficial registra dois veículos de venture, mas o material consultado não divulga estágio de entrada normalizado para toda a organização, cheque individual ou canal para candidaturas de fundadores.
 
-## Sinais observados
+## Sinais de portfólio
 
 Em 2025-01-02, a U.S. International Development Finance Corporation aprovou um investimento de até USD 15 milhões no DNA Capital VC II para apoiar startups brasileiras de saúde em início de crescimento. A aprovação ainda poderia depender de etapas anteriores ao compromisso e fechamento, por isso não é apresentada como uma transferência de capital concluída.
 

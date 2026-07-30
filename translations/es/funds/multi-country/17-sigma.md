@@ -55,17 +55,23 @@
 - **Tipo de fondo:** Capital de riesgo
 - **Operador:** No divulgado públicamente
 - **Inversión directa en startups:** Sí
+- **Abierto a fundadores externos:** No divulgado públicamente
 - **Etapa de entrada:** Etapa temprana; no se divulga públicamente una etapa normalizada
+- **Etapas posteriores:** No divulgado públicamente
 - **Enfoque:** No divulgado públicamente
 - **Geografía:** América Latina; sede no divulgada públicamente
 - **Cheque inicial:** No divulgado públicamente
+- **Rol de inversión:** No divulgado públicamente
+- **Modelos de negocio:** No divulgado públicamente
+- **Tamaño de la cartera:** No divulgado públicamente
+- **Empresas seleccionadas:** No divulgado públicamente
 - **Postular una startup:** No divulgado públicamente
 
 ## Tesis declarada
 
 17-Sigma se describe como un fondo en etapa temprana y publica una cartera recurrente en América Latina. Su sitio registra una oficina en São Paulo, pero no establece una sede nacional ni divulga una etapa normalizada, un mandato sectorial, el tamaño del cheque o un canal exacto para postulaciones de fundadores.
 
-## Señales observadas
+## Señales de cartera
 
 Neofin anunció el 2025-02-05 que 17-Sigma participó en su ronda Seed de BRL 35 millones. Esta transacción confirma actividad en Brasil, pero no se utiliza para asignar Seed como etapa general de entrada del fondo.
 

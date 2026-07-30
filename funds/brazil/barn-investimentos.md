@@ -60,17 +60,23 @@ Barn Investimentos is a Brazilian venture capital manager making recurring direc
 - **Fund type:** Venture capital
 - **Operator:** Not publicly disclosed
 - **Direct startup investment:** Yes
+- **Open to external founders:** Not publicly disclosed
 - **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Greentech
 - **Geography:** Brazil and Latin America
 - **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Not publicly disclosed
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 Barn Invest describes itself as a Brazilian venture capital manager dedicated to four Greentech verticals in Latin America. Its official thesis page reported sixteen invested companies, twelve of them active, and exits as of 2024-02-27, but did not disclose a normalized entry stage, individual check, or founder submission route.
 
-## Observed signals
+## Portfolio signals
 
 Barn Investimentos announced its investment in Splight on 2024-08-09 and connected the transaction to its recurring thesis. This is a dated activity signal, not a current portfolio count.
 

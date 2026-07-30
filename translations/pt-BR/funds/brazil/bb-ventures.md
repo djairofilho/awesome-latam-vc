@@ -57,17 +57,23 @@ BB Ventures é o fundo brasileiro de corporate venture capital do Banco do Brasi
 - **Tipo de fundo:** Fundo de corporate venture capital
 - **Operador:** MSW Capital
 - **Investimento direto em startups:** Sim
+- **Aberto a fundadores externos:** Não divulgado publicamente
 - **Estágio de entrada:** Não divulgado publicamente
+- **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Não divulgado publicamente
 - **Geografia:** Brasil
 - **Cheque inicial:** Não divulgado publicamente
+- **Papel no investimento:** Não divulgado publicamente
+- **Modelos de negócio:** Não divulgado publicamente
+- **Tamanho do portfólio:** Não divulgado publicamente
+- **Empresas selecionadas:** Não divulgado publicamente
 - **Inscrever uma startup:** [Investimentos em Startups](https://www.bb.com.br/site/startups/)
 
 ## Tese declarada
 
 O Banco do Brasil apresenta BB Ventures como um fundo de corporate venture capital gerido pela MSW Capital e distinto do BB Impacto. O portal consultado oferece um formulário para fundadores, mas não divulga estágio de entrada normalizado, mandato setorial ou cheque individual.
 
-## Sinais observados
+## Sinais de portfólio
 
 O portal oficial informou quatro empresas no portfólio quando consultado. Em 2025-08-14, o Banco do Brasil documentou o BB Expenses, uma solução criada por meio do BB Ventures em parceria com a Payfy, empresa do portfólio. Esses são sinais observados de portfólio e atividade, e não um total atual do portfólio.
 

@@ -55,17 +55,23 @@ BluStone Capital é uma gestora de venture capital em estágio inicial sediada e
 - **Tipo de fundo:** Venture capital
 - **Operador:** Não divulgado publicamente
 - **Investimento direto em startups:** Sim
+- **Aberto a fundadores externos:** Não divulgado publicamente
 - **Estágio de entrada:** Estágio inicial; um estágio normalizado não é divulgado publicamente
+- **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Não divulgado publicamente
 - **Geografia:** Brasil
 - **Cheque inicial:** Não divulgado publicamente
+- **Papel no investimento:** Não divulgado publicamente
+- **Modelos de negócio:** Não divulgado publicamente
+- **Tamanho do portfólio:** Não divulgado publicamente
+- **Empresas selecionadas:** Não divulgado publicamente
 - **Inscrever uma startup:** Não divulgado publicamente
 
 ## Tese declarada
 
 A BluStone Capital se descreve como uma gestora de venture capital em estágio inicial sediada em São Paulo. Seu site oficial informou dois fundos e catorze empresas no portfólio quando consultado, mas não divulgou estágio normalizado, mandato setorial, cheque individual ou canal para candidaturas de fundadores.
 
-## Sinais observados
+## Sinais de portfólio
 
 A Canary confirmou a participação da BluStone Capital na rodada de BRL 36 milhões da Wehandle em 2025-09-09. Essa transação confirma atividade e não serve para inferir o escopo geral de estágio ou setor da BluStone Capital.
 

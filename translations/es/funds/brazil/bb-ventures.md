@@ -57,17 +57,23 @@ BB Ventures es el fondo brasileño de capital de riesgo corporativo de Banco do 
 - **Tipo de fondo:** Fondo de capital de riesgo corporativo
 - **Operador:** MSW Capital
 - **Inversión directa en startups:** Sí
+- **Abierto a fundadores externos:** No divulgado públicamente
 - **Etapa de entrada:** No divulgado públicamente
+- **Etapas posteriores:** No divulgado públicamente
 - **Enfoque:** No divulgado públicamente
 - **Geografía:** Brasil
 - **Cheque inicial:** No divulgado públicamente
+- **Rol de inversión:** No divulgado públicamente
+- **Modelos de negocio:** No divulgado públicamente
+- **Tamaño de la cartera:** No divulgado públicamente
+- **Empresas seleccionadas:** No divulgado públicamente
 - **Postular una startup:** [Investimentos em Startups](https://www.bb.com.br/site/startups/)
 
 ## Tesis declarada
 
 Banco do Brasil presenta a BB Ventures como un fondo de capital de riesgo corporativo gestionado por MSW Capital y distinto de BB Impacto. El portal consultado ofrece un formulario para fundadores, pero no divulga una etapa de entrada normalizada, un mandato sectorial ni un cheque individual.
 
-## Señales observadas
+## Señales de cartera
 
 El portal oficial informó cuatro empresas en la cartera cuando fue consultado. El 2025-08-14, Banco do Brasil documentó BB Expenses, una solución creada mediante BB Ventures en asociación con Payfy, empresa de la cartera. Estas son señales observadas de cartera y actividad, no un total actual de la cartera.
 
