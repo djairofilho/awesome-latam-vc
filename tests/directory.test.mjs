@@ -22,9 +22,9 @@ const entityDocument = JSON.parse(
 );
 const records = entityDocument.entities.map(directoryRecord);
 
-test("directory records and facet counts derive from all 264 entities", () => {
-  assert.equal(records.length, 264);
-  assert.equal(new Set(records.map(({ id }) => id)).size, 264);
+test("directory records and facet counts derive from all 269 entities", () => {
+  assert.equal(records.length, 269);
+  assert.equal(new Set(records.map(({ id }) => id)).size, 269);
 
   const facets = deriveFacetValues(records);
   const counts = deriveFacetCounts(records);
@@ -40,7 +40,7 @@ test("directory records and facet counts derive from all 264 entities", () => {
       (total, count) => total + count,
       0,
     ),
-    264,
+    269,
   );
   for (const dimension of Object.keys(facets)) {
     for (const value of facets[dimension]) {

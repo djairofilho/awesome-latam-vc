@@ -1,0 +1,38 @@
+{
+  "cutoff": "2026-07-30",
+  "discovery_rule": "non_regulatory_only",
+  "eligible_gates": [
+    "uruguay_base",
+    "direct_investment",
+    "recurrence",
+    "recent_activity",
+    "founder_route",
+    "official_evidence"
+  ],
+  "excluded_discovery_inputs": [
+    "local_startup_dataset",
+    "regulatory_registry",
+    "existing_catalog"
+  ],
+  "geographic_rule": "Coverage of Uruguay is not a Uruguay base; foreign-headquartered candidates are duplicates or routed.",
+  "market": "UY",
+  "publication_batch_limit": 10,
+  "regulator": "Banco Central del Uruguay",
+  "regulator_rule": "identity_or_divergence_only",
+  "regulator_target_percent": [
+    5,
+    10
+  ],
+  "required_locales": [
+    "en",
+    "pt-BR",
+    "es"
+  ],
+  "schema_version": "1.0",
+  "terminal_decisions": [
+    "eligible",
+    "duplicate",
+    "routed",
+    "insufficient_evidence"
+  ]
+}
