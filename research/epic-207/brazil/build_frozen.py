@@ -281,8 +281,14 @@ def build_freeze_manifest(
             "insufficient_sample_reviewed": review_counts[
                 "deterministic_exclusion_sample"
             ],
-            "critical_findings_open": 0,
-            "high_findings_open": 0,
+            "critical_findings_open": sum(
+                not item["resolved"] and item["severity"] == "critical"
+                for item in reviews
+            ),
+            "high_findings_open": sum(
+                not item["resolved"] and item["severity"] == "high"
+                for item in reviews
+            ),
         },
         "decision_counts": dict(sorted(decisions.items())),
         "publication": {
