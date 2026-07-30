@@ -12,11 +12,12 @@ Una lista curada de fondos de Venture Capital que invierten en América Latina.
 - [Colombia](#colombia)
 - [México](#méxico)
 - [Perú](#perú)
+- [Uruguay](#uruguay)
 - [Global con presencia en América Latina](#global-con-presencia-en-américa-latina)
 
 ---
 
-El índice está optimizado para una comparación rápida y actualmente reúne 202 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
+El índice está optimizado para una comparación rápida y actualmente reúne 207 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
 
 ## Pan-Latinoamérica (sede en la región)
 
@@ -214,6 +215,16 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
 | [GRPP Ventures](funds/peru/rpp-ventures.md) | No divulgado públicamente | Tecnología escalable | Perú |
+
+## Uruguay
+
+| Fondo | Etapa | Enfoque | Geografía |
+| --- | --- | --- | --- |
+| [Eager Ventures](funds/uruguay/eager-ventures.md) | Pre-seed y Seed | Tecnología, software e inteligencia artificial | Uruguay |
+| [IC Ventures](funds/uruguay/ic-ventures.md) | Seed y Pre-Serie A | Tecnología, inteligencia artificial y fintech | Uruguay, Argentina y América Latina |
+| [LAB+ Venture Fund](funds/uruguay/labplus-venture-fund.md) | No divulgado públicamente | Ciencias de la vida, Una Salud y biotecnología | Uruguay y global |
+| [MrPink VC](funds/uruguay/mrpink-vc.md) | Etapa temprana | Conexión humana, impacto y tecnología | Uruguay, América Latina y España |
+| [Tokai Ventures](funds/uruguay/tokai-ventures.md) | Seed | Proptech, entretenimiento, educación, biotecnología e impacto | Uruguay, Argentina, Estados Unidos, Israel y América Latina |
 
 ## Global con presencia en América Latina
 
