@@ -1,23 +1,24 @@
 {
-  "canonical_candidate_count": 40,
+  "canonical_candidate_count": 63,
   "cutoff_date": "2026-07-30",
   "cvm_consulted_candidate_count": 2,
-  "cvm_query_rate": 0.05,
+  "cvm_query_rate": 0.031746031746031744,
   "decision_counts": {
-    "duplicate": 11,
-    "eligible": 14,
-    "insufficient_evidence": 24,
-    "routed_accelerators": 1,
-    "routed_angel_networks": 1
+    "duplicate": 13,
+    "eligible": 27,
+    "insufficient_evidence": 28,
+    "routed_accelerators": 3,
+    "routed_angel_networks": 4,
+    "routed_funding_platforms": 1
   },
   "epic": 207,
   "generated_on": "2026-07-30",
-  "issue": 220,
+  "issue": 221,
   "limitations": [
-    "A cobertura é auditada nas fontes e no recorte registrados; não representa prova de totalidade de fundos brasileiros.",
-    "As consultas CVM de Vinci e Jatobá confirmam somente identidade jurídica e relação gestora-veículo.",
-    "CVM não foi usada para comprovar tese, recorrência, atividade recente, acesso ao Brasil ou elegibilidade.",
-    "Vinci Partners permanece identidade genérica insuficiente para selecionar uma única gestora ou estratégia publicável."
+    "A cobertura representa as fontes e o recorte registrados, não prova totalidade do universo brasileiro.",
+    "A CVM foi usada somente nos dois casos herdados de identidade e relação gestora-veículo.",
+    "Os 17 candidatos originais com uma única fonte de descoberta foram relidos e permanecem explicitados no relatório auxiliar.",
+    "Broom Ventures, Venture Hub e Link Ventures permanecem insuficientes até que novas fontes oficiais resolvam as lacunas registradas."
   ],
   "non_cvm_task_share": 0.9090909090909091,
   "schema_version": "1.0",
