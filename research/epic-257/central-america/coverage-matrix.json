@@ -1,0 +1,152 @@
+{
+  "countries": [
+    {
+      "candidate_ids": [
+        "ca-belize-fund",
+        "ca-belize-ecosystem",
+        "ca-crvn-capital"
+      ],
+      "country": "Belize",
+      "result": "No new eligible local manager confirmed in this run.",
+      "source_ids": [
+        "ca-idb-fundraising-2024",
+        "ca-capca-2026",
+        "ca-rup-2026",
+        "bz-beltraide-2025",
+        "bz-idb-startup-ecosystem",
+        "bz-belize-fund-projects",
+        "bz-shizune-blind",
+        "ca-epic63-transfers",
+        "ca-epic25-baseline"
+      ],
+      "status": "covered"
+    },
+    {
+      "candidate_ids": [
+        "ca-invertup",
+        "ca-caricaco",
+        "ca-carao",
+        "ca-cr-innovatech"
+      ],
+      "country": "Costa Rica",
+      "result": "At least one eligible local manager confirmed.",
+      "source_ids": [
+        "ca-idb-fundraising-2024",
+        "ca-capca-2026",
+        "ca-rup-2026",
+        "cr-invertup-official",
+        "cr-invertup-portfolio",
+        "cr-parquetec-current",
+        "cr-oecd-2025",
+        "cr-promotora-2026",
+        "ca-epic63-transfers",
+        "ca-epic25-baseline"
+      ],
+      "status": "covered"
+    },
+    {
+      "candidate_ids": [
+        "ca-innogen",
+        "ca-corenest",
+        "ca-cacao-capital"
+      ],
+      "country": "El Salvador",
+      "result": "No new eligible local manager confirmed in this run.",
+      "source_ids": [
+        "ca-idb-fundraising-2024",
+        "ca-capca-2026",
+        "ca-rup-2026",
+        "sv-idblab-innogen-2026",
+        "sv-corenest-official",
+        "sv-corenest-fund",
+        "sv-cacao-official",
+        "ca-epic63-transfers",
+        "ca-epic25-baseline"
+      ],
+      "status": "covered"
+    },
+    {
+      "candidate_ids": [
+        "ca-barrilete",
+        "ca-invariantes",
+        "ca-gt-innovation-fund"
+      ],
+      "country": "Guatemala",
+      "result": "No new eligible local manager confirmed in this run.",
+      "source_ids": [
+        "ca-idb-fundraising-2024",
+        "ca-capca-2026",
+        "ca-rup-2026",
+        "gt-barrilete-about",
+        "gt-barrilete-faq",
+        "gt-502-demo-2026",
+        "gt-mineco-innovation",
+        "ca-epic63-transfers",
+        "ca-epic25-baseline"
+      ],
+      "status": "covered"
+    },
+    {
+      "candidate_ids": [
+        "ca-infinita",
+        "ca-hn-seed-program"
+      ],
+      "country": "Honduras",
+      "result": "At least one eligible local manager confirmed.",
+      "source_ids": [
+        "ca-idb-fundraising-2024",
+        "ca-capca-2026",
+        "ca-rup-2026",
+        "hn-idb-ecosystem-2024",
+        "hn-infinita-official",
+        "hn-infinita-current",
+        "hn-yendou-round",
+        "hn-ulua-official",
+        "hn-eeas-seed-2025",
+        "ca-epic63-transfers",
+        "ca-epic25-baseline"
+      ],
+      "status": "covered"
+    },
+    {
+      "candidate_ids": [
+        "ca-ni-incubator"
+      ],
+      "country": "Nicaragua",
+      "result": "No new eligible local manager confirmed in this run.",
+      "source_ids": [
+        "ca-idb-fundraising-2024",
+        "ca-capca-2026",
+        "ca-rup-2026",
+        "ni-ci-startups",
+        "ni-rivas-official",
+        "ni-blind-search",
+        "ca-epic63-transfers",
+        "ca-epic25-baseline"
+      ],
+      "status": "covered"
+    },
+    {
+      "candidate_ids": [
+        "ca-venture-club-latam",
+        "ca-pa-innova",
+        "ca-venture-club-historical"
+      ],
+      "country": "Panamá",
+      "result": "At least one eligible local manager confirmed.",
+      "source_ids": [
+        "ca-idb-fundraising-2024",
+        "ca-capca-2026",
+        "ca-rup-2026",
+        "pa-venture-club-official",
+        "pa-senacyt-innova-2025",
+        "pa-ciudad-saber-history",
+        "ca-epic63-transfers",
+        "ca-epic25-baseline"
+      ],
+      "status": "covered"
+    }
+  ],
+  "cutoff": "2026-07-30",
+  "schema_version": "1.0"
+}

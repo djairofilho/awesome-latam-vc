@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "all_candidates_decided": true,
+    "all_countries_explicit": true,
+    "cross_epic_write_lock_respected": true,
+    "no_regulator_used_for_discovery": true,
+    "no_regulator_used_for_eligibility": true,
+    "regulator_policy_met": true
+  },
+  "critical_open": 0,
+  "eligible_ids": [
+    "ca-invertup",
+    "ca-infinita",
+    "ca-venture-club-latam"
+  ],
+  "high_open": 0,
+  "notes": [
+    "Caricaco and Innogen were classified but not edited because the Caribbean audit owns their concurrent correction.",
+    "CoreNest remains insufficient because its official legal notice describes a prospective fund.",
+    "Barrilete was downgraded from eligible because current public evidence reaches due diligence but not completed deployment."
+  ],
+  "review_reconciled": true,
+  "reviewed_on": "2026-07-30",
+  "reviewer": "integrator",
+  "schema_version": "1.0",
+  "status": "approved_after_reconciliation"
+}
