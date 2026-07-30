@@ -13,14 +13,14 @@
   },
   "epic": 207,
   "generated_on": "2026-07-30",
-  "issue": 221,
+  "issue": 222,
   "limitations": [
     "A cobertura representa as fontes e o recorte registrados, não prova totalidade do universo brasileiro.",
-    "A CVM foi usada somente nos dois casos herdados de identidade e relação gestora-veículo.",
-    "Os 17 candidatos originais com uma única fonte de descoberta foram relidos e permanecem explicitados no relatório auxiliar.",
-    "Broom Ventures, Venture Hub e Link Ventures permanecem insuficientes até que novas fontes oficiais resolvam as lacunas registradas."
+    "A CVM foi usada somente em dois casos de identidade e relação gestora-veículo, nunca para elegibilidade.",
+    "As fontes com bloqueio ou enumeração incompleta foram congeladas como gap_justified, preservando motivo, responsável e próxima ação.",
+    "Os 28 casos insuficientes permanecem decididos com pendência explícita para ciclos futuros."
   ],
   "non_cvm_task_share": 0.9090909090909091,
   "schema_version": "1.0",
-  "status": "complete"
+  "status": "frozen"
 }
