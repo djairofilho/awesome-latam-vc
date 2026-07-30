@@ -31,6 +31,7 @@
     "eligible",
     "insufficient_evidence",
     "routed",
+    "routed_private_equity",
     "duplicate"
   ]
 }

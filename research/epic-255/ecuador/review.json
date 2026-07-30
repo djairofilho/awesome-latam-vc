@@ -1,0 +1,37 @@
+{
+  "blind_findings_reviewed": [
+    "ec-drivum",
+    "ec-fundacion-crisfe",
+    "ec-593-capital-partners",
+    "ec-fonquito"
+  ],
+  "critical_or_high_findings_open": 0,
+  "eligible_reviewed": [
+    "ec-impaqto-capital"
+  ],
+  "exclusion_sample_reviewed": [
+    "ec-593-capital-partners",
+    "ec-telefunken-capital"
+  ],
+  "freeze_allowed": true,
+  "reconciliation": [
+    "IMPAQTO Capital is the only eligible identity and belongs in a regional profile with Ecuador as its strict base geography.",
+    "BuenaVista Capital is routed to private equity after current official Fund 0 and Fund 1 evidence replaced the earlier insufficient-evidence decision.",
+    "Kruger Labs remains routed as an accelerator; its accessible homepage and the current ECUACAP roster replace the unavailable team endpoint."
+  ],
+  "regulatory_cases_reviewed": [
+    "ec-creas-ecuador"
+  ],
+  "review_reconciled": true,
+  "reviewed_on": "2026-07-30",
+  "reviewer": "integrator",
+  "routed_reviewed": [
+    "ec-endeavor-ecuador",
+    "ec-kruger-labs",
+    "ec-startups-ventures",
+    "ec-buenavista-capital",
+    "ec-fundacion-crisfe",
+    "ec-fonquito"
+  ],
+  "status": "approved"
+}

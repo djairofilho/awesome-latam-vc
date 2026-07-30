@@ -1,0 +1,48 @@
+{
+  "artifact_hashes": {
+    "research/epic-255/ecuador/baseline/catalog-baseline.jsonl": "4ade17810998c01756f10000d72f0275ef873f91bd1899a80911cb39ef11bd76",
+    "research/epic-255/ecuador/baseline/prior-candidates.jsonl": "fa94cde81593de2643920c0c2c624d32d09083d2d9315022d2478ac8ae7b9da9",
+    "research/epic-255/ecuador/baseline/summary.json": "eed954e33a18228e1b695829aba580159e8d59a456c94cd8f5109f3fa70c9bd3",
+    "research/epic-255/ecuador/candidates.jsonl": "aaf73ae5d7ec5ec5c14dfc9c5d58edce0f38dca5f4111065b0aff31f18672e19",
+    "research/epic-255/ecuador/contract.json": "83d4d6ed14978cbfde82e4b7d17a15345c42e5491a65674cd96f02209dbbd697",
+    "research/epic-255/ecuador/coverage-matrix.json": "0be04f716d443b1a3b4d427fcebca0ff78d8a2b97c55397fa73e8114046e173b",
+    "research/epic-255/ecuador/evidence.jsonl": "e67ccd8051909425b13302dd24d2b8f691330e0d28feffd97f416f0491c7630c",
+    "research/epic-255/ecuador/review-request.json": "d531fadc29426b8c42ccaaf2b69fc637fe7d5d3fccbd878e68128af447d69445",
+    "research/epic-255/ecuador/review.json": "ebfdb687502796d2a8117ca2853e59539148edc58959158ef736bd3a8ab8754d",
+    "research/epic-255/ecuador/scvs-query-log.jsonl": "f04c5f7b1c1e91fd2a7ab2f2f1f55f0c031f4ccc283ca33c4c9ceeaf6049c457",
+    "research/epic-255/ecuador/source-inventory.jsonl": "f7b1f3fba3e0682dd76c5b5f9a85a3bdfa0e142c5ef3bc950bc320bd4e6dc64f"
+  },
+  "counts": {
+    "candidates": 15,
+    "duplicates": 3,
+    "eligible": 1,
+    "insufficient_evidence": 5,
+    "regulatory_queries": 1,
+    "routed_or_out_of_scope": 6
+  },
+  "critical_or_high_findings_open": 0,
+  "cutoff": "2026-07-30",
+  "eligible_ids": [
+    "ec-impaqto-capital"
+  ],
+  "limitations": [
+    "Audited coverage of enumerated public sources, not absolute market completeness.",
+    "The regulator was used for one identity check only and did not drive discovery or eligibility.",
+    "Only IMPAQTO Capital is publishable in this frozen cut."
+  ],
+  "publication_batches": [
+    {
+      "batch": 1,
+      "candidate_ids": [
+        "ec-impaqto-capital"
+      ],
+      "profile_paths": [
+        "funds/regional/impaqto-capital.md"
+      ]
+    }
+  ],
+  "review_reconciled": true,
+  "reviewed_on": "2026-07-30",
+  "reviewer": "integrator",
+  "schema_version": "1.0"
+}

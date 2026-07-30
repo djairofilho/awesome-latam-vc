@@ -1,0 +1,17 @@
+{
+  "batch_count": 1,
+  "batch_limit": 10,
+  "critical_or_high_findings_open": 0,
+  "cutoff": "2026-07-30",
+  "eligible_ids": [
+    "ec-impaqto-capital"
+  ],
+  "localized_profile_count": 3,
+  "profile_hashes": {
+    "funds/regional/impaqto-capital.md": "eea303ea4c7147a1fb6acb1db2e60d57dd12365825303bef85c58d8f94274418",
+    "translations/es/funds/regional/impaqto-capital.md": "fc84f02faa83fed5633ae94286fc700c8ecce239b9da701bc9e72df96ae6a7ba",
+    "translations/pt-BR/funds/regional/impaqto-capital.md": "61c2975b87c1f719e2bf936f1a8a98ef662a8b62aa42ad6f8f783967f778ff23"
+  },
+  "published_profile_count": 1,
+  "schema_version": "1.0"
+}

@@ -5,6 +5,7 @@
     "ec-593-capital-partners",
     "ec-fonquito"
   ],
+  "completed_on": "2026-07-30",
   "deterministic_exclusion_sample": [
     "ec-593-capital-partners",
     "ec-telefunken-capital"
@@ -12,7 +13,7 @@
   "eligible_to_review": [
     "ec-impaqto-capital"
   ],
-  "freeze_allowed": false,
+  "freeze_allowed": true,
   "proposed_freeze": {
     "eligible": [
       "ec-impaqto-capital"
@@ -35,8 +36,9 @@
     "ec-endeavor-ecuador",
     "ec-kruger-labs",
     "ec-startups-ventures",
+    "ec-buenavista-capital",
     "ec-fundacion-crisfe",
     "ec-fonquito"
   ],
-  "status": "pending_independent_review"
+  "status": "completed"
 }

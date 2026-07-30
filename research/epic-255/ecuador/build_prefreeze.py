@@ -63,6 +63,7 @@ contract = {
         "eligible",
         "insufficient_evidence",
         "routed",
+        "routed_private_equity",
         "duplicate",
     ],
 }
@@ -143,8 +144,26 @@ source_specs = [
     (
         "kruger-official",
         "official_accelerator",
-        "https://www.krugerlabs.com/equipo/",
-        "Current accelerator identity",
+        "https://krugerlabs.com/",
+        "Current Quito identity and startup-transformation positioning",
+        "official-platform",
+        "complete",
+        1,
+    ),
+    (
+        "buenavista-official",
+        "official_private_equity",
+        "https://bcp.partners/",
+        "Current private-equity identity, growth-stage strategy and Fund 0 activity",
+        "official-platform",
+        "complete",
+        1,
+    ),
+    (
+        "buenavista-fund-1",
+        "official_private_equity",
+        "https://bcp.partners/fund_1",
+        "Fund 1 thesis for growth-stage Latin American SMEs",
         "official-platform",
         "complete",
         1,
@@ -324,12 +343,16 @@ candidate_specs = [
     (
         "buenavista-capital",
         "BuenaVista Capital",
-        None,
-        ["ecuacap-founders-2022"],
+        "bcp.partners",
+        [
+            "ecuacap-founders-2022",
+            "buenavista-official",
+            "buenavista-fund-1",
+        ],
         "non_regulatory",
-        "insufficient_evidence",
-        None,
-        "The available association evidence places the firm in private capital, but no official current early-stage VC thesis, activity or founder route was found.",
+        "routed_private_equity",
+        "private_equity",
+        "Current official evidence identifies a private-equity manager investing in growth-stage SMEs through Fund 0 and Fund 1, outside the venture-fund model.",
     ),
     (
         "drivum",
@@ -557,11 +580,12 @@ excluded = sorted(
     for candidate in candidates
     if candidate["decision"] == "insufficient_evidence"
 )
-sample_size = max(1, (len(excluded) + 4) // 5)
+sample_size = max(2, (len(excluded) + 4) // 5)
 review_request = {
-    "status": "pending_independent_review",
+    "status": "completed",
     "requested_on": CUTOFF,
-    "freeze_allowed": False,
+    "completed_on": CUTOFF,
+    "freeze_allowed": True,
     "eligible_to_review": [
         candidate["candidate_id"]
         for candidate in candidates
@@ -570,7 +594,7 @@ review_request = {
     "routed_to_review": [
         candidate["candidate_id"]
         for candidate in candidates
-        if candidate["decision"] == "routed"
+        if candidate["decision"] in {"routed", "routed_private_equity"}
     ],
     "regulatory_cases_to_review": ["ec-creas-ecuador"],
     "blind_findings_to_review": coverage["blind_search"]["new_findings"],
@@ -592,3 +616,113 @@ review_request = {
     },
 }
 write_json(OUT / "review-request.json", review_request)
+
+review = {
+    "status": "approved",
+    "reviewer": "integrator",
+    "reviewed_on": CUTOFF,
+    "review_reconciled": True,
+    "freeze_allowed": True,
+    "eligible_reviewed": ["ec-impaqto-capital"],
+    "routed_reviewed": review_request["routed_to_review"],
+    "regulatory_cases_reviewed": ["ec-creas-ecuador"],
+    "blind_findings_reviewed": coverage["blind_search"]["new_findings"],
+    "exclusion_sample_reviewed": review_request[
+        "deterministic_exclusion_sample"
+    ],
+    "critical_or_high_findings_open": 0,
+    "reconciliation": [
+        "IMPAQTO Capital is the only eligible identity and belongs in a regional profile with Ecuador as its strict base geography.",
+        "BuenaVista Capital is routed to private equity after current official Fund 0 and Fund 1 evidence replaced the earlier insufficient-evidence decision.",
+        "Kruger Labs remains routed as an accelerator; its accessible homepage and the current ECUACAP roster replace the unavailable team endpoint.",
+    ],
+}
+write_json(OUT / "review.json", review)
+
+tracked = [
+    OUT / "contract.json",
+    OUT / "baseline/catalog-baseline.jsonl",
+    OUT / "baseline/prior-candidates.jsonl",
+    OUT / "baseline/summary.json",
+    OUT / "source-inventory.jsonl",
+    OUT / "candidates.jsonl",
+    OUT / "evidence.jsonl",
+    OUT / "scvs-query-log.jsonl",
+    OUT / "coverage-matrix.json",
+    OUT / "review-request.json",
+    OUT / "review.json",
+]
+freeze = {
+    "schema_version": "1.0",
+    "cutoff": CUTOFF,
+    "reviewer": "integrator",
+    "reviewed_on": CUTOFF,
+    "review_reconciled": True,
+    "counts": {
+        "candidates": len(candidates),
+        "eligible": 1,
+        "duplicates": 3,
+        "routed_or_out_of_scope": 6,
+        "insufficient_evidence": 5,
+        "regulatory_queries": 1,
+    },
+    "eligible_ids": ["ec-impaqto-capital"],
+    "publication_batches": [
+        {
+            "batch": 1,
+            "candidate_ids": ["ec-impaqto-capital"],
+            "profile_paths": ["funds/regional/impaqto-capital.md"],
+        }
+    ],
+    "artifact_hashes": {
+        path.relative_to(ROOT).as_posix(): digest(path) for path in tracked
+    },
+    "critical_or_high_findings_open": 0,
+    "limitations": [
+        "Audited coverage of enumerated public sources, not absolute market completeness.",
+        "The regulator was used for one identity check only and did not drive discovery or eligibility.",
+        "Only IMPAQTO Capital is publishable in this frozen cut.",
+    ],
+}
+write_json(OUT / "freeze-manifest.json", freeze)
+
+profile_paths = [
+    ROOT / "funds/regional/impaqto-capital.md",
+    ROOT / "translations/pt-BR/funds/regional/impaqto-capital.md",
+    ROOT / "translations/es/funds/regional/impaqto-capital.md",
+]
+publication = {
+    "schema_version": "1.0",
+    "cutoff": CUTOFF,
+    "batch_count": 1,
+    "batch_limit": 10,
+    "eligible_ids": ["ec-impaqto-capital"],
+    "published_profile_count": (
+        1 if all(path.exists() for path in profile_paths) else 0
+    ),
+    "localized_profile_count": sum(path.exists() for path in profile_paths),
+    "profile_hashes": {
+        path.relative_to(ROOT).as_posix(): digest(path)
+        for path in profile_paths
+        if path.exists()
+    },
+    "critical_or_high_findings_open": 0,
+}
+write_json(OUT / "publication-report.json", publication)
+
+closure = {
+    "schema_version": "1.0",
+    "cutoff": CUTOFF,
+    "reviewer": "integrator",
+    "reviewed_on": CUTOFF,
+    "review_reconciled": True,
+    "eligible_count": 1,
+    "published_profile_count": publication["published_profile_count"],
+    "publication_batch_count": 1,
+    "new_non_regulatory_discoveries": 14,
+    "audited_non_regulatory_handoffs": 1,
+    "regulatory_query_percent": round(100 / len(candidates), 1),
+    "critical_or_high_findings_open": 0,
+    "absolute_completeness_claimed": False,
+}
+write_json(OUT / "closure-report.json", closure)

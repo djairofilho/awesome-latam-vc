@@ -16,7 +16,7 @@ A curated list of Venture Capital funds investing in Latin America.
 
 ---
 
-The index is optimized for quick comparison and currently covers 200 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
+The index is optimized for quick comparison and currently covers 201 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
 
 ## Pan-Latin America (LatAm based)
 
@@ -54,6 +54,7 @@ The index is optimized for quick comparison and currently covers 200 funds. All 
 | [Hi Ventures (ex-ALLVP)](funds/regional/hi-ventures-allvp.md) | Pre-seed and Seed | AI and technology | Latin America |
 | [IGNIA](funds/regional/ignia.md) | Seed and Series A | Technology and inclusive growth | Latin America |
 | [Impacta VC](funds/regional/impacta-vc.md) | Seed | Social and environmental impact | Latin America |
+| [IMPAQTO Capital](funds/regional/impaqto-capital.md) | Early stage; named rounds not disclosed | Social and environmental impact with a gender lens | Ecuador, Peru, Bolivia, Colombia, and Chile |
 | [Indicator Capital](funds/regional/indicator-capital.md) | Pre-seed and Seed | Deep tech | Latin America |
 | [Innogen Capital Ventures](funds/regional/innogen-capital-ventures.md) | Pre-seed, Seed, and Series A | Early-stage technology | Northern Latin America |
 | [Innventure](funds/regional/innventure.md) | Not publicly disclosed | AgTech and AgriFoodTech | Latin America |

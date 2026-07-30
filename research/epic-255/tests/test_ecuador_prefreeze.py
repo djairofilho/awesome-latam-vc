@@ -78,6 +78,7 @@ class EcuadorPrefreezeTest(unittest.TestCase):
             "eligible",
             "insufficient_evidence",
             "routed",
+            "routed_private_equity",
             "duplicate",
         }
         source_ids = {
@@ -109,7 +110,8 @@ class EcuadorPrefreezeTest(unittest.TestCase):
                 "eligible": 1,
                 "duplicate": 3,
                 "routed": 5,
-                "insufficient_evidence": 6,
+                "routed_private_equity": 1,
+                "insufficient_evidence": 5,
             },
             counts,
         )
@@ -128,11 +130,25 @@ class EcuadorPrefreezeTest(unittest.TestCase):
         request = json.loads(
             (AUDIT / "review-request.json").read_text(encoding="utf-8")
         )
-        self.assertEqual("pending_independent_review", request["status"])
-        self.assertFalse(request["freeze_allowed"])
+        self.assertEqual("completed", request["status"])
+        self.assertTrue(request["freeze_allowed"])
         self.assertGreaterEqual(len(request["deterministic_exclusion_sample"]), 1)
-        self.assertFalse((AUDIT / "freeze-manifest.json").exists())
+        review = json.loads(
+            (AUDIT / "review.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual("approved", review["status"])
+        self.assertTrue(review["review_reconciled"])
+        self.assertEqual(0, review["critical_or_high_findings_open"])
+        self.assertTrue((AUDIT / "freeze-manifest.json").exists())
         self.assertFalse((AUDIT / "publication").exists())
+
+    def test_publication_report_matches_profiles(self):
+        publication = json.loads(
+            (AUDIT / "publication-report.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(1, publication["batch_count"])
+        self.assertEqual(1, publication["published_profile_count"])
+        self.assertEqual(3, publication["localized_profile_count"])
 
     def test_new_artifacts_have_no_mojibake(self):
         paths = (
