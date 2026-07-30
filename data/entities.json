@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 260,
+    "entity_count": 264,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -2673,6 +2673,46 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "AR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "AR",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "fintech",
+        "market_infrastructure",
+        "cybersecurity"
+      ],
+      "founder_route": "https://www.byma.com.ar/",
+      "id": "fund:byma-ventures",
+      "name": "BYMA Ventures",
+      "official_website": "https://www.byma.com.ar/",
+      "operator": null,
+      "source_profile": "funds/argentina/byma-ventures.md",
+      "sources": [
+        {
+          "kind": "official_activity",
+          "title": "BYMA relaunches its CVC fund",
+          "url": "https://www.byma.com.ar/newsroom/byma-relanza-su-fondo-de-cvc-bajo-el-nombre-byma-ventures"
+        },
+        {
+          "kind": "official_activity",
+          "title": "BYMA 2024 annual report",
+          "url": "https://data-widgets.byma.com.ar/wp-content/uploads/2025/03/MEMORIA-2024-INGLES-EEFF-2_compressed.pdf"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "BYMA Ventures is the Argentine exchange group's corporate venture capital fund for early-stage Latin American startups.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "LATAM",
         "kind": "region"
       },
@@ -3717,6 +3757,44 @@
       ],
       "summary": "EMA Ventures is an investment organization focused on Technology and women-led companies in Spanish-speaking Latin America.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "AR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "AR",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology"
+      ],
+      "founder_route": "https://www.embarca.tech/inicio/",
+      "id": "fund:embarca-ventures",
+      "name": "Embarca Ventures",
+      "official_website": "https://www.embarca.tech/inicio/",
+      "operator": null,
+      "source_profile": "funds/argentina/embarca-ventures.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Embarca Ventures",
+          "url": "https://www.embarca.tech/inicio/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Portfolio",
+          "url": "https://www.embarca.tech/portfolio/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Embarca Ventures is a Mendoza-based venture capital fund investing in technology startups across Argentina and Latin America.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -7425,6 +7503,40 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "AR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "AR",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "insurtech",
+        "technology"
+      ],
+      "founder_route": "https://sancorsegurosventures.com/en/",
+      "id": "fund:sancor-seguros-ventures",
+      "name": "Sancor Seguros Ventures",
+      "official_website": "https://sancorsegurosventures.com/en/",
+      "operator": null,
+      "source_profile": "funds/argentina/sancor-seguros-ventures.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Sancor Seguros Ventures",
+          "url": "https://sancorsegurosventures.com/en/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Sancor Seguros Ventures is Sancor Seguros Group's Argentine corporate venture capital fund for scalable technology startups.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "BR",
         "kind": "country"
       },
@@ -7488,6 +7600,47 @@
       ],
       "summary": "SF500 is an Argentina-based life sciences fund and company-building program that turns scientific projects into globally scalable startups.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [
+        "Shefa Ventures"
+      ],
+      "base_geography": {
+        "code": "AR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "AR",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "real_estate_technology",
+        "agtech"
+      ],
+      "founder_route": "https://shefa.vc/",
+      "id": "fund:shefa-holding",
+      "name": "SHEFA Holding",
+      "official_website": "https://shefa.vc/",
+      "operator": null,
+      "source_profile": "funds/argentina/shefa-holding.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "SHEFA Holding portfolio",
+          "url": "https://shefa.vc/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "IRSA annual report",
+          "url": "https://www.irsa.com.ar/wp-content/uploads/2024/08/MemoriaIRSAFY23.pdf"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "SHEFA Holding is an Argentine investment holding with a recurring direct venture portfolio; it is listed as an equivalent vehicle rather than a traditional fund.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
