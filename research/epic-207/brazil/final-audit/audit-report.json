@@ -1,0 +1,310 @@
+{
+  "candidate_reconciliation": {
+    "candidate_rows": 76,
+    "canonical_candidates": 63,
+    "decision_counts": {
+      "duplicate": 13,
+      "eligible": 27,
+      "insufficient_evidence": 28,
+      "routed_accelerators": 3,
+      "routed_angel_networks": 4,
+      "routed_funding_platforms": 1
+    }
+  },
+  "cutoff_date": "2026-07-30",
+  "cvm_use": {
+    "candidate_ids": [
+      "fund-br-213-vinci-partners",
+      "fund-br-214-jatoba-impacto-amazonia"
+    ],
+    "canonical_candidate_count": 63,
+    "consulted_candidate_count": 2,
+    "eligibility_use": false,
+    "inventory_document_count": 4,
+    "query_log_count": 2,
+    "query_rate": 0.031746031746031744
+  },
+  "discovery_provenance": {
+    "cvm_reference_count": 0,
+    "missing_reference_count": 0,
+    "non_cvm_reference_count": 126,
+    "reference_count": 126
+  },
+  "epic": 207,
+  "family_yield": {
+    "families": {
+      "allocators": {
+        "candidate_rows": 7,
+        "eligible_rows": 1
+      },
+      "events": {
+        "candidate_rows": 17,
+        "eligible_rows": 1
+      },
+      "foreign_access": {
+        "candidate_rows": 14,
+        "eligible_rows": 7
+      },
+      "launches": {
+        "candidate_rows": 11,
+        "eligible_rows": 8
+      },
+      "official_portfolios": {
+        "candidate_rows": 18,
+        "eligible_rows": 4
+      },
+      "regional_sources": {
+        "candidate_rows": 9,
+        "eligible_rows": 0
+      },
+      "rounds": {
+        "candidate_rows": 19,
+        "eligible_rows": 9
+      },
+      "sector_maps": {
+        "candidate_rows": 5,
+        "eligible_rows": 2
+      }
+    },
+    "overlap_warning": "Famílias podem atribuir o mesmo candidato; os totais por família não são somáveis."
+  },
+  "generated_on": "2026-07-30",
+  "integrity": {
+    "all_candidates_decided": true,
+    "all_identity_resolutions_terminal": true,
+    "all_review_findings_resolved": true,
+    "all_sources_terminal": true,
+    "cvm_below_ten_percent": true,
+    "cvm_logs_complete": true,
+    "cvm_not_used_for_discovery": true,
+    "discovery_is_one_hundred_percent_non_cvm": true,
+    "discovery_references_complete": true,
+    "exactly_eighty_one_profile_files": true,
+    "exactly_twenty_seven_eligible": true,
+    "freeze_core_hashes_match": true,
+    "gap_metadata_complete": true,
+    "profile_dates_within_cutoff": true,
+    "profile_hashes_match_current_files": true,
+    "profile_sources_come_from_frozen_evidence": true,
+    "publication_report_integrity": true,
+    "published_candidates_match_eligible": true,
+    "published_destinations_match_eligible": true,
+    "zero_high_or_critical_open": true,
+    "zero_omissions": true,
+    "zero_overlaps": true
+  },
+  "issue": 224,
+  "issue_state_at_audit": {
+    "closed": [
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      241,
+      242,
+      243
+    ],
+    "open": [
+      207,
+      224
+    ],
+    "receiver_issues_closed": [
+      62,
+      63,
+      64
+    ]
+  },
+  "limitations": [
+    "A cobertura é auditada no recorte e na data de corte; novos participantes e mudanças posteriores exigem nova rodada.",
+    "Os rendimentos por família se sobrepõem e não devem ser somados como universos independentes.",
+    "A participação não-CVM de 90,91% usa 11 tarefas de pesquisa/adjudicação e exclui duas tarefas administrativas.",
+    "Treze official_website usam a homepage congelada do candidato, enquanto as sources publicadas permanecem URLs exatas das evidências oficiais.",
+    "Os oito encaminhamentos requerem revalidação nos contratos das epics #62, #63 e #64; não são elegíveis automáticos."
+  ],
+  "publication": {
+    "batch_count": 3,
+    "candidate_count": 27,
+    "destination_count": 27,
+    "official_website_homepage_exceptions": [
+      "funds/brazil/barn-investimentos.md",
+      "funds/brazil/copel-ventures-i.md",
+      "funds/brazil/csn-inova-ventures.md",
+      "funds/brazil/grao-vc.md",
+      "funds/brazil/marcha.md",
+      "funds/brazil/positive-ventures.md",
+      "funds/brazil/quartzo-capital.md",
+      "funds/brazil/upload-ventures.md",
+      "funds/brazil/vibra-ventures.md",
+      "funds/multi-country/antler.md",
+      "funds/multi-country/lightrock.md",
+      "funds/multi-country/mundi-ventures.md",
+      "funds/multi-country/valutia.md"
+    ],
+    "profile_file_count": 81,
+    "profile_source_reference_count": 54,
+    "redundant_evidence_not_published": [
+      "Quartzo Capital",
+      "Mundi Ventures"
+    ],
+    "unique_profile_source_url_count": 52
+  },
+  "review": {
+    "blind_review_delta": {
+      "candidate_rows": 25,
+      "eligible": 13
+    },
+    "initial_curve": [
+      {
+        "candidates": 7,
+        "eligible": 1,
+        "pass": 1
+      },
+      {
+        "candidates": 19,
+        "eligible": 5,
+        "pass": 2
+      },
+      {
+        "candidates": 25,
+        "eligible": 8,
+        "pass": 3
+      },
+      {
+        "candidates": 40,
+        "eligible": 9,
+        "pass": 4
+      },
+      {
+        "candidates": 48,
+        "eligible": 11,
+        "pass": 5
+      },
+      {
+        "candidates": 51,
+        "eligible": 14,
+        "pass": 6
+      }
+    ],
+    "row_count": 70,
+    "saturation_conclusion": "Rendimento marginal baixo no recorte auditado; não representa saturação absoluta.",
+    "saturation_passes": [
+      {
+        "candidate_yield": 0,
+        "documents_reviewed": 2,
+        "eligible_yield": 0,
+        "name": "spin-offs e licenciamento acadêmico",
+        "source_ids": [
+          "src-fund-br-221-saturation-ctit-spin-offs",
+          "src-fund-br-221-saturation-unicamp-kasco"
+        ]
+      },
+      {
+        "candidate_yield": 0,
+        "documents_reviewed": 2,
+        "eligible_yield": 0,
+        "name": "prêmios de inovação e programas de fornecedores",
+        "source_ids": [
+          "src-fund-br-221-saturation-petrobras-supplier-award",
+          "src-fund-br-221-saturation-fieb-veracel-suppliers"
+        ]
+      },
+      {
+        "candidate_yield": 4,
+        "documents_reviewed": 4,
+        "eligible_yield": 1,
+        "name": "CVCs, redes e programas em fontes corporativas e universitárias",
+        "source_ids": [
+          "src-fund-br-221-basf-vc-brazil",
+          "src-fund-br-221-carbyne-fucape",
+          "src-fund-br-221-ita-angels-insper",
+          "src-fund-br-221-foks-insper-demoday"
+        ]
+      }
+    ],
+    "severity_counts": {
+      "medium": 46,
+      "none": 24
+    },
+    "unresolved_count": 0
+  },
+  "routing": {
+    "routed_accelerators": {
+      "automatic_eligibility": false,
+      "candidates": [
+        {
+          "candidate_id": "fund-br-214-ipe-investe",
+          "name": "IPÊ Investe"
+        },
+        {
+          "candidate_id": "fund-br-221-foks",
+          "name": "FOKS"
+        },
+        {
+          "candidate_id": "fund-br-221-startvc",
+          "name": "StartVC"
+        }
+      ],
+      "target_issue": 62
+    },
+    "routed_angel_networks": {
+      "automatic_eligibility": false,
+      "candidates": [
+        {
+          "candidate_id": "fund-br-214-agroven",
+          "name": "AgroVen"
+        },
+        {
+          "candidate_id": "fund-br-221-insper-angels",
+          "name": "Insper Angels"
+        },
+        {
+          "candidate_id": "fund-br-221-ita-angels",
+          "name": "ITA Angels"
+        },
+        {
+          "candidate_id": "fund-br-221-uniangels",
+          "name": "UniAngels"
+        }
+      ],
+      "target_issue": 63
+    },
+    "routed_funding_platforms": {
+      "automatic_eligibility": false,
+      "candidates": [
+        {
+          "candidate_id": "fund-br-221-3c-invest",
+          "name": "3C Invest"
+        }
+      ],
+      "target_issue": 64
+    }
+  },
+  "schema_version": "1.0",
+  "scope_statement": "Cobertura auditada nas fontes e no recorte registrados; não prova totalidade do universo brasileiro.",
+  "source_coverage": {
+    "complete": 163,
+    "gap_justified": 9,
+    "terminal": 172,
+    "total": 172
+  },
+  "status": "complete",
+  "task_mix": {
+    "cvm": 1,
+    "non_cvm": 10,
+    "non_cvm_share": 0.9090909090909091,
+    "not_applicable": 2,
+    "research_denominator": 11
+  }
+}
