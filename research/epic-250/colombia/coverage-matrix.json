@@ -1,0 +1,97 @@
+{
+  "canonical_candidates": 13,
+  "cutoff": "2026-07-30",
+  "family_yield": [
+    {
+      "family": "blind_fund_launch",
+      "observed_names": 1,
+      "sources_walked": 1
+    },
+    {
+      "family": "independent_map",
+      "observed_names": 5,
+      "sources_walked": 1
+    },
+    {
+      "family": "industry_association",
+      "observed_names": 10,
+      "sources_walked": 2
+    },
+    {
+      "family": "institutional_allocator",
+      "observed_names": 1,
+      "sources_walked": 1
+    },
+    {
+      "family": "official_portfolio",
+      "observed_names": 4,
+      "sources_walked": 4
+    },
+    {
+      "family": "public_allocator",
+      "observed_names": 2,
+      "sources_walked": 1
+    },
+    {
+      "family": "regional_ecosystem",
+      "observed_names": 1,
+      "sources_walked": 1
+    },
+    {
+      "family": "regional_news",
+      "observed_names": 1,
+      "sources_walked": 1
+    },
+    {
+      "family": "regulator_identity",
+      "observed_names": 0,
+      "sources_walked": 1
+    },
+    {
+      "family": "round_map",
+      "observed_names": 4,
+      "sources_walked": 1
+    },
+    {
+      "family": "sector_map",
+      "observed_names": 3,
+      "sources_walked": 1
+    }
+  ],
+  "limitation": "Audited coverage of the walked sources; not a claim of absolute market completeness.",
+  "marginal_passes": [
+    {
+      "cumulative": 8,
+      "families": [
+        "round_map",
+        "sector_map",
+        "industry_association"
+      ],
+      "new_canonical_candidates": 8,
+      "pass": 1
+    },
+    {
+      "cumulative": 12,
+      "families": [
+        "institutional_allocator",
+        "regional_news",
+        "official_portfolio"
+      ],
+      "new_canonical_candidates": 4,
+      "pass": 2
+    },
+    {
+      "cumulative": 13,
+      "families": [
+        "blind_fund_launch",
+        "independent_map"
+      ],
+      "new_canonical_candidates": 1,
+      "pass": 3
+    }
+  ],
+  "non_regulatory_discovery_count": 13,
+  "non_regulatory_discovery_percent": 100.0,
+  "regulatory_queries": 1,
+  "regulatory_query_percent_of_candidates": 7.7
+}
