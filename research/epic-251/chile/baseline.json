@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "issue": 269,
+  "cutoff_date": "2026-07-30",
+  "catalog_profile_count": 181,
+  "chile_direct_profile_count": 3,
+  "chile_direct_profiles": [
+    "funds/chile/cmpc-ventures.md",
+    "funds/chile/invexor-venture-partners.md",
+    "funds/chile/sudlich-capital.md"
+  ],
+  "current_baseline_deduplication": {
+    "minimum_commit": "5b3a4e0",
+    "entities": [
+      "Entrypoint",
+      "Flourish Ventures"
+    ]
+  },
+  "profile_paths_sha256": "5427fec3e396c3195fc31876accabc2cd1f06179d5a596cf7ef7ae3bb8910b57",
+  "historical_epic": 16,
+  "rules": {
+    "non_regulatory_discovery_target": "90%-95%",
+    "regulator_identity_only": true,
+    "local_startup_dataset_prohibited": true
+  }
+}

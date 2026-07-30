@@ -1,0 +1,23 @@
+{"candidate_id": "fund-cl-abastibletec", "canonical_name": "AbastibleTec", "decision": "eligible", "destination": "funds/chile/abastibletec.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-bice-ventures", "canonical_name": "BICE Ventures", "decision": "eligible", "destination": "funds/chile/bice-ventures.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-carozzi-ventures", "canonical_name": "Carozzi Ventures", "decision": "eligible", "destination": "funds/chile/carozzi-ventures.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-copec-wind-ventures", "canonical_name": "Copec Wind Ventures", "decision": "eligible", "destination": "funds/chile/copec-wind-ventures.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-leap-caja-los-andes", "canonical_name": "Leap", "decision": "eligible", "destination": "funds/chile/leap-caja-los-andes.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-platanus-ventures", "canonical_name": "Platanus Ventures", "decision": "eligible", "destination": "funds/chile/platanus-ventures.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-screen-capital", "canonical_name": "Screen Capital", "decision": "eligible", "destination": "funds/chile/screen-capital.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-sqm-lithium-ventures", "canonical_name": "SQM Lithium Ventures", "decision": "eligible", "destination": "funds/chile/sqm-lithium-ventures.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-tantauco-ventures", "canonical_name": "Tantauco Ventures", "decision": "eligible", "destination": "funds/chile/tantauco-ventures.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-venturance", "canonical_name": "Venturance", "decision": "eligible", "destination": "funds/chile/venturance.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-weboost", "canonical_name": "WeBoost", "decision": "eligible", "destination": "funds/chile/weboost.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-aurus-capital", "canonical_name": "Aurus Capital", "decision": "insufficient_evidence", "destination": null, "resolution": "terminal"}
+{"candidate_id": "fund-cl-agrosuper-ventures", "canonical_name": "Agrosuper Ventures", "decision": "excluded_non_investment_model", "destination": null, "resolution": "terminal"}
+{"candidate_id": "fund-cl-araucaria-venture", "canonical_name": "Araucaria Venture", "decision": "insufficient_evidence", "destination": null, "resolution": "terminal"}
+{"candidate_id": "fund-cl-consorcio-ventures", "canonical_name": "Consorcio Ventures", "decision": "insufficient_evidence", "destination": null, "resolution": "terminal"}
+{"candidate_id": "fund-cl-cencosud-ventures", "canonical_name": "Cencosud Ventures", "decision": "insufficient_evidence", "destination": null, "resolution": "terminal"}
+{"candidate_id": "fund-cl-start-up-chile", "canonical_name": "Start-Up Chile", "decision": "routed_public_program", "destination": "ecosystem/public-programs/chile/start-up-chile.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-udd-ventures", "canonical_name": "UDD Ventures", "decision": "routed_accelerator", "destination": null, "resolution": "terminal"}
+{"candidate_id": "fund-cl-alaya-capital", "canonical_name": "Alaya Capital", "decision": "duplicate", "destination": "funds/regional/alaya-capital.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-fen-ventures", "canonical_name": "Fen Ventures", "decision": "duplicate", "destination": "funds/regional/fen-ventures.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-manutara-ventures", "canonical_name": "Manutara Ventures", "decision": "duplicate", "destination": "funds/regional/manutara-ventures.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-entrypoint", "canonical_name": "Entrypoint", "decision": "duplicate", "destination": "funds/brazil/entrypoint.md", "resolution": "terminal"}
+{"candidate_id": "fund-cl-flourish-ventures", "canonical_name": "Flourish Ventures", "decision": "duplicate", "destination": "funds/multi-country/flourish-ventures.md", "resolution": "terminal"}
