@@ -26,8 +26,8 @@ Não houve consulta à CVM. O arquivo local de startups não foi lido nem usado.
 Notícias não sustentam nenhuma decisão deste shard. Cheque, estágio, tese e
 recorrência ausentes não foram estimados.
 
-`source-inventory.jsonl` registra 24 fontes não-CVM e a chave SHA-256 da URL final.
-`evidence.jsonl` contém 24 evidências oficiais. `candidates.jsonl` é um overlay
+`source-inventory.jsonl` registra 25 fontes não-CVM e a chave SHA-256 da URL final.
+`evidence.jsonl` contém 25 evidências oficiais. `candidates.jsonl` é um overlay
 completo dos 19 IDs e preserva as fontes e evidências anteriores.
 
 ## Decisões por candidato
