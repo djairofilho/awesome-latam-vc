@@ -83,7 +83,7 @@ Infinita usa su presencia en startup cities e ingeniería jurídica para apoyar 
 
 ## Señales del portafolio
 
-El perfil público actual mantiene la sede y el equipo operativo en Roatán. Por separado, la cobertura independiente confirma la participación de Infinita Fund en la ronda pre-seed de USD 1,3 millones de Yendou en 2024. Esa ronda anterior prueba deployment, no es la señal de actividad actual.
+El perfil público actual mantiene la sede y el equipo operativo en Roatán. Por separado, la cobertura independiente confirma la participación de Infinita Fund en la ronda pre-seed de USD 1.3 million de Yendou en 2024. Esa ronda anterior prueba deployment, no es la señal de actividad actual.
 
 ## Fuentes
 
