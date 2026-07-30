@@ -115,8 +115,8 @@ PROFILES: dict[str, dict[str, Any]] = {
         },
         "signal": {
             "en": "The current site states a financial investment of up to USD 100,000, names four supported startups and provides a public founder contact form and email.",
-            "es": "El sitio actual informa una inversión financiera de hasta USD 100.000, nombra cuatro startups apoyadas y ofrece un formulario y correo público para fundadores.",
-            "pt-BR": "O site atual informa investimento financeiro de até US$ 100 mil, cita quatro startups apoiadas e oferece formulário e e-mail públicos para founders.",
+            "es": "El sitio actual informa una inversión financiera de hasta USD 100,000, nombra cuatro startups apoyadas y ofrece un formulario y correo público para fundadores.",
+            "pt-BR": "O site atual informa investimento financeiro de até USD 100,000, cita quatro startups apoiadas e oferece formulário e e-mail públicos para founders.",
         },
         "sources": [
             {"title": "Eager Ventures", "url": "https://www.eagerventures.io/", "kind": "official_portfolio"},
@@ -190,8 +190,8 @@ PROFILES: dict[str, dict[str, Any]] = {
         },
         "signal": {
             "en": "ANII identifies LAB+ Venture Fund as a fund distinct from the LAB+ Company Builder operating role. LAB+ reports that its first capitalization round closed in February 2024 and committed USD 750,000 to each of four portfolio startups.",
-            "es": "ANII identifica a LAB+ Venture Fund como un fondo distinto del rol operativo de LAB+ Company Builder. LAB+ informa que su primera ronda de capitalización cerró en febrero de 2024 y comprometió USD 750.000 para cada una de cuatro startups del portafolio.",
-            "pt-BR": "A ANII identifica o LAB+ Venture Fund como fundo distinto do papel operacional do LAB+ Company Builder. O LAB+ informa que sua primeira rodada de capitalização fechou em fevereiro de 2024 e comprometeu US$ 750 mil para cada uma das quatro startups do portfólio.",
+            "es": "ANII identifica a LAB+ Venture Fund como un fondo distinto del rol operativo de LAB+ Company Builder. LAB+ informa que su primera ronda de capitalización cerró en febrero de 2024 y comprometió USD 750,000 para cada una de cuatro startups del portafolio.",
+            "pt-BR": "A ANII identifica o LAB+ Venture Fund como fundo distinto do papel operacional do LAB+ Company Builder. O LAB+ informa que sua primeira rodada de capitalização fechou em fevereiro de 2024 e comprometeu USD 750,000 para cada uma das quatro startups do portfólio.",
         },
         "sources": [
             {"title": "ANII: LAB+ Venture Fund", "url": "https://anii.org.uy/emprendimientos/organizaciones-de-capital-emprendedor/540/lab-venture-fund/", "kind": "official_program"},
@@ -256,7 +256,8 @@ VALUE_TRANSLATIONS = {
         "Investor and scientific company-building partner": "Inversor y socio científico para crear empresas",
         "Patentable science-based projects and startups": "Proyectos y startups de base científica con propiedad intelectual protegible",
         "4 companies on the reviewed official portfolio": "4 empresas en el portafolio oficial revisado",
-        "USD 750,000 committed to each of the first four startups": "USD 750.000 comprometidos para cada una de las primeras cuatro startups",
+        "USD 750,000 committed to each of the first four startups": "USD 750,000 comprometidos para cada una de las primeras cuatro startups",
+        "Up to USD 100,000": "Hasta USD 100,000",
     },
     "pt-BR": {
         "Private venture capital fund": "Fundo privado de venture capital",
@@ -280,7 +281,8 @@ VALUE_TRANSLATIONS = {
         "Investor and scientific company-building partner": "Investidor e parceiro científico na construção de empresas",
         "Patentable science-based projects and startups": "Projetos e startups de base científica com propriedade intelectual protegível",
         "4 companies on the reviewed official portfolio": "4 empresas no portfólio oficial revisado",
-        "USD 750,000 committed to each of the first four startups": "US$ 750 mil comprometidos para cada uma das quatro primeiras startups",
+        "USD 750,000 committed to each of the first four startups": "USD 750,000 comprometidos para cada uma das quatro primeiras startups",
+        "Up to USD 100,000": "Até USD 100,000",
     },
 }
 

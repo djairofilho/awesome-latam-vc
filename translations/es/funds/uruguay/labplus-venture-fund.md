@@ -72,7 +72,7 @@ LAB+ Venture Fund es un vehículo montevideano de ciencias de la vida creado med
 - **Etapas posteriores:** No divulgado públicamente
 - **Enfoque:** life sciences, one health, biotechnology
 - **Geografía:** UY, GLOBAL
-- **Cheque inicial:** USD 750.000 comprometidos para cada una de las primeras cuatro startups
+- **Cheque inicial:** USD 750,000 comprometidos para cada una de las primeras cuatro startups
 - **Rol de inversión:** Inversor y socio científico para crear empresas
 - **Modelos de negocio:** Proyectos y startups de base científica con propiedad intelectual protegible
 - **Tamaño del portafolio:** 4 empresas en el portafolio oficial revisado
@@ -85,7 +85,7 @@ El fondo financia proyectos y startups de ciencias de la vida bajo el enfoque Un
 
 ## Señales del portafolio
 
-ANII identifica a LAB+ Venture Fund como un fondo distinto del rol operativo de LAB+ Company Builder. LAB+ informa que su primera ronda de capitalización cerró en febrero de 2024 y comprometió USD 750.000 para cada una de cuatro startups del portafolio.
+ANII identifica a LAB+ Venture Fund como un fondo distinto del rol operativo de LAB+ Company Builder. LAB+ informa que su primera ronda de capitalización cerró en febrero de 2024 y comprometió USD 750,000 para cada una de cuatro startups del portafolio.
 
 ## Fuentes
 

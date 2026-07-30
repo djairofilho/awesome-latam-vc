@@ -57,7 +57,7 @@ Eager Ventures es un inversor uruguayo de etapa temprana que combina inversión 
 - **Etapas posteriores:** No divulgado públicamente
 - **Enfoque:** technology, software, artificial intelligence
 - **Geografía:** UY
-- **Cheque inicial:** Up to USD 100,000
+- **Cheque inicial:** Hasta USD 100,000
 - **Rol de inversión:** Inversor financiero y socio técnico de producto
 - **Modelos de negocio:** Startups tecnológicas; no se divulgaron otras restricciones
 - **Tamaño del portafolio:** No se presenta como un total oficial
@@ -70,7 +70,7 @@ Eager Ventures reinvierte parte de las ganancias de Eagerworks en startups pre-s
 
 ## Señales del portafolio
 
-El sitio actual informa una inversión financiera de hasta USD 100.000, nombra cuatro startups apoyadas y ofrece un formulario y correo público para fundadores.
+El sitio actual informa una inversión financiera de hasta USD 100,000, nombra cuatro startups apoyadas y ofrece un formulario y correo público para fundadores.
 
 ## Fuentes
 
