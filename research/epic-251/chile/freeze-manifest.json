@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "epic": 251,
+  "issue": 272,
+  "status": "frozen",
+  "review_status": "pass",
+  "cutoff_date": "2026-07-30",
+  "frozen_on": "2026-07-30",
+  "hash_algorithm": "sha256",
+  "totals": {
+    "canonical_candidates": 23,
+    "eligible": 11,
+    "excluded_or_routed": 7,
+    "duplicates": 5,
+    "planned_sources": 55,
+    "terminal_sources": 55,
+    "regulator_cases": 2,
+    "regulator_case_rate": 0.086957,
+    "non_regulatory_discovery_rate": 1.0
+  },
+  "publication": {
+    "batch_count": 2,
+    "batch_size_limit": 10,
+    "formula": "ceil(eligible / 10)",
+    "batches": [
+      {
+        "batch_id": "chile-publication-01",
+        "candidate_count": 10,
+        "destinations": [
+          "funds/chile/abastibletec.md",
+          "funds/chile/bice-ventures.md",
+          "funds/chile/carozzi-ventures.md",
+          "funds/chile/copec-wind-ventures.md",
+          "funds/chile/leap-caja-los-andes.md",
+          "funds/chile/platanus-ventures.md",
+          "funds/chile/screen-capital.md",
+          "funds/chile/sqm-lithium-ventures.md",
+          "funds/chile/tantauco-ventures.md",
+          "funds/chile/venturance.md"
+        ]
+      },
+      {
+        "batch_id": "chile-publication-02",
+        "candidate_count": 1,
+        "destinations": [
+          "funds/chile/weboost.md"
+        ]
+      }
+    ]
+  },
+  "core_artifact_hashes": {
+    "baseline.json": "6055854e9e19b41a8e535cccb541f61602cdad30b2516299073b599278aba07e",
+    "source-inventory.jsonl": "4d2e35a1d1fd3d081105ab0481313137f35c10e22af043568295246fca60c81e",
+    "coverage-matrix.jsonl": "3ca65173eac07dfe34a188aca716a46d1d05adbba8010a1d81d05b5396ed5236",
+    "candidates.jsonl": "b29a2a8a04e5f864e2472371fc96c69fb304a52cac3022954b062f8d42e6f9e1",
+    "evidence.jsonl": "d26416b52f69986835dc075efe67c6cbab51f9fe9102b9fd6dbcc5a21966fefc",
+    "identity-resolution.jsonl": "1216b033399d3f31906c9dd0708fbaa91dce39da711003b272613631c20154d7",
+    "cmf-query-log.jsonl": "6331ed7c9dc32c09b770fc6ddb15d688c23307b02a182865aa75f8020b845197",
+    "review-sample.jsonl": "b8854d26270d8e1c7f3b3f1fd3b973d7d33ce22ab7e45c184e7f2a75c457661c"
+  },
+  "published_profile_hashes": {
+    "funds/chile/abastibletec.md": "bb5c0eb29b3d0c51291030073c85a919cb8e43c9821efcecaa98a60e7581df27",
+    "funds/chile/bice-ventures.md": "00496032c4b1603339dc5fa944add88295a08fe0ba06deabb27d78f2b909c7ca",
+    "funds/chile/carozzi-ventures.md": "c60f5849e39fae2f3f382c9aec6562f1361e5257d4e1b6a283485831fd1b0fc7",
+    "funds/chile/copec-wind-ventures.md": "c04819f49167e2dda4829e74681654dd932a9b3993894a324ac3dae51ab36f90",
+    "funds/chile/leap-caja-los-andes.md": "1dfa9c7b80f3001527719382609c4e18d6f480daddfcd24678059155c998dc6b",
+    "funds/chile/platanus-ventures.md": "407e3ff7dc02b38a1970686a98cc01e70da62ebb6ff0323e180368ec84e018cb",
+    "funds/chile/screen-capital.md": "19f44199ae91108c46f055da1d65263d4dc25ac8c98e1ae5a8fa7e76aefd2e4c",
+    "funds/chile/sqm-lithium-ventures.md": "45bb78e55d38adf549db58b0303b2f468e3d2d39c515b9c1a68a63477d3ce8e0",
+    "funds/chile/tantauco-ventures.md": "c99fbb567ef8ba89eb9f94b0cec7c04fdb3e02cc0de8b10a8bfcb2d21584a125",
+    "funds/chile/venturance.md": "875127a5e29c1fe1578b4b66edced70a3401c8cab2e5f66f6e8879c38c4f6cc7",
+    "funds/chile/weboost.md": "489c9cbbcb9e15743adc8716e059901436249148547afc4fd244d3ad877e09fb"
+  },
+  "integrity": {
+    "all_candidates_decided": true,
+    "all_sources_terminal": true,
+    "all_identity_resolutions_terminal": true,
+    "review_reconciled": true,
+    "critical_findings_open": 0,
+    "high_findings_open": 0
+  },
+  "limitations": [
+    "This freeze represents audited coverage of the recorded source families, not totality of the Chilean market.",
+    "The two CMF queries resolved identity or divergence only and did not support discovery or eligibility."
+  ]
+}
