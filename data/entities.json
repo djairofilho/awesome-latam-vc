@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 294,
+    "entity_count": 295,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -4532,6 +4532,57 @@
       ],
       "summary": "FIP Nordeste Capital Semente is a venture capital vehicle managed by Triaxis Capital and Crescera Ventures for technology startups in Brazil's Northeast and adjacent eligible regions.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [
+        "FIR Capital Partners"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "innovation",
+        "sustainability",
+        "high_growth_companies"
+      ],
+      "founder_route": "https://airtable.com/appYsb0YkUNQcLbbp/pagLH7iG6DmlJHvTk/form",
+      "id": "fund:fir-capital",
+      "name": "FIR Capital",
+      "official_website": "https://www.fircapital.com/",
+      "operator": null,
+      "source_profile": "funds/brazil/fir-capital.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "FIR Capital about page",
+          "url": "https://www.fircapital.com/sobren%C3%B3s"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "FIR Capital portfolio",
+          "url": "https://www.fircapital.com/portfolio"
+        },
+        {
+          "kind": "official_application",
+          "title": "FIR Capital entrepreneur form",
+          "url": "https://airtable.com/appYsb0YkUNQcLbbp/pagLH7iG6DmlJHvTk/form"
+        },
+        {
+          "kind": "secondary",
+          "title": "LAVCA reports FIR Capital investment in SolarVolt",
+          "url": "https://www.lavca.org/brazils-fir-capital-makes-a-control-investment-in-solarvolt-em-portugues/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "FIR Capital is a Brazilian alternative investment manager that manages venture capital and private equity funds and supports high-growth companies.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
