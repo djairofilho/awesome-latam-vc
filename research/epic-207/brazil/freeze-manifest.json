@@ -1,0 +1,220 @@
+{
+  "core_artifact_hashes": {
+    "candidates.jsonl": "ec0afe69a9be083d6183947a2752667a8eb4b794a9f309f8d1d7d4384b35d746",
+    "coverage-matrix.jsonl": "69124a97615f6cccf445da2263f470e0101b24391fbbcc289617263e2da11d48",
+    "cvm-query-log.jsonl": "6bf2168b74dc4ef82502f10922e726483a86b1ad1998fa5657ae208d2d8684e8",
+    "evidence.jsonl": "1c7b36cc666e1ab7a3f45797e8e3a8d371aa966e6dd3b49c3d62a142f829dda9",
+    "identity-resolution.jsonl": "ed5d59ef677d0dc3fc3196e9a772621ef6479b364abaed2664294f85bdb2eb63",
+    "review-sample.jsonl": "c6a04cedc1dfd6780ab6a2e3f2bfeeecd73dd91f7bf4b9a72d2e354fb5737715",
+    "source-inventory.jsonl": "d4d0366400702e0366852731fc14ba3deff57d39082d46940cb8025588fc8e50"
+  },
+  "cutoff_date": "2026-07-30",
+  "decision_counts": {
+    "duplicate": 13,
+    "eligible": 27,
+    "insufficient_evidence": 28,
+    "routed_accelerators": 3,
+    "routed_angel_networks": 4,
+    "routed_funding_platforms": 1
+  },
+  "epic": 207,
+  "frozen_on": "2026-07-30",
+  "hash_algorithm": "sha256",
+  "integrity": {
+    "all_candidates_decided": true,
+    "all_duplicates_have_destination": true,
+    "all_identity_resolutions_terminal": true,
+    "all_sources_terminal": true,
+    "eligible_destinations_unique": true,
+    "review_reconciled": true
+  },
+  "issue": 222,
+  "limitations": [
+    "O freeze representa cobertura auditada nas fontes e no recorte registrados; não prova totalidade do universo brasileiro.",
+    "Os perfis e índices ainda não foram publicados neste estágio.",
+    "A CVM foi usada somente para identidade em dois casos e não sustenta elegibilidade editorial."
+  ],
+  "publication": {
+    "batch_count": 3,
+    "batch_count_formula": "ceil(eligible_count / 10)",
+    "batch_size_limit": 10,
+    "batches": [
+      {
+        "batch_id": "publication-batch-01",
+        "candidate_count": 9,
+        "candidates": [
+          {
+            "candidate_id": "fund-br-1616v",
+            "destination": "funds/multi-country/1616v.md",
+            "name": "1616V"
+          },
+          {
+            "candidate_id": "fund-br-17-sigma",
+            "destination": "funds/multi-country/17-sigma.md",
+            "name": "17-Sigma"
+          },
+          {
+            "candidate_id": "fund-br-210-dna-capital",
+            "destination": "funds/brazil/dna-capital.md",
+            "name": "DNA Capital"
+          },
+          {
+            "candidate_id": "fund-br-213-quartzo-capital",
+            "destination": "funds/brazil/quartzo-capital.md",
+            "name": "Quartzo Capital"
+          },
+          {
+            "candidate_id": "fund-br-214-barn-investimentos",
+            "destination": "funds/brazil/barn-investimentos.md",
+            "name": "Barn Investimentos"
+          },
+          {
+            "candidate_id": "fund-br-214-parallax-ventures",
+            "destination": "funds/brazil/parallax-ventures.md",
+            "name": "Parallax Ventures"
+          },
+          {
+            "candidate_id": "fund-br-221-basf-venture-capital",
+            "destination": "funds/multi-country/basf-venture-capital.md",
+            "name": "BASF Venture Capital GmbH"
+          },
+          {
+            "candidate_id": "fund-br-221-bb-ventures",
+            "destination": "funds/brazil/bb-ventures.md",
+            "name": "BB Ventures"
+          },
+          {
+            "candidate_id": "fund-br-221-blustone-capital",
+            "destination": "funds/brazil/blustone-capital.md",
+            "name": "BluStone Capital"
+          }
+        ],
+        "ordinal": 1
+      },
+      {
+        "batch_id": "publication-batch-02",
+        "candidate_count": 9,
+        "candidates": [
+          {
+            "candidate_id": "fund-br-221-copel-ventures-i",
+            "destination": "funds/brazil/copel-ventures-i.md",
+            "name": "Copel Ventures I"
+          },
+          {
+            "candidate_id": "fund-br-221-csn-inova-ventures",
+            "destination": "funds/brazil/csn-inova-ventures.md",
+            "name": "CSN Inova Ventures"
+          },
+          {
+            "candidate_id": "fund-br-221-cv-idexo",
+            "destination": "funds/brazil/cv-idexo.md",
+            "name": "CV iDEXO"
+          },
+          {
+            "candidate_id": "fund-br-221-grao-vc",
+            "destination": "funds/brazil/grao-vc.md",
+            "name": "Grão VC"
+          },
+          {
+            "candidate_id": "fund-br-221-hiker-ventures",
+            "destination": "funds/brazil/hiker-ventures.md",
+            "name": "Hiker Ventures"
+          },
+          {
+            "candidate_id": "fund-br-221-lightrock",
+            "destination": "funds/multi-country/lightrock.md",
+            "name": "Lightrock"
+          },
+          {
+            "candidate_id": "fund-br-221-marcha",
+            "destination": "funds/brazil/marcha.md",
+            "name": "Marcha"
+          },
+          {
+            "candidate_id": "fund-br-221-positive-ventures",
+            "destination": "funds/brazil/positive-ventures.md",
+            "name": "Positive Ventures"
+          },
+          {
+            "candidate_id": "fund-br-221-valutia",
+            "destination": "funds/multi-country/valutia.md",
+            "name": "Valutia"
+          }
+        ],
+        "ordinal": 2
+      },
+      {
+        "batch_id": "publication-batch-03",
+        "candidate_count": 9,
+        "candidates": [
+          {
+            "candidate_id": "fund-br-221-vibra-ventures",
+            "destination": "funds/brazil/vibra-ventures.md",
+            "name": "Vibra Ventures"
+          },
+          {
+            "candidate_id": "fund-br-accion-ventures",
+            "destination": "funds/multi-country/accion-ventures.md",
+            "name": "Accion Ventures"
+          },
+          {
+            "candidate_id": "fund-br-antler",
+            "destination": "funds/multi-country/antler.md",
+            "name": "Antler"
+          },
+          {
+            "candidate_id": "fund-br-bs2-ventures",
+            "destination": "funds/brazil/bs2-ventures.md",
+            "name": "BS2 Ventures"
+          },
+          {
+            "candidate_id": "fund-br-l4-venture-builder",
+            "destination": "funds/brazil/l4-venture-builder.md",
+            "name": "L4 Venture Builder"
+          },
+          {
+            "candidate_id": "fund-br-mundi-ventures-latam",
+            "destination": "funds/multi-country/mundi-ventures.md",
+            "name": "Mundi Ventures"
+          },
+          {
+            "candidate_id": "fund-br-parceiro-ventures",
+            "destination": "funds/multi-country/parceiro-ventures.md",
+            "name": "Parceiro Ventures"
+          },
+          {
+            "candidate_id": "fund-br-prosus-ventures",
+            "destination": "funds/multi-country/prosus-ventures.md",
+            "name": "Prosus Ventures"
+          },
+          {
+            "candidate_id": "fund-br-upload-ventures",
+            "destination": "funds/brazil/upload-ventures.md",
+            "name": "Upload Ventures"
+          }
+        ],
+        "ordinal": 3
+      }
+    ],
+    "eligible_count": 27,
+    "published_at_freeze": false
+  },
+  "schema_version": "1.0",
+  "status": "frozen",
+  "totals": {
+    "candidate_rows": 76,
+    "canonical_candidates": 63,
+    "critical_findings_open": 0,
+    "cvm_cases_reviewed": 2,
+    "cvm_consulted_candidates": 2,
+    "eligible_reviewed": 27,
+    "high_findings_open": 0,
+    "identity_resolutions": 48,
+    "insufficient_sample_reviewed": 6,
+    "planned_sources": 172,
+    "review_rows": 70,
+    "routed_reviewed": 8,
+    "terminal_sources": 172,
+    "unresolved_identity_resolutions": 0
+  }
+}
