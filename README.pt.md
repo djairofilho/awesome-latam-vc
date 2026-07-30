@@ -12,11 +12,12 @@ Uma lista curada de fundos de Venture Capital que investem na América Latina.
 - [Colômbia](#colômbia)
 - [México](#méxico)
 - [Peru](#peru)
+- [Uruguai](#uruguai)
 - [Global com presença na América Latina](#global-com-presença-na-américa-latina)
 
 ---
 
-O índice foi otimizado para comparação rápida e atualmente reúne 202 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
+O índice foi otimizado para comparação rápida e atualmente reúne 207 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
 
 ## Pan-América Latina (sede na região)
 
@@ -214,6 +215,16 @@ O índice foi otimizado para comparação rápida e atualmente reúne 202 fundos
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
 | [GRPP Ventures](funds/peru/rpp-ventures.md) | Não divulgado publicamente | Tecnologia escalável | Peru |
+
+## Uruguai
+
+| Fundo | Estágio | Foco | Geografia |
+| --- | --- | --- | --- |
+| [Eager Ventures](funds/uruguay/eager-ventures.md) | Pre-seed e Seed | Tecnologia, software e inteligência artificial | Uruguai |
+| [IC Ventures](funds/uruguay/ic-ventures.md) | Seed e Pré-Série A | Tecnologia, inteligência artificial e fintech | Uruguai, Argentina e América Latina |
+| [LAB+ Venture Fund](funds/uruguay/labplus-venture-fund.md) | Não divulgado publicamente | Ciências da vida, Saúde Única e biotecnologia | Uruguai e global |
+| [MrPink VC](funds/uruguay/mrpink-vc.md) | Early stage | Conexão humana, impacto e tecnologia | Uruguai, América Latina e Espanha |
+| [Tokai Ventures](funds/uruguay/tokai-ventures.md) | Seed | Proptech, entretenimento, educação, biotecnologia e impacto | Uruguai, Argentina, Estados Unidos, Israel e América Latina |
 
 ## Global com presença na América Latina
 
