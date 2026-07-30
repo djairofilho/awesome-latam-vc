@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "status": "awaiting_final_gate_after_blind_reconciliation",
+  "status": "approved_and_frozen",
   "reviewer_must_not_receive_candidate_list_before_blind_search": true,
   "blind_search_completed": true,
   "blind_search_isolation_confirmed": true,
