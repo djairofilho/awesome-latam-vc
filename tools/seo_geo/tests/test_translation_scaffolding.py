@@ -64,8 +64,8 @@ class TranslationScaffoldingTests(unittest.TestCase):
             source_commit="6c3eff32",
         )
 
-        self.assertEqual(document["profile_count"], 247)
-        self.assertEqual(len(document["batches"]), 10)
+        self.assertEqual(document["profile_count"], 256)
+        self.assertEqual(len(document["batches"]), 11)
         self.assertTrue(
             all(batch["profile_count"] <= 25 for batch in document["batches"])
         )

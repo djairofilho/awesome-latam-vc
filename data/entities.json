@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 247,
+    "entity_count": 256,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -1508,6 +1508,51 @@
       "verified_on": "2026-07-26"
     },
     {
+      "aliases": [
+        "Accion Venture Lab"
+      ],
+      "base_geography": {
+        "code": "US",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR",
+        "NOT_DISCLOSED"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": "https://www.accion.org/how-we-work/investment-strategies/accion-impact-management/accion-ventures/",
+      "id": "fund:accion-ventures",
+      "name": "Accion Ventures",
+      "official_website": "https://www.accion.org/how-we-work/investment-strategies/accion-impact-management/accion-ventures/",
+      "operator": "Accion Impact Management",
+      "source_profile": "funds/multi-country/accion-ventures.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "Accion Ventures strategy and pitch route",
+          "url": "https://www.accion.org/how-we-work/investment-strategies/accion-impact-management/accion-ventures/"
+        },
+        {
+          "kind": "official_website",
+          "title": "Accion and Accion Impact Management contact page",
+          "url": "https://www.accion.org/contact/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "BackChannel seed round",
+          "url": "https://www.accion.org/news/backchannel-raises-4-75-million-in-seed-round-to-reduce-textile-waste-in-brazil/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Accion Ventures is an Accion Impact Management early-stage investment strategy with recurring startup investments and verified access to founders in Brazil.",
+      "verified_on": "2026-07-30"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "BR",
@@ -2003,6 +2048,49 @@
       ],
       "summary": "Angel Ventures is an investment organization focused on Technology, sector agnostic in Latin America.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "SG",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR",
+        "NOT_DISCLOSED"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": "https://www.antler.co/location/brazil",
+      "id": "fund:antler",
+      "name": "Antler",
+      "official_website": "https://www.antler.co/",
+      "operator": null,
+      "source_profile": "funds/multi-country/antler.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "Antler in Brazil",
+          "url": "https://www.antler.co/location/brazil"
+        },
+        {
+          "kind": "official_website",
+          "title": "Antler in Singapore",
+          "url": "https://www.antler.co/location/singapore"
+        },
+        {
+          "kind": "secondary",
+          "title": "BNDES announcement for Antler Brasil I",
+          "url": "https://agenciadenoticias.bndes.gov.br/bndes/BNDES-e-Finep-anunciam-edital-de-fundo-para-startups-com-capital-de-R%24-250-mi-e-investimento-em-fundo-da-Antler/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Antler is a Singapore-based venture capital firm with a permanent Brazil operation, direct startup investments, and an open founder application route.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -2514,6 +2602,40 @@
       ],
       "summary": "Bossa Invest (Bossanova) is an investment organization focused on B2B and B2B2C technology in Brazil.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [
+        "Fundo de CVC do BS2"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "small_and_medium_businesses"
+      ],
+      "founder_route": null,
+      "id": "fund:bs2-ventures",
+      "name": "BS2 Ventures",
+      "official_website": "https://blog.bancobs2.com.br/banco-bs2-fundo-de-cvc-solucoes-pmes/",
+      "operator": null,
+      "source_profile": "funds/brazil/bs2-ventures.md",
+      "sources": [
+        {
+          "kind": "official_activity",
+          "title": "Banco BS2 launches its corporate venture capital fund",
+          "url": "https://blog.bancobs2.com.br/banco-bs2-fundo-de-cvc-solucoes-pmes/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "BS2 Ventures is Banco BS2's Brazil-based corporate venture capital fund for companies building solutions for small and medium-sized businesses.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -5467,6 +5589,43 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:l4-venture-builder",
+      "name": "L4 Venture Builder",
+      "official_website": "https://www.l4vb.com/",
+      "operator": null,
+      "source_profile": "funds/brazil/l4-venture-builder.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "L4 Venture Builder official website and portfolio",
+          "url": "https://www.l4vb.com/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "B3 report on L4 Venture Builder operations",
+          "url": "https://www.b3.com.br/pt_br/noticias/l4-venture-builder.htm"
+        }
+      ],
+      "stages": [
+        "growth"
+      ],
+      "summary": "L4 Venture Builder is a Brazil-based independent single-LP growth fund created in 2023 with capital from B3 and a portfolio of direct company investments.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "GLOBAL",
         "kind": "global"
       },
@@ -5957,6 +6116,46 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "ES",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR",
+        "LATAM",
+        "CARIBBEAN",
+        "NOT_DISCLOSED"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:mundi-ventures",
+      "name": "Mundi Ventures",
+      "official_website": "https://www.mundiventures.com/",
+      "operator": null,
+      "source_profile": "funds/multi-country/mundi-ventures.md",
+      "sources": [
+        {
+          "kind": "official_activity",
+          "title": "Mundi Ventures LatAm Fund I first closing",
+          "url": "https://www.mundiventures.com/post/mundi-ventures-announces-its-latam-fund-i-first-closing"
+        },
+        {
+          "kind": "official_activity",
+          "title": "IDB Invest commitment to Mundi Ventures LatAm Fund I",
+          "url": "https://www.mundiventures.com/post/idb-invest-commits-us-5-million-to-mundi-ventures-latam-fund-i"
+        }
+      ],
+      "stages": [
+        "growth"
+      ],
+      "summary": "Mundi Ventures is a Spain-based venture capital firm whose LatAm Fund I invests in early-growth companies across Latin America and the Caribbean, including Brazil.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "LATAM",
         "kind": "region"
       },
@@ -6390,6 +6589,40 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "US",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR",
+        "LATAM",
+        "NOT_DISCLOSED"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:parceiro-ventures",
+      "name": "Parceiro Ventures",
+      "official_website": "https://parceiroventures.com/",
+      "operator": null,
+      "source_profile": "funds/multi-country/parceiro-ventures.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Parceiro Ventures thesis, portfolio, and activity",
+          "url": "https://parceiroventures.com/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Parceiro Ventures is a United States-based venture capital firm investing across Latin America, with verified portfolio activity in Brazil.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "LATAM",
         "kind": "region"
       },
@@ -6555,6 +6788,52 @@
       ],
       "summary": "Primus Ventures is an investment organization focused on B2B technology in Southern Brazil.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [
+        "Naspers Ventures"
+      ],
+      "base_geography": {
+        "code": "NL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR",
+        "LATAM",
+        "NOT_DISCLOSED"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:prosus-ventures",
+      "name": "Prosus Ventures",
+      "official_website": "https://www.prosus.com/prosus-ventures",
+      "operator": "Prosus N.V.",
+      "source_profile": "funds/multi-country/prosus-ventures.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Prosus Ventures strategy and portfolio",
+          "url": "https://www.prosus.com/prosus-ventures"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Prosus Ventures investment in VOA Health",
+          "url": "https://www.prosus.com/news-insights/2025/prosus-ventures-invests-in-voa-health-seed-round-to-advance-its-ai-powered-assistant"
+        },
+        {
+          "kind": "official_website",
+          "title": "Prosus Annual Report 2025",
+          "url": "https://www.prosus.com/~/media/Files/P/prosus-corp-v2/results-reports-and-events-archive/annual-report/2025/fy2025-annual-report.pdf"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Prosus Ventures is Prosus's Netherlands-based investment arm, with a recurring Latin America strategy and multiple portfolio companies in Brazil.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -7760,6 +8039,49 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:upload-ventures",
+      "name": "Upload Ventures",
+      "official_website": "https://www.upload.ventures/",
+      "operator": null,
+      "source_profile": "funds/brazil/upload-ventures.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Upload Ventures company profile",
+          "url": "https://www.linkedin.com/company/upload-ventures/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "BotCity funding announcement",
+          "url": "https://blog.botcity.dev/pt-br/2025/09/30/levantamos-r-65-milhoes-para-governar-automacoes-criadas-por-ai/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Neofin seed funding announcement",
+          "url": "https://www.neofin.com.br/release/janeiro-2025"
+        }
+      ],
+      "stages": [
+        "multi_stage"
+      ],
+      "summary": "Upload Ventures is a São Paulo-based venture capital fund investing in early and growth-stage companies across Latin America, including Brazil.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "LATAM",
         "kind": "region"
       },
@@ -8041,6 +8363,43 @@
       ],
       "summary": "Veronorte is a thesis-driven investment organization that backs venture funds and companies connected to sustainable development and wellbeing in Latin America.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:vibra-ventures",
+      "name": "Vibra Ventures",
+      "official_website": "https://vibraenergia.com.br/",
+      "operator": null,
+      "source_profile": "funds/brazil/vibra-ventures.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Vibra 2024 Integrated Report",
+          "url": "https://vibraenergia.com.br/sites/default/files/2025-05/Relat%C3%B3rio%20Integrado_Vibra_2024_PTBR.pdf"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Vibra at Web Summit Rio 2026",
+          "url": "https://www.vibraenergia.com.br/sites/default/files/2026-06/08.06.2026_Release%20Vibra%20no%20WebSummitRio2026_V4.docx_.pdf"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Vibra Ventures is Vibra Energia's Brazil-based corporate venture capital fund, created in 2022 with a BRL 150 million capital commitment.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
