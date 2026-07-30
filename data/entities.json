@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 291,
+    "entity_count": 294,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -2607,6 +2607,57 @@
         "not_disclosed"
       ],
       "summary": "BB Ventures is Banco do Brasil's Brazilian corporate venture capital fund, managed by MSW Capital and investing directly in startups.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "AR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "AR",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "impact",
+        "climate_technology",
+        "agriculture",
+        "energy_transition"
+      ],
+      "founder_route": "https://betaimpacto.vc/",
+      "id": "fund:beta-impacto",
+      "name": "Beta Impacto",
+      "official_website": "https://betaimpacto.vc/",
+      "operator": null,
+      "source_profile": "funds/argentina/beta-impacto.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Beta Impacto",
+          "url": "https://betaimpacto.vc/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Beta Impacto: impact",
+          "url": "https://betaimpacto.vc/impacto/"
+        },
+        {
+          "kind": "official_thesis",
+          "title": "Xeibo",
+          "url": "https://xeibocapital.com/"
+        },
+        {
+          "kind": "secondary",
+          "title": "ANII: Beta Impacto",
+          "url": "https://anii.org.uy/emprendimientos/organizaciones-de-capital-emprendedor/532/beta-impacto/"
+        }
+      ],
+      "stages": [
+        "pre_seed"
+      ],
+      "summary": "Beta Impacto is an Argentina-based impact venture capital fund investing in scalable early-stage companies across Latin America.",
       "verified_on": "2026-07-30"
     },
     {
@@ -7681,6 +7732,53 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "AR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "AR",
+        "UY"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "fintech",
+        "cryptocurrency",
+        "agritech"
+      ],
+      "founder_route": "https://pmyx.com.ar/#aplicar",
+      "id": "fund:primary-x",
+      "name": "Primary X",
+      "official_website": "https://pmyx.com.ar/",
+      "operator": null,
+      "source_profile": "funds/argentina/primary-x.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Primary X",
+          "url": "https://pmyx.com.ar/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "A3 Mercados 2025 financial statements",
+          "url": "https://a3mercados.com.ar/wp-content/uploads/2025/10/Memoria-y-Estados-Financieros-A3-DIGITAL-25.pdf"
+        },
+        {
+          "kind": "official_activity",
+          "title": "A3 Mercados 2026 financial statements",
+          "url": "https://a3mercados.com.ar/wp-content/uploads/2026/04/Memoria-y-estados-financieros-A3-DIGITAL-Ejercicio-N%C2%B0-118-26.pdf"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed",
+        "series_a"
+      ],
+      "summary": "Primary X is A3 Mercados' Argentina-based corporate venture capital unit for early-stage fintech, crypto and agrifintech startups.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "BR",
         "kind": "country"
       },
@@ -8230,6 +8328,52 @@
       ],
       "summary": "RX Ventures is Lojas Renner S.A.'s corporate venture capital vehicle for startups shaping the future of fashion, retail, and lifestyle.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "b2b_saas",
+        "software",
+        "artificial_intelligence"
+      ],
+      "founder_route": "https://memo.saasholic.com/",
+      "id": "fund:saasholic",
+      "name": "SaaSholic",
+      "official_website": "https://www.saasholic.com/",
+      "operator": null,
+      "source_profile": "funds/brazil/saasholic.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "SaaSholic",
+          "url": "https://www.saasholic.com/"
+        },
+        {
+          "kind": "official_application",
+          "title": "SaaSholic for founders",
+          "url": "https://www.saasholic.com/founders"
+        },
+        {
+          "kind": "secondary",
+          "title": "SaaSholic company profile",
+          "url": "https://www.linkedin.com/company/saasholic"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "SaaSholic is a São Paulo-based early-stage venture capital firm investing in SaaS and B2B software companies across Latin America.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],

@@ -105,9 +105,11 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 
 | Fondo | Etapa | Enfoque | Geografía |
 | --- | --- | --- | --- |
+| [Beta Impacto](funds/argentina/beta-impacto.md) | Pre-seed | Impacto, tecnología climática, agricultura y transición energética | Argentina y América Latina |
 | [BYMA Ventures](funds/argentina/byma-ventures.md) | No divulgado públicamente | Fintech, infraestructura de mercado y ciberseguridad | Argentina y América Latina |
 | [Embarca Ventures](funds/argentina/embarca-ventures.md) | No divulgado públicamente | Tecnología | Argentina y América Latina |
 | [Globant Ventures](funds/argentina/globant-ventures.md) | Seed y Serie A | Inteligencia artificial, blockchain y futuro del trabajo | Global |
+| [Primary X](funds/argentina/primary-x.md) | Pre-seed, Seed y Serie A | Fintech, cripto y agrifintech | Argentina y Uruguay |
 | [Sancor Seguros Ventures](funds/argentina/sancor-seguros-ventures.md) | No divulgado públicamente | Insurtech y tecnología | Argentina y América Latina |
 | [SHEFA Holding](funds/argentina/shefa-holding.md) | No divulgado públicamente | Tecnología inmobiliaria y agtech | Argentina y América Latina |
 
@@ -168,6 +170,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [RD Saúde Ventures](funds/brazil/rd-saude-ventures.md) | No divulgado públicamente | Salud, bienestar y comercio farmacéutico | Brasil |
 | [Redpoint eventures](funds/brazil/redpoint-eventures.md) | Multietapa | Tecnología | Brasil |
 | [RX Ventures](funds/brazil/rx-ventures.md) | Seed y Serie A | Moda, comercio minorista, lifestyle y marcas responsables | Global |
+| [SaaSholic](funds/brazil/saasholic.md) | Pre-seed y Seed | SaaS, AI-SaaS y software B2B | Brasil y América Latina |
 | [Scale-Up Ventures](funds/brazil/scale-up-ventures.md) | Seed y Serie A | Empresas de la red Endeavor | Brasil |
 | [Sinergia Investimentos](funds/brazil/sinergia-investimentos.md) | Pre-seed y Seed | Bioeconomía amazónica y negocios regenerativos | Amazonía brasileña |
 | [SLC Ventures](funds/brazil/slc-ventures.md) | No divulgado públicamente | Tecnología para el agronegocio y agricultura sostenible | No divulgado públicamente |
