@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "status": "approved",
+  "reviewer": "integrator /root",
+  "reviewed_on": "2026-07-30",
+  "blind_search_reconciled": true,
+  "candidate_universe": 53,
+  "critical_or_high_findings_open": 0,
+  "regulator_queries": 2,
+  "regulator_query_share": 0.0377,
+  "regulator_exception": "The blind search expanded the denominator after the two legitimate identity questions were resolved. No purposeless query was added to meet a percentage.",
+  "approved_new_eligible": [
+    "cand-258-venture-do",
+    "cand-258-ato"
+  ],
+  "approved_profile_updates": [
+    "cand-258-caricaco",
+    "cand-258-parallel18-vcap",
+    "cand-258-morro",
+    "cand-258-innogen"
+  ],
+  "notes": [
+    "ATO Ventures was independently revalidated against its current official and manager-authored pages.",
+    "Every blind-search lead has a terminal decision and evidence record.",
+    "Cuba and Haiti gaps are evidence-qualified and do not assert market nonexistence."
+  ]
+}

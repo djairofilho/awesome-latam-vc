@@ -13,10 +13,11 @@
   "aliases": [],
   "operator": null,
   "base_geography": {
-    "kind": "region",
-    "code": "LATAM"
+    "kind": "country",
+    "code": "CR"
   },
   "countries_covered": [
+    "CR",
     "DO"
   ],
   "stages": [
@@ -41,7 +42,7 @@
       "kind": "official_website"
     }
   ],
-  "last_verified": "2026-07-27",
+  "last_verified": "2026-07-30",
   "protected_terms": [
     "Caricaco Ventures"
   ]
@@ -61,7 +62,7 @@ Central America and the Dominican Republic.
 - **Stage at entry:** Not publicly disclosed
 - **Follow-on stages:** Not publicly disclosed
 - **Focus:** Software, artificial intelligence, and purpose-driven technology
-- **Geography:** Central America and the Dominican Republic
+- **Geography:** Costa Rica, Central America, and the Dominican Republic
 - **Initial check:** From USD 200,000
 - **Investment role:** First-check investor
 - **Business models:** Software and AI-native startups with an MVP
@@ -86,4 +87,4 @@ The official 2026 launch reports 27 companies across six countries and plans
 - [CV2 launch and investment criteria](https://caricaco.vc/en/blog/introducing-cv2-the-first-check-for-global-founders-from-central-america-and-the-dominican-republic/)
 - [Caricaco Ventures](https://caricaco.vc/)
 
-**Last verified:** 2026-07-27
+**Last verified:** 2026-07-30

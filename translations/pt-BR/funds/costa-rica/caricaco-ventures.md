@@ -13,10 +13,11 @@
   "aliases": [],
   "operator": null,
   "base_geography": {
-    "kind": "region",
-    "code": "LATAM"
+    "kind": "country",
+    "code": "CR"
   },
   "countries_covered": [
+    "CR",
     "DO"
   ],
   "stages": [
@@ -41,7 +42,7 @@
       "kind": "official_website"
     }
   ],
-  "last_verified": "2026-07-27",
+  "last_verified": "2026-07-30",
   "protected_terms": [
     "Caricaco Ventures"
   ]
@@ -60,7 +61,7 @@ Caricaco Ventures investe em software e startups nativas da AI conectadas à Am�
 - **Estágio de entrada:** Não divulgado publicamente
 - **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Software, inteligência artificial e tecnologia orientada por propósitos
-- **Geografia:** América Central e República Dominicana
+- **Geografia:** Costa Rica, América Central e República Dominicana
 - **Cheque inicial:** A partir do USD 200,000
 - **Papel no investimento:** Primeiro-cheque investidor
 - **Modelos de negócio:** Software e startups nativas da AI com um MVP
@@ -81,4 +82,4 @@ O lançamento oficial de 2026 informa 27 empresas investidas em seis países e p
 - [CV2 launch and investment criteria](https://caricaco.vc/en/blog/introducing-cv2-the-first-check-for-global-founders-from-central-america-and-the-dominican-republic/)
 - [Caricaco Ventures](https://caricaco.vc/)
 
-**Última verificação:** 2026-07-27
+**Última verificação:** 2026-07-30

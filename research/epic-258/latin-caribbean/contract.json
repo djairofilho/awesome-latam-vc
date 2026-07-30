@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "epic": 258,
+  "issues": [
+    304,
+    305,
+    306,
+    307,
+    308
+  ],
+  "cutoff_date": "2026-07-30",
+  "territories": [
+    {
+      "name": "Dominican Republic",
+      "code": "DO",
+      "catalog_kind": "country"
+    },
+    {
+      "name": "Puerto Rico",
+      "code": "PR",
+      "catalog_kind": "country"
+    },
+    {
+      "name": "Cuba",
+      "code": "CU",
+      "catalog_kind": "country"
+    },
+    {
+      "name": "Haiti",
+      "code": "HT",
+      "catalog_kind": "country"
+    }
+  ],
+  "eligible_gates": {
+    "official_identity": true,
+    "direct_startup_investment": true,
+    "recurring_investment": true,
+    "activity_within_24_months": true,
+    "explicit_market_access": true,
+    "official_sources_required": true,
+    "external_founder_route": "required_or_explicitly_not_disclosed"
+  },
+  "terminal_decisions": [
+    "eligible",
+    "duplicate",
+    "routed",
+    "excluded",
+    "insufficient_evidence"
+  ],
+  "regulatory_policy": {
+    "target_share": "5%–10% of canonical candidates",
+    "allowed_purposes": [
+      "identity",
+      "divergence"
+    ],
+    "prohibited_purposes": [
+      "discovery",
+      "eligibility",
+      "thesis",
+      "activity",
+      "portfolio"
+    ],
+    "eligibility_from_regulator_alone": false
+  },
+  "publication": {
+    "batch_size_limit": 10,
+    "locales": [
+      "en",
+      "pt-BR",
+      "es"
+    ],
+    "freeze_required": true,
+    "independent_review_required": true
+  },
+  "prohibited_inputs": [
+    "local startup archive",
+    "regulatory records as discovery sources",
+    "paywalled database counts as eligibility evidence",
+    "catalog profiles as discovery sources"
+  ]
+}
