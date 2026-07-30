@@ -14,7 +14,22 @@
     "cvm_consulted_candidate_count": {"type": "integer", "minimum": 0},
     "cvm_query_rate": {"type": "number", "minimum": 0, "maximum": 0.1},
     "non_cvm_task_share": {"type": "number", "minimum": 0.9, "maximum": 1},
-    "decision_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "decision_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "eligible": {"type": "integer", "minimum": 0},
+        "duplicate": {"type": "integer", "minimum": 0},
+        "routed_accelerators": {"type": "integer", "minimum": 0},
+        "routed_angel_networks": {"type": "integer", "minimum": 0},
+        "routed_funding_platforms": {"type": "integer", "minimum": 0},
+        "routed_public_programs": {"type": "integer", "minimum": 0},
+        "routed_other": {"type": "integer", "minimum": 0},
+        "inactive": {"type": "integer", "minimum": 0},
+        "insufficient_evidence": {"type": "integer", "minimum": 0},
+        "excluded": {"type": "integer", "minimum": 0}
+      }
+    },
     "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}},
     "generated_on": {"type": "string", "format": "date"}
   }

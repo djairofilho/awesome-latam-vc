@@ -9,12 +9,12 @@ EPIC_ROOT = Path(__file__).resolve().parents[1]
 
 EXPECTED_SCHEMAS = {
     "audit-report.schema.json",
-    "coverage-record.schema.json",
+    "coverage-matrix.schema.json",
     "cvm-query.schema.json",
     "evidence.schema.json",
-    "fund-candidate.schema.json",
+    "candidate.schema.json",
     "identity-resolution.schema.json",
-    "review-record.schema.json",
+    "review-sample.schema.json",
     "run-manifest-record.schema.json",
     "source-inventory.schema.json",
 }
@@ -57,11 +57,13 @@ class ContractScaffoldTests(unittest.TestCase):
             contracts: list[dict] = []
             if schema.get("type") == "object":
                 contracts.append(schema)
-            contracts.extend(
-                definition
-                for definition in schema.get("$defs", {}).values()
-                if definition.get("type") == "object"
-            )
+            for value in schema.values():
+                if isinstance(value, dict):
+                    contracts.extend(object_contracts(value))
+                elif isinstance(value, list):
+                    for item in value:
+                        if isinstance(item, dict):
+                            contracts.extend(object_contracts(item))
             return contracts
 
         for filename in EXPECTED_SCHEMAS:

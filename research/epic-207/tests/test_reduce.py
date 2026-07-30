@@ -33,11 +33,11 @@ class Epic207ReducerTests(unittest.TestCase):
         expected = {
             "cvm-queries": "cvm-query-log.jsonl",
             "identity": "identity-resolution.jsonl",
-            "review": "review-sample.jsonl",
+            "reviews": "review-sample.jsonl",
         }
         for kind, filename in expected.items():
             with self.subTest(kind=kind):
-                self.assertEqual(filename, reducer.ARTIFACTS.get(kind))
+                self.assertEqual(filename, reducer.KINDS.get(kind)[0])
 
     def test_candidate_reduction_is_deterministic_across_creation_order(self) -> None:
         reducer = load_reducer()
@@ -79,7 +79,7 @@ class Epic207ReducerTests(unittest.TestCase):
                     encoding="utf-8",
                 )
             destination = root / "brazil" / "candidates.jsonl"
-            with self.assertRaisesRegex(ValueError, "conflicting record"):
+            with self.assertRaisesRegex(ValueError, "duplicate ID"):
                 reducer.reduce_shards(root, "candidates", destination)
 
 

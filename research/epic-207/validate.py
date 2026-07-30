@@ -56,6 +56,8 @@ HASHED_ARTIFACTS = tuple(
     if filename not in {"run-manifest.jsonl", "audit-report.json"}
 )
 MOJIBAKE_MARKERS = (
+    "Ã",
+    "Â",
     "Ãƒ",
     "Ã‚",
     "ï¿½",
@@ -217,7 +219,11 @@ def _validate_manifest(
     total_research = sum(completed_research.values())
     if total_research and completed_research["non_cvm"] / total_research < 0.90:
         errors.append("run-manifest.jsonl: non_cvm_task_share abaixo de 90%")
-    if run.get("status") == "frozen":
+    hashes_declared = (
+        run.get("hash_algorithm") is not None
+        or run.get("artifact_hashes") is not None
+    )
+    if run.get("status") == "frozen" or hashes_declared:
         if run.get("hash_algorithm") != "sha256":
             errors.append("run-manifest.jsonl: freeze deve usar sha256")
         hashes = run.get("artifact_hashes")
@@ -339,6 +345,21 @@ def _validate_relations(
             if cutoff and activity and activity < _subtract_months(cutoff, 24):
                 errors.append(
                     f"candidates.jsonl: atividade fora da janela em {candidate_id}"
+                )
+            activity_evidence_dates = {
+                item.get("observed_on")
+                for item in evidence_by_candidate.get(candidate_id, [])
+                if item.get("source_class") == "official"
+                and any(
+                    claim.get("field") == "activity"
+                    and claim.get("finding") == "confirmed"
+                    for claim in item.get("claims", [])
+                )
+            }
+            if candidate.get("latest_official_activity_on") not in activity_evidence_dates:
+                errors.append(
+                    f"candidates.jsonl: latest_official_activity_on de {candidate_id} "
+                    "não coincide com evidência oficial de activity"
                 )
     for start_id in candidates:
         seen: set[str] = set()

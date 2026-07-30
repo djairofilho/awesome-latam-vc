@@ -42,31 +42,31 @@ class ContractInvariantTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             dataset = Path(temporary)
             write_bundle(dataset, bundle)
-            return load_validator().validate_dataset(dataset)
+            return load_validator().validate_bundle(dataset)
 
     def test_valid_example_and_zero_cvm_queries_pass(self) -> None:
         self.assertEqual([], self.validate_bundle())
 
     def test_eligible_requires_official_evidence_for_every_gate(self) -> None:
         field_to_evidence = {
-            "investimento direto": "ev-example-direct_investment",
-            "recorrência": "ev-example-recurring_investment",
-            "atividade": "ev-example-recent_activity",
-            "acesso ao Brasil": "ev-example-brazil_relation",
-            "identidade": "ev-example-identity",
+            "direct_startup_investment": "direct_startup_investment",
+            "recurring_vc": "recurring_vc",
+            "activity": "activity",
+            "brazil_access": "brazil_access",
+            "identity": "identity",
         }
-        for expected, evidence_id in field_to_evidence.items():
+        for expected, claim_field in field_to_evidence.items():
             with self.subTest(gate=expected):
                 def mutate(
                     bundle: dict[str, Any],
-                    target: str = evidence_id,
+                    target: str = claim_field,
                 ) -> None:
-                    evidence = next(
-                        item
-                        for item in bundle["evidence.jsonl"]
-                        if item["evidence_id"] == target
-                    )
-                    evidence["source_type"] = "third_party"
+                    evidence = bundle["evidence.jsonl"][0]
+                    evidence["claims"] = [
+                        claim
+                        for claim in evidence["claims"]
+                        if claim["field"] != target
+                    ]
 
                 errors = self.validate_bundle(mutate)
                 self.assertTrue(any(expected in error for error in errors), errors)
@@ -75,14 +75,14 @@ class ContractInvariantTests(unittest.TestCase):
         def mutate(bundle: dict[str, Any]) -> None:
             source = bundle["source-inventory.jsonl"][0]
             source.update(
-                source_family="regulator",
+                source_family="cvm",
                 research_channel="cvm",
-                regulatory_source=True,
+                is_cvm=True,
                 discovery_allowed=False,
             )
 
         errors = self.validate_bundle(mutate)
-        self.assertTrue(any("origem não-CVM" in error for error in errors), errors)
+        self.assertTrue(any("origem CVM proibida" in error for error in errors), errors)
 
     def test_cvm_policy_has_a_ten_percent_ceiling_and_no_floor(self) -> None:
         self.assertEqual([], self.validate_bundle(), "zero consulta CVM deve ser válido")
@@ -91,47 +91,48 @@ class ContractInvariantTests(unittest.TestCase):
             bundle["cvm-query-log.jsonl"].append(
                 {
                     "schema_version": "1.0",
-                    "query_id": "cvm-query-example",
-                    "candidate_id": "fund-example-org",
+                    "query_id": "cvm-query-fund-br-example",
+                    "candidate_id": "fund-br-example-ventures",
                     "question": "Qual entidade administra o veículo?",
                     "searched_identifier": "Example Fundo I",
                     "reference": "https://cvm.gov.br/example",
                     "accessed_on": "2026-07-30",
-                    "minimum_fact": "manager_vehicle_relation",
+                    "minimum_fact": "A relação entre gestora e veículo.",
                     "divergence": None,
                     "outcome": "confirmed",
-                    "preexisting_non_cvm_source_ids": ["src-example-rounds"],
+                    "confirmed_claims": ["manager_vehicle_relation"],
                     "owner": "adjudicator",
                     "next_action": None,
                 }
             )
 
         errors = self.validate_bundle(mutate)
-        self.assertTrue(any("teto CVM de 10%" in error for error in errors), errors)
+        self.assertTrue(any("excedem 10%" in error for error in errors), errors)
 
     def test_cvm_query_requires_preexisting_non_cvm_provenance(self) -> None:
         def mutate(bundle: dict[str, Any]) -> None:
             bundle["cvm-query-log.jsonl"].append(
                 {
                     "schema_version": "1.0",
-                    "query_id": "cvm-query-example",
-                    "candidate_id": "fund-example-org",
+                    "query_id": "cvm-query-fund-br-example",
+                    "candidate_id": "fund-br-example-ventures",
                     "question": "Qual entidade administra o veículo?",
                     "searched_identifier": "Example Fundo I",
                     "reference": "https://cvm.gov.br/example",
                     "accessed_on": "2026-07-30",
-                    "minimum_fact": "manager_vehicle_relation",
+                    "minimum_fact": "A relação entre gestora e veículo.",
                     "divergence": None,
                     "outcome": "confirmed",
-                    "preexisting_non_cvm_source_ids": [],
+                    "confirmed_claims": ["manager_vehicle_relation"],
                     "owner": "adjudicator",
                     "next_action": None,
                 }
             )
+            bundle["evidence.jsonl"][0]["accessed_on"] = "2026-07-31"
 
         errors = self.validate_bundle(mutate)
         self.assertTrue(
-            any("proveniência não-CVM anterior" in error for error in errors),
+            any("validação oficial anterior" in error for error in errors),
             errors,
         )
 
@@ -142,14 +143,14 @@ class ContractInvariantTests(unittest.TestCase):
             ]
 
         errors = self.validate_bundle(mutate)
-        self.assertTrue(any("referência órfã" in error for error in errors), errors)
+        self.assertTrue(any("fonte órfã" in error for error in errors), errors)
 
     def test_candidate_identity_references_cannot_form_cycles(self) -> None:
         def mutate(bundle: dict[str, Any]) -> None:
             first = bundle["candidates.jsonl"][0]
             second = copy.deepcopy(first)
             second.update(
-                candidate_id="fund-example-two",
+                candidate_id="fund-br-example-two",
                 canonical_candidate_id=first["candidate_id"],
                 identity_resolution_ids=[],
                 decision="duplicate",
@@ -168,16 +169,22 @@ class ContractInvariantTests(unittest.TestCase):
     def test_recent_activity_must_be_official_and_within_24_months(self) -> None:
         def mutate(bundle: dict[str, Any]) -> None:
             candidate = bundle["candidates.jsonl"][0]
-            candidate["last_official_activity_on"] = "2024-07-29"
-            evidence = next(
-                item
-                for item in bundle["evidence.jsonl"]
-                if item["evidence_id"] == "ev-example-recent_activity"
-            )
+            candidate["latest_official_activity_on"] = "2024-07-29"
+            evidence = bundle["evidence.jsonl"][0]
             evidence["observed_on"] = "2024-07-29"
 
         errors = self.validate_bundle(mutate)
-        self.assertTrue(any("janela de 24 meses" in error for error in errors), errors)
+        self.assertTrue(any("atividade fora da janela" in error for error in errors), errors)
+
+    def test_latest_activity_must_match_official_activity_evidence(self) -> None:
+        def mutate(bundle: dict[str, Any]) -> None:
+            bundle["candidates.jsonl"][0]["latest_official_activity_on"] = "2026-05-31"
+
+        errors = self.validate_bundle(mutate)
+        self.assertTrue(
+            any("não coincide com evidência oficial de activity" in error for error in errors),
+            errors,
+        )
 
     def test_workers_cannot_share_or_escape_shards(self) -> None:
         for case in ("shared", "traversal"):
@@ -221,7 +228,7 @@ class ContractInvariantTests(unittest.TestCase):
             candidate["name"] = "Tampered Ventures"
             write_bundle(dataset, bundle)
 
-            errors = load_validator().validate_dataset(dataset)
+            errors = load_validator().validate_bundle(dataset)
 
         self.assertTrue(
             any("hash divergente para candidates.jsonl" in error for error in errors),
