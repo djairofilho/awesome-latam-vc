@@ -10,14 +10,18 @@ A curated list of Venture Capital funds investing in Latin America.
 - [Brazil](#brazil)
 - [Chile](#chile)
 - [Colombia](#colombia)
+- [Costa Rica](#costa-rica)
+- [Dominican Republic](#dominican-republic)
+- [El Salvador](#el-salvador)
 - [Mexico](#mexico)
 - [Peru](#peru)
+- [Puerto Rico](#puerto-rico)
 - [Uruguay](#uruguay)
 - [Global with LatAm Presence](#global-with-latam-presence)
 
 ---
 
-The index is optimized for quick comparison and currently covers 207 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
+The index is optimized for quick comparison and currently covers 209 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
 
 ## Pan-Latin America (LatAm based)
 
@@ -39,7 +43,6 @@ The index is optimized for quick comparison and currently covers 207 funds. All 
 | [Canary](funds/regional/canary.md) | Pre-seed, Seed, and Series A | Sector agnostic | Latin America |
 | [Carao Ventures](funds/regional/carao-ventures.md) | Not publicly disclosed | Technology | Central America and Latin America |
 | [Caravela Capital](funds/regional/caravela-capital.md) | Pre-seed and Seed | Technology | Latin America |
-| [Caricaco Ventures](funds/regional/caricaco-ventures.md) | Not publicly disclosed | Software and artificial intelligence | Central America and the Dominican Republic |
 | [Chile Ventures](funds/regional/chile-ventures.md) | Not publicly disclosed | Recurring-revenue technology | Chile and Latin America |
 | [CITES](funds/regional/cites.md) | Pre-seed, Seed, and Series A | Science-based deep tech | Argentina and Latin America |
 | [Cometa (ex-Variv)](funds/regional/cometa-variv.md) | Pre-seed, Seed, and Series A | Technology | Spanish-speaking Latin America |
@@ -57,7 +60,6 @@ The index is optimized for quick comparison and currently covers 207 funds. All 
 | [Impacta VC](funds/regional/impacta-vc.md) | Seed | Social and environmental impact | Latin America |
 | [IMPAQTO Capital](funds/regional/impaqto-capital.md) | Early stage; named rounds not disclosed | Social and environmental impact with a gender lens | Ecuador, Peru, Bolivia, Colombia, and Chile |
 | [Indicator Capital](funds/regional/indicator-capital.md) | Pre-seed and Seed | Deep tech | Latin America |
-| [Innogen Capital Ventures](funds/regional/innogen-capital-ventures.md) | Pre-seed, Seed, and Series A | Early-stage technology | Northern Latin America |
 | [Innventure](funds/regional/innventure.md) | Not publicly disclosed | AgTech and AgriFoodTech | Latin America |
 | [Itaú Ventures](funds/regional/itau-ventures.md) | Not publicly disclosed | Financial services and adjacent technologies | Brazil and Latin America |
 | [iThink VC](funds/regional/ithink-vc.md) | Pre-seed and Seed | Technology solving structural problems | Paraguay, Peru, Ecuador, Bolivia, and Uruguay |
@@ -70,12 +72,10 @@ The index is optimized for quick comparison and currently covers 207 funds. All 
 | [Manutara Ventures](funds/regional/manutara-ventures.md) | Seed and Series A | Technology | Chile and Latin America |
 | [MAYA Capital](funds/regional/maya-capital.md) | Pre-seed and Seed | Technology | Latin America |
 | [Monashees](funds/regional/monashees.md) | Not publicly disclosed | Technology | Latin America to global markets |
-| [Morro Ventures](funds/regional/morro-ventures.md) | Not publicly disclosed | Caribbean technology startups | Caribbean and Latin America |
 | [Nazca](funds/regional/nazca.md) | Multi-stage | Technology | Latin America |
 | [New Ventures Capital](funds/regional/new-ventures-capital.md) | Seed and Series A | Impact entrepreneurship | Latin America |
 | [Newtopia VC](funds/regional/newtopia-vc.md) | Not publicly disclosed | Technology, sector agnostic | Latin America |
 | [NXTP Ventures](funds/regional/nxtp-ventures.md) | Seed and Series A | B2B technology | Latin America |
-| [Parallel18 Ventures](funds/regional/parallel18-ventures.md) | Not publicly disclosed | Technology startups | Puerto Rico and international markets |
 | [Picus Capital](funds/regional/picus-capital.md) | Pre-seed, Seed, and Series A | Technology, sector agnostic | Global, including Latin America |
 | [Polymath Ventures](funds/regional/polymath-ventures.md) | Pre-seed and Seed | Human-centered businesses | Latin America |
 | [QED Investors](funds/regional/qed-investors.md) | Multi-stage | Fintech | Global, including Latin America |
@@ -203,6 +203,24 @@ The index is optimized for quick comparison and currently covers 207 funds. All 
 | [Simma Capital](funds/colombia/simma-capital.md) | Pre-seed and Seed | Scalable technology and fintech | Colombia and Latin America |
 | [Ventures Comfama](funds/colombia/ventures-comfama.md) | Not publicly disclosed | Emerging technologies and socially impactful business models | Colombia |
 
+## Costa Rica
+
+| Fund | Stage | Focus | Geography |
+| --- | --- | --- | --- |
+| [Caricaco Ventures](funds/costa-rica/caricaco-ventures.md) | Not publicly disclosed | Software and artificial intelligence | Central America and the Dominican Republic |
+
+## Dominican Republic
+
+| Fund | Stage | Focus | Geography |
+| --- | --- | --- | --- |
+| [Venture.do](funds/dominican-republic/venture-do.md) | Pre-seed and Seed | B2B software and SaaS | Latin America |
+
+## El Salvador
+
+| Fund | Stage | Focus | Geography |
+| --- | --- | --- | --- |
+| [Innogen Capital Ventures](funds/el-salvador/innogen-capital-ventures.md) | Pre-seed, Seed, and Series A | Early-stage technology | Northern Latin America |
+
 ## Mexico
 
 | Fund | Stage | Focus | Geography |
@@ -215,6 +233,14 @@ The index is optimized for quick comparison and currently covers 207 funds. All 
 | Fund | Stage | Focus | Geography |
 | --- | --- | --- | --- |
 | [GRPP Ventures](funds/peru/rpp-ventures.md) | Not publicly disclosed | Scalable technology | Peru |
+
+## Puerto Rico
+
+| Fund | Stage | Focus | Geography |
+| --- | --- | --- | --- |
+| [ATO Ventures](funds/puerto-rico/ato-ventures.md) | Pre-seed and Seed | Technology, health and wellness, and digital media | United States and Latin America |
+| [Morro Ventures](funds/puerto-rico/morro-ventures.md) | Not publicly disclosed | Caribbean technology startups | Caribbean and Latin America |
+| [Parallel18 Ventures](funds/puerto-rico/parallel18-ventures.md) | Pre-seed, Seed, and Series A | Sector agnostic and strategic industries | Puerto Rico |
 
 ## Uruguay
 

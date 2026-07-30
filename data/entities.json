@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 282,
+    "entity_count": 284,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -2237,6 +2237,49 @@
       "verified_on": "2026-07-26"
     },
     {
+      "aliases": [
+        "Against The Odds Ventures"
+      ],
+      "base_geography": {
+        "code": "PR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM",
+        "US"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "health_and_wellness",
+        "digital_media"
+      ],
+      "founder_route": "https://www.validstartup.com/",
+      "id": "fund:ato-ventures",
+      "name": "ATO Ventures",
+      "official_website": "https://atoventures.com/",
+      "operator": null,
+      "source_profile": "funds/puerto-rico/ato-ventures.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Jennifer P. Hopp and ATO Ventures",
+          "url": "https://www.validstartup.com/jenniferphopp"
+        },
+        {
+          "kind": "official_application",
+          "title": "Valid Startup",
+          "url": "https://www.validstartup.com/"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "ATO Ventures is a Puerto Rico-based pre-seed and seed investor backing technology companies in the United States and Latin America.",
+      "verified_on": "2026-07-30"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "LATAM",
@@ -3016,10 +3059,11 @@
     {
       "aliases": [],
       "base_geography": {
-        "code": "LATAM",
-        "kind": "region"
+        "code": "CR",
+        "kind": "country"
       },
       "countries_covered": [
+        "CR",
         "DO"
       ],
       "entity_type": "fund",
@@ -3033,7 +3077,7 @@
       "name": "Caricaco Ventures",
       "official_website": "https://caricaco.vc/",
       "operator": null,
-      "source_profile": "funds/regional/caricaco-ventures.md",
+      "source_profile": "funds/costa-rica/caricaco-ventures.md",
       "sources": [
         {
           "kind": "official_website",
@@ -3050,7 +3094,7 @@
         "not_disclosed"
       ],
       "summary": "Caricaco Ventures invests in software and AI-native startups connected to Central America and the Dominican Republic.",
-      "verified_on": "2026-07-27"
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -5393,13 +5437,14 @@
     {
       "aliases": [],
       "base_geography": {
-        "code": "LATAM",
-        "kind": "region"
+        "code": "SV",
+        "kind": "country"
       },
       "countries_covered": [
         "CARIBBEAN",
         "CO",
-        "MX"
+        "MX",
+        "SV"
       ],
       "entity_type": "fund",
       "focuses": [
@@ -5415,7 +5460,7 @@
       "name": "Innogen Capital Ventures",
       "official_website": "https://innogencapital.com/",
       "operator": null,
-      "source_profile": "funds/regional/innogen-capital-ventures.md",
+      "source_profile": "funds/el-salvador/innogen-capital-ventures.md",
       "sources": [
         {
           "kind": "official_application",
@@ -5439,7 +5484,7 @@
         "series_a"
       ],
       "summary": "Innogen Capital Ventures invests in early-stage technology companies across northern Latin America.",
-      "verified_on": "2026-07-27"
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -6605,8 +6650,8 @@
     {
       "aliases": [],
       "base_geography": {
-        "code": "LATAM",
-        "kind": "region"
+        "code": "PR",
+        "kind": "country"
       },
       "countries_covered": [
         "CARIBBEAN",
@@ -6622,7 +6667,7 @@
       "name": "Morro Ventures",
       "official_website": "https://morroventures.com/",
       "operator": null,
-      "source_profile": "funds/regional/morro-ventures.md",
+      "source_profile": "funds/puerto-rico/morro-ventures.md",
       "sources": [
         {
           "kind": "official_website",
@@ -6639,7 +6684,7 @@
         "not_disclosed"
       ],
       "summary": "Morro Ventures is a Puerto Rico-based early-stage investor serving the Caribbean and Latin America.",
-      "verified_on": "2026-07-27"
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -7167,35 +7212,37 @@
     {
       "aliases": [],
       "base_geography": {
-        "code": "LATAM",
-        "kind": "region"
+        "code": "PR",
+        "kind": "country"
       },
       "countries_covered": [
-        "GLOBAL",
         "PR"
       ],
       "entity_type": "fund",
       "focuses": [
-        "technology_driven_startups_with_global_scaling_potential"
+        "sector_agnostic",
+        "strategic_industries_in_puerto_rico"
       ],
-      "founder_route": "https://parallel18.com/ventures/",
+      "founder_route": "https://parallel18.com/vcap/",
       "id": "fund:parallel18-ventures",
       "name": "Parallel18 Ventures",
-      "official_website": "https://parallel18.com/ventures/",
+      "official_website": "https://parallel18.com/vcap/",
       "operator": null,
-      "source_profile": "funds/regional/parallel18-ventures.md",
+      "source_profile": "funds/puerto-rico/parallel18-ventures.md",
       "sources": [
         {
           "kind": "official_application",
-          "title": "Parallel18 Ventures",
-          "url": "https://parallel18.com/ventures/"
+          "title": "Parallel18 Venture Capital Access Program",
+          "url": "https://parallel18.com/vcap/"
         }
       ],
       "stages": [
-        "not_disclosed"
+        "pre_seed",
+        "seed",
+        "series_a"
       ],
-      "summary": "Parallel18 Ventures is the investment platform within Parallel18 for startups scaling through Puerto Rico.",
-      "verified_on": "2026-07-27"
+      "summary": "Parallel18 Ventures operates Puerto Rico's Venture Capital Access Program for seed and early-stage companies building on the island.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -9341,6 +9388,47 @@
         "series_a"
       ],
       "summary": "Venturance is a Chile-based alternative asset manager investing in seed and Series A technology companies.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [
+        "Venture DO"
+      ],
+      "base_geography": {
+        "code": "DO",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "b2b_software",
+        "saas"
+      ],
+      "founder_route": "https://venture.do/funds",
+      "id": "fund:venture-do",
+      "name": "Venture.do",
+      "official_website": "https://venture.do/",
+      "operator": null,
+      "source_profile": "funds/dominican-republic/venture-do.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "Venture.do funds",
+          "url": "https://venture.do/funds"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Venture.do portfolio",
+          "url": "https://venture.do/portfolio"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Venture.do is a Dominican Republic-based early-stage fund investing in B2B software startups across Latin America.",
       "verified_on": "2026-07-30"
     },
     {
