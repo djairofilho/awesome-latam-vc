@@ -168,6 +168,35 @@ def queue_record(
     return record
 
 
+def reconcile_canonical_profile(
+    candidate: dict[str, Any],
+    catalog: list[dict[str, Any]],
+) -> None:
+    inherited = candidate.get("canonical_profile")
+    if not inherited:
+        return
+    catalog_paths = {record["profile_path"] for record in catalog}
+    if inherited in catalog_paths:
+        return
+
+    domain = candidate.get("canonical_domain")
+    domain_matches = [
+        record["profile_path"]
+        for record in catalog
+        if domain and record["identity_domain"] == domain
+    ]
+    if len(domain_matches) != 1:
+        raise ValueError(
+            "canonical_profile herdado sem destino único por domínio: "
+            f"{candidate['candidate_id']} -> {inherited}; "
+            f"domínio={domain!r}; correspondências={sorted(domain_matches)}"
+        )
+
+    candidate["inherited_canonical_profile"] = inherited
+    candidate["canonical_profile"] = domain_matches[0]
+    candidate["canonical_profile_resolution"] = "reconciled_by_unique_domain"
+
+
 def build_catalog() -> tuple[
     list[dict[str, Any]],
     list[dict[str, Any]],
@@ -240,6 +269,7 @@ def build_prior_memory(
     candidates: list[dict[str, Any]],
     sources: list[dict[str, Any]],
     evidence_urls: set[str],
+    catalog: list[dict[str, Any]],
 ) -> tuple[
     list[dict[str, Any]],
     list[dict[str, Any]],
@@ -292,6 +322,7 @@ def build_prior_memory(
     prior_candidates = []
     for line_number, record in enumerate(candidates, start=1):
         enriched = dict(record)
+        reconcile_canonical_profile(enriched, catalog)
         enriched["baseline_source"] = (
             "research/epic-16/issue-22/candidates.jsonl"
         )
@@ -300,6 +331,18 @@ def build_prior_memory(
         enriched["research_performed_by_issue_209"] = False
         prior_candidates.append(enriched)
     prior_candidates.sort(key=lambda record: record["candidate_id"])
+    catalog_paths = {record["profile_path"] for record in catalog}
+    orphan_profiles = sorted(
+        record["candidate_id"]
+        for record in prior_candidates
+        if record.get("canonical_profile") not in catalog_paths
+        and record.get("canonical_profile") is not None
+    )
+    if orphan_profiles:
+        raise ValueError(
+            "candidatos com canonical_profile órfão após reconciliação: "
+            + ", ".join(orphan_profiles)
+        )
 
     prior_sources = []
     for line_number, record in enumerate(sources, start=1):
@@ -392,7 +435,7 @@ def build_artifacts() -> dict[str, bytes]:
     sources = read_jsonl_bytes(source_data)
     evidence_urls = {record["url"] for record in evidence}
     prior_candidates, prior_sources, queues = build_prior_memory(
-        candidates, sources, evidence_urls
+        candidates, sources, evidence_urls, catalog
     )
 
     brazil_members = [

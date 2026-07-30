@@ -96,6 +96,46 @@ class BaselineTests(unittest.TestCase):
             dict(sorted(Counter(r["decision"] for r in original_candidates).items())),
         )
 
+    def test_positive_canonical_profiles_are_reconciled(self) -> None:
+        catalog_paths = {record["profile_path"] for record in self.catalog}
+        positive = [
+            record
+            for record in self.candidates
+            if record["decision"] in BUILD.POSITIVE_DECISIONS
+        ]
+        orphaned = [
+            record["candidate_id"]
+            for record in positive
+            if record.get("canonical_profile")
+            and record["canonical_profile"] not in catalog_paths
+        ]
+        self.assertEqual(orphaned, [])
+
+        expected_migrations = {
+            "cand-canary": "funds/regional/canary.md",
+            "cand-dgf-investimentos": "funds/regional/dgf-investimentos.md",
+            "cand-grupo-boticario-ventures": "funds/brazil/grupo-boticario-ventures.md",
+            "cand-itau-ventures": "funds/regional/itau-ventures.md",
+            "cand-monashees": "funds/regional/monashees.md",
+            "cand-spectra-investimentos-ltda": (
+                "funds/regional/spectra-investimentos.md"
+            ),
+        }
+        migrated = {
+            record["candidate_id"]: record
+            for record in self.candidates
+            if record.get("canonical_profile_resolution")
+        }
+        self.assertEqual(set(migrated), set(expected_migrations))
+        for candidate_id, expected_path in expected_migrations.items():
+            record = migrated[candidate_id]
+            self.assertEqual(record["canonical_profile"], expected_path)
+            self.assertEqual(
+                record["canonical_profile_resolution"],
+                "reconciled_by_unique_domain",
+            )
+            self.assertTrue(record["inherited_canonical_profile"])
+
     def test_queues_partition_each_record_once(self) -> None:
         candidate_members = [
             member
