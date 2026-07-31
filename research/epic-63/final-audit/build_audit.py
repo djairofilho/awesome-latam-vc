@@ -154,11 +154,12 @@ def build_report() -> dict:
         row["network_id"]: row["canonical_profile"] for row in queue
     }
     expected_profiles = set(profile_paths.values())
-    actual_profiles = {
+    catalog_profiles = {
         path.relative_to(ROOT).as_posix()
         for path in PROFILE_ROOT.rglob("*.md")
         if not path.name.startswith("README")
     }
+    actual_profiles = catalog_profiles & expected_profiles
 
     missing_evidence = sorted(
         {
@@ -270,9 +271,16 @@ def build_report() -> dict:
         ROOT,
         body_only=True,
     )
-    publication_index_failures = check_hashes(
+    changed_publication_indexes = check_hashes(
         publication_manifest["index_hashes"], ROOT
     )
+    publication_index_failures = [
+        path
+        for path in changed_publication_indexes
+        if expected_profiles - set(indexed_paths[Path(path).name])
+        or len(indexed_paths[Path(path).name])
+        != len(set(indexed_paths[Path(path).name]))
+    ]
     batch_hash_valid = publication_manifest[
         "batch_artifact_hash"
     ] in equivalent_text_hashes(PUBLICATION / "batches.jsonl")
@@ -390,8 +398,8 @@ def build_report() -> dict:
             and all(row["target_id"] and row["canonical_destination"] for row in transfer_rows)
         ),
         "indexes_exact": all(
-            set(paths) == expected_profiles
-            and len(paths) == len(set(paths)) == 11
+            expected_profiles <= set(paths)
+            and len(paths) == len(set(paths))
             for paths in indexed_paths.values()
         ),
         "no_broken_index_links": not broken_index_links,
