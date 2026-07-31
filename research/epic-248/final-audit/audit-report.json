@@ -1,0 +1,313 @@
+{
+  "schema_version": "1.0",
+  "epic": 248,
+  "cutoff_date": "2026-07-30",
+  "status": "passed",
+  "core_geographic": {
+    "market_count": 10,
+    "candidate_count": 214,
+    "decision_counts": {
+      "duplicate": 50,
+      "eligible": 35,
+      "excluded": 10,
+      "inactive": 1,
+      "insufficient_evidence": 42,
+      "routed": 76
+    },
+    "eligible_publications": 35,
+    "non_regulatory_sources": 224,
+    "regulator_queries": 12,
+    "source_interactions": 236,
+    "non_regulatory_source_share_pct": 94.9153,
+    "regulator_source_share_pct": 5.0847,
+    "regulator_queries_per_candidate_pct": 5.6075
+  },
+  "transverse_handoffs": {
+    "pull_request": 323,
+    "merge_commit": "7fba2581c377d5501e166530996b61eaef6fbfe2",
+    "candidate_count": 3,
+    "decision_counts": {
+      "eligible": 3
+    },
+    "eligible_publications": 3,
+    "non_regulatory_sources": 12,
+    "regulator_queries": 0
+  },
+  "combined": {
+    "candidate_count": 217,
+    "decision_counts": {
+      "duplicate": 50,
+      "eligible": 38,
+      "excluded": 10,
+      "inactive": 1,
+      "insufficient_evidence": 42,
+      "routed": 76
+    },
+    "eligible_publications": 38,
+    "non_regulatory_sources": 236,
+    "regulator_queries": 12,
+    "source_interactions": 248,
+    "non_regulatory_source_share_pct": 95.1613,
+    "regulator_source_share_pct": 4.8387,
+    "regulator_queries_per_candidate_pct": 5.53
+  },
+  "markets": [
+    {
+      "key": "mexico",
+      "label": "México",
+      "issue": 249,
+      "pull_requests": [
+        309
+      ],
+      "merge_commits": [
+        "abee9c7c689034a7272b7eb7e42b0a1f95a0b0c6"
+      ],
+      "candidate_count": 8,
+      "decision_counts": {
+        "duplicate": 2,
+        "eligible": 2,
+        "insufficient_evidence": 4
+      },
+      "eligible_publications": 2,
+      "non_regulatory_sources": 11,
+      "regulator_queries": 0,
+      "regulator_queries_per_candidate_pct": 0.0,
+      "status": "closed"
+    },
+    {
+      "key": "colombia",
+      "label": "Colômbia",
+      "issue": 250,
+      "pull_requests": [
+        310
+      ],
+      "merge_commits": [
+        "3f93328891eb3c14a12c5e536185a390d44c4ad6"
+      ],
+      "candidate_count": 13,
+      "decision_counts": {
+        "duplicate": 3,
+        "eligible": 2,
+        "insufficient_evidence": 5,
+        "routed": 3
+      },
+      "eligible_publications": 2,
+      "non_regulatory_sources": 14,
+      "regulator_queries": 1,
+      "regulator_queries_per_candidate_pct": 7.6923,
+      "status": "closed"
+    },
+    {
+      "key": "chile",
+      "label": "Chile",
+      "issue": 251,
+      "pull_requests": [
+        313,
+        315,
+        317
+      ],
+      "merge_commits": [
+        "47760449ff0ad47762c54c37c17e5ac73f0839b9",
+        "b803fd90b8b1c25d671c98619a34c9b3f5ce2f02",
+        "8d2d44eac08d6c2666431492481482c307a312d0"
+      ],
+      "candidate_count": 24,
+      "decision_counts": {
+        "duplicate": 5,
+        "eligible": 12,
+        "excluded": 1,
+        "insufficient_evidence": 4,
+        "routed": 2
+      },
+      "eligible_publications": 12,
+      "non_regulatory_sources": 53,
+      "regulator_queries": 2,
+      "regulator_queries_per_candidate_pct": 8.3333,
+      "status": "closed"
+    },
+    {
+      "key": "argentina",
+      "label": "Argentina",
+      "issue": 252,
+      "pull_requests": [
+        312
+      ],
+      "merge_commits": [
+        "a7de6e6c777195088a7e07c0fec39cb301a92f9e"
+      ],
+      "candidate_count": 8,
+      "decision_counts": {
+        "duplicate": 2,
+        "eligible": 4,
+        "insufficient_evidence": 1,
+        "routed": 1
+      },
+      "eligible_publications": 4,
+      "non_regulatory_sources": 12,
+      "regulator_queries": 0,
+      "regulator_queries_per_candidate_pct": 0.0,
+      "status": "closed"
+    },
+    {
+      "key": "peru",
+      "label": "Peru",
+      "issue": 253,
+      "pull_requests": [
+        314
+      ],
+      "merge_commits": [
+        "93d2833a2b0956eb2e2a85c4afb8cb346da12187"
+      ],
+      "candidate_count": 15,
+      "decision_counts": {
+        "duplicate": 8,
+        "insufficient_evidence": 2,
+        "routed": 5
+      },
+      "eligible_publications": 0,
+      "non_regulatory_sources": 13,
+      "regulator_queries": 1,
+      "regulator_queries_per_candidate_pct": 6.6667,
+      "status": "closed"
+    },
+    {
+      "key": "uruguay",
+      "label": "Uruguai",
+      "issue": 254,
+      "pull_requests": [
+        318
+      ],
+      "merge_commits": [
+        "ead18f2c439b0a9e238a83b809cc4b2eb650cd57"
+      ],
+      "candidate_count": 36,
+      "decision_counts": {
+        "duplicate": 13,
+        "eligible": 5,
+        "insufficient_evidence": 4,
+        "routed": 14
+      },
+      "eligible_publications": 5,
+      "non_regulatory_sources": 34,
+      "regulator_queries": 2,
+      "regulator_queries_per_candidate_pct": 5.5556,
+      "status": "closed"
+    },
+    {
+      "key": "ecuador",
+      "label": "Equador",
+      "issue": 255,
+      "pull_requests": [
+        316
+      ],
+      "merge_commits": [
+        "15ebd0ce3e2e4c4261de5fdf18b60439d86435ca"
+      ],
+      "candidate_count": 15,
+      "decision_counts": {
+        "duplicate": 3,
+        "eligible": 1,
+        "insufficient_evidence": 5,
+        "routed": 6
+      },
+      "eligible_publications": 1,
+      "non_regulatory_sources": 16,
+      "regulator_queries": 1,
+      "regulator_queries_per_candidate_pct": 6.6667,
+      "status": "closed"
+    },
+    {
+      "key": "bpv",
+      "label": "Bolívia, Paraguai e Venezuela",
+      "issue": 256,
+      "pull_requests": [
+        319
+      ],
+      "merge_commits": [
+        "ce120a3abee89da09c212c2282ca074619bae01b"
+      ],
+      "candidate_count": 20,
+      "decision_counts": {
+        "duplicate": 3,
+        "eligible": 4,
+        "insufficient_evidence": 4,
+        "routed": 9
+      },
+      "eligible_publications": 4,
+      "non_regulatory_sources": 24,
+      "regulator_queries": 1,
+      "regulator_queries_per_candidate_pct": 5.0,
+      "status": "closed"
+    },
+    {
+      "key": "central-america",
+      "label": "América Central",
+      "issue": 257,
+      "pull_requests": [
+        321
+      ],
+      "merge_commits": [
+        "1aea14be011447b9e45a55d5374d219b885f124c"
+      ],
+      "candidate_count": 22,
+      "decision_counts": {
+        "duplicate": 4,
+        "eligible": 3,
+        "inactive": 1,
+        "insufficient_evidence": 3,
+        "routed": 11
+      },
+      "eligible_publications": 3,
+      "non_regulatory_sources": 34,
+      "regulator_queries": 2,
+      "regulator_queries_per_candidate_pct": 9.0909,
+      "status": "closed"
+    },
+    {
+      "key": "latin-caribbean",
+      "label": "Caribe latino",
+      "issue": 258,
+      "pull_requests": [
+        320
+      ],
+      "merge_commits": [
+        "375e75dbd86b605bf3259056d1fade2ea994276d"
+      ],
+      "candidate_count": 53,
+      "decision_counts": {
+        "duplicate": 7,
+        "eligible": 2,
+        "excluded": 9,
+        "insufficient_evidence": 10,
+        "routed": 25
+      },
+      "eligible_publications": 2,
+      "non_regulatory_sources": 13,
+      "regulator_queries": 2,
+      "regulator_queries_per_candidate_pct": 3.7736,
+      "status": "closed"
+    }
+  ],
+  "publication_integrity": {
+    "unique_eligible_destinations": 38,
+    "localized_profiles_checked": 114,
+    "eligible_published_exactly_once": true
+  },
+  "controls": {
+    "all_ten_geographic_epics_closed": true,
+    "all_candidates_terminal": true,
+    "all_planned_sources_terminal": true,
+    "blind_search_review_and_freeze_reconciled": true,
+    "regulators_used_for_identity_only": true,
+    "critical_open": 0,
+    "high_open": 0
+  },
+  "limitations": [
+    "O relatório mede o universo auditado e não afirma totalidade absoluta do mercado.",
+    "O follow-up de The Ganesha Fund é somado ao freeze principal do Chile.",
+    "As quatro atualizações de manutenção do Caribe não contam como novas publicações elegíveis.",
+    "Com os handoffs, a participação regulatória por interação cai a 4,8387%; não foram criadas consultas artificiais sem divergência real.",
+    "Beta Impacto não expõe nomes do portfólio em texto legível por máquina."
+  ],
+  "findings": []
+}

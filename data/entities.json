@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 288,
+    "entity_count": 297,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -2324,6 +2324,49 @@
       "verified_on": "2026-07-26"
     },
     {
+      "aliases": [
+        "Against The Odds Ventures"
+      ],
+      "base_geography": {
+        "code": "PR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM",
+        "US"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "health_and_wellness",
+        "digital_media"
+      ],
+      "founder_route": "https://www.validstartup.com/",
+      "id": "fund:ato-ventures",
+      "name": "ATO Ventures",
+      "official_website": "https://atoventures.com/",
+      "operator": null,
+      "source_profile": "funds/puerto-rico/ato-ventures.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Jennifer P. Hopp and ATO Ventures",
+          "url": "https://www.validstartup.com/jenniferphopp"
+        },
+        {
+          "kind": "official_application",
+          "title": "Valid Startup",
+          "url": "https://www.validstartup.com/"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "ATO Ventures is a Puerto Rico-based pre-seed and seed investor backing technology companies in the United States and Latin America.",
+      "verified_on": "2026-07-30"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "LATAM",
@@ -2651,6 +2694,57 @@
         "not_disclosed"
       ],
       "summary": "BB Ventures is Banco do Brasil's Brazilian corporate venture capital fund, managed by MSW Capital and investing directly in startups.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "AR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "AR",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "impact",
+        "climate_technology",
+        "agriculture",
+        "energy_transition"
+      ],
+      "founder_route": "https://betaimpacto.vc/",
+      "id": "fund:beta-impacto",
+      "name": "Beta Impacto",
+      "official_website": "https://betaimpacto.vc/",
+      "operator": null,
+      "source_profile": "funds/argentina/beta-impacto.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Beta Impacto",
+          "url": "https://betaimpacto.vc/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Beta Impacto: impact",
+          "url": "https://betaimpacto.vc/impacto/"
+        },
+        {
+          "kind": "official_thesis",
+          "title": "Xeibo",
+          "url": "https://xeibocapital.com/"
+        },
+        {
+          "kind": "secondary",
+          "title": "ANII: Beta Impacto",
+          "url": "https://anii.org.uy/emprendimientos/organizaciones-de-capital-emprendedor/532/beta-impacto/"
+        }
+      ],
+      "stages": [
+        "pre_seed"
+      ],
+      "summary": "Beta Impacto is an Argentina-based impact venture capital fund investing in scalable early-stage companies across Latin America.",
       "verified_on": "2026-07-30"
     },
     {
@@ -3103,10 +3197,11 @@
     {
       "aliases": [],
       "base_geography": {
-        "code": "LATAM",
-        "kind": "region"
+        "code": "CR",
+        "kind": "country"
       },
       "countries_covered": [
+        "CR",
         "DO"
       ],
       "entity_type": "fund",
@@ -3120,7 +3215,7 @@
       "name": "Caricaco Ventures",
       "official_website": "https://caricaco.vc/",
       "operator": null,
-      "source_profile": "funds/regional/caricaco-ventures.md",
+      "source_profile": "funds/costa-rica/caricaco-ventures.md",
       "sources": [
         {
           "kind": "official_website",
@@ -3137,7 +3232,7 @@
         "not_disclosed"
       ],
       "summary": "Caricaco Ventures invests in software and AI-native startups connected to Central America and the Dominican Republic.",
-      "verified_on": "2026-07-27"
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -4526,6 +4621,57 @@
       "verified_on": "2026-07-27"
     },
     {
+      "aliases": [
+        "FIR Capital Partners"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "innovation",
+        "sustainability",
+        "high_growth_companies"
+      ],
+      "founder_route": "https://airtable.com/appYsb0YkUNQcLbbp/pagLH7iG6DmlJHvTk/form",
+      "id": "fund:fir-capital",
+      "name": "FIR Capital",
+      "official_website": "https://www.fircapital.com/",
+      "operator": null,
+      "source_profile": "funds/brazil/fir-capital.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "FIR Capital about page",
+          "url": "https://www.fircapital.com/sobren%C3%B3s"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "FIR Capital portfolio",
+          "url": "https://www.fircapital.com/portfolio"
+        },
+        {
+          "kind": "official_application",
+          "title": "FIR Capital entrepreneur form",
+          "url": "https://airtable.com/appYsb0YkUNQcLbbp/pagLH7iG6DmlJHvTk/form"
+        },
+        {
+          "kind": "secondary",
+          "title": "LAVCA reports FIR Capital investment in SolarVolt",
+          "url": "https://www.lavca.org/brazils-fir-capital-makes-a-control-investment-in-solarvolt-em-portugues/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "FIR Capital is a Brazilian alternative investment manager that manages venture capital and private equity funds and supports high-growth companies.",
+      "verified_on": "2026-07-30"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "GLOBAL",
@@ -5569,6 +5715,54 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "HN",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "HN",
+        "LATAM",
+        "US"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "biotechnology",
+        "hardware",
+        "robotics",
+        "fintech",
+        "web3"
+      ],
+      "founder_route": null,
+      "id": "fund:infinita-vc",
+      "name": "Infinita VC",
+      "official_website": "https://infinitavc.com/",
+      "operator": null,
+      "source_profile": "funds/regional/infinita-vc.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Infinita VC official site",
+          "url": "https://infinitavc.com/defi2023"
+        },
+        {
+          "kind": "secondary",
+          "title": "Infinita VC public company profile",
+          "url": "https://www.linkedin.com/company/infinita-fund"
+        },
+        {
+          "kind": "secondary",
+          "title": "Yendou pre-seed round",
+          "url": "https://tech.eu/2024/02/28/berlin-based-startup-yendou-the-salesforce-for-life-sciences-rd-teams/"
+        }
+      ],
+      "stages": [
+        "seed"
+      ],
+      "summary": "Infinita VC is an early-stage venture capital fund based in Próspera, Roatán, investing in technologies constrained by regulatory bottlenecks.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "GLOBAL",
         "kind": "global"
       },
@@ -5613,13 +5807,14 @@
     {
       "aliases": [],
       "base_geography": {
-        "code": "LATAM",
-        "kind": "region"
+        "code": "SV",
+        "kind": "country"
       },
       "countries_covered": [
         "CARIBBEAN",
         "CO",
-        "MX"
+        "MX",
+        "SV"
       ],
       "entity_type": "fund",
       "focuses": [
@@ -5635,7 +5830,7 @@
       "name": "Innogen Capital Ventures",
       "official_website": "https://innogencapital.com/",
       "operator": null,
-      "source_profile": "funds/regional/innogen-capital-ventures.md",
+      "source_profile": "funds/el-salvador/innogen-capital-ventures.md",
       "sources": [
         {
           "kind": "official_application",
@@ -5659,7 +5854,7 @@
         "series_a"
       ],
       "summary": "Innogen Capital Ventures invests in early-stage technology companies across northern Latin America.",
-      "verified_on": "2026-07-27"
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -5738,6 +5933,49 @@
       ],
       "summary": "Invariantes Fund is an investment organization focused on Technology, sector agnostic in Latin America and the United States.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "CR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "sector_agnostic",
+        "innovative_companies"
+      ],
+      "founder_route": "https://www.parquetec.org/general-7",
+      "id": "fund:invertup",
+      "name": "InvertUP",
+      "official_website": "https://invertup.com/",
+      "operator": null,
+      "source_profile": "funds/regional/invertup.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "InvertUP",
+          "url": "https://invertup.com/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Portfolio & Prospects",
+          "url": "https://invertup.com/portfolio/"
+        },
+        {
+          "kind": "official_website",
+          "title": "Costa Rica Angels and InvertUP",
+          "url": "https://www.parquetec.org/general-7"
+        }
+      ],
+      "stages": [
+        "seed"
+      ],
+      "summary": "InvertUP is a Costa Rica-based private investment vehicle providing seed capital to a diversified portfolio of early-stage startups.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -6825,8 +7063,8 @@
     {
       "aliases": [],
       "base_geography": {
-        "code": "LATAM",
-        "kind": "region"
+        "code": "PR",
+        "kind": "country"
       },
       "countries_covered": [
         "CARIBBEAN",
@@ -6842,7 +7080,7 @@
       "name": "Morro Ventures",
       "official_website": "https://morroventures.com/",
       "operator": null,
-      "source_profile": "funds/regional/morro-ventures.md",
+      "source_profile": "funds/puerto-rico/morro-ventures.md",
       "sources": [
         {
           "kind": "official_website",
@@ -6859,7 +7097,7 @@
         "not_disclosed"
       ],
       "summary": "Morro Ventures is a Puerto Rico-based early-stage investor serving the Caribbean and Latin America.",
-      "verified_on": "2026-07-27"
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -7387,35 +7625,37 @@
     {
       "aliases": [],
       "base_geography": {
-        "code": "LATAM",
-        "kind": "region"
+        "code": "PR",
+        "kind": "country"
       },
       "countries_covered": [
-        "GLOBAL",
         "PR"
       ],
       "entity_type": "fund",
       "focuses": [
-        "technology_driven_startups_with_global_scaling_potential"
+        "sector_agnostic",
+        "strategic_industries_in_puerto_rico"
       ],
-      "founder_route": "https://parallel18.com/ventures/",
+      "founder_route": "https://parallel18.com/vcap/",
       "id": "fund:parallel18-ventures",
       "name": "Parallel18 Ventures",
-      "official_website": "https://parallel18.com/ventures/",
+      "official_website": "https://parallel18.com/vcap/",
       "operator": null,
-      "source_profile": "funds/regional/parallel18-ventures.md",
+      "source_profile": "funds/puerto-rico/parallel18-ventures.md",
       "sources": [
         {
           "kind": "official_application",
-          "title": "Parallel18 Ventures",
-          "url": "https://parallel18.com/ventures/"
+          "title": "Parallel18 Venture Capital Access Program",
+          "url": "https://parallel18.com/vcap/"
         }
       ],
       "stages": [
-        "not_disclosed"
+        "pre_seed",
+        "seed",
+        "series_a"
       ],
-      "summary": "Parallel18 Ventures is the investment platform within Parallel18 for startups scaling through Puerto Rico.",
-      "verified_on": "2026-07-27"
+      "summary": "Parallel18 Ventures operates Puerto Rico's Venture Capital Access Program for seed and early-stage companies building on the island.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -7625,6 +7865,53 @@
         "not_disclosed"
       ],
       "summary": "Positive Ventures is a São Paulo-based impact venture capital firm that makes direct and recurring startup investments.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "AR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "AR",
+        "UY"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "fintech",
+        "cryptocurrency",
+        "agritech"
+      ],
+      "founder_route": "https://pmyx.com.ar/#aplicar",
+      "id": "fund:primary-x",
+      "name": "Primary X",
+      "official_website": "https://pmyx.com.ar/",
+      "operator": null,
+      "source_profile": "funds/argentina/primary-x.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Primary X",
+          "url": "https://pmyx.com.ar/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "A3 Mercados 2025 financial statements",
+          "url": "https://a3mercados.com.ar/wp-content/uploads/2025/10/Memoria-y-Estados-Financieros-A3-DIGITAL-25.pdf"
+        },
+        {
+          "kind": "official_activity",
+          "title": "A3 Mercados 2026 financial statements",
+          "url": "https://a3mercados.com.ar/wp-content/uploads/2026/04/Memoria-y-estados-financieros-A3-DIGITAL-Ejercicio-N%C2%B0-118-26.pdf"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed",
+        "series_a"
+      ],
+      "summary": "Primary X is A3 Mercados' Argentina-based corporate venture capital unit for early-stage fintech, crypto and agrifintech startups.",
       "verified_on": "2026-07-30"
     },
     {
@@ -8179,6 +8466,52 @@
       ],
       "summary": "RX Ventures is Lojas Renner S.A.'s corporate venture capital vehicle for startups shaping the future of fashion, retail, and lifestyle.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "b2b_saas",
+        "software",
+        "artificial_intelligence"
+      ],
+      "founder_route": "https://memo.saasholic.com/",
+      "id": "fund:saasholic",
+      "name": "SaaSholic",
+      "official_website": "https://www.saasholic.com/",
+      "operator": null,
+      "source_profile": "funds/brazil/saasholic.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "SaaSholic",
+          "url": "https://www.saasholic.com/"
+        },
+        {
+          "kind": "official_application",
+          "title": "SaaSholic for founders",
+          "url": "https://www.saasholic.com/founders"
+        },
+        {
+          "kind": "secondary",
+          "title": "SaaSholic company profile",
+          "url": "https://www.linkedin.com/company/saasholic"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "SaaSholic is a São Paulo-based early-stage venture capital firm investing in SaaS and B2B software companies across Latin America.",
+      "verified_on": "2026-07-30"
     },
     {
       "aliases": [],
@@ -9561,6 +9894,85 @@
         "series_a"
       ],
       "summary": "Venturance is a Chile-based alternative asset manager investing in seed and Series A technology companies.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "PA",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "PA",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "artificial_intelligence",
+        "saas",
+        "iot",
+        "enterprise_software",
+        "climate"
+      ],
+      "founder_route": "https://ventureclublatam.com/",
+      "id": "fund:venture-club-latam",
+      "name": "Venture Club Latam",
+      "official_website": "https://ventureclublatam.com/",
+      "operator": null,
+      "source_profile": "funds/regional/venture-club-latam.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Venture Club Latam",
+          "url": "https://ventureclublatam.com/"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Venture Club Latam is a Panama-based early-stage investment platform using a rolling fund and an SPV for each portfolio investment.",
+      "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [
+        "Venture DO"
+      ],
+      "base_geography": {
+        "code": "DO",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "b2b_software",
+        "saas"
+      ],
+      "founder_route": "https://venture.do/funds",
+      "id": "fund:venture-do",
+      "name": "Venture.do",
+      "official_website": "https://venture.do/",
+      "operator": null,
+      "source_profile": "funds/dominican-republic/venture-do.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "Venture.do funds",
+          "url": "https://venture.do/funds"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Venture.do portfolio",
+          "url": "https://venture.do/portfolio"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Venture.do is a Dominican Republic-based early-stage fund investing in B2B software startups across Latin America.",
       "verified_on": "2026-07-30"
     },
     {

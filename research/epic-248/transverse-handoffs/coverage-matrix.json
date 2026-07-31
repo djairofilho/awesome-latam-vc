@@ -1,0 +1,38 @@
+{
+  "candidate_count": 3,
+  "cutoff": "2026-07-30",
+  "decision_counts": {
+    "duplicate": 0,
+    "eligible": 3,
+    "insufficient_evidence": 0,
+    "routed": 0
+  },
+  "handoff_reconciliation": {
+    "expected": [
+      "Beta Impacto",
+      "Primary X",
+      "SaaSholic"
+    ],
+    "missing": [],
+    "reconciled": [
+      "Beta Impacto",
+      "Primary X",
+      "SaaSholic"
+    ]
+  },
+  "limitations": [
+    "This is an audited handoff batch, not a new completeness claim for Argentina or Brazil.",
+    "Beta Impacto's official pages describe portfolio operations but do not expose portfolio company names as machine-readable text.",
+    "No regulator query was justified because the public sources presented no unresolved identity divergence."
+  ],
+  "market_counts": {
+    "AR": 2,
+    "BR": 1
+  },
+  "non_regulatory_discovery_percent": 100.0,
+  "non_regulatory_source_count": 12,
+  "regulatory_case_percent": 0.0,
+  "regulatory_query_count": 0,
+  "schema_version": "1.0",
+  "source_count": 12
+}

@@ -1,0 +1,2 @@
+{"schema_version":"1.0","source_issue":25,"artifact":"research/epic-16/issue-25/candidates.jsonl","record_count":10,"sha256":"d8c7793e5db75cda5b1399a2ce1d8aad4ffd96d5fd1e5bb11801b0d2258bd8ef","role":"historical_delta_only"}
+{"schema_version":"1.0","source_issue":25,"artifact":"research/epic-16/issue-25/source-inventory.jsonl","record_count":21,"sha256":"8fa9bd6974b3487613fb3e8d1c0c5e7fa6402482133e73aa243144d5eb0c7076","role":"historical_source_exclusion_only"}

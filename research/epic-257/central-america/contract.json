@@ -1,0 +1,37 @@
+{
+  "candidate_count": 22,
+  "cutoff": "2026-07-30",
+  "eligibility": [
+    "country base proven without inferring it from regional access",
+    "direct startup investment",
+    "recurring or portfolio-level activity",
+    "current activity signal",
+    "official evidence plus independent corroboration when needed"
+  ],
+  "issues": [
+    257,
+    299,
+    300,
+    301,
+    302,
+    303
+  ],
+  "no_totality_claim": true,
+  "publication_batch_limit": 10,
+  "publication_status": "approved_for_publication",
+  "regulator_policy": "identity_or_divergence_only",
+  "regulatory_query_count": 2,
+  "regulatory_query_percentage": 9.1,
+  "regulatory_target_met": true,
+  "regulatory_target_percentage": "5-10%",
+  "schema_version": "1.0",
+  "scope_countries": [
+    "Belize",
+    "Costa Rica",
+    "El Salvador",
+    "Guatemala",
+    "Honduras",
+    "Nicaragua",
+    "Panamá"
+  ]
+}

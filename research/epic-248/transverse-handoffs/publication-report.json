@@ -1,0 +1,36 @@
+{
+  "canonical_profile_count": 3,
+  "critical_open": 0,
+  "cutoff": "2026-07-30",
+  "eligible_ids": [
+    "ar-beta-impacto",
+    "ar-primary-x",
+    "br-saasholic"
+  ],
+  "high_open": 0,
+  "limitations": [
+    "This publication reconciles three audited handoffs and does not reopen the Argentina or Brazil completeness claims.",
+    "Beta Impacto does not expose portfolio company names as machine-readable text; the profile does not infer any.",
+    "No regulator query was used for discovery or eligibility."
+  ],
+  "locales": [
+    "en",
+    "es",
+    "pt-BR"
+  ],
+  "localized_profile_count": 9,
+  "profile_hashes": {
+    "funds/argentina/beta-impacto.md": "b85b751dcc31d3eca438ccf73e3231b6102e7d0d2a1e0793cc08ddef944d5e0f",
+    "funds/argentina/primary-x.md": "a76e052c8a8e97a2a08ef70ca17d3c2f45e3d7715f3e2c230752aae995357e64",
+    "funds/brazil/saasholic.md": "a824ca167bc23119308d6908af0fb5d2e993ed3a6b0a313b2915d489b810d324",
+    "translations/es/funds/argentina/beta-impacto.md": "b5b1e2cea4b7739509cb1a7e8af02491484d0fb84561e0f7a8bf7c2e3416def2",
+    "translations/es/funds/argentina/primary-x.md": "69da78e953a682cd40a3aa6f2cecbc0b416f038026004538b7df76153894809b",
+    "translations/es/funds/brazil/saasholic.md": "7414718ee85b2f662f0d39f022b3b02a5b0b53902cf7192abec55038d3a7821b",
+    "translations/pt-BR/funds/argentina/beta-impacto.md": "3aff33b44525070171f9d1283d6f8d8b05f0bd8676ea739371e5b017e69171ed",
+    "translations/pt-BR/funds/argentina/primary-x.md": "aaa60bef1603164ad079c57465142511dd0ee4d32c3d9e11b2a15ed87890b6f9",
+    "translations/pt-BR/funds/brazil/saasholic.md": "22b4d534751c3e4aba8419d2608eb168dbb6f9c461c8ead2e280f09e92e4ac5d"
+  },
+  "review_reconciled": true,
+  "schema_version": "1.0",
+  "status": "published"
+}

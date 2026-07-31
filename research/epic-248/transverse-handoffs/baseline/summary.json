@@ -1,0 +1,9 @@
+{
+  "catalog_profile_count": 208,
+  "catalog_sha256": "9e7b63f14107080088129df8f4457367a860fa3cc07d23752a5a42177e4a3c5b",
+  "cutoff": "2026-07-30",
+  "handoffs_sha256": "44510c33b8093b1f5d414c6aa98929f7825cb207c57254ec9501ed2b14641d46",
+  "matching_catalog_profiles": [],
+  "schema_version": "1.0",
+  "uruguay_handoff_count": 3
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "cutoff_date": "2026-07-30",
+  "source_commit": "ce120a3abee89da09c212c2282ca074619bae01b",
+  "catalog": {
+    "entities_total": 286,
+    "funds_total": 211,
+    "scope_matches": 10,
+    "scope_funds": 5,
+    "scope_non_funds": 5,
+    "entities_json_sha256": "6e149d9e0fd32b1cd98b700ea4c91bf5acff84b8ff9a45f74db0363381b2cd93",
+    "baseline_sha256": "a1d1f3264f7f3fd73a0e41b85eabc42b75f36980c3a81250d6c77999dc1272cb"
+  },
+  "historical_delta": {
+    "source_issue": 25,
+    "candidate_records": 10,
+    "source_records": 21,
+    "prior_artifacts_sha256": "918805eaa3fdb156c1bb4f485bb293ac9c0202f647613e4aa49f5093cf62bf25"
+  },
+  "contract_sha256": "3b43d4a81bca331a94a79535533f90142bab6bc2cf647bbc5ec7fb1fe7e49dc8",
+  "source_plan_sha256": "3fa56c9743b617e70ca1d4f93dea40173b3140f2c768f55c40ccf9d45bfb3f43",
+  "discovery_from_baseline": 0,
+  "discovery_from_regulators": 0,
+  "notes": [
+    "Baseline matches are excluded from discovery yield.",
+    "A Caribbean regional label does not prove access to each in-scope territory.",
+    "Historical candidates may be revalidated but cannot be counted as new discoveries.",
+    "Baseline was regenerated on ce120a3 after the BPV publication; no in-scope baseline entity changed."
+  ]
+}

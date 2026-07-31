@@ -1,0 +1,52 @@
+{
+  "cutoff": "2026-07-30",
+  "eligible_ids": [
+    "ca-invertup",
+    "ca-infinita",
+    "ca-venture-club-latam"
+  ],
+  "files": [
+    {
+      "path": "research/epic-257/central-america/contract.json",
+      "sha256": "5b110d5f4e3f93de4b5b528cc578842f99dda045b6b8aaa52e932accbc10f40d"
+    },
+    {
+      "path": "research/epic-257/central-america/source-inventory.jsonl",
+      "sha256": "a0c04dacf76669b5635b4b4edcf825eaf8af4bdae1f0b2fc41870e2a10027058"
+    },
+    {
+      "path": "research/epic-257/central-america/candidates.jsonl",
+      "sha256": "5caeb69ae9bd827357ff7569f361b89f0a733dbc5dc323b10b49f7580b462555"
+    },
+    {
+      "path": "research/epic-257/central-america/evidence.jsonl",
+      "sha256": "8eebe2079475ca62426d143eb4957d9b1a59b05eef7512fdabbb2377879493f9"
+    },
+    {
+      "path": "research/epic-257/central-america/regulatory-query-log.jsonl",
+      "sha256": "1f6d41bd352d75b888932bad9139a77e24f19bf5ea6fcdc29f94d6efb065cb9d"
+    },
+    {
+      "path": "research/epic-257/central-america/coverage-matrix.json",
+      "sha256": "4d864ab4c1b07f1ae8fa85ed3f0652696732a60d6e4000b9652298e6c8edc483"
+    },
+    {
+      "path": "research/epic-257/central-america/saturation.json",
+      "sha256": "5fb8244fd5f5ade59fc3bb4128e6dc5382496643325907308165d04e6838f74d"
+    },
+    {
+      "path": "research/epic-257/central-america/review.json",
+      "sha256": "a1d9b62cd61a6a9036deb82da46572375d0b7c1565b090ae5c4b5e4808458fbd"
+    },
+    {
+      "path": "research/epic-257/central-america/baseline/catalog-baseline.jsonl",
+      "sha256": "c201380c57c3a93204188a084e70c6293ba96654761739232eba5dcdb813d84a"
+    },
+    {
+      "path": "research/epic-257/central-america/baseline/prior-artifacts.jsonl",
+      "sha256": "73997fad01cb1576333ac132f5f1efe0f2efd0f1aa0cf6e9c402263a61b00038"
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "frozen"
+}

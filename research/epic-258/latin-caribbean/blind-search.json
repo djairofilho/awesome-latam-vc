@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "performed_by": "independent worker",
+  "candidate_list_visible_before_search": false,
+  "territories": ["DO", "PR", "CU", "HT"],
+  "canonical_leads_returned": 29,
+  "reconciliation_status": "complete",
+  "new_eligible_after_validation": ["cand-258-ato"],
+  "new_profile_updates_after_validation": [],
+  "zero_yield_territories": ["CU", "HT"],
+  "notes": [
+    "Brumas and Capa expose fund plans but no completed deployment.",
+    "ATO Ventures has current manager-authored evidence for Puerto Rico base, repeated investments and founder access.",
+    "Puerto Rico produced many angel, program, private-equity and private-credit routing leads.",
+    "Haiti produced angel, diaspora-platform, public-program and historical leads, but no additional eligible VC manager.",
+    "No extra regulator query was made merely to restore a percentage."
+  ]
+}
