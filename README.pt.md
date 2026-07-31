@@ -145,6 +145,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 213 fundos
 | [Entrypoint](funds/brazil/entrypoint.md) | Pre-seed | Startups de tecnologia | Brasil |
 | [Eurofarma Ventures](funds/brazil/eurofarma-ventures.md) | Não divulgado publicamente | Biotecnologia, descoberta de fármacos e terapias avançadas | Global |
 | [FIP Nordeste Capital Semente](funds/brazil/fip-nordeste-capital-semente.md) | Pre-seed e Seed | Startups regionais de tecnologia | Nordeste do Brasil, norte de Minas Gerais e Espírito Santo |
+| [FIR Capital](funds/brazil/fir-capital.md) | Não divulgado publicamente | Inovação, sustentabilidade e empresas de alto crescimento | Brasil |
 | [Fundepar](funds/brazil/fundepar.md) | Não divulgado publicamente | Tecnologia, inovação de base científica e impacto | Brasil |
 | [Fundo inovabra I](funds/brazil/fundo-inovabra-i.md) | Séries A e B | Tecnologia nos setores financeiro e não financeiro | Global |
 | [Gerdau Next Ventures](funds/brazil/gerdau-next-ventures.md) | Não divulgado publicamente | Construção, mobilidade, sustentabilidade e tecnologia | Não divulgado publicamente |
