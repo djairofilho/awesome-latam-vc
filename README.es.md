@@ -145,6 +145,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [Entrypoint](funds/brazil/entrypoint.md) | Pre-seed | Startups tecnológicas | Brasil |
 | [Eurofarma Ventures](funds/brazil/eurofarma-ventures.md) | No divulgado públicamente | Biotecnología, descubrimiento de fármacos y terapias avanzadas | Global |
 | [FIP Nordeste Capital Semente](funds/brazil/fip-nordeste-capital-semente.md) | Pre-seed y Seed | Startups tecnológicas regionales | Nordeste de Brasil, norte de Minas Gerais y Espírito Santo |
+| [FIR Capital](funds/brazil/fir-capital.md) | No divulgado públicamente | Innovación, sostenibilidad y empresas de alto crecimiento | Brasil |
 | [Fundepar](funds/brazil/fundepar.md) | No divulgado públicamente | Tecnología, innovación de base científica e impacto | Brasil |
 | [Fundo inovabra I](funds/brazil/fundo-inovabra-i.md) | Series A y B | Tecnología en los sectores financiero y no financiero | Global |
 | [Gerdau Next Ventures](funds/brazil/gerdau-next-ventures.md) | No divulgado públicamente | Construcción, movilidad, sostenibilidad y tecnología | No divulgado públicamente |
