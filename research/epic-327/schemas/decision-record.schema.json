@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-latam-vc.local/epic-327/decision-record.schema.json",
+  "title": "Reviewed delta decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "decision",
+    "reason",
+    "evidence_ids",
+    "destination",
+    "review"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "candidate_id": {"type": "string", "pattern": "^delta-fund-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "decision": {
+      "enum": [
+        "eligible",
+        "duplicate",
+        "routed_accelerators",
+        "routed_angel_networks",
+        "routed_funding_platforms",
+        "routed_public_programs",
+        "routed_other",
+        "inactive",
+        "insufficient_evidence",
+        "excluded"
+      ]
+    },
+    "reason": {"type": "string", "minLength": 1},
+    "evidence_ids": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^evidence-delta-[a-z0-9-]+$"},
+      "uniqueItems": true
+    },
+    "destination": {"type": ["string", "null"]},
+    "canonical_profile": {"type": "string", "pattern": "^funds/.+\\.md$"},
+    "next_action": {"type": "string", "minLength": 1},
+    "owner": {"type": "string", "minLength": 1},
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reviewer", "reviewed_on", "independent"],
+      "properties": {
+        "status": {"enum": ["pending", "approved", "changes_requested"]},
+        "reviewer": {"type": ["string", "null"]},
+        "reviewed_on": {"type": ["string", "null"], "format": "date"},
+        "independent": {"type": "boolean"}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"decision": {"const": "eligible"}}},
+      "then": {
+        "properties": {
+          "evidence_ids": {"minItems": 1},
+          "destination": {"type": "string", "minLength": 1}
+        },
+        "required": ["destination"]
+      }
+    },
+    {
+      "if": {"properties": {"decision": {"const": "duplicate"}}},
+      "then": {"required": ["canonical_profile"]}
+    },
+    {
+      "if": {"properties": {"decision": {"const": "insufficient_evidence"}}},
+      "then": {"required": ["next_action", "owner"]}
+    }
+  ]
+}

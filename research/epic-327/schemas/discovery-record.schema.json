@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-latam-vc.local/epic-327/discovery-record.schema.json",
+  "title": "Private delta discovery record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "discovered_name",
+    "country_hints",
+    "discovery_reference",
+    "discovered_on",
+    "evidence_role"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "candidate_id": {"type": "string", "pattern": "^delta-fund-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "discovered_name": {"type": "string", "minLength": 1},
+    "country_hints": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^[A-Z]{2}$"},
+      "uniqueItems": true
+    },
+    "discovery_reference": {"type": "string", "minLength": 1},
+    "discovered_on": {"type": "string", "format": "date"},
+    "evidence_role": {"const": "lead_only"},
+    "normalization_notes": {"type": "string"}
+  }
+}

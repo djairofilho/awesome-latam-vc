@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "baseline_commit": "4190d8c59d47e50784383bf6a83efb6249859bdb",
+  "shared_write_policy": "integrator_only",
+  "workers": [
+    {
+      "worker_id": "triage-mexico-cac",
+      "issue": 330,
+      "phase": "triage",
+      "countries": ["MX", "CR", "SV", "GT", "HN", "NI", "PA", "CU", "DO", "HT"],
+      "branch": "research/issue-330-triage-mexico-cac",
+      "worktree": ".worktrees/latam-delta-triage-mexico-cac",
+      "write_prefix": "research/epic-327/shards/triage-mexico-cac/"
+    },
+    {
+      "worker_id": "triage-andean",
+      "issue": 331,
+      "phase": "triage",
+      "countries": ["BO", "CO", "EC", "PE", "VE"],
+      "branch": "research/issue-331-triage-andean",
+      "worktree": ".worktrees/latam-delta-triage-andean",
+      "write_prefix": "research/epic-327/shards/triage-andean/"
+    },
+    {
+      "worker_id": "triage-southern-cone-brazil",
+      "issue": 332,
+      "phase": "triage",
+      "countries": ["AR", "BR", "CL", "PY", "UY"],
+      "branch": "research/issue-332-triage-southern-cone-brazil",
+      "worktree": ".worktrees/latam-delta-triage-southern-cone-brazil",
+      "write_prefix": "research/epic-327/shards/triage-southern-cone-brazil/"
+    },
+    {
+      "worker_id": "validation-0",
+      "issue": 334,
+      "phase": "validation",
+      "partition": 0,
+      "branch": "research/issue-334-validation-0",
+      "worktree": ".worktrees/latam-delta-validation-0",
+      "write_prefix": "research/epic-327/shards/validation-0/"
+    },
+    {
+      "worker_id": "validation-1",
+      "issue": 335,
+      "phase": "validation",
+      "partition": 1,
+      "branch": "research/issue-335-validation-1",
+      "worktree": ".worktrees/latam-delta-validation-1",
+      "write_prefix": "research/epic-327/shards/validation-1/"
+    },
+    {
+      "worker_id": "validation-2",
+      "issue": 336,
+      "phase": "validation",
+      "partition": 2,
+      "branch": "research/issue-336-validation-2",
+      "worktree": ".worktrees/latam-delta-validation-2",
+      "write_prefix": "research/epic-327/shards/validation-2/"
+    }
+  ],
+  "integrator": {
+    "issue": 328,
+    "branch": "feat/issue-328-latam-delta-contract",
+    "worktree": ".worktrees/latam-delta-integration",
+    "write_prefixes": [
+      "research/epic-327/baseline/",
+      "research/epic-327/schemas/",
+      "research/epic-327/workers/",
+      "research/epic-327/tests/",
+      "research/epic-327/contract.json",
+      "research/epic-327/README.md",
+      "research/epic-327/validate.py"
+    ]
+  },
+  "operational_limits": {
+    "domain_concurrency": 1,
+    "minimum_backoff_seconds": 2,
+    "maximum_retries": 3,
+    "on_block": "record terminal blocking outcome; do not bypass access controls",
+    "validation_assignment": "int(sha256(candidate_id), 16) mod 3"
+  }
+}
