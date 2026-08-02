@@ -53,8 +53,11 @@ def reconcile() -> tuple[list[str], dict]:
         shard = EPIC / "shards" / worker["worker_id"]
         intake_path = shard / "intake.jsonl"
         summary_path = shard / "summary.json"
-        if not intake_path.exists() or not summary_path.exists():
-            errors.append(f"{worker['worker_id']}: intake.jsonl ou summary.json ausente")
+        gaps_path = shard / "gaps.json"
+        if not intake_path.exists() or not summary_path.exists() or not gaps_path.exists():
+            errors.append(
+                f"{worker['worker_id']}: intake.jsonl, gaps.json ou summary.json ausente"
+            )
             continue
 
         try:
@@ -130,6 +133,7 @@ def reconcile() -> tuple[list[str], dict]:
         inputs.extend(
             [
                 {"path": intake_path.relative_to(ROOT).as_posix(), "sha256": sha256(intake_path)},
+                {"path": gaps_path.relative_to(ROOT).as_posix(), "sha256": sha256(gaps_path)},
                 {"path": summary_path.relative_to(ROOT).as_posix(), "sha256": sha256(summary_path)},
             ]
         )
