@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "worker_id": "triage-andean",
+  "pages_expected": 39,
+  "pages_processed": 39,
+  "unparsed_rows": 141,
+  "access_failures": 0,
+  "pagination_variance": {
+    "country": "CO",
+    "frozen_pages": 19,
+    "public_pages_observed": 22,
+    "extra_pages_out_of_scope": 3
+  }
+}

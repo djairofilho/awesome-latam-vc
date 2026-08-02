@@ -1,0 +1,371 @@
+{"schema_version":"1.0","candidate_id":"delta-fund-0bs","name":"0BS","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-10k-ventures","name":"10K Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-10x-capital","name":"10X Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-17sigma","name":"17Sigma","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-30n-ventures","name":"30N Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-5-eyes-ventures","name":"5 Eyes Ventures","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-500-global","name":"500 Global","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-8vc","name":"8VC","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-99-startups","name":"99 Startups","country_occurrences":{"BO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-accel-kkr","name":"Accel-KKR","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-accion-venture","name":"Accion Venture","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-acon-investment","name":"ACON Investment","country_occurrences":{"CO":1,"EC":1,"VE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-acrew-capital","name":"Acrew Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-addem-capital","name":"Addem Capital","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-addvisory-co","name":"Addvisory.co","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-aezist","name":"Aezist","country_occurrences":{"CO":1,"EC":1,"PE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-agora-partnerships","name":"Agora Partnerships","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-agrega-partners","name":"Agrega Partners","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-alpha-future-funds","name":"Alpha Future Funds","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-alpha-vertex","name":"Alpha Vertex","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-alphamundi","name":"Alphamundi","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-alpine-ventures","name":"Alpine Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-alter-global","name":"Alter Global","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-amadeo-global","name":"Amadeo Global","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-amador-holdings","name":"Amador Holdings","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-amg-block","name":"AMG Block","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-amplifica-capital","name":"Amplifica Capital","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/regional/amplifica-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-angel-club","name":"Angel Club","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-angel-ventures","name":"Angel Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/regional/angel-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-aperitivo","name":"Aperitivo","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-apps-co","name":"Apps.co","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-archimedia","name":"Archimedia","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-arpegio","name":"Arpegio","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-arrebol-capital","name":"Arrebol Capital","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-artichoke-capital","name":"Artichoke Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-asu-venture-devils","name":"ASU Venture Devils","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-asymmetry-ventures","name":"Asymmetry Ventures","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-atlantico","name":"Atlantico","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-audeo-capital","name":"Audeo Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-aurica-capital","name":"Aurica Capital","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-avalancha-ventures","name":"Avalancha Ventures","country_occurrences":{"CO":2,"PE":1},"occurrence_count":3,"baseline_status":"exact_name","baseline_matches":["funds/regional/avalancha-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-avantlab","name":"AvantLab","country_occurrences":{"CO":1,"EC":1,"PE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-avp-ventures","name":"AVP Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/regional/avp-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-aztlan-capital","name":"Aztlan Capital","country_occurrences":{"BO":1,"CO":1,"PE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-b-venture-capital","name":"B Venture Capital","country_occurrences":{"CO":1,"EC":1,"PE":1},"occurrence_count":3,"baseline_status":"exact_name","baseline_matches":["funds/regional/b-venture-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-banana-capital","name":"Banana Capital","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-base-capital","name":"Base Capital","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-base-partners","name":"Base Partners","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-bbq-capital","name":"BBQ Capital","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-bdev-ventures","name":"BDev Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-belcorp-ventures","name":"Belcorp Ventures","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-beresford-ventures","name":"Beresford Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-berry-seven","name":"Berry Seven","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-bezos-expeditions","name":"Bezos Expeditions","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-big-sur-ventures","name":"Big Sur Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-blustone","name":"BluStone","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-boostart","name":"Boostart","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-boyd-jones","name":"Boyd Jones","country_occurrences":{"BO":1,"EC":1,"PE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-bracket-capital","name":"Bracket Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-bragiel-brothers","name":"Bragiel Brothers","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-bridge-latam","name":"Bridge Latam","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-bridge-partners","name":"Bridge Partners","country_occurrences":{"BO":1,"CO":1,"PE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-buen-trip","name":"Buen Trip","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-buentrip-ventures","name":"BuenTrip Ventures","country_occurrences":{"BO":1,"EC":1,"PE":1},"occurrence_count":3,"baseline_status":"exact_name","baseline_matches":["funds/regional/buentrip-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-bullpen-capital","name":"Bullpen Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-c3-ventures","name":"C3 Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-cacao-capital-vc","name":"Cacao Capital VC","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-cadenza-ventures","name":"Cadenza Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-cambridge-capital","name":"Cambridge Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-canary","name":"Canary","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/regional/canary.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-capria-ventures","name":"Capria Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-carabela","name":"CARABELA","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-carao-ventures","name":"Carao Ventures","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1},"occurrence_count":4,"baseline_status":"exact_name","baseline_matches":["funds/regional/carao-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-carbono3-ventures","name":"Carbono3 Ventures","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-cats-vc-other","name":"Cats.vc Other","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-cencosud-ventures","name":"Cencosud Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-cercano-management","name":"Cercano Management","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-chile-ventures","name":"Chile Ventures","country_occurrences":{"CO":2,"PE":1},"occurrence_count":3,"baseline_status":"exact_name","baseline_matches":["funds/regional/chile-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-christian-o-edler","name":"Christian O. Edler","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-cibersons-ventures","name":"Cibersons Ventures","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":5,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-citius","name":"Citius","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-city-of-knowledge","name":"City of Knowledge","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-clout-capital","name":"Clout Capital","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-colaborativo","name":"Colaborativo","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-cometa","name":"Cometa","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-compa-capital","name":"Compa Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-conexo-ventures","name":"Conexo Ventures","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-convrtx","name":"Convrtx","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-copernion","name":"Copernion","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-cp-ventures","name":"CP Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-critical-ventures","name":"Critical Ventures","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-crossbeam-ventures","name":"Crossbeam Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-crosscut-ventures","name":"Crosscut Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-dale-ventures","name":"Dale Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-dalus-capital","name":"Dalus Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/dalus-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-david-conde","name":"David Conde","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-dila-capital","name":"DILA Capital","country_occurrences":{"CO":1,"EC":1,"PE":1},"occurrence_count":3,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/dila-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-dmz","name":"DMZ","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-dst-global","name":"DST Global","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-dunce-capital","name":"Dunce Capital","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-dune-ventures","name":"Dune Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-dux-capital","name":"Dux Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/dux-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-eatable-adventures","name":"Eatable Adventures","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-echoing-green","name":"Echoing Green","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-elevar-equity","name":"Elevar Equity","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-endeavor-catalyst","name":"Endeavor Catalyst","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/endeavor-catalyst.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-entrepreneur-first","name":"Entrepreneur First","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-eplanet-capital","name":"ePlanet Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-esas-ventures","name":"Esas Ventures","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-escalar","name":"Escalar","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-escalatec","name":"Escalatec","country_occurrences":{"BO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/bolivia/escalatec.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-ethos-vc","name":"Ethos VC","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-ewa-capital","name":"EWA Capital","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/regional/ewa-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-expa","name":"Expa","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-expedite-capital","name":"Expedite Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-far-out-ventures","name":"Far Out Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-femsa-ventures","name":"FEMSA Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/mexico/femsa-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-fen-ventures","name":"Fen Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/regional/fen-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-finnovista","name":"Finnovista","country_occurrences":{"CO":1,"EC":1,"PE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-firebolt-ventures","name":"Firebolt Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-five-elms-capital","name":"Five Elms Capital","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-fj-labs","name":"FJ Labs","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/fj-labs.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-flashpoint-vc","name":"Flashpoint VC","country_occurrences":{"BO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-fledge","name":"Fledge","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-floodgate","name":"Floodgate","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-flori-ventures","name":"Flori Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-flucas-ventures","name":"Flucas Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-foodfutureco","name":"FoodFutureCo","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-foundation-capital","name":"Foundation Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-function-ventures","name":"Function Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-fundersclub","name":"FundersClub","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-g2-fintech-fund","name":"G2 Fintech Fund","country_occurrences":{"CO":1,"EC":1,"PE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-galicia-ventures","name":"Galicia Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/galicia-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-gamefounders","name":"GameFounders","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-ganas-ventures","name":"Ganas Ventures","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":5,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-ged-capital","name":"GED Capital","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-gelt-vc","name":"Gelt VC","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-gener8tor","name":"gener8tor","country_occurrences":{"CO":1,"PE":1,"VE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-general-atlantic","name":"General Atlantic","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-gilgamesh-ventures","name":"Gilgamesh Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-glisco-partners","name":"Glisco Partners","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-globant-ventures","name":"Globant Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/argentina/globant-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-gobeyond","name":"GoBeyond","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-gohub-ventures","name":"GoHub Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-goodwater-capital","name":"Goodwater Capital","country_occurrences":{"EC":1,"PE":1,"VE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-graph-ventures","name":"Graph Ventures","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-green-egg-ventures","name":"Green Egg Ventures","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-greyhound-capital","name":"Greyhound Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-grupo-pegasus","name":"Grupo Pegasus","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-grupo-rpp","name":"Grupo RPP","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-gsv-ventures","name":"GSV Ventures","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-hard-yaka","name":"Hard Yaka","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-haven-ventures","name":"Haven Ventures","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-hax","name":"HAX","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-hbm-partners","name":"HBM Partners","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-hlk-ventures","name":"HLK Ventures","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-hof-capital","name":"HOF Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-homebrew","name":"Homebrew","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-hometeam-ventures","name":"Hometeam Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-howzat-partners","name":"HOWZAT Partners","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-hubspot-ventures","name":"HubSpot Ventures","country_occurrences":{"EC":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-i-squared-capital","name":"I Squared Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-idb-invest","name":"IDB Invest","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-idc-ventures","name":"IDC Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-idea-foundry","name":"Idea Foundry","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-idg-capital","name":"IDG Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-ignia","name":"IGNIA","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/ignia.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-iluminar-ventures","name":"Iluminar Ventures","country_occurrences":{"EC":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-impacta-vc","name":"Impacta VC","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":5,"baseline_status":"exact_name","baseline_matches":["funds/regional/impacta-vc.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-impatient-ventures","name":"Impatient Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-improve-ventures-other","name":"Improve Ventures Other","country_occurrences":{"EC":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-inca-ventures","name":"INCA VENTURES","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-ingenerate-labs","name":"Ingenerate Labs","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-innopact","name":"Innopact","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-innpulsa-colombia","name":"Innpulsa Colombia","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-integra-groupe","name":"Integra Groupe","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-interplay","name":"Interplay","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-invariantes-fund","name":"Invariantes Fund","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/invariantes-fund.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-irelandia-aviation","name":"Irelandia Aviation","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-ithink-vc","name":"iThink VC","country_occurrences":{"BO":1,"EC":1,"PE":1},"occurrence_count":3,"baseline_status":"exact_name","baseline_matches":["funds/regional/ithink-vc.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-j-ventures","name":"J Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-k5-global","name":"K5 Global","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-k50-ventures","name":"K50 Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"alias","baseline_matches":["funds/regional/actions-capital-k50-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-kalei-ventures","name":"Kalei Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/kalei-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-kamay-ventures","name":"Kamay Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/kamay-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-kandeo","name":"Kandeo","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-katapult-seed","name":"Katapult Seed","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-kli-capital","name":"Kli Capital","country_occurrences":{"CO":1,"PE":2},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-kuiper","name":"Kuiper","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/kuiper.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-latitud","name":"Latitud","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-launchhouse","name":"LaunchHouse","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-leo-capital","name":"Leo Capital","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-lightning-ventures","name":"Lightning Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-liil-ventures","name":"Liil Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-lionheart-ventures","name":"Lionheart Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-liontree","name":"LionTree","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-liquid-2-ventures","name":"Liquid 2 Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-living-on-the-edge","name":"Living On The Edge","country_occurrences":{"EC":1,"PE":2},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-lombard-odier-other","name":"Lombard Odier Other","country_occurrences":{"EC":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-lotux","name":"Lotux","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/lotux.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-lumia-capital","name":"Lumia Capital","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-magic-fund","name":"Magic Fund","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-magnivia-ventures","name":"Magnivia Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mana-ventures","name":"Mana Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mandi-ventures","name":"Mandi Ventures","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-manos-accelerator","name":"Manos Accelerator","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-manutara-ventures","name":"Manutara Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/manutara-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-marathon-ventures","name":"Marathon Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/colombia/marathon-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-marc-group","name":"MARC Group","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-masschallenge","name":"MassChallenge","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-maya-capital","name":"MAYA Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/maya-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mediatech-ventures","name":"MediaTech Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mempool-ventures","name":"Mempool Ventures","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mentorday","name":"mentorDay","country_occurrences":{"CO":1,"PE":1,"VE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mercado-libre-fund","name":"Mercado Libre Fund","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mgm-innova-group","name":"MGM Innova Group","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mgv-capital","name":"MGV Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-monashees","name":"Monashees","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/monashees.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-morro-ventures","name":"Morro Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/puerto-rico/morro-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mountain-partners-other","name":"Mountain Partners Other","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mouro-capital","name":"Mouro Capital","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mpg-fund","name":"MPG Fund","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-mrpink-vc","name":"MrPink VC","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/uruguay/mrpink-vc.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-myelin-vc","name":"Myelin VC","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-nazca-capital","name":"Nazca Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-nazca-ventures","name":"Nazca Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-negociosdigitales","name":"Negociosdigitales","country_occurrences":{"VE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-newlin","name":"Newlin","country_occurrences":{"BO":1,"CO":1,"EC":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-newtopia-vc","name":"Newtopia VC","country_occurrences":{"BO":1,"CO":1,"PE":1},"occurrence_count":3,"baseline_status":"exact_name","baseline_matches":["funds/regional/newtopia-vc.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-newtype-ventures","name":"Newtype Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-nosara-capital","name":"Nosara Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-nxtp-ventures","name":"NXTP Ventures","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1},"occurrence_count":4,"baseline_status":"exact_name","baseline_matches":["funds/regional/nxtp-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-octahedron-capital","name":"Octahedron Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-om-dao-ventures","name":"OM DAO Ventures","country_occurrences":{"EC":1,"PE":1,"VE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-on-deck","name":"On Deck","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-onevc","name":"ONEVC","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/onevc.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-opera-ventures","name":"Opera Ventures","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-operator-partners","name":"Operator Partners","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-orange-dao","name":"Orange DAO","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-orbit-startups","name":"Orbit Startups","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-orion-startups","name":"Orion Startups","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-palm-drive-capital","name":"Palm Drive Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-parallel18","name":"Parallel18","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-pareto-holdings","name":"Pareto Holdings","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-paris-ventures","name":"Paris Ventures","country_occurrences":{"CO":1,"EC":1,"PE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-parque-tec-mexico","name":"Parque Tec Mexico","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":5,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-payu-gpo","name":"PayU GPO","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-pear-vc","name":"Pear VC","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-picus-capital","name":"Picus Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/picus-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-pioneer-fund","name":"Pioneer Fund","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-piton-capital","name":"Piton Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-platanus","name":"Platanus","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":5,"baseline_status":"alias","baseline_matches":["funds/chile/platanus-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-poligono-capital","name":"Poligono Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-polymath-ventures","name":"Polymath Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/polymath-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-position-ventures","name":"Position Ventures","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-potencia-ventures-other","name":"Potencia Ventures Other","country_occurrences":{"EC":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-prepare-4-vc","name":"Prepare 4 VC","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-primary-ventures","name":"Primary Ventures","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-proeza-ventures","name":"Proeza Ventures","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-promotora","name":"Promotora","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-proveg-incubator","name":"ProVeg Incubator","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-pygma","name":"Pygma","country_occurrences":{"EC":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-qed-investors","name":"QED Investors","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/qed-investors.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-quona-capital","name":"Quona Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/quona-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-radian-capital","name":"Radian Capital","country_occurrences":{"CO":1,"VE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-rakuten-capital","name":"Rakuten Capital","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-rally-cap-ventures","name":"Rally Cap Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-rebel-capital","name":"Rebel Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-rebel-fund","name":"Rebel Fund","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-reciprocal-studio","name":"Reciprocal Studio","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-redwood-ventures","name":"Redwood Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/redwood-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-regen-ventures","name":"ReGen Ventures","country_occurrences":{"BO":1,"EC":1,"VE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-relatively-fund","name":"Relatively Fund","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":5,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-renegade-partners","name":"Renegade Partners","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-resiliencevc","name":"ResilienceVC","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-rhombuz-vc","name":"Rhombuz VC","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-riverside-ventures","name":"Riverside Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-roble-ventures","name":"Roble Ventures","country_occurrences":{"CO":2,"PE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-rockalabs","name":"RockaLabs","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-rockstart","name":"Rockstart","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-rootcamp","name":"RootCamp","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-roquin-ventures","name":"Roquin Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-roundx","name":"RoundX","country_occurrences":{"VE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-rps-ventures","name":"RPS Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-saasholic","name":"SaaSholic","country_occurrences":{"CO":1,"PE":1,"VE":1},"occurrence_count":3,"baseline_status":"exact_name","baseline_matches":["funds/brazil/saasholic.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-saatchinvest","name":"SAATCHiNVEST","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-salkantay-ventures","name":"Salkantay Ventures","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/salkantay-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-sandstorm-vc","name":"sandstorm.vc","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-saxecap","name":"SaxeCap","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-sc-angeles","name":"SC Angeles","country_occurrences":{"BO":1,"CO":1,"PE":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-scala","name":"Scala","country_occurrences":{"CO":1,"EC":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-seaf","name":"SEAF","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-seaya","name":"Seaya","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-seedstars","name":"Seedstars","country_occurrences":{"BO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-semillero-partners","name":"Semillero Partners","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-sequoia-capital","name":"Sequoia Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-sevenx-ventures","name":"SevenX Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-sheesha-finance","name":"Sheesha Finance","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-ship2b","name":"Ship2B","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-shrmlabs","name":"SHRMLabs","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-simma-capital","name":"Simma Capital","country_occurrences":{"CO":1,"VE":1},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/colombia/simma-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-simple-capital","name":"simple.Capital()","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-sinai-ventures","name":"Sinai Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-sk-lee","name":"SK Lee","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-social-starts","name":"Social Starts","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-soria-futuro","name":"Soria Futuro","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-souter-investments","name":"Souter Investments","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-starlight-ventures","name":"Starlight Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-start-up-chile","name":"Start-Up Chile","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-startup-health","name":"StartUp Health","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-stepstone-group","name":"StepStone Group","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-sting","name":"Sting","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-strategic-group","name":"Strategic Group","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-super-capital-vc","name":"Super Capital VC","country_occurrences":{"BO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-supernode-ventures","name":"Supernode Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-sur-ventures","name":"Sur Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-sv-latam-capital","name":"SV Latam Capital","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-svg-ventures","name":"SVG Ventures","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-symbiotics-group","name":"Symbiotics Group","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-systema-vc","name":"Systema VC","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-taram-capital","name":"Taram Capital","country_occurrences":{"CO":1,"EC":1,"PE":1},"occurrence_count":3,"baseline_status":"exact_name","baseline_matches":["funds/regional/taram-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-technoart","name":"TechnoArt","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-techstars-payments","name":"Techstars Payments","country_occurrences":{"BO":1,"CO":1,"EC":1,"PE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-tekton-ventures","name":"Tekton Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-ten13","name":"TEN13","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-tenaya-capital","name":"Tenaya Capital","country_occurrences":{"VE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-the-arkfund","name":"The Arkfund","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-the-board","name":"The Board","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-the-ganesha-lab","name":"The Ganesha Lab","country_occurrences":{"BO":1,"CO":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-the-marathon-fund","name":"The Marathon Fund","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-theventurecity","name":"TheVentureCity","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-timo-lassak","name":"Timo Lassak","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-top-seeds-lab","name":"Top Seeds Lab","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-tribe-capital","name":"Tribe Capital","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-true-ventures","name":"True Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-twentytwo-vc","name":"TwentyTwo VC","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-union-kitchen","name":"Union Kitchen","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-united-investors","name":"United Investors","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-uno-ventures","name":"Uno Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-unpopular-ventures","name":"Unpopular Ventures","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-unrest","name":"Unrest","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-utec-ventures","name":"UTEC Ventures","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/regional/utec-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-valu-vc","name":"Valu.vc","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-vast-ventures","name":"Vast Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-venturefriends","name":"VentureFriends","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-venturesouq","name":"VentureSouq","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-vertical-partners","name":"Vertical Partners","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-village-capital","name":"Village Capital","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-village-global","name":"Village Global","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-vine-st-ventures","name":"Vine St. Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-vine-ventures","name":"Vine Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-viola-ventures","name":"Viola Ventures","country_occurrences":{"VE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-virgin-group","name":"Virgin Group","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-volpe-capital","name":"Volpe Capital","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-volpe-ventures","name":"Volpe Ventures","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-vujade-ventures","name":"VujaDe Ventures","country_occurrences":{"PE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-wbi-innovations","name":"WBI Innovations","country_occurrences":{"VE":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-william-dekle","name":"William Dekle","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-winnipeg-capital","name":"Winnipeg Capital","country_occurrences":{"CO":2,"EC":1,"PE":1},"occurrence_count":4,"baseline_status":"exact_name","baseline_matches":["funds/regional/winnipeg-capital.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-wisdom-ventures","name":"Wisdom Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-wollef-ventures","name":"Wollef Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-wow-aceleradora","name":"WOW Aceleradora","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-xfactor-ventures","name":"XFactor Ventures","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-yap-capital","name":"YAP Capital","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-yard-hub","name":"yard[hub]","country_occurrences":{"BO":1,"EC":1,"PE":1,"VE":1},"occurrence_count":4,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-yellow","name":"Yellow","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-z-nation-lab","name":"Z Nation Lab","country_occurrences":{"CO":1,"PE":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-zacua-ventures","name":"Zacua Ventures","country_occurrences":{"EC":1},"occurrence_count":1,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/zacua-ventures.md"]}
+{"schema_version":"1.0","candidate_id":"delta-fund-zentynel","name":"Zentynel","country_occurrences":{"CO":2},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-zigg-capital","name":"Zigg Capital","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
+{"schema_version":"1.0","candidate_id":"delta-fund-zillionize","name":"Zillionize","country_occurrences":{"CO":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}

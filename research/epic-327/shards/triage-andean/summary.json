@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "worker_id": "triage-andean",
+  "countries": [
+    "BO",
+    "CO",
+    "EC",
+    "PE",
+    "VE"
+  ],
+  "pages_expected": 39,
+  "pages_processed": 39,
+  "raw_occurrences": 746,
+  "canonical_candidates": 371,
+  "baseline_matches": 51,
+  "new_candidates": 320,
+  "unresolved_candidates": 0,
+  "gaps": {
+    "unparsed_rows": 141,
+    "access_failures": 0,
+    "pagination_variance_pages": 3
+  }
+}
