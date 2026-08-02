@@ -1,4 +1,6 @@
 import json
+import subprocess
+import sys
 import unittest
 from pathlib import Path
 
@@ -59,6 +61,21 @@ class NormalizedIntakeContractTests(unittest.TestCase):
             "stage": "seed",
         }
         self.assertTrue(list(self.validator.iter_errors(record)))
+
+    def test_committed_intake_reconciles(self):
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(EPIC / "intake" / "reconcile.py"),
+                "--check",
+            ],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
 
 if __name__ == "__main__":

@@ -95,7 +95,9 @@ def reconcile() -> tuple[list[str], dict]:
 
         gaps = summary.get("gaps", {})
         page_failures = gaps.get("page_failures", gaps.get("page_errors", 0))
-        unparsed_rows = gaps.get("unparsed_rows", 0)
+        unparsed_rows = gaps.get(
+            "unparsed_rows", gaps.get("unmaterialized_occurrences", 0)
+        )
         checks = {
             "worker_id": worker["worker_id"],
             "countries": sorted(worker["countries"]),
