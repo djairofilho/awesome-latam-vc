@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "worker_id": "triage-southern-cone-brazil",
+  "countries": [
+    "AR",
+    "BR",
+    "CL",
+    "PY",
+    "UY"
+  ],
+  "pages_expected": 83,
+  "pages_processed": 83,
+  "page_failures": 0,
+  "pagination_divergences": 0,
+  "truncated_name_occurrences": 343,
+  "source_self_reference_occurrences": 1,
+  "unmaterialized_occurrences": 344,
+  "notes": [
+    "Rótulos visualmente truncados não foram materializados como nomes canônicos.",
+    "Nenhuma ocorrência bruta foi persistida."
+  ]
+}

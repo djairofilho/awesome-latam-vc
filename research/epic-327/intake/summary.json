@@ -1,0 +1,55 @@
+{
+  "baseline_matches": 185,
+  "cross_shard_candidates": 362,
+  "epic": 327,
+  "inputs": [
+    {
+      "path": "research/epic-327/shards/triage-andean/gaps.json",
+      "sha256": "a782a5726d56128fb0efef32a4ee25116f59c3764af13327944ffcc198869682"
+    },
+    {
+      "path": "research/epic-327/shards/triage-andean/intake.jsonl",
+      "sha256": "c2cc4148da642544e06403fe1cbbb59b0f0f573ebc12832d576e5de8b232afdc"
+    },
+    {
+      "path": "research/epic-327/shards/triage-andean/summary.json",
+      "sha256": "cdb442bb634fca874477be32645d217e2afad9d00142a12c8aef2a126d467f7b"
+    },
+    {
+      "path": "research/epic-327/shards/triage-mexico-cac/gaps.json",
+      "sha256": "2bfc121e96a26e8fdb07146b4ac6f7d9e722aacea0e93347f3d29ca7f5f23738"
+    },
+    {
+      "path": "research/epic-327/shards/triage-mexico-cac/intake.jsonl",
+      "sha256": "e3f5c6de0820893decbd6cfd2d11e3c399918176fb300e73bcf33efb13ad0ae8"
+    },
+    {
+      "path": "research/epic-327/shards/triage-mexico-cac/summary.json",
+      "sha256": "eededac4a70a9677a3bf8ed3a0ada4aaa3f09de64345787290c11cd0c66de71e"
+    },
+    {
+      "path": "research/epic-327/shards/triage-southern-cone-brazil/gaps.json",
+      "sha256": "f180cecd5ac5213cedad1e069c039f9051474e08a056ee328d809391a14cedb4"
+    },
+    {
+      "path": "research/epic-327/shards/triage-southern-cone-brazil/intake.jsonl",
+      "sha256": "f37970750bdd2454a01f9cef1155f8828f2d8f5aeae842077b417188b86d2750"
+    },
+    {
+      "path": "research/epic-327/shards/triage-southern-cone-brazil/summary.json",
+      "sha256": "b4c630090f01185aac4a078f0e5783c2bb386ddf22cee3e135a55981c539eff0"
+    }
+  ],
+  "issue": 329,
+  "new_candidates": 1449,
+  "page_failures": 0,
+  "pages_expected": 184,
+  "pages_processed": 184,
+  "raw_occurrences": 3506,
+  "schema_version": "1.0",
+  "shard_candidates": 1634,
+  "shards": 3,
+  "unique_candidates": 1088,
+  "unparsed_rows": 741,
+  "unresolved_candidates": 0
+}

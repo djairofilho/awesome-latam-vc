@@ -16,6 +16,11 @@
       "allowed_evidence_role": "lead_only",
       "storage": "private queue outside Git"
     },
+    "normalized_intake": {
+      "schema": "schemas/normalized-intake-record.schema.json",
+      "purpose": "Publish only normalized names, aggregate country occurrence counts and baseline matches.",
+      "prohibited_fields": ["discovery_source", "discovery_url", "third_party_facts"]
+    },
     "official_evidence": {
       "schema": "schemas/official-evidence-record.schema.json",
       "purpose": "Record claims obtained from current official sources.",

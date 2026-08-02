@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "worker_id": "triage-southern-cone-brazil",
+  "countries": [
+    "AR",
+    "BR",
+    "CL",
+    "PY",
+    "UY"
+  ],
+  "pages_expected": 83,
+  "pages_processed": 83,
+  "raw_occurrences": 1627,
+  "canonical_candidates": 735,
+  "baseline_matches": 81,
+  "new_candidates": 654,
+  "unresolved_candidates": 0,
+  "gaps": {
+    "page_failures": 0,
+    "pagination_divergences": 0,
+    "truncated_name_occurrences": 343,
+    "source_self_reference_occurrences": 1,
+    "unmaterialized_occurrences": 344
+  }
+}
