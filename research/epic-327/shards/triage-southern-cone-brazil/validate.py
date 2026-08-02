@@ -117,7 +117,10 @@ def validate() -> list[str]:
     unmaterialized = gaps.get("unmaterialized_occurrences")
     if materialized + unmaterialized != summary.get("raw_occurrences"):
         errors.append("summary.json: equação de ocorrências divergente")
-    if gaps.get("truncated_name_occurrences") != unmaterialized:
+    explained_gaps = gaps.get("truncated_name_occurrences", 0) + gaps.get(
+        "source_self_reference_occurrences", 0
+    )
+    if explained_gaps != unmaterialized:
         errors.append("gaps.json: truncados devem explicar as ocorrências não materializadas")
     if gaps.get("page_failures") != 0 or gaps.get("pagination_divergences") != 0:
         errors.append("gaps.json: cobertura de páginas divergente")

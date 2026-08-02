@@ -485,7 +485,6 @@
 {"schema_version":"1.0","candidate_id":"delta-fund-om-dao-ventures","name":"OM DAO Ventures","country_occurrences":{"AR":1,"BR":1,"CL":1},"occurrence_count":3,"baseline_status":"new","baseline_matches":[]}
 {"schema_version":"1.0","candidate_id":"delta-fund-omidyar-network","name":"Omidyar Network","country_occurrences":{"AR":1,"BR":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
 {"schema_version":"1.0","candidate_id":"delta-fund-onevc","name":"ONEVC","country_occurrences":{"BR":1,"CL":1},"occurrence_count":2,"baseline_status":"exact_name","baseline_matches":["funds/multi-country/onevc.md"]}
-{"schema_version":"1.0","candidate_id":"delta-fund-openvc-accelerator","name":"OpenVC Accelerator","country_occurrences":{"AR":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
 {"schema_version":"1.0","candidate_id":"delta-fund-opera-ventures","name":"Opera Ventures","country_occurrences":{"BR":1,"CL":1},"occurrence_count":2,"baseline_status":"new","baseline_matches":[]}
 {"schema_version":"1.0","candidate_id":"delta-fund-option-venture-studio","name":"Option Venture Studio","country_occurrences":{"CL":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}
 {"schema_version":"1.0","candidate_id":"delta-fund-oqva-digital","name":"OQVA.digital","country_occurrences":{"BR":1},"occurrence_count":1,"baseline_status":"new","baseline_matches":[]}

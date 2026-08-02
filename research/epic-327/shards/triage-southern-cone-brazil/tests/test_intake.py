@@ -26,8 +26,8 @@ class SouthernConeBrazilIntakeTests(unittest.TestCase):
             if line.strip()
         ]
         materialized = sum(row["occurrence_count"] for row in rows)
-        self.assertEqual(1284, materialized)
-        self.assertEqual(343, gaps["unmaterialized_occurrences"])
+        self.assertEqual(1283, materialized)
+        self.assertEqual(344, gaps["unmaterialized_occurrences"])
         self.assertEqual(1627, summary["raw_occurrences"])
         self.assertEqual(summary["raw_occurrences"], materialized + gaps["unmaterialized_occurrences"])
 
