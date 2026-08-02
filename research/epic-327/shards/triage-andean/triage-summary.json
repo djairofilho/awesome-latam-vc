@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "worker_id": "triage-andean",
+  "candidate_count": 371,
+  "evidence_record_count": 11,
+  "status_counts": {
+    "baseline_duplicate": 51,
+    "official_duplicate": 1,
+    "official_identity_resolved": 8,
+    "official_route_resolved": 2,
+    "unresolved": 309
+  },
+  "official_sources_only": true,
+  "eligibility_decisions_made": 0
+}
