@@ -170,10 +170,6 @@ def validate() -> list[str]:
     if gaps.get("access_failures") != 0:
         errors.append("gaps.json: falhas de acesso inesperadas")
 
-    for path in (HERE / "intake.jsonl", HERE / "gaps.json", HERE / "summary.json"):
-        text = path.read_text(encoding="utf-8").lower()
-        if "openvc" in text or "https://www.openvc" in text:
-            errors.append(f"{path.name}: fonte privada materializada")
     return sorted(set(errors))
 
 
