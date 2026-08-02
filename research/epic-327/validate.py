@@ -37,7 +37,12 @@ def validate_contract() -> list[str]:
         errors.append("workers/topology.json: baseline_commit divergente")
 
     layers = contract.get("layers", {})
-    if set(layers) != {"discovery", "official_evidence", "decision"}:
+    if set(layers) != {
+        "discovery",
+        "normalized_intake",
+        "official_evidence",
+        "decision",
+    }:
         errors.append("contract.json: camadas de dados incompletas")
     source_policy = contract.get("source_policy", {})
     if not source_policy.get("official_sources_required_for_published_facts"):

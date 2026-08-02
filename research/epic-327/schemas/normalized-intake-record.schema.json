@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-latam-vc.local/epic-327/normalized-intake-record.schema.json",
+  "title": "Normalized public intake record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "name",
+    "country_occurrences",
+    "occurrence_count",
+    "baseline_status",
+    "baseline_matches"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^delta-fund-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {"type": "string", "minLength": 1},
+    "country_occurrences": {
+      "type": "object",
+      "minProperties": 1,
+      "patternProperties": {
+        "^[A-Z]{2}$": {"type": "integer", "minimum": 1}
+      },
+      "additionalProperties": false
+    },
+    "occurrence_count": {"type": "integer", "minimum": 1},
+    "baseline_status": {
+      "enum": ["new", "exact_name", "alias", "identity_collision", "unresolved"]
+    },
+    "baseline_matches": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^funds/.+\\.md$"},
+      "uniqueItems": true
+    },
+    "normalization_notes": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"baseline_status": {"const": "new"}}},
+      "then": {"properties": {"baseline_matches": {"maxItems": 0}}}
+    },
+    {
+      "if": {
+        "properties": {
+          "baseline_status": {
+            "enum": ["exact_name", "alias", "identity_collision"]
+          }
+        }
+      },
+      "then": {"properties": {"baseline_matches": {"minItems": 1}}}
+    }
+  ]
+}
