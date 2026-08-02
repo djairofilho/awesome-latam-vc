@@ -11,7 +11,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from jsonschema import Draft202012Validator
+from jsonschema import Draft202012Validator, FormatChecker
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -37,6 +37,10 @@ POSITIVE_STATUSES = {
     "fund_candidate",
 }
 ROUTED_STATUSES = {"routed", "official_route_resolved"}
+DUPLICATE_STATUSES = {"duplicate", "baseline_duplicate", "official_duplicate"}
+UNRESOLVED_STATUSES = {"unresolved", "identity_unresolved"}
+POSITIVE_CATEGORIES = {"fund", "fund_candidate", "vc_firm", "corporate_vc"}
+EXCEPTION_STATUSES = {"unresolved", "identity_conflict"}
 
 
 def load_json(path: Path) -> dict:
@@ -76,10 +80,70 @@ def partition(candidate_id: str) -> int:
     return int(hashlib.sha256(candidate_id.encode("utf-8")).hexdigest(), 16) % 3
 
 
+def status_class(value: str | None) -> str | None:
+    if value in POSITIVE_STATUSES:
+        return "positive"
+    if value in ROUTED_STATUSES:
+        return "routed"
+    if value in DUPLICATE_STATUSES:
+        return "duplicate"
+    if value in UNRESOLVED_STATUSES:
+        return "unresolved"
+    return None
+
+
+def geography_values(evidence_rows: list[dict], field: str) -> str | list[str]:
+    values: set[str] = set()
+    for evidence_row in evidence_rows:
+        for claim in evidence_row.get("claims", []):
+            if claim.get("field") != field:
+                continue
+            value = claim.get("value")
+            if isinstance(value, str) and value.strip():
+                values.add(value.strip())
+            elif isinstance(value, list):
+                values.update(
+                    item.strip()
+                    for item in value
+                    if isinstance(item, str) and item.strip()
+                )
+    return sorted(values, key=str.casefold) if values else "not_disclosed"
+
+
+def occurrence_count_is_valid(record: dict) -> bool:
+    return record.get("occurrence_count") == sum(
+        record.get("country_occurrences", {}).values()
+    )
+
+
+def evidence_reference_errors(
+    groups: dict[str, dict], evidence: dict[str, dict]
+) -> list[str]:
+    errors = []
+    for candidate_id, group in groups.items():
+        for triage in group["triage"]:
+            for evidence_id in triage.get("evidence_ids", []):
+                evidence_row = evidence.get(evidence_id)
+                if evidence_row is None:
+                    errors.append(f"{candidate_id}: evidence_id inexistente: {evidence_id}")
+                elif evidence_row.get("candidate_id") != candidate_id:
+                    errors.append(
+                        f"{candidate_id}: evidence_id pertence a "
+                        f"{evidence_row.get('candidate_id')}: {evidence_id}"
+                    )
+    return errors
+
+
 def collect_inputs() -> tuple[dict[str, dict], dict[str, dict], list[str]]:
     groups: dict[str, dict] = {}
     evidence: dict[str, dict] = {}
     errors: list[str] = []
+    intake_schema = load_json(EPIC / "schemas" / "normalized-intake-record.schema.json")
+    evidence_schema = load_json(EPIC / "schemas" / "official-evidence-record.schema.json")
+    intake_validator = Draft202012Validator(intake_schema)
+    evidence_validator = Draft202012Validator(
+        evidence_schema, format_checker=FormatChecker()
+    )
     for shard_name in SHARDS:
         shard = EPIC / "shards" / shard_name
         intake_path = shard / "intake.jsonl"
@@ -97,7 +161,16 @@ def collect_inputs() -> tuple[dict[str, dict], dict[str, dict], list[str]]:
         triage_by_id = {row.get("candidate_id"): row for row in triage_rows}
         if len(triage_by_id) != len(triage_rows):
             errors.append(f"{shard_name}: candidate_id duplicado na triagem")
-        for row in intake_rows:
+        intake_ids = [row.get("candidate_id") for row in intake_rows]
+        if len(intake_ids) != len(set(intake_ids)):
+            errors.append(f"{shard_name}: candidate_id duplicado no intake")
+        for line_number, row in enumerate(intake_rows, 1):
+            for error in intake_validator.iter_errors(row):
+                errors.append(f"{intake_path}:{line_number}: {error.message}")
+            if not occurrence_count_is_valid(row):
+                errors.append(
+                    f"{shard_name}: {row.get('candidate_id')}: occurrence_count divergente"
+                )
             candidate_id = row["candidate_id"]
             triage = triage_by_id.get(candidate_id)
             if triage is None:
@@ -122,15 +195,21 @@ def collect_inputs() -> tuple[dict[str, dict], dict[str, dict], list[str]]:
         for candidate_id in sorted(extra_ids):
             errors.append(f"{shard_name}: {candidate_id} sem intake")
         if evidence_path.exists():
-            for row in load_jsonl(evidence_path):
+            for line_number, row in enumerate(load_jsonl(evidence_path), 1):
+                row_errors = list(evidence_validator.iter_errors(row))
+                for error in row_errors:
+                    errors.append(f"{evidence_path}:{line_number}: {error.message}")
                 evidence_id = row.get("evidence_id")
-                if evidence_id in evidence and evidence[evidence_id] != row:
-                    errors.append(f"{evidence_id}: evidência divergente entre shards")
-                evidence[evidence_id] = row
+                if evidence_id in evidence:
+                    errors.append(f"{evidence_id}: evidence_id duplicado entre shards")
+                    continue
+                if not row_errors and evidence_id:
+                    evidence[evidence_id] = row
+    errors.extend(evidence_reference_errors(groups, evidence))
     return groups, evidence, errors
 
 
-def preliminary(candidate_id: str, group: dict) -> dict:
+def preliminary(candidate_id: str, group: dict, evidence: dict[str, dict]) -> dict:
     names = sorted(group["names"], key=lambda value: (len(value), value.casefold()))
     triage = group["triage"]
     profile_targets = set(group["baseline_profiles"])
@@ -144,14 +223,22 @@ def preliminary(candidate_id: str, group: dict) -> dict:
         target for target in profile_targets if not target.startswith("funds/")
     }
     domains = {domain for record in triage if (domain := domain_from(record))}
-    evidence_ids = {
+    referenced_evidence_ids = {
         evidence_id
         for record in triage
         for evidence_id in record.get("evidence_ids", [])
     }
-    statuses = {
-        record.get("status", record.get("triage_status")) for record in triage
+    evidence_ids = {
+        evidence_id
+        for evidence_id in referenced_evidence_ids
+        if evidence_id in evidence
+        and evidence[evidence_id].get("candidate_id") == candidate_id
     }
+    evidence_rows = [evidence[evidence_id] for evidence_id in sorted(evidence_ids)]
+    raw_statuses = [
+        record.get("status", record.get("triage_status")) for record in triage
+    ]
+    status_classes = {status_class(value) for value in raw_statuses}
     categories = {
         category
         for record in triage
@@ -170,26 +257,66 @@ def preliminary(candidate_id: str, group: dict) -> dict:
     category = sorted(categories)[0] if len(categories) == 1 else None
     route_destination = sorted(destinations)[0] if len(destinations) == 1 else None
 
-    if len(profiles) > 1 or len(domains) > 1 or len(destinations) > 1:
+    contradictory_pair = False
+    for triage_record in triage:
+        decision = status_class(
+            triage_record.get("status", triage_record.get("triage_status"))
+        )
+        triage_category = triage_record.get(
+            "category", triage_record.get("category_hint")
+        )
+        if decision == "positive" and triage_category in ROUTED_CATEGORIES:
+            contradictory_pair = True
+        elif decision == "routed" and triage_category in POSITIVE_CATEGORIES:
+            contradictory_pair = True
+        elif decision == "unresolved" and triage_category not in {None, "unresolved"}:
+            contradictory_pair = True
+        elif decision == "duplicate" and triage_category in ROUTED_CATEGORIES:
+            contradictory_pair = True
+
+    has_unknown_status = None in status_classes
+    status_classes.discard(None)
+    conflicts = (
+        has_unknown_status
+        or len(status_classes) > 1
+        or len(categories) > 1
+        or len(profiles) > 1
+        or len(domains) > 1
+        or len(destinations) > 1
+        or contradictory_pair
+        or (bool(profiles) and status_classes not in ({"duplicate"}, set()))
+        or (bool(destinations) and status_classes != {"routed"})
+    )
+
+    if conflicts:
         status = "identity_conflict"
         notes.append("conflicting_identity_keys")
-    elif profiles:
-        status = "duplicate"
-        canonical_profile = next(iter(profiles))
-    elif statuses & ROUTED_STATUSES or categories & ROUTED_CATEGORIES or destinations:
-        if route_destination:
+        category = None if len(categories) > 1 else category
+        route_destination = None
+    elif status_classes == {"duplicate"} or profiles:
+        if len(profiles) == 1:
+            status = "duplicate"
+            canonical_profile = next(iter(profiles))
+            route_destination = None
+        else:
+            status = "identity_conflict"
+            route_destination = None
+            notes.append("duplicate_without_canonical_profile")
+    elif status_classes == {"routed"}:
+        if route_destination and category in ROUTED_CATEGORIES:
             status = "routed"
         else:
             status = "identity_conflict"
+            route_destination = None
             notes.append("route_without_destination")
-    elif (
-        statuses & POSITIVE_STATUSES
-        or category in {"fund", "fund_candidate", "vc_firm", "corporate_vc"}
-    ):
+    elif status_classes == {"positive"}:
         if len(domains) == 1 and evidence_ids:
             status = "ready_for_validation"
         else:
             notes.append("positive_identity_missing_domain_or_evidence")
+    elif status_classes != {"unresolved"}:
+        status = "identity_conflict"
+        notes.append("unknown_triage_status")
 
     record = {
         "schema_version": "1.0",
@@ -206,6 +333,8 @@ def preliminary(candidate_id: str, group: dict) -> dict:
         "status": status,
         "route_destination": route_destination,
         "evidence_ids": sorted(evidence_ids),
+        "base_geography": geography_values(evidence_rows, "base_geography"),
+        "investment_geography": geography_values(evidence_rows, "market_access"),
         "validation_partition": None,
         "reducer_notes": sorted(notes),
     }
@@ -220,51 +349,24 @@ def resolve_domains(records: list[dict]) -> None:
     for domain_records in by_domain.values():
         if len(domain_records) < 2:
             continue
-        profile_targets = {
-            record["canonical_profile"]
-            for record in domain_records
-            if record["canonical_profile"]
-        }
-        if len(profile_targets) > 1:
-            for record in domain_records:
-                record["status"] = "identity_conflict"
-                record["canonical_profile"] = None
-                record["canonical_candidate_id"] = None
-                record["reducer_notes"] = sorted(
-                    set(record["reducer_notes"]) | {"domain_maps_to_multiple_profiles"}
-                )
-            continue
-        if profile_targets:
-            profile = next(iter(profile_targets))
-            for record in domain_records:
-                record["status"] = "duplicate"
-                record["canonical_profile"] = profile
-                record["canonical_candidate_id"] = None
-                record["route_destination"] = None
-            continue
-        candidates = [
-            record
-            for record in domain_records
-            if record["status"] in {"ready_for_validation", "unresolved"}
-        ]
-        if len(candidates) < 2:
-            continue
-        canonical = min(candidates, key=lambda record: record["candidate_id"])
-        aliases = set(canonical["aliases"])
-        for record in candidates:
-            if record is canonical:
+        for record in domain_records:
+            record["reducer_notes"] = sorted(
+                set(record["reducer_notes"]) | {"shared_domain_requires_relationship_evidence"}
+            )
+            if record["status"] in {"routed", "identity_conflict"}:
                 continue
-            aliases.add(record["name"])
-            aliases.update(record["aliases"])
-            record["status"] = "duplicate"
-            record["canonical_candidate_id"] = canonical["candidate_id"]
+            record["status"] = "identity_conflict"
+            record["canonical_profile"] = None
+            record["canonical_candidate_id"] = None
             record["route_destination"] = None
-        canonical["aliases"] = sorted(aliases - {canonical["name"]}, key=str.casefold)
 
 
 def build() -> tuple[list[str], dict[str, str]]:
     groups, evidence, errors = collect_inputs()
-    records = [preliminary(candidate_id, groups[candidate_id]) for candidate_id in sorted(groups)]
+    records = [
+        preliminary(candidate_id, groups[candidate_id], evidence)
+        for candidate_id in sorted(groups)
+    ]
     resolve_domains(records)
     for record in records:
         if record["status"] == "ready_for_validation":
@@ -275,6 +377,8 @@ def build() -> tuple[list[str], dict[str, str]]:
     schema = load_json(EPIC / "schemas" / "consolidated-candidate.schema.json")
     validator = Draft202012Validator(schema)
     for index, record in enumerate(records, 1):
+        if not occurrence_count_is_valid(record):
+            errors.append(f"candidates.jsonl:{index}: occurrence_count divergente")
         for error in validator.iter_errors(record):
             errors.append(f"candidates.jsonl:{index}: {error.message}")
 
@@ -289,7 +393,30 @@ def build() -> tuple[list[str], dict[str, str]]:
     assigned = [record["candidate_id"] for rows in partitions.values() for record in rows]
     if len(assigned) != len(set(assigned)):
         errors.append("candidato atribuído a mais de um shard de validação")
+    expected_assigned = {
+        record["candidate_id"]
+        for record in records
+        if record["status"] == "ready_for_validation"
+    }
+    if set(assigned) != expected_assigned:
+        errors.append("partições de validação não reconciliam com candidatos prontos")
+    exceptions = [
+        {
+            "schema_version": "1.0",
+            "candidate_id": record["candidate_id"],
+            "status": record["status"],
+            "destination": "manual_identity_review",
+            "reducer_notes": record["reducer_notes"],
+        }
+        for record in records
+        if record["status"] in EXCEPTION_STATUSES
+    ]
     counts = Counter(record["status"] for record in records)
+    terminal_records = sum(
+        counts[status] for status in ("duplicate", "routed", "ready_for_validation")
+    )
+    if terminal_records + len(exceptions) != len(records):
+        errors.append("candidatos terminais e exceções não reconciliam")
     summary = {
         "schema_version": "1.0",
         "epic": 327,
@@ -302,11 +429,15 @@ def build() -> tuple[list[str], dict[str, str]]:
             str(number): len(rows) for number, rows in partitions.items()
         },
         "evidence_records": len(evidence),
+        "terminal_records": terminal_records,
+        "exception_records": len(exceptions),
+        "reconciled_records": terminal_records + len(exceptions),
         "eligibility_decisions": 0,
     }
     outputs = {
         "candidates.jsonl": dump_jsonl(records),
         "evidence.jsonl": dump_jsonl([evidence[key] for key in sorted(evidence)]),
+        "exceptions.jsonl": dump_jsonl(exceptions),
         "summary.json": json.dumps(summary, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
     }
     for number, rows in partitions.items():
