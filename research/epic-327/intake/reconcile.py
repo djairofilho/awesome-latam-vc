@@ -91,7 +91,7 @@ def reconcile() -> tuple[list[str], dict]:
             status_counts[record.get("baseline_status")] += 1
 
         gaps = summary.get("gaps", {})
-        page_failures = gaps.get("page_failures", 0)
+        page_failures = gaps.get("page_failures", gaps.get("page_errors", 0))
         unparsed_rows = gaps.get("unparsed_rows", 0)
         checks = {
             "worker_id": worker["worker_id"],
