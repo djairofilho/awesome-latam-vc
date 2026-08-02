@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "worker_id": "triage-mexico-cac",
+  "unparsed_rows": 256,
+  "non_data_cells": 4,
+  "page_errors": 0,
+  "unparsed_rows_by_country": {
+    "MX": 150,
+    "CR": 20,
+    "CU": 7,
+    "DO": 10,
+    "SV": 15,
+    "GT": 13,
+    "HT": 6,
+    "HN": 7,
+    "NI": 9,
+    "PA": 19
+  },
+  "reasons": {
+    "abbreviated_name_without_unique_prefix_resolution": 256
+  }
+}

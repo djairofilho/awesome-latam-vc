@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "worker_id": "triage-mexico-cac",
+  "countries": [
+    "MX",
+    "CR",
+    "CU",
+    "DO",
+    "SV",
+    "GT",
+    "HT",
+    "HN",
+    "NI",
+    "PA"
+  ],
+  "pages_expected": 62,
+  "pages_processed": 62,
+  "raw_occurrences": 1133,
+  "canonical_candidates": 528,
+  "baseline_matches": 53,
+  "new_candidates": 475,
+  "unresolved_candidates": 0,
+  "gaps": {
+    "unparsed_rows": 256,
+    "non_data_cells": 4,
+    "page_errors": 0,
+    "reconciliation_equation": "raw_occurrences (1133) = materialized_occurrences (877) + unparsed_rows (256)"
+  }
+}
