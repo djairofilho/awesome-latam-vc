@@ -32,11 +32,22 @@ TRIAGE_STATUSES = {
     "official_route_resolved",
     "unresolved",
 }
+SEARCH_KEYS = {
+    "schema_version",
+    "candidate_id",
+    "searched_on",
+    "queries",
+    "terminal_result",
+}
 SUMMARY_KEYS = {
     "schema_version",
     "worker_id",
     "candidate_count",
     "evidence_record_count",
+    "search_record_count",
+    "covered_candidate_count",
+    "uncovered_candidate_count",
+    "coverage_counts",
     "status_counts",
     "official_sources_only",
     "eligibility_decisions_made",
@@ -65,6 +76,7 @@ def validate() -> list[str]:
     intake = load_jsonl(HERE / "intake.jsonl")
     triage = load_jsonl(HERE / "triage.jsonl")
     evidence = load_jsonl(HERE / "official-evidence.jsonl")
+    searches = load_jsonl(HERE / "search-log.jsonl")
     summary = load_json(HERE / "triage-summary.json")
     evidence_schema = load_json(EPIC / "schemas" / "official-evidence-record.schema.json")
     evidence_validator = Draft202012Validator(evidence_schema)
@@ -135,6 +147,36 @@ def validate() -> list[str]:
 
     if set(evidence_by_id) != linked_evidence:
         errors.append("official-evidence.jsonl: existe evidência órfã")
+
+    search_by_id: dict[str, dict[str, Any]] = {}
+    for index, row in enumerate(searches, start=1):
+        if set(row) != SEARCH_KEYS:
+            errors.append(f"search-log.jsonl:{index}: chaves divergentes")
+            continue
+        candidate_id = row["candidate_id"]
+        if candidate_id in search_by_id:
+            errors.append(f"search-log.jsonl:{index}: candidate_id duplicado")
+        search_by_id[candidate_id] = row
+        if row["schema_version"] != "1.0" or row["searched_on"] != "2026-08-02":
+            errors.append(f"search-log.jsonl:{index}: metadados divergentes")
+        queries = row["queries"]
+        if not isinstance(queries, list) or not queries or any(
+            not isinstance(query, str) or not query.strip() for query in queries
+        ):
+            errors.append(f"search-log.jsonl:{index}: consultas inválidas")
+        if row["terminal_result"] != "no_unambiguous_official_identity":
+            errors.append(f"search-log.jsonl:{index}: resultado terminal inválido")
+    if [row.get("candidate_id") for row in searches] != sorted(search_by_id):
+        errors.append("search-log.jsonl: candidate_id fora de ordem")
+
+    unresolved_ids = {
+        row["candidate_id"] for row in triage if row["triage_status"] == "unresolved"
+    }
+    resolved_ids = set(triage_by_id) - unresolved_ids
+    if set(search_by_id) != unresolved_ids:
+        errors.append("search-log.jsonl: buscas não correspondem aos candidatos não resolvidos")
+    covered_ids = resolved_ids | set(search_by_id)
+    uncovered_ids = set(triage_by_id) - covered_ids
     if set(summary) != SUMMARY_KEYS:
         errors.append("triage-summary.json: chaves divergentes")
     if summary.get("worker_id") != "triage-andean":
@@ -143,6 +185,18 @@ def validate() -> list[str]:
         errors.append("triage-summary.json: candidate_count divergente")
     if summary.get("evidence_record_count") != len(evidence):
         errors.append("triage-summary.json: evidence_record_count divergente")
+    if summary.get("search_record_count") != len(searches):
+        errors.append("triage-summary.json: search_record_count divergente")
+    if summary.get("covered_candidate_count") != len(covered_ids):
+        errors.append("triage-summary.json: covered_candidate_count divergente")
+    if summary.get("uncovered_candidate_count") != len(uncovered_ids):
+        errors.append("triage-summary.json: uncovered_candidate_count divergente")
+    expected_coverage_counts = {
+        "resolved_by_baseline_or_official": len(resolved_ids),
+        "documented_terminal_search": len(search_by_id),
+    }
+    if summary.get("coverage_counts") != expected_coverage_counts:
+        errors.append("triage-summary.json: coverage_counts divergente")
     if summary.get("status_counts") != dict(sorted(status_counts.items())):
         errors.append("triage-summary.json: status_counts divergente")
     if summary.get("official_sources_only") is not True:
