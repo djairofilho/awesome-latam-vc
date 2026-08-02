@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "worker_id": "triage-southern-cone-brazil",
+  "cutoff_date": "2026-08-02",
+  "candidates_total": 735,
+  "baseline_matches": 81,
+  "searches_documented": 654,
+  "search_failures": 0,
+  "official_domains_confirmed": 241,
+  "identity_collisions": 64,
+  "searches_without_confirmation": 349,
+  "official_evidence_records": 241,
+  "category_routes": {
+    "research_official_identity": 349,
+    "routed_angel_networks": 9,
+    "routed_accelerators": 10,
+    "official_identity_validation": 221,
+    "duplicate_baseline": 81,
+    "resolve_identity_collision": 64,
+    "routed_public_programs": 1
+  },
+  "validation_partitions": {
+    "0": 241,
+    "1": 241,
+    "2": 253
+  }
+}
