@@ -1,0 +1,68 @@
+{
+  "artifact_hashes": {
+    "catalog-baseline.jsonl": "85539b115a96672bd34a4ff4f8954cc3c388da62fc61df98b10e2a149af020d9",
+    "identity-index.jsonl": "247e5ec0eb5a408f401b276df3529fc89869038909a5c71811be3f8b05da1720"
+  },
+  "baseline_commit": "4190d8c59d47e50784383bf6a83efb6249859bdb",
+  "baseline_ref": "origin/main",
+  "catalog": {
+    "alias_values": 31,
+    "base_geography_counts": {
+      "AE": 1,
+      "AR": 7,
+      "BO": 1,
+      "BR": 64,
+      "CL": 15,
+      "CO": 4,
+      "CR": 2,
+      "DE": 1,
+      "DO": 1,
+      "EC": 1,
+      "ES": 1,
+      "GLOBAL": 36,
+      "HN": 1,
+      "LATAM": 69,
+      "MX": 2,
+      "NL": 1,
+      "PA": 1,
+      "PE": 1,
+      "PR": 3,
+      "PT": 1,
+      "PY": 1,
+      "SG": 1,
+      "SV": 1,
+      "US": 4,
+      "UY": 5,
+      "VE": 1
+    },
+    "domain_collisions": {
+      "fundepar.com.br": [
+        "funds/brazil/arapy.md",
+        "funds/brazil/fundepar.md"
+      ],
+      "linkedin.com": [
+        "funds/brazil/marcha.md",
+        "funds/colombia/qapu-ventures.md",
+        "funds/multi-country/pant3ra-venture-fund.md",
+        "funds/regional/velum-ventures.md"
+      ]
+    },
+    "profiles": 226,
+    "profiles_with_aliases": 29,
+    "profiles_with_identity_domain": 223,
+    "profiles_without_identity_domain": 3,
+    "unique_identity_domains": 219
+  },
+  "cutoff_date": "2026-08-02",
+  "epic": 327,
+  "funds_tree_sha": "414a35a895fe51812a70215d3a5caf60d2505931",
+  "input_digest_sha256": "66fbb6c71a36bfdb3365a4a5bdb4c0eccd7fb7a7bad395a8b7c624320f6b0d39",
+  "issue": 328,
+  "schema_version": "1.0",
+  "snapshot_policy": {
+    "discovery_performed": false,
+    "external_intake_imported": false,
+    "network_access": false,
+    "source": "Git objects at the frozen commit"
+  }
+}

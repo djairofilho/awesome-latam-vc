@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "epic": 327,
+  "issue": 328,
+  "cutoff_date": "2026-08-02",
+  "baseline_commit": "4190d8c59d47e50784383bf6a83efb6249859bdb",
+  "scope": {
+    "catalog_category": "funds",
+    "geography": "LATAM",
+    "result_language": "audited coverage, not market totality"
+  },
+  "layers": {
+    "discovery": {
+      "schema": "schemas/discovery-record.schema.json",
+      "purpose": "Record a supplied lead without importing descriptions or factual fields.",
+      "allowed_evidence_role": "lead_only",
+      "storage": "private queue outside Git"
+    },
+    "official_evidence": {
+      "schema": "schemas/official-evidence-record.schema.json",
+      "purpose": "Record claims obtained from current official sources.",
+      "required_for_eligibility": true
+    },
+    "decision": {
+      "schema": "schemas/decision-record.schema.json",
+      "purpose": "Record the reviewed terminal outcome and destination.",
+      "requires_evidence_ids_for_eligibility": true
+    }
+  },
+  "normalization": {
+    "candidate_id": "stable slug prefixed with delta-fund-",
+    "name": "trim outer whitespace, collapse internal whitespace, preserve spelling and accents",
+    "domain": "lowercase hostname, remove www prefix and trailing dot, preserve registrable subdomains",
+    "aliases": "normalize for comparison without replacing the original spelling",
+    "deduplication_keys": [
+      "normalized name and aliases",
+      "official identity domain",
+      "manager, brand, vehicle and program relationship",
+      "current catalog entity_id and profile path"
+    ],
+    "validation_partition": "int(sha256(candidate_id), 16) mod 3"
+  },
+  "eligibility_gates": [
+    "direct startup capital investment",
+    "recurring venture-capital operation or accepted equivalent",
+    "official activity within 24 months of the cutoff",
+    "Latin American base or recurring explicit access to the region",
+    "canonical identity without unresolved manager, brand, vehicle or program collision"
+  ],
+  "terminal_decisions": [
+    "eligible",
+    "duplicate",
+    "routed_accelerators",
+    "routed_angel_networks",
+    "routed_funding_platforms",
+    "routed_public_programs",
+    "routed_other",
+    "inactive",
+    "insufficient_evidence",
+    "excluded"
+  ],
+  "publication_policy": {
+    "independent_review_required_for": ["eligible", "routed"],
+    "deterministic_exclusion_sample_minimum": 0.2,
+    "freeze_before_publication": true,
+    "funds_per_pull_request_limit": 10,
+    "single_integrator_for_shared_outputs": true
+  },
+  "source_policy": {
+    "external_intake_is_discovery_only": true,
+    "third_party_descriptions_imported": false,
+    "third_party_factual_fields_imported": false,
+    "official_sources_required_for_published_facts": true,
+    "prohibited_inferences": [
+      "check size",
+      "stage",
+      "thesis",
+      "lead preference",
+      "recurrence",
+      "founder access",
+      "geography"
+    ],
+    "missing_value": "not_disclosed or insufficient_evidence"
+  },
+  "access_policy": {
+    "public_pages_only": true,
+    "authentication_required": false,
+    "access_control_bypass": false,
+    "domain_concurrency_limit": 1,
+    "minimum_backoff_seconds": 2,
+    "maximum_retries": 3,
+    "blocking_outcomes": [
+      "login_required",
+      "robots_or_access_denied",
+      "rate_limited_after_retries",
+      "source_unavailable"
+    ]
+  },
+  "historical_freezes_immutable": [
+    "research/epic-207",
+    "research/epic-248",
+    "research/epic-249",
+    "research/epic-250",
+    "research/epic-251",
+    "research/epic-252",
+    "research/epic-253",
+    "research/epic-254",
+    "research/epic-255",
+    "research/epic-256",
+    "research/epic-257",
+    "research/epic-258"
+  ]
+}
