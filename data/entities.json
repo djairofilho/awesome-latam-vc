@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 297,
+    "entity_count": 303,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -1729,6 +1729,53 @@
       "verified_on": "2026-07-26"
     },
     {
+      "aliases": [
+        "ACNEXT"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR",
+        "GLOBAL"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "innovation",
+        "asset_light_businesses"
+      ],
+      "founder_route": "https://acnext.com/",
+      "id": "fund:acnext-capital",
+      "name": "ACNEXT Capital",
+      "official_website": "https://acnext.com/",
+      "operator": null,
+      "source_profile": "funds/brazil/acnext-capital.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "ACNEXT investment approach",
+          "url": "https://acnext.com/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "ACNEXT portfolio",
+          "url": "https://acnext.com/"
+        },
+        {
+          "kind": "official_application",
+          "title": "ACNEXT contact section",
+          "url": "https://acnext.com/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "ACNEXT Capital is a São Paulo-based investor making minority investments in revenue-generating private companies with technology-led growth potential in Brazil and abroad.",
+      "verified_on": "2026-08-02"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "LATAM",
@@ -3282,6 +3329,55 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "govtech",
+        "high_growth_companies"
+      ],
+      "founder_route": "https://www.cedrocapital.com/",
+      "id": "fund:cedro-capital",
+      "name": "Cedro Capital",
+      "official_website": "https://www.cedrocapital.com/",
+      "operator": null,
+      "source_profile": "funds/brazil/cedro-capital.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Cedro Capital venture capital page",
+          "url": "https://www.cedrocapital.com/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Cedro Capital portfolio",
+          "url": "https://www.cedrocapital.com/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Cedro Capital releases",
+          "url": "https://www.cedrocapital.com/category/releases/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "GovTech Fund investment in Jovens Gênios",
+          "url": "https://www.cedrocapital.com/fundo-govtech-cogerido-pela-cedro-capital-lidera-rodada-de-r-118-milhoes-na-edtech-jovens-genios/"
+        }
+      ],
+      "stages": [
+        "seed"
+      ],
+      "summary": "Cedro Capital is an independent Brasília-based asset manager investing venture capital in high-growth technology companies, with a focus on Central Brazil.",
+      "verified_on": "2026-08-02"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "LATAM",
         "kind": "region"
       },
@@ -4377,6 +4473,59 @@
       "verified_on": "2026-07-30"
     },
     {
+      "aliases": [
+        "Equity Rio Investimentos"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "early_stage",
+        "technology_startups",
+        "small_and_medium_businesses"
+      ],
+      "founder_route": "https://www.equityrio.com.br/lpcopiloto-fundraising",
+      "id": "fund:equity-rio",
+      "name": "Equity Rio",
+      "official_website": "https://www.equityrio.com.br/",
+      "operator": null,
+      "source_profile": "funds/brazil/equity-rio.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Equity Rio homepage",
+          "url": "https://www.equityrio.com.br/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Equity Rio portfolio",
+          "url": "https://www.equityrio.com.br/portfolio"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Equity Rio Co-Pilot Fundraising 2026",
+          "url": "https://www.equityrio.com.br/lpcopiloto-fundraising"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Equity Rio 2026 investment update",
+          "url": "https://www.equityrio.com.br/equity-rio-investimentos-2026"
+        }
+      ],
+      "stages": [
+        "angel",
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Equity Rio is a Brazilian investment and fundraising firm that leads early-stage rounds and may invest its own capital alongside other investors.",
+      "verified_on": "2026-08-02"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "BO",
@@ -4486,6 +4635,58 @@
       ],
       "summary": "EWA Capital invests in early-stage technology companies with a gender-smart approach.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [
+        "FEBA"
+      ],
+      "base_geography": {
+        "code": "US",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "US",
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "customer_acquisition",
+        "early_stage_companies"
+      ],
+      "founder_route": "https://www.febacapital.com/startup-investment",
+      "id": "fund:febacapital",
+      "name": "FEBACAPITAL",
+      "official_website": "https://www.febacapital.com/",
+      "operator": null,
+      "source_profile": "funds/multi-country/febacapital.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "FEBACAPITAL investment approach",
+          "url": "https://www.febacapital.com/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "FEBACAPITAL portfolio",
+          "url": "https://www.febacapital.com/portfolio"
+        },
+        {
+          "kind": "official_application",
+          "title": "FEBACAPITAL startup application",
+          "url": "https://www.febacapital.com/startup-investment"
+        },
+        {
+          "kind": "official_website",
+          "title": "FEBACAPITAL contact and office locations",
+          "url": "https://www.febacapital.com/contact"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "FEBACAPITAL is a strategic venture capital firm with offices in the United States and Cayman Islands that backs early-stage founders, including Brazilian startups.",
+      "verified_on": "2026-08-02"
     },
     {
       "aliases": [],
@@ -5095,6 +5296,50 @@
       ],
       "summary": "GLOCAL Latam is an Argentina-based accelerator and venture capital fund investing in Latin American AgriFoodTech and ClimateTech startups.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "high_growth_startups",
+        "recurring_revenue"
+      ],
+      "founder_route": "https://www.gr8ventures.com.br/",
+      "id": "fund:gr8-ventures",
+      "name": "GR8 Ventures",
+      "official_website": "https://www.gr8ventures.com.br/",
+      "operator": null,
+      "source_profile": "funds/brazil/gr8-ventures.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "GR8 Ventures investment criteria",
+          "url": "https://www.gr8ventures.com.br/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "GR8 Ventures portfolio",
+          "url": "https://www.gr8ventures.com.br/en/portfolio"
+        },
+        {
+          "kind": "official_application",
+          "title": "GR8 Ventures startup submission instructions",
+          "url": "https://www.gr8ventures.com.br/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "GR8 Ventures is a Brazilian investment company backing high-growth technology startups that have commercial traction and recurring revenue.",
+      "verified_on": "2026-08-02"
     },
     {
       "aliases": [],
@@ -6053,6 +6298,50 @@
       ],
       "summary": "Invexor Venture Partners is a Chile-based venture capital manager investing in early-stage technology startups.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "software",
+        "internet"
+      ],
+      "founder_route": "https://invisto.com.vc/empreendedor",
+      "id": "fund:invisto",
+      "name": "Invisto",
+      "official_website": "https://invisto.com.vc/",
+      "operator": null,
+      "source_profile": "funds/brazil/invisto.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Invisto homepage",
+          "url": "https://invisto.com.vc/"
+        },
+        {
+          "kind": "official_application",
+          "title": "Invisto entrepreneur page",
+          "url": "https://invisto.com.vc/empreendedor"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Invisto network page",
+          "url": "https://invisto.com.vc/rede"
+        }
+      ],
+      "stages": [
+        "growth"
+      ],
+      "summary": "Invisto is a venture capital investment circle in southern Brazil backing validated startups entering the scale-up phase.",
+      "verified_on": "2026-08-02"
     },
     {
       "aliases": [],
