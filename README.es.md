@@ -23,7 +23,7 @@ Una lista curada de fondos de Venture Capital que invierten en América Latina.
 
 ---
 
-El índice está optimizado para una comparación rápida y actualmente reúne 213 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
+El índice está optimizado para una comparación rápida y actualmente reúne 219 fondos. Todos los perfiles de fondos usan el estándar enriquecido. El índice resume etapa, enfoque y geografía; cada página enlazada registra fuentes, fecha de verificación, datos divulgados y observaciones de cartera claramente identificadas.
 
 ## Pan-Latinoamérica (sede en la región)
 
@@ -125,6 +125,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | --- | --- | --- | --- |
 | [A.B.Seed Ventures](funds/brazil/a.b.seed-ventures.md) | Pre-seed y Seed | Software B2B | Brasil |
 | [ACE Ventures](funds/brazil/ace-ventures.md) | Seed y Serie A | Tecnología | Brasil |
+| [ACNEXT Capital](funds/brazil/acnext-capital.md) | No divulgado públicamente | Tecnología, innovación y negocios asset-light | Brasil y global |
 | [Ahead Ventures](funds/brazil/ahead-ventures.md) | Seed y Serie A | Tesis estratégicas corporativas | Brasil |
 | [AMAZ](funds/brazil/amaz.md) | No divulgado públicamente | Bioeconomía amazónica, conservación e impacto climático | Amazonía brasileña |
 | [Arapy](funds/brazil/arapy.md) | No divulgado públicamente | Impacto alineado con los Objetivos de Desarrollo Sostenible de la ONU | Brasil |
@@ -135,6 +136,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [Bossa Invest (Bossanova)](funds/brazil/bossa-invest-bossanova.md) | Pre-seed y Seed | Tecnología B2B y B2B2C | Brasil |
 | [BS2 Ventures](funds/brazil/bs2-ventures.md) | No divulgado públicamente | Soluciones para pequeñas y medianas empresas | Brasil |
 | [Canastra Ventures](funds/brazil/canastra-ventures.md) | Pre-seed | Startups AI-first | Brasil y global |
+| [Cedro Capital](funds/brazil/cedro-capital.md) | Seed | Tecnología, GovTech y empresas de alto crecimiento | Brasil |
 | [Copel Ventures I](funds/brazil/copel-ventures-i.md) | No divulgado públicamente | No divulgado públicamente | Brasil |
 | [Crescera Capital (ex-Bozano)](funds/brazil/crescera-capital-bozano.md) | Growth | Tecnología y empresas de alto crecimiento | Brasil |
 | [CSN Inova Ventures](funds/brazil/csn-inova-ventures.md) | No divulgado públicamente | No divulgado públicamente | Brasil |
@@ -143,18 +145,21 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [DNA Capital](funds/brazil/dna-capital.md) | No divulgado públicamente | Salud | Brasil y Estados Unidos |
 | [DOMO.VC](funds/brazil/domo.vc.md) | Pre-seed y Seed | Tecnología | Brasil |
 | [Entrypoint](funds/brazil/entrypoint.md) | Pre-seed | Startups tecnológicas | Brasil |
+| [Equity Rio](funds/brazil/equity-rio.md) | Ángel, Pre-seed y Seed | Startups tecnológicas en etapa inicial y pequeñas y medianas empresas | Brasil |
 | [Eurofarma Ventures](funds/brazil/eurofarma-ventures.md) | No divulgado públicamente | Biotecnología, descubrimiento de fármacos y terapias avanzadas | Global |
 | [FIP Nordeste Capital Semente](funds/brazil/fip-nordeste-capital-semente.md) | Pre-seed y Seed | Startups tecnológicas regionales | Nordeste de Brasil, norte de Minas Gerais y Espírito Santo |
 | [FIR Capital](funds/brazil/fir-capital.md) | No divulgado públicamente | Innovación, sostenibilidad y empresas de alto crecimiento | Brasil |
 | [Fundepar](funds/brazil/fundepar.md) | No divulgado públicamente | Tecnología, innovación de base científica e impacto | Brasil |
 | [Fundo inovabra I](funds/brazil/fundo-inovabra-i.md) | Series A y B | Tecnología en los sectores financiero y no financiero | Global |
 | [Gerdau Next Ventures](funds/brazil/gerdau-next-ventures.md) | No divulgado públicamente | Construcción, movilidad, sostenibilidad y tecnología | No divulgado públicamente |
+| [GR8 Ventures](funds/brazil/gr8-ventures.md) | No divulgado públicamente | Startups tecnológicas de alto crecimiento | Brasil |
 | [Grão VC](funds/brazil/grao-vc.md) | No divulgado públicamente | No divulgado públicamente | Brasil |
 | [Grupo Boticário Ventures](funds/brazil/grupo-boticario-ventures.md) | Seed y Serie A | Belleza y comercio minorista | Brasil y global |
 | [Hiker Ventures](funds/brazil/hiker-ventures.md) | No divulgado públicamente | No divulgado públicamente | Brasil |
 | [Honey Island Capital](funds/brazil/honey-island-capital.md) | No divulgado públicamente | Fintech y tecnología | Brasil |
 | [IN3](funds/brazil/in3.md) | No divulgado públicamente | Impacto social y ambiental | Norte y Nordeste de Brasil |
 | [Invest Tech](funds/brazil/invest-tech.md) | Seed | Empresas B2B habilitadas por tecnología | Brasil |
+| [Invisto](funds/brazil/invisto.md) | Growth | Negocios de tecnología, software e internet | Sur de Brasil |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed y Seed | Software y tecnología | Brasil |
 | [KPTL](funds/brazil/kptl.md) | Multietapa | Deep tech, salud, bioeconomía y tecnología | Brasil |
 | [L4 Venture Builder](funds/brazil/l4-venture-builder.md) | Growth | No divulgado públicamente | Principalmente Brasil |
@@ -297,6 +302,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [Dux Capital](funds/multi-country/dux-capital.md) | Pre-seed y Seed | Tecnología y fundadores subrepresentados | Estados Unidos y mercados transfronterizos de habla hispana |
 | [EDP Ventures](funds/multi-country/edp-ventures.md) | Seed, Serie A y Serie B | Transición energética y tecnología para energía | Global |
 | [Endeavor Catalyst](funds/multi-country/endeavor-catalyst.md) | Multietapa | Empresas de la red Endeavor | Global |
+| [FEBACAPITAL](funds/multi-country/febacapital.md) | No divulgado públicamente | Empresas en etapa inicial y apoyo operativo | Brasil; cobertura más amplia no divulgada públicamente |
 | [FJ Labs](funds/multi-country/fj-labs.md) | Pre-seed y Seed | Marketplaces y efectos de red | Global |
 | [Flourish Ventures](funds/multi-country/flourish-ventures.md) | No divulgado públicamente | Salud financiera y servicios financieros | Global, incluida América Latina |
 | [Global Founders Capital](funds/multi-country/global-founders-capital.md) | Pre-seed y Seed | Tecnología, agnóstico a sectores | Global, incluida América Latina |
