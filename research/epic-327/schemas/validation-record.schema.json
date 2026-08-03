@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-latam-vc.local/epic-327/validation-record.schema.json",
+  "title": "Official fund validation record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "input_sha256",
+    "validation_partition",
+    "cutoff_date",
+    "validated_on",
+    "validator",
+    "gates",
+    "decision",
+    "reason",
+    "destination",
+    "next_action",
+    "owner"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^delta-fund-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "validation_partition": {"type": "integer", "minimum": 0, "maximum": 2},
+    "cutoff_date": {"type": "string", "format": "date"},
+    "validated_on": {"type": "string", "format": "date"},
+    "validator": {"enum": ["validation-0", "validation-1", "validation-2"]},
+    "gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "direct_investment",
+        "recurrence",
+        "recent_activity",
+        "latam_access",
+        "identity"
+      ],
+      "properties": {
+        "direct_investment": {"$ref": "#/$defs/gate"},
+        "recurrence": {"$ref": "#/$defs/gate"},
+        "recent_activity": {"$ref": "#/$defs/activityGate"},
+        "latam_access": {"$ref": "#/$defs/gate"},
+        "identity": {"$ref": "#/$defs/gate"}
+      }
+    },
+    "decision": {
+      "enum": [
+        "eligible",
+        "duplicate",
+        "routed_accelerators",
+        "routed_angel_networks",
+        "routed_funding_platforms",
+        "routed_public_programs",
+        "routed_other",
+        "inactive",
+        "insufficient_evidence",
+        "excluded"
+      ]
+    },
+    "reason": {"type": "string", "minLength": 1},
+    "destination": {"type": ["string", "null"], "minLength": 1},
+    "next_action": {
+      "enum": [
+        "independent_review",
+        "deterministic_exclusion_sampling",
+        "follow_up_official_evidence",
+        "manual_identity_review"
+      ]
+    },
+    "owner": {"type": ["string", "null"], "minLength": 1}
+  },
+  "$defs": {
+    "finding": {
+      "enum": ["confirmed", "contradictory", "not_disclosed", "blocked"]
+    },
+    "evidenceIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^evidence-delta-[a-z0-9-]+$"}
+    },
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finding", "evidence_ids"],
+      "properties": {
+        "finding": {"$ref": "#/$defs/finding"},
+        "evidence_ids": {"$ref": "#/$defs/evidenceIds"},
+        "blocking_outcome": {
+          "enum": [
+            "login_required",
+            "robots_or_access_denied",
+            "rate_limited_after_retries",
+            "source_unavailable"
+          ]
+        },
+        "attempted_url": {"type": "string", "format": "uri", "pattern": "^https?://"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"finding": {"const": "blocked"}}},
+          "then": {
+            "required": ["blocking_outcome", "attempted_url"],
+            "properties": {"evidence_ids": {"maxItems": 0}}
+          },
+          "else": {
+            "properties": {"evidence_ids": {"minItems": 1}},
+            "not": {"anyOf": [{"required": ["blocking_outcome"]}, {"required": ["attempted_url"]}]}
+          }
+        }
+      ]
+    },
+    "activityGate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finding", "latest_official_activity_on", "evidence_ids"],
+      "properties": {
+        "finding": {"$ref": "#/$defs/finding"},
+        "latest_official_activity_on": {"type": ["string", "null"], "format": "date"},
+        "evidence_ids": {"$ref": "#/$defs/evidenceIds"},
+        "blocking_outcome": {
+          "enum": [
+            "login_required",
+            "robots_or_access_denied",
+            "rate_limited_after_retries",
+            "source_unavailable"
+          ]
+        },
+        "attempted_url": {"type": "string", "format": "uri", "pattern": "^https?://"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"finding": {"enum": ["confirmed", "contradictory"]}}},
+          "then": {
+            "properties": {
+              "latest_official_activity_on": {"type": "string"},
+              "evidence_ids": {"minItems": 1}
+            },
+            "not": {"anyOf": [{"required": ["blocking_outcome"]}, {"required": ["attempted_url"]}]}
+          }
+        },
+        {
+          "if": {"properties": {"finding": {"const": "not_disclosed"}}},
+          "then": {
+            "properties": {
+              "latest_official_activity_on": {"type": "null"},
+              "evidence_ids": {"minItems": 1}
+            },
+            "not": {"anyOf": [{"required": ["blocking_outcome"]}, {"required": ["attempted_url"]}]}
+          }
+        },
+        {
+          "if": {"properties": {"finding": {"const": "blocked"}}},
+          "then": {
+            "required": ["blocking_outcome", "attempted_url"],
+            "properties": {
+              "latest_official_activity_on": {"type": "null"},
+              "evidence_ids": {"maxItems": 0}
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"decision": {"enum": ["eligible", "routed_accelerators", "routed_angel_networks", "routed_funding_platforms", "routed_public_programs", "routed_other"]}}},
+      "then": {
+        "properties": {
+          "next_action": {"const": "independent_review"},
+          "owner": {"type": "null"}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"decision": {"enum": ["duplicate", "inactive", "excluded"]}}},
+      "then": {
+        "properties": {
+          "next_action": {"const": "deterministic_exclusion_sampling"},
+          "owner": {"type": "null"}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"decision": {"const": "insufficient_evidence"}}},
+      "then": {
+        "properties": {
+          "next_action": {"enum": ["follow_up_official_evidence", "manual_identity_review"]},
+          "owner": {"type": "string"},
+          "destination": {"type": "null"}
+        }
+      }
+    }
+  ]
+}
