@@ -1,0 +1,24 @@
+{
+  "assignment_records": 1071,
+  "assignments_sha256": "ea640962a9cf564d29f01a31c930fffa7afc71a3013ce0f91c787767d89c2ac0",
+  "changes_requested": 264,
+  "final_decision_counts": {
+    "eligible": 2,
+    "excluded": 14,
+    "identity_conflict": 592,
+    "inactive": 1,
+    "insufficient_evidence": 339,
+    "routed_accelerators": 9,
+    "routed_angel_networks": 3,
+    "routed_funding_platforms": 2,
+    "routed_other": 10,
+    "unresolved": 99
+  },
+  "result_records": 1071,
+  "results_sha256": "8687c4f03738695464155c325413ca364c9d62826b63690cf5140c7c54ffdea4",
+  "review_status_counts": {
+    "approved": 807,
+    "changes_requested": 264
+  },
+  "schema_version": "1.0"
+}
