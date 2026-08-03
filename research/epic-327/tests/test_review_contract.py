@@ -116,6 +116,56 @@ class ReviewContractTests(unittest.TestCase):
                 summary["sample_strata"]["exception:unresolved"]["selected"], 1
             )
 
+    def test_error_expands_entire_stratum(self):
+        with tempfile.TemporaryDirectory() as directory:
+            epic = Path(directory) / "research" / "epic-327"
+            schema_dir = epic / "schemas"
+            schema_dir.mkdir(parents=True)
+            schema_dir.joinpath("review-assignment.schema.json").write_text(
+                (EPIC / "schemas" / "review-assignment.schema.json").read_text(
+                    encoding="utf-8"
+                ),
+                encoding="utf-8",
+            )
+            unresolved = [
+                {"candidate_id": f"delta-fund-unresolved-{number}", "status": "unresolved"}
+                for number in range(9)
+            ]
+            write_jsonl(
+                epic / "consolidation" / "candidates.jsonl",
+                [
+                    {"candidate_id": row["candidate_id"], "name": f"Unresolved {number}"}
+                    for number, row in enumerate(unresolved)
+                ],
+            )
+            write_jsonl(epic / "consolidation" / "exceptions.jsonl", unresolved)
+            for number in range(3):
+                write_jsonl(
+                    epic / "shards" / f"validation-{number}" / "decisions.jsonl", []
+                )
+            review_dir = epic / "review"
+            review_dir.mkdir(parents=True)
+            review_dir.joinpath("sample-expansions.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": "1.0",
+                        "expanded_strata": {
+                            "exception:unresolved": {
+                                "trigger_candidates": ["delta-fund-unresolved-0"]
+                            }
+                        },
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            errors, outputs = PREPARE.build(epic)
+            self.assertEqual(errors, [])
+            summary = json.loads(outputs["assignment-summary.json"])
+            stratum = summary["sample_strata"]["exception:unresolved"]
+            self.assertEqual(stratum["selected"], 9)
+            self.assertTrue(stratum["expanded_to_full_review"])
+
 
 if __name__ == "__main__":
     unittest.main()

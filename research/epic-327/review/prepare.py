@@ -160,14 +160,30 @@ def build(epic: Path = EPIC) -> tuple[list[str], dict[str, str]]:
         else:
             errors.append(f"{source['candidate_id']}: exception status inválido")
 
+    expansion_path = epic / "review" / "sample-expansions.json"
+    expanded_strata = set()
+    if expansion_path.exists():
+        try:
+            expansion = json.loads(expansion_path.read_text(encoding="utf-8"))
+            expanded_strata = set(expansion.get("expanded_strata", {}))
+        except (OSError, json.JSONDecodeError) as exc:
+            errors.append(f"{expansion_path}: expansão inválida: {exc}")
+    unknown_expansions = expanded_strata - set(strata)
+    if unknown_expansions:
+        errors.append(
+            "estratos de expansão desconhecidos: " + ", ".join(sorted(unknown_expansions))
+        )
+
     sampled = []
     sample_summary = {}
     for stratum, rows in sorted(strata.items()):
-        selected = deterministic_sample(rows)
+        expanded = stratum in expanded_strata
+        selected = sorted(rows, key=lambda row: row["candidate_id"]) if expanded else deterministic_sample(rows)
         sample_summary[stratum] = {
             "population": len(rows),
             "selected": len(selected),
             "minimum": math.ceil(len(rows) * 0.2),
+            "expanded_to_full_review": expanded,
         }
         sampled.extend(
             assignment(source, names[source["candidate_id"]], "deterministic_exclusion_sample")

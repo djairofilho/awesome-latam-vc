@@ -1,37 +1,41 @@
 {
-  "assignment_records": 836,
+  "assignment_records": 989,
   "issue": 337,
   "reason_counts": {
     "all_eligible": 2,
     "all_identity_conflicts": 756,
     "all_routed": 16,
-    "deterministic_exclusion_sample": 62
+    "deterministic_exclusion_sample": 215
   },
   "reviewer_counts": {
-    "review-0": 262,
-    "review-1": 276,
-    "review-2": 298
+    "review-0": 318,
+    "review-1": 322,
+    "review-2": 349
   },
   "sample_strata": {
     "decision:excluded": {
+      "expanded_to_full_review": false,
       "minimum": 3,
       "population": 11,
       "selected": 3
     },
     "decision:inactive": {
+      "expanded_to_full_review": false,
       "minimum": 1,
       "population": 2,
       "selected": 1
     },
     "decision:insufficient_evidence": {
+      "expanded_to_full_review": false,
       "minimum": 19,
       "population": 93,
       "selected": 19
     },
     "exception:unresolved": {
+      "expanded_to_full_review": true,
       "minimum": 39,
       "population": 192,
-      "selected": 39
+      "selected": 192
     }
   },
   "schema_version": "1.0"
