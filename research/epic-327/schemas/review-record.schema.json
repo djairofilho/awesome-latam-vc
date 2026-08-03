@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-latam-vc.local/epic-327/review-record.schema.json",
+  "title": "Independent review result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "reviewer",
+    "reviewed_on",
+    "assignment_sha256",
+    "blind_search_outcome",
+    "review_status",
+    "final_decision",
+    "destination",
+    "evidence_ids",
+    "error_codes"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^delta-fund-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "reviewer": {"enum": ["review-0", "review-1", "review-2"]},
+    "reviewed_on": {"type": "string", "format": "date"},
+    "assignment_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "blind_search_outcome": {
+      "enum": ["confirmed", "contradicted", "no_additional_evidence", "blocked"]
+    },
+    "review_status": {"enum": ["approved", "changes_requested"]},
+    "final_decision": {
+      "enum": [
+        "eligible",
+        "duplicate",
+        "routed_accelerators",
+        "routed_angel_networks",
+        "routed_funding_platforms",
+        "routed_public_programs",
+        "routed_other",
+        "inactive",
+        "insufficient_evidence",
+        "excluded",
+        "identity_conflict",
+        "unresolved"
+      ]
+    },
+    "destination": {"type": ["string", "null"]},
+    "evidence_ids": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^evidence-delta-[a-z0-9-]+$"},
+      "uniqueItems": true
+    },
+    "error_codes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "identity_mismatch",
+          "unsupported_claim",
+          "stale_activity",
+          "latam_access_unproven",
+          "category_mismatch",
+          "canonical_collision",
+          "source_unavailable",
+          "other"
+        ]
+      },
+      "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"review_status": {"const": "approved"}}},
+      "then": {"properties": {"error_codes": {"maxItems": 0}}}
+    },
+    {
+      "if": {"properties": {"review_status": {"const": "changes_requested"}}},
+      "then": {"properties": {"error_codes": {"minItems": 1}}}
+    }
+  ]
+}
