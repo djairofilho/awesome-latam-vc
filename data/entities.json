@@ -3248,7 +3248,13 @@
         "kind": "country"
       },
       "countries_covered": [
+        "BZ",
         "CR",
+        "SV",
+        "GT",
+        "HN",
+        "NI",
+        "PA",
         "DO"
       ],
       "entity_type": "fund",
@@ -3265,8 +3271,8 @@
       "source_profile": "funds/costa-rica/caricaco-ventures.md",
       "sources": [
         {
-          "kind": "official_website",
-          "title": "CV2 launch and investment criteria",
+          "kind": "official_activity",
+          "title": "Introducing CV2: The “First Check” for Global Founders from Central America and the Dominican Republic",
           "url": "https://caricaco.vc/en/blog/introducing-cv2-the-first-check-for-global-founders-from-central-america-and-the-dominican-republic/"
         },
         {
@@ -3276,10 +3282,11 @@
         }
       ],
       "stages": [
-        "not_disclosed"
+        "pre_seed",
+        "seed"
       ],
       "summary": "Caricaco Ventures invests in software and AI-native startups connected to Central America and the Dominican Republic.",
-      "verified_on": "2026-07-30"
+      "verified_on": "2026-08-02"
     },
     {
       "aliases": [],
