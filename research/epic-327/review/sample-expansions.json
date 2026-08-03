@@ -1,6 +1,13 @@
 {
   "schema_version": "1.0",
   "expanded_strata": {
+    "decision:excluded": {
+      "reason": "Independent blind review found current official investment evidence for a sampled structural exclusion.",
+      "trigger_candidates": [
+        "delta-fund-yellow-hub"
+      ],
+      "review_scope": "100_percent"
+    },
     "exception:unresolved": {
       "reason": "Independent blind review found official identity and investment evidence for sampled unresolved candidates.",
       "trigger_candidates": [

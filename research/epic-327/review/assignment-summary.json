@@ -1,23 +1,23 @@
 {
-  "assignment_records": 989,
+  "assignment_records": 997,
   "issue": 337,
   "reason_counts": {
     "all_eligible": 2,
     "all_identity_conflicts": 756,
     "all_routed": 16,
-    "deterministic_exclusion_sample": 215
+    "deterministic_exclusion_sample": 223
   },
   "reviewer_counts": {
-    "review-0": 318,
-    "review-1": 322,
-    "review-2": 349
+    "review-0": 320,
+    "review-1": 327,
+    "review-2": 350
   },
   "sample_strata": {
     "decision:excluded": {
-      "expanded_to_full_review": false,
+      "expanded_to_full_review": true,
       "minimum": 3,
       "population": 11,
-      "selected": 3
+      "selected": 11
     },
     "decision:inactive": {
       "expanded_to_full_review": false,
