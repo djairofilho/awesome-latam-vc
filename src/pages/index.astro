@@ -1,41 +1,50 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import {
-  localeDetails,
-  locales,
-  localizedHref,
-} from "../lib/i18n.mjs";
+import { localizedHref } from "../lib/i18n.mjs";
 import { webSiteJsonLd } from "../lib/structured-data.mjs";
+
+const destinations = {
+  en: localizedHref("en", "/"),
+  "pt-BR": localizedHref("pt-BR", "/"),
+  es: localizedHref("es", "/"),
+};
 ---
 
 <BaseLayout
-  title="Awesome LatAm VC · Choose your language"
-  description="Choose English, Portuguese or Spanish to browse the open Latin American funding directory."
+  title="Awesome LatAm VC · Open funding directory"
+  description="Open, source-backed directory of venture funds and startup funding programs across Latin America."
   canonicalPath="/"
   routeSuffix="/"
   structuredData={[webSiteJsonLd()]}
 >
-  <section class="language-landing" aria-labelledby="language-heading">
-    <p class="language-mark" aria-hidden="true">EN · PT-BR · ES</p>
-    <h1 id="language-heading">Choose your language.</h1>
+  <Fragment slot="head">
+    <script is:inline define:vars={{ destinations }}>
+      const preferredLanguage = (
+        navigator.languages?.length
+          ? navigator.languages
+          : [navigator.language]
+      )
+        .map((language) => language?.toLowerCase())
+        .find(
+          (language) =>
+            language?.startsWith("pt") ||
+            language?.startsWith("es") ||
+            language?.startsWith("en"),
+        );
+      const locale = preferredLanguage?.startsWith("pt")
+        ? "pt-BR"
+        : preferredLanguage?.startsWith("es")
+          ? "es"
+          : "en";
+      window.location.replace(destinations[locale]);
+    </script>
+    <meta http-equiv="refresh" content={`0;url=${destinations.en}`} />
+  </Fragment>
+
+  <noscript>
     <p>
-      Escolha seu idioma. Elige tu idioma. The directory never redirects based
-      on browser settings, and every option works without JavaScript.
+      Opening the directory in English.
+      <a href={destinations.en}>Continue to the directory</a>.
     </p>
-    <ul class="language-options">
-      {
-        locales.map((locale) => (
-          <li>
-            <a
-              href={localizedHref(locale, "/")}
-              lang={localeDetails(locale).html_lang}
-            >
-              <span>{localeDetails(locale).label}</span>
-              <span aria-hidden="true">→</span>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </section>
+  </noscript>
 </BaseLayout>

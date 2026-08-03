@@ -31,7 +31,6 @@ export const ui = {
     canonicalProfiles: "canonical profiles",
     geographies: "Geographies",
     categories: "Categories",
-    runtime: "Runtime",
     categoryHeading: "One catalog, five routes to funding",
     categoryBody:
       "Counts come from the canonical files at build time. New accepted profiles appear automatically without copying content into the site.",
@@ -128,7 +127,6 @@ export const ui = {
     canonicalProfiles: "perfis canônicos",
     geographies: "Geografias",
     categories: "Categorias",
-    runtime: "Runtime",
     categoryHeading: "Um catálogo, cinco caminhos para financiamento",
     categoryBody:
       "As contagens vêm dos arquivos canônicos no momento do build. Novos perfis aceitos aparecem automaticamente, sem copiar conteúdo para o site.",
@@ -229,7 +227,6 @@ export const ui = {
     canonicalProfiles: "perfiles canónicos",
     geographies: "Geografías",
     categories: "Categorías",
-    runtime: "Runtime",
     categoryHeading: "Un catálogo, cinco caminos hacia la financiación",
     categoryBody:
       "Los recuentos provienen de los archivos canónicos durante el build. Los nuevos perfiles aceptados aparecen automáticamente sin copiar contenido al sitio.",

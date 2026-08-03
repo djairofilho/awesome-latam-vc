@@ -231,10 +231,17 @@ assert(
   "verification tags must be absent until public repository variables are set",
 );
 assert(
-  !/(?:window\.location|location\.replace|http-equiv="refresh")/i.test(
-    productionHtml,
-  ),
-  "the x-default root must not redirect automatically",
+  productionHtml.includes("window.location.replace") &&
+    productionHtml.includes(
+      'http-equiv="refresh" content="0;url=/awesome-latam-vc/en/"',
+    ) &&
+    productionHtml.includes('"pt-BR":"/awesome-latam-vc/pt-br/"') &&
+    productionHtml.includes('"es":"/awesome-latam-vc/es/"'),
+  "the x-default root must redirect by browser language with an English fallback",
+);
+assert(
+  !productionHtml.includes("Choose your language"),
+  "the root must not render the language chooser",
 );
 assert(
   productionHtml.includes(
@@ -288,6 +295,10 @@ for (const [locale, segment] of Object.entries(localeRoutes)) {
   assert(
     !/(?:href|src)="\/(?!awesome-latam-vc\/)/.test(home + catalog),
     `${locale} output contains a root-relative link outside the Pages base`,
+  );
+  assert(
+    !home.includes("<dt>Runtime</dt>"),
+    `${locale} home must not expose the internal runtime metric`,
   );
 }
 for (const sourcePath of editorialSources) {
