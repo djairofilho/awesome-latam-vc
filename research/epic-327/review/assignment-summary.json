@@ -1,16 +1,16 @@
 {
-  "assignment_records": 1071,
+  "assignment_records": 1073,
   "issue": 337,
   "reason_counts": {
     "all_eligible": 2,
     "all_identity_conflicts": 756,
-    "all_routed": 16,
+    "all_routed": 18,
     "deterministic_exclusion_sample": 297
   },
   "reviewer_counts": {
     "review-0": 344,
     "review-1": 352,
-    "review-2": 375
+    "review-2": 377
   },
   "sample_strata": {
     "decision:excluded": {

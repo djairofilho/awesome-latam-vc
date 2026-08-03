@@ -20,8 +20,8 @@ class Review2Tests(unittest.TestCase):
     def test_assignments_are_complete_and_unique(self):
         assignments = REVIEW.load_jsonl(REVIEW.ASSIGNMENTS)
         results = REVIEW.load_jsonl(REVIEW.RESULTS)
-        self.assertEqual(len(assignments), 375)
-        self.assertEqual(len(results), 375)
+        self.assertEqual(len(assignments), 377)
+        self.assertEqual(len(results), 377)
         self.assertEqual(
             {record["candidate_id"] for record in assignments},
             {record["candidate_id"] for record in results},

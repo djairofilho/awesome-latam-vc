@@ -24,6 +24,12 @@ ROUTED = {
     "routed_public_programs",
     "routed_other",
 }
+CONSOLIDATION_ROUTE_DECISIONS = {
+    "accelerator": "routed_accelerators",
+    "angel_network": "routed_angel_networks",
+    "funding_platform": "routed_funding_platforms",
+    "public_program": "routed_public_programs",
+}
 SAMPLE_DECISIONS = {
     "duplicate",
     "inactive",
@@ -141,6 +147,22 @@ def build(epic: Path = EPIC) -> tuple[list[str], dict[str, str]]:
                 strata[f"decision:{decision}"].append(source)
             else:
                 errors.append(f"{candidate_id}: decisão não reconhecida para revisão")
+
+    for record in candidates:
+        if record.get("status") != "routed":
+            continue
+        candidate_id = record.get("candidate_id")
+        decision = CONSOLIDATION_ROUTE_DECISIONS.get(
+            record.get("category"), "routed_other"
+        )
+        source = {
+            "candidate_id": candidate_id,
+            "source_kind": "consolidation_route",
+            "source_worker": "reducer",
+            "source_decision": decision,
+            "record": record,
+        }
+        mandatory.append(assignment(source, names[candidate_id], "all_routed"))
 
     for record in exceptions:
         status = record.get("status")

@@ -75,7 +75,16 @@ class ReviewContractTests(unittest.TestCase):
             candidates.extend(
                 [
                     {"candidate_id": "delta-fund-eligible", "name": "Eligible"},
-                    {"candidate_id": "delta-fund-routed", "name": "Routed"},
+                    {
+                        "candidate_id": "delta-fund-routed-consolidation",
+                        "name": "Routed Consolidation",
+                        "status": "routed",
+                        "category": "angel_network",
+                    },
+                    {
+                        "candidate_id": "delta-fund-routed-validation",
+                        "name": "Routed Validation",
+                    },
                     {"candidate_id": "delta-fund-conflict", "name": "Conflict"},
                     {"candidate_id": "delta-fund-unresolved", "name": "Unresolved"},
                 ]
@@ -85,7 +94,7 @@ class ReviewContractTests(unittest.TestCase):
             )
             decisions[1].append(
                 {
-                    "candidate_id": "delta-fund-routed",
+                    "candidate_id": "delta-fund-routed-validation",
                     "decision": "routed_accelerators",
                 }
             )
@@ -107,7 +116,24 @@ class ReviewContractTests(unittest.TestCase):
             self.assertEqual(errors, [])
             summary = json.loads(outputs["assignment-summary.json"])
             self.assertEqual(summary["reason_counts"]["all_eligible"], 1)
-            self.assertEqual(summary["reason_counts"]["all_routed"], 1)
+            self.assertEqual(summary["reason_counts"]["all_routed"], 2)
+            assignments = []
+            for number in range(3):
+                assignments.extend(
+                    json.loads(line)
+                    for line in outputs[
+                        f"assignments/review-{number}.jsonl"
+                    ].splitlines()
+                )
+            consolidation_route = next(
+                row
+                for row in assignments
+                if row["candidate_id"] == "delta-fund-routed-consolidation"
+            )
+            self.assertEqual(consolidation_route["source_kind"], "consolidation_route")
+            self.assertEqual(
+                consolidation_route["source_decision"], "routed_angel_networks"
+            )
             self.assertEqual(summary["reason_counts"]["all_identity_conflicts"], 1)
             self.assertEqual(
                 summary["sample_strata"]["decision:excluded"]["selected"], 2
