@@ -2,6 +2,9 @@
 
 [![Website](https://img.shields.io/badge/Website-Explore_the_directory-8B3F00)](https://djairofilho.github.io/awesome-latam-vc/en/)
 [![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-GitHub_Sponsors-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/djairofilho)
+[![Research validation](https://github.com/djairofilho/awesome-latam-vc/actions/workflows/research-validation.yml/badge.svg)](https://github.com/djairofilho/awesome-latam-vc/actions/workflows/research-validation.yml)
+[![Site build](https://github.com/djairofilho/awesome-latam-vc/actions/workflows/site-build.yml/badge.svg)](https://github.com/djairofilho/awesome-latam-vc/actions/workflows/site-build.yml)
+[![License: MIT + CC0](https://img.shields.io/badge/license-MIT%20%2B%20CC0-blue.svg)](LICENSE)
 
 [Explore the Awesome LatAm VC website](https://djairofilho.github.io/awesome-latam-vc/en/)
 
