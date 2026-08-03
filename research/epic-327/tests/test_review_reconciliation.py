@@ -24,7 +24,11 @@ class ReviewReconciliationTests(unittest.TestCase):
         epic = Path(directory) / "research" / "epic-327"
         schema_dir = epic / "schemas"
         schema_dir.mkdir(parents=True)
-        for name in ["review-assignment.schema.json", "review-record.schema.json"]:
+        for name in [
+            "official-evidence-record.schema.json",
+            "review-assignment.schema.json",
+            "review-record.schema.json",
+        ]:
             schema_dir.joinpath(name).write_text(
                 (EPIC / "schemas" / name).read_text(encoding="utf-8"),
                 encoding="utf-8",

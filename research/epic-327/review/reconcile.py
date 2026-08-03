@@ -42,7 +42,9 @@ def dump_jsonl(rows: list[dict]) -> str:
     return "".join(canonical_line(row) + "\n" for row in rows)
 
 
-def evidence_index(epic: Path) -> tuple[dict[str, dict], list[str]]:
+def evidence_index(
+    epic: Path, validator: Draft202012Validator
+) -> tuple[dict[str, dict], list[str]]:
     index: dict[str, dict] = {}
     errors = []
     paths = sorted(epic.glob("shards/*/*evidence*.jsonl"))
@@ -53,7 +55,9 @@ def evidence_index(epic: Path) -> tuple[dict[str, dict], list[str]]:
         except (OSError, ValueError) as exc:
             errors.append(str(exc))
             continue
-        for row in rows:
+        for number, row in enumerate(rows, 1):
+            for error in validator.iter_errors(row):
+                errors.append(f"{path}:{number}: {error.message}")
             evidence_id = row.get("evidence_id")
             if not evidence_id:
                 errors.append(f"{path}: evidência sem evidence_id")
@@ -68,16 +72,21 @@ def build(epic: Path = EPIC) -> tuple[list[str], dict[str, str]]:
     errors = []
     assignment_schema_path = epic / "schemas" / "review-assignment.schema.json"
     result_schema_path = epic / "schemas" / "review-record.schema.json"
+    evidence_schema_path = epic / "schemas" / "official-evidence-record.schema.json"
     try:
         assignment_schema = json.loads(assignment_schema_path.read_text(encoding="utf-8"))
         result_schema = json.loads(result_schema_path.read_text(encoding="utf-8"))
+        evidence_schema = json.loads(evidence_schema_path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         return [str(exc)], {}
     assignment_validator = Draft202012Validator(
         assignment_schema, format_checker=FormatChecker()
     )
     result_validator = Draft202012Validator(result_schema, format_checker=FormatChecker())
-    evidence, evidence_errors = evidence_index(epic)
+    evidence_validator = Draft202012Validator(
+        evidence_schema, format_checker=FormatChecker()
+    )
+    evidence, evidence_errors = evidence_index(epic, evidence_validator)
     errors.extend(evidence_errors)
 
     assignments = {}
