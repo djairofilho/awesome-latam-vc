@@ -1,0 +1,99 @@
+{
+  "counts": {
+    "adjudications": 265,
+    "candidate_universe": 1088,
+    "decision_counts": {
+      "duplicate": 15,
+      "eligible": 1,
+      "excluded": 14,
+      "identity_conflict": 592,
+      "inactive": 2,
+      "insufficient_evidence": 339,
+      "routed_accelerators": 10,
+      "routed_angel_networks": 4,
+      "routed_funding_platforms": 2,
+      "routed_other": 10,
+      "unresolved": 99
+    },
+    "final_decisions": 1088,
+    "findings_by_severity": {},
+    "review_assignments": 1073,
+    "review_results": 1073,
+    "unparsed_intake_rows": 741
+  },
+  "cutoff_date": "2026-08-02",
+  "epic": 327,
+  "findings": [],
+  "gates": [
+    {
+      "gate": "baseline_intake_hashes",
+      "status": "pass"
+    },
+    {
+      "gate": "candidate_terminal_ledger",
+      "status": "pass"
+    },
+    {
+      "gate": "mandatory_review_and_sample",
+      "status": "pass"
+    },
+    {
+      "gate": "official_validation_integrity",
+      "status": "pass"
+    },
+    {
+      "gate": "review_and_adjudication_integrity",
+      "status": "pass"
+    },
+    {
+      "gate": "freeze_and_publication_plan",
+      "status": "pass"
+    },
+    {
+      "gate": "publication_surfaces",
+      "status": "pass"
+    },
+    {
+      "gate": "order_and_determinism",
+      "status": "pass"
+    },
+    {
+      "gate": "utf8_and_mojibake",
+      "status": "pass"
+    },
+    {
+      "gate": "cutoff_and_limitations",
+      "status": "pass"
+    }
+  ],
+  "issue": 338,
+  "limitations": [
+    "The audited universe is the frozen 1,088-candidate intake queue, not a claim of market totality.",
+    "The source intake preserved 741 unparsed rows outside the candidate ledger.",
+    "The audit performs no live HTTP checks; it validates frozen official-source evidence and publication artifacts.",
+    "Identity-conflict and unresolved records use destination_kind manual_review; their original destination may be null or manual_identity_review.",
+    "routed_other destinations are abstract terminal ecosystem handoffs accepted by the schema; they are not required to be physical paths and do not represent pending fund publication.",
+    "Eligibility and recency are evaluated at the 2026-08-02 cutoff."
+  ],
+  "provenance": {
+    "baseline_commit": "4190d8c59d47e50784383bf6a83efb6249859bdb",
+    "final_decisions_sha256": "d7151032f365ad55472e81b343cf646bf469c52797aabbebfcef72796404241c",
+    "network_access": false,
+    "precedence": [
+      "adjudication",
+      "review",
+      "origin"
+    ]
+  },
+  "publication": {
+    "audited_profile": "funds/multi-country/wayfinder-ventures.md",
+    "csv_export_count": 1,
+    "export_drift": [],
+    "export_errors": [],
+    "index_errors": [],
+    "json_export_count": 1,
+    "profile_errors": []
+  },
+  "schema_version": "1.0",
+  "status": "pass"
+}
