@@ -12,8 +12,8 @@
     "identity_mismatch": 1,
     "unsupported_claim": 1
   },
-  "evidence_file_sha256": "ba9b4c2f1620862fd92105e39757cf28f262599303856f65eddcfbd97ccdde0b",
-  "evidence_records": 2,
+  "evidence_file_sha256": "deff28e789e4d5f4150d718c69ef2a8180b9ace0af9cefad9c5aa952f4cc9864",
+  "evidence_records": 4,
   "final_decision_counts": {
     "eligible": 1,
     "excluded": 3,
@@ -25,7 +25,7 @@
   },
   "issue": 337,
   "result_records": 375,
-  "results_file_sha256": "c349fe29f5c2489ae31ecac0e78b933d5df077c352b962d50a79ad5fecd09061",
+  "results_file_sha256": "32be1dd0f05a9a3de845a14576cc603835550e6486cea85b3583b5cca87f7551",
   "review_status_counts": {
     "approved": 373,
     "changes_requested": 2

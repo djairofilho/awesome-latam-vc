@@ -39,6 +39,12 @@ OVERRIDES = {
         "evidence_ids": ["evidence-delta-magic-fund-independent-review"],
         "error_codes": ["identity_mismatch", "unsupported_claim"],
     },
+    "delta-fund-wayfinder-ventures": {
+        "evidence_ids": [
+            "evidence-delta-wayfinder-independent-portfolio",
+            "evidence-delta-wayfinder-independent-activity",
+        ],
+    },
 }
 
 CONFIRMED = {
@@ -143,6 +149,53 @@ def review_evidence() -> list[dict]:
                     "value": {"finding": "not_disclosed", "value": None},
                     "support": "O material oficial encontrado não fornece uma data exata de atividade que satisfaça a janela de validação.",
                 },
+            ],
+        },
+        {
+            "schema_version": "1.0",
+            "evidence_id": "evidence-delta-wayfinder-independent-portfolio",
+            "candidate_id": "delta-fund-wayfinder-ventures",
+            "official_url": "https://www.wayfinder.com/companies",
+            "source_title": "Wayfinder Ventures official portfolio",
+            "accessed_on": REVIEWED_ON,
+            "source_kind": "official_portfolio",
+            "claims": [
+                {
+                    "field": "identity",
+                    "value": {"finding": "confirmed", "value": "Wayfinder Ventures"},
+                    "support": "A página oficial identifica o fundo e apresenta seu portfólio de startups.",
+                },
+                {
+                    "field": "direct_startup_investment",
+                    "value": {"finding": "confirmed", "value": True},
+                    "support": "O portfólio oficial apresenta dezenas de startups investidas pelo fundo.",
+                },
+                {
+                    "field": "recurrence",
+                    "value": {"finding": "confirmed", "value": True},
+                    "support": "A página oficial lista investimentos recorrentes em diferentes anos.",
+                },
+                {
+                    "field": "market_access",
+                    "value": {"finding": "confirmed", "value": True},
+                    "support": "O portfólio oficial inclui Konta.com, descrita como solução para México e América Latina, e Pideaky, descrita como solução para a América Latina.",
+                },
+            ],
+        },
+        {
+            "schema_version": "1.0",
+            "evidence_id": "evidence-delta-wayfinder-independent-activity",
+            "candidate_id": "delta-fund-wayfinder-ventures",
+            "official_url": "https://www.wayfinder.com/updates",
+            "source_title": "Wayfinder Ventures official updates",
+            "accessed_on": REVIEWED_ON,
+            "source_kind": "official_activity",
+            "claims": [
+                {
+                    "field": "activity_date",
+                    "value": {"finding": "confirmed", "value": "2025-04-22"},
+                    "support": "A página oficial registra atualização de empresa do portfólio em 22 de abril de 2025.",
+                }
             ],
         },
     ]
