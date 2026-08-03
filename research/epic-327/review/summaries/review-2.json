@@ -1,0 +1,35 @@
+{
+  "assignment_file_sha256": "454926f9a8d2cda9d9710df1800ca59a5c93c0c7dc1ec454a8c8de6ea0f99e61",
+  "assignment_records": 375,
+  "blind_search_outcome_counts": {
+    "confirmed": 5,
+    "contradicted": 2,
+    "no_additional_evidence": 368
+  },
+  "complete": true,
+  "error_code_counts": {
+    "category_mismatch": 1,
+    "identity_mismatch": 1,
+    "unsupported_claim": 1
+  },
+  "evidence_file_sha256": "93e5eb75b06339880bf7c0d3a7b652eee266bba8e3d9f42866f7b4f13a93063f",
+  "evidence_records": 2,
+  "final_decision_counts": {
+    "eligible": 1,
+    "excluded": 3,
+    "identity_conflict": 269,
+    "inactive": 1,
+    "insufficient_evidence": 34,
+    "routed_accelerators": 3,
+    "unresolved": 64
+  },
+  "issue": 337,
+  "result_records": 375,
+  "results_file_sha256": "c349fe29f5c2489ae31ecac0e78b933d5df077c352b962d50a79ad5fecd09061",
+  "review_status_counts": {
+    "approved": 373,
+    "changes_requested": 2
+  },
+  "reviewer": "review-2",
+  "schema_version": "1.0"
+}
