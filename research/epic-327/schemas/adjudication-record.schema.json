@@ -37,7 +37,8 @@
         "routed_other",
         "inactive",
         "insufficient_evidence",
-        "excluded"
+        "excluded",
+        "identity_conflict"
       ]
     },
     "destination": {"type": ["string", "null"]},
