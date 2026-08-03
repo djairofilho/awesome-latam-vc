@@ -30,8 +30,8 @@ class SouthernConeBrazilTriageTests(unittest.TestCase):
         baseline = [row for row in records if row["search"]["outcome"] == "baseline_match"]
         searched = [row for row in records if row["search"]["query"] is not None]
         self.assertEqual(735, len(records))
-        self.assertEqual(81, len(baseline))
-        self.assertEqual(654, len(searched))
+        self.assertEqual(79, len(baseline))
+        self.assertEqual(656, len(searched))
         self.assertEqual(len(records), len(baseline) + len(searched))
 
     def test_official_evidence_is_separate_and_linked(self) -> None:
@@ -42,9 +42,35 @@ class SouthernConeBrazilTriageTests(unittest.TestCase):
             for record in records
             for evidence_id in record["evidence_ids"]
         }
-        self.assertEqual(241, len(evidence))
+        self.assertEqual(240, len(evidence))
         self.assertEqual(linked, {item["evidence_id"] for item in evidence})
         self.assertNotIn("\"results\"", (HERE / "triage.jsonl").read_text(encoding="utf-8"))
+
+    def test_audited_ambiguous_identities_are_not_confirmed(self) -> None:
+        records = {row["candidate_id"]: row for row in load_jsonl("triage.jsonl")}
+        evidence_candidates = {
+            row["candidate_id"] for row in load_jsonl("official-evidence.jsonl")
+        }
+
+        bridge = records["delta-fund-bridge-partners"]
+        self.assertEqual("identity_collision", bridge["identity"]["status"])
+        self.assertEqual([], bridge["evidence_ids"])
+        self.assertNotIn("delta-fund-bridge-partners", evidence_candidates)
+
+        for candidate_id in ("delta-fund-k50-ventures", "delta-fund-upload-ventures"):
+            self.assertEqual("not_confirmed", records[candidate_id]["identity"]["status"])
+            self.assertEqual([], records[candidate_id]["evidence_ids"])
+
+    def test_category_claims_use_singular_vocabulary(self) -> None:
+        allowed = {"accelerator", "angel_network", "public_program"}
+        categories = {
+            claim["value"]
+            for row in load_jsonl("official-evidence.jsonl")
+            for claim in row["claims"]
+            if claim["field"] == "category"
+        }
+        self.assertTrue(categories)
+        self.assertTrue(categories <= allowed)
 
 
 if __name__ == "__main__":

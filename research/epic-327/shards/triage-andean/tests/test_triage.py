@@ -29,6 +29,33 @@ class AndeanTriageTest(unittest.TestCase):
         self.assertTrue(resolved.isdisjoint(searched))
         self.assertEqual({row["candidate_id"] for row in triage}, resolved | searched)
 
+    def test_audited_conflicts_have_terminal_searches(self) -> None:
+        triage = {
+            row["candidate_id"]: row
+            for row in VALIDATOR.load_jsonl(HERE / "triage.jsonl")
+        }
+        evidence = VALIDATOR.load_jsonl(HERE / "official-evidence.jsonl")
+        searches = {
+            row["candidate_id"]
+            for row in VALIDATOR.load_jsonl(HERE / "search-log.jsonl")
+        }
+        corrected = {
+            "delta-fund-bridge-partners",
+            "delta-fund-city-of-knowledge",
+            "delta-fund-k50-ventures",
+            "delta-fund-regen-ventures",
+            "delta-fund-strategic-group",
+        }
+        self.assertTrue(
+            all(triage[candidate_id]["triage_status"] == "unresolved" for candidate_id in corrected)
+        )
+        self.assertTrue(corrected <= searches)
+        self.assertTrue(corrected.isdisjoint({row["candidate_id"] for row in evidence}))
+
+        citius = triage["delta-fund-citius"]
+        self.assertEqual("official_identity_resolved", citius["triage_status"])
+        self.assertEqual("citius.vc", citius["official_domain"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,25 @@
+{
+  "eligibility_decisions": 0,
+  "epic": 327,
+  "evidence_records": 637,
+  "exception_records": 948,
+  "input_occurrences": 2765,
+  "input_shard_records": 1634,
+  "issue": 333,
+  "reconciled_records": 1088,
+  "schema_version": "1.0",
+  "status_counts": {
+    "duplicate": 14,
+    "identity_conflict": 756,
+    "ready_for_validation": 124,
+    "routed": 2,
+    "unresolved": 192
+  },
+  "terminal_records": 140,
+  "unique_candidates": 1088,
+  "validation_partition_counts": {
+    "0": 43,
+    "1": 43,
+    "2": 38
+  }
+}

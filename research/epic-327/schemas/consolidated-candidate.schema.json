@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-latam-vc.local/epic-327/consolidated-candidate.schema.json",
+  "title": "Consolidated LatAm delta candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "name",
+    "aliases",
+    "country_occurrences",
+    "occurrence_count",
+    "source_shards",
+    "official_domains",
+    "canonical_profile",
+    "canonical_candidate_id",
+    "category",
+    "status",
+    "route_destination",
+    "evidence_ids",
+    "base_geography",
+    "investment_geography",
+    "validation_partition",
+    "reducer_notes"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^delta-fund-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {"type": "string", "minLength": 1},
+    "aliases": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "country_occurrences": {
+      "type": "object",
+      "minProperties": 1,
+      "patternProperties": {
+        "^[A-Z]{2}$": {"type": "integer", "minimum": 1}
+      },
+      "additionalProperties": false
+    },
+    "occurrence_count": {"type": "integer", "minimum": 1},
+    "source_shards": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "triage-mexico-cac",
+          "triage-andean",
+          "triage-southern-cone-brazil"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "official_domains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$"
+      },
+      "uniqueItems": true
+    },
+    "canonical_profile": {
+      "type": ["string", "null"],
+      "pattern": "^funds/.+\\.md$"
+    },
+    "canonical_candidate_id": {
+      "type": ["string", "null"],
+      "pattern": "^delta-fund-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "category": {
+      "enum": [
+        null,
+        "fund",
+        "fund_candidate",
+        "vc_firm",
+        "corporate_vc",
+        "accelerator",
+        "angel_network",
+        "funding_platform",
+        "private_equity",
+        "public_program",
+        "startup_studio",
+        "venture_and_investment_services",
+        "other"
+      ]
+    },
+    "status": {
+      "enum": [
+        "duplicate",
+        "routed",
+        "ready_for_validation",
+        "unresolved",
+        "identity_conflict"
+      ]
+    },
+    "route_destination": {
+      "type": ["string", "null"],
+      "pattern": "^ecosystem/(?:accelerators|angel-networks|funding-platforms|private-equity|public-programs|startup-studios|venture-and-investment-services)/(?:.*\\.md)?$"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^evidence-delta-[a-z0-9-]+$"},
+      "uniqueItems": true
+    },
+    "base_geography": {"$ref": "#/$defs/disclosedGeography"},
+    "investment_geography": {"$ref": "#/$defs/disclosedGeography"},
+    "validation_partition": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "maximum": 2
+    },
+    "reducer_notes": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "disclosedGeography": {
+      "oneOf": [
+        {"const": "not_disclosed"},
+        {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "ready_for_validation"}}},
+      "then": {
+        "properties": {
+          "evidence_ids": {"minItems": 1},
+          "official_domains": {"minItems": 1, "maxItems": 1},
+          "validation_partition": {"type": "integer"},
+          "canonical_profile": {"type": "null"},
+          "canonical_candidate_id": {"type": "null"},
+          "route_destination": {"type": "null"}
+        }
+      },
+      "else": {"properties": {"validation_partition": {"type": "null"}}}
+    },
+    {
+      "if": {"properties": {"status": {"const": "duplicate"}}},
+      "then": {
+        "oneOf": [
+          {
+            "properties": {
+              "canonical_profile": {"type": "string"},
+              "canonical_candidate_id": {"type": "null"}
+            }
+          },
+          {
+            "properties": {
+              "canonical_profile": {"type": "null"},
+              "canonical_candidate_id": {"type": "string"}
+            }
+          }
+        ],
+        "properties": {"route_destination": {"type": "null"}}
+      }
+    },
+    {
+      "if": {"properties": {"status": {"const": "routed"}}},
+      "then": {
+        "properties": {
+          "route_destination": {"type": "string", "minLength": 1},
+          "canonical_profile": {"type": "null"},
+          "canonical_candidate_id": {"type": "null"}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"status": {"enum": ["unresolved", "identity_conflict"]}}},
+      "then": {
+        "properties": {
+          "route_destination": {"type": "null"},
+          "canonical_profile": {"type": "null"},
+          "canonical_candidate_id": {"type": "null"}
+        }
+      }
+    }
+  ]
+}

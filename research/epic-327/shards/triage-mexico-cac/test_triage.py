@@ -30,6 +30,35 @@ class TriageTests(unittest.TestCase):
         self.assertTrue(all(row["category"] == "unresolved" for row in unresolved))
         self.assertTrue(all(not row["evidence_ids"] for row in unresolved))
 
+    def test_audited_identity_conflicts_remain_unresolved(self) -> None:
+        triage = {
+            row["candidate_id"]: row
+            for row in VALIDATOR.read_jsonl(HERE / "triage.jsonl")
+        }
+        evidence = VALIDATOR.read_jsonl(HERE / "official-evidence.jsonl")
+        corrected = {
+            "delta-fund-bridge-partners",
+            "delta-fund-chiron",
+            "delta-fund-citius",
+            "delta-fund-city-of-knowledge",
+            "delta-fund-core-ventures",
+            "delta-fund-k50-ventures",
+            "delta-fund-upload-ventures",
+        }
+        self.assertTrue(
+            all(triage[candidate_id]["status"] == "identity_unresolved" for candidate_id in corrected)
+        )
+        self.assertTrue(
+            corrected.isdisjoint({row["candidate_id"] for row in evidence})
+        )
+
+    def test_enlaces_evidence_claims_only_literal_identity(self) -> None:
+        evidence = VALIDATOR.read_jsonl(HERE / "official-evidence.jsonl")
+        enlaces = next(
+            row for row in evidence if row["candidate_id"] == "delta-fund-enlaces"
+        )
+        self.assertEqual(["identity"], [claim["field"] for claim in enlaces["claims"]])
+
 
 if __name__ == "__main__":
     unittest.main()

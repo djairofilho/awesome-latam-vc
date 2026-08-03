@@ -2,23 +2,23 @@
   "schema_version": "1.0",
   "worker_id": "triage-mexico-cac",
   "candidate_count": 528,
-  "official_identity_confirmed": 172,
-  "official_search_documented": 472,
+  "official_identity_confirmed": 165,
+  "official_search_documented": 474,
   "status_counts": {
-    "duplicate": 53,
-    "identity_confirmed": 114,
-    "identity_unresolved": 356,
+    "duplicate": 51,
+    "identity_confirmed": 109,
+    "identity_unresolved": 363,
     "routed": 5
   },
   "category_counts": {
     "accelerator": 2,
     "angel_network": 2,
-    "fund": 53,
-    "fund_candidate": 114,
+    "fund": 51,
+    "fund_candidate": 109,
     "public_program": 1,
-    "unresolved": 356
+    "unresolved": 363
   },
-  "evidence_records": 172,
+  "evidence_records": 165,
   "activity_validation": "pending",
   "regional_access_validation": "pending",
   "handoff_rule": "identity_confirmed fund candidates proceed to canonical consolidation; routed and unresolved records remain explicit"
