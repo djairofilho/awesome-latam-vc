@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "expanded_strata": {
+    "decision:excluded": {
+      "reason": "Independent blind review found current official investment evidence for a sampled structural exclusion.",
+      "trigger_candidates": [
+        "delta-fund-yellow-hub"
+      ],
+      "review_scope": "100_percent"
+    },
+    "decision:insufficient_evidence": {
+      "reason": "Independent blind review found official structural exclusion evidence for sampled insufficient-evidence decisions.",
+      "trigger_candidates": [
+        "delta-fund-creas",
+        "delta-fund-dao-capital"
+      ],
+      "review_scope": "100_percent"
+    },
+    "exception:unresolved": {
+      "reason": "Independent blind review found official identity and investment evidence for sampled unresolved candidates.",
+      "trigger_candidates": [
+        "delta-fund-balderton-capital",
+        "delta-fund-elemental-impact",
+        "delta-fund-struck-capital"
+      ],
+      "review_scope": "100_percent"
+    }
+  }
+}

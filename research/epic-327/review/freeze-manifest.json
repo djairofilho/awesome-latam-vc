@@ -1,0 +1,32 @@
+{
+  "cutoff_date": "2026-08-02",
+  "eligible_count": 2,
+  "eligible_records": [
+    {
+      "candidate_id": "delta-fund-caricaco-vc",
+      "canonical_name": "Caricaco VC",
+      "decision": "eligible",
+      "decision_evidence_ids": [
+        "evidence-delta-caricaco-vc-official-review"
+      ],
+      "review_record_id": "review:review-0:delta-fund-caricaco-vc",
+      "validation_partition": 2
+    },
+    {
+      "candidate_id": "delta-fund-wayfinder-ventures",
+      "canonical_name": "Wayfinder Ventures",
+      "decision": "eligible",
+      "decision_evidence_ids": [
+        "evidence-delta-wayfinder-independent-activity",
+        "evidence-delta-wayfinder-independent-portfolio"
+      ],
+      "review_record_id": "review:review-2:delta-fund-wayfinder-ventures",
+      "validation_partition": 1
+    }
+  ],
+  "frozen_on": "2026-08-02",
+  "review_records_sha256": "b8d8b00601596706ce8b957df0ba2a78111cb4808411b5a66dd5f4ba912afa13",
+  "schema_version": "1.0",
+  "source_decisions_sha256": "ea640962a9cf564d29f01a31c930fffa7afc71a3013ce0f91c787767d89c2ac0",
+  "status": "frozen"
+}

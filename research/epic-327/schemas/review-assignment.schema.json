@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-latam-vc.local/epic-327/review-assignment.schema.json",
+  "title": "Independent review assignment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "source_kind",
+    "source_worker",
+    "source_decision",
+    "review_reason",
+    "reviewer",
+    "input_sha256",
+    "blind_queries"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^delta-fund-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "source_kind": {"enum": ["validation_decision", "identity_exception"]},
+    "source_worker": {
+      "enum": ["validation-0", "validation-1", "validation-2", "reducer"]
+    },
+    "source_decision": {
+      "enum": [
+        "eligible",
+        "duplicate",
+        "routed_accelerators",
+        "routed_angel_networks",
+        "routed_funding_platforms",
+        "routed_public_programs",
+        "routed_other",
+        "inactive",
+        "insufficient_evidence",
+        "excluded",
+        "identity_conflict",
+        "unresolved"
+      ]
+    },
+    "review_reason": {
+      "enum": [
+        "all_eligible",
+        "all_routed",
+        "all_identity_conflicts",
+        "deterministic_exclusion_sample"
+      ]
+    },
+    "reviewer": {"enum": ["review-0", "review-1", "review-2"]},
+    "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "blind_queries": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-latam-vc.local/epic-327/adjudication-record.schema.json",
+  "title": "Independent review adjudication",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "adjudicator",
+    "adjudicated_on",
+    "review_record_sha256",
+    "resolution",
+    "final_decision",
+    "destination",
+    "evidence_ids",
+    "reason"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^delta-fund-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "adjudicator": {"type": "string", "minLength": 1},
+    "adjudicated_on": {"type": "string", "format": "date"},
+    "review_record_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "resolution": {"enum": ["accept_review_change", "override_review_change"]},
+    "final_decision": {
+      "enum": [
+        "eligible",
+        "duplicate",
+        "routed_accelerators",
+        "routed_angel_networks",
+        "routed_funding_platforms",
+        "routed_public_programs",
+        "routed_other",
+        "inactive",
+        "insufficient_evidence",
+        "excluded",
+        "identity_conflict"
+      ]
+    },
+    "destination": {"type": ["string", "null"]},
+    "evidence_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^evidence-delta-[a-z0-9-]+$"}
+    },
+    "reason": {"type": "string", "minLength": 1}
+  }
+}

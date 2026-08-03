@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-latam-vc.local/epic-327/publication-freeze-manifest.schema.json",
+  "title": "Frozen manifest for publication planning",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "status",
+    "cutoff_date",
+    "frozen_on",
+    "source_decisions_sha256",
+    "review_records_sha256",
+    "eligible_count",
+    "eligible_records"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "status": {"const": "frozen"},
+    "cutoff_date": {"type": "string", "format": "date"},
+    "frozen_on": {"type": "string", "format": "date"},
+    "source_decisions_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "review_records_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "eligible_count": {"type": "integer", "minimum": 0},
+    "eligible_records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/eligibleRecord"}
+    }
+  },
+  "$defs": {
+    "eligibleRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate_id",
+        "canonical_name",
+        "validation_partition",
+        "decision",
+        "decision_evidence_ids",
+        "review_record_id"
+      ],
+      "properties": {
+        "candidate_id": {
+          "type": "string",
+          "pattern": "^delta-fund-[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "canonical_name": {"type": "string", "minLength": 1},
+        "validation_partition": {"type": "integer", "minimum": 0, "maximum": 2},
+        "decision": {"const": "eligible"},
+        "decision_evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^evidence-delta-[a-z0-9-]+$"}
+        },
+        "review_record_id": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}
