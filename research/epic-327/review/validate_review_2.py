@@ -113,15 +113,15 @@ def review_evidence() -> list[dict]:
             "schema_version": "1.0",
             "evidence_id": "evidence-delta-magic-fund-independent-review",
             "candidate_id": "delta-fund-magic-fund",
-            "official_url": "https://www.linkedin.com/company/themagicfund",
-            "source_title": "MAGIC Fund",
+            "official_url": "https://www.magic.fund/",
+            "source_title": "MAGIC Fund official portfolio",
             "accessed_on": REVIEWED_ON,
-            "source_kind": "official_identity",
+            "source_kind": "official_portfolio",
             "claims": [
                 {
                     "field": "identity",
                     "value": {"finding": "confirmed", "value": "MAGIC Fund"},
-                    "support": "A página institucional identifica a organização como fundo de venture capital early-stage e aponta magic.fund como seu site.",
+                    "support": "A página institucional identifica a organização como fundo de venture capital early-stage.",
                 },
                 {
                     "field": "direct_startup_investment",
