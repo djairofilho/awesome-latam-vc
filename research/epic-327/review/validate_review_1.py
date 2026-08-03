@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 
-import hashlib
+import importlib.util
 import json
 from pathlib import Path
 
@@ -15,12 +15,15 @@ REVIEW = EPIC / "review"
 ASSIGNMENTS = REVIEW / "assignments" / "review-1.jsonl"
 RESULTS = REVIEW / "results" / "review-1.jsonl"
 EVIDENCE = REVIEW / "evidence" / "review-1.jsonl"
+PREPARE_SPEC = importlib.util.spec_from_file_location(
+    "review_prepare", REVIEW / "prepare.py"
+)
+PREPARE = importlib.util.module_from_spec(PREPARE_SPEC)
+PREPARE_SPEC.loader.exec_module(PREPARE)
 
 
 def canonical_line(record: dict) -> str:
-    return json.dumps(
-        record, ensure_ascii=False, sort_keys=True, separators=(",", ":")
-    ) + "\n"
+    return PREPARE.canonical_line(record) + "\n"
 
 
 def load_jsonl(path: Path) -> list[dict]:
@@ -70,9 +73,7 @@ def validate() -> list[str]:
         assignment = assignment_by_id.get(candidate_id)
         if assignment is None:
             continue
-        expected_hash = hashlib.sha256(
-            canonical_line(assignment).encode("utf-8")
-        ).hexdigest()
+        expected_hash = PREPARE.record_sha256(assignment)
         if result["assignment_sha256"] != expected_hash:
             errors.append(f"{candidate_id}: assignment hash mismatch")
         if result["reviewer"] != assignment["reviewer"]:
@@ -82,6 +83,12 @@ def validate() -> list[str]:
             and result["blind_search_outcome"] != "contradicted"
         ):
             errors.append(f"{candidate_id}: requested changes without contradiction")
+        if (
+            result["review_status"] == "changes_requested"
+            and result["blind_search_outcome"] != "blocked"
+            and not result["evidence_ids"]
+        ):
+            errors.append(f"{candidate_id}: requested changes without evidence")
 
     evidence_by_id: dict[str, dict] = {}
     for path in EPIC.rglob("official-evidence.jsonl"):
