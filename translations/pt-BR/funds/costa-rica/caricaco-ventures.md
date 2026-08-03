@@ -17,11 +17,18 @@
     "code": "CR"
   },
   "countries_covered": [
+    "BZ",
     "CR",
+    "SV",
+    "GT",
+    "HN",
+    "NI",
+    "PA",
     "DO"
   ],
   "stages": [
-    "not_disclosed"
+    "pre_seed",
+    "seed"
   ],
   "focuses": [
     "software",
@@ -32,9 +39,9 @@
   "founder_route": "https://caricaco.vc/aplicar/",
   "sources": [
     {
-      "title": "CV2 launch and investment criteria",
+      "title": "Introducing CV2: The “First Check” for Global Founders from Central America and the Dominican Republic",
       "url": "https://caricaco.vc/en/blog/introducing-cv2-the-first-check-for-global-founders-from-central-america-and-the-dominican-republic/",
-      "kind": "official_website"
+      "kind": "official_activity"
     },
     {
       "title": "Caricaco Ventures",
@@ -42,7 +49,7 @@
       "kind": "official_website"
     }
   ],
-  "last_verified": "2026-07-30",
+  "last_verified": "2026-08-02",
   "protected_terms": [
     "Caricaco Ventures"
   ]
@@ -58,14 +65,14 @@ Caricaco Ventures investe em software e startups nativas da AI conectadas à Am�
 - **Tipo de fundo:** Venture capital
 - **Investimento direto em startups:** Sim
 - **Aberto a fundadores externos:** Sim
-- **Estágio de entrada:** Não divulgado publicamente
+- **Estágio de entrada:** Pre-seed e Seed
 - **Estágios seguintes:** Não divulgado publicamente
 - **Foco:** Software, inteligência artificial e tecnologia orientada por propósitos
 - **Geografia:** Costa Rica, América Central e República Dominicana
 - **Cheque inicial:** A partir do USD 200,000
 - **Papel no investimento:** Primeiro-cheque investidor
 - **Modelos de negócio:** Software e startups nativas da AI com um MVP
-- **Tamanho do portfólio:** Mais de 27 startups
+- **Tamanho do portfólio:** 27 startups
 - **Empresas selecionadas:** Vitrinnea, TobiPets, Snap Compliance, e Zunify
 - **Enviar uma startup:** https://caricaco.vc/aplicar/
 
@@ -79,7 +86,7 @@ O lançamento oficial de 2026 informa 27 empresas investidas em seis países e p
 
 ## Fontes
 
-- [CV2 launch and investment criteria](https://caricaco.vc/en/blog/introducing-cv2-the-first-check-for-global-founders-from-central-america-and-the-dominican-republic/)
+- [Introducing CV2: The “First Check” for Global Founders from Central America and the Dominican Republic](https://caricaco.vc/en/blog/introducing-cv2-the-first-check-for-global-founders-from-central-america-and-the-dominican-republic/)
 - [Caricaco Ventures](https://caricaco.vc/)
 
-**Última verificação:** 2026-07-30
+**Última verificação:** 2026-08-02
