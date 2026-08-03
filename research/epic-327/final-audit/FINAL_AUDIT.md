@@ -18,6 +18,7 @@ Cutoff: `2026-08-02`
 | baseline_intake_hashes | pass |
 | candidate_terminal_ledger | pass |
 | mandatory_review_and_sample | pass |
+| official_validation_integrity | pass |
 | review_and_adjudication_integrity | pass |
 | freeze_and_publication_plan | pass |
 | publication_surfaces | pass |

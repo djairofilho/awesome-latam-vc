@@ -234,6 +234,73 @@ class ReviewPipelineNegativeTests(unittest.TestCase):
         self.assertIn("review_assignment_semantics", codes)
 
 
+class ValidationPipelineNegativeTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.reconciler = audit.load_module(
+            "epic327_validation_reconcile",
+            audit.EPIC / "validation" / "reconcile.py",
+        )
+
+    def test_frozen_candidate_input_hash_is_required(self) -> None:
+        temporary, epic = copy_epic()
+        self.addCleanup(temporary.cleanup)
+        path = epic / "shards" / "validation-0" / "decisions.jsonl"
+        rows = audit.load_jsonl(path)
+        rows[0]["input_sha256"] = "0" * 64
+        path.write_text(audit.dump_jsonl(rows), encoding="utf-8", newline="\n")
+        findings = audit.validation_pipeline_findings(epic)
+        self.assertEqual("validation_semantic_integrity", findings[0]["code"])
+        self.assertTrue(any("input_sha256" in error for error in findings[0]["details"]))
+
+    def test_confirmed_activity_outside_twenty_four_month_window_is_rejected(self) -> None:
+        record = {
+            "candidate_id": "candidate",
+            "cutoff_date": "2026-08-02",
+            "gates": {
+                "recent_activity": {
+                    "finding": "confirmed",
+                    "latest_official_activity_on": "2024-08-01",
+                    "evidence_ids": ["activity"],
+                }
+            },
+        }
+        evidence = {
+            "activity": {
+                "candidate_id": "candidate",
+                "claims": [
+                    {
+                        "field": "activity_date",
+                        "value": {"finding": "confirmed", "value": "2024-08-01"},
+                    }
+                ],
+            }
+        }
+        errors: list[str] = []
+        self.reconciler.validate_activity(record, evidence, errors)
+        self.assertTrue(any("fora da janela" in error for error in errors))
+
+    def test_gate_evidence_must_belong_to_candidate(self) -> None:
+        record = {
+            "candidate_id": "candidate",
+            "gates": {
+                "identity": {
+                    "finding": "confirmed",
+                    "evidence_ids": ["identity"],
+                }
+            },
+        }
+        evidence = {
+            "identity": {
+                "candidate_id": "someone-else",
+                "claims": [],
+            }
+        }
+        errors: list[str] = []
+        self.reconciler.validate_gate_evidence(record, evidence, errors)
+        self.assertTrue(any("pertence a someone-else" in error for error in errors))
+
+
 class DestinationNegativeTests(unittest.TestCase):
     def test_rejects_wrong_canonical_and_route_destinations(self) -> None:
         rows = [
@@ -257,10 +324,15 @@ class DestinationNegativeTests(unittest.TestCase):
                 "decision": "routed_other",
                 "destination": "ecosystem/unknown/",
             },
+            {
+                "candidate_id": "conflict",
+                "decision": "identity_conflict",
+                "destination": "garbage",
+            },
         ]
         findings = audit.destination_findings(rows, audit.REPO, {audit.WAYFINDER_ID})
         self.assertEqual("terminal_destination_invalid", findings[0]["code"])
-        self.assertEqual(4, len(findings[0]["details"]))
+        self.assertEqual(5, len(findings[0]["details"]))
 
     def test_accepts_abstract_routed_other_vocabulary_without_physical_path(self) -> None:
         rows = [
@@ -325,8 +397,37 @@ class PublicationNegativeTests(unittest.TestCase):
             errors = audit.index_link_errors(repo, current)
             self.assertTrue(any("README.pt.md" in error for error in errors))
 
+    def test_index_validator_rejects_same_inversion_in_all_languages(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            for name in ("README.md", "README.pt.md", "README.es.md"):
+                lines = (audit.REPO / name).read_text(encoding="utf-8").splitlines()
+                positions = [
+                    index
+                    for index, line in enumerate(lines)
+                    if line.startswith("| [") and "](funds/" in line
+                ]
+                first, second = positions[:2]
+                lines[first], lines[second] = lines[second], lines[first]
+                (repo / name).write_text("\n".join(lines) + "\n", encoding="utf-8")
+            current = {
+                path.relative_to(audit.REPO).as_posix()
+                for path in audit.REPO.glob("funds/**/*.md")
+                if path.name != "README.md"
+            }
+            errors = audit.index_link_errors(repo, current)
+            self.assertEqual(3, sum("canonical normalized-name order" in error for error in errors))
+
 
 class EncodingAndCutoffNegativeTests(unittest.TestCase):
+    def test_legitimate_sao_does_not_trigger_mojibake(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            path = repo / "valid.py"
+            city = "S" + chr(0xC3) + "O PAULO"
+            path.write_text(f'CITY = "{city}"\n', encoding="utf-8")
+            self.assertEqual([], audit.utf8_findings([path], repo))
+
     def test_entities_json_mojibake_signature_is_rejected(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             repo = Path(directory)
@@ -336,6 +437,15 @@ class EncodingAndCutoffNegativeTests(unittest.TestCase):
                 json.dumps({"name": broken}, ensure_ascii=False) + "\n",
                 encoding="utf-8",
             )
+            findings = audit.utf8_findings([path], repo)
+            self.assertEqual("utf8_or_mojibake", findings[0]["code"])
+
+    def test_corrupt_sequence_in_python_is_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            path = repo / "broken.py"
+            broken = "programa" + chr(0xC3) + chr(0xA7) + "ao"
+            path.write_text(f'VALUE = "{broken}"\n', encoding="utf-8")
             findings = audit.utf8_findings([path], repo)
             self.assertEqual("utf8_or_mojibake", findings[0]["code"])
 

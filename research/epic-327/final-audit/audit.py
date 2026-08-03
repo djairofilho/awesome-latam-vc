@@ -10,6 +10,7 @@ import json
 import math
 import re
 import sys
+import unicodedata
 from collections import Counter
 from pathlib import Path
 from typing import Any, Iterable
@@ -52,7 +53,11 @@ ROUTED_DESTINATIONS = {
         "ecosystem/university-programs/",
     ),
 }
-MOJIBAKE_RE = re.compile(r"(?:\u00c3.|\u00c2(?=[\u0080-\u00bf\s])|\ufffd|\x07)")
+MOJIBAKE_RE = re.compile(
+    r"(?:\u00c3(?=[\u0080-\u00bf\u00a1\u00a3\u00a7\u00a9\u00aa\u00b3\u00ba])|"
+    r"\u00c2(?=[\u0080-\u00bf\u00a0\u00a9\u00ae\u00b0])|"
+    r"\u00e2(?=[\u0080-\u00bf\u20ac])|\ufffd|\x07)"
+)
 _MODULES: dict[str, Any] = {}
 
 
@@ -451,6 +456,25 @@ def review_pipeline_findings(epic: Path) -> list[dict[str, Any]]:
     return findings
 
 
+def validation_pipeline_findings(epic: Path) -> list[dict[str, Any]]:
+    reconciler = load_module(
+        "epic327_validation_reconcile", epic / "validation" / "reconcile.py"
+    )
+    errors = reconciler.reconcile(epic)
+    return (
+        [
+            finding(
+                "validation_semantic_integrity",
+                "critical",
+                "Validation shards must preserve frozen input hashes, evidence ownership and claims, and the inclusive 24-month activity window.",
+                errors,
+            )
+        ]
+        if errors
+        else []
+    )
+
+
 def destination_findings(
     rows: list[dict[str, Any]],
     repo: Path,
@@ -480,6 +504,9 @@ def destination_findings(
             prefixes = ROUTED_DESTINATIONS[decision]
             if not isinstance(destination, str) or not destination.startswith(prefixes):
                 reason = f"destination must use one of {prefixes}"
+        elif decision in {"identity_conflict", "unresolved"}:
+            if destination not in {None, "manual_identity_review"}:
+                reason = "manual-review destination must be null or manual_identity_review"
         if reason:
             errors.append(
                 {
@@ -543,21 +570,53 @@ def profile_triplet_errors(repo: Path, paths: list[Path]) -> list[str]:
     return sorted(set(errors))
 
 
+def normalized_name(value: str) -> str:
+    decomposed = unicodedata.normalize("NFKD", value).casefold()
+    return "".join(character for character in decomposed if not unicodedata.combining(character))
+
+
+def index_sections(text: str) -> list[list[tuple[str, str]]]:
+    sections: list[list[tuple[str, str]]] = []
+    current: list[tuple[str, str]] | None = None
+    row_pattern = re.compile(r"^\| \[([^]]+)\]\((funds/[^)]+\.md)\) \|")
+    for line in text.splitlines():
+        if line.startswith("## "):
+            if current:
+                sections.append(current)
+            current = []
+            continue
+        match = row_pattern.match(line)
+        if match and current is not None:
+            current.append((match.group(1), match.group(2)))
+    if current:
+        sections.append(current)
+    return sections
+
+
 def index_link_errors(repo: Path, current_paths: set[str]) -> list[str]:
-    indexes: dict[str, list[str]] = {}
+    indexes: dict[str, list[list[tuple[str, str]]]] = {}
     for name in ("README.md", "README.pt.md", "README.es.md"):
-        indexes[name] = re.findall(
-            r"(?m)^\| \[[^]]+\]\((funds/[^)]+\.md)\) \|", read_text(repo / name)
-        )
+        indexes[name] = index_sections(read_text(repo / name))
     errors: list[str] = []
-    reference = indexes["README.md"]
-    for name, links in indexes.items():
+    reference = [[path for _, path in section] for section in indexes["README.md"]]
+    for name, sections in indexes.items():
+        links = [path for section in sections for _, path in section]
         if len(links) != len(set(links)):
             errors.append(f"{name}: duplicate fund links")
         if set(links) != current_paths:
             errors.append(f"{name}: fund-link set differs from canonical profiles")
-        if links != reference:
-            errors.append(f"{name}: fund-link order differs from README.md")
+        section_paths = [[path for _, path in section] for section in sections]
+        if section_paths != reference:
+            errors.append(f"{name}: fund-link section order differs from README.md")
+        for ordinal, section in enumerate(sections, 1):
+            expected = sorted(
+                section,
+                key=lambda row: (normalized_name(row[0]), row[1]),
+            )
+            if section != expected:
+                errors.append(
+                    f"{name}: section {ordinal} is not in canonical normalized-name order"
+                )
     return errors
 
 
@@ -636,7 +695,12 @@ def utf8_findings(paths: Iterable[Path], repo: Path) -> list[dict[str, Any]]:
         except UnicodeDecodeError:
             decode_errors.append(path.relative_to(repo).as_posix())
             continue
-        if MOJIBAKE_RE.search(text):
+        scan_text = "\n".join(
+            line
+            for line in text.splitlines()
+            if not re.match(r"^\s*MOJIBAKE_(?:MARKERS|RE)\s*=", line)
+        )
+        if MOJIBAKE_RE.search(scan_text):
             mojibake.append(path.relative_to(repo).as_posix())
     return (
         [
@@ -916,6 +980,7 @@ def audit_repository(repo: Path = REPO) -> tuple[dict[str, Any], list[dict[str, 
             )
         )
     findings.extend(review_pipeline_findings(epic))
+    findings.extend(validation_pipeline_findings(epic))
 
     origins: dict[str, str] = {}
     for cid, candidate in candidates.items():
@@ -1002,7 +1067,7 @@ def audit_repository(repo: Path = REPO) -> tuple[dict[str, Any], list[dict[str, 
         )
 
     text_paths = sorted(epic.rglob("*.json")) + sorted(epic.rglob("*.jsonl"))
-    text_paths += sorted(epic.rglob("*.md"))
+    text_paths += sorted(epic.rglob("*.md")) + sorted(epic.rglob("*.py"))
     text_paths += [repo / name for name in ("README.md", "README.pt.md", "README.es.md")]
     text_paths += profile_paths + [
         repo / "data" / "entities.csv",
@@ -1062,6 +1127,7 @@ def audit_repository(repo: Path = REPO) -> tuple[dict[str, Any], list[dict[str, 
             ("baseline_intake_hashes", {"baseline_hash_mismatch", "intake_hash_mismatch", "baseline_count_mismatch"}),
             ("candidate_terminal_ledger", {"candidate_universe_mismatch", "candidate_identity_duplicates", "terminal_ledger_incomplete", "terminal_destination_invalid"}),
             ("mandatory_review_and_sample", {"mandatory_review_coverage", "exclusion_sample_coverage", "review_assignment_determinism"}),
+            ("official_validation_integrity", {"validation_semantic_integrity"}),
             ("review_and_adjudication_integrity", {"review_identity_duplicates", "review_result_integrity", "adjudication_integrity", "review_summary_mismatch", "provenance_hash_mismatch", "review_semantic_integrity", "approved_review_source_mismatch", "review_assignment_semantics"}),
             ("freeze_and_publication_plan", {"freeze_plan_mismatch", "publication_plan_integrity"}),
             ("publication_surfaces", {"publication_surface_mismatch"}),

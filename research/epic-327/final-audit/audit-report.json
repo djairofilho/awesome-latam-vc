@@ -38,6 +38,10 @@
       "status": "pass"
     },
     {
+      "gate": "official_validation_integrity",
+      "status": "pass"
+    },
+    {
       "gate": "review_and_adjudication_integrity",
       "status": "pass"
     },
