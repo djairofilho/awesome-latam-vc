@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 303,
+    "entity_count": 304,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -10476,6 +10476,43 @@
       ],
       "summary": "Vox Capital is a Brazilian impact-investment manager backing technology companies that combine scalable growth with measurable social or environmental outcomes.",
       "verified_on": "2026-07-25"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "GLOBAL",
+        "kind": "global"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:wayfinder-ventures",
+      "name": "Wayfinder Ventures",
+      "official_website": "https://www.wayfinder.com/",
+      "operator": null,
+      "source_profile": "funds/multi-country/wayfinder-ventures.md",
+      "sources": [
+        {
+          "kind": "official_portfolio",
+          "title": "Wayfinder Ventures official portfolio",
+          "url": "https://www.wayfinder.com/companies"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Wayfinder Ventures official updates",
+          "url": "https://www.wayfinder.com/updates"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Wayfinder Ventures is a recurring venture investor with a direct startup portfolio and demonstrated access to Latin America through Konta.com and Pideaky.",
+      "verified_on": "2026-08-02"
     },
     {
       "aliases": [],

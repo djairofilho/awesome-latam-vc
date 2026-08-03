@@ -332,6 +332,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 219 fundos
 | [The Ark Fund](funds/multi-country/the-ark-fund.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
 | [Valor Capital Group](funds/multi-country/valor-capital-group.md) | Multiestágio | Tecnologia | Estados Unidos e Brasil, incluindo a América Latina |
 | [Valutia](funds/multi-country/valutia.md) | Não divulgado publicamente | Não divulgado publicamente | Portugal e Brasil |
+| [Wayfinder Ventures](funds/multi-country/wayfinder-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | América Latina |
 | [Wayra](funds/multi-country/wayra.md) | Multiestágio | Tecnologia estratégica | Brasil, Europa e América Latina |
 | [Worthit](funds/multi-country/worthit.md) | Pre-seed | SaaS B2B e IA | América Latina |
 | [Zacua Ventures](funds/multi-country/zacua-ventures.md) | Não divulgado publicamente | Tecnologia para construção e ambiente construído | Global, incluindo o México |
