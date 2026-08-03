@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 305,
+    "entity_count": 311,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -181,6 +181,45 @@
         "kind": "country"
       },
       "countries_covered": [
+        "GLOBAL"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": "https://startups.aws.com/join?destination=%2Fcredits%2Fapply",
+      "id": "accelerator:aws-activate",
+      "name": "AWS Activate",
+      "official_website": "https://aws.amazon.com/startups/credits/?lang=en-US",
+      "operator": "Amazon Web Services",
+      "source_profile": "ecosystem/accelerators/multi-country/aws-activate.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "AWS Activate Credits",
+          "url": "https://aws.amazon.com/startups/credits/?lang=en-US"
+        },
+        {
+          "kind": "official_application",
+          "title": "AWS Activate application",
+          "url": "https://startups.aws.com/join?destination=%2Fcredits%2Fapply"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed",
+        "series_a"
+      ],
+      "summary": "AWS Activate is a global startup support program operated by Amazon Web Services.",
+      "verified_on": "2026-08-03"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "US",
+        "kind": "country"
+      },
+      "countries_covered": [
         "GLOBAL",
         "LATAM"
       ],
@@ -312,6 +351,43 @@
       ],
       "summary": "Capital Empreendedor RJ is a structured acceleration program operated by Sebrae Rio de Janeiro.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [
+        "Cloudflare Startup Program"
+      ],
+      "base_geography": {
+        "code": "US",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "GLOBAL"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "technology"
+      ],
+      "founder_route": "https://www.cloudflare.com/startups/",
+      "id": "accelerator:cloudflare-for-startups",
+      "name": "Cloudflare for Startups",
+      "official_website": "https://www.cloudflare.com/startups/",
+      "operator": "Cloudflare",
+      "source_profile": "ecosystem/accelerators/multi-country/cloudflare-for-startups.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "Cloudflare for Startups",
+          "url": "https://www.cloudflare.com/startups/"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed",
+        "series_a",
+        "series_b"
+      ],
+      "summary": "Cloudflare for Startups is a global startup support program operated by Cloudflare.",
+      "verified_on": "2026-08-03"
     },
     {
       "aliases": [
@@ -461,6 +537,41 @@
         "kind": "country"
       },
       "countries_covered": [
+        "GLOBAL"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "technology"
+      ],
+      "founder_route": "https://github.com/enterprise/startups",
+      "id": "accelerator:github-for-startups",
+      "name": "GitHub for Startups",
+      "official_website": "https://github.com/enterprise/startups",
+      "operator": "GitHub",
+      "source_profile": "ecosystem/accelerators/multi-country/github-for-startups.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "GitHub for Startups",
+          "url": "https://github.com/enterprise/startups"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed",
+        "series_a",
+        "series_b"
+      ],
+      "summary": "GitHub for Startups is a global startup support program operated by GitHub.",
+      "verified_on": "2026-08-03"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "US",
+        "kind": "country"
+      },
+      "countries_covered": [
         "LATAM"
       ],
       "entity_type": "accelerator",
@@ -520,6 +631,38 @@
       ],
       "summary": "Google for Startups Accelerator: Brazil is a structured acceleration program operated by Google for Startups.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "US",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "GLOBAL"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": "https://startup.google.com/cloud/",
+      "id": "accelerator:google-for-startups-cloud-program",
+      "name": "Google for Startups Cloud Program",
+      "official_website": "https://startup.google.com/cloud/",
+      "operator": "Google for Startups",
+      "source_profile": "ecosystem/accelerators/multi-country/google-for-startups-cloud-program.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "Google for Startups Cloud Program",
+          "url": "https://startup.google.com/cloud/"
+        }
+      ],
+      "stages": [
+        "multi_stage"
+      ],
+      "summary": "Google for Startups Cloud Program is a global startup support program operated by Google for Startups.",
+      "verified_on": "2026-08-03"
     },
     {
       "aliases": [],
@@ -655,6 +798,87 @@
       ],
       "summary": "Magical Accelerator is a structured acceleration program operated by Magical Startups.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [
+        "Microsoft for Startups Founders Hub"
+      ],
+      "base_geography": {
+        "code": "US",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "GLOBAL"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "b2b",
+        "software",
+        "artificial_intelligence"
+      ],
+      "founder_route": "https://www.microsoft.com/en-us/startups",
+      "id": "accelerator:microsoft-for-startups",
+      "name": "Microsoft for Startups",
+      "official_website": "https://www.microsoft.com/en-us/startups",
+      "operator": "Microsoft",
+      "source_profile": "ecosystem/accelerators/multi-country/microsoft-for-startups.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "Microsoft for Startups",
+          "url": "https://www.microsoft.com/en-us/startups"
+        },
+        {
+          "kind": "official_application",
+          "title": "How to Apply to Microsoft for Startups",
+          "url": "https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application"
+        }
+      ],
+      "stages": [
+        "multi_stage"
+      ],
+      "summary": "Microsoft for Startups is a global startup support program operated by Microsoft.",
+      "verified_on": "2026-08-03"
+    },
+    {
+      "aliases": [
+        "NVIDIA Inception Program"
+      ],
+      "base_geography": {
+        "code": "US",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "GLOBAL"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "artificial_intelligence",
+        "technology"
+      ],
+      "founder_route": "https://programs.nvidia.com/phoenix/application",
+      "id": "accelerator:nvidia-inception",
+      "name": "NVIDIA Inception",
+      "official_website": "https://www.nvidia.com/en-us/startups/",
+      "operator": "NVIDIA",
+      "source_profile": "ecosystem/accelerators/multi-country/nvidia-inception.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "NVIDIA Inception",
+          "url": "https://www.nvidia.com/en-us/startups/"
+        },
+        {
+          "kind": "official_application",
+          "title": "NVIDIA Inception application",
+          "url": "https://programs.nvidia.com/phoenix/application"
+        }
+      ],
+      "stages": [
+        "multi_stage"
+      ],
+      "summary": "NVIDIA Inception is a global startup support program operated by NVIDIA.",
+      "verified_on": "2026-08-03"
     },
     {
       "aliases": [],
