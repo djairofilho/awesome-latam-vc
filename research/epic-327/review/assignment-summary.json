@@ -1,0 +1,38 @@
+{
+  "assignment_records": 836,
+  "issue": 337,
+  "reason_counts": {
+    "all_eligible": 2,
+    "all_identity_conflicts": 756,
+    "all_routed": 16,
+    "deterministic_exclusion_sample": 62
+  },
+  "reviewer_counts": {
+    "review-0": 262,
+    "review-1": 276,
+    "review-2": 298
+  },
+  "sample_strata": {
+    "decision:excluded": {
+      "minimum": 3,
+      "population": 11,
+      "selected": 3
+    },
+    "decision:inactive": {
+      "minimum": 1,
+      "population": 2,
+      "selected": 1
+    },
+    "decision:insufficient_evidence": {
+      "minimum": 19,
+      "population": 93,
+      "selected": 19
+    },
+    "exception:unresolved": {
+      "minimum": 39,
+      "population": 192,
+      "selected": 39
+    }
+  },
+  "schema_version": "1.0"
+}
