@@ -57,11 +57,11 @@ class EntityExportTests(unittest.TestCase):
         profile_ids = sorted(
             profile.metadata["entity_id"] for profile in self.profiles
         )
-        self.assertEqual(310, len(entities))
+        self.assertEqual(311, len(entities))
         self.assertEqual(profile_ids, ids)
         self.assertEqual(ids, sorted(ids))
         self.assertEqual(len(ids), len(set(ids)))
-        self.assertEqual(310, self.document["dataset"]["entity_count"])
+        self.assertEqual(311, self.document["dataset"]["entity_count"])
 
     def test_json_and_csv_have_identical_ids_order_and_values(self):
         errors = generate_entities.validate_export_consistency(

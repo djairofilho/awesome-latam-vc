@@ -85,6 +85,7 @@ The index is optimized for quick comparison and currently covers 227 funds. All 
 | [Manutara Ventures](funds/regional/manutara-ventures.md) | Seed and Series A | Technology | Chile and Latin America |
 | [MAYA Capital](funds/regional/maya-capital.md) | Pre-seed and Seed | Technology | Latin America |
 | [Monashees](funds/regional/monashees.md) | Not publicly disclosed | Technology | Latin America to global markets |
+| [Nameless Partners](funds/regional/nameless-partners.md) | Not publicly disclosed | Not publicly disclosed | Latin America |
 | [Nazca](funds/regional/nazca.md) | Multi-stage | Technology | Latin America |
 | [New Ventures Capital](funds/regional/new-ventures-capital.md) | Seed and Series A | Impact entrepreneurship | Latin America |
 | [Newtopia VC](funds/regional/newtopia-vc.md) | Not publicly disclosed | Technology, sector agnostic | Latin America |

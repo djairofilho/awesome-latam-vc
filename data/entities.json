@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 310,
+    "entity_count": 311,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -7741,6 +7741,48 @@
       ],
       "summary": "Mundi Ventures is a Spain-based venture capital firm whose LatAm Fund I invests in early-growth companies across Latin America and the Caribbean, including Brazil.",
       "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "LATAM",
+        "kind": "region"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "not_disclosed"
+      ],
+      "founder_route": null,
+      "id": "fund:nameless-partners",
+      "name": "Nameless Partners",
+      "official_website": "https://www.nameless.partners/",
+      "operator": null,
+      "source_profile": "funds/regional/nameless-partners.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Nameless Partners official website",
+          "url": "https://www.nameless.partners/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Nameless Partners LinkedIn profile",
+          "url": "https://www.linkedin.com/company/nameless-partners"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Norte Ventures announcement of Core AI round",
+          "url": "https://www.linkedin.com/posts/norteventures_core-ai-levanta-us-41m-para-escalar-infraestrutura-activity-7474808505913372672-7hQg"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Nameless Partners is a Latin American venture capital firm built in Brazil that invests directly at the earliest stages.",
+      "verified_on": "2026-08-03"
     },
     {
       "aliases": [],
