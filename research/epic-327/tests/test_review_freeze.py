@@ -73,9 +73,11 @@ class FreezeContractTests(unittest.TestCase):
             "schema_version": "1.0",
             "candidate_id": candidate_id,
             "name": "Example",
+            "official_domains": ["example.com"],
             "validation_partition": 2,
         }
         write_jsonl(epic / "consolidation" / "candidates.jsonl", [candidate])
+        write_jsonl(epic / "baseline" / "catalog-baseline.jsonl", [])
         write_jsonl(epic / "review" / "evidence" / "fixture.jsonl", [evidence])
         write_jsonl(epic / "review" / "assignments" / "review-0.jsonl", [assignment])
         for number in (1, 2):
@@ -161,6 +163,56 @@ class FreezeContractTests(unittest.TestCase):
                     ).iter_errors(manifest)
                 ),
                 [],
+            )
+
+    def test_eligible_catalog_domain_collision_fails(self):
+        with tempfile.TemporaryDirectory() as directory:
+            epic, assignment, _ = self.fixture(directory)
+            result = self.approved_result(assignment)
+            catalog_profile = {
+                "entity_id": "fund:canonical-example",
+                "identity_domain": "example.com",
+                "profile_path": "funds/canonical-example.md",
+            }
+            write_jsonl(epic / "review" / "results" / "review-0.jsonl", [result])
+            write_jsonl(
+                epic / "baseline" / "catalog-baseline.jsonl", [catalog_profile]
+            )
+
+            errors, manifest = FREEZE.build(epic)
+
+            self.assertIsNone(manifest)
+            self.assertTrue(
+                any(
+                    "eligible candidate collides with catalog profiles" in error
+                    and "funds/canonical-example.md" in error
+                    for error in errors
+                )
+            )
+
+    def test_eligible_catalog_entity_id_collision_fails(self):
+        with tempfile.TemporaryDirectory() as directory:
+            epic, assignment, _ = self.fixture(directory)
+            result = self.approved_result(assignment)
+            catalog_profile = {
+                "entity_id": "fund:example",
+                "identity_domain": "canonical.example",
+                "profile_path": "funds/example.md",
+            }
+            write_jsonl(epic / "review" / "results" / "review-0.jsonl", [result])
+            write_jsonl(
+                epic / "baseline" / "catalog-baseline.jsonl", [catalog_profile]
+            )
+
+            errors, manifest = FREEZE.build(epic)
+
+            self.assertIsNone(manifest)
+            self.assertTrue(
+                any(
+                    "eligible candidate collides with catalog profiles" in error
+                    and "funds/example.md" in error
+                    for error in errors
+                )
             )
 
     def test_changes_requested_requires_adjudication(self):
