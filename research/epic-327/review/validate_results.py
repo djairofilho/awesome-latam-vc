@@ -13,6 +13,16 @@ EPIC = HERE.parent
 ASSIGNMENTS = HERE / "assignments" / "review-0.jsonl"
 RESULTS = HERE / "results" / "review-0.jsonl"
 NEW_EVIDENCE = HERE / "evidence" / "review-0.jsonl"
+REQUIRED_CORRECTIONS = {
+    "delta-fund-caricaco-vc": {
+        "blind_search_outcome": "contradicted",
+        "review_status": "changes_requested",
+        "final_decision": "duplicate",
+        "destination": "funds/costa-rica/caricaco-ventures.md",
+        "error_codes": ["canonical_collision"],
+        "evidence_ids": ["evidence-delta-caricaco-vc-official-review"],
+    }
+}
 
 
 def load_prepare():
@@ -96,6 +106,21 @@ def main() -> int:
         row = results_by_id.get(candidate_id)
         if not row or row["review_status"] != "changes_requested" or not row["evidence_ids"]:
             errors.append(f"{candidate_id}: required identity correction was not materialized")
+
+    for candidate_id, expected in REQUIRED_CORRECTIONS.items():
+        row = results_by_id.get(candidate_id)
+        if not row:
+            errors.append(f"{candidate_id}: required catalog collision correction is missing")
+            continue
+        mismatches = {
+            key: {"expected": value, "actual": row.get(key)}
+            for key, value in expected.items()
+            if row.get(key) != value
+        }
+        if mismatches:
+            errors.append(
+                f"{candidate_id}: required catalog collision correction diverges: {mismatches}"
+            )
 
     forbidden = "open" + "vc"
     for path in (RESULTS, NEW_EVIDENCE):

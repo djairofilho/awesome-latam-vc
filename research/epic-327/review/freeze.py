@@ -114,6 +114,40 @@ def evidence_index(
     return index_unique(rows, "evidence_id", "evidence", errors)
 
 
+def catalog_identity_indexes(
+    epic: Path, errors: list[str]
+) -> tuple[dict[str, dict[str, Any]], dict[str, list[dict[str, Any]]]]:
+    path = epic / "baseline" / "catalog-baseline.jsonl"
+    try:
+        rows = load_jsonl(path)
+    except (OSError, ValueError) as exc:
+        errors.append(str(exc))
+        return {}, {}
+    by_entity_id = index_unique(rows, "entity_id", "catalog", errors)
+    by_domain: dict[str, list[dict[str, Any]]] = {}
+    for row in rows:
+        domain = row.get("identity_domain")
+        if isinstance(domain, str):
+            by_domain.setdefault(domain, []).append(row)
+    return by_entity_id, by_domain
+
+
+def eligible_catalog_collisions(
+    candidate: dict[str, Any],
+    catalog_by_entity_id: dict[str, dict[str, Any]],
+    catalog_by_domain: dict[str, list[dict[str, Any]]],
+) -> list[str]:
+    candidate_id = candidate.get("candidate_id", "")
+    entity_id = candidate_id.removeprefix("delta-").replace("-", ":", 1)
+    paths = set()
+    if catalog_row := catalog_by_entity_id.get(entity_id):
+        paths.add(catalog_row.get("profile_path", entity_id))
+    for domain in candidate.get("official_domains", []):
+        for catalog_row in catalog_by_domain.get(domain, []):
+            paths.add(catalog_row.get("profile_path", domain))
+    return sorted(path for path in paths if isinstance(path, str))
+
+
 def validate_evidence_ids(
     candidate_id: str,
     evidence_ids: Any,
@@ -208,6 +242,7 @@ def build(
         adjudication_rows, "candidate_id", "adjudications", errors
     )
     evidence = evidence_index(epic, evidence_validator, errors)
+    catalog_by_entity_id, catalog_by_domain = catalog_identity_indexes(epic, errors)
 
     changes = {
         candidate_id
@@ -323,6 +358,14 @@ def build(
         partition = candidate.get("validation_partition")
         if not isinstance(partition, int):
             errors.append(f"{candidate_id}: eligible candidate has no validation partition")
+            continue
+        collisions = eligible_catalog_collisions(
+            candidate, catalog_by_entity_id, catalog_by_domain
+        )
+        if collisions:
+            errors.append(
+                f"{candidate_id}: eligible candidate collides with catalog profiles {collisions}"
+            )
             continue
         eligible_records.append(
             {
