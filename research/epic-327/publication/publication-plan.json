@@ -1,0 +1,56 @@
+{
+  "audit": {
+    "batch_size_limit_respected": true,
+    "covered_candidate_count": 2,
+    "duplicate_candidate_ids": [],
+    "duplicate_review_record_ids": [],
+    "ineligible_batch_members": [],
+    "unplanned_candidate_ids": []
+  },
+  "batch_count": 1,
+  "batch_count_formula": "ceil(eligible_count / 10)",
+  "batch_size_limit": 10,
+  "batches": [
+    {
+      "batch_id": "publication-batch-001",
+      "branch": "feat/issue-338-batch-001",
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "candidate_id": "delta-fund-caricaco-vc",
+          "canonical_name": "Caricaco VC",
+          "decision": "eligible",
+          "decision_evidence_ids": [
+            "evidence-delta-caricaco-vc-official-review"
+          ],
+          "record_sha256": "7006fabbb4e8b200e985e22d110384644c2df9621ae2c84deec433534a65022c",
+          "review_record_id": "review:review-0:delta-fund-caricaco-vc",
+          "validation_partition": 2
+        },
+        {
+          "candidate_id": "delta-fund-wayfinder-ventures",
+          "canonical_name": "Wayfinder Ventures",
+          "decision": "eligible",
+          "decision_evidence_ids": [
+            "evidence-delta-wayfinder-independent-activity",
+            "evidence-delta-wayfinder-independent-portfolio"
+          ],
+          "record_sha256": "f21a60c55c96c0caebb6520453245f4d8ec503a4e319ef86765317d526f885c1",
+          "review_record_id": "review:review-2:delta-fund-wayfinder-ventures",
+          "validation_partition": 1
+        }
+      ],
+      "ordinal": 1,
+      "worktree": ".worktrees/issue-338-batch-001"
+    }
+  ],
+  "cutoff_date": "2026-08-02",
+  "eligible_count": 2,
+  "eligible_records_sha256": "24fb75af198087e196b7f356cf5df4aa4ea5f34215ea8de3976585375d8aec78",
+  "issue": 338,
+  "review_records_sha256": "b8d8b00601596706ce8b957df0ba2a78111cb4808411b5a66dd5f4ba912afa13",
+  "schema_version": "1.0",
+  "source_decisions_sha256": "ea640962a9cf564d29f01a31c930fffa7afc71a3013ce0f91c787767d89c2ac0",
+  "source_manifest": "research/epic-327/review/freeze-manifest.json",
+  "source_manifest_sha256": "9a3318339c49101c911c3d32d5601b099855d010cbfd26b69ef3952046bf6a5e"
+}
