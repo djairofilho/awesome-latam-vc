@@ -1,15 +1,16 @@
 # Accelerators
 
-This category covers active, structured acceleration programs that accept
-startups from Latin America but do not replace qualifying recurring investment
-vehicles in the main fund catalog.
+This category covers active, structured acceleration and startup support
+programs that accept startups from Latin America but do not replace qualifying
+recurring investment vehicles in the main fund catalog.
 
 Programs and their operators or investment vehicles remain separate units.
 Capital, instrument, equity, duration and stage are reported only when official
 sources publish them.
 
-The 26 profiles below were frozen by the independent review of epic #62 and
-verified on 2026-07-27.
+The catalog contains 32 profiles. The original 26 profiles were frozen by the
+independent review of epic #62 and verified on 2026-07-27. Six global startup
+support programs were subsequently verified on 2026-08-03.
 
 ## Argentina
 
@@ -43,6 +44,15 @@ verified on 2026-07-27.
 ## Mexico
 
 - [500 LatAm Accelerator](mexico/500-latam.md)
+
+## Multi-country
+
+- [AWS Activate](multi-country/aws-activate.md)
+- [Cloudflare for Startups](multi-country/cloudflare-for-startups.md)
+- [GitHub for Startups](multi-country/github-for-startups.md)
+- [Google for Startups Cloud Program](multi-country/google-for-startups-cloud-program.md)
+- [Microsoft for Startups](multi-country/microsoft-for-startups.md)
+- [NVIDIA Inception](multi-country/nvidia-inception.md)
 
 ## Peru
 
