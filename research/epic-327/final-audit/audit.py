@@ -4,8 +4,8 @@
 from __future__ import annotations
 
 import argparse
-import csv
 import hashlib
+import importlib.util
 import json
 import math
 import re
@@ -39,6 +39,21 @@ TERMINAL_DECISIONS = {
     "unresolved",
 }
 MANDATORY_REVIEW = {"eligible", "identity_conflict"}
+ROUTED_DESTINATIONS = {
+    "routed_accelerators": ("ecosystem/accelerators/",),
+    "routed_angel_networks": ("ecosystem/angel-networks/",),
+    "routed_funding_platforms": ("ecosystem/funding-platforms/",),
+    "routed_public_programs": ("ecosystem/public-programs/",),
+    "routed_other": (
+        "ecosystem/corporate-investors/",
+        "ecosystem/fellowships/",
+        "ecosystem/impact-investment-platforms/",
+        "ecosystem/startup-studios/",
+        "ecosystem/university-programs/",
+    ),
+}
+MOJIBAKE_RE = re.compile(r"(?:\u00c3.|\u00c2(?=[\u0080-\u00bf\s])|\ufffd|\x07)")
+_MODULES: dict[str, Any] = {}
 
 
 def canonical_json(value: Any) -> str:
@@ -89,6 +104,20 @@ def load_many_jsonl(paths: Iterable[Path]) -> list[dict[str, Any]]:
     for path in sorted(paths):
         rows.extend(load_jsonl(path))
     return rows
+
+
+def load_module(name: str, path: Path) -> Any:
+    key = f"{name}:{path.resolve()}"
+    if key in _MODULES:
+        return _MODULES[key]
+    spec = importlib.util.spec_from_file_location(name, path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"cannot load {path}")
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
+    spec.loader.exec_module(module)
+    _MODULES[key] = module
+    return module
 
 
 def index_unique(
@@ -260,6 +289,401 @@ def ordered_by(rows: list[dict[str, Any]], key: str) -> bool:
 
 def gate_status(findings: list[dict[str, Any]], codes: set[str]) -> str:
     return "fail" if any(row["code"] in codes for row in findings) else "pass"
+
+
+def semantic_destination(decision: str, destination: Any) -> Any:
+    if decision in {"identity_conflict", "unresolved"}:
+        return "manual_review"
+    return destination
+
+
+def review_pipeline_findings(epic: Path) -> list[dict[str, Any]]:
+    """Run the authoritative preparation, reconciliation, freeze, and plan logic."""
+    repo = epic.parents[1]
+    prepare = load_module(
+        "epic327_review_prepare", epic / "review" / "prepare.py"
+    )
+    reconcile = load_module(
+        "epic327_review_reconcile", epic / "review" / "reconcile.py"
+    )
+    freeze_module = load_module(
+        "epic327_review_freeze", epic / "review" / "freeze.py"
+    )
+    plan_module = load_module(
+        "epic327_publication_plan", epic / "publication" / "plan.py"
+    )
+    findings: list[dict[str, Any]] = []
+
+    prepare_errors, prepare_outputs = prepare.build(epic)
+    prepare_drift = sorted(
+        relative
+        for relative, rendered in prepare_outputs.items()
+        if not (epic / "review" / relative).is_file()
+        or read_text(epic / "review" / relative) != rendered
+    )
+    if prepare_errors or prepare_drift:
+        findings.append(
+            finding(
+                "review_assignment_determinism",
+                "critical",
+                "Assignments, source hashes, reviewer separation, sampling, and summary must exactly match prepare.py.",
+                {"errors": prepare_errors, "drift": prepare_drift},
+            )
+        )
+
+    reconcile_errors, reconcile_outputs = reconcile.build(epic)
+    reconcile_drift = sorted(
+        relative
+        for relative, rendered in reconcile_outputs.items()
+        if not (epic / "review" / relative).is_file()
+        or read_text(epic / "review" / relative) != rendered
+    )
+    freeze_errors, expected_freeze = freeze_module.build(epic)
+    committed_freeze = load_json(epic / "review" / "freeze-manifest.json")
+    freeze_drift = expected_freeze is not None and expected_freeze != committed_freeze
+    if reconcile_errors or reconcile_drift or freeze_errors or freeze_drift:
+        findings.append(
+            finding(
+                "review_semantic_integrity",
+                "critical",
+                "Review results, adjudications, evidence ownership, and freeze semantics must pass the authoritative validators.",
+                {
+                    "reconcile_errors": reconcile_errors,
+                    "reconcile_drift": reconcile_drift,
+                    "freeze_errors": freeze_errors,
+                    "freeze_drift": freeze_drift,
+                },
+            )
+        )
+
+    assignments = load_many_jsonl((epic / "review" / "assignments").glob("*.jsonl"))
+    results = load_many_jsonl((epic / "review" / "results").glob("*.jsonl"))
+    validations = load_many_jsonl(epic.glob("shards/validation-*/decisions.jsonl"))
+    exceptions = load_jsonl(epic / "consolidation" / "exceptions.jsonl")
+    candidates = load_jsonl(epic / "consolidation" / "candidates.jsonl")
+    result_index = {row["candidate_id"]: row for row in results}
+    source_indexes = {
+        "validation_decision": {row["candidate_id"]: row for row in validations},
+        "identity_exception": {row["candidate_id"]: row for row in exceptions},
+        "consolidation_route": {row["candidate_id"]: row for row in candidates},
+    }
+    approved_source_mismatches: list[str] = []
+    for assignment in assignments:
+        result = result_index.get(assignment["candidate_id"])
+        if not result or result.get("review_status") != "approved":
+            continue
+        source = source_indexes[assignment["source_kind"]].get(
+            assignment["candidate_id"]
+        )
+        if source is None:
+            approved_source_mismatches.append(assignment["candidate_id"])
+            continue
+        source_decision = (
+            prepare.CONSOLIDATION_ROUTE_DECISIONS.get(
+                source.get("category"), "routed_other"
+            )
+            if assignment["source_kind"] == "consolidation_route"
+            else source.get("decision") or source.get("status")
+        )
+        source_destination = (
+            source.get("route_destination")
+            if assignment["source_kind"] == "consolidation_route"
+            else source.get("destination")
+        )
+        if result.get("final_decision") != source_decision or semantic_destination(
+            result.get("final_decision"), result.get("destination")
+        ) != semantic_destination(source_decision, source_destination):
+            approved_source_mismatches.append(assignment["candidate_id"])
+    if approved_source_mismatches:
+        findings.append(
+            finding(
+                "approved_review_source_mismatch",
+                "critical",
+                "Approved reviews must preserve the source decision and semantic destination.",
+                sorted(approved_source_mismatches),
+            )
+        )
+    assignment_semantic_errors: list[str] = []
+    for assignment in assignments:
+        source_decision = assignment.get("source_decision", "")
+        expected_reason = (
+            "all_eligible"
+            if source_decision == "eligible"
+            else "all_identity_conflicts"
+            if source_decision == "identity_conflict"
+            else "all_routed"
+            if routed(source_decision)
+            else "deterministic_exclusion_sample"
+        )
+        source_worker = assignment.get("source_worker", "")
+        reviewer = assignment.get("reviewer", "")
+        same_worker = reviewer == source_worker
+        if source_worker.startswith("validation-"):
+            same_worker = same_worker or reviewer.removeprefix("review-") == source_worker.removeprefix("validation-")
+        if same_worker or assignment.get("review_reason") != expected_reason:
+            assignment_semantic_errors.append(assignment["candidate_id"])
+    if assignment_semantic_errors:
+        findings.append(
+            finding(
+                "review_assignment_semantics",
+                "critical",
+                "Reviewer separation and review_reason must match the authoritative source decision.",
+                sorted(assignment_semantic_errors),
+            )
+        )
+
+    plan_path = epic / "publication" / "publication-plan.json"
+    plan = load_json(plan_path)
+    plan_errors = plan_module.validate_plan(
+        committed_freeze,
+        (epic / "review" / "freeze-manifest.json").read_bytes(),
+        plan,
+    )
+    if plan_errors:
+        findings.append(
+            finding(
+                "publication_plan_integrity",
+                "critical",
+                "The publication plan must be the exact deterministic projection of the freeze.",
+                plan_errors,
+            )
+        )
+    return findings
+
+
+def destination_findings(
+    rows: list[dict[str, Any]],
+    repo: Path,
+    plan_ids: set[str],
+    expected_duplicates: dict[str, str] | None = None,
+) -> list[dict[str, Any]]:
+    expected_duplicates = expected_duplicates or {
+        "delta-fund-caricaco-vc": "funds/costa-rica/caricaco-ventures.md"
+    }
+    errors: list[dict[str, Any]] = []
+    for row in rows:
+        candidate_id = row["candidate_id"]
+        decision = row["decision"]
+        destination = row.get("destination")
+        reason: str | None = None
+        if decision == "duplicate":
+            if not isinstance(destination, str) or not destination.startswith("funds/"):
+                reason = "duplicate destination is not a fund profile"
+            elif not (repo / destination).is_file():
+                reason = "duplicate destination profile does not exist"
+            elif candidate_id in expected_duplicates and destination != expected_duplicates[candidate_id]:
+                reason = "duplicate does not resolve to its exact canonical profile"
+        elif decision == "eligible":
+            if destination != "funds/" or candidate_id not in plan_ids:
+                reason = "eligible destination or publication-plan membership differs"
+        elif decision in ROUTED_DESTINATIONS:
+            prefixes = ROUTED_DESTINATIONS[decision]
+            if not isinstance(destination, str) or not destination.startswith(prefixes):
+                reason = f"destination must use one of {prefixes}"
+        if reason:
+            errors.append(
+                {
+                    "candidate_id": candidate_id,
+                    "decision": decision,
+                    "destination": destination,
+                    "reason": reason,
+                }
+            )
+    return (
+        [
+            finding(
+                "terminal_destination_invalid",
+                "critical",
+                "Terminal destinations must match their decision vocabulary and real canonical targets.",
+                errors,
+            )
+        ]
+        if errors
+        else []
+    )
+
+
+def profile_triplet_errors(repo: Path, paths: list[Path]) -> list[str]:
+    validator = load_module(
+        "epic327_validate_profiles", repo / "tools" / "seo_geo" / "validate_profiles.py"
+    )
+    schema, enums = validator.read_contract()
+    profiles = []
+    errors: list[str] = []
+    for path in paths:
+        try:
+            profiles.append(validator.parse_profile(path))
+        except (OSError, UnicodeDecodeError, ValueError) as exc:
+            errors.append(f"{path}: {exc}")
+    errors.extend(validator.validate_collection(profiles, schema, enums))
+    if profiles:
+        canonical = next(
+            (profile for profile in profiles if profile.metadata.get("locale") == "en"),
+            None,
+        )
+        if canonical is None:
+            errors.append("Wayfinder English canonical profile is absent")
+        else:
+            errors.extend(validator.validate_catalog_correspondence(canonical))
+    expected = {
+        "en": ("canonical", None),
+        "pt-BR": ("complete", "fund:wayfinder-ventures:en"),
+        "es": ("complete", "fund:wayfinder-ventures:en"),
+    }
+    for profile in profiles:
+        locale = profile.metadata.get("locale")
+        if locale not in expected:
+            errors.append(f"{profile.path}: unexpected locale {locale}")
+            continue
+        status, translation_of = expected[locale]
+        if profile.metadata.get("translation_status") != status:
+            errors.append(f"{profile.path}: unexpected translation_status")
+        if profile.metadata.get("translation_of") != translation_of:
+            errors.append(f"{profile.path}: unexpected translation_of")
+    return sorted(set(errors))
+
+
+def index_link_errors(repo: Path, current_paths: set[str]) -> list[str]:
+    indexes: dict[str, list[str]] = {}
+    for name in ("README.md", "README.pt.md", "README.es.md"):
+        indexes[name] = re.findall(
+            r"(?m)^\| \[[^]]+\]\((funds/[^)]+\.md)\) \|", read_text(repo / name)
+        )
+    errors: list[str] = []
+    reference = indexes["README.md"]
+    for name, links in indexes.items():
+        if len(links) != len(set(links)):
+            errors.append(f"{name}: duplicate fund links")
+        if set(links) != current_paths:
+            errors.append(f"{name}: fund-link set differs from canonical profiles")
+        if links != reference:
+            errors.append(f"{name}: fund-link order differs from README.md")
+    return errors
+
+
+def publication_findings(
+    repo: Path,
+) -> tuple[list[dict[str, Any]], dict[str, Any], list[Path]]:
+    profile_paths = [
+        repo / WAYFINDER_PROFILE,
+        repo / "translations" / "pt-BR" / WAYFINDER_PROFILE,
+        repo / "translations" / "es" / WAYFINDER_PROFILE,
+    ]
+    profile_errors = profile_triplet_errors(repo, profile_paths)
+    generator = load_module(
+        "epic327_generate_entities", repo / "tools" / "seo_geo" / "generate_entities.py"
+    )
+    json_path = repo / "data" / "entities.json"
+    csv_path = repo / "data" / "entities.csv"
+    json_payload = json_path.read_bytes()
+    csv_payload = csv_path.read_bytes()
+    export_errors = generator.validate_export_consistency(json_payload, csv_payload)
+    expected_exports = generator.build_outputs()
+    export_drift = [
+        path.relative_to(repo).as_posix()
+        for path, payload in expected_exports.items()
+        if path.read_bytes() != payload
+    ]
+    entities_json = json.loads(json_payload.decode("utf-8"))
+    json_wayfinder = [
+        row for row in entities_json["entities"] if row.get("id") == WAYFINDER_ENTITY_ID
+    ]
+    csv_wayfinder = [
+        row
+        for row in generator.parse_csv(csv_payload)
+        if row.get("id") == WAYFINDER_ENTITY_ID
+    ]
+    current_paths = {
+        path.relative_to(repo).as_posix()
+        for path in repo.glob("funds/**/*.md")
+        if path.name != "README.md"
+    }
+    index_errors = index_link_errors(repo, current_paths)
+    details = {
+        "profile_errors": profile_errors,
+        "export_errors": export_errors,
+        "export_drift": export_drift,
+        "index_errors": index_errors,
+        "json_export_count": len(json_wayfinder),
+        "csv_export_count": len(csv_wayfinder),
+        "audited_profile": WAYFINDER_PROFILE,
+    }
+    errors = profile_errors + export_errors + export_drift + index_errors
+    if len(json_wayfinder) != 1 or len(csv_wayfinder) != 1:
+        errors.append("Wayfinder export cardinality differs from one")
+    return (
+        [
+            finding(
+                "publication_surface_mismatch",
+                "critical",
+                "Profiles, exports, and localized indexes must be complete deterministic projections of the canonical Wayfinder profile.",
+                details,
+            )
+        ]
+        if errors
+        else [],
+        details,
+        profile_paths,
+    )
+
+
+def utf8_findings(paths: Iterable[Path], repo: Path) -> list[dict[str, Any]]:
+    mojibake: list[str] = []
+    decode_errors: list[str] = []
+    for path in sorted(set(paths)):
+        try:
+            text = read_text(path)
+        except UnicodeDecodeError:
+            decode_errors.append(path.relative_to(repo).as_posix())
+            continue
+        if MOJIBAKE_RE.search(text):
+            mojibake.append(path.relative_to(repo).as_posix())
+    return (
+        [
+            finding(
+                "utf8_or_mojibake",
+                "high",
+                "Audited text must be strict UTF-8 without specific mojibake signatures.",
+                {"decode_errors": decode_errors, "mojibake": mojibake},
+            )
+        ]
+        if decode_errors or mojibake
+        else []
+    )
+
+
+def dated_record_mismatches(
+    validation_rows: list[dict[str, Any]],
+    result_rows: list[dict[str, Any]],
+    adjudication_rows: list[dict[str, Any]],
+    evidence_rows: list[dict[str, Any]],
+    cutoff: str,
+) -> list[str]:
+    def invalid(value: Any) -> bool:
+        return not isinstance(value, str) or value > cutoff
+
+    return sorted(
+        [
+            f"validation:{row.get('candidate_id')}"
+            for row in validation_rows
+            if row.get("cutoff_date") != cutoff or invalid(row.get("validated_on"))
+        ]
+        + [
+            f"review:{row.get('candidate_id')}"
+            for row in result_rows
+            if invalid(row.get("reviewed_on"))
+        ]
+        + [
+            f"adjudication:{row.get('candidate_id')}"
+            for row in adjudication_rows
+            if invalid(row.get("adjudicated_on"))
+        ]
+        + [
+            f"evidence:{row.get('evidence_id')}"
+            for row in evidence_rows
+            if invalid(row.get("accessed_on"))
+        ]
+    )
 
 
 def audit_repository(repo: Path = REPO) -> tuple[dict[str, Any], list[dict[str, Any]]]:
@@ -491,6 +915,7 @@ def audit_repository(repo: Path = REPO) -> tuple[dict[str, Any], list[dict[str, 
                 bad_provenance_hashes,
             )
         )
+    findings.extend(review_pipeline_findings(epic))
 
     origins: dict[str, str] = {}
     for cid, candidate in candidates.items():
@@ -511,34 +936,6 @@ def audit_repository(repo: Path = REPO) -> tuple[dict[str, Any], list[dict[str, 
                 {"record_count": len(final_rows), "unresolved": unresolved},
             )
         )
-    missing_destinations = sorted(
-        row["candidate_id"]
-        for row in final_rows
-        if (
-            row["decision"] in {"duplicate", "eligible"}
-            or routed(row["decision"])
-        )
-        and not row["destination"]
-    )
-    bad_manual_destination_kinds = sorted(
-        row["candidate_id"]
-        for row in final_rows
-        if row["decision"] in {"identity_conflict", "unresolved"}
-        and row["destination_kind"] != "manual_review"
-    )
-    if missing_destinations or bad_manual_destination_kinds:
-        findings.append(
-            finding(
-                "terminal_destination_missing",
-                "high",
-                "Publication, duplicate, and handoff decisions require a destination; identity conflicts and unresolved records require destination_kind manual_review.",
-                {
-                    "missing_destinations": missing_destinations,
-                    "bad_manual_destination_kinds": bad_manual_destination_kinds,
-                },
-            )
-        )
-
     eligible = [row for row in final_rows if row["decision"] == "eligible"]
     freeze_ids = [row.get("candidate_id") for row in freeze.get("eligible_records", [])]
     plan_candidates = [
@@ -547,6 +944,20 @@ def audit_repository(repo: Path = REPO) -> tuple[dict[str, Any], list[dict[str, 
         for row in batch.get("candidates", [])
     ]
     plan_ids = [row.get("candidate_id") for row in plan_candidates]
+    expected_duplicates = {
+        cid: candidate["canonical_profile"]
+        for cid, candidate in candidates.items()
+        if candidate.get("status") == "duplicate"
+        and isinstance(candidate.get("canonical_profile"), str)
+    }
+    expected_duplicates["delta-fund-caricaco-vc"] = (
+        "funds/costa-rica/caricaco-ventures.md"
+    )
+    findings.extend(
+        destination_findings(
+            final_rows, repo, set(plan_ids), expected_duplicates
+        )
+    )
     if (
         [row["candidate_id"] for row in eligible] != [WAYFINDER_ID]
         or freeze.get("status") != "frozen"
@@ -569,69 +980,8 @@ def audit_repository(repo: Path = REPO) -> tuple[dict[str, Any], list[dict[str, 
             )
         )
 
-    profile_paths = [
-        repo / WAYFINDER_PROFILE,
-        repo / "translations" / "pt-BR" / WAYFINDER_PROFILE,
-        repo / "translations" / "es" / WAYFINDER_PROFILE,
-    ]
-    profile_entity_counts = []
-    for path in profile_paths:
-        text = read_text(path) if path.exists() else ""
-        profile_entity_counts.append(
-            len(
-                re.findall(
-                    r'(?m)^\s*"entity_id"\s*:\s*"fund:wayfinder-ventures"\s*,?\s*$',
-                    text,
-                )
-            )
-        )
-    readme_counts = {
-        name: read_text(repo / name).count(f"]({WAYFINDER_PROFILE})")
-        for name in ("README.md", "README.pt.md", "README.es.md")
-    }
-    entities_json = load_json(repo / "data" / "entities.json")
-    json_wayfinder = [
-        row
-        for row in entities_json.get("entities", [])
-        if row.get("id") == WAYFINDER_ENTITY_ID
-    ]
-    with (repo / "data" / "entities.csv").open(
-        encoding="utf-8", errors="strict", newline=""
-    ) as handle:
-        csv_wayfinder = [
-            row
-            for row in csv.DictReader(handle)
-            if row.get("id") == WAYFINDER_ENTITY_ID
-        ]
-    baseline_paths = {row["profile_path"] for row in baseline_rows}
-    current_paths = {
-        path.relative_to(repo).as_posix()
-        for path in repo.glob("funds/**/*.md")
-        if path.name != "README.md"
-    }
-    new_profiles = sorted(current_paths - baseline_paths)
-    publication_details = {
-        "profile_entity_counts": profile_entity_counts,
-        "readme_link_counts": readme_counts,
-        "json_export_count": len(json_wayfinder),
-        "csv_export_count": len(csv_wayfinder),
-        "new_profiles_since_baseline": new_profiles,
-    }
-    if (
-        profile_entity_counts != [1, 1, 1]
-        or set(readme_counts.values()) != {1}
-        or len(json_wayfinder) != 1
-        or len(csv_wayfinder) != 1
-        or new_profiles != [WAYFINDER_PROFILE]
-    ):
-        findings.append(
-            finding(
-                "publication_surface_mismatch",
-                "critical",
-                "Wayfinder must be the only epic publication and appear once on every surface.",
-                publication_details,
-            )
-        )
+    publication_issues, publication_details, profile_paths = publication_findings(repo)
+    findings.extend(publication_issues)
 
     order_errors: list[str] = []
     for path in assignment_paths + result_paths:
@@ -654,26 +1004,11 @@ def audit_repository(repo: Path = REPO) -> tuple[dict[str, Any], list[dict[str, 
     text_paths = sorted(epic.rglob("*.json")) + sorted(epic.rglob("*.jsonl"))
     text_paths += sorted(epic.rglob("*.md"))
     text_paths += [repo / name for name in ("README.md", "README.pt.md", "README.es.md")]
-    text_paths += profile_paths + [repo / "data" / "entities.csv"]
-    mojibake: list[str] = []
-    utf8_errors: list[str] = []
-    for path in sorted(set(text_paths)):
-        try:
-            text = read_text(path)
-        except UnicodeDecodeError:
-            utf8_errors.append(path.relative_to(repo).as_posix())
-            continue
-        if any(marker in text for marker in ("\u00c3", "\u00c2", "\ufffd", "\x07")):
-            mojibake.append(path.relative_to(repo).as_posix())
-    if utf8_errors or mojibake:
-        findings.append(
-            finding(
-                "utf8_or_mojibake",
-                "high",
-                "Audited text must be strict UTF-8 without mojibake markers.",
-                {"decode_errors": utf8_errors, "mojibake": mojibake},
-            )
-        )
+    text_paths += profile_paths + [
+        repo / "data" / "entities.csv",
+        repo / "data" / "entities.json",
+    ]
+    findings.extend(utf8_findings(text_paths, repo))
 
     cutoff_values = {
         "contract": contract.get("cutoff_date"),
@@ -681,13 +1016,27 @@ def audit_repository(repo: Path = REPO) -> tuple[dict[str, Any], list[dict[str, 
         "freeze": freeze.get("cutoff_date"),
         "plan": plan.get("cutoff_date"),
     }
-    if set(cutoff_values.values()) != {EXPECTED_CUTOFF}:
+    evidence_rows = load_many_jsonl(
+        list(epic.glob("shards/*/*evidence*.jsonl"))
+        + list((epic / "review" / "evidence").glob("*.jsonl"))
+    )
+    date_mismatches = dated_record_mismatches(
+        validation_rows,
+        result_rows,
+        adjudication_rows,
+        evidence_rows,
+        EXPECTED_CUTOFF,
+    )
+    if set(cutoff_values.values()) != {EXPECTED_CUTOFF} or date_mismatches:
         findings.append(
             finding(
                 "cutoff_mismatch",
                 "high",
                 "All final artifacts must use the frozen cutoff date.",
-                cutoff_values,
+                {
+                    "artifacts": cutoff_values,
+                    "dated_record_mismatches": date_mismatches,
+                },
             )
         )
     if intake_summary.get("unparsed_rows") != 741:
@@ -711,10 +1060,10 @@ def audit_repository(repo: Path = REPO) -> tuple[dict[str, Any], list[dict[str, 
         }
         for gate, codes in (
             ("baseline_intake_hashes", {"baseline_hash_mismatch", "intake_hash_mismatch", "baseline_count_mismatch"}),
-            ("candidate_terminal_ledger", {"candidate_universe_mismatch", "candidate_identity_duplicates", "terminal_ledger_incomplete", "terminal_destination_missing"}),
-            ("mandatory_review_and_sample", {"mandatory_review_coverage", "exclusion_sample_coverage"}),
-            ("review_and_adjudication_integrity", {"review_identity_duplicates", "review_result_integrity", "adjudication_integrity", "review_summary_mismatch", "provenance_hash_mismatch"}),
-            ("freeze_and_publication_plan", {"freeze_plan_mismatch"}),
+            ("candidate_terminal_ledger", {"candidate_universe_mismatch", "candidate_identity_duplicates", "terminal_ledger_incomplete", "terminal_destination_invalid"}),
+            ("mandatory_review_and_sample", {"mandatory_review_coverage", "exclusion_sample_coverage", "review_assignment_determinism"}),
+            ("review_and_adjudication_integrity", {"review_identity_duplicates", "review_result_integrity", "adjudication_integrity", "review_summary_mismatch", "provenance_hash_mismatch", "review_semantic_integrity", "approved_review_source_mismatch", "review_assignment_semantics"}),
+            ("freeze_and_publication_plan", {"freeze_plan_mismatch", "publication_plan_integrity"}),
             ("publication_surfaces", {"publication_surface_mismatch"}),
             ("order_and_determinism", {"nondeterministic_order"}),
             ("utf8_and_mojibake", {"utf8_or_mojibake"}),

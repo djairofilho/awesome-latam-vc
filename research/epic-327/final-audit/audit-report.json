@@ -82,21 +82,13 @@
     ]
   },
   "publication": {
+    "audited_profile": "funds/multi-country/wayfinder-ventures.md",
     "csv_export_count": 1,
+    "export_drift": [],
+    "export_errors": [],
+    "index_errors": [],
     "json_export_count": 1,
-    "new_profiles_since_baseline": [
-      "funds/multi-country/wayfinder-ventures.md"
-    ],
-    "profile_entity_counts": [
-      1,
-      1,
-      1
-    ],
-    "readme_link_counts": {
-      "README.es.md": 1,
-      "README.md": 1,
-      "README.pt.md": 1
-    }
+    "profile_errors": []
   },
   "schema_version": "1.0",
   "status": "pass"
