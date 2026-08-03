@@ -51,6 +51,16 @@ test("hreflang only advertises available variants and uses x-default safely", ()
   );
 });
 
+test("the root redirects by browser language with English as fallback", () => {
+  const root = readFileSync("src/pages/index.astro", "utf8");
+  assert.match(root, /navigator\.languages/);
+  assert.match(root, /startsWith\("pt"\)/);
+  assert.match(root, /startsWith\("es"\)/);
+  assert.match(root, /window\.location\.replace/);
+  assert.match(root, /http-equiv="refresh"/);
+  assert.doesNotMatch(root, /Choose your language/);
+});
+
 test("the localized home snapshot omits the runtime implementation detail", () => {
   const home = readFileSync("src/pages/[locale]/index.astro", "utf8");
   const labels = readFileSync("src/i18n/ui.ts", "utf8");
