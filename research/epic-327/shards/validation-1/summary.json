@@ -1,0 +1,19 @@
+{
+  "candidates_sha256": "62b9abcf189f979e22c693f78058e78e875ad002422ed6bae74eb165940c1341",
+  "decision_counts": {
+    "eligible": 1,
+    "excluded": 2,
+    "inactive": 2,
+    "insufficient_evidence": 34,
+    "routed_accelerators": 3,
+    "routed_other": 1
+  },
+  "decision_records": 43,
+  "decisions_sha256": "948a52c6712ecc6fb6f3475417074d7f25c20f141449d8694d982681ce42a7a6",
+  "evidence_records": 57,
+  "evidence_sha256": "0ff2daf1e1759bfa593864f517896bbdf48adb8c8d19d7a841bf3bce0e3c18f7",
+  "input_records": 43,
+  "partition": 1,
+  "schema_version": "1.0",
+  "worker_id": "validation-1"
+}
