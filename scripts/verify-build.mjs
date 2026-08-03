@@ -289,6 +289,10 @@ for (const [locale, segment] of Object.entries(localeRoutes)) {
     !/(?:href|src)="\/(?!awesome-latam-vc\/)/.test(home + catalog),
     `${locale} output contains a root-relative link outside the Pages base`,
   );
+  assert(
+    !home.includes("<dt>Runtime</dt>"),
+    `${locale} home must not expose the internal runtime metric`,
+  );
 }
 for (const sourcePath of editorialSources) {
   const locale = sourcePath.split(/[\\/]/).at(-2);

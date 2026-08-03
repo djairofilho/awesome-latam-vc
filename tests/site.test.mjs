@@ -51,6 +51,13 @@ test("hreflang only advertises available variants and uses x-default safely", ()
   );
 });
 
+test("the localized home snapshot omits the runtime implementation detail", () => {
+  const home = readFileSync("src/pages/[locale]/index.astro", "utf8");
+  const labels = readFileSync("src/i18n/ui.ts", "utf8");
+  assert.doesNotMatch(home, /labels\.runtime/);
+  assert.doesNotMatch(labels, /\bruntime:\s*["']/);
+});
+
 test("interface labels are stored separately from profile content", () => {
   const catalog = readFileSync("src/i18n/ui.ts", "utf8");
   for (const locale of ["en", "pt-BR", "es"]) {
