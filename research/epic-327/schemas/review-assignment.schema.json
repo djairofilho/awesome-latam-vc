@@ -21,7 +21,9 @@
       "type": "string",
       "pattern": "^delta-fund-[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
-    "source_kind": {"enum": ["validation_decision", "identity_exception"]},
+    "source_kind": {
+      "enum": ["validation_decision", "identity_exception", "consolidation_route"]
+    },
     "source_worker": {
       "enum": ["validation-0", "validation-1", "validation-2", "reducer"]
     },

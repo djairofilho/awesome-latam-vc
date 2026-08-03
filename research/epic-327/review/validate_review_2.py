@@ -23,6 +23,9 @@ SUMMARY = HERE / "summaries" / "review-2.json"
 REVIEWED_ON = "2026-08-02"
 
 OVERRIDES = {
+    "delta-fund-100-accelerator": {
+        "evidence_ids": ["evidence-delta-100-accelerator-independent-review"],
+    },
     "delta-fund-dao-capital": {
         "blind_search_outcome": "contradicted",
         "review_status": "changes_requested",
@@ -39,6 +42,9 @@ OVERRIDES = {
         "evidence_ids": ["evidence-delta-magic-fund-independent-review"],
         "error_codes": ["identity_mismatch", "unsupported_claim"],
     },
+    "delta-fund-angelhub-vc": {
+        "evidence_ids": ["evidence-delta-angelhub-vc-independent-review"],
+    },
     "delta-fund-wayfinder-ventures": {
         "evidence_ids": [
             "evidence-delta-wayfinder-independent-portfolio",
@@ -48,6 +54,8 @@ OVERRIDES = {
 }
 
 CONFIRMED = {
+    "delta-fund-100-accelerator",
+    "delta-fund-angelhub-vc",
     "delta-fund-citris-foundry",
     "delta-fund-rootcamp",
     "delta-fund-top-seeds-lab",
@@ -84,11 +92,56 @@ def source_records() -> dict[str, dict]:
             records[record["candidate_id"]] = record
     for record in load_jsonl(EPIC / "consolidation" / "exceptions.jsonl"):
         records[record["candidate_id"]] = record
+    for record in load_jsonl(EPIC / "consolidation" / "candidates.jsonl"):
+        if record.get("status") == "routed":
+            records[record["candidate_id"]] = record
     return records
 
 
 def review_evidence() -> list[dict]:
     return [
+        {
+            "schema_version": "1.0",
+            "evidence_id": "evidence-delta-100-accelerator-independent-review",
+            "candidate_id": "delta-fund-100-accelerator",
+            "official_url": "https://www.100accelerator.com/about",
+            "source_title": "100+ Accelerator official program",
+            "accessed_on": REVIEWED_ON,
+            "source_kind": "official_identity",
+            "claims": [
+                {
+                    "field": "identity",
+                    "value": {"finding": "confirmed", "value": "100+ Accelerator"},
+                    "support": "The official page identifies the program as 100+ Accelerator.",
+                },
+                {
+                    "field": "category",
+                    "value": {"finding": "confirmed", "value": "accelerator"},
+                    "support": "The official page describes a six-month program for selected startups, with mentors, corporate partners, and equity-free pilot funding.",
+                },
+            ],
+        },
+        {
+            "schema_version": "1.0",
+            "evidence_id": "evidence-delta-angelhub-vc-independent-review",
+            "candidate_id": "delta-fund-angelhub-vc",
+            "official_url": "https://www.angelhub.mx/",
+            "source_title": "AngelHub official website",
+            "accessed_on": REVIEWED_ON,
+            "source_kind": "official_identity",
+            "claims": [
+                {
+                    "field": "identity",
+                    "value": {"finding": "confirmed", "value": "AngelHub"},
+                    "support": "The official site identifies AngelHub as an angel investors club serving Mexico and Latin America.",
+                },
+                {
+                    "field": "category",
+                    "value": {"finding": "confirmed", "value": "angel_network"},
+                    "support": "The official site describes AngelHub as an angel investors club and presents its members, investment thesis, portfolio, and investment process.",
+                },
+            ],
+        },
         {
             "schema_version": "1.0",
             "evidence_id": "evidence-delta-dao-capital-independent-review",
@@ -208,7 +261,7 @@ def build() -> tuple[list[dict], list[dict], dict]:
     for assignment in assignments:
         candidate_id = assignment["candidate_id"]
         source = sources[candidate_id]
-        destination = source.get("destination")
+        destination = source.get("destination", source.get("route_destination"))
         base = {
             "schema_version": "1.0",
             "candidate_id": candidate_id,
@@ -242,7 +295,7 @@ def build() -> tuple[list[dict], list[dict], dict]:
         "review_status_counts": dict(sorted(Counter(row["review_status"] for row in results).items())),
         "final_decision_counts": dict(sorted(Counter(row["final_decision"] for row in results).items())),
         "error_code_counts": dict(sorted(Counter(code for row in results for code in row["error_codes"]).items())),
-        "complete": len(assignments) == len(results) == 375,
+        "complete": len(assignments) == len(results) == 377,
     }
     return results, evidence, summary
 
@@ -299,7 +352,13 @@ def validate() -> list[str]:
         if record_sha256(assignment) != result["assignment_sha256"]:
             errors.append(f"{candidate_id}: assignment_sha256 incorreto")
         if result["review_status"] == "approved":
-            if result["final_decision"] != assignment["source_decision"] or result["destination"] != source.get("destination"):
+            source_destination = source.get(
+                "destination", source.get("route_destination")
+            )
+            if (
+                result["final_decision"] != assignment["source_decision"]
+                or result["destination"] != source_destination
+            ):
                 errors.append(f"{candidate_id}: aprovação diverge da decisão de origem")
         else:
             if result["blind_search_outcome"] != "blocked" and not result["evidence_ids"]:
@@ -334,7 +393,7 @@ def main() -> int:
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
-    print("review-2 validado: 375 resultados, dois ajustes e estrato inativo aprovado.")
+    print("review-2 validado: 377 resultados, dois ajustes e estrato inativo aprovado.")
     return 0
 
 

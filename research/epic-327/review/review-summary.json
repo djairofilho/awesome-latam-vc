@@ -1,6 +1,6 @@
 {
-  "assignment_records": 1071,
-  "assignments_sha256": "ea640962a9cf564d29f01a31c930fffa7afc71a3013ce0f91c787767d89c2ac0",
+  "assignment_records": 1073,
+  "assignments_sha256": "c9bb50732adee49c23654e81b28030956bf9d504472db1f8791e9503e4f4f15f",
   "changes_requested": 265,
   "final_decision_counts": {
     "duplicate": 1,
@@ -9,16 +9,16 @@
     "identity_conflict": 592,
     "inactive": 1,
     "insufficient_evidence": 339,
-    "routed_accelerators": 9,
-    "routed_angel_networks": 3,
+    "routed_accelerators": 10,
+    "routed_angel_networks": 4,
     "routed_funding_platforms": 2,
     "routed_other": 10,
     "unresolved": 99
   },
-  "result_records": 1071,
-  "results_sha256": "a81ff94142a2ba70aa988ecd7e6eb323ee446f0acab3b0b72094c63871b14de9",
+  "result_records": 1073,
+  "results_sha256": "0c312d2a085161e42b7312bae38b843ca3c0baef740559e59985ee9cdd75525f",
   "review_status_counts": {
-    "approved": 806,
+    "approved": 808,
     "changes_requested": 265
   },
   "schema_version": "1.0"

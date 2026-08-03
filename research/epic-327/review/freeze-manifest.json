@@ -15,8 +15,8 @@
     }
   ],
   "frozen_on": "2026-08-02",
-  "review_records_sha256": "6cebb5fa7b369631015014a1474fe5338ecb9264c630b58d07fcdbfa0613ba49",
+  "review_records_sha256": "dc769ba591fbe9cb54a3b887af17cc9746c762a61d2a8beddba0210afed7aa14",
   "schema_version": "1.0",
-  "source_decisions_sha256": "ea640962a9cf564d29f01a31c930fffa7afc71a3013ce0f91c787767d89c2ac0",
+  "source_decisions_sha256": "c9bb50732adee49c23654e81b28030956bf9d504472db1f8791e9503e4f4f15f",
   "status": "frozen"
 }
