@@ -12,6 +12,8 @@ import {
   localizedRoute,
 } from "./i18n.mjs";
 import { canonicalUrl } from "./paths.mjs";
+import { directoryRecord } from "./directory.mjs";
+import { directoryCountryCodes } from "./directory-routes.mjs";
 
 export const SITEMAP_PATH = "/sitemap.xml";
 const repositoryRoot = process.cwd();
@@ -73,15 +75,9 @@ export function indexableRouteGroups() {
         ({ entity_type }) => `/categories/${entity_type}/`,
       ),
     )].sort(),
-    ...[...new Set(
-      entityDocument.entities
-        .flatMap((entity) => [
-          entity.base_geography?.code,
-          ...(entity.countries_covered ?? []),
-        ])
-        .filter((code) => /^[A-Z]{2}$/.test(code))
-        .map((code) => `/countries/${code.toLowerCase()}/`),
-    )].sort(),
+    ...directoryCountryCodes(
+      entityDocument.entities.map(directoryRecord),
+    ).map((code) => `/countries/${code.toLowerCase()}/`),
   ];
   const sharedGroups = sharedSuffixes.map((suffix) => {
     const availableLocales = locales;

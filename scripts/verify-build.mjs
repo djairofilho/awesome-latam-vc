@@ -7,6 +7,8 @@ import {
   statSync,
 } from "node:fs";
 import { join, relative } from "node:path";
+import { directoryRecord } from "../src/lib/directory.mjs";
+import { directoryCountryCodes } from "../src/lib/directory-routes.mjs";
 
 const root = process.cwd();
 const astroCli = join(root, "node_modules", "astro", "bin", "astro.mjs");
@@ -389,13 +391,8 @@ assert(
   profilePages.length === sourceProfileCount * Object.keys(localeRoutes).length,
   "every canonical profile must have a navigable route in every locale",
 );
-const expectedCountries = new Set(
-  entityDocument.entities
-    .flatMap((entity) => [
-      entity.base_geography?.code,
-      ...(entity.countries_covered ?? []),
-    ])
-    .filter((code) => /^[A-Z]{2}$/.test(code)),
+const expectedCountries = directoryCountryCodes(
+  entityDocument.entities.map(directoryRecord),
 );
 for (const segment of Object.values(localeRoutes)) {
   for (const country of expectedCountries) {

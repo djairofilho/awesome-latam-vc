@@ -1,7 +1,31 @@
 import { directoryRecord } from "./directory.mjs";
 import { localizedHref } from "./i18n.mjs";
 
-const COUNTRY_CODE = /^[A-Z]{2}$/;
+// Country landings describe the Latin American catalog, not every headquarters
+// or global market mentioned by a multi-country profile.
+const LATIN_AMERICA_COUNTRY_CODES = new Set([
+  "AR",
+  "BO",
+  "BR",
+  "CL",
+  "CO",
+  "CR",
+  "CU",
+  "DO",
+  "EC",
+  "GT",
+  "HT",
+  "HN",
+  "MX",
+  "NI",
+  "PA",
+  "PE",
+  "PR",
+  "PY",
+  "SV",
+  "UY",
+  "VE",
+]);
 
 export function profileRouteSuffix(slug) {
   return `/profiles/${slug}/`;
@@ -37,7 +61,7 @@ export function directoryCountryCodes(records) {
   return [
     ...new Set(
       records.flatMap(({ geography }) =>
-        geography.filter((value) => COUNTRY_CODE.test(value)),
+        geography.filter((value) => LATIN_AMERICA_COUNTRY_CODES.has(value)),
       ),
     ),
   ].sort();
