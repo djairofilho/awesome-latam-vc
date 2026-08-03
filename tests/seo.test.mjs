@@ -15,6 +15,9 @@ test("indexable route inventory includes profiles and curated landings", () => {
   assert.ok(paths.includes("/es/profiles/kaszek/"));
   assert.ok(paths.includes("/pt-br/categories/fund/"));
   assert.ok(paths.includes("/es/countries/br/"));
+  assert.ok(paths.includes("/en/countries/bo/"));
+  assert.ok(!paths.includes("/en/countries/ae/"));
+  assert.ok(!paths.includes("/en/countries/us/"));
   assert.ok(paths.includes("/en/about/methodology/"));
   assert.ok(paths.includes("/pt-br/about/methodology/"));
   assert.ok(paths.includes("/es/about/methodology/"));

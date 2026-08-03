@@ -1,9 +1,9 @@
 {
   "artifact_hashes": {
-    "research/epic-256/bpv/baseline/catalog-baseline.jsonl": "1e93c27e57752fced307ff6ca43ff5df596a548aa735c5ceb9d3d17dd22e6e2f",
+    "research/epic-256/bpv/baseline/catalog-baseline.jsonl": "242b4340523a03711eeb3b5d9d1b22fbd99fd4b6dabf48336c2880825cf01460",
     "research/epic-256/bpv/baseline/prior-candidates.jsonl": "135d35830dd4bb9343654edc58b5a66f45c93f0bab1d16790ce6bf634e3452c2",
-    "research/epic-256/bpv/baseline/summary.json": "99811a868df815f9f2d48abe23e16dd6b08305ba29918105282125884ea880f1",
-    "research/epic-256/bpv/candidates.jsonl": "7dae62ad7a7ccf4c980bee1dde58b34d3c318efeeaf8b59c62f5430879e3192b",
+    "research/epic-256/bpv/baseline/summary.json": "f248b4dcfdcddcd7ba681279cdb9674b18a5e433ca8044f192bafe9785063978",
+    "research/epic-256/bpv/candidates.jsonl": "268d4cc468f2ab044bf34e9498b90e05fd0b2c8638ed97deb4bf593692b79349",
     "research/epic-256/bpv/contract.json": "a64d96d4dc48adde7ba530c5d8f81de4e703d1ce011cc14a6b3eb4796d414aad",
     "research/epic-256/bpv/coverage-matrix.json": "1672f67043ed5dbd711ba00645ed8b831c5840a180ea9a22259c452552b203b4",
     "research/epic-256/bpv/evidence.jsonl": "e413c1517c62ae7b04ccfa2b2afea96bbb70cb0039579f8dbdcded0742b152ee",
@@ -44,9 +44,9 @@
       ],
       "profile_paths": [
         "funds/regional/cibersons.md",
-        "funds/regional/yango-ventures.md",
+        "funds/multi-country/yango-ventures.md",
         "funds/venezuela/impulsa-vc.md",
-        "funds/regional/epakon-capital.md"
+        "funds/multi-country/epakon-capital.md"
       ]
     }
   ],

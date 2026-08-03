@@ -60,7 +60,6 @@ The index is optimized for quick comparison and currently covers 227 funds. All 
 | [DGF Investimentos](funds/regional/dgf-investimentos.md) | Multi-stage | High-growth technology companies | Brazil and Latin America |
 | [Draper Cygnus](funds/regional/draper-cygnus.md) | Seed and Series A | Deep tech | Latin American founders building globally |
 | [EMA Ventures](funds/regional/ema-ventures.md) | Pre-seed and Seed | Technology and women-led companies | Spanish-speaking Latin America |
-| [Epakon Capital](funds/regional/epakon-capital.md) | Pre-seed and Seed | Fintech, artificial intelligence, and technology | United States and Latin America, including Venezuela |
 | [EWA Capital](funds/regional/ewa-capital.md) | Seed and Series A | Gender-smart technology and inclusion | Spanish-speaking Latin America |
 | [Fen Ventures](funds/regional/fen-ventures.md) | Pre-seed and Seed | Fintech, SaaS, and sustainability | Spanish-speaking Latin America |
 | [Galicia Ventures](funds/regional/galicia-ventures.md) | Pre-seed, Seed, Series A, and Series B | Fintech, insurtech, agtech, disruptive technology, and B2B models | Latin America |
@@ -106,7 +105,6 @@ The index is optimized for quick comparison and currently covers 227 funds. All 
 | [Winnipeg Capital](funds/regional/winnipeg-capital.md) | Not publicly disclosed | Scalable technology companies | Latin America |
 | [Wollef Ventures (ex-Jaguar)](funds/regional/wollef-ventures-jaguar.md) | Pre-seed and Seed | Technology | Latin America |
 | [Xperiment Ventures](funds/regional/xperiment-ventures.md) | Not publicly disclosed | Nature-based supply chain technology | Argentina and Latin America |
-| [Yango Ventures](funds/regional/yango-ventures.md) | Seed, Series A, and Series B | Fintech, B2B SaaS, online-to-offline, and artificial intelligence | Latin America and other emerging markets; explicit Bolivia access |
 
 ## Argentina
 
@@ -309,6 +307,7 @@ The index is optimized for quick comparison and currently covers 227 funds. All 
 | [Dux Capital](funds/multi-country/dux-capital.md) | Pre-seed and Seed | Technology and underrepresented founders | United States and cross-border Spanish-speaking markets |
 | [EDP Ventures](funds/multi-country/edp-ventures.md) | Seed, Series A, and Series B | Energy transition and energy technology | Global |
 | [Endeavor Catalyst](funds/multi-country/endeavor-catalyst.md) | Multi-stage | Endeavor network companies | Global |
+| [Epakon Capital](funds/multi-country/epakon-capital.md) | Pre-seed and Seed | Fintech, artificial intelligence, and technology | United States and Latin America, including Venezuela |
 | [FEBACAPITAL](funds/multi-country/febacapital.md) | Not publicly disclosed | Early-stage companies and operating support | Brazil; broader coverage not publicly disclosed |
 | [FJ Labs](funds/multi-country/fj-labs.md) | Pre-seed and Seed | Marketplaces and network effects | Global |
 | [Flourish Ventures](funds/multi-country/flourish-ventures.md) | Not publicly disclosed | Financial health and financial services | Global, including Latin America |
@@ -342,6 +341,7 @@ The index is optimized for quick comparison and currently covers 227 funds. All 
 | [Wayfinder Ventures](funds/multi-country/wayfinder-ventures.md) | Not publicly disclosed | Not publicly disclosed | Latin America |
 | [Wayra](funds/multi-country/wayra.md) | Multi-stage | Strategic technology | Brazil, Europe, and Latin America |
 | [Worthit](funds/multi-country/worthit.md) | Pre-seed | B2B SaaS and AI | Latin America |
+| [Yango Ventures](funds/multi-country/yango-ventures.md) | Seed, Series A, and Series B | Fintech, B2B SaaS, online-to-offline, and artificial intelligence | Latin America and other emerging markets; explicit Bolivia access |
 | [Zacua Ventures](funds/multi-country/zacua-ventures.md) | Not publicly disclosed | Construction technology and the built environment | Global, including Mexico |
 
 ## Related ecosystem resources

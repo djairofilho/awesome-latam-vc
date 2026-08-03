@@ -35,11 +35,25 @@ test("directory route suffixes stay symmetric across locales", () => {
   );
 });
 
-test("country landings only derive real ISO country codes", () => {
+test("country landings only derive Latin American country codes", () => {
   const record = directoryRecordForProfile(profile, "en");
   assert.deepEqual(directoryCountryCodes([record]), ["BR"]);
   assert.equal(countryDisplayName("pt-BR", "BR"), "Brasil");
   assert.equal(countryDisplayName("es", "MX"), "México");
+});
+
+test("multi-country profiles do not create landings for external countries", () => {
+  const record = directoryRecordForProfile(
+    {
+      ...profile,
+      baseGeography: { kind: "country", code: "AE" },
+      countriesCovered: ["AE", "BO", "LATAM", "US"],
+    },
+    "en",
+  );
+
+  assert.deepEqual(directoryCountryCodes([record]), ["BO"]);
+  assert.deepEqual(record.geography, ["AE", "BO", "LATAM", "US"]);
 });
 
 test("profile history links encode every canonical path segment", () => {
