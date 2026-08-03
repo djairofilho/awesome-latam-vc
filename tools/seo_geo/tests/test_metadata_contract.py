@@ -169,6 +169,28 @@ class MetadataContractTests(unittest.TestCase):
             )
         )
 
+    def test_external_funds_cannot_use_the_regional_directory(self) -> None:
+        source = next(
+            profile
+            for profile in self.valid_profiles
+            if profile.metadata["entity_type"] == "fund"
+            and profile.metadata["locale"] == "en"
+        )
+        metadata = copy.deepcopy(source.metadata)
+        metadata["base_geography"] = {"kind": "country", "code": "AE"}
+        profile = VALIDATE.Profile(
+            path=ROOT / "funds" / "regional" / "external-fund.md",
+            metadata=metadata,
+            body=source.body,
+        )
+
+        errors = VALIDATE.validate_catalog_correspondence(profile)
+        self.assertIn(
+            "funds based outside Latin America must be stored under "
+            "funds/multi-country",
+            "\n".join(errors),
+        )
+
     def test_null_website_requires_visible_non_disclosure(self) -> None:
         source = next(
             profile

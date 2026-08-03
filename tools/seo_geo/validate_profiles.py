@@ -63,15 +63,21 @@ LATAM_COUNTRY_CODES = {
     "CL",
     "CO",
     "CR",
+    "CU",
     "DO",
     "EC",
     "GT",
+    "HT",
+    "HN",
     "MX",
+    "NI",
     "PA",
     "PE",
     "PR",
     "PY",
+    "SV",
     "UY",
+    "VE",
 }
 
 
@@ -270,6 +276,22 @@ def catalog_profile_paths() -> list[Path]:
 def validate_catalog_correspondence(profile: Profile) -> list[str]:
     errors: list[str] = []
     metadata = profile.metadata
+    try:
+        relative_parts = profile.path.resolve().relative_to(REPOSITORY_ROOT).parts
+    except ValueError:
+        relative_parts = ()
+    base_code = metadata.get("base_geography", {}).get("code")
+    if (
+        metadata.get("entity_type") == "fund"
+        and relative_parts[:2] == ("funds", "regional")
+        and base_code != "LATAM"
+        and base_code not in LATAM_COUNTRY_CODES
+    ):
+        errors.append(
+            f"{profile.display_path}: funds based outside Latin America must "
+            "be stored under funds/multi-country"
+        )
+
     heading = HEADING_RE.search(profile.body)
     if not heading or heading.group(1) != metadata.get("name"):
         errors.append(

@@ -4464,7 +4464,7 @@
       "name": "Epakon Capital",
       "official_website": "https://epakon.com/",
       "operator": null,
-      "source_profile": "funds/regional/epakon-capital.md",
+      "source_profile": "funds/multi-country/epakon-capital.md",
       "sources": [
         {
           "kind": "official_thesis",
@@ -10800,7 +10800,7 @@
       "name": "Yango Ventures",
       "official_website": "https://ventures.yango.com/",
       "operator": "Yango Group",
-      "source_profile": "funds/regional/yango-ventures.md",
+      "source_profile": "funds/multi-country/yango-ventures.md",
       "sources": [
         {
           "kind": "official_thesis",
