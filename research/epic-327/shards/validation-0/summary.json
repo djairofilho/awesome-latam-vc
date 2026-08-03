@@ -1,0 +1,18 @@
+{
+  "candidates_sha256": "d80050bbe5d95954931d197ce439bc10c163ddb625e1f04e5bb245c8b0b130f3",
+  "decision_counts": {
+    "excluded": 7,
+    "insufficient_evidence": 31,
+    "routed_accelerators": 1,
+    "routed_angel_networks": 1,
+    "routed_other": 3
+  },
+  "decision_records": 43,
+  "decisions_sha256": "453076bf682755318bbc93a355560c2b2d1dc6a94221c1dd1f02f3f799a6ce9f",
+  "evidence_records": 43,
+  "evidence_sha256": "d4fb98f11014a8958b9accf894db86187910e6e351b09581ad5ba1fe6bd21d7c",
+  "input_records": 43,
+  "partition": 0,
+  "schema_version": "1.0",
+  "worker_id": "validation-0"
+}
