@@ -75,6 +75,7 @@ El índice está optimizado para una comparación rápida y actualmente reúne 2
 | [Manutara Ventures](funds/regional/manutara-ventures.md) | Seed y Serie A | Tecnología | Chile y América Latina |
 | [MAYA Capital](funds/regional/maya-capital.md) | Pre-seed y Seed | Tecnología | América Latina |
 | [Monashees](funds/regional/monashees.md) | No divulgado públicamente | Tecnología | América Latina al mundo |
+| [Nameless Partners](funds/regional/nameless-partners.md) | No divulgado públicamente | No divulgado públicamente | América Latina |
 | [Nazca](funds/regional/nazca.md) | Multietapa | Tecnología | América Latina |
 | [New Ventures Capital](funds/regional/new-ventures-capital.md) | Seed y Serie A | Emprendimiento de impacto | América Latina |
 | [Newtopia VC](funds/regional/newtopia-vc.md) | No divulgado públicamente | Tecnología, agnóstico a sectores | América Latina |
