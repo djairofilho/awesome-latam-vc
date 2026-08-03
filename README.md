@@ -1,5 +1,12 @@
 # Awesome LatAm VC [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+[![Website](https://img.shields.io/badge/Website-Explore_the_directory-8B3F00)](https://djairofilho.github.io/awesome-latam-vc/en/)
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-GitHub_Sponsors-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/djairofilho)
+
+[Explore the Awesome LatAm VC website](https://djairofilho.github.io/awesome-latam-vc/en/)
+
+[![Awesome LatAm VC website showing its funding directory and current catalog snapshot](docs/assets/awesome-latam-vc-home.png)](https://djairofilho.github.io/awesome-latam-vc/en/)
+
 A curated list of Venture Capital funds investing in Latin America.
 
 ## Contents
@@ -358,7 +365,3 @@ Catalogs, profiles, translations, datasets, and editorial content are available
 under [CC0 1.0 Universal](LICENSE-CC0). Site code, scripts, tests, and tools are
 available under the [MIT License](LICENSE-MIT). See the complete
 [repository licensing policy](LICENSE).
-
-## Support the project
-
-This project is free and open source. If you find it useful, consider supporting its maintenance through [GitHub Sponsors](https://github.com/sponsors/djairofilho).
