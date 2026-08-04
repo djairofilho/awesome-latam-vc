@@ -4,7 +4,8 @@ Public agencies and programs in this index provide an official, structured route
 
 Agency profiles describe stable institutional routes. Program profiles describe durable instruments. Temporary calls never receive profiles; their status, dates, values, and eligibility remain call-specific.
 
-The index contains 12 agencies and 17 programs verified on 2026-07-27. A program marked as currently closed and recurring is not presented as open.
+The index contains 12 agencies and 19 programs. A program marked as currently
+closed is not presented as open.
 
 ## Bolivia
 
@@ -35,6 +36,7 @@ The index contains 12 agencies and 17 programs verified on 2026-07-27. A program
 | Organization | Entity | Financial route | Status |
 | --- | --- | --- | --- |
 | [Corporación de Fomento de la Producción](chile/corfo.md) | Agency | Multiple public instruments | Active institutional route |
+| [Escalamiento](chile/corfo-escalamiento.md) | Program | grant or non-repayable funding, co-financing | Currently closed; 2026 activity confirmed |
 | [Semilla Inicia para Empresas Lideradas por Mujeres](chile/corfo-semilla-inicia-mujeres.md) | Program | grant or non-repayable funding, co-financing | Currently closed, officially recurring |
 | [Start-Up Chile](chile/start-up-chile.md) | Program | grant or non-repayable funding | Currently closed, officially recurring |
 
