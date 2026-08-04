@@ -44,9 +44,32 @@ sources do not disclose a single entry stage.
 
 - **Website:** https://oxygea.com/
 - **Operator:** Braskem
-- **Stage:** Not publicly disclosed
+- **Fund type:** Corporate venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes, through Oxygea's official route
+- **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
+- **Focus:** Sustainability, new materials and digital transformation
 - **Geography:** Global
+- **Initial check:** Not publicly disclosed
+- **Investment role:** Strategic corporate investor
+- **Business models:** Technology startups aligned with the corporate parent's strategic challenges
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed in the reviewed sources
 - **Submit a startup:** https://oxygea.com/
+
+## Declared thesis
+
+The corporate venture arm invests in technologies
+related to sustainability, new materials and digital transformation. The
+reviewed official material does not declare a standard entry stage, ticket or
+follow-on policy.
+
+## Portfolio signals
+
+The official sources identify an active corporate innovation and investment
+mandate. The reviewed pages do not provide a complete portfolio count or a
+stable representative-company list, so those details are not inferred.
 
 ## Sources
 

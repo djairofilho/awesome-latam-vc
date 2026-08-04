@@ -43,10 +43,31 @@ contact from entrepreneurs but does not disclose one entry stage for the firm.
 ## Investment profile
 
 - **Website:** https://www.volpecapital.com/
-- **Stage:** Not publicly disclosed
+- **Fund type:** Technology investment firm
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes, through the official contact route
+- **Stage at entry:** Not publicly disclosed
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Technology and technology-enabled businesses
 - **Geography:** Latin America
-- **Contact:** https://www.volpecapital.com/
+- **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** High-growth technology and technology-enabled companies
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** See the official portfolio; no complete count is stated
+- **Submit a startup:** https://www.volpecapital.com/
+
+## Declared thesis
+
+The firm focuses on high-growth technology and technology-enabled
+companies in Latin America. The reviewed official pages do not declare one
+standard entry stage, ticket range or follow-on policy for the firm.
+
+## Portfolio signals
+
+The firm maintains an official portfolio page and a contact route for
+entrepreneurs. Because the reviewed material does not state a complete current
+portfolio count, this profile does not infer one.
 
 ## Sources
 

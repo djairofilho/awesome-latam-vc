@@ -50,10 +50,31 @@ cohort was selected after the published intake closed.
 
 - **Website:** https://www.quintessa.org.br/
 - **Operator:** Quintessa
-- **Stage:** Not expressed as a standard venture round
-- **Geography:** Brazil
+- **Program type:** Accelerator
+- **Open to external founders:** Yes, during published calls
+- **Activity status:** Active
 - **Application status:** Closed for the current cohort
-- **Founder route:** https://blog.quintessa.org.br/mapeamento-de-solucoes-de-base-cientifico-tecnologica-para-o-clima-inscricoes-ate-08-outubro/
+- **Program format:** Cohort-based technical and business acceleration
+- **Duration:** Not publicly disclosed
+- **Stage:** Not expressed as a standard venture round
+- **Capital offered:** Not publicly disclosed
+- **Instrument:** Not publicly disclosed
+- **Equity:** Not publicly disclosed
+- **Geography:** Brazil
+- **Apply:** https://blog.quintessa.org.br/mapeamento-de-solucoes-de-base-cientifico-tecnologica-para-o-clima-inscricoes-ate-08-outubro/
+
+## Eligibility and application
+
+The published intake targeted Brazilian science- and technology-based climate
+solutions. Applications for the verified cohort are closed; founders should
+monitor the operator's official channels for a future call rather than treating
+the archived form as continuously open.
+
+## Activity signals
+
+The operator published the selection of ten Brazilian climate deeptechs for the
+current cohort. That selection confirms recent program activity, while the
+reviewed sources do not disclose capital, instrument, equity or duration terms.
 
 ## Sources
 

@@ -38,10 +38,32 @@ their work, without publishing a single entry stage for every vehicle.
 ## Investment profile
 
 - **Website:** https://movinvestimentos.com.br/
-- **Stage:** Not publicly disclosed across all vehicles
+- **Fund type:** Impact investment manager
+- **Direct startup investment:** Yes
+- **Open to external founders:** Yes, through the official contact route
+- **Stage at entry:** Not publicly disclosed across all vehicles
+- **Follow-on stages:** Not publicly disclosed
 - **Focus:** Measurable environmental and social impact
 - **Geography:** Brazil
-- **Submit a business:** https://movinvestimentos.com.br/
+- **Initial check:** Not publicly disclosed
+- **Investment role:** Impact investor
+- **Business models:** Businesses with measurable environmental or social impact
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed in the reviewed source
+- **Submit a startup:** https://movinvestimentos.com.br/
+
+## Declared thesis
+
+The manager presents an impact investment mandate backing
+businesses that combine financial performance with measurable environmental
+and social outcomes. Public material does not assign one entry stage or ticket
+range across all of its vehicles.
+
+## Portfolio signals
+
+The official site confirms active impact-investment activity and provides a
+route to the organization. The reviewed source does not publish a single
+current portfolio count or a standardized stage and check-size policy.
 
 ## Sources
 

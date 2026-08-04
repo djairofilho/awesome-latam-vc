@@ -43,10 +43,31 @@ do not expose a public startup submission form.
 ## Investment profile
 
 - **Website:** https://www.kortexventures.com/
-- **Stage:** Seed, Series A and Series B
+- **Fund type:** Venture capital
+- **Direct startup investment:** Yes
+- **Open to external founders:** No public submission route identified
+- **Stage at entry:** Seed, Series A and Series B
+- **Follow-on stages:** Series A and Series B
 - **Focus:** Health technology
 - **Geography:** Global
+- **Initial check:** Not publicly disclosed
+- **Investment role:** Not publicly disclosed
+- **Business models:** Health technology companies
+- **Portfolio size:** Not publicly disclosed
+- **Selected companies:** Not publicly disclosed in the reviewed sources
 - **Submit a startup:** No public route identified
+
+## Declared thesis
+
+The firm states a specialist health-technology mandate and publishes an
+investment range from seed through Series B. The reviewed material does not
+disclose a narrower business-model requirement, ticket size or geography limit.
+
+## Portfolio signals
+
+The official pages confirm the investment approach but do not publish a
+complete portfolio count, representative-company list or current submission
+channel. Those fields therefore remain explicitly undisclosed.
 
 ## Sources
 
