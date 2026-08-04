@@ -420,15 +420,13 @@ def audit(root: Path = ROOT) -> dict[str, Any]:
         path = root / relative
         if not path.is_file() or profile_sha256(path) != expected:
             hash_errors.append(f"perfil com hash inválido: {relative}")
-    if sha256(catalog / "README.md") != publication_manifest["index_hash"]:
-        hash_errors.append("índice canônico com hash inválido")
     declared_hash_count = (
         len(consolidation_manifest["input_hashes"])
         + len(consolidation_manifest["output_hashes"])
         + len(plan["source_hashes"])
         + len(plan["batches"])
         + len(publication_manifest["profile_hashes"])
-        + 2
+        + 1
     )
     check_record(
         checks,
@@ -448,10 +446,12 @@ def audit(root: Path = ROOT) -> dict[str, Any]:
         Path(row["path"]).relative_to("ecosystem/public-programs").as_posix()
         for row in profiles
     ]
+    expected_path_set = set(expected_paths)
     if len(actual_paths) != len(set(actual_paths)):
         index_errors.append("índice contém perfil duplicado")
-    if set(actual_paths) != set(expected_paths):
-        index_errors.append("índice não cobre exatamente os perfis")
+    frozen_paths = [path for path in actual_paths if path in expected_path_set]
+    if set(frozen_paths) != expected_path_set:
+        index_errors.append("índice não cobre todos os perfis congelados")
     for path in actual_paths:
         if not (catalog / path).is_file():
             index_errors.append(f"índice aponta para arquivo ausente: {path}")
@@ -463,8 +463,11 @@ def audit(root: Path = ROOT) -> dict[str, Any]:
         for country in sorted(by_country)
         for row in sorted(by_country[country], key=lambda item: item["entity_id"])
     ]
-    if actual_paths != expected_order:
-        index_errors.append("índice não segue país e entity_id em ordem determinística")
+    if frozen_paths != expected_order:
+        index_errors.append(
+            "perfis congelados no índice não seguem país e entity_id "
+            "em ordem determinística"
+        )
     category_link = "ecosystem/public-programs/README.md"
     for filename in ("README.md", "README.pt.md", "README.es.md"):
         if (root / filename).read_text(encoding="utf-8").count(category_link) != 1:

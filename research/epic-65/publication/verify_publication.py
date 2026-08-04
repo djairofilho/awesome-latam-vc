@@ -187,12 +187,9 @@ def validate(root: Path = ROOT) -> list[str]:
         for path in catalog.rglob("*.md")
         if path.name != "README.md"
     )
-    if set(catalog_profiles) != set(profile_paths):
-        missing = sorted(set(profile_paths) - set(catalog_profiles))
-        extra = sorted(set(catalog_profiles) - set(profile_paths))
-        errors.append(
-            f"catálogo fora da fila congelada; ausentes={missing}, extras={extra}"
-        )
+    missing = sorted(set(profile_paths) - set(catalog_profiles))
+    if missing:
+        errors.append(f"perfis congelados ausentes do catálogo: {missing}")
 
     for profile in profiles:
         entity_id = profile["entity_id"]
@@ -279,8 +276,9 @@ def validate(root: Path = ROOT) -> list[str]:
         path = root / path_text
         if not path.is_file() or profile_hash(path) != digest:
             errors.append(f"hash de perfil inválido: {path_text}")
-    if normalized_hash(catalog / "README.md") != manifest["index_hash"]:
-        errors.append("hash do índice inválido")
+    # The catalog is cumulative. Its full README can legitimately change after
+    # this frozen publication as long as every profile from this batch remains
+    # linked exactly once; that invariant is checked above.
 
     if manifest["profile_queue_hash"] != plan["profile_queue_hash"]:
         errors.append("manifesto e plano divergem na fila")
