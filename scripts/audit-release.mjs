@@ -62,6 +62,29 @@ export function translationInventory(repositoryRoot, entities) {
   });
 }
 
+const README_FUND_COUNT_PATTERNS = Object.freeze({
+  "README.md": /currently covers (\d+) funds/u,
+  "README.pt.md": /atualmente reúne (\d+) fundos/u,
+  "README.es.md": /actualmente reúne (\d+) fondos/u,
+});
+
+export function catalogCountReadiness(repositoryRoot, entities) {
+  const funds = entities.filter(({ entity_type: entityType }) => entityType === "fund").length;
+  const readmes = {};
+  for (const [filename, pattern] of Object.entries(README_FUND_COUNT_PATTERNS)) {
+    const source = readFileSync(join(repositoryRoot, filename), "utf8");
+    const match = source.match(pattern);
+    assert(match, `${filename} has no published fund count`);
+    const published = Number.parseInt(match[1], 10);
+    assert(
+      published === funds,
+      `${filename} publishes ${published} funds, expected ${funds}`,
+    );
+    readmes[filename] = published;
+  }
+  return { funds, readmes };
+}
+
 function htmlFiles(directory) {
   if (!existsSync(directory)) {
     return [];
@@ -166,28 +189,15 @@ export function runReleaseAudit(repositoryRoot = ROOT) {
   );
   assert(entityDocument.entities.length > 0, "entity export is empty");
   const translations = translationInventory(repositoryRoot, entityDocument.entities);
+  const catalog = catalogCountReadiness(repositoryRoot, entityDocument.entities);
   const built = auditBuiltSite(repositoryRoot, entityDocument.entities);
-  const measurement = measurementReadiness(
-    JSON.parse(
-      readFileSync(
-        join(
-          repositoryRoot,
-          "research",
-          "seo-geo",
-          "measurement",
-          "provider-status.json",
-        ),
-        "utf8",
-      ),
-    ),
-  );
   return {
     schema_version: "1.0",
     audited_on: new Date().toISOString().slice(0, 10),
     entities: entityDocument.entities.length,
+    catalog,
     translations,
     built,
-    measurement,
     critical_findings: 0,
     high_findings: 0,
   };
