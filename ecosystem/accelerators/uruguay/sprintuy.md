@@ -48,11 +48,17 @@ considering Uruguay as a base from which to expand across Latin America.
 - **Apply:** https://anii.org.uy/apoyos/emprendimientos/655/sprintuy-2026/
 - **Investment vehicle:** No qualifying investment vehicle identified
 
-## Eligibility and support
+## Eligibility and application
 
 The 2026 edition accepted foreign companies up to five years old whose founder
 teams retained at least 51% ownership. Applicants needed a technology or
 science-based product, early validation, and a differentiated value proposition.
+
+## Activity signals
+
+ANII published the 2026 edition with official requirements, dates, and program
+benefits. Applications for that edition are closed, so it is not presented as
+an open call.
 
 ## Sources
 

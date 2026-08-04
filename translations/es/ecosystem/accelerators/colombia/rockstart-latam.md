@@ -36,13 +36,18 @@ Bogotá que apoya startups tecnológicas de América Latina.
 - **Postulación:** https://aplicaciones.rockstartlatam.com/
 - **Vehículo de inversión:** Plataforma de inversión early stage
 
-## Elegibilidad y apoyo
+## Elegibilidad y solicitud
 
 El programa busca principalmente startups con MVP, usuarios o clientes y
 tracción inicial. El apoyo combina mentoría, operación, captación, conexiones
 corporativas y posible coinversión posterior hasta Series B.
 
-## Sources
+## Señales de actividad
+
+La página de la operación latinoamericana, las preguntas frecuentes y el
+portal de solicitud estaban activos y describían rutas actuales para fundadores.
+
+## Fuentes
 
 - [Rockstart LATAM overview](https://rockstart.com/latam/)
 - [Rockstart LATAM program FAQ](https://rockstart.com/latam/faq/)

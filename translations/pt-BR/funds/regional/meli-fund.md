@@ -30,6 +30,7 @@ América Latina.
 - **Papel no investimento:** Investidor financeiro e estratégico
 - **Modelos de negócio:** Tecnologia alinhada a comércio ou finanças
 - **Tamanho do portfólio:** Não divulgado publicamente
+- **Empresas selecionadas:** Consulte as empresas apresentadas na página oficial do MELI Fund
 - **Enviar uma startup:** https://www.mercadolibre.com/fund
 
 ## Tese declarada
@@ -38,7 +39,12 @@ O fundo investe em empresas de tecnologia que ampliam direta ou indiretamente
 o acesso ao comércio e a serviços financeiros. Também pode conectar empresas
 do portfólio a produtos, equipes, canais e unidades de negócio do Mercado Libre.
 
-## Sources
+## Sinais de portfólio
+
+A página oficial do fundo apresenta relações de portfólio e uma rota de
+inscrição, mas não divulga um total atual de empresas ativas.
+
+## Fontes
 
 - [MELI Fund overview and application](https://www.mercadolibre.com/fund)
 

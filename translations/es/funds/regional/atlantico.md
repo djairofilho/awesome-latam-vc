@@ -32,6 +32,7 @@ y más allá.
 - **Papel en la inversión:** No divulgado públicamente
 - **Modelos de negocio:** Empresas antes de escalar con product-market fit inicial
 - **Tamaño del portafolio:** No divulgado públicamente
+- **Empresas seleccionadas:** Consulte las empresas presentadas en el sitio oficial de Atlantico
 - **Enviar una startup:** No divulgado públicamente
 
 ## Tesis declarada
@@ -39,7 +40,12 @@ y más allá.
 La firma afirma trabajar con fundadores que construyen el futuro de América
 Latina y respaldar empresas antes de escalar con product-market fit inicial.
 
-## Sources
+## Señales de portafolio
+
+Las páginas oficiales revisadas presentan la actividad de inversión y apoyo a
+empresas, pero no divulgan un total actual de empresas activas.
+
+## Fuentes
 
 - [Atlantico homepage](https://www.atlantico.vc/)
 - [Atlantico investment approach](https://www.atlantico.vc/about-us)

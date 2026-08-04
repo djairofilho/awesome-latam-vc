@@ -50,11 +50,17 @@ training, mentoring, and periodic calls.
 - **Apply:** https://www.apps.co/
 - **Investment vehicle:** No qualifying investment vehicle identified
 
-## Eligibility and support
+## Eligibility and application
 
 The program serves Colombian digital entrepreneurs and businesses. Its tracks
 have included product development, business-model validation, technology-led
 growth, and immersion with customers, allies, investors, and experts.
+
+## Activity signals
+
+The official program overview and opportunities portal confirmed an active
+public founder route when reviewed. Enrollment dates and available tracks
+remain specific to each published call.
 
 ## Sources
 

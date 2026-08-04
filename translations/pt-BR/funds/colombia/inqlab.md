@@ -29,6 +29,7 @@ Latina.
 - **Papel no investimento:** Investidor estratégico e financeiro
 - **Modelos de negócio:** Product-market fit e potencial regional
 - **Tamanho do portfólio:** Não divulgado como total ativo
+- **Empresas selecionadas:** Consulte o portfólio apresentado no site oficial da InQlab
 - **Enviar uma startup:** https://www.inqlab.co/
 
 ## Tese declarada
@@ -37,7 +38,12 @@ O veículo procura equipes eficazes que construam empresas tecnológicas
 disruptivas. Prioriza negócios com mercado principal na América Latina e que
 considerem a Colômbia relevante para o crescimento de curto prazo.
 
-## Sources
+## Sinais de portfólio
+
+O site oficial apresenta empresas do portfólio junto à tese de investimento,
+mas não divulga um total atual de empresas ativas.
+
+## Fontes
 
 - [InQlab thesis, stages, and portfolio](https://www.inqlab.co/)
 

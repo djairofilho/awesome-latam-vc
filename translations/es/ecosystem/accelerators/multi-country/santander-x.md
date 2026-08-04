@@ -33,12 +33,17 @@ Uruguay.
 - **Geografía:** Argentina, Brasil, Chile, México y Uruguay
 - **Postulación:** https://www.santanderx.com/en/awards.html
 
-## Elegibilidad y apoyo
+## Elegibilidad y solicitud
 
 La elegibilidad depende de cada convocatoria. Los ganadores pueden recibir
 premios en efectivo, acceso a la comunidad Santander X 100, visibilidad,
 formación y conexiones. El calendario oficial debe verificarse antes de
 presentar un desafío como abierto.
+
+## Señales de actividad
+
+El calendario oficial de premios y un desafío global de 2026 confirmaron
+actividad recurrente. La disponibilidad depende del país y la convocatoria.
 
 ## Fuentes
 

@@ -35,6 +35,16 @@ A plataforma Startup México publica oportunidades diferentes conforme o ciclo.
 - **Geografia:** México e América Latina
 - **Inscrição:** https://startupmexico.com/convocatorias/
 
+## Elegibilidade e inscrição
+
+Cada oportunidade tem critérios, custos, benefícios e datas próprios, que
+devem ser verificados antes da inscrição.
+
+## Sinais de atividade
+
+A plataforma oficial, o serviço de aceleração e a página de chamadas estavam
+ativos na data da revisão. As chamadas abrem e fecham de forma independente.
+
 ## Fontes
 
 - [Startup México](https://startupmexico.com/)

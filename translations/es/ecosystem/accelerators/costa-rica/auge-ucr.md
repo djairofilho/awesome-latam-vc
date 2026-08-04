@@ -35,13 +35,18 @@ ofrece incubación y apoyo inicial a emprendimientos innovadores.
 - **Postulación:** https://diprovid.ucr.ac.cr/auge/
 - **Vehículo de inversión:** No se identificó un vehículo de venture capital
 
-## Elegibilidad y apoyo
+## Elegibilidad y solicitud
 
 Los candidatos pasan por una evaluación de admisión. Participar puede generar
 elegibilidad para recursos de prototipo o lanzamiento, pero completar el
 programa no garantiza una subvención y se aplican evaluaciones adicionales.
 
-## Sources
+## Señales de actividad
+
+La página oficial de AUGE-UCR y sus términos publicaban una ruta activa de
+admisión, incluido StartupGo y las etapas de evaluación.
+
+## Fuentes
 
 - [AUGE-UCR programs and application](https://diprovid.ucr.ac.cr/auge/)
 - [AUGE-UCR program terms](https://diprovid.ucr.ac.cr/auge/terminos-y-condiciones/)

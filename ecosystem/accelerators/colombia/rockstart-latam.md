@@ -50,11 +50,16 @@ supporting technology startups across Latin America.
 - **Apply:** https://aplicaciones.rockstartlatam.com/
 - **Investment vehicle:** Early-stage investment platform
 
-## Eligibility and support
+## Eligibility and application
 
 The program primarily seeks startups with an MVP, users or customers, and
 early traction. Support combines mentoring, operational work, fundraising,
 corporate connections, and possible follow-on co-investment through Series B.
+
+## Activity signals
+
+The reviewed official LATAM overview, program FAQ, and application portal were
+active and described current founder intake and support routes.
 
 ## Sources
 

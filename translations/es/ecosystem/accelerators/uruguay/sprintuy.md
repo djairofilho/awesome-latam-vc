@@ -29,12 +29,18 @@ Latina.
 - **Geografía:** Uruguay como base para expansión latinoamericana
 - **Postulación:** https://anii.org.uy/apoyos/emprendimientos/655/sprintuy-2026/
 
-## Elegibilidad y apoyo
+## Elegibilidad y solicitud
 
 La edición 2026 aceptó empresas extranjeras de hasta cinco años cuyos equipos
 fundadores conservaran al menos el 51% de la propiedad. Las candidatas debían
 tener un producto tecnológico o científico, validación inicial y una propuesta
 de valor diferenciada.
+
+## Señales de actividad
+
+ANII publicó la edición de 2026 con requisitos, fechas y beneficios oficiales.
+Las inscripciones de esa edición están cerradas, por lo que no se presenta como
+una convocatoria abierta.
 
 ## Fuentes
 

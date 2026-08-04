@@ -33,6 +33,16 @@ formación, mentorías y convocatorias periódicas.
 - **Geografía:** Colombia
 - **Postulación:** https://www.apps.co/
 
+## Elegibilidad y solicitud
+
+El programa atiende a emprendedores y negocios digitales colombianos. Los
+requisitos, plazos y trayectos disponibles se definen en cada convocatoria.
+
+## Señales de actividad
+
+La descripción oficial y el portal de oportunidades confirmaron una ruta
+pública activa para fundadores en la fecha de revisión.
+
 ## Fuentes
 
 - [Descripción del programa Apps.co](https://www.mintic.gov.co/portal/inicio/Atencion-y-Servicio-a-la-Ciudadania/Preguntas-frecuentes/12750:Apps-co)

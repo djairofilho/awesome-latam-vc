@@ -29,6 +29,7 @@ América Latina.
 - **Papel en la inversión:** Inversionista estratégico y financiero
 - **Modelos de negocio:** Product-market fit y potencial regional
 - **Tamaño del portafolio:** No divulgado como total activo
+- **Empresas seleccionadas:** Consulte el portafolio presentado en el sitio oficial de InQlab
 - **Enviar una startup:** https://www.inqlab.co/
 
 ## Tesis declarada
@@ -37,7 +38,12 @@ El vehículo busca equipos eficaces que construyan empresas tecnológicas
 disruptivas. Prioriza negocios cuyo mercado principal sea América Latina y que
 consideren a Colombia relevante para el crecimiento a corto plazo.
 
-## Sources
+## Señales de portafolio
+
+El sitio oficial presenta empresas del portafolio junto con la tesis de
+inversión, pero no divulga un total actual de empresas activas.
+
+## Fuentes
 
 - [InQlab thesis, stages, and portfolio](https://www.inqlab.co/)
 

@@ -35,6 +35,17 @@ La plataforma Startup México publica distintas oportunidades según el ciclo.
 - **Geografía:** México y América Latina
 - **Postulación:** https://startupmexico.com/convocatorias/
 
+## Elegibilidad y solicitud
+
+Cada oportunidad tiene criterios, costos, beneficios y fechas propios, que
+deben verificarse antes de presentar una solicitud.
+
+## Señales de actividad
+
+La plataforma oficial, el servicio de aceleración y la página de convocatorias
+estaban activos en la fecha de revisión. Cada convocatoria abre y cierra de
+forma independiente.
+
 ## Fuentes
 
 - [Startup México](https://startupmexico.com/)

@@ -31,6 +31,7 @@ em startups early stage na América Latina.
 - **Papel no investimento:** Finance-first e orientado a impacto
 - **Modelos de negócio:** Empresas habilitadas por tecnologia
 - **Tamanho do portfólio:** Não divulgado como total ativo
+- **Empresas selecionadas:** Consulte a página oficial de portfólio da Cube Ventures
 - **Enviar uma startup:** Não divulgado publicamente
 
 ## Tese declarada
@@ -39,7 +40,12 @@ A gestora apoia startups que enfrentam desafios estruturais na América Latina.
 Suas áreas combinam infraestrutura digital, serviços financeiros e sociais,
 cidades inteligentes, energia renovável e clima.
 
-## Sources
+## Sinais de portfólio
+
+A Cube Ventures publica uma página oficial dedicada ao portfólio. Os materiais
+analisados não informam um total atual de empresas ativas.
+
+## Fontes
 
 - [Cube Ventures firm and thesis](https://www.cube.ventures/en/nuestra-firma)
 - [Cube Ventures portfolio](https://www.cube.ventures/en/portafolio)

@@ -44,6 +44,7 @@ startups from Spanish-speaking Latin America.
 - **Investment role:** Financial and strategic investor
 - **Business models:** Sector agnostic
 - **Portfolio size:** Not stated as a current active portfolio total
+- **Selected companies:** See the portfolio presented on the official G2 Momentum Capital website
 - **Submit a startup:** startups@g2momentum.capital
 
 ## Declared thesis
@@ -51,6 +52,11 @@ startups from Spanish-speaking Latin America.
 G2 backs technology-based early-stage teams and works with founders on company
 strategy and scaling. Its public materials distinguish the general vehicle from
 its specialized fintech vehicle.
+
+## Portfolio signals
+
+The official site presents the firm's investment activity and portfolio route,
+but does not state a current active portfolio total.
 
 ## Sources
 

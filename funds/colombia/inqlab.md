@@ -44,6 +44,7 @@ with growth potential in Colombian and Latin American markets.
 - **Investment role:** Strategic and financial investor
 - **Business models:** Companies with product-market fit and regional potential
 - **Portfolio size:** Not publicly disclosed as an active total
+- **Selected companies:** See the portfolio presented on the official InQlab website
 - **Submit a startup:** https://www.inqlab.co/
 
 ## Declared thesis
@@ -51,6 +52,11 @@ with growth potential in Colombian and Latin American markets.
 The vehicle seeks effective founding teams building disruptive technology
 companies. It prioritizes businesses whose main market is Latin America and
 that see Colombia as a relevant market for near-term growth.
+
+## Portfolio signals
+
+The official site presents portfolio companies alongside the investment
+thesis, but does not disclose a current active portfolio total.
 
 ## Sources
 

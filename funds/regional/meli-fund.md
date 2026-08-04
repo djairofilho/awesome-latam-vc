@@ -45,6 +45,7 @@ companies democratizing commerce and financial services in Latin America.
 - **Investment role:** Financial and strategic investor
 - **Business models:** Technology companies aligned with commerce or finance
 - **Portfolio size:** Not publicly disclosed
+- **Selected companies:** See the companies presented on the official MELI Fund page
 - **Submit a startup:** https://www.mercadolibre.com/fund
 
 ## Declared thesis
@@ -52,6 +53,11 @@ companies democratizing commerce and financial services in Latin America.
 The fund invests in technology companies that directly or indirectly expand
 access to commerce and financial services. It can also connect portfolio
 companies with Mercado Libre products, teams, channels, and business units.
+
+## Portfolio signals
+
+The official fund page presents portfolio relationships and an application
+route, but does not disclose a current active portfolio total.
 
 ## Sources
 

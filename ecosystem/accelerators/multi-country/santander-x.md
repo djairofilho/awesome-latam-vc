@@ -50,11 +50,16 @@ Mexico, and Uruguay.
 - **Apply:** https://www.santanderx.com/en/awards.html
 - **Investment vehicle:** No single qualifying investment vehicle identified
 
-## Eligibility and support
+## Eligibility and application
 
 Eligibility is call-specific. Winners may receive cash prizes, access to the
 Santander X 100 community, visibility, training, and connections. The program's
 official calendar should be checked before presenting any challenge as open.
+
+## Activity signals
+
+The official awards calendar and a published 2026 global challenge confirmed
+recurring current activity. Availability remains country- and call-specific.
 
 ## Sources
 

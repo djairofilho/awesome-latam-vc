@@ -45,12 +45,18 @@ with early product-market fit in Latin America and beyond.
 - **Investment role:** Not publicly disclosed
 - **Business models:** Pre-scale companies showing early product-market fit
 - **Portfolio size:** Not publicly disclosed
+- **Selected companies:** See the companies presented on Atlantico's official website
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
 
 The firm says it partners with bold founders building the future of Latin
 America and backs pre-scale companies that show early product-market fit.
+
+## Portfolio signals
+
+The reviewed official pages present the firm's company-building and investment
+activity, but do not disclose a current active portfolio total.
 
 ## Sources
 

@@ -51,11 +51,16 @@ America.
 - **Apply:** https://startupmexico.com/convocatorias/
 - **Investment vehicle:** No qualifying investment vehicle identified
 
-## Eligibility and support
+## Eligibility and application
 
 Startup México publishes multiple opportunities rather than one permanent
 cohort. Founders should verify the eligibility, cost, benefits, and dates of
 each current call before applying.
+
+## Activity signals
+
+The official platform, acceleration service, and opportunities page were
+active when reviewed. Individual calls may open or close independently.
 
 ## Sources
 

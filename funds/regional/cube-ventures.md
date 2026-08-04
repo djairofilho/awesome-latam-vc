@@ -45,6 +45,7 @@ early-stage startups across Latin America.
 - **Investment role:** Finance-first and impact-driven investor
 - **Business models:** Technology-enabled companies
 - **Portfolio size:** Not publicly disclosed as an active total
+- **Selected companies:** See the official Cube Ventures portfolio page
 - **Submit a startup:** Not publicly disclosed
 
 ## Declared thesis
@@ -52,6 +53,11 @@ early-stage startups across Latin America.
 The firm backs high-potential startups addressing structural challenges in
 Latin America. Its stated thematic areas combine digital infrastructure,
 financial and social services, smart cities, renewable energy, and climate.
+
+## Portfolio signals
+
+Cube Ventures publishes a dedicated official portfolio page. The reviewed
+materials do not state a current active portfolio total.
 
 ## Sources
 

@@ -49,11 +49,16 @@ providing incubation and early-stage support to innovative ventures.
 - **Apply:** https://diprovid.ucr.ac.cr/auge/
 - **Investment vehicle:** No separate venture capital vehicle identified
 
-## Eligibility and support
+## Eligibility and application
 
 Applicants pass an admission review. Participation can lead to eligibility for
 prototype or launch funding, but completing a program does not guarantee a
 grant and additional evaluation requirements apply.
+
+## Activity signals
+
+The official AUGE-UCR program page and terms published an active admission
+route, including StartupGo and the evaluation steps for applicants.
 
 ## Sources
 

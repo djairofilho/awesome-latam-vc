@@ -28,6 +28,7 @@ startups de tecnologia da América Latina de língua espanhola.
 - **Papel no investimento:** Investidor financeiro e estratégico
 - **Modelos de negócio:** Agnóstico por setor
 - **Tamanho do portfólio:** Não informado como total ativo atual
+- **Empresas selecionadas:** Consulte o portfólio apresentado no site oficial da G2 Momentum Capital
 - **Enviar uma startup:** startups@g2momentum.capital
 
 ## Tese declarada
@@ -36,7 +37,12 @@ G2 apoia equipes early stage de base tecnológica e trabalha com os fundadores
 na estratégia e na escala. Os materiais públicos diferenciam o veículo geral
 de seu veículo especializado em fintech.
 
-## Sources
+## Sinais de portfólio
+
+O site oficial apresenta a atividade de investimento e a rota de portfólio da
+gestora, mas não informa um total atual de empresas ativas.
+
+## Fontes
 
 - [G2 Momentum Capital thesis and contact](https://g2momentum.capital/)
 
