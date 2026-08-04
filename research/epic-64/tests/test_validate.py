@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import copy
 import hashlib
+import importlib.util
 import json
 import sys
 import tempfile
@@ -10,9 +11,11 @@ from pathlib import Path
 
 
 EPIC_DIR = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(EPIC_DIR))
-
-import validate  # noqa: E402
+SPEC = importlib.util.spec_from_file_location("epic_64_validate", EPIC_DIR / "validate.py")
+assert SPEC is not None and SPEC.loader is not None
+validate = importlib.util.module_from_spec(SPEC)
+sys.modules[SPEC.name] = validate
+SPEC.loader.exec_module(validate)
 
 
 def load_bundle() -> dict[str, list[dict]]:

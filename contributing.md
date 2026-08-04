@@ -156,8 +156,41 @@ Validate the full localized entity together so equivalence checks can compare
 every translation with its canonical profile:
 
 ```text
-python tools/seo_geo/validate_profiles.py path/to/localized/profile/directory
+uv run python tools/seo_geo/validate_profiles.py path/to/localized/profile/directory
 ```
+
+### Local validation
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then
+create the locked Python environment and run the research suite:
+
+```text
+uv sync --locked
+uv run pytest -n auto
+```
+
+Use `uv run pytest` without `-n auto` when debugging a test interactively.
+For site or release changes, activate the generated `.venv`, install the
+Node.js dependencies, and run the complete validation.
+
+On macOS or Linux:
+
+```sh
+source .venv/bin/activate
+npm ci
+npm run verify
+```
+
+On Windows PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+npm ci
+npm run verify
+```
+
+The committed `uv.lock` is authoritative. Update it together with
+`pyproject.toml` whenever Python dependencies change.
 
 ### Quality standards
 
