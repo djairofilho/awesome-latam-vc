@@ -112,7 +112,8 @@
             "accelerator",
             "angel_network",
             "funding_platform",
-            "public_program"
+            "public_program",
+            "hub_incubator"
           ]
         },
         "focuses": {
@@ -133,7 +134,7 @@
           ]
         },
         "id": {
-          "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program):[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program|hub_incubator):[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
         },
         "name": {

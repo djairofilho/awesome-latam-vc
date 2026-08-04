@@ -10,6 +10,7 @@ export const categories = [
   "angel_network",
   "funding_platform",
   "public_program",
+  "hub_incubator",
 ] as const;
 
 export type Category = (typeof categories)[number];
@@ -21,6 +22,7 @@ const categoryByPath: Record<string, Category> = {
   "angel-networks": "angel_network",
   "funding-platforms": "funding_platform",
   "public-programs": "public_program",
+  "hubs-incubators": "hub_incubator",
 };
 
 function normalizedSourcePath(entry: CollectionEntry<"profiles">) {

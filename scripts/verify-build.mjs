@@ -29,6 +29,7 @@ const profileRoots = [
   "ecosystem/angel-networks",
   "ecosystem/funding-platforms",
   "ecosystem/public-programs",
+  "ecosystem/hubs-incubators",
 ];
 
 function build(environment, publicVariables = {}) {
@@ -409,6 +410,7 @@ for (const segment of Object.values(localeRoutes)) {
     "angel_network",
     "funding_platform",
     "public_program",
+    "hub_incubator",
   ]) {
     assert(
       existsSync(join(dist, segment, "categories", category, "index.html")),

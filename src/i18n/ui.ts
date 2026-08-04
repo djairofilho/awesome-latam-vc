@@ -24,14 +24,14 @@ export const ui = {
     heroKicker: "Open funding intelligence for Latin America",
     heroTitle: "Find the capital paths that are actually documented.",
     heroBody:
-      "Venture funds, accelerators, angel networks, funding platforms and public programs. Every entry stays connected to its Markdown source, official evidence and Git history.",
+      "Venture funds, accelerators, angel networks, funding platforms, public programs, innovation hubs and incubators. Every entry stays connected to its Markdown source, official evidence and Git history.",
     browseCatalog: "Browse the catalog",
     inspectSource: "Inspect the source",
     snapshot: "Current snapshot",
     canonicalProfiles: "canonical profiles",
     geographies: "Geographies",
     categories: "Categories",
-    categoryHeading: "One catalog, five routes to funding",
+    categoryHeading: "One catalog, six routes to funding",
     categoryBody:
       "Counts come from the canonical files at build time. New accepted profiles appear automatically without copying content into the site.",
     principlesHeading: "Built for verification, not hype",
@@ -94,6 +94,7 @@ export const ui = {
       angel_network: "Angel networks",
       funding_platform: "Funding platforms",
       public_program: "Public programs",
+      hub_incubator: "Innovation hubs and incubators",
     } satisfies Record<Category, string>,
   },
   "pt-BR": {
@@ -120,14 +121,14 @@ export const ui = {
     heroKicker: "Informação aberta sobre financiamento na América Latina",
     heroTitle: "Encontre caminhos de capital realmente documentados.",
     heroBody:
-      "Fundos de venture capital, aceleradoras, redes-anjo, plataformas de captação e programas públicos. Cada entrada permanece ligada ao Markdown canônico, às evidências oficiais e ao histórico Git.",
+      "Fundos de venture capital, aceleradoras, redes-anjo, plataformas de captação, programas públicos, hubs de inovação e incubadoras. Cada entrada permanece ligada ao Markdown canônico, às evidências oficiais e ao histórico Git.",
     browseCatalog: "Explorar o catálogo",
     inspectSource: "Consultar a fonte",
     snapshot: "Retrato atual",
     canonicalProfiles: "perfis canônicos",
     geographies: "Geografias",
     categories: "Categorias",
-    categoryHeading: "Um catálogo, cinco caminhos para financiamento",
+    categoryHeading: "Um catálogo, seis caminhos para financiamento",
     categoryBody:
       "As contagens vêm dos arquivos canônicos no momento do build. Novos perfis aceitos aparecem automaticamente, sem copiar conteúdo para o site.",
     principlesHeading: "Feito para verificação, sem exageros",
@@ -194,6 +195,7 @@ export const ui = {
       angel_network: "Redes-anjo",
       funding_platform: "Plataformas de captação",
       public_program: "Programas públicos",
+      hub_incubator: "Hubs e incubadoras",
     } satisfies Record<Category, string>,
   },
   es: {
@@ -220,14 +222,14 @@ export const ui = {
     heroKicker: "Información abierta sobre financiación en América Latina",
     heroTitle: "Encuentra caminos de capital realmente documentados.",
     heroBody:
-      "Fondos de venture capital, aceleradoras, redes ángel, plataformas de financiación y programas públicos. Cada entrada sigue vinculada al Markdown canónico, la evidencia oficial y el historial Git.",
+      "Fondos de venture capital, aceleradoras, redes ángel, plataformas de financiación, programas públicos, hubs de innovación e incubadoras. Cada entrada sigue vinculada al Markdown canónico, la evidencia oficial y el historial Git.",
     browseCatalog: "Explorar el catálogo",
     inspectSource: "Consultar la fuente",
     snapshot: "Estado actual",
     canonicalProfiles: "perfiles canónicos",
     geographies: "Geografías",
     categories: "Categorías",
-    categoryHeading: "Un catálogo, cinco caminos hacia la financiación",
+    categoryHeading: "Un catálogo, seis caminos hacia la financiación",
     categoryBody:
       "Los recuentos provienen de los archivos canónicos durante el build. Los nuevos perfiles aceptados aparecen automáticamente sin copiar contenido al sitio.",
     principlesHeading: "Hecho para verificar, sin exageraciones",
@@ -295,6 +297,7 @@ export const ui = {
       angel_network: "Redes ángel",
       funding_platform: "Plataformas de financiación",
       public_program: "Programas públicos",
+      hub_incubator: "Hubs de innovación e incubadoras",
     } satisfies Record<Category, string>,
   },
 } as const;

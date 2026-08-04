@@ -89,10 +89,13 @@ test("the content layer reads canonical profiles and mirrored translations", () 
     "ecosystem/angel-networks/**/*.md",
     "ecosystem/funding-platforms/**/*.md",
     "ecosystem/public-programs/**/*.md",
+    "ecosystem/hubs-incubators/**/*.md",
     "translations/pt-BR/funds/**/*.md",
     "translations/pt-BR/ecosystem/accelerators/**/*.md",
+    "translations/pt-BR/ecosystem/hubs-incubators/**/*.md",
     "translations/es/funds/**/*.md",
     "translations/es/ecosystem/accelerators/**/*.md",
+    "translations/es/ecosystem/hubs-incubators/**/*.md",
   ]) {
     assert.match(config, new RegExp(source.replaceAll("*", "\\*")));
   }

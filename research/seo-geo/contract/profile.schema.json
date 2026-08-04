@@ -33,11 +33,11 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program):[a-z0-9]+(?:-[a-z0-9]+)*:(en|pt-BR|es)$"
+      "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program|hub_incubator):[a-z0-9]+(?:-[a-z0-9]+)*:(en|pt-BR|es)$"
     },
     "entity_id": {
       "type": "string",
-      "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program):[a-z0-9]+(?:-[a-z0-9]+)*$"
+      "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program|hub_incubator):[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
     "slug": {
       "type": "string",
@@ -56,7 +56,8 @@
         "accelerator",
         "angel_network",
         "funding_platform",
-        "public_program"
+        "public_program",
+        "hub_incubator"
       ]
     },
     "locale": {
@@ -71,7 +72,7 @@
         "string",
         "null"
       ],
-      "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program):[a-z0-9]+(?:-[a-z0-9]+)*:en$"
+      "pattern": "^(fund|accelerator|angel_network|funding_platform|public_program|hub_incubator):[a-z0-9]+(?:-[a-z0-9]+)*:en$"
     },
     "translation_status": {
       "enum": [
