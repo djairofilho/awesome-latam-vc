@@ -44,7 +44,7 @@
     },
     {
       "check_id": "declared-hashes",
-      "checked_records": 73,
+      "checked_records": 72,
       "details": "Todos os hashes declarados da coleta à publicação reconciliam.",
       "status": "passed"
     },
@@ -83,7 +83,7 @@
   "epic": 65,
   "findings": [],
   "input_hashes": {
-    "ecosystem/public-programs/README.md": "48297e0f95803796596f30630428fbeed593c494136430b9823e425c332efc45",
+    "ecosystem/public-programs/README.md": "92acc8a1dba9c5a68fc0e2076dd6a57bb5724a2bb91108d72c5e73001197aa9f",
     "ecosystem/public-programs/bolivia/agroinnovatec.md": "4d89581f11336b1c25a7c299e18b8c13ac003458653ca5528aaf383eeac75227",
     "ecosystem/public-programs/bolivia/bdp-bolivia.md": "7530cef9597b6a81aedbd8be141cbb2770c9c3e3e11f456529701d58f8319568",
     "ecosystem/public-programs/bolivia/bdp-fondo-startup.md": "5eab46093fea3d1c81806277e74f9dda639f988c67ff3049b1f0fb51f75ead0f",
@@ -154,7 +154,7 @@
     "calls": 21,
     "coverage_rows": 55,
     "critical_findings": 0,
-    "declared_hashes_checked": 73,
+    "declared_hashes_checked": 72,
     "eligible_profiles": 29,
     "entities_with_destination": 95,
     "evidence": 98,

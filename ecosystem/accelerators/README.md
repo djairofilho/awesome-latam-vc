@@ -8,9 +8,9 @@ Programs and their operators or investment vehicles remain separate units.
 Capital, instrument, equity, duration and stage are reported only when official
 sources publish them.
 
-The catalog contains 32 profiles. The original 26 profiles were frozen by the
-independent review of epic #62 and verified on 2026-07-27. Six global startup
-support programs were subsequently verified on 2026-08-03.
+The catalog contains 38 profiles. The original 26 profiles were frozen by the
+independent review of epic #62 and verified on 2026-07-27. Subsequent additions
+cover global startup support programs and verified Latin American programs.
 
 ## Argentina
 
@@ -35,7 +35,13 @@ support programs were subsequently verified on 2026-08-03.
 
 ## Colombia
 
+- [Apps.co](colombia/apps-co.md)
 - [Aceleradora InnovaLab Mujeres Tech](colombia/innovalab.md)
+- [Rockstart LATAM](colombia/rockstart-latam.md)
+
+## Costa Rica
+
+- [AUGE-UCR](costa-rica/auge-ucr.md)
 
 ## Dominican Republic
 
@@ -44,6 +50,7 @@ support programs were subsequently verified on 2026-08-03.
 ## Mexico
 
 - [500 LatAm Accelerator](mexico/500-latam.md)
+- [Startup México](mexico/startup-mexico.md)
 
 ## Multi-country
 
@@ -53,6 +60,7 @@ support programs were subsequently verified on 2026-08-03.
 - [Google for Startups Cloud Program](multi-country/google-for-startups-cloud-program.md)
 - [Microsoft for Startups](multi-country/microsoft-for-startups.md)
 - [NVIDIA Inception](multi-country/nvidia-inception.md)
+- [Santander X](multi-country/santander-x.md)
 
 ## Peru
 
@@ -76,3 +84,7 @@ support programs were subsequently verified on 2026-08-03.
 - [Google for Startups Accelerator: AI for Cybersecurity Latin America](united-states/google-ai-cybersecurity-latam.md)
 - [Y Combinator Fall 2026](united-states/y-combinator.md)
 - [Google for Startups Accelerator: Brazil](united-states/google-for-startups-brazil.md)
+
+## Uruguay
+
+- [SprintUy](uruguay/sprintuy.md)

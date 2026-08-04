@@ -2,7 +2,7 @@
   "dataset": {
     "date": "2026-07-27",
     "encoding": "UTF-8",
-    "entity_count": 311,
+    "entity_count": 324,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -173,6 +173,90 @@
       ],
       "summary": "Alchemist Flagship is a structured acceleration program operated by Alchemist Accelerator.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [
+        "APPS.CO"
+      ],
+      "base_geography": {
+        "code": "CO",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CO"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "entrepreneurship",
+        "technology",
+        "business_development"
+      ],
+      "founder_route": "https://www.apps.co/",
+      "id": "accelerator:apps-co",
+      "name": "Apps.co",
+      "official_website": "https://www.apps.co/",
+      "operator": "Ministerio de Tecnologías de la Información y las Comunicaciones; executed by iNNpulsa Colombia",
+      "source_profile": "ecosystem/accelerators/colombia/apps-co.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "Apps.co program overview",
+          "url": "https://www.mintic.gov.co/portal/inicio/Atencion-y-Servicio-a-la-Ciudadania/Preguntas-frecuentes/12750:Apps-co"
+        },
+        {
+          "kind": "official_application",
+          "title": "Apps.co opportunities",
+          "url": "https://www.apps.co/"
+        }
+      ],
+      "stages": [
+        "multi_stage"
+      ],
+      "summary": "Apps.co is Colombia's public digital entrepreneurship program, supporting the creation, validation, and growth of technology businesses.",
+      "verified_on": "2026-08-04"
+    },
+    {
+      "aliases": [
+        "AUGE",
+        "Agencia Universitaria para la Gestión del Emprendimiento"
+      ],
+      "base_geography": {
+        "code": "CR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CR"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "entrepreneurship",
+        "innovation",
+        "technology"
+      ],
+      "founder_route": "https://diprovid.ucr.ac.cr/auge/",
+      "id": "accelerator:auge-ucr",
+      "name": "AUGE-UCR",
+      "official_website": "https://diprovid.ucr.ac.cr/auge/",
+      "operator": "Universidad de Costa Rica",
+      "source_profile": "ecosystem/accelerators/costa-rica/auge-ucr.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "AUGE-UCR programs and application",
+          "url": "https://diprovid.ucr.ac.cr/auge/"
+        },
+        {
+          "kind": "official_program",
+          "title": "AUGE-UCR program terms",
+          "url": "https://diprovid.ucr.ac.cr/auge/terminos-y-condiciones/"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "AUGE-UCR is the University of Costa Rica's entrepreneurship agency, providing incubation and early-stage support to innovative ventures.",
+      "verified_on": "2026-08-04"
     },
     {
       "aliases": [],
@@ -914,6 +998,100 @@
       "verified_on": "2026-07-27"
     },
     {
+      "aliases": [
+        "Rockstart Latam"
+      ],
+      "base_geography": {
+        "code": "CO",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "technology",
+        "impact"
+      ],
+      "founder_route": "https://aplicaciones.rockstartlatam.com/",
+      "id": "accelerator:rockstart-latam",
+      "name": "Rockstart LATAM",
+      "official_website": "https://rockstart.com/latam/",
+      "operator": "Rockstart",
+      "source_profile": "ecosystem/accelerators/colombia/rockstart-latam.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "Rockstart LATAM overview",
+          "url": "https://rockstart.com/latam/"
+        },
+        {
+          "kind": "official_thesis",
+          "title": "Rockstart LATAM program FAQ",
+          "url": "https://rockstart.com/latam/faq/"
+        },
+        {
+          "kind": "official_application",
+          "title": "Rockstart LATAM application",
+          "url": "https://aplicaciones.rockstartlatam.com/"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed",
+        "series_a",
+        "series_b"
+      ],
+      "summary": "Rockstart LATAM is a Bogotá-based accelerator and early-stage investor supporting technology startups across Latin America.",
+      "verified_on": "2026-08-04"
+    },
+    {
+      "aliases": [
+        "Santander X Awards",
+        "Santander X Global Challenge"
+      ],
+      "base_geography": {
+        "code": "LATAM",
+        "kind": "region"
+      },
+      "countries_covered": [
+        "AR",
+        "BR",
+        "CL",
+        "MX",
+        "UY"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "entrepreneurship",
+        "innovation",
+        "technology"
+      ],
+      "founder_route": "https://www.santanderx.com/en/awards.html",
+      "id": "accelerator:santander-x",
+      "name": "Santander X",
+      "official_website": "https://www.santanderx.com/en/awards.html",
+      "operator": "Banco Santander",
+      "source_profile": "ecosystem/accelerators/multi-country/santander-x.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "Santander X challenges and awards",
+          "url": "https://www.santanderx.com/en/awards.html"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Santander X Global Challenge 2026",
+          "url": "https://www.santanderx.com/en/sites/the-quantum-ai-leap.html"
+        }
+      ],
+      "stages": [
+        "multi_stage"
+      ],
+      "summary": "Santander X runs recurring startup awards and challenges in Argentina, Brazil, Chile, Mexico, and Uruguay, connecting winners with prizes and growth resources.",
+      "verified_on": "2026-08-04"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "CH",
@@ -945,6 +1123,91 @@
       ],
       "summary": "LIF CAF Rural Tech is a structured acceleration program operated by Seedstars.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [
+        "SprintUy 2026"
+      ],
+      "base_geography": {
+        "code": "UY",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "technology",
+        "innovation",
+        "business_development"
+      ],
+      "founder_route": "https://anii.org.uy/apoyos/emprendimientos/655/sprintuy-2026/",
+      "id": "accelerator:sprintuy",
+      "name": "SprintUy",
+      "official_website": "https://anii.org.uy/apoyos/emprendimientos/655/sprintuy-2026/",
+      "operator": "Agencia Nacional de Investigación e Innovación and Uruguay XXI",
+      "source_profile": "ecosystem/accelerators/uruguay/sprintuy.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "SprintUy 2026",
+          "url": "https://anii.org.uy/apoyos/emprendimientos/655/sprintuy-2026/"
+        }
+      ],
+      "stages": [
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "SprintUy is a soft-landing immersion program for international technology startups considering Uruguay as a base for Latin American expansion.",
+      "verified_on": "2026-08-04"
+    },
+    {
+      "aliases": [
+        "SUM",
+        "Startup Mexico"
+      ],
+      "base_geography": {
+        "code": "MX",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "MX",
+        "LATAM"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "entrepreneurship",
+        "innovation",
+        "business_development"
+      ],
+      "founder_route": "https://startupmexico.com/convocatorias/",
+      "id": "accelerator:startup-mexico",
+      "name": "Startup México",
+      "official_website": "https://startupmexico.com/",
+      "operator": "Startup México",
+      "source_profile": "ecosystem/accelerators/mexico/startup-mexico.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Startup México",
+          "url": "https://startupmexico.com/"
+        },
+        {
+          "kind": "official_program",
+          "title": "Startup México acceleration",
+          "url": "https://startupmexico.com/aceleracion/"
+        },
+        {
+          "kind": "official_application",
+          "title": "Startup México opportunities",
+          "url": "https://startupmexico.com/convocatorias/"
+        }
+      ],
+      "stages": [
+        "multi_stage"
+      ],
+      "summary": "Startup México is a Mexican entrepreneurship platform offering acceleration, mentoring, innovation programs, and investor connections.",
+      "verified_on": "2026-08-04"
     },
     {
       "aliases": [
@@ -2595,6 +2858,43 @@
       "verified_on": "2026-07-26"
     },
     {
+      "aliases": [],
+      "base_geography": {
+        "code": "LATAM",
+        "kind": "region"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology"
+      ],
+      "founder_route": null,
+      "id": "fund:atlantico",
+      "name": "Atlantico",
+      "official_website": "https://www.atlantico.vc/",
+      "operator": null,
+      "source_profile": "funds/regional/atlantico.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Atlantico homepage",
+          "url": "https://www.atlantico.vc/"
+        },
+        {
+          "kind": "official_thesis",
+          "title": "Atlantico investment approach",
+          "url": "https://www.atlantico.vc/about-us"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Atlantico is an early-stage venture capital firm backing pre-scale companies with early product-market fit in Latin America and beyond.",
+      "verified_on": "2026-08-04"
+    },
+    {
       "aliases": [
         "Against The Odds Ventures"
       ],
@@ -4021,6 +4321,47 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "LATAM",
+        "kind": "region"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "fintech",
+        "edtech",
+        "healthtech",
+        "technology_infrastructure",
+        "climate_tech"
+      ],
+      "founder_route": null,
+      "id": "fund:cube-ventures",
+      "name": "Cube Ventures",
+      "official_website": "https://www.cube.ventures/",
+      "operator": null,
+      "source_profile": "funds/regional/cube-ventures.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "Cube Ventures firm and thesis",
+          "url": "https://www.cube.ventures/en/nuestra-firma"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Cube Ventures portfolio",
+          "url": "https://www.cube.ventures/en/portafolio"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Cube Ventures is an impact-driven venture capital firm investing in early-stage startups across Latin America.",
+      "verified_on": "2026-08-04"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "BR",
         "kind": "country"
       },
@@ -5277,6 +5618,42 @@
       "verified_on": "2026-07-27"
     },
     {
+      "aliases": [
+        "G2"
+      ],
+      "base_geography": {
+        "code": "MX",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "MX",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "sector_agnostic"
+      ],
+      "founder_route": "https://g2momentum.capital/",
+      "id": "fund:g2-momentum-capital",
+      "name": "G2 Momentum Capital",
+      "official_website": "https://g2momentum.capital/",
+      "operator": null,
+      "source_profile": "funds/mexico/g2-momentum-capital.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "G2 Momentum Capital thesis and contact",
+          "url": "https://g2momentum.capital/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "G2 Momentum Capital is a Mexico City-based early-stage investor in technology startups from Spanish-speaking Latin America.",
+      "verified_on": "2026-08-04"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "LATAM",
@@ -6364,6 +6741,44 @@
       ],
       "summary": "Innventure is an Argentina-based venture capital fund specializing in Latin American AgriFoodTech.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [
+        "InQLab"
+      ],
+      "base_geography": {
+        "code": "CO",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CO",
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "sector_agnostic"
+      ],
+      "founder_route": "https://www.inqlab.co/",
+      "id": "fund:inqlab",
+      "name": "InQlab",
+      "official_website": "https://www.inqlab.co/",
+      "operator": null,
+      "source_profile": "funds/colombia/inqlab.md",
+      "sources": [
+        {
+          "kind": "official_thesis",
+          "title": "InQlab thesis, stages, and portfolio",
+          "url": "https://www.inqlab.co/"
+        }
+      ],
+      "stages": [
+        "seed",
+        "series_a",
+        "series_b"
+      ],
+      "summary": "InQlab is a Colombia-based investment vehicle backing technology companies with growth potential in Colombian and Latin American markets.",
+      "verified_on": "2026-08-04"
     },
     {
       "aliases": [],
@@ -7487,6 +7902,43 @@
       ],
       "summary": "MAYA Capital is an investment organization focused on Technology in Latin America.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [
+        "Mercado Libre Venture Capital Fund"
+      ],
+      "base_geography": {
+        "code": "LATAM",
+        "kind": "region"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "e_commerce",
+        "fintech",
+        "financial_services"
+      ],
+      "founder_route": "https://www.mercadolibre.com/fund",
+      "id": "fund:meli-fund",
+      "name": "MELI Fund",
+      "official_website": "https://www.mercadolibre.com/fund",
+      "operator": "Mercado Libre",
+      "source_profile": "funds/regional/meli-fund.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "MELI Fund overview and application",
+          "url": "https://www.mercadolibre.com/fund"
+        }
+      ],
+      "stages": [
+        "series_a",
+        "series_b"
+      ],
+      "summary": "MELI Fund is Mercado Libre's corporate venture capital fund for technology companies democratizing commerce and financial services in Latin America.",
+      "verified_on": "2026-08-04"
     },
     {
       "aliases": [],
@@ -12038,6 +12490,42 @@
       "verified_on": "2026-07-27"
     },
     {
+      "aliases": [
+        "Escalamiento Corfo"
+      ],
+      "base_geography": {
+        "code": "CL",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CL"
+      ],
+      "entity_type": "public_program",
+      "focuses": [
+        "entrepreneurship",
+        "innovation",
+        "business_development"
+      ],
+      "founder_route": "https://www.corfo.gob.cl/sites/cpp/nacional/corfo-abre-convocatoria-de-su-programa-escalamiento-para-emprendimientos-con-alto-impacto-en-chile-y-el-mundo/",
+      "id": "public_program:corfo-escalamiento",
+      "name": "Escalamiento",
+      "official_website": "https://www.corfo.gob.cl/sites/cpp/nacional/corfo-abre-convocatoria-de-su-programa-escalamiento-para-emprendimientos-con-alto-impacto-en-chile-y-el-mundo/",
+      "operator": "[Corporación de Fomento de la Producción](corfo.md) (`agency-corfo`)",
+      "source_profile": "ecosystem/public-programs/chile/corfo-escalamiento.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "Corfo Escalamiento 2026",
+          "url": "https://www.corfo.gob.cl/sites/cpp/nacional/corfo-abre-convocatoria-de-su-programa-escalamiento-para-emprendimientos-con-alto-impacto-en-chile-y-el-mundo/"
+        }
+      ],
+      "stages": [
+        "growth"
+      ],
+      "summary": "Corfo's Escalamiento program co-finances innovative Chilean companies seeking rapid growth, private investment, and international expansion.",
+      "verified_on": "2026-08-04"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "CL",
@@ -12207,6 +12695,47 @@
       ],
       "summary": "A página permanente registra a sétima edição, seis edições anteriores e prêmios de R$ 60 mil a R$ 120 mil.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [
+        "INNpulsa Colombia"
+      ],
+      "base_geography": {
+        "code": "CO",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "CO"
+      ],
+      "entity_type": "public_program",
+      "focuses": [
+        "entrepreneurship",
+        "innovation",
+        "business_development"
+      ],
+      "founder_route": "https://registrounico.innpulsacolombia.com/register",
+      "id": "public_program:innpulsa-colombia",
+      "name": "iNNpulsa Colombia",
+      "official_website": "https://www.innpulsacolombia.com/",
+      "operator": "Ministerio de Comercio, Industria y Turismo",
+      "source_profile": "ecosystem/public-programs/colombia/innpulsa-colombia.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "iNNpulsa Colombia website",
+          "url": "https://www.innpulsacolombia.com/"
+        },
+        {
+          "kind": "official_application",
+          "title": "iNNpulsa Colombia unified registration",
+          "url": "https://registrounico.innpulsacolombia.com/register"
+        }
+      ],
+      "stages": [
+        "not_applicable"
+      ],
+      "summary": "iNNpulsa Colombia is a national public entrepreneurship platform connecting businesses and founders with programs, calls, and support resources.",
+      "verified_on": "2026-08-04"
     },
     {
       "aliases": [

@@ -23,7 +23,7 @@ Uma lista curada de fundos de Venture Capital que investem na América Latina.
 
 ---
 
-O índice foi otimizado para comparação rápida e atualmente reúne 228 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
+O índice foi otimizado para comparação rápida e atualmente reúne 233 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
 
 ## Pan-América Latina (sede na região)
 
@@ -37,6 +37,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 228 fundos
 | [ALIVE Ventures](funds/regional/alive-ventures.md) | Seed e Série A | Tecnologia de impacto e inclusão econômica | Colômbia, Peru e América Latina |
 | [Amplifica Capital](funds/regional/amplifica-capital.md) | Pre-seed, Seed e Série A | Inclusão, acesso digital e tecnologia climática | América Latina |
 | [Angel Ventures](funds/regional/angel-ventures.md) | Não divulgado publicamente | Tecnologia, agnóstico a setores | América Latina |
+| [Atlantico](funds/regional/atlantico.md) | Early stage; rodadas não divulgadas | Tecnologia | América Latina e além |
 | [Avalancha Ventures](funds/regional/avalancha-ventures.md) | Não divulgado publicamente | Tecnologia | América Latina |
 | [AVP Ventures](funds/regional/avp-ventures.md) | Seed | Tecnologia | Peru e América Latina |
 | [B Venture Capital](funds/regional/b-venture-capital.md) | Seed e Série A | Tecnologia | América Latina |
@@ -49,6 +50,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 228 fundos
 | [Cibersons](funds/regional/cibersons.md) | Pre-seed, Seed e Série A | Tecnologia, agnóstico por setor | América Latina e Estados Unidos |
 | [CITES](funds/regional/cites.md) | Pre-seed, Seed e Série A | Deep tech de base científica | Argentina e América Latina |
 | [Cometa (ex-Variv)](funds/regional/cometa-variv.md) | Pre-seed, Seed e Série A | Tecnologia | América Latina hispânica |
+| [Cube Ventures](funds/regional/cube-ventures.md) | Early stage; rodadas não divulgadas | Fintech, edtech, healthtech, infraestrutura e climate tech | América Latina |
 | [Dalus Capital](funds/regional/dalus-capital.md) | Não divulgado publicamente | Tecnologia | América Latina |
 | [DGF Investimentos](funds/regional/dgf-investimentos.md) | Multiestágio | Empresas de tecnologia de alto crescimento | Brasil e América Latina |
 | [Draper Cygnus](funds/regional/draper-cygnus.md) | Seed e Série A | Deep tech | Fundadores latino-americanos com atuação global |
@@ -74,6 +76,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 228 fundos
 | [Magma Partners](funds/regional/magma-partners.md) | Pre-seed, Seed e Série A | Tecnologia | América Latina |
 | [Manutara Ventures](funds/regional/manutara-ventures.md) | Seed e Série A | Tecnologia | Chile e América Latina |
 | [MAYA Capital](funds/regional/maya-capital.md) | Pre-seed e Seed | Tecnologia | América Latina |
+| [MELI Fund](funds/regional/meli-fund.md) | Série A e Série B | Comércio e serviços financeiros | América Latina |
 | [Monashees](funds/regional/monashees.md) | Não divulgado publicamente | Tecnologia | América Latina para o mundo |
 | [Nameless Partners](funds/regional/nameless-partners.md) | Não divulgado publicamente | Não divulgado publicamente | América Latina |
 | [Nazca](funds/regional/nazca.md) | Multiestágio | Tecnologia | América Latina |
@@ -211,6 +214,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 228 fundos
 
 | Fundo | Estágio | Foco | Geografia |
 | --- | --- | --- | --- |
+| [InQlab](funds/colombia/inqlab.md) | Seed, Série A e Série B | Tecnologia, agnóstico a setores | Colômbia e América Latina |
 | [Marathon Ventures](funds/colombia/marathon-ventures.md) | Pre-seed e Seed | Tecnologia B2B | América Latina |
 | [QAPU Ventures](funds/colombia/qapu-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
 | [Simma Capital](funds/colombia/simma-capital.md) | Pre-seed e Seed | Tecnologia escalável e fintech | Colômbia e América Latina |
@@ -247,6 +251,7 @@ O índice foi otimizado para comparação rápida e atualmente reúne 228 fundos
 | --- | --- | --- | --- |
 | [Capital Invent](funds/mexico/capital-invent.md) | Não divulgado publicamente | Marketplaces, e-commerce, fintech, mobile e SaaS | México |
 | [FEMSA Ventures](funds/mexico/femsa-ventures.md) | Não divulgado publicamente | Varejo, bebidas e logística | México e América Latina |
+| [G2 Momentum Capital](funds/mexico/g2-momentum-capital.md) | Early stage; rodadas não divulgadas | Tecnologia, agnóstico a setores | México e América Latina hispânica |
 
 ## Panamá
 
