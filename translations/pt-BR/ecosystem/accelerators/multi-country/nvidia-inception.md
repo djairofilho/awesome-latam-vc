@@ -8,7 +8,7 @@
   "entity_type": "accelerator",
   "locale": "pt-BR",
   "translation_of": "accelerator:nvidia-inception:en",
-  "translation_status": "needs_review",
+  "translation_status": "complete",
   "summary": "NVIDIA Inception é um programa global de apoio a startups operado pela NVIDIA.",
   "aliases": [
     "NVIDIA Inception Program"

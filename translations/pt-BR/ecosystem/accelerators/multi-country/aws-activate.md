@@ -8,7 +8,7 @@
   "entity_type": "accelerator",
   "locale": "pt-BR",
   "translation_of": "accelerator:aws-activate:en",
-  "translation_status": "needs_review",
+  "translation_status": "complete",
   "summary": "AWS Activate é um programa global de apoio a startups operado pela Amazon Web Services.",
   "aliases": [],
   "operator": "Amazon Web Services",

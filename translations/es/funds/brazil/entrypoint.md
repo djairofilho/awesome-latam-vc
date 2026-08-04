@@ -8,7 +8,7 @@
   "entity_type": "fund",
   "locale": "es",
   "translation_of": "fund:entrypoint:en",
-  "translation_status": "needs_review",
+  "translation_status": "complete",
   "summary": "Entrypoint es una firma brasileña de venture capital presemilla que invierte en startups tecnológicas con un MVP funcional y clientes iniciales o pruebas de concepto.",
   "aliases": [],
   "operator": null,
