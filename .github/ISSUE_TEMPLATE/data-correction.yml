@@ -1,0 +1,28 @@
+name: Data correction
+description: Report incorrect, outdated, or missing information in an existing profile.
+title: "data: "
+labels:
+  - data
+body:
+  - type: input
+    id: profile
+    attributes:
+      label: Profile
+      description: Link to the affected profile or provide its name.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Explain what should change and why.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting sources
+      description: Provide current official sources whenever possible.
+      placeholder: One URL per line
+    validations:
+      required: true

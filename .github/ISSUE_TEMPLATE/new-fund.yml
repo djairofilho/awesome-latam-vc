@@ -1,0 +1,41 @@
+name: Suggest a fund
+description: Suggest a VC fund that invests directly in Latin American startups.
+title: "fund: "
+labels:
+  - fund
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Fund name
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Official website
+    validations:
+      required: true
+  - type: textarea
+    id: latam_evidence
+    attributes:
+      label: Latin America investment evidence
+      description: Link to an official thesis, portfolio, application, or recent investment.
+    validations:
+      required: true
+  - type: textarea
+    id: direct_investment
+    attributes:
+      label: Direct startup investment evidence
+      description: Show that the organization deploys capital directly into startups.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I checked that this fund is not already listed.
+          required: true
+        - label: I read the contribution guidelines and inclusion criteria.
+          required: true
