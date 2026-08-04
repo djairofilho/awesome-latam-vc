@@ -23,12 +23,14 @@ GLOBAL_INDEX_PROJECTIONS = {
         "- [Redes de investidores-anjo](ecosystem/angel-networks/README.md)",
         "- [Plataformas de captação](ecosystem/funding-platforms/README.pt.md)",
         "- [Programas públicos](ecosystem/public-programs/README.md)",
+        "- [Hubs e incubadoras](ecosystem/hubs-incubators/README.md)",
     ),
     "README.es.md": (
         "- [Aceleradoras](ecosystem/accelerators/README.md)",
         "- [Redes de inversionistas ángeles](ecosystem/angel-networks/README.md)",
         "- [Plataformas de financiación](ecosystem/funding-platforms/README.es.md)",
         "- [Programas públicos](ecosystem/public-programs/README.md)",
+        "- [Hubs de innovación e incubadoras](ecosystem/hubs-incubators/README.md)",
     ),
 }
 

@@ -198,6 +198,7 @@ def entity_type_for(path: Path) -> str:
         "angel-networks": "angel_network",
         "funding-platforms": "funding_platform",
         "public-programs": "public_program",
+        "hubs-incubators": "hub_incubator",
     }[category]
 
 

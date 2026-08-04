@@ -33,7 +33,7 @@ A curated list of Venture Capital funds investing in Latin America.
 
 ---
 
-The index is optimized for quick comparison and currently covers 233 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
+The index is optimized for quick comparison and currently covers 238 funds. All fund profiles use the enriched standard. The index summarizes stage, focus, and geography; each linked page records sources, verification date, disclosed details, and clearly labeled portfolio observations.
 
 ## Pan-Latin America (LatAm based)
 
@@ -173,11 +173,14 @@ The index is optimized for quick comparison and currently covers 233 funds. All 
 | [Invest Tech](funds/brazil/invest-tech.md) | Seed | Technology-enabled B2B companies | Brazil |
 | [Invisto](funds/brazil/invisto.md) | Growth | Technology, software, and internet businesses | Southern Brazil |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed and Seed | Software and technology | Brazil |
+| [Kortex Ventures](funds/brazil/kortex-ventures.md) | Seed, Series A, and Series B | Health technology | Global |
 | [KPTL](funds/brazil/kptl.md) | Multi-stage | Deep tech, health, bioeconomy, and technology | Brazil |
 | [L4 Venture Builder](funds/brazil/l4-venture-builder.md) | Growth | Not publicly disclosed | Primarily Brazil |
 | [Marcha](funds/brazil/marcha.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
+| [MOV Investimentos](funds/brazil/mov-investimentos.md) | Not publicly disclosed | Impact investing | Brazil |
 | [MSW Capital](funds/brazil/msw-capital.md) | Seed | Technology aligned with corporate innovation | Brazil |
 | [Oria Capital](funds/brazil/oria-capital.md) | Not publicly disclosed | B2B software | Brazil |
+| [Oxygea Ventures](funds/brazil/oxygea-ventures.md) | Not publicly disclosed | Sustainability, materials, and digital transformation | Global |
 | [Panvel Ventures](funds/brazil/panvel-ventures.md) | Not publicly disclosed | Health and wellbeing, customer experience, and operational intelligence | Not publicly disclosed |
 | [Parallax Ventures](funds/brazil/parallax-ventures.md) | Not publicly disclosed | Fintech | Brazil |
 | [Positive Ventures](funds/brazil/positive-ventures.md) | Not publicly disclosed | Impact investing | Brazil |
@@ -195,9 +198,11 @@ The index is optimized for quick comparison and currently covers 233 funds. All 
 | [TM3 Capital](funds/brazil/tm3-capital.md) | Not publicly disclosed | Not publicly disclosed | Not publicly disclosed |
 | [Triaxis Capital](funds/brazil/triaxis-capital.md) | Not publicly disclosed | Innovative technology companies | Brazil |
 | [Upload Ventures](funds/brazil/upload-ventures.md) | Multi-stage | Not publicly disclosed | Latin America, including Brazil |
+| [Vale Ventures](funds/brazil/vale-ventures.md) | Series A and Series B | Sustainable mining and decarbonization | Global |
 | [Ventiur](funds/brazil/ventiur.md) | Pre-seed and Seed | Technology startups | Brazil |
 | [Vibra Ventures](funds/brazil/vibra-ventures.md) | Not publicly disclosed | Not publicly disclosed | Brazil |
 | [Vivo Ventures](funds/brazil/vivo-ventures.md) | Series A, Series B, and Growth | Education, energy, health, financial services, smart home, and entertainment | Brazil |
+| [Volpe Capital](funds/brazil/volpe-capital.md) | Not publicly disclosed | Technology and technology-enabled businesses | Latin America |
 | [Vox Capital](funds/brazil/vox-capital.md) | Seed, Series A, and Series B | Impact technology | Brazil |
 
 ## Chile
@@ -363,6 +368,7 @@ they remain outside the main tables. See the
 - [Angel networks](ecosystem/angel-networks/README.md)
 - [Funding platforms](ecosystem/funding-platforms/README.md)
 - [Public programs](ecosystem/public-programs/README.md)
+- [Innovation hubs and incubators](ecosystem/hubs-incubators/README.md)
 
 ## Contributing
 
