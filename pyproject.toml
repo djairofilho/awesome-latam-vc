@@ -1,0 +1,36 @@
+[project]
+name = "awesome-latam-vc-research"
+version = "0.1.0"
+description = "Research validation tooling for the Awesome LatAm VC catalog"
+requires-python = ">=3.12"
+dependencies = [
+  "jsonschema==4.26.0",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=9,<10",
+  "pytest-xdist>=3,<4",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+  "--import-mode=importlib",
+  "--strict-config",
+  "--strict-markers",
+  "-ra",
+]
+python_files = ["test_*.py"]
+testpaths = [
+  "tools/research/tests",
+  "research/epic-63/tests",
+  "research/epic-64/tests",
+  "research/epic-65/tests",
+  "research/epic-65/final-audit/tests",
+  "research/epic-327/final-audit/tests",
+  "research/seo-geo/measurement/tests",
+  "tools/seo_geo/tests",
+]
+
+[tool.uv]
+package = false

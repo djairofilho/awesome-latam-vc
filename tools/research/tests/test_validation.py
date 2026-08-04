@@ -8,9 +8,8 @@ from pathlib import Path
 import sys
 
 RESEARCH_DIR = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(RESEARCH_DIR))
 
-from validate import (  # noqa: E402
+from tools.research.validate import (
     IndexRow,
     fund_profile_paths,
     git_changed_paths,

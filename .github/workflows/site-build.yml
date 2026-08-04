@@ -28,10 +28,17 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Set up uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          enable-cache: true
+          version: "0.10.2"
+
       - name: Install dependencies
         run: |
           npm ci
-          python -m pip install --requirement requirements-research.txt
+          uv sync --locked --no-dev
+          echo "$PWD/.venv/bin" >> "$GITHUB_PATH"
 
       - name: Validate deterministic static build
         run: npm run verify

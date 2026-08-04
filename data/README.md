@@ -30,9 +30,9 @@ are frozen to `2026-07-27`; every entity also carries its profile
 ## Reproduction and compatibility
 
 ```text
-python tools/seo_geo/generate_entities.py
-python tools/seo_geo/generate_entities.py --check
-python -m unittest discover -s tools/seo_geo/tests -v
+uv run python tools/seo_geo/generate_entities.py
+uv run python tools/seo_geo/generate_entities.py --check
+uv run pytest tools/seo_geo/tests
 ```
 
 Adding a field is a schema change. Consumers should reject unknown

@@ -1,17 +1,24 @@
 from __future__ import annotations
 
 import copy
+import importlib.util
 import json
+import sys
 import tempfile
 import unittest
 from pathlib import Path
 
-import sys
-
 EPIC_DIR = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(EPIC_DIR))
+SPEC = importlib.util.spec_from_file_location("epic_65_validate", EPIC_DIR / "validate.py")
+assert SPEC is not None and SPEC.loader is not None
+validate = importlib.util.module_from_spec(SPEC)
+sys.modules[SPEC.name] = validate
+SPEC.loader.exec_module(validate)
 
-from validate import FILE_CONTRACTS, load_jsonl, subtract_months, validate_bundle  # noqa: E402
+FILE_CONTRACTS = validate.FILE_CONTRACTS
+load_jsonl = validate.load_jsonl
+subtract_months = validate.subtract_months
+validate_bundle = validate.validate_bundle
 
 
 class ContractValidationTests(unittest.TestCase):
