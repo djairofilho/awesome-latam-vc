@@ -543,7 +543,8 @@ def audit(root: Path = ROOT) -> dict[str, Any]:
     text_paths = list(epic.rglob("*.md")) + list(epic.rglob("*.json")) + list(
         epic.rglob("*.jsonl")
     )
-    text_paths += list(catalog.rglob("*.md"))
+    text_paths += [catalog / "README.md"]
+    text_paths += [root / row["path"] for row in profiles]
     text_paths += [root / name for name in ("README.md", "README.pt.md", "README.es.md")]
     for path in sorted(set(text_paths)):
         try:
@@ -608,7 +609,11 @@ def audit(root: Path = ROOT) -> dict[str, Any]:
     profile_paths = {root / row["path"] for row in profiles}
     input_hashes = {
         path.relative_to(root).as_posix(): (
-            profile_sha256(path) if path in profile_paths else sha256(path)
+            profile_sha256(path)
+            if path in profile_paths
+            else canonical_hash(frozen_paths)
+            if path == catalog / "README.md"
+            else sha256(path)
         )
         for path in sorted(set(input_paths))
     }

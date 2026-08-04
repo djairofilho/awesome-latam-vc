@@ -16,7 +16,7 @@ Auditoria determinística executada para a issue #104 com data de corte
 - Perfis de chamadas: 0.
 - Transfers: 13 entradas, 8 materializadas e 5 saídas.
 - Itens de revisão independente: 58.
-- Hashes declarados verificados: 73.
+- Hashes declarados verificados: 72.
 - Problemas críticos: 0.
 - Problemas altos: 0.
 
@@ -31,7 +31,7 @@ Auditoria determinística executada para a issue #104 com data de corte
 | `coverage-and-tasks` | passed | 110 | As 55 células correspondem às tarefas; 25 lacunas estão justificadas. |
 | `category-transfers` | passed | 18 | As 13 entradas e 5 saídas têm adjudicação e destino canônico. |
 | `official-links` | passed | 98 | As 98 evidências são oficiais, têm URL HTTP(S) e vínculo bidirecional. |
-| `declared-hashes` | passed | 73 | Todos os hashes declarados da coleta à publicação reconciliam. |
+| `declared-hashes` | passed | 72 | Todos os hashes declarados da coleta à publicação reconciliam. |
 | `profiles-and-indexes` | passed | 32 | Os 29 perfis aparecem uma vez no índice e nos três índices multilíngues. |
 | `deterministic-ordering` | passed | 248 | JSONL, fila, lotes e índice seguem chaves determinísticas. |
 | `corfo-and-boundaries` | passed | 10 | CORFO, Start-Up Chile, rebaixamentos e cinco fronteiras foram revalidados. |
