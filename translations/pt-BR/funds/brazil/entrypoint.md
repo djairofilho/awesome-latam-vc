@@ -8,7 +8,7 @@
   "entity_type": "fund",
   "locale": "pt-BR",
   "translation_of": "fund:entrypoint:en",
-  "translation_status": "needs_review",
+  "translation_status": "complete",
   "summary": "A Entrypoint é uma gestora brasileira de venture capital pre-seed que investe em startups de tecnologia com MVP funcional e clientes iniciais ou provas de conceito.",
   "aliases": [],
   "operator": null,

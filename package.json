@@ -22,7 +22,8 @@
     "audit:release": "node scripts/audit-release.mjs",
     "audit:lighthouse": "node scripts/audit-lighthouse.mjs",
     "verify-build": "node scripts/verify-build.mjs",
-    "verify": "npm run check && npm run test && npm run verify-build && npm run a11y"
+    "release:build": "npm run build && npm run audit:release",
+    "verify": "npm run check && npm run test && npm run verify-build && npm run a11y && npm run audit:release"
   },
   "dependencies": {
     "@fontsource-variable/archivo": "5.3.0",

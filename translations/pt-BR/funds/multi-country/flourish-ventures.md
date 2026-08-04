@@ -8,7 +8,7 @@
   "entity_type": "fund",
   "locale": "pt-BR",
   "translation_of": "fund:flourish-ventures:en",
-  "translation_status": "needs_review",
+  "translation_status": "complete",
   "summary": "A Flourish Ventures é um fundo global evergreen de venture capital early stage que investe em empresas de tecnologia voltadas à saúde e à prosperidade financeira.",
   "aliases": [
     "Flourish VC"

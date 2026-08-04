@@ -8,7 +8,7 @@
   "entity_type": "accelerator",
   "locale": "es",
   "translation_of": "accelerator:cloudflare-for-startups:en",
-  "translation_status": "needs_review",
+  "translation_status": "complete",
   "summary": "Cloudflare for Startups es un programa global de apoyo a startups operado por Cloudflare.",
   "aliases": [
     "Cloudflare Startup Program"

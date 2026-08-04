@@ -30,7 +30,7 @@ jobs:
         uses: withastro/action@v6
         with:
           node-version: 24
-          build-cmd: npm run build
+          build-cmd: npm run release:build
 
   deploy:
     name: Deploy production

@@ -8,7 +8,7 @@
   "entity_type": "accelerator",
   "locale": "pt-BR",
   "translation_of": "accelerator:github-for-startups:en",
-  "translation_status": "needs_review",
+  "translation_status": "complete",
   "summary": "GitHub for Startups é um programa global de apoio a startups operado pelo GitHub.",
   "aliases": [],
   "operator": "GitHub",

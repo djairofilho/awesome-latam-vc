@@ -8,7 +8,7 @@
   "entity_type": "accelerator",
   "locale": "es",
   "translation_of": "accelerator:google-for-startups-cloud-program:en",
-  "translation_status": "needs_review",
+  "translation_status": "complete",
   "summary": "Google for Startups Cloud Program es un programa global de apoyo a startups operado por Google for Startups.",
   "aliases": [],
   "operator": "Google for Startups",

@@ -2,21 +2,6 @@ name: Validate static site
 
 on:
   pull_request:
-    paths:
-      - "funds/**"
-      - "ecosystem/**"
-      - "translations/**"
-      - "data/**"
-      - "src/**"
-      - "public/**"
-      - "scripts/**"
-      - "tests/**"
-      - "astro.config.mjs"
-      - "package.json"
-      - "package-lock.json"
-      - "tsconfig.json"
-      - ".github/workflows/site-build.yml"
-      - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -38,8 +23,15 @@ jobs:
           node-version: 24
           cache: npm
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci
+          python -m pip install --requirement requirements-research.txt
 
       - name: Validate deterministic static build
         run: npm run verify

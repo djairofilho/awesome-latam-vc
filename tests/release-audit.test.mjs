@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  catalogCountReadiness,
   measurementReadiness,
   parseStructuredFrontmatter,
   translationInventory,
@@ -74,7 +75,40 @@ test("release inventory rejects needs-review content", () => {
   assert.throws(() => translationInventory(root, [entity]), /not complete/u);
 });
 
-test("measurement gate requires verified ownership and accepted sitemaps", () => {
+test("release catalog count must match every localized README", () => {
+  const root = mkdtempSync(join(tmpdir(), "release-audit-"));
+  const entities = [
+    { entity_type: "fund" },
+    { entity_type: "fund" },
+    { entity_type: "accelerator" },
+  ];
+  for (const [filename, line] of [
+    ["README.md", "The index currently covers 2 funds."],
+    ["README.pt.md", "O índice atualmente reúne 2 fundos."],
+    ["README.es.md", "El índice actualmente reúne 2 fondos."],
+  ]) {
+    writeFileSync(join(root, filename), `${line}\n`, "utf8");
+  }
+  assert.deepEqual(catalogCountReadiness(root, entities), {
+    funds: 2,
+    readmes: {
+      "README.md": 2,
+      "README.pt.md": 2,
+      "README.es.md": 2,
+    },
+  });
+  writeFileSync(
+    join(root, "README.pt.md"),
+    "O índice atualmente reúne 1 fundos.\n",
+    "utf8",
+  );
+  assert.throws(
+    () => catalogCountReadiness(root, entities),
+    /README\.pt\.md publishes 1 funds, expected 2/u,
+  );
+});
+
+test("measurement readiness requires verified ownership and accepted sitemaps", () => {
   const ready = {
     public_endpoints: { homepage: 200, sitemap: 200, robots: 200 },
     providers: {
