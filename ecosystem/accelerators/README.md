@@ -8,7 +8,7 @@ Programs and their operators or investment vehicles remain separate units.
 Capital, instrument, equity, duration and stage are reported only when official
 sources publish them.
 
-The catalog contains 38 profiles. The original 26 profiles were frozen by the
+The catalog contains 40 profiles. The original 26 profiles were frozen by the
 independent review of epic #62 and verified on 2026-07-27. Subsequent additions
 cover global startup support programs and verified Latin American programs.
 
@@ -22,9 +22,11 @@ cover global startup support programs and verified Latin American programs.
 - [Aceleração Digital FUNSES1](brazil/ace-funses1-digital.md)
 - [Capital Empreendedor RJ](brazil/capital-empreendedor-rj.md)
 - [Darwin Scale](brazil/darwin-scale.md)
+- [DeepClimate](brazil/deepclimate.md)
 - [Programa de Aceleração GB Ventures](brazil/gb-ventures.md)
 - [InovAtiva Brasil](brazil/inovativa-brasil.md)
 - [tecnoPARQ Acelera](brazil/tecnoparq-acelera.md)
+- [TD Impacta](brazil/td-impacta.md)
 - [Acelera Impacto](brazil/ventiur-acelera-impacto.md)
 - [WOW Acceleration Program](brazil/wow.md)
 

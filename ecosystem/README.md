@@ -10,6 +10,7 @@ tables and do not count toward the project's direct-investor total.
 - [Angel networks](angel-networks/README.md)
 - [Funding platforms](funding-platforms/README.md)
 - [Public programs](public-programs/README.md)
+- [Innovation hubs and incubators](hubs-incubators/README.md)
 
 Each category contains individual organization profiles grouped by geographic
 base. Country directories contain organizations based in that country.

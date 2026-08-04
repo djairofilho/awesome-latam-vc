@@ -23,7 +23,7 @@ Uma lista curada de fundos de Venture Capital que investem na América Latina.
 
 ---
 
-O índice foi otimizado para comparação rápida e atualmente reúne 233 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
+O índice foi otimizado para comparação rápida e atualmente reúne 238 fundos. Todos os perfis de fundos usam o padrão enriquecido. O índice resume estágio, foco e geografia; cada página vinculada registra fontes, data de verificação, detalhes divulgados e observações do portfólio claramente identificadas.
 
 ## Pan-América Latina (sede na região)
 
@@ -163,11 +163,14 @@ O índice foi otimizado para comparação rápida e atualmente reúne 233 fundos
 | [Invest Tech](funds/brazil/invest-tech.md) | Seed | Empresas B2B habilitadas por tecnologia | Brasil |
 | [Invisto](funds/brazil/invisto.md) | Growth | Negócios de tecnologia, software e internet | Sul do Brasil |
 | [Iporanga Ventures](funds/brazil/iporanga-ventures.md) | Pre-seed e Seed | Software e tecnologia | Brasil |
+| [Kortex Ventures](funds/brazil/kortex-ventures.md) | Seed, Série A e Série B | Tecnologia para saúde | Global |
 | [KPTL](funds/brazil/kptl.md) | Multiestágio | Deep tech, saúde, bioeconomia e tecnologia | Brasil |
 | [L4 Venture Builder](funds/brazil/l4-venture-builder.md) | Growth | Não divulgado publicamente | Principalmente Brasil |
 | [Marcha](funds/brazil/marcha.md) | Não divulgado publicamente | Não divulgado publicamente | Brasil |
+| [MOV Investimentos](funds/brazil/mov-investimentos.md) | Não divulgado publicamente | Investimento de impacto | Brasil |
 | [MSW Capital](funds/brazil/msw-capital.md) | Seed | Tecnologia alinhada à inovação corporativa | Brasil |
 | [Oria Capital](funds/brazil/oria-capital.md) | Não divulgado publicamente | Software B2B | Brasil |
+| [Oxygea Ventures](funds/brazil/oxygea-ventures.md) | Não divulgado publicamente | Sustentabilidade, materiais e transformação digital | Global |
 | [Panvel Ventures](funds/brazil/panvel-ventures.md) | Não divulgado publicamente | Saúde e bem-estar, experiência do cliente e inteligência operacional | Não divulgado publicamente |
 | [Parallax Ventures](funds/brazil/parallax-ventures.md) | Não divulgado publicamente | Fintech | Brasil |
 | [Positive Ventures](funds/brazil/positive-ventures.md) | Não divulgado publicamente | Investimento de impacto | Brasil |
@@ -185,9 +188,11 @@ O índice foi otimizado para comparação rápida e atualmente reúne 233 fundos
 | [TM3 Capital](funds/brazil/tm3-capital.md) | Não divulgado publicamente | Não divulgado publicamente | Não divulgado publicamente |
 | [Triaxis Capital](funds/brazil/triaxis-capital.md) | Não divulgado publicamente | Empresas inovadoras de tecnologia | Brasil |
 | [Upload Ventures](funds/brazil/upload-ventures.md) | Multiestágio | Não divulgado publicamente | América Latina, incluindo o Brasil |
+| [Vale Ventures](funds/brazil/vale-ventures.md) | Série A e Série B | Mineração sustentável e descarbonização | Global |
 | [Ventiur](funds/brazil/ventiur.md) | Pre-seed e Seed | Startups de tecnologia | Brasil |
 | [Vibra Ventures](funds/brazil/vibra-ventures.md) | Não divulgado publicamente | Não divulgado publicamente | Brasil |
 | [Vivo Ventures](funds/brazil/vivo-ventures.md) | Série A, Série B e Growth | Educação, energia, saúde, serviços financeiros, casa inteligente e entretenimento | Brasil |
+| [Volpe Capital](funds/brazil/volpe-capital.md) | Não divulgado publicamente | Tecnologia e negócios tech-enabled | América Latina |
 | [Vox Capital](funds/brazil/vox-capital.md) | Seed, Série A e Série B | Tecnologia de impacto | Brasil |
 
 ## Chile
@@ -353,6 +358,7 @@ fundos de VC e, por isso, permanecem fora das tabelas principais. Consulte o
 - [Redes de investidores-anjo](ecosystem/angel-networks/README.md)
 - [Plataformas de captação](ecosystem/funding-platforms/README.pt.md)
 - [Programas públicos](ecosystem/public-programs/README.md)
+- [Hubs e incubadoras](ecosystem/hubs-incubators/README.md)
 
 ## Contribuindo
 

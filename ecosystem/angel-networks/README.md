@@ -16,10 +16,13 @@ A network is not the same as a venture capital fund, even when members invest to
 | [Anjos do Brasil](brazil/anjos-do-brasil.md) | Angel-investment network | Brazil |
 | [BR Angels](brazil/br-angels.md) | Angel-investment network | Brazil, Latin America, Global |
 | [Curitiba Angels](brazil/curitiba-angels.md) | Angel-investment network | Brazil |
+| [FEA Angels](brazil/fea-angels.md) | Alumni angel-investment network | Brazil |
+| [Gávea Angels](brazil/gavea-angels.md) | Angel-investment network | Brazil |
 | [GVAngels](brazil/gvangels.md) | Alumni angel-investment network | Brazil |
 | [Insper Angels](brazil/insper-angels.md) | Alumni angel-investment network | Brazil |
 | [ITA Angels](brazil/ita-angels.md) | Angel-investment pool | Brazil |
 | [PUC angels](brazil/puc-angels.md) | Angel-investment network | Brazil |
+| [Poli Angels](brazil/poli-angels.md) | Alumni angel-investment network | Brazil |
 | [Urca Angels](brazil/urca-angels.md) | Alumni angel-investment network | Brazil |
 
 ## Chile

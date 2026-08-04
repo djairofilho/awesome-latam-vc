@@ -4,7 +4,7 @@ Public agencies and programs in this index provide an official, structured route
 
 Agency profiles describe stable institutional routes. Program profiles describe durable instruments. Temporary calls never receive profiles; their status, dates, values, and eligibility remain call-specific.
 
-The index contains 12 agencies and 19 programs. A program marked as currently
+The index contains 12 agencies and 23 programs. A program marked as currently
 closed is not presented as open.
 
 ## Bolivia
@@ -27,9 +27,13 @@ closed is not presented as open.
 | [Fundo Clima - Serviços e Inovação Verdes](brazil/bndes-fundo-clima-servicos-inovacao-verdes.md) | Program | credit, co-financing | Active |
 | [BNDES Garagem](brazil/bndes-garagem.md) | Program | grant or non-repayable funding | Currently closed, officially recurring |
 | [BRDE Labs RS](brazil/brde-labs-rs.md) | Program | grant or non-repayable funding | Currently closed, officially recurring |
+| [Catalisa ICT](brazil/catalisa-ict.md) | Program | business support and cycle-specific instruments | Active |
+| [Programa Centelha](brazil/centelha.md) | Program | state-level grants and support | Active, state calls vary |
+| [NAVE ANP](brazil/nave-anp.md) | Program | funded research and development projects | Current projects in execution |
 | [Pesquisa Inovativa em Pequenas Empresas](brazil/fapesp-pipe.md) | Program | grant or non-repayable funding | Active |
 | [Programa Mulheres Inovadoras](brazil/finep-mulheres-inovadoras.md) | Program | grant or non-repayable funding | Currently closed, officially recurring |
 | [Sebraetec Negócios Inovadores](brazil/sebraetec-negocios-inovadores.md) | Program | co-financing | Active |
+| [Tecnova III](brazil/tecnova-iii.md) | Program | grant or non-repayable funding | Active, state calls vary |
 
 ## Chile
 

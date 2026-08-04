@@ -46,8 +46,8 @@ class EntityExportTests(unittest.TestCase):
         )
         self.assertEqual([], errors)
         self.assertEqual("1.0", self.document["schema_version"])
-        self.assertEqual("2026-07-27", self.document["dataset"]["version"])
-        self.assertEqual("2026-07-27", self.document["dataset"]["date"])
+        self.assertEqual("2026-08-04", self.document["dataset"]["version"])
+        self.assertEqual("2026-08-04", self.document["dataset"]["date"])
         self.assertEqual("CC0-1.0", self.document["dataset"]["license"])
         self.assertEqual("UTF-8", self.document["dataset"]["encoding"])
 
@@ -57,11 +57,11 @@ class EntityExportTests(unittest.TestCase):
         profile_ids = sorted(
             profile.metadata["entity_id"] for profile in self.profiles
         )
-        self.assertEqual(324, len(entities))
+        self.assertEqual(342, len(entities))
         self.assertEqual(profile_ids, ids)
         self.assertEqual(ids, sorted(ids))
         self.assertEqual(len(ids), len(set(ids)))
-        self.assertEqual(324, self.document["dataset"]["entity_count"])
+        self.assertEqual(342, self.document["dataset"]["entity_count"])
 
     def test_json_and_csv_have_identical_ids_order_and_values(self):
         errors = generate_entities.validate_export_consistency(
@@ -101,6 +101,7 @@ class EntityExportTests(unittest.TestCase):
             "angel_network",
             "funding_platform",
             "public_program",
+            "hub_incubator",
         }
         exported_types = {
             entity["entity_type"] for entity in self.document["entities"]

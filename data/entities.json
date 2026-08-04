@@ -1,13 +1,13 @@
 {
   "dataset": {
-    "date": "2026-07-27",
+    "date": "2026-08-04",
     "encoding": "UTF-8",
-    "entity_count": 324,
+    "entity_count": 342,
     "id": "awesome-latam-vc-entities",
     "license": "CC0-1.0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "name": "Awesome LatAm VC catalog entities",
-    "version": "2026-07-27"
+    "version": "2026-08-04"
   },
   "entities": [
     {
@@ -506,6 +506,52 @@
       ],
       "summary": "Darwin Scale is a structured acceleration program operated by Darwin Startups.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [
+        "DeepClimate Brasil"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "climate",
+        "deeptech",
+        "science_based_innovation"
+      ],
+      "founder_route": "https://blog.quintessa.org.br/mapeamento-de-solucoes-de-base-cientifico-tecnologica-para-o-clima-inscricoes-ate-08-outubro/",
+      "id": "accelerator:deepclimate",
+      "name": "DeepClimate",
+      "official_website": "https://www.quintessa.org.br/",
+      "operator": "Quintessa",
+      "source_profile": "ecosystem/accelerators/brazil/deepclimate.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "DeepClimate program overview",
+          "url": "https://www.quintessa.org.br/"
+        },
+        {
+          "kind": "official_application",
+          "title": "DeepClimate startup intake",
+          "url": "https://blog.quintessa.org.br/mapeamento-de-solucoes-de-base-cientifico-tecnologica-para-o-clima-inscricoes-ate-08-outubro/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "DeepClimate selected cohort",
+          "url": "https://blog.quintessa.org.br/deepclimate-seleciona-10-deeptechs-climaticas-brasileiras-com-potencial-de-transformar-ciencia-em-desenvolvimento-economico/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Quintessa-led program helping Brazilian climate deeptechs move from scientific development toward market adoption.",
+      "verified_on": "2026-08-04"
     },
     {
       "aliases": [],
@@ -1210,6 +1256,45 @@
       "verified_on": "2026-08-04"
     },
     {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "accelerator",
+      "focuses": [
+        "financial_inclusion",
+        "financial_education",
+        "social_impact"
+      ],
+      "founder_route": "https://tdimpacta.com.br/",
+      "id": "accelerator:td-impacta",
+      "name": "TD Impacta",
+      "official_website": "https://tdimpacta.com.br/",
+      "operator": "Artemisia",
+      "source_profile": "ecosystem/accelerators/brazil/td-impacta.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "TD Impacta",
+          "url": "https://tdimpacta.com.br/"
+        },
+        {
+          "kind": "official_program",
+          "title": "Artemisia initiatives",
+          "url": "https://artemisia.org.br/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "National support and funding platform for impact solutions, created by Tesouro Direto and operated by Artemisia.",
+      "verified_on": "2026-08-04"
+    },
+    {
       "aliases": [
         "tecnoPARQ Acelera 2026"
       ],
@@ -1622,6 +1707,41 @@
       "verified_on": "2026-07-27"
     },
     {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "angel_network",
+      "focuses": [
+        "sector_agnostic",
+        "angel_investing"
+      ],
+      "founder_route": "https://feaangels.com.br/",
+      "id": "angel_network:fea-angels",
+      "name": "FEA Angels",
+      "official_website": "https://feaangels.com.br/",
+      "operator": null,
+      "source_profile": "ecosystem/angel-networks/brazil/fea-angels.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "FEA Angels",
+          "url": "https://feaangels.com.br/"
+        }
+      ],
+      "stages": [
+        "angel",
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Angel network formed around the FEA-USP community that receives startup applications for member review.",
+      "verified_on": "2026-08-04"
+    },
+    {
       "aliases": [
         "FirstAngels Jamaica",
         "FirstAngelsJA"
@@ -1661,6 +1781,46 @@
       ],
       "summary": "The network accepts external founder submissions through its official route.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "angel_network",
+      "focuses": [
+        "sector_agnostic",
+        "angel_investing"
+      ],
+      "founder_route": "https://gaveaangels.org/",
+      "id": "angel_network:gavea-angels",
+      "name": "Gávea Angels",
+      "official_website": "https://gaveaangels.org/",
+      "operator": null,
+      "source_profile": "ecosystem/angel-networks/brazil/gavea-angels.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Gávea Angels",
+          "url": "https://gaveaangels.org/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Gávea Angels portfolio",
+          "url": "https://gaveaangels.org/investidas/"
+        }
+      ],
+      "stages": [
+        "angel",
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Brazilian angel investor association that selects startups and connects them with member investors.",
+      "verified_on": "2026-08-04"
     },
     {
       "aliases": [],
@@ -1800,6 +1960,46 @@
       ],
       "summary": "A technology-focused angel pool linked to the ITA community.",
       "verified_on": "2026-07-30"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "angel_network",
+      "focuses": [
+        "sector_agnostic",
+        "angel_investing"
+      ],
+      "founder_route": "https://poliangels.com.br/",
+      "id": "angel_network:poli-angels",
+      "name": "Poli Angels",
+      "official_website": "https://poliangels.com.br/",
+      "operator": null,
+      "source_profile": "ecosystem/angel-networks/brazil/poli-angels.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Poli Angels",
+          "url": "https://poliangels.com.br/"
+        },
+        {
+          "kind": "official_thesis",
+          "title": "Poli Angels frequently asked questions",
+          "url": "https://poliangels.com.br/institucional/perguntas-frequentes"
+        }
+      ],
+      "stages": [
+        "angel",
+        "pre_seed",
+        "seed"
+      ],
+      "summary": "Angel network connected to the Polytechnic School community that reviews sector-agnostic early-stage startups.",
+      "verified_on": "2026-08-04"
     },
     {
       "aliases": [],
@@ -7287,6 +7487,48 @@
       "verified_on": "2026-07-26"
     },
     {
+      "aliases": [
+        "KorteX"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "GLOBAL"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "healthtech",
+        "digital_health"
+      ],
+      "founder_route": null,
+      "id": "fund:kortex-ventures",
+      "name": "Kortex Ventures",
+      "official_website": "https://www.kortexventures.com/",
+      "operator": null,
+      "source_profile": "funds/brazil/kortex-ventures.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Kortex Ventures",
+          "url": "https://www.kortexventures.com/"
+        },
+        {
+          "kind": "official_thesis",
+          "title": "Kortex Ventures approach",
+          "url": "https://www.kortexventures.com/nosso-proposito/"
+        }
+      ],
+      "stages": [
+        "seed",
+        "series_a",
+        "series_b"
+      ],
+      "summary": "Brazilian venture fund specialized in health technology companies from seed through Series B.",
+      "verified_on": "2026-08-04"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "BR",
@@ -8072,6 +8314,42 @@
       "verified_on": "2026-07-30"
     },
     {
+      "aliases": [
+        "MOV"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "impact_investing",
+        "climate",
+        "social_impact"
+      ],
+      "founder_route": "https://movinvestimentos.com.br/",
+      "id": "fund:mov-investimentos",
+      "name": "MOV Investimentos",
+      "official_website": "https://movinvestimentos.com.br/",
+      "operator": null,
+      "source_profile": "funds/brazil/mov-investimentos.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "MOV Investimentos",
+          "url": "https://movinvestimentos.com.br/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Brazilian impact investment manager backing businesses that combine financial return with measurable impact.",
+      "verified_on": "2026-08-04"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "UY",
@@ -8518,6 +8796,47 @@
       ],
       "summary": "Oria Capital is an investment organization focused on B2B software in Brazil.",
       "verified_on": "2026-07-26"
+    },
+    {
+      "aliases": [
+        "Oxygea"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "GLOBAL"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "sustainability",
+        "digital_transformation",
+        "materials"
+      ],
+      "founder_route": "https://oxygea.com/",
+      "id": "fund:oxygea-ventures",
+      "name": "Oxygea Ventures",
+      "official_website": "https://oxygea.com/",
+      "operator": "Braskem",
+      "source_profile": "funds/brazil/oxygea-ventures.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Oxygea",
+          "url": "https://oxygea.com/"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Braskem drives its digital transformation",
+          "url": "https://www.braskem.com.br/usa/news-detail/braskem-drives-its-digital-transformation"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "Braskem's corporate venture capital arm backs startups in sustainability and digital transformation.",
+      "verified_on": "2026-08-04"
     },
     {
       "aliases": [],
@@ -10706,6 +11025,41 @@
     {
       "aliases": [],
       "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "GLOBAL"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "mining",
+        "decarbonization",
+        "sustainability"
+      ],
+      "founder_route": "https://vale.com/pt/vale-ventures",
+      "id": "fund:vale-ventures",
+      "name": "Vale Ventures",
+      "official_website": "https://vale.com/pt/vale-ventures",
+      "operator": "Vale",
+      "source_profile": "funds/brazil/vale-ventures.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Vale Ventures",
+          "url": "https://vale.com/pt/vale-ventures"
+        }
+      ],
+      "stages": [
+        "series_a",
+        "series_b"
+      ],
+      "summary": "Vale's corporate venture capital initiative invests in technologies for sustainable mining and decarbonization.",
+      "verified_on": "2026-08-04"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
         "code": "GLOBAL",
         "kind": "global"
       },
@@ -11145,6 +11499,45 @@
       ],
       "summary": "Vivo Ventures is Vivo's corporate venture capital vehicle for later-stage strategic investments and is managed in coordination with Wayra Brasil.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "LATAM"
+      ],
+      "entity_type": "fund",
+      "focuses": [
+        "technology",
+        "technology_enabled",
+        "high_growth"
+      ],
+      "founder_route": "https://www.volpecapital.com/",
+      "id": "fund:volpe-capital",
+      "name": "Volpe Capital",
+      "official_website": "https://www.volpecapital.com/",
+      "operator": null,
+      "source_profile": "funds/brazil/volpe-capital.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Volpe Capital",
+          "url": "https://www.volpecapital.com/"
+        },
+        {
+          "kind": "official_portfolio",
+          "title": "Volpe Capital portfolio",
+          "url": "https://www.volpecapital.com/portfolio/"
+        }
+      ],
+      "stages": [
+        "not_disclosed"
+      ],
+      "summary": "São Paulo-based investment firm focused on technology and technology-enabled high-growth companies in Latin America.",
+      "verified_on": "2026-08-04"
     },
     {
       "aliases": [],
@@ -11940,6 +12333,158 @@
       "verified_on": "2026-07-27"
     },
     {
+      "aliases": [
+        "Cubo"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "hub_incubator",
+      "focuses": [
+        "innovation_ecosystem",
+        "startup_support",
+        "fundraising_support"
+      ],
+      "founder_route": "https://cubo.itau/startups-apply",
+      "id": "hub_incubator:cubo-itau",
+      "name": "Cubo Itaú",
+      "official_website": "https://cubo.itau/startups",
+      "operator": null,
+      "source_profile": "ecosystem/hubs-incubators/brazil/cubo-itau.md",
+      "sources": [
+        {
+          "kind": "official_website",
+          "title": "Cubo for Startups",
+          "url": "https://cubo.itau/startups"
+        },
+        {
+          "kind": "official_application",
+          "title": "Startup selection process",
+          "url": "https://cubo.itau/startups-apply"
+        }
+      ],
+      "stages": [
+        "not_applicable"
+      ],
+      "summary": "Brazilian innovation hub connecting selected startups with companies, partners and investors.",
+      "verified_on": "2026-08-04"
+    },
+    {
+      "aliases": [
+        "Caldeira"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "hub_incubator",
+      "focuses": [
+        "innovation_ecosystem",
+        "startup_support",
+        "acceleration"
+      ],
+      "founder_route": "https://institutocaldeira.org.br/programas/programas-startups/",
+      "id": "hub_incubator:instituto-caldeira",
+      "name": "Instituto Caldeira",
+      "official_website": "https://institutocaldeira.org.br/programas/programas-startups/",
+      "operator": null,
+      "source_profile": "ecosystem/hubs-incubators/brazil/instituto-caldeira.md",
+      "sources": [
+        {
+          "kind": "official_application",
+          "title": "Instituto Caldeira startup programs",
+          "url": "https://institutocaldeira.org.br/programas/programas-startups/"
+        }
+      ],
+      "stages": [
+        "not_applicable"
+      ],
+      "summary": "Porto Alegre innovation hub offering structured startup programs, community access and investor connections.",
+      "verified_on": "2026-08-04"
+    },
+    {
+      "aliases": [
+        "MIDITEC/ACATE"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "hub_incubator",
+      "focuses": [
+        "incubation",
+        "technology",
+        "startup_support"
+      ],
+      "founder_route": "https://miditec.com.br/",
+      "id": "hub_incubator:miditec",
+      "name": "MIDITEC",
+      "official_website": "https://www.acate.com.br/programas/miditec/",
+      "operator": "ACATE",
+      "source_profile": "ecosystem/hubs-incubators/brazil/miditec.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "MIDITEC at ACATE",
+          "url": "https://www.acate.com.br/programas/miditec/"
+        },
+        {
+          "kind": "official_application",
+          "title": "MIDITEC",
+          "url": "https://miditec.com.br/"
+        }
+      ],
+      "stages": [
+        "not_applicable"
+      ],
+      "summary": "ACATE technology incubator supporting validated startups through resident and virtual incubation journeys.",
+      "verified_on": "2026-08-04"
+    },
+    {
+      "aliases": [],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "hub_incubator",
+      "focuses": [
+        "technology_park",
+        "incubation",
+        "creative_economy"
+      ],
+      "founder_route": "https://www.portodigital.org/paginas-institucionais/iniciativas/empreendedorismo",
+      "id": "hub_incubator:porto-digital",
+      "name": "Porto Digital",
+      "official_website": "https://www.portodigital.org/paginas-institucionais/iniciativas/empreendedorismo",
+      "operator": "Núcleo de Gestão do Porto Digital",
+      "source_profile": "ecosystem/hubs-incubators/brazil/porto-digital.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "Porto Digital entrepreneurship initiatives",
+          "url": "https://www.portodigital.org/paginas-institucionais/iniciativas/empreendedorismo"
+        }
+      ],
+      "stages": [
+        "not_applicable"
+      ],
+      "summary": "Brazilian technology park operating incubation and entrepreneurship support through its ecosystem and Jump Brasil.",
+      "verified_on": "2026-08-04"
+    },
+    {
       "aliases": [],
       "base_geography": {
         "code": "BO",
@@ -12381,6 +12926,83 @@
     },
     {
       "aliases": [
+        "CatalisaICT"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "public_program",
+      "focuses": [
+        "deeptech",
+        "technology_transfer",
+        "research_commercialization"
+      ],
+      "founder_route": "https://meuatendimento.sebrae.com.br/sites/PortalSebrae/inovacao/",
+      "id": "public_program:catalisa-ict",
+      "name": "Catalisa ICT",
+      "official_website": "https://meuatendimento.sebrae.com.br/sites/PortalSebrae/inovacao/",
+      "operator": "Sebrae",
+      "source_profile": "ecosystem/public-programs/brazil/catalisa-ict.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "Sebrae innovation programs",
+          "url": "https://meuatendimento.sebrae.com.br/sites/PortalSebrae/inovacao/"
+        }
+      ],
+      "stages": [
+        "not_applicable"
+      ],
+      "summary": "Sebrae program supporting researchers who want to transform scientific and technological work into deeptech businesses.",
+      "verified_on": "2026-08-04"
+    },
+    {
+      "aliases": [
+        "Centelha"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "public_program",
+      "focuses": [
+        "innovation",
+        "entrepreneurship",
+        "grants"
+      ],
+      "founder_route": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/centelha",
+      "id": "public_program:centelha",
+      "name": "Programa Centelha",
+      "official_website": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/centelha",
+      "operator": "Finep and state partners",
+      "source_profile": "ecosystem/public-programs/brazil/centelha.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "Programa Centelha",
+          "url": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/centelha"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Centelha third edition activity",
+          "url": "https://www.gov.br/cnpq/pt-br/assuntos/noticias/cnpq-em-acao/espirito-santo-ceara-goias-e-piaui-lideram-inscricoes-de-ideias-no-centelha-3"
+        }
+      ],
+      "stages": [
+        "not_applicable"
+      ],
+      "summary": "National program implemented through state partners to turn innovative ideas into technology-based businesses.",
+      "verified_on": "2026-08-04"
+    },
+    {
+      "aliases": [
         "ConQuito"
       ],
       "base_geography": {
@@ -12739,6 +13361,48 @@
     },
     {
       "aliases": [
+        "NAVE",
+        "Programa ANP de Empreendedorismo"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "public_program",
+      "focuses": [
+        "energy",
+        "open_innovation",
+        "technology"
+      ],
+      "founder_route": "https://www.gov.br/anp/pt-br/assuntos/tecnologia-meio-ambiente/nave-1",
+      "id": "public_program:nave-anp",
+      "name": "NAVE ANP",
+      "official_website": "https://www.gov.br/anp/pt-br/assuntos/tecnologia-meio-ambiente/nave-1",
+      "operator": "Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
+      "source_profile": "ecosystem/public-programs/brazil/nave-anp.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "NAVE program",
+          "url": "https://www.gov.br/anp/pt-br/assuntos/tecnologia-meio-ambiente/nave-1"
+        },
+        {
+          "kind": "official_activity",
+          "title": "NAVE selected startups",
+          "url": "https://www.gov.br/anp/pt-br/canais_atendimento/imprensa/noticias-comunicados/nave-anp-21-startups-aprovadas-para-contratacao"
+        }
+      ],
+      "stages": [
+        "not_applicable"
+      ],
+      "summary": "ANP open-innovation program connecting Brazilian startups with energy companies around shared technology challenges.",
+      "verified_on": "2026-08-04"
+    },
+    {
+      "aliases": [
         "ProInnóvate"
       ],
       "base_geography": {
@@ -13014,6 +13678,47 @@
       ],
       "summary": "A nova geração BIG 12 foi anunciada em julho de 2026 após nova seleção internacional.",
       "verified_on": "2026-07-27"
+    },
+    {
+      "aliases": [
+        "Finep Tecnova III"
+      ],
+      "base_geography": {
+        "code": "BR",
+        "kind": "country"
+      },
+      "countries_covered": [
+        "BR"
+      ],
+      "entity_type": "public_program",
+      "focuses": [
+        "innovation",
+        "technology",
+        "grants"
+      ],
+      "founder_route": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/tecnova",
+      "id": "public_program:tecnova-iii",
+      "name": "Tecnova III",
+      "official_website": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/tecnova",
+      "operator": "Finep and state partners",
+      "source_profile": "ecosystem/public-programs/brazil/tecnova-iii.md",
+      "sources": [
+        {
+          "kind": "official_program",
+          "title": "Tecnova",
+          "url": "https://www.finep.gov.br/apoio-e-financiamento-externa/programas-e-linhas/tecnova"
+        },
+        {
+          "kind": "official_activity",
+          "title": "Official Tecnova III program manual",
+          "url": "https://premio.finep.gov.br/images/chamadas-publicas/2024/12_03_2024_Manual_Programa_FINEP_TECNOVA_III_01_02_24.pdf"
+        }
+      ],
+      "stages": [
+        "not_applicable"
+      ],
+      "summary": "Finep program distributing innovation grants to eligible micro and small businesses through state partners.",
+      "verified_on": "2026-08-04"
     }
   ],
   "schema_version": "1.0"

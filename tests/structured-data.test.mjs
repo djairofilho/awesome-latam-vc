@@ -24,8 +24,8 @@ test("website and dataset use canonical GitHub Pages URLs", () => {
     name: "Entity count",
     value: 229,
   });
-  assert.equal(dataset.version, "2026-07-27");
-  assert.equal(dataset.dateModified, "2026-07-27");
+  assert.equal(dataset.version, "2026-08-04");
+  assert.equal(dataset.dateModified, "2026-08-04");
   assert.equal(
     dataset.license,
     "https://creativecommons.org/publicdomain/zero/1.0/",

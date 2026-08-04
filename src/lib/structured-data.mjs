@@ -1,8 +1,8 @@
 import { canonicalUrl } from "./paths.mjs";
 
 export const SCHEMA_CONTEXT = "https://schema.org";
-export const DATASET_VERSION = "2026-07-27";
-export const DATASET_DATE = "2026-07-27";
+export const DATASET_VERSION = "2026-08-04";
+export const DATASET_DATE = "2026-08-04";
 export const DATASET_LICENSE =
   "https://creativecommons.org/publicdomain/zero/1.0/";
 
